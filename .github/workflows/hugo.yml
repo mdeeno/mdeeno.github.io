@@ -29,8 +29,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive # 핵심: 테마 파일까지 꼼꼼하게 다 가져옴
+          submodules: recursive
           fetch-depth: 0
+
+      # 👇 [여기가 핵심] 테마가 없으면 직접 받아오라고 시키는 코드
+      - name: Force Install PaperMod Theme
+        run: |
+          git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth 1 || (cd themes/PaperMod && git pull)
 
       - name: Build with Hugo
         run: |

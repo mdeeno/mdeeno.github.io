@@ -1,0 +1,14 @@
+# (기존 내용들...)
+.DS_Store
+node_modules/
+public/
+
+# 파이썬 컴파일 파일 (지저분함)
+__pycache__/
+*.pyc
+
+# 맥북 시스템 파일 (지저분함)
+.DS_Store
+
+# 환경변수 파일 (보안 필수!)
+.env

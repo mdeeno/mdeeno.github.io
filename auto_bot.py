@@ -13,10 +13,10 @@ from selenium.webdriver.common.action_chains import ActionChains # <--- 여기 �
 # ==============================================================================
 # [설정 영역]
 # ==============================================================================
-GEMINI_API_KEY = "AIzaSyAv8Dj_CofqxR3LP6fbNtNz9OGiVIy0h7Y"
-BLOG_DIR = "/Users/suhun/Desktop/proptech-lab"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+BLOG_DIR = os.getenv("BLOG_DIR")
+TISTORY_WRITE_URL = os.getenv("TISTORY_WRITE_URL")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
-TISTORY_WRITE_URL = "https://urvibe.tistory.com/manage/newpost"
 # ==============================================================================
 
 # Gemini 설정
