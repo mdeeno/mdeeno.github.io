@@ -19,8 +19,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🔥 [수정] 가장 안전하고 확실한 모델명 (사용자 리스트 기반)
-# 2.0이나 2.5 같은 실험적 모델 대신, 현재 할당량이 있는 안정적인 버전을 씁니다.
+# 가장 안전한 모델 (최신 Flash)
 MODEL_NAME = 'gemini-flash-latest'
 # ==============================================================================
 
@@ -35,17 +34,13 @@ def set_korean_font():
         try:
             rc('font', family='AppleGothic')
             plt.rcParams['axes.unicode_minus'] = False 
-            print("🍏 맥북 한글 폰트(AppleGothic) 설정 완료")
         except:
-            print("⚠️ 폰트 설정 중 오류가 발생했지만 계속 진행합니다.")
-    else:
-        print("⚠️ 윈도우 환경입니다. 폰트 설정이 필요할 수 있습니다.")
+            pass
 
 def generate_graph(topic, filename_base):
     """주제에 어울리는 전문적인 차트 생성"""
-    print("📊 [1/4] 데이터 분석 그래프 그리는 중...")
+    print("📊 [1/5] 데이터 분석 그래프 그리는 중...")
     
-    # 폰트 설정 적용
     set_korean_font()
     
     image_dir = os.path.join(BLOG_DIR, "static", "images")
@@ -54,19 +49,16 @@ def generate_graph(topic, filename_base):
     img_filename = f"{filename_base}-chart.png"
     img_path = os.path.join(image_dir, img_filename)
 
-    # 가상 데이터 생성 (우상향 그래프)
     years = ['2023', '2024', '2025(E)', '2026(F)']
     values = [random.randint(40, 60), random.randint(65, 85), random.randint(90, 110), random.randint(120, 150)]
     
     plt.figure(figsize=(10, 6))
-    # 도시공학 느낌의 세련된 다크 그레이/블루 톤
     plt.bar(years, values, color=['#cfd8dc', '#90a4ae', '#546e7a', '#263238'], width=0.6)
     
     plt.title(f"Growth Projection: {topic}", fontsize=14, fontweight='bold', pad=20)
     plt.ylabel("Index / Market Value", fontsize=11)
     plt.grid(axis='y', linestyle='--', alpha=0.5)
     
-    # 테두리 제거 (깔끔하게)
     plt.gca().spines['top'].set_visible(False)
     plt.gca().spines['right'].set_visible(False)
     
@@ -76,11 +68,10 @@ def generate_graph(topic, filename_base):
     return f"/images/{img_filename}"
 
 def generate_github_content(topic, graph_url):
-    """깃허브용 마크다운 본문 생성 (전문가용)"""
-    print(f"🤖 [2/4] 깃허브용 심층 분석 글 작성 중... (모델: {MODEL_NAME})")
+    """깃허브용 마크다운 본문 생성"""
+    print(f"🤖 [2/5] 깃허브용 심층 분석 글 작성 중...")
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     
-    # 썸네일 (도시/건축)
     cover_image = "https://loremflickr.com/1600/900/architecture,city,modern"
 
     front_matter = f"""---
@@ -102,13 +93,11 @@ cover:
     주제 '{topic}'에 대해 깃허브 기술 블로그에 올릴 **전문적인 마크다운 글**을 써주세요.
     
     [작성 전략]
-    1. **타겟 독자**: 투자자, 개발자, 도시계획가 (전문 용어 적절히 사용)
-    2. **구조**:
-       - **서론**: 현상 분석 및 문제 제기 (충격적인 통계나 질문으로 시작)
-       - **본문**: 소제목(##) 3개 이상 사용. 논리적 근거 제시.
-       - **데이터 언급**: "상단 그래프를 보시면(Refer to the chart above)" 멘트 필수.
-       - **결론**: 향후 3년 전망 및 제언.
-    3. **말투**: 신뢰감 있는 건조한 문체 (~함, ~임 체 말고, ~합니다/해요 체).
+    1. 서론: 충격적인 통계나 질문으로 시작.
+    2. 본문: 소제목(##) 3개 이상. 논리적 근거 제시.
+    3. 데이터 언급: "상단 그래프를 보시면(Refer to the chart above)" 멘트 필수.
+    4. 결론: 향후 전망 및 제언.
+    5. 말투: 신뢰감 있는 해요체.
     
     **Front Matter는 쓰지 마세요. 본문만 작성하세요.**
     """
@@ -116,13 +105,12 @@ cover:
     response = model.generate_content(prompt)
     body = response.text.replace("```markdown", "").replace("```", "")
     
-    # 그래프 삽입
     full_content = f"{front_matter}\n\n![Data Chart]({graph_url})\n*▲ {topic} 시장 성장 예측 시뮬레이션*\n\n{body}"
     return full_content
 
 def generate_tistory_content(topic, github_link):
-    """티스토리용 HTML 본문 + 해시태그 생성 (대중용)"""
-    print(f"🎨 [3/4] 티스토리용 HTML 및 해시태그 생성 중...")
+    """티스토리용 HTML 본문 + 해시태그 생성"""
+    print(f"🎨 [3/5] 티스토리용 HTML 및 해시태그 생성 중...")
     
     prompt = f"""
     주제 '{topic}'에 대해 티스토리 블로그에 올릴 **대중 친화적인 글**을 HTML 형식으로 작성해 주세요.
@@ -139,22 +127,20 @@ def generate_tistory_content(topic, github_link):
     HTML 코드 작성이 끝나면, 맨 마지막 줄에 이 글에 어울리는 **검색 유입용 태그 10개**를 작성해줘.
     - 조건: 해시태그(#) 기호 제외.
     - 조건: 쉼표(,)로 구분.
-    - 예시: 프롭테크,도시재생,부동산투자,GTX,스마트시티...
     """
     
     response = model.generate_content(prompt)
     content = response.text.replace("```html", "").replace("```", "")
     
-    # 태그 분리 작업 (마지막 줄에 있다고 가정)
     lines = content.strip().split('\n')
-    tags = lines[-1] # 마지막 줄이 태그
-    html_body = "\n".join(lines[:-1]) # 나머지는 HTML
+    tags = lines[-1]
+    html_body = "\n".join(lines[:-1])
     
     return html_body, tags
 
 def deploy_to_github(topic, content):
     """깃허브 배포"""
-    print(f"🚀 [4/4] 깃허브에 먼저 배포 중...")
+    print(f"🚀 [4/5] 깃허브에 먼저 배포 중...")
     
     safe_title = topic.replace(" ", "-").replace("?", "").replace("/", "")
     filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{safe_title}.md"
@@ -176,9 +162,47 @@ def deploy_to_github(topic, content):
         print(f"❌ 배포 실패: {e}")
         return MAIN_DOMAIN_URL
 
+def save_tistory_file(topic, html, tags):
+    """티스토리 원고를 별도 텍스트 파일로 저장"""
+    print(f"💾 [5/5] 티스토리 원고 파일로 저장 중...")
+    
+    # 저장할 폴더 (없으면 생성)
+    draft_dir = "tistory_drafts"
+    os.makedirs(draft_dir, exist_ok=True)
+    
+    # 파일명 생성
+    safe_title = topic.replace(" ", "-").replace("?", "")
+    filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{safe_title}.txt"
+    filepath = os.path.join(draft_dir, filename)
+    
+    # 파일 쓰기
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write("=" * 50 + "\n")
+        f.write(f"📌 주제: {topic}\n")
+        f.write("=" * 50 + "\n\n")
+        
+        f.write("[ 1. 티스토리 태그 (복사해서 '태그' 란에 붙여넣기) ]\n")
+        f.write("-" * 50 + "\n")
+        f.write(tags)
+        f.write("\n" + "-" * 50 + "\n\n\n")
+        
+        f.write("[ 2. HTML 본문 (복사해서 'HTML 모드'에 붙여넣기) ]\n")
+        f.write("-" * 50 + "\n")
+        f.write(html)
+        f.write("\n" + "-" * 50 + "\n")
+        
+    print(f"✨ 저장 완료! 아래 파일을 열어서 복사/붙여넣기 하세요.")
+    print(f"📂 파일 위치: {filepath}")
+    
+    # 맥북에서 폴더 자동으로 열어주기 (선택사항)
+    try:
+        os.system(f"open {draft_dir}")
+    except:
+        pass
+
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🏗️  PropTech 고퀄리티 반자동 시스템 (안전모드)")
+    print("🏗️  PropTech 고퀄리티 반자동 시스템 (파일 저장 기능 추가)")
     print("="*60)
     
     topic = input("✍️  글 주제를 입력하세요: ")
@@ -196,21 +220,8 @@ if __name__ == "__main__":
         # 3. 티스토리용 HTML 생성
         tistory_html, tistory_tags = generate_tistory_content(topic, post_link)
         
-        print("\n" + "="*60)
-        print("🎉 작업 완료! 아래 내용을 티스토리에 복사/붙여넣기 하세요.")
-        print("="*60)
-        
-        print("\n[👇 티스토리 태그 (복사해서 '태그' 란에 넣으세요)]")
-        print("-" * 30)
-        print(tistory_tags)
-        print("-" * 30)
-        
-        print("\n[👇 티스토리 HTML 본문 (복사해서 'HTML 모드'에 붙여넣으세요)]")
-        print("-" * 30)
-        print(tistory_html)
-        print("-" * 30)
-        
-        print(f"\n🔗 깃허브 원문 링크: {post_link}")
+        # 4. 파일로 저장
+        save_tistory_file(topic, tistory_html, tistory_tags)
 
     else:
         print("❌ 주제를 입력하지 않았습니다.")
