@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -32,10 +32,11 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      # 👇 [여기가 핵심] 테마가 없으면 직접 받아오라고 시키는 코드
+      # 👇 [강력한 수정] 기존 테마 폴더를 삭제하고 새로 받아서 설치
       - name: Force Install PaperMod Theme
         run: |
-          git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth 1 || (cd themes/PaperMod && git pull)
+          rm -rf themes/PaperMod
+          git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth 1
 
       - name: Build with Hugo
         run: |
