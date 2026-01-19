@@ -18,7 +18,9 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
-MODEL_NAME = 'gemini-1.5-flash' 
+
+# 🚨 수정됨: 구버전 라이브러리(Python 3.9)가 인식할 수 있는 유일한 모델
+MODEL_NAME = 'gemini-pro'
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
@@ -33,29 +35,18 @@ def set_korean_font():
 
 def get_real_data_from_llm(topic):
     print(f"🧠 [1/6] '{topic}' 관련 실제 통계 데이터 조회 중...")
-    time.sleep(2) # API 숨 고르기
+    time.sleep(5) # 구형 모델이라 숨 고르기 시간을 5초로 넉넉히 줌
     
     current_year = datetime.datetime.now().year
     prompt = f"""
-    당신은 데이터 분석가입니다. 주제 "{topic}"에 대한 **실제 통계 데이터** 혹은 **가장 신뢰할 수 있는 추정치**를 알려주세요.
-    
-    [요구사항]
-    1. 2023년부터 {current_year+1}년까지의 연도별 데이터 4개를 뽑아주세요.
-    2. 데이터의 **단위(Unit)**를 반드시 명시하세요. (예: %, 명, 만원, 억원, 세대 등)
-    3. Python 딕셔너리 형태로 출력하세요.
-    
-    [출력 포맷 예시]
-    {{
-        "years": ["2023", "2024", "2025(E)", "2026(F)"],
-        "values": [3.50, 3.25, 3.00, 2.75],
-        "unit": "%",
-        "title": "한국 기준금리 추이"
-    }}
-    
-    **설명 없이 오직 JSON(딕셔너리) 코드만 출력하세요.**
+    Find real statistical data for: "{topic}" (2023-{current_year+1}).
+    Output a JSON dictionary with 'years', 'values', 'unit', 'title'.
+    Example: {{"years": ["2023", "2024"], "values": [10, 20], "unit": "%", "title": "Test"}}
+    ONLY JSON STRING. NO MARKDOWN.
     """
     try:
         response = model.generate_content(prompt)
+        # 구형 모델이 가끔 마크다운을 섞어줄 때를 대비한 강력한 청소
         clean_text = response.text.replace("```json", "").replace("```python", "").replace("```", "").strip()
         data_dict = ast.literal_eval(clean_text)
         return data_dict
@@ -65,20 +56,22 @@ def get_real_data_from_llm(topic):
             "years": ["2023", "2024", "2025", "2026"],
             "values": [100, 110, 120, 130],
             "unit": "Index",
-            "title": f"{topic} 트렌드 지수"
+            "title": f"{topic} 트렌드"
         }
 
 def generate_viral_title(topic):
     print(f"⚡ [2/6] 제목 세탁 중...")
-    time.sleep(2) # API 숨 고르기
+    time.sleep(5) 
     prompt = f"""
-    주제: "{topic}"
-    클릭을 유도하는 블로그 제목 (35자 이내).
-    규칙: "충격", "긴급", "공개", "전망" 등 단어 활용.
-    오직 제목만 출력.
+    Create a viral blog title for "{topic}" in Korean. 
+    Use strong words like "충격", "전망". Max 35 chars.
+    Output ONLY the title.
     """
-    response = model.generate_content(prompt)
-    return response.text.strip().replace('"', '')
+    try:
+        response = model.generate_content(prompt)
+        return response.text.strip().replace('"', '')
+    except:
+        return f"충격! {topic}의 미래 전망"
 
 def generate_graph(filename_base, data_dict):
     print(f"📊 [3/6] '{data_dict['unit']}' 단위로 그래프 그리는 중...")
@@ -95,11 +88,11 @@ def generate_graph(filename_base, data_dict):
     title = data_dict['title']
     
     if values[-1] > values[0]:
-        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#c62828'] # 상승
+        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#c62828'] 
     elif values[-1] < values[0]:
-        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1565c0'] # 하락
+        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1565c0'] 
     else:
-        color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] # 보합
+        color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] 
 
     plt.figure(figsize=(10, 6))
     bars = plt.bar(years, values, color=color, width=0.6)
@@ -121,8 +114,8 @@ def generate_graph(filename_base, data_dict):
     return f"/images/{img_filename}"
 
 def generate_github_content(topic, viral_title, graph_url, data_dict):
-    print(f"🤖 [4/6] 실제 데이터 기반 리포트 작성 중...")
-    time.sleep(2) # API 숨 고르기
+    print(f"🤖 [4/6] 리포트 작성 중...")
+    time.sleep(5) 
     now = datetime.datetime.now()
     
     data_summary = ""
@@ -144,41 +137,45 @@ cover:
 ---"""
 
     prompt = f"""
-    현재 날짜: {now.strftime("%Y년 %m월 %d일")}
-    주제: {topic}
-    제목: {viral_title}
-    **실제 확보된 데이터**:
+    Act as a Data Analyst.
+    Topic: {topic}
+    Title: {viral_title}
+    Data:
     {data_summary}
     
-    위 데이터를 바탕으로 전문적인 분석 글을 작성해.
+    Write a blog post in Korean (Markdown).
+    1. Fact Check (Use data)
+    2. Insight (Why it changed)
+    3. Action Plan (3 things to do)
     
-    [작성 구조]
-    1. **Fact Check**: "통계에 따르면..."이라며 위 데이터를 인용해 현재 상황 설명.
-    2. **Insight**: 수치가 변화한 원인 분석 (전문가 관점).
-    3. **Action**: 이 데이터({data_dict['values'][-1]}{data_dict['unit']})를 보고 독자가 해야 할 행동.
-    
-    **마크다운 본문만 출력.**
+    Output ONLY Markdown.
     """
     
-    response = model.generate_content(prompt)
-    body = response.text.replace("```markdown", "").replace("```", "")
+    try:
+        response = model.generate_content(prompt)
+        body = response.text.replace("```markdown", "").replace("```", "")
+    except:
+        body = "내용 생성 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
     
     full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 통계 분석 ({now.year} 기준)*\n\n{body}"
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
     print(f"🎨 [5/6] 티스토리 요약글 생성 중...")
-    time.sleep(2) # API 숨 고르기
+    time.sleep(5) 
     prompt = f"""
-    제목: {viral_title}
-    티스토리용 요약글(HTML).
-    버튼: "🚨 [클릭] 통계 데이터 전체 보기" (링크: {github_link})
-    마지막 줄: 태그 10개
+    Write a HTML teaser for a blog post about "{viral_title}".
+    Language: Korean.
+    Include a button linking to: {github_link}
+    Last line: 10 tags separated by commas.
     """
-    response = model.generate_content(prompt)
-    content = response.text.replace("```html", "").replace("```", "")
-    lines = content.strip().split('\n')
-    return "\n".join(lines[:-1]), lines[-1]
+    try:
+        response = model.generate_content(prompt)
+        content = response.text.replace("```html", "").replace("```", "")
+        lines = content.strip().split('\n')
+        return "\n".join(lines[:-1]), lines[-1]
+    except:
+        return "<p>내용을 확인하세요.</p>", "태그1, 태그2"
 
 def deploy_to_github(viral_title, content):
     print(f"🚀 [6/6] 배포 중...")
@@ -210,10 +207,10 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (Real Data + 단위 자동적용 + 에러방지)")
+    print("🔥 PropTech 봇 (호환성 모드: gemini-pro)")
     print("="*50)
     
-    topic = input("✍️  주제 입력 (예: 한국 출산율, 강남 아파트 평당가): ")
+    topic = input("✍️  주제 입력 (예: 용산 개발, 금리 전망): ")
     if topic:
         data_dict = get_real_data_from_llm(topic)
         viral_title = generate_viral_title(topic)
