@@ -3,17 +3,17 @@ import time
 import datetime
 import random
 import platform
+import ast
 import google.generativeai as genai
 import matplotlib.pyplot as plt
 from matplotlib import rc
 from git import Repo
 from dotenv import load_dotenv
 
-# .env 파일 로드
 load_dotenv()
 
 # ==============================================================================
-# [설정 영역]
+# [설정]
 # ==============================================================================
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
@@ -31,29 +31,62 @@ def set_korean_font():
             plt.rcParams['axes.unicode_minus'] = False 
         except: pass
 
+def get_real_data_from_llm(topic):
+    """
+    LLM의 지식베이스를 활용해 '실제 데이터'와 '적절한 단위'를 추출함
+    """
+    print(f"🧠 [1/6] '{topic}' 관련 실제 통계 데이터 조회 중...")
+    
+    current_year = datetime.datetime.now().year
+    
+    prompt = f"""
+    당신은 데이터 분석가입니다. 주제 "{topic}"에 대한 **실제 통계 데이터** 혹은 **가장 신뢰할 수 있는 추정치**를 알려주세요.
+    
+    [요구사항]
+    1. 2023년부터 {current_year+1}년까지의 연도별 데이터 4개를 뽑아주세요.
+    2. 데이터의 **단위(Unit)**를 반드시 명시하세요. (예: %, 명, 만원, 억원, 세대 등)
+    3. Python 딕셔너리 형태로 출력하세요.
+    
+    [출력 포맷 예시]
+    {{
+        "years": ["2023", "2024", "2025(E)", "2026(F)"],
+        "values": [3.50, 3.25, 3.00, 2.75],
+        "unit": "%",
+        "title": "한국 기준금리 추이"
+    }}
+    
+    **설명 없이 오직 JSON(딕셔너리) 코드만 출력하세요.**
+    """
+    
+    try:
+        response = model.generate_content(prompt)
+        # 텍스트 정제 (코드 블록 제거)
+        clean_text = response.text.replace("```json", "").replace("```python", "").replace("```", "").strip()
+        data_dict = ast.literal_eval(clean_text)
+        return data_dict
+    except Exception as e:
+        print(f"⚠️ 데이터 추출 실패 (기본값 사용): {e}")
+        # 실패 시 기본값
+        return {
+            "years": ["2023", "2024", "2025", "2026"],
+            "values": [100, 110, 120, 130],
+            "unit": "Index",
+            "title": f"{topic} 트렌드 지수"
+        }
+
 def generate_viral_title(topic):
-    """제목 세탁기: 클릭을 부르는 제목으로 변환"""
-    print(f"⚡ [1/6] 제목을 자극적으로 세탁하는 중...")
+    print(f"⚡ [2/6] 제목 세탁 중...")
     prompt = f"""
     주제: "{topic}"
-    
-    이 주제를 블로그 제목으로 쓸 건데, 사람들이 클릭을 안 하고는 못 배기게 **'자극적이고 논란이 될만한'** 제목으로 바꿔줘.
-    
-    [규칙]
-    1. 물음표(?)나 느낌표(!) 적극 사용.
-    2. "충격", "긴급", "폭등", "아직도", "피눈물" 같은 단어 사용.
-    3. 길이는 35자 이내.
-    4. 예시: "GTX 분석" -> "GTX 개통 임박? 지금 안 사면 벼락거지 확정입니다"
-    
-    **오직 바뀐 제목만 출력해 (따옴표 제외).**
+    클릭을 유도하는 블로그 제목 (35자 이내).
+    규칙: "충격", "긴급", "공개", "전망" 등 단어 활용.
+    오직 제목만 출력.
     """
     response = model.generate_content(prompt)
-    viral_title = response.text.strip().replace('"', '')
-    print(f"   👉 변경된 제목: {viral_title}")
-    return viral_title
+    return response.text.strip().replace('"', '')
 
-def generate_graph(topic, filename_base):
-    print("📊 [2/6] 데이터 분석 그래프 그리는 중...")
+def generate_graph(filename_base, data_dict):
+    print(f"📊 [3/6] '{data_dict['unit']}' 단위로 그래프 그리는 중...")
     set_korean_font()
     
     image_dir = os.path.join(BLOG_DIR, "static", "images")
@@ -61,16 +94,31 @@ def generate_graph(topic, filename_base):
     img_filename = f"{filename_base}-chart.png"
     img_path = os.path.join(image_dir, img_filename)
 
-    # 현재 연도 자동 인식
-    current_year = datetime.datetime.now().year
-    years = [str(current_year-3), str(current_year-2), str(current_year-1), str(current_year)+'(Now)']
-    values = [100, random.randint(110, 130), random.randint(140, 170), random.randint(190, 230)]
+    years = data_dict['years']
+    values = data_dict['values']
+    unit = data_dict['unit']
+    title = data_dict['title']
     
+    # 추세에 따른 색상 결정
+    if values[-1] > values[0]:
+        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#c62828'] # 상승(빨강)
+    elif values[-1] < values[0]:
+        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1565c0'] # 하락(파랑)
+    else:
+        color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] # 보합(보라)
+
     plt.figure(figsize=(10, 6))
-    plt.bar(years, values, color=['#b0bec5', '#90a4ae', '#ff7043', '#d84315'], width=0.6)
+    bars = plt.bar(years, values, color=color, width=0.6)
     
-    plt.title(f"Market Trend: {topic}", fontsize=14, fontweight='bold', pad=20)
-    plt.ylabel("Growth Index (Base=100)", fontsize=11)
+    # 막대 위에 수치 + 단위 표시
+    for bar in bars:
+        height = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width()/2.0, height, 
+                 f'{height}\n{unit}', 
+                 ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+    plt.title(title, fontsize=14, fontweight='bold', pad=20)
+    plt.ylabel(f"Unit: {unit}", fontsize=11)
     plt.grid(axis='y', linestyle='--', alpha=0.3)
     plt.gca().spines['top'].set_visible(False)
     plt.gca().spines['right'].set_visible(False)
@@ -79,89 +127,68 @@ def generate_graph(topic, filename_base):
     plt.close()
     return f"/images/{img_filename}"
 
-def generate_github_content(original_topic, viral_title, graph_url):
-    print(f"🤖 [3/6] 현재 시점(Today) 기준으로 글 작성 중...")
-    
-    # 🔥 [핵심] 컴퓨터의 현재 날짜를 가져와서 봇에게 주입
+def generate_github_content(topic, viral_title, graph_url, data_dict):
+    print(f"🤖 [4/6] 실제 데이터 기반 리포트 작성 중...")
     now = datetime.datetime.now()
-    today_str = now.strftime("%Y년 %m월 %d일")
-    current_year = now.year
     
-    cover_image = "https://loremflickr.com/1600/900/city,money,luxury"
+    # 데이터 요약 문자열 만들기
+    data_summary = ""
+    for y, v in zip(data_dict['years'], data_dict['values']):
+        data_summary += f"- **{y}**: {v}{data_dict['unit']}\n"
+
+    cover_image = "[https://loremflickr.com/1600/900/finance,chart,business](https://loremflickr.com/1600/900/finance,chart,business)"
 
     front_matter = f"""---
 title: "{viral_title}"
 date: {now.strftime("%Y-%m-%d")}
 draft: false
-categories: ["Insight", "Market Analysis"]
-tags: ["Investment", "Real Estate", "{current_year} Trend"]
+categories: ["Data Analysis"]
+tags: ["Statistics", "Trend", "Market"]
 cover:
     image: "{cover_image}"
     alt: "{viral_title}"
-    caption: "Data Analysis Lab"
     relative: false
-    hidden: false
 ---"""
 
     prompt = f"""
-    **[시점 고정 명령]**
-    오늘 날짜: **{today_str}**
+    현재 날짜: {now.strftime("%Y년 %m월 %d일")}
     
-    너는 지금 **{today_str}** 현재를 살고 있는 '냉철한 데이터 분석가'다.
-    모든 분석과 제언은 **오늘({today_str})**을 기준으로 작성되어야 한다.
-    
-    [절대 금지]
-    - 오늘보다 과거의 날짜(예: {current_year-1}년, {current_year-2}년)를 미래처럼 예측하지 마라.
-    - 예: "{current_year-2}년 말에 사세요" (X) -> "{current_year-2}년에 샀어야 했습니다" (O)
-    - 예: "{current_year}년 전망은..." (O)
-    
-    [작성 주제]
-    원래 주제: {original_topic}
+    주제: {topic}
     제목: {viral_title}
+    **실제 확보된 데이터**:
+    {data_summary}
     
-    [글 구조]
-    1. **Intro**: "{today_str} 기준, 최신 데이터가 업데이트되었습니다."로 시작.
-    2. **Body**:
-       - 과거 데이터와 현재 데이터를 비교하며 상승세를 증명.
-       - "위 그래프를 보세요. 지금 지표가 가리키는 방향은 명확합니다."
-       - 문단은 짧게, **핵심은 굵게**.
-    3. **Action Plan**:
-       - 독자가 **오늘 당장** 실행해야 할 3가지 행동 강령.
-       - "지금이 막차입니다." 같은 긴박함 조성.
+    위 데이터를 바탕으로 전문적인 분석 글을 작성해.
     
-    **Front Matter 제외하고 본문 마크다운만 출력.**
+    [작성 구조]
+    1. **Fact Check**: "통계에 따르면..."이라며 위 데이터를 인용해 현재 상황을 팩트로 설명.
+    2. **Insight**: 수치가 변화한 원인 분석 (전문가 관점).
+    3. **Action**: 이 데이터({data_dict['values'][-1]}{data_dict['unit']})를 보고 독자가 해야 할 행동.
+    
+    **마크다운 본문만 출력.**
     """
     
     response = model.generate_content(prompt)
     body = response.text.replace("```markdown", "").replace("```", "")
     
-    full_content = f"{front_matter}\n\n![Market Chart]({graph_url})\n*▲ {original_topic} 시장 데이터 추이 ({today_str} 기준)*\n\n{body}"
+    full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 통계 분석 ({now.year} 기준)*\n\n{body}"
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
-    print(f"🎨 [4/6] 티스토리용 요약글 생성 중...")
-    
+    print(f"🎨 [5/6] 티스토리 요약글 생성 중...")
     prompt = f"""
     제목: {viral_title}
-    
-    티스토리용 '궁금증 유발형' 요약글 (HTML).
-    1. 핵심 정보(지역, 종목)는 가리고 "블로그 본문에서 공개"라고 유도.
-    2. 버튼: "🚨 [클릭] 비공개 리포트 전체 보기" (링크: {github_link})
-    3. 버튼 스타일: 빨간색, 큼직하게.
-    4. 마지막 줄에 태그 10개(쉼표 구분).
+    티스토리용 요약글(HTML).
+    버튼: "🚨 [클릭] 통계 데이터 전체 보기" (링크: {github_link})
+    마지막 줄: 태그 10개
     """
-    
     response = model.generate_content(prompt)
     content = response.text.replace("```html", "").replace("```", "")
-    
     lines = content.strip().split('\n')
-    tags = lines[-1]
-    html_body = "\n".join(lines[:-1])
-    
-    return html_body, tags
+    return "\n".join(lines[:-1]), lines[-1]
 
 def deploy_to_github(viral_title, content):
-    print(f"🚀 [5/6] 깃허브 배포 중...")
+    print(f"🚀 [6/6] 배포 중...")
     safe_filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{hash(viral_title)}.md"
     filepath = os.path.join(BLOG_DIR, "content", "posts", safe_filename)
     
@@ -171,43 +198,43 @@ def deploy_to_github(viral_title, content):
     try:
         repo = Repo(BLOG_DIR)
         repo.git.add('--all')
-        repo.index.commit(f"New Post: {viral_title}")
+        repo.index.commit(f"Post: {viral_title}")
         origin = repo.remote(name='origin')
         origin.push()
-        print("✅ 배포 완료!")
+        print("✅ 완료!")
         return f"{MAIN_DOMAIN_URL}/posts/{safe_filename.replace('.md', '')}"
-    except:
-        return MAIN_DOMAIN_URL
+    except: return MAIN_DOMAIN_URL
 
 def save_tistory_file(viral_title, html, tags):
-    print(f"💾 [6/6] 티스토리 파일 저장 중...")
     draft_dir = "tistory_drafts"
     os.makedirs(draft_dir, exist_ok=True)
     filename = f"Draft-{datetime.datetime.now().strftime('%H%M%S')}.txt"
     filepath = os.path.join(draft_dir, filename)
-    
     with open(filepath, "w", encoding="utf-8") as f:
-        f.write(f"제목: {viral_title}\n\n[태그]\n{tags}\n\n[HTML 본문]\n{html}")
-    
-    print(f"✨ 저장 완료: {filepath}")
+        f.write(f"제목: {viral_title}\n\n[태그]\n{tags}\n\n[HTML]\n{html}")
     try: os.system(f"open {draft_dir}")
     except: pass
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 파워블로거 봇 (Real-Time 동기화)")
+    print("🔥 PropTech 봇 (Real Data + 단위 자동적용)")
     print("="*50)
     
-    original_topic = input("✍️  주제 입력: ")
-    
-    if original_topic:
-        viral_title = generate_viral_title(original_topic)
-        # 파일명은 URL 안전하게
-        safe_title = viral_title.replace(" ", "-").replace("?", "").replace("!", "")
-        graph_url = generate_graph(viral_title, "graph")
-        git_content = generate_github_content(original_topic, viral_title, graph_url)
+    topic = input("✍️  주제 입력 (예: 한국 출산율, 강남 아파트 평당가): ")
+    if topic:
+        # 1. 실제 데이터 추출
+        data_dict = get_real_data_from_llm(topic)
+        
+        # 2. 제목 생성
+        viral_title = generate_viral_title(topic)
+        
+        # 3. 그래프 (단위 포함)
+        graph_url = generate_graph("chart", data_dict)
+        
+        # 4. 글 작성
+        git_content = generate_github_content(topic, viral_title, graph_url, data_dict)
         link = deploy_to_github(viral_title, git_content)
+        
+        # 5. 티스토리
         html, tags = generate_tistory_content(viral_title, link)
         save_tistory_file(viral_title, html, tags)
-    else:
-        print("❌ 주제를 입력하세요.")
