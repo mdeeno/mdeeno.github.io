@@ -13,12 +13,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ==============================================================================
-# [설정]
+# [설정 영역]
 # ==============================================================================
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
-MODEL_NAME = 'gemini-flash-latest'
+MODEL_NAME = 'gemini-1.5-flash' 
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
@@ -32,13 +32,10 @@ def set_korean_font():
         except: pass
 
 def get_real_data_from_llm(topic):
-    """
-    LLM의 지식베이스를 활용해 '실제 데이터'와 '적절한 단위'를 추출함
-    """
     print(f"🧠 [1/6] '{topic}' 관련 실제 통계 데이터 조회 중...")
+    time.sleep(2) # API 숨 고르기
     
     current_year = datetime.datetime.now().year
-    
     prompt = f"""
     당신은 데이터 분석가입니다. 주제 "{topic}"에 대한 **실제 통계 데이터** 혹은 **가장 신뢰할 수 있는 추정치**를 알려주세요.
     
@@ -57,16 +54,13 @@ def get_real_data_from_llm(topic):
     
     **설명 없이 오직 JSON(딕셔너리) 코드만 출력하세요.**
     """
-    
     try:
         response = model.generate_content(prompt)
-        # 텍스트 정제 (코드 블록 제거)
         clean_text = response.text.replace("```json", "").replace("```python", "").replace("```", "").strip()
         data_dict = ast.literal_eval(clean_text)
         return data_dict
     except Exception as e:
         print(f"⚠️ 데이터 추출 실패 (기본값 사용): {e}")
-        # 실패 시 기본값
         return {
             "years": ["2023", "2024", "2025", "2026"],
             "values": [100, 110, 120, 130],
@@ -76,6 +70,7 @@ def get_real_data_from_llm(topic):
 
 def generate_viral_title(topic):
     print(f"⚡ [2/6] 제목 세탁 중...")
+    time.sleep(2) # API 숨 고르기
     prompt = f"""
     주제: "{topic}"
     클릭을 유도하는 블로그 제목 (35자 이내).
@@ -99,18 +94,16 @@ def generate_graph(filename_base, data_dict):
     unit = data_dict['unit']
     title = data_dict['title']
     
-    # 추세에 따른 색상 결정
     if values[-1] > values[0]:
-        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#c62828'] # 상승(빨강)
+        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#c62828'] # 상승
     elif values[-1] < values[0]:
-        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1565c0'] # 하락(파랑)
+        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1565c0'] # 하락
     else:
-        color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] # 보합(보라)
+        color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] # 보합
 
     plt.figure(figsize=(10, 6))
     bars = plt.bar(years, values, color=color, width=0.6)
     
-    # 막대 위에 수치 + 단위 표시
     for bar in bars:
         height = bar.get_height()
         plt.text(bar.get_x() + bar.get_width()/2.0, height, 
@@ -129,9 +122,9 @@ def generate_graph(filename_base, data_dict):
 
 def generate_github_content(topic, viral_title, graph_url, data_dict):
     print(f"🤖 [4/6] 실제 데이터 기반 리포트 작성 중...")
+    time.sleep(2) # API 숨 고르기
     now = datetime.datetime.now()
     
-    # 데이터 요약 문자열 만들기
     data_summary = ""
     for y, v in zip(data_dict['years'], data_dict['values']):
         data_summary += f"- **{y}**: {v}{data_dict['unit']}\n"
@@ -152,7 +145,6 @@ cover:
 
     prompt = f"""
     현재 날짜: {now.strftime("%Y년 %m월 %d일")}
-    
     주제: {topic}
     제목: {viral_title}
     **실제 확보된 데이터**:
@@ -161,7 +153,7 @@ cover:
     위 데이터를 바탕으로 전문적인 분석 글을 작성해.
     
     [작성 구조]
-    1. **Fact Check**: "통계에 따르면..."이라며 위 데이터를 인용해 현재 상황을 팩트로 설명.
+    1. **Fact Check**: "통계에 따르면..."이라며 위 데이터를 인용해 현재 상황 설명.
     2. **Insight**: 수치가 변화한 원인 분석 (전문가 관점).
     3. **Action**: 이 데이터({data_dict['values'][-1]}{data_dict['unit']})를 보고 독자가 해야 할 행동.
     
@@ -176,6 +168,7 @@ cover:
 
 def generate_tistory_content(viral_title, github_link):
     print(f"🎨 [5/6] 티스토리 요약글 생성 중...")
+    time.sleep(2) # API 숨 고르기
     prompt = f"""
     제목: {viral_title}
     티스토리용 요약글(HTML).
@@ -217,24 +210,15 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (Real Data + 단위 자동적용)")
+    print("🔥 PropTech 봇 (Real Data + 단위 자동적용 + 에러방지)")
     print("="*50)
     
     topic = input("✍️  주제 입력 (예: 한국 출산율, 강남 아파트 평당가): ")
     if topic:
-        # 1. 실제 데이터 추출
         data_dict = get_real_data_from_llm(topic)
-        
-        # 2. 제목 생성
         viral_title = generate_viral_title(topic)
-        
-        # 3. 그래프 (단위 포함)
         graph_url = generate_graph("chart", data_dict)
-        
-        # 4. 글 작성
         git_content = generate_github_content(topic, viral_title, graph_url, data_dict)
         link = deploy_to_github(viral_title, git_content)
-        
-        # 5. 티스토리
         html, tags = generate_tistory_content(viral_title, link)
         save_tistory_file(viral_title, html, tags)
