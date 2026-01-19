@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -29,14 +29,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: recursive # 여기가 핵심! (아까 등록한 서브모듈을 가져옵니다)
           fetch-depth: 0
-
-      # 👇 [강력한 수정] 기존 테마 폴더를 삭제하고 새로 받아서 설치
-      - name: Force Install PaperMod Theme
-        run: |
-          rm -rf themes/PaperMod
-          git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth 1
 
       - name: Build with Hugo
         run: |
