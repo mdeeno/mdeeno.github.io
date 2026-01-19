@@ -29,8 +29,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive # 여기가 핵심! (아까 등록한 서브모듈을 가져옵니다)
           fetch-depth: 0
+          # submodules 줄이 삭제됨 (이제 필요 없음!)
 
       - name: Build with Hugo
         run: |
