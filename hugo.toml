@@ -1,4 +1,35 @@
 baseURL = 'https://tech.mdeeno.com/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "PaperMod"
+languageCode = 'ko-kr'
+title = 'PropTech Lab'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  # 👇 [핵심] 이미지를 목록과 글 상단에 노출하는 설정
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+    responsiveImages = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 메뉴 설정 (필요하면 쓰세요)
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 20
