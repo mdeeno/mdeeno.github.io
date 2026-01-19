@@ -18,115 +18,115 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
-
-# 가장 안전한 모델 (최신 Flash)
-MODEL_NAME = 'gemini-flash-latest'
+MODEL_NAME = 'gemini-flash-latest' # 안전하고 빠른 모델
 # ==============================================================================
 
-# Gemini 설정
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel(MODEL_NAME)
 
 def set_korean_font():
-    """맥북 한글 폰트 깨짐 방지 설정 (AppleGothic)"""
-    system_name = platform.system()
-    if system_name == "Darwin": # 맥북일 경우
+    """맥북 한글 폰트 설정"""
+    if platform.system() == "Darwin":
         try:
             rc('font', family='AppleGothic')
             plt.rcParams['axes.unicode_minus'] = False 
-        except:
-            pass
+        except: pass
 
 def generate_graph(topic, filename_base):
-    """주제에 어울리는 전문적인 차트 생성"""
+    """전문가 느낌의 차트 생성 (색상 변경)"""
     print("📊 [1/5] 데이터 분석 그래프 그리는 중...")
-    
     set_korean_font()
     
     image_dir = os.path.join(BLOG_DIR, "static", "images")
     os.makedirs(image_dir, exist_ok=True)
-    
     img_filename = f"{filename_base}-chart.png"
     img_path = os.path.join(image_dir, img_filename)
 
     years = ['2023', '2024', '2025(E)', '2026(F)']
-    values = [random.randint(40, 60), random.randint(65, 85), random.randint(90, 110), random.randint(120, 150)]
+    # 우상향 그래프 데이터
+    values = [100, random.randint(110, 130), random.randint(140, 170), random.randint(180, 220)]
     
     plt.figure(figsize=(10, 6))
-    plt.bar(years, values, color=['#cfd8dc', '#90a4ae', '#546e7a', '#263238'], width=0.6)
+    # 강렬한 붉은색 계열 (상승장 느낌)
+    plt.bar(years, values, color=['#ffcdd2', '#e57373', '#f44336', '#b71c1c'], width=0.6)
     
-    plt.title(f"Growth Projection: {topic}", fontsize=14, fontweight='bold', pad=20)
-    plt.ylabel("Index / Market Value", fontsize=11)
-    plt.grid(axis='y', linestyle='--', alpha=0.5)
-    
+    plt.title(f"Market Value Projection: {topic}", fontsize=14, fontweight='bold', pad=20)
+    plt.ylabel("Growth Index (Base=100)", fontsize=11)
+    plt.grid(axis='y', linestyle='--', alpha=0.3)
     plt.gca().spines['top'].set_visible(False)
     plt.gca().spines['right'].set_visible(False)
     
     plt.savefig(img_path, dpi=100, bbox_inches='tight')
     plt.close()
-    
     return f"/images/{img_filename}"
 
 def generate_github_content(topic, graph_url):
-    """깃허브용 마크다운 본문 생성"""
+    """깃허브용: 독자를 낚는 '매운맛' 글쓰기"""
     print(f"🤖 [2/5] 깃허브용 심층 분석 글 작성 중...")
     today = datetime.datetime.now().strftime("%Y-%m-%d")
-    
-    cover_image = "https://loremflickr.com/1600/900/architecture,city,modern"
+    cover_image = "https://loremflickr.com/1600/900/city,building,finance"
 
     front_matter = f"""---
 title: "{topic}"
 date: {today}
 draft: false
-categories: ["PropTech", "Urban Insight"]
-tags: ["Data", "Analysis", "Future"]
+categories: ["Real Estate Analysis", "PropTech"]
+tags: ["Investment", "Data", "Trend"]
 cover:
     image: "{cover_image}"
     alt: "{topic}"
-    caption: "AI Data Analysis"
+    caption: "AI Data Analysis Lab"
     relative: false
     hidden: false
 ---"""
 
+    # 🔥 [핵심] 프롬프트 대폭 수정: 가독성, 체류시간, 클릭 유도
     prompt = f"""
-    당신은 월 500만 원 수익을 내는 '도시공학 석사 출신 프롭테크 전문가'입니다.
-    주제 '{topic}'에 대해 깃허브 기술 블로그에 올릴 **전문적인 마크다운 글**을 써주세요.
+    당신은 월 1,000만 원 수익을 내는 '독설가 스타일의 부동산 데이터 전문가'입니다.
+    주제 '{topic}'에 대해 블로그 글을 작성하세요.
     
-    [작성 전략]
-    1. 서론: 충격적인 통계나 질문으로 시작.
-    2. 본문: 소제목(##) 3개 이상. 논리적 근거 제시.
-    3. 데이터 언급: "상단 그래프를 보시면(Refer to the chart above)" 멘트 필수.
-    4. 결론: 향후 전망 및 제언.
-    5. 말투: 신뢰감 있는 해요체.
+    [작성 스타일 가이드]
+    1. **서론 (Hook)**:
+       - 독자의 불안 심리나 호기심을 자극하며 시작하세요. (예: "아직도 여기에 투자 안 하셨나요?", "이 데이터 보고도 안 움직이면 바보입니다.")
+       - 글 최상단에 **[3줄 요약]** 박스를 만드세요 (인용구 > 사용).
     
-    **Front Matter는 쓰지 마세요. 본문만 작성하세요.**
+    2. **본문 (Body)**:
+       - **문단은 짧게** 끊으세요. (3~4줄마다 엔터 두 번). 그래야 광고가 잘 들어갑니다.
+       - 중요한 단어는 반드시 **굵게(Bold)** 처리하세요.
+       - "위 그래프를 보세요" 라고 말하며 데이터를 근거로 제시하세요.
+       - 중간중간 "💡 **전문가의 팁:**" 섹션을 넣어 꿀팁을 주세요.
+    
+    3. **결론 (Action)**:
+       - 뜬구름 잡지 말고, **"지금 당장 해야 할 행동"**을 1, 2, 3 번호로 매겨서 알려주세요.
+       - 마지막엔 "더 늦기 전에 선점하세요." 같은 멘트로 마무리하세요.
+    
+    **Front Matter는 출력하지 말고, 본문 마크다운만 작성하세요.**
     """
     
     response = model.generate_content(prompt)
     body = response.text.replace("```markdown", "").replace("```", "")
     
-    full_content = f"{front_matter}\n\n![Data Chart]({graph_url})\n*▲ {topic} 시장 성장 예측 시뮬레이션*\n\n{body}"
+    full_content = f"{front_matter}\n\n![Market Chart]({graph_url})\n*▲ {topic} 성장 예측 시뮬레이션 (AI 분석)*\n\n{body}"
     return full_content
 
 def generate_tistory_content(topic, github_link):
-    """티스토리용 HTML 본문 + 해시태그 생성"""
-    print(f"🎨 [3/5] 티스토리용 HTML 및 해시태그 생성 중...")
+    """티스토리용: 궁금하게 만들어서 클릭 유도"""
+    print(f"🎨 [3/5] 티스토리용 낚시성 원고 생성 중...")
     
     prompt = f"""
-    주제 '{topic}'에 대해 티스토리 블로그에 올릴 **대중 친화적인 글**을 HTML 형식으로 작성해 주세요.
+    주제 '{topic}'에 대해 티스토리 블로그용 **'요약형 미끼 글'**을 HTML로 작성하세요.
     
-    [HTML 스타일 가이드]
-    1. 전체를 `<div style="font-family: 'Apple SD Gothic Neo', sans-serif; line-height: 1.8; color: #333;">` 로 감쌀 것.
-    2. 소제목은 `<h3>` 태그를 쓰고 `style="border-left: 5px solid #263238; padding-left: 10px; margin-top: 30px;"` 스타일 적용.
-    3. 중요 문장은 `<span style="background-color: #eee; font-weight: bold; padding: 2px 5px;">` 로 강조.
-    4. 글 마지막에 깃허브 원문으로 가는 **크고 예쁜 버튼** 추가 (링크: {github_link}).
-       - 버튼 멘트: "📊 더 깊이 있는 데이터 분석 원문 보러가기"
-       - 버튼 스타일: 중앙 정렬, 검은색 배경, 흰색 글씨, 둥근 모서리.
+    [작성 전략]
+    1. 핵심 결론을 알려줄 듯 말 듯 궁금증을 유발하세요.
+    2. "이 분석의 **풀버전 데이터**와 **투자 유망 리스트**는 본문에서 공개합니다."라는 멘트 필수.
+    3. 전체 스타일: `<div style="font-family: sans-serif; line-height: 1.8;">` 적용.
+    4. **매우 크고 눈에 띄는 버튼**을 만드세요.
+       - 버튼 링크: {github_link}
+       - 버튼 텍스트: "👉 (클릭) AI가 분석한 '비공개 데이터' 전체 보기"
+       - 버튼 스타일: 빨간색 배경(#d32f2f), 흰색 글씨, 폰트 크기 18px, 굵게, 중앙 정렬, 패딩 15px.
     
-    [추가 요청]
-    HTML 코드 작성이 끝나면, 맨 마지막 줄에 이 글에 어울리는 **검색 유입용 태그 10개**를 작성해줘.
-    - 조건: 해시태그(#) 기호 제외.
-    - 조건: 쉼표(,)로 구분.
+    [태그 생성]
+    HTML 코드 끝난 뒤, 맨 마지막 줄에 **검색 잘 되는 태그 10개** (쉼표 구분) 작성.
     """
     
     response = model.generate_content(prompt)
@@ -140,88 +140,48 @@ def generate_tistory_content(topic, github_link):
 
 def deploy_to_github(topic, content):
     """깃허브 배포"""
-    print(f"🚀 [4/5] 깃허브에 먼저 배포 중...")
-    
+    print(f"🚀 [4/5] 깃허브에 배포 중...")
     safe_title = topic.replace(" ", "-").replace("?", "").replace("/", "")
     filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{safe_title}.md"
     filepath = os.path.join(BLOG_DIR, "content", "posts", filename)
     
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(content)
-        
     try:
         repo = Repo(BLOG_DIR)
         repo.git.add('--all')
         repo.index.commit(f"New Post: {topic}")
         origin = repo.remote(name='origin')
         origin.push()
-        print("✅ 깃허브 배포 완료!")
-        post_url = f"{MAIN_DOMAIN_URL}/posts/{filename.replace('.md', '').lower()}"
-        return post_url
-    except Exception as e:
-        print(f"❌ 배포 실패: {e}")
+        print("✅ 배포 완료!")
+        return f"{MAIN_DOMAIN_URL}/posts/{filename.replace('.md', '').lower()}"
+    except:
         return MAIN_DOMAIN_URL
 
 def save_tistory_file(topic, html, tags):
-    """티스토리 원고를 별도 텍스트 파일로 저장"""
-    print(f"💾 [5/5] 티스토리 원고 파일로 저장 중...")
-    
-    # 저장할 폴더 (없으면 생성)
+    """티스토리 원고 저장"""
+    print(f"💾 [5/5] 티스토리 파일 저장 중...")
     draft_dir = "tistory_drafts"
     os.makedirs(draft_dir, exist_ok=True)
-    
-    # 파일명 생성
-    safe_title = topic.replace(" ", "-").replace("?", "")
-    filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{safe_title}.txt"
+    filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{topic.replace(' ', '-')}.txt"
     filepath = os.path.join(draft_dir, filename)
     
-    # 파일 쓰기
     with open(filepath, "w", encoding="utf-8") as f:
-        f.write("=" * 50 + "\n")
-        f.write(f"📌 주제: {topic}\n")
-        f.write("=" * 50 + "\n\n")
-        
-        f.write("[ 1. 티스토리 태그 (복사해서 '태그' 란에 붙여넣기) ]\n")
-        f.write("-" * 50 + "\n")
-        f.write(tags)
-        f.write("\n" + "-" * 50 + "\n\n\n")
-        
-        f.write("[ 2. HTML 본문 (복사해서 'HTML 모드'에 붙여넣기) ]\n")
-        f.write("-" * 50 + "\n")
-        f.write(html)
-        f.write("\n" + "-" * 50 + "\n")
-        
-    print(f"✨ 저장 완료! 아래 파일을 열어서 복사/붙여넣기 하세요.")
-    print(f"📂 파일 위치: {filepath}")
+        f.write(f"주제: {topic}\n\n[태그]\n{tags}\n\n[HTML]\n{html}")
     
-    # 맥북에서 폴더 자동으로 열어주기 (선택사항)
-    try:
-        os.system(f"open {draft_dir}")
-    except:
-        pass
+    print(f"✨ 저장 완료: {filepath}")
+    try: os.system(f"open {draft_dir}")
+    except: pass
 
 if __name__ == "__main__":
-    print("\n" + "="*60)
-    print("🏗️  PropTech 고퀄리티 반자동 시스템 (파일 저장 기능 추가)")
-    print("="*60)
-    
-    topic = input("✍️  글 주제를 입력하세요: ")
-    
+    print("\n" + "="*50)
+    print("🔥 PropTech 파워블로거 시스템 (매운맛 버전)")
+    print("="*50)
+    topic = input("✍️  글 주제 입력: ")
     if topic:
-        safe_title = topic.replace(" ", "-").replace("?", "")
-        
-        # 1. 그래프 생성
-        graph_url = generate_graph(topic, safe_title)
-        
-        # 2. 깃허브 글 생성 및 배포
-        github_content = generate_github_content(topic, graph_url)
-        post_link = deploy_to_github(topic, github_content)
-        
-        # 3. 티스토리용 HTML 생성
-        tistory_html, tistory_tags = generate_tistory_content(topic, post_link)
-        
-        # 4. 파일로 저장
-        save_tistory_file(topic, tistory_html, tistory_tags)
-
-    else:
-        print("❌ 주제를 입력하지 않았습니다.")
+        safe = topic.replace(" ", "-").replace("?", "")
+        url = generate_graph(topic, safe)
+        git_content = generate_github_content(topic, url)
+        link = deploy_to_github(topic, git_content)
+        html, tags = generate_tistory_content(topic, link)
+        save_tistory_file(topic, html, tags)
