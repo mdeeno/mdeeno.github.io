@@ -18,16 +18,33 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
-
-# 🔥 다시 최신 모델로 복귀! (파이썬 3.11에서만 돌아감)
-MODEL_NAME = 'gemini-1.5-flash'
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel(MODEL_NAME)
+
+def get_model(model_name='gemini-1.5-flash'):
+    """모델을 가져오되, 실패하면 구형 모델로 자동 전환하는 똑똑한 함수"""
+    return genai.GenerativeModel(model_name)
+
+def generate_content_safe(prompt, model_priority=['gemini-1.5-flash', 'gemini-pro']):
+    """
+    1순위 모델(1.5-flash)로 시도하고, 
+    404/429 에러가 나면 2순위(pro)로 자동 전환하여 무조건 성공시키는 함수
+    """
+    for model_name in model_priority:
+        try:
+            model = genai.GenerativeModel(model_name)
+            response = model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            print(f"⚠️ [{model_name}] 실패... 다음 모델로 전환합니다. (에러: {e})")
+            time.sleep(1) # 잠시 대기 후 재시도
+            continue
+    
+    # 모든 모델 실패 시
+    return "죄송합니다. 모든 AI 모델이 응답하지 않습니다."
 
 def set_korean_font():
-    """맥북 한글 폰트 설정"""
     if platform.system() == "Darwin":
         try:
             rc('font', family='AppleGothic')
@@ -35,12 +52,11 @@ def set_korean_font():
         except: pass
 
 def get_real_data_from_llm(topic):
-    print(f"🧠 [1/6] '{topic}' 관련 실제 데이터 조회 중...")
-    time.sleep(1) 
+    print(f"🧠 [1/6] '{topic}' 데이터 조회 (AI 자동 스위칭)...")
     
     current_year = datetime.datetime.now().year
     prompt = f"""
-    You are a Data Analyst. Topic: "{topic}"
+    Act as a Data Analyst. Topic: "{topic}"
     Extract real statistical data (2023-{current_year+1}).
     
     Output Format (JSON only):
@@ -52,13 +68,15 @@ def get_real_data_from_llm(topic):
     }}
     NO MARKDOWN. JUST JSON STRING.
     """
+    
+    # 🔥 여기서 안전하게 생성 요청
+    result_text = generate_content_safe(prompt)
+    
     try:
-        response = model.generate_content(prompt)
-        clean_text = response.text.replace("```json", "").replace("```python", "").replace("```", "").strip()
+        clean_text = result_text.replace("```json", "").replace("```python", "").replace("```", "").strip()
         data_dict = ast.literal_eval(clean_text)
         return data_dict
-    except Exception as e:
-        print(f"⚠️ 데이터 추출 실패 (기본값 사용): {e}")
+    except:
         return {
             "years": ["2023", "2024", "2025", "2026"],
             "values": [100, 110, 120, 130],
@@ -68,33 +86,24 @@ def get_real_data_from_llm(topic):
 
 def generate_viral_title(topic):
     print(f"⚡ [2/6] 제목 세탁 중...")
-    time.sleep(1)
     prompt = f"""
     Make a viral blog title for "{topic}" in Korean. 
     Use strong words like "충격", "긴급", "전망". Max 35 chars.
     Output ONLY the title.
     """
-    try:
-        response = model.generate_content(prompt)
-        return response.text.strip().replace('"', '')
-    except:
-        return f"충격 전망! {topic}의 미래"
+    result = generate_content_safe(prompt)
+    return result.strip().replace('"', '')
 
 def get_image_keywords(topic):
-    """주제에 맞는 이미지 키워드 추출"""
-    print(f"🎨 [3/6] '{topic}'에 어울리는 이미지 찾는 중...")
-    time.sleep(1)
+    print(f"🎨 [3/6] 이미지 키워드 추출 중...")
     prompt = f"""
     Topic: "{topic}"
     Extract 3 english keywords for stock photos.
     Example: "train,station,city"
     Output ONLY keywords (comma separated).
     """
-    try:
-        response = model.generate_content(prompt)
-        return response.text.strip().replace(" ", "")
-    except:
-        return "business,finance,tech"
+    result = generate_content_safe(prompt)
+    return result.strip().replace(" ", "")
 
 def generate_graph(filename_base, data_dict):
     print(f"📊 [4/6] '{data_dict['unit']}' 단위로 그래프 그리는 중...")
@@ -138,7 +147,6 @@ def generate_graph(filename_base, data_dict):
 
 def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
     print(f"🤖 [5/6] 리포트 작성 중...")
-    time.sleep(1)
     now = datetime.datetime.now()
     
     data_summary = ""
@@ -175,27 +183,24 @@ cover:
     Output ONLY Markdown body.
     """
     
-    try:
-        response = model.generate_content(prompt)
-        body = response.text.replace("```markdown", "").replace("```", "")
-    except:
-        body = "내용 생성 중 오류가 발생했습니다."
+    body_text = generate_content_safe(prompt)
+    body = body_text.replace("```markdown", "").replace("```", "")
     
     full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 통계 분석 ({now.year} 기준)*\n\n{body}"
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
     print(f"🎨 [6/6] 티스토리 요약글 생성 중...")
-    time.sleep(1)
     prompt = f"""
     Write a HTML teaser for a blog post about "{viral_title}".
     Language: Korean.
     Include a button linking to: {github_link}
     Last line: 10 tags separated by commas.
     """
+    result = generate_content_safe(prompt)
+    
     try:
-        response = model.generate_content(prompt)
-        content = response.text.replace("```html", "").replace("```", "")
+        content = result.replace("```html", "").replace("```", "")
         lines = content.strip().split('\n')
         return "\n".join(lines[:-1]), lines[-1]
     except:
@@ -231,7 +236,9 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (Python 3.11 + 1.5 Flash 엔진)")
+    print("🔥 PropTech 봇 (AI 자동 스위칭 모드)")
+    print("   1순위: gemini-1.5-flash (최신)")
+    print("   2순위: gemini-pro (안전빵)")
     print("="*50)
     
     topic = input("✍️  주제 입력 (예: 금리 전망, 삼성전자 주가): ")
