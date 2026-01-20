@@ -19,7 +19,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# ✅ 수정됨: 이제 최신 환경이라 이 '혜자 모델(1.5 Flash)'이 100% 돌아갑니다!
+# 🔥 다시 최신 모델로 복귀! (파이썬 3.11에서만 돌아감)
 MODEL_NAME = 'gemini-1.5-flash'
 # ==============================================================================
 
@@ -35,14 +35,10 @@ def set_korean_font():
         except: pass
 
 def get_real_data_from_llm(topic):
-    print(f"🧠 [1/6] '{topic}' 관련 실제 통계 데이터 조회 중...")
-    # 최신 모델은 속도가 빨라서 sleep을 짧게 줘도 됩니다
+    print(f"🧠 [1/6] '{topic}' 관련 실제 데이터 조회 중...")
     time.sleep(1) 
     
     current_year = datetime.datetime.now().year
-    
-    # 최신 라이브러리라 마크다운 제거 로직을 조금 더 깔끔하게 처리가능하지만
-    # 안전을 위해 기존 로직 유지
     prompt = f"""
     You are a Data Analyst. Topic: "{topic}"
     Extract real statistical data (2023-{current_year+1}).
@@ -84,8 +80,24 @@ def generate_viral_title(topic):
     except:
         return f"충격 전망! {topic}의 미래"
 
+def get_image_keywords(topic):
+    """주제에 맞는 이미지 키워드 추출"""
+    print(f"🎨 [3/6] '{topic}'에 어울리는 이미지 찾는 중...")
+    time.sleep(1)
+    prompt = f"""
+    Topic: "{topic}"
+    Extract 3 english keywords for stock photos.
+    Example: "train,station,city"
+    Output ONLY keywords (comma separated).
+    """
+    try:
+        response = model.generate_content(prompt)
+        return response.text.strip().replace(" ", "")
+    except:
+        return "business,finance,tech"
+
 def generate_graph(filename_base, data_dict):
-    print(f"📊 [3/6] '{data_dict['unit']}' 단위로 그래프 그리는 중...")
+    print(f"📊 [4/6] '{data_dict['unit']}' 단위로 그래프 그리는 중...")
     set_korean_font()
     
     image_dir = os.path.join(BLOG_DIR, "static", "images")
@@ -98,13 +110,12 @@ def generate_graph(filename_base, data_dict):
     unit = data_dict['unit']
     title = data_dict['title']
     
-    # 색상 테마 자동 결정
     if values[-1] > values[0]:
-        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#c62828'] # 상승(빨강)
+        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#c62828'] 
     elif values[-1] < values[0]:
-        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1565c0'] # 하락(파랑)
+        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1565c0'] 
     else:
-        color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] # 보합(보라)
+        color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] 
 
     plt.figure(figsize=(10, 6))
     bars = plt.bar(years, values, color=color, width=0.6)
@@ -125,8 +136,8 @@ def generate_graph(filename_base, data_dict):
     plt.close()
     return f"/images/{img_filename}"
 
-def generate_github_content(topic, viral_title, graph_url, data_dict):
-    print(f"🤖 [4/6] 리포트 작성 중...")
+def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
+    print(f"🤖 [5/6] 리포트 작성 중...")
     time.sleep(1)
     now = datetime.datetime.now()
     
@@ -134,7 +145,7 @@ def generate_github_content(topic, viral_title, graph_url, data_dict):
     for y, v in zip(data_dict['years'], data_dict['values']):
         data_summary += f"- **{y}**: {v}{data_dict['unit']}\n"
 
-    cover_image = "[https://loremflickr.com/1600/900/finance,chart,business](https://loremflickr.com/1600/900/finance,chart,business)"
+    cover_image = f"[https://loremflickr.com/1600/900/](https://loremflickr.com/1600/900/){img_keywords}"
 
     front_matter = f"""---
 title: "{viral_title}"
@@ -174,7 +185,7 @@ cover:
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
-    print(f"🎨 [5/6] 티스토리 요약글 생성 중...")
+    print(f"🎨 [6/6] 티스토리 요약글 생성 중...")
     time.sleep(1)
     prompt = f"""
     Write a HTML teaser for a blog post about "{viral_title}".
@@ -191,7 +202,7 @@ def generate_tistory_content(viral_title, github_link):
         return "<p>내용을 확인하세요.</p>", "태그1, 태그2"
 
 def deploy_to_github(viral_title, content):
-    print(f"🚀 [6/6] 배포 중...")
+    print(f"🚀 [7/7] 배포 중...") 
     safe_filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{hash(viral_title)}.md"
     filepath = os.path.join(BLOG_DIR, "content", "posts", safe_filename)
     
@@ -220,15 +231,16 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (최신형 1.5-Flash 가동)")
+    print("🔥 PropTech 봇 (Python 3.11 + 1.5 Flash 엔진)")
     print("="*50)
     
     topic = input("✍️  주제 입력 (예: 금리 전망, 삼성전자 주가): ")
     if topic:
         data_dict = get_real_data_from_llm(topic)
         viral_title = generate_viral_title(topic)
+        img_keywords = get_image_keywords(topic)
         graph_url = generate_graph("chart", data_dict)
-        git_content = generate_github_content(topic, viral_title, graph_url, data_dict)
+        git_content = generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords)
         link = deploy_to_github(viral_title, git_content)
         html, tags = generate_tistory_content(viral_title, link)
         save_tistory_file(viral_title, html, tags)
