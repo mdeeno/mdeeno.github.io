@@ -23,40 +23,32 @@ MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 genai.configure(api_key=GEMINI_API_KEY)
 
 def find_working_model():
-    """
-    [최종 수정] 딴눈 팔지 않고 오직 '1.5-flash'만 찾아서 연결합니다.
-    """
-    print("🔍 [시스템] 무료 혜자 모델(1.5 Flash) 연결 중...", end=" ")
+    """안정적인 모델 자동 연결 (1.5 Flash 우선)"""
+    print("🔍 [시스템] 최적의 AI 모델 탐색 중...", end=" ")
     try:
-        # 내 API 키로 쓸 수 있는 모델 리스트 가져오기
         my_models = [m.name for m in genai.list_models() if 'generateContent' in m.supported_generation_methods]
         
-        # 1.5 Flash가 있는지 확인 (가장 정확한 이름 매칭)
         target_model = 'models/gemini-1.5-flash'
-        
         if target_model in my_models:
-            print(f"성공! 👉 [{target_model}]")
+            print(f"연결됨! 👉 [{target_model}]")
             return target_model
         
-        # 혹시 이름이 조금 다를 경우를 대비해 검색
         for m in my_models:
             if 'gemini-1.5-flash' in m:
-                print(f"성공! 👉 [{m}]")
+                print(f"연결됨! 👉 [{m}]")
                 return m
 
-        print("\n⚠️ 목록에서 못 찾았지만, 강제로 연결을 시도합니다.")
+        print("\n⚠️ 강제 연결 시도 (models/gemini-1.5-flash)")
         return 'models/gemini-1.5-flash'
             
     except Exception as e:
-        print(f"\n⚠️ 모델 탐색 에러(무시하고 진행): {e}")
+        print(f"\n⚠️ 모델 탐색 에러: {e}")
         return 'models/gemini-1.5-flash'
 
-# 모델 확정
 ACTIVE_MODEL_NAME = find_working_model()
 model = genai.GenerativeModel(ACTIVE_MODEL_NAME)
 
 def set_korean_font():
-    """맥북 한글 폰트 설정"""
     if platform.system() == "Darwin":
         try:
             rc('font', family='AppleGothic')
@@ -96,18 +88,29 @@ def get_real_data_from_llm(topic):
         }
 
 def generate_viral_title(topic):
-    print(f"⚡ [2/6] 제목 세탁 중...")
+    print(f"⚡ [2/6] 제목 생성 중 (전문가 톤)...")
     time.sleep(1)
+    
+    # 🔥 수정됨: '충격', '경악' 금지 -> '분석', '전망', '인사이트' 사용
     prompt = f"""
-    Make a viral blog title for "{topic}" in Korean. 
-    Use strong words like "충격", "긴급", "전망". Max 35 chars.
+    Act as a Professional PropTech Analyst.
+    Create a high-quality blog title for "{topic}" in Korean.
+    
+    [Rules]
+    1. Tone: Professional, Insightful, Objective. (No clickbait like '충격', '피눈물')
+    2. Keywords: Use words like '분석', '전망', '핵심', '데이터'.
+    3. Format examples:
+       - "[분석] {topic}의 현황과 미래 전망"
+       - "{topic}: 데이터로 보는 2026년 트렌드"
+    4. Max 40 chars.
+    
     Output ONLY the title.
     """
     try:
         response = model.generate_content(prompt)
         return response.text.strip().replace('"', '')
     except:
-        return f"충격 전망! {topic}의 미래"
+        return f"[분석] {topic}: 데이터 기반 전망"
 
 def get_image_keywords(topic):
     print(f"🎨 [3/6] 이미지 키워드 추출 중...")
@@ -115,7 +118,7 @@ def get_image_keywords(topic):
     prompt = f"""
     Topic: "{topic}"
     Extract 3 english keywords for stock photos.
-    Example: "train,station,city"
+    Keywords should be professional (e.g., architecture, graph, meeting).
     Output ONLY keywords (comma separated).
     """
     try:
@@ -138,10 +141,11 @@ def generate_graph(filename_base, data_dict):
     unit = data_dict['unit']
     title = data_dict['title']
     
+    # 색상도 차분하게 변경 (파스텔 톤)
     if values[-1] > values[0]:
-        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#c62828'] 
+        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#d32f2f'] # 차분한 레드
     elif values[-1] < values[0]:
-        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1565c0'] 
+        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1976d2'] # 차분한 블루
     else:
         color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] 
 
@@ -179,26 +183,32 @@ def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywor
 title: "{viral_title}"
 date: {now.strftime("%Y-%m-%d")}
 draft: false
-categories: ["Data Analysis"]
-tags: ["Statistics", "Trend", "Market"]
+categories: ["Market Insight"]
+tags: ["Data Analysis", "Real Estate", "Tech"]
 cover:
     image: "{cover_image}"
     alt: "{viral_title}"
     relative: false
 ---"""
 
+    # 🔥 본문 톤도 '전문가'로 수정
     prompt = f"""
-    Act as a Professional Data Analyst.
+    Act as a Senior Urban Engineer & Data Analyst.
     Topic: {topic}
     Title: {viral_title}
     Data:
     {data_summary}
     
-    Write a blog post in Korean (Markdown).
-    Structure:
-    1. **Fact Check**: Explain the data objectively.
-    2. **Insight**: Why is this happening?
-    3. **Action Plan**: What should the reader do NOW?
+    Write a professional blog post in Korean (Markdown).
+    
+    [Style Guide]
+    - Tone: Analytical, Logical, Trustworthy (Like a McKinsey report).
+    - Avoid: Emojis, exclamation marks(!!), slang.
+    
+    [Structure]
+    1. **Executive Summary**: Brief overview of the trend.
+    2. **Data Analysis**: Deep dive into the provided numbers.
+    3. **Strategic Implication**: What this means for the market.
     
     Output ONLY Markdown body.
     """
@@ -209,16 +219,17 @@ cover:
     except:
         body = "내용 생성 중 오류가 발생했습니다."
     
-    full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 통계 분석 ({now.year} 기준)*\n\n{body}"
+    full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 데이터 분석 ({now.year} 기준)*\n\n{body}"
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
     print(f"🎨 [6/6] 티스토리 요약글 생성 중...")
     time.sleep(1)
     prompt = f"""
-    Write a HTML teaser for a blog post about "{viral_title}".
+    Write a HTML teaser for a professional tech blog post about "{viral_title}".
     Language: Korean.
-    Include a button linking to: {github_link}
+    Tone: Professional.
+    Include a button linking to: {github_link} ("전문 읽기")
     Last line: 10 tags separated by commas.
     """
     try:
@@ -240,7 +251,7 @@ def deploy_to_github(viral_title, content):
     try:
         repo = Repo(BLOG_DIR)
         repo.git.add('--all')
-        repo.index.commit(f"Post: {viral_title}")
+        repo.index.commit(f"New Report: {viral_title}")
         origin = repo.remote(name='origin')
         origin.push()
         print("✅ 완료!")
@@ -250,7 +261,7 @@ def deploy_to_github(viral_title, content):
 def save_tistory_file(viral_title, html, tags):
     draft_dir = "tistory_drafts"
     os.makedirs(draft_dir, exist_ok=True)
-    filename = f"Draft-{datetime.datetime.now().strftime('%H%M%S')}.txt"
+    filename = f"Report-{datetime.datetime.now().strftime('%H%M%S')}.txt"
     filepath = os.path.join(draft_dir, filename)
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(f"제목: {viral_title}\n\n[태그]\n{tags}\n\n[HTML]\n{html}")
@@ -259,11 +270,11 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (1.5 Flash 강제 고정)")
+    print("🔥 PropTech 봇 (Professional Analyst Mode)")
     print("="*50)
     
     if ACTIVE_MODEL_NAME:
-        topic = input("✍️  주제 입력: ")
+        topic = input("✍️  분석할 주제 입력: ")
         if topic:
             data_dict = get_real_data_from_llm(topic)
             viral_title = generate_viral_title(topic)
