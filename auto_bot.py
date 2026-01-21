@@ -19,12 +19,38 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🚨 해결: 사용자님 명단에 있는 '최고 가성비' 모델 확정
-MODEL_NAME = 'gemini-2.0-flash'
+# 🚨 생존 전략: 무료 가능성이 높은 순서대로 '후보군'을 편성합니다.
+# 1번이 막히면(429), 즉시 2번으로 갈아탑니다.
+MODEL_CANDIDATES = [
+    'gemini-2.0-flash-exp',        # 1타자: 2.0 실험버전 (보통 무료)
+    'gemini-flash-latest',         # 2타자: 최신 알리아스 (1.5 Flash로 연결될 확률 높음)
+    'gemini-exp-1206',             # 3타자: 12월 실험버전 (매우 빠름)
+    'gemini-2.0-flash-lite-preview-02-05', # 4타자: 경량화 프리뷰
+    'gemini-2.5-flash-lite-preview-09-2025' # 5타자: 최신 경량
+]
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel(MODEL_NAME)
+
+def generate_content_with_survival(prompt):
+    """
+    [핵심 기능] 후보 모델들을 순서대로 순회하며 실행합니다.
+    하나라도 성공하면 즉시 결과를 반환합니다.
+    """
+    for model_name in MODEL_CANDIDATES:
+        try:
+            # print(f"   👉 시도 중: [{model_name}]...", end=" ")
+            model = genai.GenerativeModel(model_name)
+            response = model.generate_content(prompt)
+            # print("성공! ✅")
+            return response.text
+        except Exception as e:
+            # print(f"실패(Next).", end=" ")
+            continue # 다음 모델로 넘어감
+            
+    # 모든 모델이 다 실패했을 경우 (정말 최악의 상황)
+    print("\n❌ 모든 모델이 응답하지 않습니다.")
+    raise Exception("All models failed")
 
 def set_korean_font():
     if platform.system() == "Darwin":
@@ -34,8 +60,8 @@ def set_korean_font():
         except: pass
 
 def get_real_data_from_llm(topic):
-    print(f"🧠 [1/6] '{topic}' 정밀 분석 중 (Model: 2.0 Flash)...")
-    time.sleep(2) 
+    print(f"🧠 [1/6] '{topic}' 정밀 분석 중 (서바이벌 모드)...")
+    time.sleep(1) 
     
     current_year = datetime.datetime.now().year
     prompt = f"""
@@ -52,8 +78,9 @@ def get_real_data_from_llm(topic):
     NO MARKDOWN. ONLY JSON STRING.
     """
     try:
-        response = model.generate_content(prompt)
-        clean_text = response.text.replace("```json", "").replace("```python", "").replace("```", "").strip()
+        # 🔥 서바이벌 함수 사용
+        result_text = generate_content_with_survival(prompt)
+        clean_text = result_text.replace("```json", "").replace("```python", "").replace("```", "").strip()
         data_dict = ast.literal_eval(clean_text)
         return data_dict
     except Exception as e:
@@ -67,27 +94,27 @@ def get_real_data_from_llm(topic):
 
 def generate_viral_title(topic):
     print(f"⚡ [2/6] 제목 생성 중 (전문가 톤)...")
-    time.sleep(2)
+    time.sleep(1)
     prompt = f"""
     Act as a Senior Analyst.
     Create a professional blog title for "{topic}" in Korean.
     
     Rules:
-    1. No clickbait (Don't use '충격', '경악').
+    1. No clickbait.
     2. Use words like '분석', '전망', '데이터', '인사이트'.
     3. Format: "[분석] ..." or "... 전망과 시사점"
     
     Output ONLY the title.
     """
     try:
-        response = model.generate_content(prompt)
-        return response.text.strip().replace('"', '')
+        result = generate_content_with_survival(prompt)
+        return result.strip().replace('"', '')
     except:
         return f"[분석] {topic}: 현황과 전망"
 
 def get_image_keywords(topic):
     print(f"🎨 [3/6] 이미지 키워드 추출 중...")
-    time.sleep(2)
+    time.sleep(1)
     prompt = f"""
     Topic: "{topic}"
     Extract 3 english keywords for stock photos.
@@ -95,8 +122,8 @@ def get_image_keywords(topic):
     Output ONLY keywords (comma separated).
     """
     try:
-        response = model.generate_content(prompt)
-        return response.text.strip().replace(" ", "")
+        result = generate_content_with_survival(prompt)
+        return result.strip().replace(" ", "")
     except:
         return "business,finance,building"
 
@@ -142,7 +169,7 @@ def generate_graph(filename_base, data_dict):
 
 def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
     print(f"🤖 [5/6] 리포트 작성 중...")
-    time.sleep(2)
+    time.sleep(1)
     now = datetime.datetime.now()
     
     data_summary = ""
@@ -185,8 +212,8 @@ cover:
     """
     
     try:
-        response = model.generate_content(prompt)
-        body = response.text.replace("```markdown", "").replace("```", "")
+        result = generate_content_with_survival(prompt)
+        body = result.replace("```markdown", "").replace("```", "")
     except:
         body = "내용 생성 중 오류가 발생했습니다."
     
@@ -195,7 +222,7 @@ cover:
 
 def generate_tistory_content(viral_title, github_link):
     print(f"🎨 [6/6] 티스토리 요약글 생성 중...")
-    time.sleep(2)
+    time.sleep(1)
     prompt = f"""
     Write a HTML teaser for a professional blog post about "{viral_title}".
     Language: Korean.
@@ -204,8 +231,8 @@ def generate_tistory_content(viral_title, github_link):
     Last line: 10 tags separated by commas.
     """
     try:
-        response = model.generate_content(prompt)
-        content = response.text.replace("```html", "").replace("```", "")
+        result = generate_content_with_survival(prompt)
+        content = result.replace("```html", "").replace("```", "")
         lines = content.strip().split('\n')
         return "\n".join(lines[:-1]), lines[-1]
     except:
@@ -241,7 +268,8 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (Engine: Gemini 2.0 Flash)")
+    print("🔥 PropTech 봇 (서바이벌 모드)")
+    print("   * 1순위가 막히면 2순위로 자동 전환합니다.")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
