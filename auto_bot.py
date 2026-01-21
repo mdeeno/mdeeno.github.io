@@ -24,49 +24,34 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 def find_working_model():
     """
-    [핵심 기능] 구글 서버에 직접 물어봐서 '지금 당장 사용 가능한' 모델 이름을 가져옵니다.
-    추측해서 이름을 넣지 않고, 서버에 등록된 정확한 이름을 가져오므로 404 에러가 원천 차단됩니다.
+    [최종 수정] 딴눈 팔지 않고 오직 '1.5-flash'만 찾아서 연결합니다.
     """
-    print("🔍 [시스템] 사용 가능한 AI 모델을 탐색 중입니다...", end=" ")
+    print("🔍 [시스템] 무료 혜자 모델(1.5 Flash) 연결 중...", end=" ")
     try:
-        # 사용 가능한 모든 모델 리스트 요청
-        available_models = []
-        for m in genai.list_models():
-            if 'generateContent' in m.supported_generation_methods:
-                available_models.append(m.name)
+        # 내 API 키로 쓸 수 있는 모델 리스트 가져오기
+        my_models = [m.name for m in genai.list_models() if 'generateContent' in m.supported_generation_methods]
         
-        # 1순위: 1.5 Flash (속도/성능 최강)
-        for m in available_models:
+        # 1.5 Flash가 있는지 확인 (가장 정확한 이름 매칭)
+        target_model = 'models/gemini-1.5-flash'
+        
+        if target_model in my_models:
+            print(f"성공! 👉 [{target_model}]")
+            return target_model
+        
+        # 혹시 이름이 조금 다를 경우를 대비해 검색
+        for m in my_models:
             if 'gemini-1.5-flash' in m:
-                print(f"찾았다! 👉 [{m}]")
-                return m
-        
-        # 2순위: 1.5 Pro
-        for m in available_models:
-            if 'gemini-1.5-pro' in m:
-                print(f"찾았다! 👉 [{m}]")
+                print(f"성공! 👉 [{m}]")
                 return m
 
-        # 3순위: 1.0 Pro (구형이지만 안정적)
-        for m in available_models:
-            if 'gemini-pro' in m: # 1.0 Pro
-                print(f"찾았다! 👉 [{m}]")
-                return m
-                
-        # 아무것도 못 찾았을 때
-        if available_models:
-            print(f"대체 모델 사용 👉 [{available_models[0]}]")
-            return available_models[0]
-        else:
-            print("\n❌ [치명적 오류] 사용 가능한 모델이 하나도 없습니다. API 키를 확인해주세요.")
-            return None
+        print("\n⚠️ 목록에서 못 찾았지만, 강제로 연결을 시도합니다.")
+        return 'models/gemini-1.5-flash'
             
     except Exception as e:
-        print(f"\n❌ 모델 탐색 실패: {e}")
-        # 최후의 수단으로 기본 이름 반환
+        print(f"\n⚠️ 모델 탐색 에러(무시하고 진행): {e}")
         return 'models/gemini-1.5-flash'
 
-# 🔥 봇이 시작될 때 딱 한 번, 최고의 모델을 확정하고 시작합니다.
+# 모델 확정
 ACTIVE_MODEL_NAME = find_working_model()
 model = genai.GenerativeModel(ACTIVE_MODEL_NAME)
 
@@ -274,7 +259,7 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (AI 모델 자동 탐지 버전)")
+    print("🔥 PropTech 봇 (1.5 Flash 강제 고정)")
     print("="*50)
     
     if ACTIVE_MODEL_NAME:
