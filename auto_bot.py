@@ -5,6 +5,7 @@ import random
 import platform
 import ast
 import urllib.parse
+import json
 import google.generativeai as genai
 import matplotlib.pyplot as plt
 from matplotlib import rc
@@ -20,40 +21,39 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🚨 무료 티어 생존용 모델 리스트
+# 🚨 API 호출 절약을 위해 가장 성능 좋은 모델 하나만 집중 공략
 MODEL_CANDIDATES = [
     'gemini-2.0-flash-exp',
     'gemini-2.5-flash',
-    'gemini-exp-1206',
 ]
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-def generate_content_with_retry(prompt):
+def generate_with_backoff(prompt):
     """
-    [핵심 수정] 실패 시 'None'을 반환하여 프로그램이 죽지 않게 함
+    [API 절약 모드] 
+    호출 횟수를 줄였으므로, 한 번 실패하면 조금 더 길게(60초) 쉽니다.
     """
     for model_name in MODEL_CANDIDATES:
         try:
             model = genai.GenerativeModel(model_name)
+            # JSON 응답을 강제하기 위한 설정
             response = model.generate_content(prompt)
             return response.text
         except Exception as e:
             error_msg = str(e)
             if "429" in error_msg or "Resource exhausted" in error_msg:
-                print(f"   ⏳ [과열] {model_name} 식히는 중... (30초 대기)")
-                time.sleep(30) # 대기 시간 증가
+                print(f"   ⏳ [서버 과부하] {model_name} 대기 중... (60초 휴식)")
+                time.sleep(60)
                 try:
-                    print(f"   🔄 [재시도] 다시 요청...")
+                    print(f"   🔄 [재시도] 다시 시도합니다...")
                     response = model.generate_content(prompt)
                     return response.text
                 except:
                     continue
             continue
-            
-    print("\n⚠️ [경고] 모든 AI 모델 응답 실패. 비상 모드로 전환합니다.")
-    return None # 에러를 내지 않고 None 반환
+    return None
 
 def set_korean_font():
     if platform.system() == "Darwin":
@@ -62,75 +62,67 @@ def set_korean_font():
             plt.rcParams['axes.unicode_minus'] = False 
         except: pass
 
-def get_real_data_from_llm(topic):
-    print(f"🧠 [1/6] 수익성 분석 중...")
-    
+def get_all_metadata_at_once(topic):
+    """
+    🔥 [핵심] 4번의 질문을 1번으로 압축합니다.
+    (데이터, 제목, 이미지 프롬프트, 티스토리 요약을 한 방에 받음)
+    """
+    print(f"🧠 [1/3] '{topic}' 기획안 작성 중 (통합 API 호출)...")
     current_year = datetime.datetime.now().year
+    
     prompt = f"""
-    Topic: "{topic}"
-    Task: Extract real investment trends & ROI data (2023-{current_year+1}).
-    Output Format (JSON only): {{"years": ["2023", "2024", "2025", "2026"], "values": [10, 15, 23, 35], "unit": "ROI(%)", "title": "Growth"}}
-    NO MARKDOWN. ONLY JSON STRING.
+    Act as a Real Estate Expert. Analyze the topic: "{topic}".
+    
+    Return a JSON object containing ALL the following information:
+    1. "roi_data": Trend data (2023-{current_year+1}) with years, values(index/roi), unit, title.
+    2. "viral_title": A click-bait style Korean title about Profit/ROI.
+    3. "image_keywords": 2 English prompts (1 for cover: city/construction, 1 for mid-content: blueprint/graph).
+    4. "tistory_teaser": A HTML summary (3 bullet points + call to action).
+    
+    Output Format (JSON Only):
+    {{
+        "roi_data": {{
+            "years": ["2023", "2024", "2025", "2026"],
+            "values": [10, 20, 30, 40],
+            "unit": "ROI(%)",
+            "title": "Title Here"
+        }},
+        "viral_title": "Korean Title Here",
+        "image_keywords": ["Cover Prompt English", "Mid Prompt English"],
+        "tistory_teaser": "<h3>Title</h3><ul><li>Point 1</li><li>Point 2</li></ul>..."
+    }}
+    NO MARKDOWN. JUST JSON STRING.
     """
     
-    result_text = generate_content_with_retry(prompt)
+    result = generate_with_backoff(prompt)
     
-    # AI 실패 시 기본값 사용
-    if not result_text:
-        return {
+    # 실패 시 기본값 (프로그램 죽음 방지)
+    default_data = {
+        "roi_data": {
             "years": ["2023", "2024", "2025", "2026"],
             "values": [100, 110, 120, 130],
             "unit": "Index",
-            "title": f"{topic} 시장 전망"
-        }
-        
-    try:
-        clean_text = result_text.replace("```json", "").replace("```python", "").replace("```", "").strip()
-        data_dict = ast.literal_eval(clean_text)
-        return data_dict
-    except:
-        return {
-            "years": ["2023", "2024", "2025", "2026"],
-            "values": [100, 110, 120, 130],
-            "unit": "Index",
-            "title": f"{topic} 시장 전망"
-        }
+            "title": f"{topic} 전망"
+        },
+        "viral_title": f"[투자분석] {topic}: 심층 분석 리포트",
+        "image_keywords": ["modern city skyline", "architectural blueprint"],
+        "tistory_teaser": f"<h3>{topic} 분석</h3><p>상세 내용은 블로그에서 확인하세요.</p>"
+    }
 
-def generate_viral_title(topic):
-    print(f"⚡ [2/6] 제목 생성 중...")
-    
-    prompt = f"""
-    Create a click-bait blog title for "{topic}" in Korean.
-    Focus on Profit, ROI. Example: "2026년 {topic}: 지금 사야 할 이유"
-    Output ONLY the title.
-    """
-    result = generate_content_with_retry(prompt)
-    if not result: return f"[투자분석] {topic}: 데이터로 보는 전망"
-    return result.strip().replace('"', '')
-
-def get_image_prompts(topic):
-    print(f"🎨 [3/6] 이미지 프롬프트 작성 중...")
-    
-    prompt = f"""
-    Topic: "{topic}"
-    Create 2 English image prompts: 1. Cover (City/Construction), 2. Mid-content (Blueprint/Graph).
-    Output Format: Prompt1, Prompt2
-    """
-    result = generate_content_with_retry(prompt)
-    
     if not result:
-        return "modern city skyline golden hour", "architectural blueprint plan"
-        
+        print("⚠️ API 호출 실패. 기본값을 사용합니다.")
+        return default_data
+
     try:
-        prompts = result.split(',')
-        if len(prompts) >= 2:
-            return prompts[0].strip(), prompts[1].strip()
-        return "modern city skyline", "architectural blueprint"
-    except:
-        return "modern city skyline", "architectural blueprint"
+        clean_json = result.replace("```json", "").replace("```", "").strip()
+        data = json.loads(clean_json)
+        return data
+    except Exception as e:
+        print(f"⚠️ JSON 파싱 실패({e}). 기본값을 사용합니다.")
+        return default_data
 
 def generate_graph(filename_base, data_dict):
-    print(f"📊 [4/6] 그래프 생성 중...")
+    print(f"📊 [2/3] 그래프 생성 중 (로컬 작업)...")
     set_korean_font()
     
     image_dir = os.path.join(BLOG_DIR, "static", "images")
@@ -166,20 +158,26 @@ def generate_graph(filename_base, data_dict):
     plt.close()
     return f"/images/{img_filename}"
 
-def generate_github_content(topic, viral_title, graph_url, data_dict, cover_prompt, mid_prompt):
-    print(f"🤖 [5/6] 본문 작성 중...")
-    now = datetime.datetime.now()
+def generate_blog_post(topic, metadata, graph_url):
+    print(f"🤖 [3/3] 본문 작성 중 (2번째 API 호출)...")
     
-    data_summary = ""
-    for y, v in zip(data_dict['years'], data_dict['values']):
-        data_summary += f"- **{y}**: {v}{data_dict['unit']}\n"
+    # 60초 강제 휴식 (연속 호출 방지)
+    print("   ⏳ 안전한 API 사용을 위해 30초 대기합니다...")
+    time.sleep(30)
 
-    encoded_cover = urllib.parse.quote(cover_prompt)
-    encoded_mid = urllib.parse.quote(mid_prompt)
+    viral_title = metadata['viral_title']
+    roi_data = metadata['roi_data']
+    img_prompts = metadata['image_keywords']
     
-    # 🔥 [오타 수정 완료] []() 제거함
-    cover_image = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_cover}?width=1600&height=900&nologo=true"
-    mid_image_url = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_mid}?width=800&height=500&nologo=true"
+    # 이미지 URL 생성
+    encoded_cover = urllib.parse.quote(img_prompts[0])
+    encoded_mid = urllib.parse.quote(img_prompts[1]) if len(img_prompts) > 1 else urllib.parse.quote("architecture")
+    
+    cover_image = f"https://image.pollinations.ai/prompt/{encoded_cover}?width=1600&height=900&nologo=true"
+    mid_image_url = f"https://image.pollinations.ai/prompt/{encoded_mid}?width=800&height=500&nologo=true"
+
+    now = datetime.datetime.now()
+    data_summary = f"Trends: {roi_data['years']} -> {roi_data['values']}"
 
     front_matter = f"""---
 title: "{viral_title}"
@@ -194,86 +192,32 @@ cover:
 ---"""
 
     prompt = f"""
-    Act as a Real Estate Investment Consultant.
-    Topic: {topic}
+    Act as a Real Estate Consultant. Topic: {topic}
     Title: {viral_title}
     Data: {data_summary}
-    Mid-Content Image URL: {mid_image_url}
+    Mid-Image: {mid_image_url}
     
-    Write a blog post in Korean (Markdown).
+    Write a high-quality blog post in Korean (Markdown).
     
-    [VISUAL]
-    - Insert '{mid_image_url}' between Section 2 and 3.
-    - Format: `\n\n![현장 이미지]({mid_image_url})\n`
-    
-    [LINKS]
-    - Use search links: `[👉 네이버 부동산 시세 확인](https://search.naver.com/search.naver?query={topic}+시세)`
-    
-    [Structure]
-    1. Money Flow
-    2. Data Verification
-    3. Target Spot (2-3 regions)
-    4. Action Plan
+    [Rules]
+    1. Insert `{mid_image_url}` between Section 2 and 3.
+    2. Use search links: `[👉 네이버 부동산 시세 확인](https://search.naver.com/search.naver?query={topic}+시세)`
+    3. Structure: Money Flow -> Data Verification -> Target Spot -> Action Plan.
     
     Output ONLY Markdown body.
     """
     
-    result = generate_content_with_retry(prompt)
+    result = generate_with_backoff(prompt)
     
-    # 비상용 기본 본문 (AI가 죽었을 때 사용)
     if not result:
-        body = f"""
-## 1. 분석 개요
-{topic}에 대한 시장의 관심이 뜨겁습니다. 
-데이터 분석 결과, 지속적인 우상향 트렌드가 예상됩니다.
-
-## 2. 데이터 검증
-{data_summary}
-위 지표를 볼 때, 지금이 적기일 수 있습니다.
-
-![관련 이미지]({mid_image_url})
-
-## 3. 결론 및 전략
-구체적인 매수 타이밍과 유망 단지는 네이버 부동산을 통해 확인하시기 바랍니다.
-[👉 네이버 부동산 시세 바로가기](https://land.naver.com)
-"""
+        body = "⚠️ 내용 생성에 실패했습니다. (API 한도 초과). 나중에 다시 시도해주세요."
     else:
         body = result.replace("```markdown", "").replace("```", "")
-    
-    full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 데이터 분석 ({now.year} 기준)*\n\n{body}"
-    return full_content
 
-def generate_tistory_content(viral_title, github_link):
-    print(f"🎨 [6/6] 티스토리 요약 작성 중...")
-    
-    prompt = f"""
-    Write a HTML teaser for "{viral_title}".
-    Language: Korean.
-    Include 3 bullet points summary and a button to: {github_link}
-    Output ONLY HTML code.
-    """
-    result = generate_content_with_retry(prompt)
-    
-    if not result:
-        return f"""
-        <h3>{viral_title}</h3>
-        <p>상세 분석 리포트가 발간되었습니다.</p>
-        <a href="{github_link}">👉 리포트 전문 보기</a>
-        """, "부동산, 투자, 분석"
-        
-    try:
-        content = result.replace("```html", "").replace("```", "")
-        lines = content.strip().split('\n')
-        return "\n".join(lines[:-1]), lines[-1]
-    except:
-         return f"""
-        <h3>{viral_title}</h3>
-        <p>상세 분석 리포트가 발간되었습니다.</p>
-        <a href="{github_link}">👉 리포트 전문 보기</a>
-        """, "부동산, 투자, 분석"
+    return f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 데이터 분석 ({now.year} 기준)*\n\n{body}"
 
 def deploy_to_github(viral_title, content):
-    print(f"🚀 [7/7] 배포 중...") 
+    print(f"🚀 배포 및 저장 중...") 
     safe_filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{hash(viral_title)}.md"
     filepath = os.path.join(BLOG_DIR, "content", "posts", safe_filename)
     
@@ -283,53 +227,54 @@ def deploy_to_github(viral_title, content):
     try:
         repo = Repo(BLOG_DIR)
         repo.git.add('--all')
-        repo.index.commit(f"Investment Report: {viral_title}")
+        repo.index.commit(f"New Post: {viral_title}")
         origin = repo.remote(name='origin')
         origin.push()
-        print("✅ 완료! (배포 성공)")
+        print("✅ 깃허브 배포 완료!")
         return f"{MAIN_DOMAIN_URL}/posts/{safe_filename.replace('.md', '')}"
     except Exception as e:
-        print(f"❌ 배포 실패: {e}")
+        print(f"❌ 깃허브 배포 실패: {e}")
         return MAIN_DOMAIN_URL
 
-def save_tistory_file(viral_title, html, tags):
+def save_tistory_file(viral_title, html_content):
     draft_dir = "tistory_drafts"
     os.makedirs(draft_dir, exist_ok=True)
     filename = f"Report-{datetime.datetime.now().strftime('%H%M%S')}.txt"
     filepath = os.path.join(draft_dir, filename)
+    
+    # 링크 버튼 추가
+    final_html = html_content
+    
     with open(filepath, "w", encoding="utf-8") as f:
-        f.write(f"제목: {viral_title}\n\n[태그]\n{tags}\n\n[HTML]\n{html}")
+        f.write(f"제목: {viral_title}\n\n[HTML 소스]\n{final_html}")
     try: os.system(f"open {draft_dir}")
     except: pass
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (무중단 완주 모드)")
-    print("   * AI 응답 실패 시에도 멈추지 않고 파일을 생성합니다.")
-    print("   * 단계별 강제 휴식으로 과열을 방지합니다.")
+    print("🔥 PropTech 봇 (API 절약형 통합 모드)")
+    print("   * 5번 질문할 것을 2번으로 줄여서 차단을 방지합니다.")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
     if topic:
-        # 단계별 강제 휴식 (10초) 추가하여 RPM 제한 회피
-        data_dict = get_real_data_from_llm(topic)
-        time.sleep(10) 
+        # 1. 통합 메타데이터 생성 (1번 호출)
+        metadata = get_all_metadata_at_once(topic)
         
-        viral_title = generate_viral_title(topic)
-        time.sleep(10)
+        # 2. 그래프 생성 (API 안 씀)
+        graph_url = generate_graph("chart", metadata['roi_data'])
         
-        cover_prompt, mid_prompt = get_image_prompts(topic)
-        time.sleep(10)
+        # 3. 본문 생성 (2번 호출)
+        full_content = generate_blog_post(topic, metadata, graph_url)
         
-        graph_url = generate_graph("chart", data_dict)
-        # 그래프 생성은 AI 안 쓰니까 휴식 불필요
+        # 4. 배포
+        post_link = deploy_to_github(metadata['viral_title'], full_content)
         
-        git_content = generate_github_content(topic, viral_title, graph_url, data_dict, cover_prompt, mid_prompt)
-        time.sleep(10)
+        # 5. 티스토리 파일 저장 (이미 1번 단계에서 만들었음)
+        # 링크만 업데이트해서 저장
+        final_teaser = metadata['tistory_teaser'] + f'\n<br><a href="{post_link}" style="background:blue;color:white;padding:10px;">👉 리포트 전문 보기</a>'
+        save_tistory_file(metadata['viral_title'], final_teaser)
         
-        link = deploy_to_github(viral_title, git_content)
-        
-        html, tags = generate_tistory_content(viral_title, link)
-        save_tistory_file(viral_title, html, tags)
+        print("\n🎉 모든 작업이 완료되었습니다!")
     else:
         print("❌ 실행을 중단합니다.")
