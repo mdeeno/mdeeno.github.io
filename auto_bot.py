@@ -4,6 +4,7 @@ import datetime
 import random
 import platform
 import ast
+import urllib.parse # URL 인코딩용 추가
 import google.generativeai as genai
 import matplotlib.pyplot as plt
 from matplotlib import rc
@@ -19,7 +20,6 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🚨 생존 전략: 무료 가능성이 높은 순서대로 '후보군'을 편성
 MODEL_CANDIDATES = [
     'gemini-2.0-flash-exp',        
     'gemini-flash-latest',         
@@ -32,7 +32,6 @@ MODEL_CANDIDATES = [
 genai.configure(api_key=GEMINI_API_KEY)
 
 def generate_content_with_survival(prompt):
-    """모델 서바이벌 실행 함수"""
     for model_name in MODEL_CANDIDATES:
         try:
             model = genai.GenerativeModel(model_name)
@@ -104,22 +103,31 @@ def generate_viral_title(topic):
     except:
         return f"[투자전략] {topic}: 수익률 극대화 분석"
 
-def get_image_keywords(topic):
-    print(f"🎨 [3/6] 이미지 키워드 추출 중...")
+def get_image_prompts(topic):
+    """
+    [핵심 변경] 단순 키워드가 아니라, AI 그림 생성용 '영어 묘사(Prompt)'를 만듭니다.
+    """
+    print(f"🎨 [3/6] AI 이미지 생성 프롬프트 작성 중...")
     time.sleep(1)
     prompt = f"""
     Topic: "{topic}"
-    Extract 3 english keywords for stock photos.
-    Keywords: luxury apartment, construction site, money graph, skyline, architecture.
-    Output ONLY keywords (comma separated, no spaces).
-    Example: city,building,finance
+    Create 2 detailed English image prompts for an AI image generator.
+    
+    1. Cover Image: A wide, cinematic shot of a modern futuristic city skyline or construction site, golden hour lighting, photorealistic, 8k.
+    2. Mid Image: A close-up of a modern apartment complex or architectural blueprint plan on a desk, professional photography style.
+    
+    Output Format (Comma separated):
+    Prompt1, Prompt2
     """
     try:
         result = generate_content_with_survival(prompt)
-        # 공백 제거 및 소문자 변환
-        return result.strip().replace(" ", "").lower()
+        prompts = result.split(',')
+        if len(prompts) >= 2:
+            return prompts[0].strip(), prompts[1].strip()
+        else:
+            return "modern city skyline photorealistic", "modern architecture blueprint photorealistic"
     except:
-        return "city,apartment,money"
+        return "modern city skyline photorealistic", "modern architecture blueprint photorealistic"
 
 def generate_graph(filename_base, data_dict):
     print(f"📊 [4/6] '{data_dict['unit']}' 그래프 생성 중...")
@@ -158,8 +166,8 @@ def generate_graph(filename_base, data_dict):
     plt.close()
     return f"/images/{img_filename}"
 
-def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
-    print(f"🤖 [5/6] 투자 리포트(이미지 동적 생성) 작성 중...")
+def generate_github_content(topic, viral_title, graph_url, data_dict, cover_prompt, mid_prompt):
+    print(f"🤖 [5/6] 투자 리포트(AI 이미지 적용) 작성 중...")
     time.sleep(1)
     now = datetime.datetime.now()
     
@@ -167,13 +175,13 @@ def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywor
     for y, v in zip(data_dict['years'], data_dict['values']):
         data_summary += f"- **{y}**: {v}{data_dict['unit']}\n"
 
-    # 1. 커버 이미지 (AI 키워드 기반)
-    cover_image = f"[https://loremflickr.com/1600/900/](https://loremflickr.com/1600/900/){img_keywords}"
+    # 🔥 [핵심] Pollinations AI를 사용하여 '그려낸' 이미지 URL 생성
+    # 프롬프트를 URL 인코딩하여 주소로 만듭니다.
+    encoded_cover = urllib.parse.quote(cover_prompt)
+    encoded_mid = urllib.parse.quote(mid_prompt)
     
-    # 2. 본문 중간 이미지 (AI 키워드 기반 + 랜덤 난수 추가)
-    # 🔥 랜덤 파라미터(?lock=)를 추가해서 커버 이미지와 무조건 다르게 나오도록 설정
-    random_seed = random.randint(1, 9999)
-    mid_image_url = f"[https://loremflickr.com/800/500/](https://loremflickr.com/800/500/){img_keywords}?lock={random_seed}"
+    cover_image = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_cover}?width=1600&height=900&nologo=true"
+    mid_image_url = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_mid}?width=800&height=500&nologo=true"
 
     front_matter = f"""---
 title: "{viral_title}"
@@ -187,7 +195,6 @@ cover:
     relative: false
 ---"""
 
-    # 프롬프트: 중간 이미지 삽입 위치 및 링크 규칙
     prompt = f"""
     Act as a Top-tier Real Estate Investment Consultant.
     Topic: {topic}
@@ -199,7 +206,7 @@ cover:
     
     [VISUAL INSTRUCTION]
     - You MUST insert the 'Mid-Content Image URL' provided above exactly BETWEEN 'Section 2. Data Verification' and 'Section 3. Target Spot'.
-    - Use this markdown format: `\n\n![현장 분석 이미지]({mid_image_url})\n*▲ {topic} 관련 현장 및 인프라 분석*\n\n`
+    - Use this markdown format: `\n\n![현장 분석 이미지]({mid_image_url})\n*▲ {topic} 관련 현장 및 인프라 시뮬레이션*\n\n`
     
     [CRITICAL RULES FOR LINKS]
     1. NEVER invent specific URLs for apartments.
@@ -259,7 +266,7 @@ def deploy_to_github(viral_title, content):
         repo.index.commit(f"Investment Report: {viral_title}")
         origin = repo.remote(name='origin')
         origin.push()
-        print("✅ 완료! (동적 이미지가 포함되었습니다)")
+        print("✅ 완료! (고양이 동상은 이제 안녕! 👋)")
         return f"{MAIN_DOMAIN_URL}/posts/{safe_filename.replace('.md', '')}"
     except Exception as e:
         print(f"❌ 배포 실패: {e}")
@@ -277,17 +284,20 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (이미지 동적 생성 버전)")
-    print("   * 주제별 맞춤 이미지 + 랜덤 변환 적용")
+    print("🔥 PropTech 봇 (AI 이미지 생성 버전)")
+    print("   * 더 이상 랜덤 이미지가 아닙니다.")
+    print("   * 주제에 맞는 '그림'을 AI가 직접 그립니다.")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
     if topic:
         data_dict = get_real_data_from_llm(topic)
         viral_title = generate_viral_title(topic)
-        img_keywords = get_image_keywords(topic)
+        # 이미지 키워드 대신 '프롬프트(묘사)'를 가져옵니다
+        cover_prompt, mid_prompt = get_image_prompts(topic)
+        
         graph_url = generate_graph("chart", data_dict)
-        git_content = generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords)
+        git_content = generate_github_content(topic, viral_title, graph_url, data_dict, cover_prompt, mid_prompt)
         link = deploy_to_github(viral_title, git_content)
         html, tags = generate_tistory_content(viral_title, link)
         save_tistory_file(viral_title, html, tags)
