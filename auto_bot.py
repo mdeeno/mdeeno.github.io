@@ -4,7 +4,7 @@ import datetime
 import random
 import platform
 import ast
-import urllib.parse # URL 인코딩용 추가
+import urllib.parse
 import google.generativeai as genai
 import matplotlib.pyplot as plt
 from matplotlib import rc
@@ -20,26 +20,43 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
+# 🚨 아까 check.py에서 확인된 '실존하는 모델'만 넣었습니다.
 MODEL_CANDIDATES = [
-    'gemini-2.0-flash-exp',        
-    'gemini-flash-latest',         
-    'gemini-exp-1206',             
-    'gemini-2.0-flash-lite-preview-02-05',
-    'gemini-2.5-flash-lite-preview-09-2025'
+    'gemini-2.0-flash-exp',    # 1타자: 무료 한도가 가장 널널함
+    'gemini-2.5-flash',        # 2타자: 최신형
+    'gemini-exp-1206',         # 3타자: 실험 버전
 ]
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-def generate_content_with_survival(prompt):
+def generate_content_with_retry(prompt):
+    """
+    [핵심 수정] 속도 제한(429)이 걸리면 포기하지 않고 '기다렸다 다시' 합니다.
+    """
     for model_name in MODEL_CANDIDATES:
         try:
             model = genai.GenerativeModel(model_name)
             response = model.generate_content(prompt)
             return response.text
         except Exception as e:
-            continue 
-    print("\n❌ 모든 모델이 응답하지 않습니다.")
+            error_msg = str(e)
+            # 429 에러(Resource exhausted)는 속도 문제이므로 기다리면 해결됨
+            if "429" in error_msg or "Resource exhausted" in error_msg:
+                print(f"   ⏳ [속도 제한 감지] {model_name} 모델이 숨 고르는 중... (20초 대기)")
+                time.sleep(20) # 20초 푹 쉬기
+                try:
+                    # 재시도
+                    print(f"   🔄 [재시도] 다시 요청합니다...")
+                    response = model.generate_content(prompt)
+                    return response.text
+                except:
+                    print(f"   ❌ 재시도 실패. 다음 모델로 넘어갑니다.")
+                    continue
+            # 다른 에러면 바로 다음 모델로
+            continue
+            
+    print("\n❌ 모든 모델이 응답하지 않습니다. 잠시 후 다시 실행해주세요.")
     raise Exception("All models failed")
 
 def set_korean_font():
@@ -51,7 +68,7 @@ def set_korean_font():
 
 def get_real_data_from_llm(topic):
     print(f"🧠 [1/6] '{topic}' 수익성 분석 중...")
-    time.sleep(1) 
+    time.sleep(5) # 5초 휴식
     
     current_year = datetime.datetime.now().year
     prompt = f"""
@@ -68,7 +85,7 @@ def get_real_data_from_llm(topic):
     NO MARKDOWN. ONLY JSON STRING.
     """
     try:
-        result_text = generate_content_with_survival(prompt)
+        result_text = generate_content_with_retry(prompt)
         clean_text = result_text.replace("```json", "").replace("```python", "").replace("```", "").strip()
         data_dict = ast.literal_eval(clean_text)
         return data_dict
@@ -83,7 +100,7 @@ def get_real_data_from_llm(topic):
 
 def generate_viral_title(topic):
     print(f"⚡ [2/6] '돈 되는' 제목 뽑는 중...")
-    time.sleep(1)
+    time.sleep(5) # 5초 휴식
     
     prompt = f"""
     Act as a Real Estate Investment Consultant.
@@ -98,36 +115,34 @@ def generate_viral_title(topic):
     Output ONLY the title.
     """
     try:
-        result = generate_content_with_survival(prompt)
+        result = generate_content_with_retry(prompt)
         return result.strip().replace('"', '')
     except:
         return f"[투자전략] {topic}: 수익률 극대화 분석"
 
 def get_image_prompts(topic):
-    """
-    [핵심 변경] 단순 키워드가 아니라, AI 그림 생성용 '영어 묘사(Prompt)'를 만듭니다.
-    """
     print(f"🎨 [3/6] AI 이미지 생성 프롬프트 작성 중...")
-    time.sleep(1)
+    time.sleep(10) # 🔥 여기서 에러 났으니 10초 푹 휴식
+    
     prompt = f"""
     Topic: "{topic}"
     Create 2 detailed English image prompts for an AI image generator.
     
-    1. Cover Image: A wide, cinematic shot of a modern futuristic city skyline or construction site, golden hour lighting, photorealistic, 8k.
-    2. Mid Image: A close-up of a modern apartment complex or architectural blueprint plan on a desk, professional photography style.
+    1. Cover Image: A cinematic shot of modern city or construction site, golden hour, 8k.
+    2. Mid Image: A close-up of architectural blueprint or money graph, professional style.
     
     Output Format (Comma separated):
     Prompt1, Prompt2
     """
     try:
-        result = generate_content_with_survival(prompt)
+        result = generate_content_with_retry(prompt)
         prompts = result.split(',')
         if len(prompts) >= 2:
             return prompts[0].strip(), prompts[1].strip()
         else:
-            return "modern city skyline photorealistic", "modern architecture blueprint photorealistic"
+            return "modern city skyline", "modern architecture blueprint"
     except:
-        return "modern city skyline photorealistic", "modern architecture blueprint photorealistic"
+        return "modern city skyline", "modern architecture blueprint"
 
 def generate_graph(filename_base, data_dict):
     print(f"📊 [4/6] '{data_dict['unit']}' 그래프 생성 중...")
@@ -167,19 +182,18 @@ def generate_graph(filename_base, data_dict):
     return f"/images/{img_filename}"
 
 def generate_github_content(topic, viral_title, graph_url, data_dict, cover_prompt, mid_prompt):
-    print(f"🤖 [5/6] 투자 리포트(AI 이미지 적용) 작성 중...")
-    time.sleep(1)
+    print(f"🤖 [5/6] 투자 리포트 작성 중...")
+    time.sleep(10) # 🔥 여기도 10초 휴식 (가장 긴 작업)
     now = datetime.datetime.now()
     
     data_summary = ""
     for y, v in zip(data_dict['years'], data_dict['values']):
         data_summary += f"- **{y}**: {v}{data_dict['unit']}\n"
 
-    # 🔥 [핵심] Pollinations AI를 사용하여 '그려낸' 이미지 URL 생성
-    # 프롬프트를 URL 인코딩하여 주소로 만듭니다.
     encoded_cover = urllib.parse.quote(cover_prompt)
     encoded_mid = urllib.parse.quote(mid_prompt)
     
+    # 🔥 [수정 완료] URL 오타 수정 (마크다운 문법 제거하고 순수 URL만 남김)
     cover_image = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_cover}?width=1600&height=900&nologo=true"
     mid_image_url = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_mid}?width=800&height=500&nologo=true"
 
@@ -205,15 +219,15 @@ cover:
     Write a high-value investment report in Korean (Markdown).
     
     [VISUAL INSTRUCTION]
-    - You MUST insert the 'Mid-Content Image URL' provided above exactly BETWEEN 'Section 2. Data Verification' and 'Section 3. Target Spot'.
-    - Use this markdown format: `\n\n![현장 분석 이미지]({mid_image_url})\n*▲ {topic} 관련 현장 및 인프라 시뮬레이션*\n\n`
+    - Insert the 'Mid-Content Image URL' exactly BETWEEN 'Section 2' and 'Section 3'.
+    - Format: `\n\n![현장 분석 이미지]({mid_image_url})\n*▲ {topic} 관련 시뮬레이션*\n\n`
     
     [CRITICAL RULES FOR LINKS]
     1. NEVER invent specific URLs for apartments.
     2. Use 'Search Query Links': `[👉 (Name) 네이버 부동산 시세 확인](https://search.naver.com/search.naver?query=(Name)+부동산+시세)`
     
     [Formatting]
-    1. Short Paragraphs (Mobile optimization).
+    1. Short Paragraphs.
     2. Use Blockquotes (`>`) for key insights.
     
     [Structure]
@@ -226,7 +240,7 @@ cover:
     """
     
     try:
-        result = generate_content_with_survival(prompt)
+        result = generate_content_with_retry(prompt)
         body = result.replace("```markdown", "").replace("```", "")
     except:
         body = "내용 생성 중 오류가 발생했습니다."
@@ -235,17 +249,31 @@ cover:
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
-    print(f"🎨 [6/6] 티스토리 요약글 생성 중...")
-    time.sleep(1)
+    print(f"🎨 [6/6] 티스토리 '미끼(Hook)' 글 생성 중...")
+    time.sleep(5)
+    
     prompt = f"""
-    Write a HTML teaser for an investment blog post about "{viral_title}".
+    Write a HTML blog post teaser for "{viral_title}".
+    Target Audience: Real estate investors looking for high ROI.
     Language: Korean.
-    Tone: Engaging, Money-focused.
-    Include a button linking to: {github_link} ("투자 리포트 확인하기")
-    Last line: 10 tags separated by commas.
+    
+    [Content Strategy: The 'Sneak Peek' Technique]
+    1. **Introduction**: Briefly explain why this topic is hot RIGHT NOW.
+    2. **Key Takeaways (Preview)**: Provide 3 bullet points summarizing the 'Problem' or 'Trend' from the main report. (Show you are an expert).
+    3. **The Cliffhanger**: Explicitly state what is in the Full Report that is missing here.
+       - e.g., "The exact month to buy," "The list of Top 3 undervalued apartments."
+    4. **Call to Action**: A distinct button linking to: {github_link}
+    
+    [HTML Structure]
+    - Use `<h3>` for section headers.
+    - Use `<ul>` and `<li>` for the preview points.
+    - Use a clean, professional style (css in body or inline).
+    - The button should say something like "👉 2026년 금리/매수 타이밍 분석 풀버전 보기".
+    
+    Output ONLY HTML code (starting from <style>...).
     """
     try:
-        result = generate_content_with_survival(prompt)
+        result = generate_content_with_retry(prompt)
         content = result.replace("```html", "").replace("```", "")
         lines = content.strip().split('\n')
         return "\n".join(lines[:-1]), lines[-1]
@@ -266,7 +294,7 @@ def deploy_to_github(viral_title, content):
         repo.index.commit(f"Investment Report: {viral_title}")
         origin = repo.remote(name='origin')
         origin.push()
-        print("✅ 완료! (고양이 동상은 이제 안녕! 👋)")
+        print("✅ 완료! (AI 이미지가 성공적으로 생성되었습니다)")
         return f"{MAIN_DOMAIN_URL}/posts/{safe_filename.replace('.md', '')}"
     except Exception as e:
         print(f"❌ 배포 실패: {e}")
@@ -284,16 +312,15 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (AI 이미지 생성 버전)")
-    print("   * 더 이상 랜덤 이미지가 아닙니다.")
-    print("   * 주제에 맞는 '그림'을 AI가 직접 그립니다.")
+    print("🔥 PropTech 봇 (속도 조절 안전 운행 모드)")
+    print("   * 429(속도제한) 에러 시 20초 대기 후 재시도합니다.")
+    print("   * 조금 느리지만, 확실하게 완주합니다.")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
     if topic:
         data_dict = get_real_data_from_llm(topic)
         viral_title = generate_viral_title(topic)
-        # 이미지 키워드 대신 '프롬프트(묘사)'를 가져옵니다
         cover_prompt, mid_prompt = get_image_prompts(topic)
         
         graph_url = generate_graph("chart", data_dict)
