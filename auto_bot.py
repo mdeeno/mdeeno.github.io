@@ -19,9 +19,8 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🚨 해결책: 1.5는 사용자 계정에 없고, 2.5는 유료입니다.
-# 무조건 작동하는 'gemini-pro' (표준 모델)로 고정합니다.
-MODEL_NAME = 'gemini-pro'
+# 🚨 해결: 사용자님 명단에 있는 '최고 가성비' 모델 확정
+MODEL_NAME = 'gemini-2.0-flash'
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
@@ -35,11 +34,10 @@ def set_korean_font():
         except: pass
 
 def get_real_data_from_llm(topic):
-    print(f"🧠 [1/6] '{topic}' 정밀 분석 중...")
+    print(f"🧠 [1/6] '{topic}' 정밀 분석 중 (Model: 2.0 Flash)...")
     time.sleep(2) 
     
     current_year = datetime.datetime.now().year
-    # 1.0 모델을 위한 명확한 영어 지시문 (JSON 오류 방지)
     prompt = f"""
     Topic: "{topic}"
     Task: Extract real statistical trends (2023-{current_year+1}).
@@ -243,7 +241,7 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (전문가 모드 - 안정성 최우선)")
+    print("🔥 PropTech 봇 (Engine: Gemini 2.0 Flash)")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
