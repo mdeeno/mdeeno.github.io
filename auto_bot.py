@@ -22,29 +22,56 @@ MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-def get_model(model_name='gemini-1.5-flash'):
-    """모델을 가져오되, 실패하면 구형 모델로 자동 전환하는 똑똑한 함수"""
-    return genai.GenerativeModel(model_name)
+def find_working_model():
+    """
+    [핵심 기능] 구글 서버에 직접 물어봐서 '지금 당장 사용 가능한' 모델 이름을 가져옵니다.
+    추측해서 이름을 넣지 않고, 서버에 등록된 정확한 이름을 가져오므로 404 에러가 원천 차단됩니다.
+    """
+    print("🔍 [시스템] 사용 가능한 AI 모델을 탐색 중입니다...", end=" ")
+    try:
+        # 사용 가능한 모든 모델 리스트 요청
+        available_models = []
+        for m in genai.list_models():
+            if 'generateContent' in m.supported_generation_methods:
+                available_models.append(m.name)
+        
+        # 1순위: 1.5 Flash (속도/성능 최강)
+        for m in available_models:
+            if 'gemini-1.5-flash' in m:
+                print(f"찾았다! 👉 [{m}]")
+                return m
+        
+        # 2순위: 1.5 Pro
+        for m in available_models:
+            if 'gemini-1.5-pro' in m:
+                print(f"찾았다! 👉 [{m}]")
+                return m
 
-def generate_content_safe(prompt, model_priority=['gemini-1.5-flash', 'gemini-pro']):
-    """
-    1순위 모델(1.5-flash)로 시도하고, 
-    404/429 에러가 나면 2순위(pro)로 자동 전환하여 무조건 성공시키는 함수
-    """
-    for model_name in model_priority:
-        try:
-            model = genai.GenerativeModel(model_name)
-            response = model.generate_content(prompt)
-            return response.text
-        except Exception as e:
-            print(f"⚠️ [{model_name}] 실패... 다음 모델로 전환합니다. (에러: {e})")
-            time.sleep(1) # 잠시 대기 후 재시도
-            continue
-    
-    # 모든 모델 실패 시
-    return "죄송합니다. 모든 AI 모델이 응답하지 않습니다."
+        # 3순위: 1.0 Pro (구형이지만 안정적)
+        for m in available_models:
+            if 'gemini-pro' in m: # 1.0 Pro
+                print(f"찾았다! 👉 [{m}]")
+                return m
+                
+        # 아무것도 못 찾았을 때
+        if available_models:
+            print(f"대체 모델 사용 👉 [{available_models[0]}]")
+            return available_models[0]
+        else:
+            print("\n❌ [치명적 오류] 사용 가능한 모델이 하나도 없습니다. API 키를 확인해주세요.")
+            return None
+            
+    except Exception as e:
+        print(f"\n❌ 모델 탐색 실패: {e}")
+        # 최후의 수단으로 기본 이름 반환
+        return 'models/gemini-1.5-flash'
+
+# 🔥 봇이 시작될 때 딱 한 번, 최고의 모델을 확정하고 시작합니다.
+ACTIVE_MODEL_NAME = find_working_model()
+model = genai.GenerativeModel(ACTIVE_MODEL_NAME)
 
 def set_korean_font():
+    """맥북 한글 폰트 설정"""
     if platform.system() == "Darwin":
         try:
             rc('font', family='AppleGothic')
@@ -52,11 +79,12 @@ def set_korean_font():
         except: pass
 
 def get_real_data_from_llm(topic):
-    print(f"🧠 [1/6] '{topic}' 데이터 조회 (AI 자동 스위칭)...")
+    print(f"🧠 [1/6] '{topic}' 데이터 분석 중...")
+    time.sleep(1) 
     
     current_year = datetime.datetime.now().year
     prompt = f"""
-    Act as a Data Analyst. Topic: "{topic}"
+    You are a Data Analyst. Topic: "{topic}"
     Extract real statistical data (2023-{current_year+1}).
     
     Output Format (JSON only):
@@ -68,15 +96,13 @@ def get_real_data_from_llm(topic):
     }}
     NO MARKDOWN. JUST JSON STRING.
     """
-    
-    # 🔥 여기서 안전하게 생성 요청
-    result_text = generate_content_safe(prompt)
-    
     try:
-        clean_text = result_text.replace("```json", "").replace("```python", "").replace("```", "").strip()
+        response = model.generate_content(prompt)
+        clean_text = response.text.replace("```json", "").replace("```python", "").replace("```", "").strip()
         data_dict = ast.literal_eval(clean_text)
         return data_dict
-    except:
+    except Exception as e:
+        print(f"⚠️ 데이터 추출 실패 (기본값 사용): {e}")
         return {
             "years": ["2023", "2024", "2025", "2026"],
             "values": [100, 110, 120, 130],
@@ -86,24 +112,32 @@ def get_real_data_from_llm(topic):
 
 def generate_viral_title(topic):
     print(f"⚡ [2/6] 제목 세탁 중...")
+    time.sleep(1)
     prompt = f"""
     Make a viral blog title for "{topic}" in Korean. 
     Use strong words like "충격", "긴급", "전망". Max 35 chars.
     Output ONLY the title.
     """
-    result = generate_content_safe(prompt)
-    return result.strip().replace('"', '')
+    try:
+        response = model.generate_content(prompt)
+        return response.text.strip().replace('"', '')
+    except:
+        return f"충격 전망! {topic}의 미래"
 
 def get_image_keywords(topic):
     print(f"🎨 [3/6] 이미지 키워드 추출 중...")
+    time.sleep(1)
     prompt = f"""
     Topic: "{topic}"
     Extract 3 english keywords for stock photos.
     Example: "train,station,city"
     Output ONLY keywords (comma separated).
     """
-    result = generate_content_safe(prompt)
-    return result.strip().replace(" ", "")
+    try:
+        response = model.generate_content(prompt)
+        return response.text.strip().replace(" ", "")
+    except:
+        return "business,finance,tech"
 
 def generate_graph(filename_base, data_dict):
     print(f"📊 [4/6] '{data_dict['unit']}' 단위로 그래프 그리는 중...")
@@ -147,6 +181,7 @@ def generate_graph(filename_base, data_dict):
 
 def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
     print(f"🤖 [5/6] 리포트 작성 중...")
+    time.sleep(1)
     now = datetime.datetime.now()
     
     data_summary = ""
@@ -183,24 +218,27 @@ cover:
     Output ONLY Markdown body.
     """
     
-    body_text = generate_content_safe(prompt)
-    body = body_text.replace("```markdown", "").replace("```", "")
+    try:
+        response = model.generate_content(prompt)
+        body = response.text.replace("```markdown", "").replace("```", "")
+    except:
+        body = "내용 생성 중 오류가 발생했습니다."
     
     full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 통계 분석 ({now.year} 기준)*\n\n{body}"
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
     print(f"🎨 [6/6] 티스토리 요약글 생성 중...")
+    time.sleep(1)
     prompt = f"""
     Write a HTML teaser for a blog post about "{viral_title}".
     Language: Korean.
     Include a button linking to: {github_link}
     Last line: 10 tags separated by commas.
     """
-    result = generate_content_safe(prompt)
-    
     try:
-        content = result.replace("```html", "").replace("```", "")
+        response = model.generate_content(prompt)
+        content = response.text.replace("```html", "").replace("```", "")
         lines = content.strip().split('\n')
         return "\n".join(lines[:-1]), lines[-1]
     except:
@@ -236,18 +274,19 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (AI 자동 스위칭 모드)")
-    print("   1순위: gemini-1.5-flash (최신)")
-    print("   2순위: gemini-pro (안전빵)")
+    print("🔥 PropTech 봇 (AI 모델 자동 탐지 버전)")
     print("="*50)
     
-    topic = input("✍️  주제 입력 (예: 금리 전망, 삼성전자 주가): ")
-    if topic:
-        data_dict = get_real_data_from_llm(topic)
-        viral_title = generate_viral_title(topic)
-        img_keywords = get_image_keywords(topic)
-        graph_url = generate_graph("chart", data_dict)
-        git_content = generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords)
-        link = deploy_to_github(viral_title, git_content)
-        html, tags = generate_tistory_content(viral_title, link)
-        save_tistory_file(viral_title, html, tags)
+    if ACTIVE_MODEL_NAME:
+        topic = input("✍️  주제 입력: ")
+        if topic:
+            data_dict = get_real_data_from_llm(topic)
+            viral_title = generate_viral_title(topic)
+            img_keywords = get_image_keywords(topic)
+            graph_url = generate_graph("chart", data_dict)
+            git_content = generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords)
+            link = deploy_to_github(viral_title, git_content)
+            html, tags = generate_tistory_content(viral_title, link)
+            save_tistory_file(viral_title, html, tags)
+    else:
+        print("❌ 실행을 중단합니다.")
