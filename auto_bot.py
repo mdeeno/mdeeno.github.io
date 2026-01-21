@@ -18,35 +18,14 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
+
+# 🚨 해결책: 1.5는 사용자 계정에 없고, 2.5는 유료입니다.
+# 무조건 작동하는 'gemini-pro' (표준 모델)로 고정합니다.
+MODEL_NAME = 'gemini-pro'
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
-
-def find_working_model():
-    """안정적인 모델 자동 연결 (1.5 Flash 우선)"""
-    print("🔍 [시스템] 최적의 AI 모델 탐색 중...", end=" ")
-    try:
-        my_models = [m.name for m in genai.list_models() if 'generateContent' in m.supported_generation_methods]
-        
-        target_model = 'models/gemini-1.5-flash'
-        if target_model in my_models:
-            print(f"연결됨! 👉 [{target_model}]")
-            return target_model
-        
-        for m in my_models:
-            if 'gemini-1.5-flash' in m:
-                print(f"연결됨! 👉 [{m}]")
-                return m
-
-        print("\n⚠️ 강제 연결 시도 (models/gemini-1.5-flash)")
-        return 'models/gemini-1.5-flash'
-            
-    except Exception as e:
-        print(f"\n⚠️ 모델 탐색 에러: {e}")
-        return 'models/gemini-1.5-flash'
-
-ACTIVE_MODEL_NAME = find_working_model()
-model = genai.GenerativeModel(ACTIVE_MODEL_NAME)
+model = genai.GenerativeModel(MODEL_NAME)
 
 def set_korean_font():
     if platform.system() == "Darwin":
@@ -56,22 +35,23 @@ def set_korean_font():
         except: pass
 
 def get_real_data_from_llm(topic):
-    print(f"🧠 [1/6] '{topic}' 데이터 분석 중...")
-    time.sleep(1) 
+    print(f"🧠 [1/6] '{topic}' 정밀 분석 중...")
+    time.sleep(2) 
     
     current_year = datetime.datetime.now().year
+    # 1.0 모델을 위한 명확한 영어 지시문 (JSON 오류 방지)
     prompt = f"""
-    You are a Data Analyst. Topic: "{topic}"
-    Extract real statistical data (2023-{current_year+1}).
+    Topic: "{topic}"
+    Task: Extract real statistical trends (2023-{current_year+1}).
     
     Output Format (JSON only):
     {{
         "years": ["2023", "2024", "2025(E)", "2026(F)"],
         "values": [1.5, 2.0, 2.5, 3.0],
         "unit": "%",
-        "title": "Exact Title of Chart"
+        "title": "Exact Title"
     }}
-    NO MARKDOWN. JUST JSON STRING.
+    NO MARKDOWN. ONLY JSON STRING.
     """
     try:
         response = model.generate_content(prompt)
@@ -89,20 +69,15 @@ def get_real_data_from_llm(topic):
 
 def generate_viral_title(topic):
     print(f"⚡ [2/6] 제목 생성 중 (전문가 톤)...")
-    time.sleep(1)
-    
-    # 🔥 수정됨: '충격', '경악' 금지 -> '분석', '전망', '인사이트' 사용
+    time.sleep(2)
     prompt = f"""
-    Act as a Professional PropTech Analyst.
-    Create a high-quality blog title for "{topic}" in Korean.
+    Act as a Senior Analyst.
+    Create a professional blog title for "{topic}" in Korean.
     
-    [Rules]
-    1. Tone: Professional, Insightful, Objective. (No clickbait like '충격', '피눈물')
-    2. Keywords: Use words like '분석', '전망', '핵심', '데이터'.
-    3. Format examples:
-       - "[분석] {topic}의 현황과 미래 전망"
-       - "{topic}: 데이터로 보는 2026년 트렌드"
-    4. Max 40 chars.
+    Rules:
+    1. No clickbait (Don't use '충격', '경악').
+    2. Use words like '분석', '전망', '데이터', '인사이트'.
+    3. Format: "[분석] ..." or "... 전망과 시사점"
     
     Output ONLY the title.
     """
@@ -110,11 +85,11 @@ def generate_viral_title(topic):
         response = model.generate_content(prompt)
         return response.text.strip().replace('"', '')
     except:
-        return f"[분석] {topic}: 데이터 기반 전망"
+        return f"[분석] {topic}: 현황과 전망"
 
 def get_image_keywords(topic):
     print(f"🎨 [3/6] 이미지 키워드 추출 중...")
-    time.sleep(1)
+    time.sleep(2)
     prompt = f"""
     Topic: "{topic}"
     Extract 3 english keywords for stock photos.
@@ -125,7 +100,7 @@ def get_image_keywords(topic):
         response = model.generate_content(prompt)
         return response.text.strip().replace(" ", "")
     except:
-        return "business,finance,tech"
+        return "business,finance,building"
 
 def generate_graph(filename_base, data_dict):
     print(f"📊 [4/6] '{data_dict['unit']}' 단위로 그래프 그리는 중...")
@@ -141,11 +116,10 @@ def generate_graph(filename_base, data_dict):
     unit = data_dict['unit']
     title = data_dict['title']
     
-    # 색상도 차분하게 변경 (파스텔 톤)
     if values[-1] > values[0]:
-        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#d32f2f'] # 차분한 레드
+        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#d32f2f'] 
     elif values[-1] < values[0]:
-        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1976d2'] # 차분한 블루
+        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1976d2'] 
     else:
         color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] 
 
@@ -170,7 +144,7 @@ def generate_graph(filename_base, data_dict):
 
 def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
     print(f"🤖 [5/6] 리포트 작성 중...")
-    time.sleep(1)
+    time.sleep(2)
     now = datetime.datetime.now()
     
     data_summary = ""
@@ -191,7 +165,6 @@ cover:
     relative: false
 ---"""
 
-    # 🔥 본문 톤도 '전문가'로 수정
     prompt = f"""
     Act as a Senior Urban Engineer & Data Analyst.
     Topic: {topic}
@@ -201,14 +174,14 @@ cover:
     
     Write a professional blog post in Korean (Markdown).
     
-    [Style Guide]
-    - Tone: Analytical, Logical, Trustworthy (Like a McKinsey report).
-    - Avoid: Emojis, exclamation marks(!!), slang.
-    
     [Structure]
-    1. **Executive Summary**: Brief overview of the trend.
-    2. **Data Analysis**: Deep dive into the provided numbers.
-    3. **Strategic Implication**: What this means for the market.
+    1. **Executive Summary**: Brief overview.
+    2. **Data Analysis**: Deep dive into the numbers.
+    3. **Strategic Implication**: Market forecast.
+    
+    [Tone]
+    - Professional, Objective, Logical.
+    - No emojis. No exaggerated words.
     
     Output ONLY Markdown body.
     """
@@ -224,9 +197,9 @@ cover:
 
 def generate_tistory_content(viral_title, github_link):
     print(f"🎨 [6/6] 티스토리 요약글 생성 중...")
-    time.sleep(1)
+    time.sleep(2)
     prompt = f"""
-    Write a HTML teaser for a professional tech blog post about "{viral_title}".
+    Write a HTML teaser for a professional blog post about "{viral_title}".
     Language: Korean.
     Tone: Professional.
     Include a button linking to: {github_link} ("전문 읽기")
@@ -270,19 +243,18 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (Professional Analyst Mode)")
+    print("🔥 PropTech 봇 (전문가 모드 - 안정성 최우선)")
     print("="*50)
     
-    if ACTIVE_MODEL_NAME:
-        topic = input("✍️  분석할 주제 입력: ")
-        if topic:
-            data_dict = get_real_data_from_llm(topic)
-            viral_title = generate_viral_title(topic)
-            img_keywords = get_image_keywords(topic)
-            graph_url = generate_graph("chart", data_dict)
-            git_content = generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords)
-            link = deploy_to_github(viral_title, git_content)
-            html, tags = generate_tistory_content(viral_title, link)
-            save_tistory_file(viral_title, html, tags)
+    topic = input("✍️  분석할 주제 입력: ")
+    if topic:
+        data_dict = get_real_data_from_llm(topic)
+        viral_title = generate_viral_title(topic)
+        img_keywords = get_image_keywords(topic)
+        graph_url = generate_graph("chart", data_dict)
+        git_content = generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords)
+        link = deploy_to_github(viral_title, git_content)
+        html, tags = generate_tistory_content(viral_title, link)
+        save_tistory_file(viral_title, html, tags)
     else:
         print("❌ 실행을 중단합니다.")
