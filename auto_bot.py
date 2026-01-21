@@ -86,7 +86,6 @@ def generate_viral_title(topic):
     print(f"⚡ [2/6] '돈 되는' 제목 뽑는 중...")
     time.sleep(1)
     
-    # 🔥 수익화 핵심: 제목부터 '이익'을 강조하도록 변경
     prompt = f"""
     Act as a Real Estate Investment Consultant.
     Create a highly clickable, profit-focused blog title for "{topic}" in Korean.
@@ -134,7 +133,6 @@ def generate_graph(filename_base, data_dict):
     unit = data_dict['unit']
     title = data_dict['title']
     
-    # 상승장은 붉은색(Red) 계열로 강렬하게
     color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#d32f2f'] 
 
     plt.figure(figsize=(10, 6))
@@ -157,7 +155,7 @@ def generate_graph(filename_base, data_dict):
     return f"/images/{img_filename}"
 
 def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
-    print(f"🤖 [5/6] 투자 리포트(수익화 버전) 작성 중...")
+    print(f"🤖 [5/6] 투자 리포트(가독성 강화) 작성 중...")
     time.sleep(1)
     now = datetime.datetime.now()
     
@@ -179,7 +177,7 @@ cover:
     relative: false
 ---"""
 
-    # 🔥 여기가 핵심: '돈이 되는' 글쓰기 프롬프트
+    # 🔥 여기가 핵심: '가독성 + 체류시간'을 위한 프롬프트 강화
     prompt = f"""
     Act as a Top-tier Real Estate Investment Consultant (Salary: $500k/year).
     Topic: {topic}
@@ -189,16 +187,24 @@ cover:
     
     Write a high-value investment report in Korean (Markdown).
     
+    [Formatting Rules for High Engagement] (CRITICAL)
+    1. **Mobile Optimization**: Paragraphs MUST be short (1-3 sentences max). Break lines frequently.
+    2. **Highlighting**: Use Blockquotes (`>`) for core insights, ROI calculations, or 'Key Takeaways'.
+       - Example: 
+       > "Invest 1B now -> Expect 1.5B in 2026"
+    3. **Action Links**: Insert 2-3 external links to 'Naver Real Estate' or 'HogangNono' related to the mentioned regions.
+       - Example: `[👉 (Region Name) Real Estate Price Check (Naver Land)](https://new.land.naver.com)`
+    
     [Tone & Style]
-    - Persuasive, Confident, Insightful. (Like a paid consulting report)
+    - Persuasive, Confident, Insightful.
     - Focus on 'Money Flow', 'Undervalued Assets', 'Timing'.
-    - Use specific examples of regions or apartment names (Real or Representative) to increase credibility.
+    - Use specific examples of regions or apartment names.
     
     [Structure]
-    1. **Money Flow (돈의 흐름)**: Where is the liquidity moving? Why this topic now?
-    2. **Data Verification (데이터 검증)**: Analyze the chart. Prove the growth potential.
-    3. **Target Spot (유망 지역/단지)**: Suggest 2-3 specific regions or apartment types that will benefit the most. (Be specific! e.g., 'Bundang Sibeom', 'GTX-A Line Yongin', etc.)
-    4. **Action Plan (투자 전략)**: Buy/Hold/Sell strategy.
+    1. **Money Flow**: Where is the liquidity moving?
+    2. **Data Verification**: Analyze the chart.
+    3. **Target Spot**: Suggest 2-3 specific regions/apartments.
+    4. **Action Plan**: Buy/Hold/Sell strategy.
     
     Output ONLY Markdown body.
     """
@@ -209,7 +215,19 @@ cover:
     except:
         body = "내용 생성 중 오류가 발생했습니다."
     
-    full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 투자 가치 분석 ({now.year} 기준)*\n\n{body}"
+    # 💥 마지막에 오픈채팅방 링크(CPA/판매 유도) 자동 삽입
+    footer_msg = """
+\n
+---
+### 🔒 [VIP 한정] 히든 리포트 신청
+이 글에서 다루지 못한 **'구체적인 매수 타이밍'**과 **'미공개 유망 단지 리스트'**가 담긴 풀버전 PDF를 원하시나요?
+**도시공학 석사**가 직접 분석한 시크릿 자료를 받아보세요.
+
+👉 **[1:1 카카오톡으로 PDF 신청하기] (https://open.kakao.com/o/sXxXxXx)**
+*(위 링크는 예시입니다. 본인의 오픈채팅방 링크로 바꿔주세요)*
+"""
+    
+    full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 투자 가치 분석 ({now.year} 기준)*\n\n{body}\n{footer_msg}"
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
@@ -260,8 +278,8 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (수익화 컨설턴트 모드)")
-    print("   * 목표: 월 500만원 가치의 고품질 투자 리포트 생성")
+    print("🔥 PropTech 봇 (가독성 + 수익화 최종버전)")
+    print("   * 특징: 모바일 최적화(짧은글), 형광펜 효과, 외부 링크 자동삽입")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
