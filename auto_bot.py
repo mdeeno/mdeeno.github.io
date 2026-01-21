@@ -110,13 +110,13 @@ def get_image_keywords(topic):
     prompt = f"""
     Topic: "{topic}"
     Extract 3 english keywords for stock photos.
-    Keywords: luxury apartment, construction site, money graph, skyline.
+    Keywords: luxury apartment, construction site, money graph, skyline, architecture.
     Output ONLY keywords (comma separated, no spaces).
     Example: city,building,finance
     """
     try:
         result = generate_content_with_survival(prompt)
-        # 공백 제거 및 소문자 변환으로 URL 오류 방지
+        # 공백 제거 및 소문자 변환
         return result.strip().replace(" ", "").lower()
     except:
         return "city,apartment,money"
@@ -126,8 +126,10 @@ def generate_graph(filename_base, data_dict):
     set_korean_font()
     
     image_dir = os.path.join(BLOG_DIR, "static", "images")
-    os.makedirs(image_dir, exist_ok=True)
-    img_filename = f"{filename_base}-chart.png"
+    if not os.path.exists(image_dir):
+        os.makedirs(image_dir)
+        
+    img_filename = f"{filename_base}-{int(time.time())}.png"
     img_path = os.path.join(image_dir, img_filename)
 
     years = data_dict['years']
@@ -157,7 +159,7 @@ def generate_graph(filename_base, data_dict):
     return f"/images/{img_filename}"
 
 def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
-    print(f"🤖 [5/6] 투자 리포트(무결점 버전) 작성 중...")
+    print(f"🤖 [5/6] 투자 리포트(이미지 동적 생성) 작성 중...")
     time.sleep(1)
     now = datetime.datetime.now()
     
@@ -165,8 +167,13 @@ def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywor
     for y, v in zip(data_dict['years'], data_dict['values']):
         data_summary += f"- **{y}**: {v}{data_dict['unit']}\n"
 
-    # 이미지 URL 생성 (안전하게)
+    # 1. 커버 이미지 (AI 키워드 기반)
     cover_image = f"[https://loremflickr.com/1600/900/](https://loremflickr.com/1600/900/){img_keywords}"
+    
+    # 2. 본문 중간 이미지 (AI 키워드 기반 + 랜덤 난수 추가)
+    # 🔥 랜덤 파라미터(?lock=)를 추가해서 커버 이미지와 무조건 다르게 나오도록 설정
+    random_seed = random.randint(1, 9999)
+    mid_image_url = f"[https://loremflickr.com/800/500/](https://loremflickr.com/800/500/){img_keywords}?lock={random_seed}"
 
     front_matter = f"""---
 title: "{viral_title}"
@@ -180,31 +187,33 @@ cover:
     relative: false
 ---"""
 
-    # 🔥 핵심 수정: 링크가 깨지지 않도록 '검색어 쿼리 링크' 방식을 사용하라고 지시
+    # 프롬프트: 중간 이미지 삽입 위치 및 링크 규칙
     prompt = f"""
     Act as a Top-tier Real Estate Investment Consultant.
     Topic: {topic}
     Title: {viral_title}
-    Data:
-    {data_summary}
+    Data: {data_summary}
+    Mid-Content Image URL: {mid_image_url}
     
     Write a high-value investment report in Korean (Markdown).
     
-    [CRITICAL RULES FOR LINKS]
-    1. NEVER invent specific URLs for apartments (e.g., do NOT use '[land.naver.com/complex/123](https://land.naver.com/complex/123)'). They always break.
-    2. Instead, use 'Search Query Links' that guarantee results.
-       - Format: `[👉 (Name) 네이버 부동산 시세 확인](https://search.naver.com/search.naver?query=(Name)+부동산+시세)`
-       - Use this format whenever you mention a specific region or apartment.
+    [VISUAL INSTRUCTION]
+    - You MUST insert the 'Mid-Content Image URL' provided above exactly BETWEEN 'Section 2. Data Verification' and 'Section 3. Target Spot'.
+    - Use this markdown format: `\n\n![현장 분석 이미지]({mid_image_url})\n*▲ {topic} 관련 현장 및 인프라 분석*\n\n`
     
-    [Formatting for Readability]
-    1. **Short Paragraphs**: 1-3 sentences max.
-    2. **Highlighting**: Use Blockquotes (`>`) for ROI calculations or key insights.
+    [CRITICAL RULES FOR LINKS]
+    1. NEVER invent specific URLs for apartments.
+    2. Use 'Search Query Links': `[👉 (Name) 네이버 부동산 시세 확인](https://search.naver.com/search.naver?query=(Name)+부동산+시세)`
+    
+    [Formatting]
+    1. Short Paragraphs (Mobile optimization).
+    2. Use Blockquotes (`>`) for key insights.
     
     [Structure]
-    1. **Money Flow**: Where is liquidity moving?
-    2. **Data Verification**: Analyze the chart.
-    3. **Target Spot**: Suggest 2-3 specific regions/apartments with the Search Links mentioned above.
-    4. **Action Plan**: Buy/Hold/Sell strategy.
+    1. **Money Flow**
+    2. **Data Verification**
+    3. **Target Spot** (Suggest 2-3 specific regions)
+    4. **Action Plan**
     
     Output ONLY Markdown body.
     """
@@ -214,9 +223,6 @@ cover:
         body = result.replace("```markdown", "").replace("```", "")
     except:
         body = "내용 생성 중 오류가 발생했습니다."
-    
-    # 💥 (수정됨) 카톡방 링크 등 준비 안 된 푸터는 삭제했습니다.
-    # 깔끔하게 본문까지만 출력합니다.
     
     full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 투자 가치 분석 ({now.year} 기준)*\n\n{body}"
     return full_content
@@ -253,9 +259,11 @@ def deploy_to_github(viral_title, content):
         repo.index.commit(f"Investment Report: {viral_title}")
         origin = repo.remote(name='origin')
         origin.push()
-        print("✅ 완료!")
+        print("✅ 완료! (동적 이미지가 포함되었습니다)")
         return f"{MAIN_DOMAIN_URL}/posts/{safe_filename.replace('.md', '')}"
-    except: return MAIN_DOMAIN_URL
+    except Exception as e:
+        print(f"❌ 배포 실패: {e}")
+        return MAIN_DOMAIN_URL
 
 def save_tistory_file(viral_title, html, tags):
     draft_dir = "tistory_drafts"
@@ -269,9 +277,8 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (Zero-Edit 자동화 버전)")
-    print("   * 깨진 링크 방지 (검색 쿼리 사용)")
-    print("   * 미준비된 홍보 문구 삭제")
+    print("🔥 PropTech 봇 (이미지 동적 생성 버전)")
+    print("   * 주제별 맞춤 이미지 + 랜덤 변환 적용")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
