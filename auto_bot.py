@@ -19,36 +19,27 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🚨 생존 전략: 무료 가능성이 높은 순서대로 '후보군'을 편성합니다.
-# 1번이 막히면(429), 즉시 2번으로 갈아탑니다.
+# 🚨 생존 전략: 무료 가능성이 높은 순서대로 '후보군'을 편성
 MODEL_CANDIDATES = [
-    'gemini-2.0-flash-exp',        # 1타자: 2.0 실험버전 (보통 무료)
-    'gemini-flash-latest',         # 2타자: 최신 알리아스 (1.5 Flash로 연결될 확률 높음)
-    'gemini-exp-1206',             # 3타자: 12월 실험버전 (매우 빠름)
-    'gemini-2.0-flash-lite-preview-02-05', # 4타자: 경량화 프리뷰
-    'gemini-2.5-flash-lite-preview-09-2025' # 5타자: 최신 경량
+    'gemini-2.0-flash-exp',        
+    'gemini-flash-latest',         
+    'gemini-exp-1206',             
+    'gemini-2.0-flash-lite-preview-02-05',
+    'gemini-2.5-flash-lite-preview-09-2025'
 ]
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
 
 def generate_content_with_survival(prompt):
-    """
-    [핵심 기능] 후보 모델들을 순서대로 순회하며 실행합니다.
-    하나라도 성공하면 즉시 결과를 반환합니다.
-    """
+    """모델 서바이벌 실행 함수"""
     for model_name in MODEL_CANDIDATES:
         try:
-            # print(f"   👉 시도 중: [{model_name}]...", end=" ")
             model = genai.GenerativeModel(model_name)
             response = model.generate_content(prompt)
-            # print("성공! ✅")
             return response.text
         except Exception as e:
-            # print(f"실패(Next).", end=" ")
-            continue # 다음 모델로 넘어감
-            
-    # 모든 모델이 다 실패했을 경우 (정말 최악의 상황)
+            continue 
     print("\n❌ 모든 모델이 응답하지 않습니다.")
     raise Exception("All models failed")
 
@@ -60,25 +51,24 @@ def set_korean_font():
         except: pass
 
 def get_real_data_from_llm(topic):
-    print(f"🧠 [1/6] '{topic}' 정밀 분석 중 (서바이벌 모드)...")
+    print(f"🧠 [1/6] '{topic}' 수익성 분석 중...")
     time.sleep(1) 
     
     current_year = datetime.datetime.now().year
     prompt = f"""
     Topic: "{topic}"
-    Task: Extract real statistical trends (2023-{current_year+1}).
+    Task: Extract real investment trends & ROI data (2023-{current_year+1}).
     
     Output Format (JSON only):
     {{
         "years": ["2023", "2024", "2025(E)", "2026(F)"],
-        "values": [1.5, 2.0, 2.5, 3.0],
-        "unit": "%",
-        "title": "Exact Title"
+        "values": [10, 15, 23, 35],
+        "unit": "ROI(%)",
+        "title": "Investment Growth Projection"
     }}
     NO MARKDOWN. ONLY JSON STRING.
     """
     try:
-        # 🔥 서바이벌 함수 사용
         result_text = generate_content_with_survival(prompt)
         clean_text = result_text.replace("```json", "").replace("```python", "").replace("```", "").strip()
         data_dict = ast.literal_eval(clean_text)
@@ -87,22 +77,25 @@ def get_real_data_from_llm(topic):
         print(f"⚠️ 데이터 추출 실패 (기본값 사용): {e}")
         return {
             "years": ["2023", "2024", "2025", "2026"],
-            "values": [100, 110, 120, 130],
+            "values": [100, 115, 135, 150],
             "unit": "Index",
-            "title": f"{topic} 트렌드"
+            "title": f"{topic} 가치 상승 전망"
         }
 
 def generate_viral_title(topic):
-    print(f"⚡ [2/6] 제목 생성 중 (전문가 톤)...")
+    print(f"⚡ [2/6] '돈 되는' 제목 뽑는 중...")
     time.sleep(1)
+    
+    # 🔥 수익화 핵심: 제목부터 '이익'을 강조하도록 변경
     prompt = f"""
-    Act as a Senior Analyst.
-    Create a professional blog title for "{topic}" in Korean.
+    Act as a Real Estate Investment Consultant.
+    Create a highly clickable, profit-focused blog title for "{topic}" in Korean.
     
     Rules:
-    1. No clickbait.
-    2. Use words like '분석', '전망', '데이터', '인사이트'.
-    3. Format: "[분석] ..." or "... 전망과 시사점"
+    1. Focus on 'Profit', 'Timing', 'Undervalued', 'ROI'.
+    2. Professional but Persuasive (Money-making tone).
+    3. Example: "2026년 {topic}: 지금 사야 할 저평가 단지 TOP 3 분석"
+    4. No vague titles. Be specific.
     
     Output ONLY the title.
     """
@@ -110,7 +103,7 @@ def generate_viral_title(topic):
         result = generate_content_with_survival(prompt)
         return result.strip().replace('"', '')
     except:
-        return f"[분석] {topic}: 현황과 전망"
+        return f"[투자전략] {topic}: 수익률 극대화 분석"
 
 def get_image_keywords(topic):
     print(f"🎨 [3/6] 이미지 키워드 추출 중...")
@@ -118,17 +111,17 @@ def get_image_keywords(topic):
     prompt = f"""
     Topic: "{topic}"
     Extract 3 english keywords for stock photos.
-    Keywords should be professional (e.g., architecture, graph, meeting).
+    Keywords: luxury apartment, construction site, money graph, skyline.
     Output ONLY keywords (comma separated).
     """
     try:
         result = generate_content_with_survival(prompt)
         return result.strip().replace(" ", "")
     except:
-        return "business,finance,building"
+        return "city,apartment,money"
 
 def generate_graph(filename_base, data_dict):
-    print(f"📊 [4/6] '{data_dict['unit']}' 단위로 그래프 그리는 중...")
+    print(f"📊 [4/6] '{data_dict['unit']}' 그래프 생성 중...")
     set_korean_font()
     
     image_dir = os.path.join(BLOG_DIR, "static", "images")
@@ -141,12 +134,8 @@ def generate_graph(filename_base, data_dict):
     unit = data_dict['unit']
     title = data_dict['title']
     
-    if values[-1] > values[0]:
-        color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#d32f2f'] 
-    elif values[-1] < values[0]:
-        color = ['#bbdefb', '#90caf9', '#42a5f5', '#1976d2'] 
-    else:
-        color = ['#e1bee7', '#ce93d8', '#ab47bc', '#7b1fa2'] 
+    # 상승장은 붉은색(Red) 계열로 강렬하게
+    color = ['#ffcdd2', '#ef9a9a', '#ef5350', '#d32f2f'] 
 
     plt.figure(figsize=(10, 6))
     bars = plt.bar(years, values, color=color, width=0.6)
@@ -155,10 +144,10 @@ def generate_graph(filename_base, data_dict):
         height = bar.get_height()
         plt.text(bar.get_x() + bar.get_width()/2.0, height, 
                  f'{height}\n{unit}', 
-                 ha='center', va='bottom', fontsize=10, fontweight='bold')
+                 ha='center', va='bottom', fontsize=12, fontweight='bold')
 
-    plt.title(title, fontsize=14, fontweight='bold', pad=20)
-    plt.ylabel(f"Unit: {unit}", fontsize=11)
+    plt.title(title, fontsize=16, fontweight='bold', pad=20)
+    plt.ylabel(f"Unit: {unit}", fontsize=12)
     plt.grid(axis='y', linestyle='--', alpha=0.3)
     plt.gca().spines['top'].set_visible(False)
     plt.gca().spines['right'].set_visible(False)
@@ -168,7 +157,7 @@ def generate_graph(filename_base, data_dict):
     return f"/images/{img_filename}"
 
 def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywords):
-    print(f"🤖 [5/6] 리포트 작성 중...")
+    print(f"🤖 [5/6] 투자 리포트(수익화 버전) 작성 중...")
     time.sleep(1)
     now = datetime.datetime.now()
     
@@ -182,31 +171,34 @@ def generate_github_content(topic, viral_title, graph_url, data_dict, img_keywor
 title: "{viral_title}"
 date: {now.strftime("%Y-%m-%d")}
 draft: false
-categories: ["Market Insight"]
-tags: ["Data Analysis", "Real Estate", "Tech"]
+categories: ["Investment Strategy"]
+tags: ["Real Estate", "ROI", "Trend"]
 cover:
     image: "{cover_image}"
     alt: "{viral_title}"
     relative: false
 ---"""
 
+    # 🔥 여기가 핵심: '돈이 되는' 글쓰기 프롬프트
     prompt = f"""
-    Act as a Senior Urban Engineer & Data Analyst.
+    Act as a Top-tier Real Estate Investment Consultant (Salary: $500k/year).
     Topic: {topic}
     Title: {viral_title}
     Data:
     {data_summary}
     
-    Write a professional blog post in Korean (Markdown).
+    Write a high-value investment report in Korean (Markdown).
+    
+    [Tone & Style]
+    - Persuasive, Confident, Insightful. (Like a paid consulting report)
+    - Focus on 'Money Flow', 'Undervalued Assets', 'Timing'.
+    - Use specific examples of regions or apartment names (Real or Representative) to increase credibility.
     
     [Structure]
-    1. **Executive Summary**: Brief overview.
-    2. **Data Analysis**: Deep dive into the numbers.
-    3. **Strategic Implication**: Market forecast.
-    
-    [Tone]
-    - Professional, Objective, Logical.
-    - No emojis. No exaggerated words.
+    1. **Money Flow (돈의 흐름)**: Where is the liquidity moving? Why this topic now?
+    2. **Data Verification (데이터 검증)**: Analyze the chart. Prove the growth potential.
+    3. **Target Spot (유망 지역/단지)**: Suggest 2-3 specific regions or apartment types that will benefit the most. (Be specific! e.g., 'Bundang Sibeom', 'GTX-A Line Yongin', etc.)
+    4. **Action Plan (투자 전략)**: Buy/Hold/Sell strategy.
     
     Output ONLY Markdown body.
     """
@@ -217,17 +209,17 @@ cover:
     except:
         body = "내용 생성 중 오류가 발생했습니다."
     
-    full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 데이터 분석 ({now.year} 기준)*\n\n{body}"
+    full_content = f"{front_matter}\n\n![Chart]({graph_url})\n*▲ {topic} 투자 가치 분석 ({now.year} 기준)*\n\n{body}"
     return full_content
 
 def generate_tistory_content(viral_title, github_link):
     print(f"🎨 [6/6] 티스토리 요약글 생성 중...")
     time.sleep(1)
     prompt = f"""
-    Write a HTML teaser for a professional blog post about "{viral_title}".
+    Write a HTML teaser for an investment blog post about "{viral_title}".
     Language: Korean.
-    Tone: Professional.
-    Include a button linking to: {github_link} ("전문 읽기")
+    Tone: Engaging, Money-focused.
+    Include a button linking to: {github_link} ("투자 리포트 확인하기")
     Last line: 10 tags separated by commas.
     """
     try:
@@ -249,7 +241,7 @@ def deploy_to_github(viral_title, content):
     try:
         repo = Repo(BLOG_DIR)
         repo.git.add('--all')
-        repo.index.commit(f"New Report: {viral_title}")
+        repo.index.commit(f"Investment Report: {viral_title}")
         origin = repo.remote(name='origin')
         origin.push()
         print("✅ 완료!")
@@ -268,8 +260,8 @@ def save_tistory_file(viral_title, html, tags):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (서바이벌 모드)")
-    print("   * 1순위가 막히면 2순위로 자동 전환합니다.")
+    print("🔥 PropTech 봇 (수익화 컨설턴트 모드)")
+    print("   * 목표: 월 500만원 가치의 고품질 투자 리포트 생성")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
