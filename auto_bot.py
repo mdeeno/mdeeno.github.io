@@ -21,27 +21,21 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🔥 [수익화 설정] 본인의 오픈채팅방 링크나 리더스CPA 링크를 넣으세요!
+# 수익화 링크 (본인 링크로 수정 필수)
 KAKAO_OPEN_CHAT_URL = "https://open.kakao.com/o/YOUR_LINK_HERE" 
 
-# 🔥 [긴급 수정] AI 이미지 생성 기능 끄기 (True=켜기, False=끄기)
-# 현재 이미지 서버 과부하로 인해 False로 설정했습니다. (에러 이미지 방지)
+# 이미지 서버 상태에 따라 조절 (False 추천)
 USE_AI_IMAGE = False
 
-# 성능 좋은 모델 하나만 사용 (원샷 처리를 위해)
 MODEL_CANDIDATES = ['gemini-2.0-flash-exp', 'gemini-2.5-flash']
 # ==============================================================================
 
 genai.configure(api_key=GEMINI_API_KEY)
 
 def generate_one_shot(prompt):
-    """
-    [원샷 전략] 한 번의 호출로 기획+집필+요약을 끝냅니다. (API 차단 방지)
-    """
     for model_name in MODEL_CANDIDATES:
         try:
             model = genai.GenerativeModel(model_name)
-            # JSON 모드 강제
             response = model.generate_content(prompt)
             return response.text
         except Exception as e:
@@ -66,23 +60,35 @@ def set_korean_font():
 def process_topic_one_shot(topic):
     print(f"🚀 [1/1] '{topic}' 분석 및 글 작성 중 (원샷 통합 호출)...")
     
-    # 🔥 [핵심 프롬프트] 
-    # 1. Long-form (장문) 요구 -> 애드센스 광고 삽입 공간 확보
-    # 2. JSON 포맷 요구 -> 데이터 파싱 정확도 향상
+    current_year = datetime.datetime.now().year
+    
+    # 🔥 [프롬프트 대수술] 가독성(Readability) 및 포맷팅 강화 지침 추가
     prompt = f"""
-    Act as a Professional Real Estate Analyst. Analyze: "{topic}".
+    Act as a Famous Real Estate Blogger (Power Blogger). Analyze: "{topic}".
     
     You must output a single VALID JSON object with these exact keys:
     1. "viral_title": A click-bait Korean title focusing on Profit/ROI.
-    2. "search_keyword": A SHORT Korean keyword for Naver Search (max 2-3 words, e.g. "성수동 재개발").
+    2. "search_keyword": A SHORT Korean keyword for Naver Search (max 2-3 words).
     3. "roi_data": {{ "years": [2023, 2024, 2025, 2026], "values": [index numbers], "unit": "Index", "title": "Chart Title" }}
-    4. "image_prompts": ["Cover Image Prompt (English, Cinematic)", "Mid-Content Image Prompt (English, Blueprint/Graph)"]
+    4. "image_prompts": ["Cover Image Prompt", "Mid-Content Image Prompt"]
     5. "blog_body_markdown": The full blog post body in Korean Markdown.
-       - IMPORTANT: Write a LONG-FORM article (min 2000 characters) to maximize SEO and AdSense revenue.
-       - Detail every section deeply.
-       - Structure: Money Flow -> Data Analysis -> Target Spot (3 specific areas with pros/cons) -> Action Plan.
-       - IMPORTANT: Put the text marker `[[MID_IMAGE]]` exactly between section 2 and 3.
-       - Do NOT include the title or front matter here.
+       
+       [CRITICAL WRITING STYLE RULES]
+       1. **Tone**: Engaging, Professional yet Friendly (Blog Style). NOT academic.
+       2. **Formatting**: 
+          - Use **Bold** for key phrases frequently.
+          - Use Emojis (💰, 🚀, 🏗️, ✅, ⚠️) at the start of paragraphs or headers.
+          - Use Bullet points (`*`) or Numbered lists (`1.`) for readability.
+       3. **Paragraphs**: Keep paragraphs SHORT (max 3-4 lines). Add line breaks often.
+       4. **Length**: Long-form (min 2000 characters), but broken down into small chunks.
+       5. **Structure**: 
+          - Intro (Hook) 
+          - Section 1: Money Flow (Why invest here?)
+          - Section 2: Data Analysis
+          - Section 3: Target Spot (3 specific areas)
+          - Section 4: Action Plan
+       6. **Placeholder**: Put `[[MID_IMAGE]]` exactly between Section 2 and 3.
+
     6. "tistory_teaser": HTML summary for Tistory (3 bullet points + CTA button).
     
     Output JSON ONLY. No markdown code blocks.
@@ -97,7 +103,6 @@ def process_topic_one_shot(topic):
         return data
     except Exception as e:
         print(f"⚠️ JSON 파싱 실패: {e}")
-        # 실패 시 비상용 더미 데이터 반환
         return {
             "viral_title": f"{topic} 분석 리포트",
             "search_keyword": "부동산 투자",
@@ -129,9 +134,7 @@ def create_final_content(data, graph_url):
     
     now = datetime.datetime.now()
     
-    # 🔥 [수정] AI 이미지 사용 여부(USE_AI_IMAGE)에 따른 처리
-    # 이미지가 꺼져있으면(False) 아예 링크 생성을 건너뜁니다.
-    
+    # 이미지 처리 (사용 안 함 설정 시 건너뜀)
     if USE_AI_IMAGE:
         prompts = data.get('image_prompts', ["city", "building"])
         encoded_cover = urllib.parse.quote(prompts[0])
@@ -142,11 +145,9 @@ def create_final_content(data, graph_url):
         cover_image = None
         mid_image = None
     
-    # 본문 내 이미지 치환
     body = data['blog_body_markdown']
     
     if USE_AI_IMAGE and mid_image:
-        # 이미지를 쓸 때는 중간에 삽입
         if "[[MID_IMAGE]]" in body:
             body = body.replace("[[MID_IMAGE]]", f"\n![분석 이미지]({mid_image})\n")
         else:
@@ -155,12 +156,11 @@ def create_final_content(data, graph_url):
             paragraphs.insert(insert_idx, f"\n![분석 이미지]({mid_image})\n")
             body = "\n\n".join(paragraphs)
     else:
-        # 이미지를 안 쓸 때는 표식([[MID_IMAGE]])만 조용히 제거
         body = body.replace("[[MID_IMAGE]]", "")
 
     keyword = data.get('search_keyword', '부동산')
     
-    # 🔥 [수익화 Footer]
+    # 푸터 (수익화)
     footer = f"""
 \n
 ---
@@ -180,7 +180,6 @@ AI가 분석한 심층 데이터가 곧 공개됩니다.
 [👉 네이버 부동산에서 '{keyword}' 실시간 시세 확인하기](https://search.naver.com/search.naver?query={keyword})
 """
 
-    # Front Matter 생성 (이미지 유무에 따라 Cover 필드 조절)
     front_matter = f"""---
 title: "{data['viral_title']}"
 date: {now.strftime("%Y-%m-%d")}
@@ -231,9 +230,9 @@ def save_tistory_file(title, html_content, link):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (안전 모드: 이미지 OFF)")
-    print("   * RATE LIMIT 오류 방지를 위해 이미지는 잠시 뺍니다.")
-    print("   * 차트, 장문 포스팅, 수익화 링크는 정상 작동합니다.")
+    print("🔥 PropTech 봇 (가독성 UP + 블로그 말투 버전)")
+    print("   * 빡빡한 텍스트 대신, 읽기 쉬운 블로그 스타일로 작성합니다.")
+    print("   * 이모지, 볼드체, 짧은 문단을 사용합니다.")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
@@ -244,7 +243,7 @@ if __name__ == "__main__":
             full_content = create_final_content(data, graph_url)
             link = deploy_to_github(data['viral_title'], full_content)
             save_tistory_file(data['viral_title'], data['tistory_teaser'], link)
-            print("\n🎉 발행 완료! (이미지 없이 깔끔하게 올라갔습니다)")
+            print("\n🎉 발행 완료! (이제 훨씬 읽기 좋을 겁니다)")
         else:
             print("❌ 생성 실패. 잠시 후 다시 시도하세요.")
     else:
