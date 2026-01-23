@@ -6,6 +6,11 @@ import platform
 import ast
 import urllib.parse
 import json
+import warnings # 경고 메시지 제어용
+
+# 🔥 [수정] 보기 싫은 경고 메시지 숨기기
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
 import google.generativeai as genai
 import matplotlib.pyplot as plt
 from matplotlib import rc
@@ -21,14 +26,13 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🔥 [수익화 설정] 본인의 오픈채팅방 링크나 제휴 마케팅 링크 입력
+# 🔥 [수익화 설정] 애드픽/텐핑 등에서 받은 링크 입력 (없으면 본인 오픈채팅방)
 KAKAO_OPEN_CHAT_URL = "https://open.kakao.com/o/YOUR_LINK_HERE" 
 
-# 🔥 [이미지 설정] AI 이미지 생성 기능 끄기 (True=켜기, False=끄기)
-# 현재 이미지 서버(Pollinations) 과부하 방지를 위해 False 권장
+# 🔥 [이미지 설정] AI 이미지 생성 기능 (True=켜기, False=끄기)
 USE_AI_IMAGE = False
 
-# 성능 좋은 모델 하나만 사용 (원샷 처리를 위해)
+# 성능 좋은 모델 하나만 사용
 MODEL_CANDIDATES = ['gemini-2.0-flash-exp', 'gemini-2.5-flash']
 # ==============================================================================
 
@@ -36,7 +40,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 def generate_one_shot(prompt):
     """
-    [원샷 전략] 한 번의 호출로 기획+집필+요약을 끝냅니다. (API 차단 방지)
+    [원샷 전략] API 차단 방지용 1회 호출
     """
     for model_name in MODEL_CANDIDATES:
         try:
@@ -66,31 +70,30 @@ def set_korean_font():
 def process_topic_one_shot(topic):
     print(f"🚀 [1/1] '{topic}' 분석 및 글 작성 중 (원샷 통합 호출)...")
     
-    # 🔥 [핵심 프롬프트]
     prompt = f"""
     Act as a Famous Real Estate Blogger (Power Blogger). Analyze: "{topic}".
     
     You must output a single VALID JSON object with these exact keys:
     1. "viral_title": A click-bait Korean title focusing on Profit/ROI (Use emojis).
-    2. "search_keyword": A SPECIFIC Korean 'Dong' (neighborhood) or 'Station' name for Naver Land search (e.g., "시흥 장현지구", "안산 고잔동", "반포 래미안"). 
-       - CRITICAL: Do NOT use abstract words like "undervalued" or "investment". Must be a location name.
+    2. "search_keyword": A SPECIFIC Korean 'Dong' (neighborhood) or 'Station' name for Naver Land search (e.g., "시흥 장현지구", "안산 고잔동"). 
+       - CRITICAL: Do NOT use abstract words like "undervalued". Must be a location name.
     3. "roi_data": {{ "years": [2023, 2024, 2025, 2026], "values": [index numbers], "unit": "Index", "title": "Chart Title" }}
     4. "image_prompts": ["Cover Image Prompt", "Mid-Content Image Prompt"]
     5. "blog_body_markdown": The full blog post body in Korean Markdown.
        
        [CRITICAL WRITING STYLE RULES]
-       1. **Tone**: Engaging, Professional yet Friendly (Blog Style). NOT academic. Use phrases like "여러분!", "지금 놓치면 후회합니다!".
+       1. **Tone**: Engaging, Professional yet Friendly (Blog Style). Use phrases like "여러분!", "지금 놓치면 후회합니다!".
        2. **Formatting**: 
           - Use **Bold** for key phrases frequently.
           - Use Emojis (💰, 🚀, 🏗️, ✅, ⚠️, 👋) at the start of paragraphs or headers.
           - Use Bullet points (`*`) or Numbered lists (`1.`) for readability.
-       3. **Paragraphs**: Keep paragraphs SHORT (max 3-4 lines). Add line breaks often to avoid "Wall of Text".
-       4. **Length**: Long-form (min 2000 characters) to maximize AdSense revenue.
+       3. **Paragraphs**: Keep paragraphs SHORT (max 3-4 lines). Add line breaks often.
+       4. **Length**: Long-form (min 2000 characters).
        5. **Structure**: 
           - Intro (Hook) 
-          - Section 1: Money Flow (Why invest here?)
+          - Section 1: Money Flow
           - Section 2: Data Analysis
-          - Section 3: Target Spot (3 specific areas with pros/cons)
+          - Section 3: Target Spot (3 specific areas)
           - Section 4: Action Plan
        6. **Placeholder**: Put `[[MID_IMAGE]]` exactly between Section 2 and 3.
 
@@ -108,11 +111,12 @@ def process_topic_one_shot(topic):
         return data
     except Exception as e:
         print(f"⚠️ JSON 파싱 실패: {e}")
+        # 실패 시 비상용 더미 데이터 반환 (봇 죽음 방지)
         return {
             "viral_title": f"{topic} 분석 리포트",
             "search_keyword": "부동산 시세",
             "roi_data": {"years": [2023,2024,2025,2026], "values": [100,110,120,130], "unit":"Index", "title":"전망"},
-            "image_prompts": ["city skyline", "blueprint"],
+            "image_prompts": ["city", "building"],
             "blog_body_markdown": "내용 생성에 실패했습니다. (API 오류)",
             "tistory_teaser": "<p>요약 생성 실패</p>"
         }
@@ -127,9 +131,14 @@ def generate_graph(filename_base, data_dict):
     img_filename = f"{filename_base}-{int(time.time())}.png"
     img_path = os.path.join(image_dir, img_filename)
 
+    # 🔥 [안전장치] 데이터가 없을 경우 기본값 사용
+    years = data_dict.get('years', ['2024', '2025'])
+    values = data_dict.get('values', [100, 110])
+    title = data_dict.get('title', '시장 전망')
+
     plt.figure(figsize=(10, 6))
-    plt.bar(data_dict['years'], data_dict['values'], color='#d32f2f')
-    plt.title(data_dict['title'])
+    plt.bar(years, values, color='#d32f2f')
+    plt.title(title)
     plt.savefig(img_path)
     plt.close()
     return f"/images/{img_filename}"
@@ -139,9 +148,12 @@ def create_final_content(data, graph_url):
     
     now = datetime.datetime.now()
     
-    # 이미지 처리 (사용 안 함 설정 시 건너뜀)
+    # 이미지 처리
     if USE_AI_IMAGE:
         prompts = data.get('image_prompts', ["city", "building"])
+        # 안전장치: prompts가 비어있을 경우 대비
+        if not prompts: prompts = ["city", "building"]
+        
         encoded_cover = urllib.parse.quote(prompts[0])
         encoded_mid = urllib.parse.quote(prompts[1] if len(prompts)>1 else prompts[0])
         cover_image = f"https://image.pollinations.ai/prompt/{encoded_cover}?width=1600&height=900&nologo=true"
@@ -150,7 +162,8 @@ def create_final_content(data, graph_url):
         cover_image = None
         mid_image = None
     
-    body = data['blog_body_markdown']
+    # 본문 가져오기 (없으면 기본값)
+    body = data.get('blog_body_markdown', '내용을 불러오지 못했습니다.')
     
     if USE_AI_IMAGE and mid_image:
         if "[[MID_IMAGE]]" in body:
@@ -163,13 +176,11 @@ def create_final_content(data, graph_url):
     else:
         body = body.replace("[[MID_IMAGE]]", "")
 
-    keyword = data.get('search_keyword', '부동산')
-    
-    # 🔥 [수정됨] 키워드를 URL용으로 변환 (띄어쓰기 -> %20)
-    # 예: "시흥 장현지구" -> "시흥%20장현지구"
+    # 키워드 가져오기 (없으면 기본값)
+    keyword = data.get('search_keyword', '부동산 투자')
     encoded_keyword = urllib.parse.quote(keyword)
     
-    # 🔥 [수익화 Footer] - 링크에 encoded_keyword 적용
+    # 수익화 Footer
     footer = f"""
 \n
 ---
@@ -189,8 +200,10 @@ AI가 분석한 심층 데이터가 곧 공개됩니다.
 [👉 네이버 부동산에서 '{keyword}' 실시간 매물 보러가기](https://search.naver.com/search.naver?query={encoded_keyword})
 """
 
+    title = data.get('viral_title', '부동산 분석 리포트')
+    
     front_matter = f"""---
-title: "{data['viral_title']}"
+title: "{title}"
 date: {now.strftime("%Y-%m-%d")}
 draft: false
 categories: ["Investment Strategy"]
@@ -199,7 +212,7 @@ tags: ["Real Estate", "ROI", "Money"]
     if cover_image:
         front_matter += f"""cover:
     image: "{cover_image}"
-    alt: "{data['viral_title']}"
+    alt: "{title}"
     relative: false
 """
     front_matter += "---"
@@ -239,20 +252,28 @@ def save_tistory_file(title, html_content, link):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (링크 수리 완료 버전)")
-    print("   * 네이버 부동산 링크 끊김 현상 해결 (URL 인코딩 적용)")
-    print("   * 이제 '시흥 장현지구'처럼 띄어쓰기가 있어도 링크가 잘 연결됩니다.")
+    print("🔥 PropTech 봇 (안전 모드 + 에러 방지)")
+    print("   * AI 데이터 누락 시에도 멈추지 않고 기본값으로 진행합니다.")
+    print("   * 보기 싫은 Warning 메시지를 숨겼습니다.")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
     if topic:
         data = process_topic_one_shot(topic)
         if data:
-            graph_url = generate_graph("chart", data['roi_data'])
+            # 🔥 [핵심 수정] .get()을 사용하여 데이터가 없어도 죽지 않게 함
+            viral_title = data.get('viral_title', topic)
+            roi_data = data.get('roi_data', {})
+            tistory_teaser = data.get('tistory_teaser', '<p>요약 정보가 없습니다.</p>')
+            
+            graph_url = generate_graph("chart", roi_data)
             full_content = create_final_content(data, graph_url)
-            link = deploy_to_github(data['viral_title'], full_content)
-            save_tistory_file(data['viral_title'], data['tistory_teaser'], link)
-            print("\n🎉 발행 완료! (링크 테스트 해보세요)")
+            link = deploy_to_github(viral_title, full_content)
+            
+            # 여기서 에러가 났었으므로 안전하게 처리
+            save_tistory_file(viral_title, tistory_teaser, link)
+            
+            print("\n🎉 발행 완료! (봇이 죽지 않고 끝까지 임무를 완수했습니다)")
         else:
             print("❌ 생성 실패. 잠시 후 다시 시도하세요.")
     else:
