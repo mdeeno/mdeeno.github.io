@@ -21,7 +21,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 
-# 🔥 [수익화 설정] 본인의 오픈채팅방 링크나 리더스CPA/핀다/토스 링크를 넣으세요!
+# 🔥 [수익화 설정] 본인의 오픈채팅방 링크나 제휴 마케팅 링크 입력
 KAKAO_OPEN_CHAT_URL = "https://open.kakao.com/o/YOUR_LINK_HERE" 
 
 # 🔥 [이미지 설정] AI 이미지 생성 기능 끄기 (True=켜기, False=끄기)
@@ -66,9 +66,7 @@ def set_korean_font():
 def process_topic_one_shot(topic):
     print(f"🚀 [1/1] '{topic}' 분석 및 글 작성 중 (원샷 통합 호출)...")
     
-    # 🔥 [핵심 프롬프트 수정]
-    # 1. search_keyword: 추상적 단어 금지, 구체적 행정동/아파트명 요구
-    # 2. Tone & Formatting: 블로그 말투, 이모지, 짧은 문단 강제
+    # 🔥 [핵심 프롬프트]
     prompt = f"""
     Act as a Famous Real Estate Blogger (Power Blogger). Analyze: "{topic}".
     
@@ -110,7 +108,6 @@ def process_topic_one_shot(topic):
         return data
     except Exception as e:
         print(f"⚠️ JSON 파싱 실패: {e}")
-        # 실패 시 비상용 더미 데이터 반환
         return {
             "viral_title": f"{topic} 분석 리포트",
             "search_keyword": "부동산 시세",
@@ -164,12 +161,15 @@ def create_final_content(data, graph_url):
             paragraphs.insert(insert_idx, f"\n![분석 이미지]({mid_image})\n")
             body = "\n\n".join(paragraphs)
     else:
-        # 이미지를 안 쓸 때는 표식([[MID_IMAGE]])만 조용히 제거
         body = body.replace("[[MID_IMAGE]]", "")
 
     keyword = data.get('search_keyword', '부동산')
     
-    # 🔥 [수익화 Footer] - 링크 키워드를 구체적으로 적용
+    # 🔥 [수정됨] 키워드를 URL용으로 변환 (띄어쓰기 -> %20)
+    # 예: "시흥 장현지구" -> "시흥%20장현지구"
+    encoded_keyword = urllib.parse.quote(keyword)
+    
+    # 🔥 [수익화 Footer] - 링크에 encoded_keyword 적용
     footer = f"""
 \n
 ---
@@ -186,7 +186,7 @@ AI가 분석한 심층 데이터가 곧 공개됩니다.
 
 👉 **[내게 맞는 최저금리 상품 1분 만에 확인하기]({KAKAO_OPEN_CHAT_URL})**
 
-[👉 네이버 부동산에서 '{keyword}' 실시간 매물 보러가기](https://search.naver.com/search.naver?query={keyword})
+[👉 네이버 부동산에서 '{keyword}' 실시간 매물 보러가기](https://search.naver.com/search.naver?query={encoded_keyword})
 """
 
     front_matter = f"""---
@@ -239,10 +239,9 @@ def save_tistory_file(title, html_content, link):
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("🔥 PropTech 봇 (월 500 수익화 최종 완결판)")
-    print("   * 가독성 UP: 블로그 말투 + 짧은 문단 + 이모지")
-    print("   * 링크 정확도 UP: 추상적 키워드 제외, 구체적 지명 사용")
-    print("   * 차단 방지: API 원샷 호출")
+    print("🔥 PropTech 봇 (링크 수리 완료 버전)")
+    print("   * 네이버 부동산 링크 끊김 현상 해결 (URL 인코딩 적용)")
+    print("   * 이제 '시흥 장현지구'처럼 띄어쓰기가 있어도 링크가 잘 연결됩니다.")
     print("="*50)
     
     topic = input("✍️  분석할 주제 입력: ")
@@ -253,7 +252,7 @@ if __name__ == "__main__":
             full_content = create_final_content(data, graph_url)
             link = deploy_to_github(data['viral_title'], full_content)
             save_tistory_file(data['viral_title'], data['tistory_teaser'], link)
-            print("\n🎉 발행 완료! (월 500만원을 향해 달립시다)")
+            print("\n🎉 발행 완료! (링크 테스트 해보세요)")
         else:
             print("❌ 생성 실패. 잠시 후 다시 시도하세요.")
     else:
