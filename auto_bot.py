@@ -89,7 +89,7 @@ def clean_json_response(text):
 def process_topic_one_shot(topic):
     print(f"🚀 [Gemini] '{topic}' 수익화 분석 시작...")
     
-    # 🔥 [V3.3 핵심] 티스토리 티저 강화 + SEO 메타 설명 추가
+    # 🔥 [V3.4 핵심] "시뮬레이션 표(Table)" 강제 명령 추가
     prompt = f"""
     Role: Real Estate Power Blogger.
     Task: Analyze "{topic}" and write a blog post.
@@ -99,7 +99,7 @@ def process_topic_one_shot(topic):
     JSON Keys required:
     1. "viral_title": Provocative Korean title with emojis.
     
-    2. "seo_description": A 2-line summary for Google Search (Meta Description). Very enticing.
+    2. "seo_description": A 2-line summary for Google Search (Meta Description).
     
     3. "category": Choose ONE from ["부동산 분석", "청약 정보", "투자 꿀팁", "시장 전망", "정책 분석"].
     
@@ -108,14 +108,21 @@ def process_topic_one_shot(topic):
     5. "roi_data": {{ "years": [2024, 2025, 2026, 2027], "values": [100, 115, 130, 150], "title": "Price Trend" }}
     
     6. "blog_body_markdown": Korean Markdown content.
-       - **Style**: Short paragraphs (2-3 lines), bold keywords, bullet points.
-       - Structure: Hook -> Money Flow -> [[MID_IMAGE]] -> Analysis -> Action Plan.
+       [CRITICAL CONTENT RULES]
+       - **Hypothetical Simulation**: YOU MUST include a Markdown Table showing expected costs/profits. 
+         (Example columns: 'Current Price', 'Contribution(분담금)', 'Total Investment', 'Expected Future Price', 'Net Profit').
+         *Even if exact data is unknown, create a realistic ESTIMATE based on market trends.*
+       
+       [STYLE RULES]
+       - **Short Paragraphs**: Max 2-3 lines per paragraph. NO WALL OF TEXT.
+       - **Line Breaks**: Add empty lines between every paragraph.
+       - **Bullet Points**: Use lists (`*`) frequently.
+       - **Bold**: Highlight key phrases.
+       - Structure: Hook -> Money Flow -> [[MID_IMAGE]] -> **Simulation Table(Must)** -> Analysis -> Action Plan.
        
     7. "tistory_teaser": HTML format text.
        - **Length**: AT LEAST 10-15 lines. (Rich content)
-       - **Strategy**: Storytelling style. Discuss the crisis or opportunity in detail, BUT stop right before the solution.
-       - **Goal**: Make the user desperate to click "Read More".
-       - Content: "Why is this urgent?", "What happens if you miss this?", "A hint about the hidden gem location".
+       - **Strategy**: Storytelling style. Discuss the crisis or opportunity in detail.
     """
     
     result = generate_one_shot(prompt)
@@ -166,7 +173,7 @@ def create_final_content(data, graph_url):
     keyword = data.get('search_keyword', '부동산')
     title = data.get('viral_title', '부동산 리포트')
     category = data.get('category', '부동산 분석')
-    description = data.get('seo_description', title) # SEO 설명
+    description = data.get('seo_description', title)
     
     if not USE_AI_IMAGE:
         body = body.replace("[[MID_IMAGE]]", "")
@@ -174,7 +181,7 @@ def create_final_content(data, graph_url):
     encoded_keyword = urllib.parse.quote(keyword)
     naver_land_url = f"https://new.land.naver.com/search?sk={encoded_keyword}"
 
-    # 🔥 [Footer 강화] 면책 조항(Disclaimer) 추가로 전문성 확보
+    # 🔥 [Footer] 면책 조항 + 새 창 열기 링크
     footer = f"""
 \n
 ---
@@ -195,7 +202,6 @@ def create_final_content(data, graph_url):
 본 포스팅은 부동산 데이터 분석에 기초한 정보 제공을 목적으로 하며, 투자의 법적 책임은 투자자 본인에게 있습니다. 투자는 개인의 재정 상황을 고려하여 신중하게 결정하시기 바랍니다.</small>
 """
 
-    # SEO description 추가
     front_matter = f"""---
 title: "{title}"
 date: {now.strftime("%Y-%m-%d")}
@@ -240,7 +246,7 @@ def save_tistory_snippet(title, teaser, link):
     filename = f"Tistory-{safe_title}.txt"
     path = os.path.join(draft_dir, filename)
     
-    # 🔥 [수정] 티스토리용 '더보기' 버튼 스타일 강화
+    # 🔥 [티스토리] 고퀄리티 버튼 + 요약글
     html = f"""
     <div style="font-size: 16px; line-height: 1.8;">
         <h2>{title}</h2>
@@ -269,14 +275,14 @@ def save_tistory_snippet(title, teaser, link):
     
     with open(path, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"📂 [Tistory] 장문 티저 + 고퀄 버튼 저장 완료")
+    print(f"📂 [Tistory] 티저 저장 완료")
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech 수익화 봇 V3.3 (전문가 모드)")
-    print("   ✅ 티스토리 요약글 강화: 10줄 이상 스토리텔링 + 낚시성 멘트")
-    print("   ✅ SEO 최적화: 검색용 요약글(Description) 자동 생성")
-    print("   ✅ 신뢰도 상승: 하단 면책 조항(Disclaimer) 자동 삽입")
+    print("🔥 PropTech 수익화 봇 V3.4 (시뮬레이션 표 강제)")
+    print("   ✅ 본문에 '수익성 분석 표(Table)'가 무조건 들어갑니다.")
+    print("   ✅ '시뮬레이션', '분담금' 등의 키워드에 반응합니다.")
+    print("   ✅ 기존 기능(새 창 열기, 카테고리, 티저 강화) 모두 포함")
     print("="*60)
     
     topic = input("\n✍️  분석할 부동산 주제/지역을 입력하세요: ")
@@ -289,7 +295,7 @@ if __name__ == "__main__":
             full_content = create_final_content(data, graph_url)
             link = deploy_to_github(data.get('viral_title'), full_content)
             save_tistory_snippet(data.get('viral_title'), data.get('tistory_teaser'), link)
-            print(f"\n🎉 발행 완료! 블로그와 티스토리 파일 모두 확인해보세요.")
+            print(f"\n🎉 발행 완료!")
         else:
             print("❌ 실패.")
     else:
