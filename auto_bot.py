@@ -26,10 +26,14 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
-KAKAO_OPEN_CHAT_URL = "https://open.kakao.com/o/YOUR_LINK_HERE" 
+
+# ❌ [삭제됨] 외부 CPA 링크 대신 내부 계산기를 사용합니다.
+# KAKAO_OPEN_CHAT_URL = "..." 
+
+# ⚙️ [시스템 설정]
 USE_AI_IMAGE = False 
 
-# 🔥 [폴더 매핑] 한글 카테고리를 영문 폴더명으로 변환
+# 🔥 [폴더 매핑] 카테고리 -> 영문 폴더명
 CATEGORY_FOLDER_MAP = {
     "부동산 분석": "analysis",
     "청약 정보": "subscription",
@@ -38,7 +42,7 @@ CATEGORY_FOLDER_MAP = {
     "세금/정책": "policy"
 }
 
-# 🔥 [계산기 매핑] AI가 선택한 타입에 따라 버튼 연결
+# 🔥 [계산기 매핑]
 CALCULATOR_MAP = {
     "dsr": {"url": "/calculators/calc_dsr/", "text": "📉 내 연봉으로 이 집 대출 나올까? (DSR 계산기)"},
     "interest": {"url": "/calculators/calc_interest/", "text": "💰 매달 갚아야 할 원리금은 얼마? (이자 계산기)"},
@@ -76,7 +80,6 @@ def generate_one_shot(prompt):
     return None
 
 def set_korean_font():
-    """차트 폰트 설정"""
     if platform.system() == "Darwin":
         try:
             rc('font', family='AppleGothic')
@@ -84,7 +87,6 @@ def set_korean_font():
         except: pass
 
 def clean_json_response(text):
-    """JSON 파싱 및 복구"""
     try:
         clean_text = text.replace("```json", "").replace("```", "").strip()
         return json.loads(clean_text)
@@ -101,7 +103,6 @@ def clean_json_response(text):
 def process_topic_one_shot(topic):
     print(f"🚀 [Gemini] '{topic}' 수익화 분석 시작...")
     
-    # 🔥 [V5.0 프롬프트] 카테고리 선택지 명확화
     prompt = f"""
     Role: Real Estate Power Blogger.
     Task: Analyze "{topic}" and write a blog post.
@@ -110,21 +111,15 @@ def process_topic_one_shot(topic):
 
     JSON Keys required:
     1. "viral_title": Provocative Korean title with emojis.
-    
     2. "category": Choose ONE from ["부동산 분석", "청약 정보", "투자 꿀팁", "시장 전망", "세금/정책"].
-    
     3. "search_keyword": Specific Location + Property Type. NO abstract words.
-    
     4. "roi_data": {{ "years": [2024, 2025, 2026, 2027], "values": [100, 115, 130, 150], "title": "Price Trend" }}
-    
     5. "calculator_type": Choose ONE best match from:
        ['dsr', 'interest', 'fee', 'tax', 'transfer', 'hold', 'sub', 'rent', 'salary', 'none'].
-    
     6. "blog_body_markdown": Korean Markdown content.
        - **Hypothetical Simulation**: MUST include a Markdown Table.
        - **Style**: Short paragraphs (2-3 lines), bold keywords, bullet points.
        - Structure: Hook -> Money Flow -> **Simulation Table** -> Analysis -> Action Plan.
-       
     7. "tistory_teaser": HTML format text (10-15 lines).
        - **Hook**: Mention the calculator.
     """
@@ -177,7 +172,7 @@ def create_final_content(data, graph_url):
     encoded_keyword = urllib.parse.quote(keyword)
     naver_land_url = f"https://new.land.naver.com/search?sk={encoded_keyword}"
 
-    # 🔥 [V4.5] 맞춤형 계산기 버튼 생성
+    # 🔥 1. [맞춤형 계산기] AI가 선택한 계산기 (본문 중간/하단 배치)
     calculator_btn = ""
     if calc_type in CALCULATOR_MAP and calc_type != 'none':
         info = CALCULATOR_MAP[calc_type]
@@ -196,9 +191,12 @@ def create_final_content(data, graph_url):
         transition: 0.3s;">
         🧮 <strong>{info['text']}</strong>
     </a>
-    <p style="margin-top: 10px; font-size: 12px; color: #868e96;">(2026년 최신 기준 / 사용자 입력 가능)</p>
 </div>
 """
+
+    # 🔥 2. [고정 계산기] DSR/대출한도 계산기로 연결 (CPA 대체)
+    # 아직 CPA가 없으므로, 가장 수요가 많은 '내 대출 한도 계산기'로 트래픽을 몰아줍니다.
+    footer_calc_link = f"{MAIN_DOMAIN_URL}/calculators/calc_dsr/"
 
     footer = f"""
 \n
@@ -210,8 +208,8 @@ def create_final_content(data, graph_url):
 
 {calculator_btn}
 
-📉 **신용점수 영향 없는** 안심 한도 조회
-👉 <a href="{KAKAO_OPEN_CHAT_URL}" target="_blank" rel="noopener noreferrer"><strong>💰 나의 대출 한도 1분 조회하기 (클릭)</strong></a>
+📉 **대출 나오는지 걱정되시나요?**
+👉 <a href="{footer_calc_link}" target="_blank" rel="noopener noreferrer"><strong>💰 내 연봉으로 대출 한도 셀프 계산하기 (DSR 계산기)</strong></a>
 
 🚀 **실시간 매물 호가 확인**
 <a href="{naver_land_url}" target="_blank" rel="noopener noreferrer">👉 <strong>네이버 부동산에서 '{keyword}' 시세/실거래가 확인하기 (클릭)</strong></a>
@@ -238,22 +236,16 @@ image: "{graph_url}"
 def deploy_to_github(title, content, category_kr):
     print(f"🚀 [Git] 깃허브 배포 시작...") 
     
-    # 🔥 [V5.0 핵심] 카테고리별 폴더 분류 로직
-    # 1. 한글 카테고리를 영문 폴더명으로 변환 (기본값: tips)
+    # 📂 카테고리별 폴더 자동 분류
     folder_name = CATEGORY_FOLDER_MAP.get(category_kr, "tips")
-    
-    # 2. 저장할 폴더 경로 생성 (content/posts/category_name)
     target_dir = os.path.join(BLOG_DIR, "content", "posts", folder_name)
     
-    # 3. 폴더가 없으면 생성
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
-        print(f"   📂 새 카테고리 폴더 생성: {folder_name}")
 
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "-")
     safe_filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{safe_title}.md"
     
-    # 4. 파일 저장 (지정된 폴더 안에)
     filepath = os.path.join(target_dir, safe_filename)
     
     with open(filepath, 'w', encoding='utf-8') as f: 
@@ -266,8 +258,6 @@ def deploy_to_github(title, content, category_kr):
         origin = repo.remote(name='origin')
         origin.push()
         
-        # URL은 폴더 구조를 따라갈 수도, 아닐 수도 있음 (Hugo 설정에 따름)
-        # 보통은 /posts/folder/filename 형태로 접근 가능
         post_url = f"{MAIN_DOMAIN_URL}/posts/{folder_name}/{safe_filename.replace('.md', '')}"
         print(f"✅ [Success] 배포 완료! \n🔗 링크: {post_url}")
         return post_url
@@ -315,10 +305,9 @@ def save_tistory_snippet(title, teaser, link):
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech 수익화 봇 V5.0 (카테고리 폴더 자동화)")
-    print("   ✅ 'content/posts/카테고리명/' 폴더에 자동 분산 저장")
-    print("   ✅ 카테고리 매핑: 부동산 분석(analysis), 세금(policy) 등")
-    print("   ✅ 계산기 자동 추천 및 티스토리 연동 완비")
+    print("🔥 PropTech 수익화 봇 V5.1 (내부 순환 시스템 완성)")
+    print("   ✅ CPA 링크 제거 -> [DSR 대출 계산기]로 트래픽 유도")
+    print("   ✅ 카테고리별 폴더 저장 & 계산기 매칭 기능 유지")
     print("="*60)
     
     topic = input("\n✍️  분석할 부동산 주제/지역을 입력하세요: ")
@@ -329,12 +318,9 @@ if __name__ == "__main__":
             roi_data = data.get('roi_data', {})
             graph_url = generate_graph("chart", roi_data)
             full_content = create_final_content(data, graph_url)
-            
-            # 🔥 [수정] deploy 함수에 카테고리 정보도 같이 넘겨줌
             link = deploy_to_github(data.get('viral_title'), full_content, data.get('category'))
-            
             save_tistory_snippet(data.get('viral_title'), data.get('tistory_teaser'), link)
-            print(f"\n🎉 발행 완료! (폴더별 저장 성공)")
+            print(f"\n🎉 발행 완료!")
         else:
             print("❌ 실패.")
     else:
