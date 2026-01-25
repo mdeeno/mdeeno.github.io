@@ -98,22 +98,26 @@ def clean_json_response(text):
 def process_topic_one_shot(topic):
     print(f"🚀 [Gemini] '{topic}' 수익화 분석 시작...")
     
-    # 2.0 Flash에게 최적화된 프롬프트
+    # 🔥 [핵심 수정] 가독성(Readability) 극대화 지침 추가
     prompt = f"""
-    You are a 'Real Estate Investment Expert'. Analyze: "{topic}".
-
-    Output ONLY a single valid JSON object. Do NOT write any introduction.
+    Role: Real Estate Power Blogger.
+    Task: Analyze "{topic}" and write a blog post.
     
-    Keys required:
+    Format: Output ONLY a single valid JSON object. No intro text.
+
+    JSON Keys required:
     1. "viral_title": Provocative Korean title with emojis.
-    2. "search_keyword": A specific Korean location (e.g. "가락동 헬리오시티").
-       - MUST be a specific 'Dong' or 'Apartment Name'.
+    2. "search_keyword": Specific Korean location (e.g. "가락동 헬리오시티").
     3. "roi_data": {{ "years": [2024, 2025, 2026, 2027], "values": [100, 115, 130, 150], "title": "Price Trend" }}
-    4. "blog_body_markdown": Korean Markdown content.
+    4. "blog_body_markdown": Korean blog post content (Markdown).
+       [EXTREMELY IMPORTANT STYLE RULES]
+       - **Short Paragraphs**: Max 2-3 lines per paragraph. NO WALL OF TEXT.
+       - **Line Breaks**: Add empty lines between every paragraph.
+       - **Bullet Points**: Use lists (`*`) frequently for easy reading.
+       - **Bold**: Highlight key phrases like **"2026년 착공"**, **"2배 상승"**.
+       - **Emojis**: Use emojis (💰, 🚀, ✅) at the start of sections.
        - Structure: Hook -> Money Flow -> [[MID_IMAGE]] -> Analysis -> Action Plan.
-       - Tone: Friendly, Professional Blog style.
-       - Length: Min 2000 chars.
-    5. "tistory_teaser": HTML summary.
+    5. "tistory_teaser": Short HTML summary.
     """
     
     result = generate_one_shot(prompt)
@@ -196,8 +200,9 @@ tags: ["{keyword}", "부동산투자", "재테크"]
 image: "{graph_url}"
 ---
 """
-
-    return f"{front_matter}\n\n# {title}\n\n![전망 차트]({graph_url})\n*▲ AI 분석 데이터 ({now.year}년 기준)*\n\n{body}\n{footer}"
+    
+    # 🔥 [수정됨] 제목 중복 제거 완료 (본문에서 '# Title' 제거)
+    return f"{front_matter}\n\n![전망 차트]({graph_url})\n*▲ AI 분석 데이터 ({now.year}년 기준)*\n\n{body}\n{footer}"
 
 def deploy_to_github(title, content):
     print(f"🚀 [Git] 깃허브 배포 시작...") 
@@ -236,9 +241,9 @@ def save_tistory_snippet(title, teaser, link):
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech 수익화 봇 V2.6 (최종 모델 최적화)")
-    print("   ✅ 사용자 API 전용 모델 탑재 (2.0-Flash / Lite)")
-    print("   ✅ 과부하 시 자동으로 'Lite 모델'로 전환하여 성공률 99%")
+    print("🔥 PropTech 수익화 봇 V2.7 (제목 중복 수정 완료)")
+    print("   ✅ 블로그 제목이 두 번 나오는 현상 수정")
+    print("   ✅ 사용자 API 최적화 모델 유지")
     print("="*60)
     
     topic = input("\n✍️  분석할 부동산 주제/지역을 입력하세요: ")
@@ -251,7 +256,7 @@ if __name__ == "__main__":
             full_content = create_final_content(data, graph_url)
             link = deploy_to_github(data.get('viral_title'), full_content)
             save_tistory_snippet(data.get('viral_title'), data.get('tistory_teaser'), link)
-            print(f"\n🎉 성공! 이제 에러 없을 겁니다.")
+            print(f"\n🎉 성공! 글이 아주 깔끔하게 올라갈 겁니다.")
         else:
             print("❌ 실패. (모든 모델이 응답하지 않습니다)")
     else:

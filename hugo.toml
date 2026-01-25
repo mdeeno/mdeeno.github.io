@@ -11,7 +11,10 @@ theme = 'PaperMod'
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   
-  # 👇 [핵심] 이미지를 목록과 글 상단에 노출하는 설정
+  # 메인 화면 모드 (글 목록 스타일)
+  homeInfoParams.Title = "🚀 PropTech Lab"
+  homeInfoParams.Content = "부동산 데이터 분석 & 투자 전략 연구소"
+
   [params.cover]
     hidden = false
     hiddenInList = false
@@ -19,17 +22,31 @@ theme = 'PaperMod'
     responsiveImages = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"] # 검색 기능을 위해 JSON 필수
 
-# 메뉴 설정 (필요하면 쓰세요)
+# -----------------------------------------------------------
+# 👇 [핵심] 상단 메뉴바 설정 (이모지로 가독성 UP)
+# -----------------------------------------------------------
 [[menu.main]]
-  identifier = "categories"
-  name = "Categories"
-  url = "/categories/"
+  identifier = "archives"
+  name = "🗂️ 전체보기"
+  url = "/archives/"
   weight = 10
 
 [[menu.main]]
-  identifier = "tags"
-  name = "Tags"
-  url = "/tags/"
+  identifier = "categories"
+  name = "📂 카테고리"
+  url = "/categories/"
   weight = 20
+
+[[menu.main]]
+  identifier = "tags"
+  name = "🏷️ 태그"
+  url = "/tags/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "search"
+  name = "🔍 검색"
+  url = "/search/"
+  weight = 40
