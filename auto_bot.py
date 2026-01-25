@@ -89,7 +89,7 @@ def clean_json_response(text):
 def process_topic_one_shot(topic):
     print(f"🚀 [Gemini] '{topic}' 수익화 분석 시작...")
     
-    # 🔥 [V3.4 핵심] "시뮬레이션 표(Table)" 강제 명령 추가
+    # 🔥 [V3.5 핵심] 키워드 정제 명령 추가 ("투자", "전망" 금지)
     prompt = f"""
     Role: Real Estate Power Blogger.
     Task: Analyze "{topic}" and write a blog post.
@@ -99,30 +99,24 @@ def process_topic_one_shot(topic):
     JSON Keys required:
     1. "viral_title": Provocative Korean title with emojis.
     
-    2. "seo_description": A 2-line summary for Google Search (Meta Description).
+    2. "seo_description": A 2-line summary for Google Search.
     
     3. "category": Choose ONE from ["부동산 분석", "청약 정보", "투자 꿀팁", "시장 전망", "정책 분석"].
     
-    4. "search_keyword": Specific Korean location (e.g. "가락동 헬리오시티").
+    4. "search_keyword": A Specific Location + Property Type ONLY.
+       - **RULES**: DO NOT include abstract words like "투자(Investment)", "전망(Outlook)", "갭투자", "분석".
+       - **Bad Examples**: "성수동 상가 투자", "강남 재건축 전망", "송파구 갭투자"
+       - **Good Examples**: "성수동 상가", "은마아파트", "송파구 아파트", "한남동 빌딩"
     
     5. "roi_data": {{ "years": [2024, 2025, 2026, 2027], "values": [100, 115, 130, 150], "title": "Price Trend" }}
     
     6. "blog_body_markdown": Korean Markdown content.
-       [CRITICAL CONTENT RULES]
-       - **Hypothetical Simulation**: YOU MUST include a Markdown Table showing expected costs/profits. 
-         (Example columns: 'Current Price', 'Contribution(분담금)', 'Total Investment', 'Expected Future Price', 'Net Profit').
-         *Even if exact data is unknown, create a realistic ESTIMATE based on market trends.*
-       
-       [STYLE RULES]
-       - **Short Paragraphs**: Max 2-3 lines per paragraph. NO WALL OF TEXT.
-       - **Line Breaks**: Add empty lines between every paragraph.
-       - **Bullet Points**: Use lists (`*`) frequently.
-       - **Bold**: Highlight key phrases.
+       - **Hypothetical Simulation**: MUST include a Markdown Table showing expected costs/profits.
+       - **Style**: Short paragraphs (2-3 lines), bold keywords, bullet points.
        - Structure: Hook -> Money Flow -> [[MID_IMAGE]] -> **Simulation Table(Must)** -> Analysis -> Action Plan.
        
     7. "tistory_teaser": HTML format text.
-       - **Length**: AT LEAST 10-15 lines. (Rich content)
-       - **Strategy**: Storytelling style. Discuss the crisis or opportunity in detail.
+       - Length: 10-15 lines. Storytelling style.
     """
     
     result = generate_one_shot(prompt)
@@ -181,7 +175,8 @@ def create_final_content(data, graph_url):
     encoded_keyword = urllib.parse.quote(keyword)
     naver_land_url = f"https://new.land.naver.com/search?sk={encoded_keyword}"
 
-    # 🔥 [Footer] 면책 조항 + 새 창 열기 링크
+    # 🔥 [수정됨] 링크 텍스트 변경: '보기' -> '시세/실거래가 확인하기'
+    # STO 투자자에게도 "기초 자산의 가격 확인"은 필수 과정이므로 자연스럽게 연결됩니다.
     footer = f"""
 \n
 ---
@@ -194,7 +189,7 @@ def create_final_content(data, graph_url):
 👉 <a href="{KAKAO_OPEN_CHAT_URL}" target="_blank" rel="noopener noreferrer"><strong>💰 나의 대출 한도 1분 조회하기 (클릭)</strong></a>
 
 🚀 **실시간 매물 호가 확인**
-<a href="{naver_land_url}" target="_blank" rel="noopener noreferrer">👉 <strong>네이버 부동산에서 '{keyword}' 보기 (클릭)</strong></a>
+<a href="{naver_land_url}" target="_blank" rel="noopener noreferrer">👉 <strong>네이버 부동산에서 '{keyword}' 시세/실거래가 확인하기 (클릭)</strong></a>
 
 <br>
 <hr>
@@ -246,7 +241,6 @@ def save_tistory_snippet(title, teaser, link):
     filename = f"Tistory-{safe_title}.txt"
     path = os.path.join(draft_dir, filename)
     
-    # 🔥 [티스토리] 고퀄리티 버튼 + 요약글
     html = f"""
     <div style="font-size: 16px; line-height: 1.8;">
         <h2>{title}</h2>
@@ -279,10 +273,10 @@ def save_tistory_snippet(title, teaser, link):
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech 수익화 봇 V3.4 (시뮬레이션 표 강제)")
-    print("   ✅ 본문에 '수익성 분석 표(Table)'가 무조건 들어갑니다.")
-    print("   ✅ '시뮬레이션', '분담금' 등의 키워드에 반응합니다.")
-    print("   ✅ 기존 기능(새 창 열기, 카테고리, 티저 강화) 모두 포함")
+    print("🔥 PropTech 수익화 봇 V3.5 (키워드/링크 정밀 타격)")
+    print("   ✅ 네이버 부동산 검색어 최적화 ('투자' 단어 자동 삭제)")
+    print("   ✅ 링크 멘트 수정: '시세/실거래가 확인하기'로 자연스럽게 유도")
+    print("   ✅ 시뮬레이션 표 강제 삽입 유지")
     print("="*60)
     
     topic = input("\n✍️  분석할 부동산 주제/지역을 입력하세요: ")
