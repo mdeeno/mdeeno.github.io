@@ -26,24 +26,33 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
-
-# 💰 [수익화 링크]
 KAKAO_OPEN_CHAT_URL = "https://open.kakao.com/o/YOUR_LINK_HERE" 
-
-# ⚙️ [시스템 설정]
 USE_AI_IMAGE = False 
 
-# 🔥 [모델 설정]
+# 🔥 [계산기 매핑 정보]
+# AI가 'type'을 선택하면, 그에 맞는 URL과 버튼 멘트를 매칭합니다.
+CALCULATOR_MAP = {
+    "dsr": {"url": "/calculators/calc_dsr/", "text": "📉 내 연봉으로 이 집 대출 나올까? (DSR 계산기)"},
+    "interest": {"url": "/calculators/calc_interest/", "text": "💰 매달 갚아야 할 원리금은 얼마? (이자 계산기)"},
+    "fee": {"url": "/calculators/calc_fee/", "text": "🤝 중개수수료(복비) 호구 안 당하는 법 (복비 계산기)"},
+    "tax": {"url": "/calculators/calc_tax/", "text": "🏠 집 살 때 취득세, 얼마나 준비해야 할까? (취득세 계산기)"},
+    "transfer": {"url": "/calculators/calc_transfer/", "text": "💸 집 팔면 남는 게 있을까? (양도세 계산기)"},
+    "hold": {"url": "/calculators/calc_hold/", "text": "🏠 가만히 있어도 나가는 세금 확인 (보유세 계산기)"},
+    "sub": {"url": "/calculators/calc_subscription/", "text": "🏆 내 점수로 청약 당첨 가능할까? (가점 계산기)"},
+    "rent": {"url": "/calculators/calc_rent/", "text": "🔄 전세↔월세, 적정 금액은 얼마? (전환율 계산기)"},
+    "salary": {"url": "/calculators/calc_salary/", "text": "💵 세금 떼고 실제 통장에 꽂히는 돈은? (실수령액 계산기)"},
+    "none": {"url": "", "text": ""}
+}
+
 MODEL_CANDIDATES = [
     'gemini-2.0-flash',       
     'gemini-2.0-flash-lite',  
     'gemini-2.5-flash'        
 ]
 
-# ==============================================================================
-
 genai.configure(api_key=GEMINI_API_KEY)
 
+# ... (generate_one_shot, set_korean_font, clean_json_response 함수는 기존과 동일) ...
 def generate_one_shot(prompt):
     """Gemini API 호출"""
     for model_name in MODEL_CANDIDATES:
@@ -55,11 +64,7 @@ def generate_one_shot(prompt):
             )
             return response.text
         except Exception as e:
-            error_msg = str(e)
-            if "429" in error_msg or "Resource exhausted" in error_msg:
-                print(f"   ⏳ [과부하] {model_name} 패스 -> 다음 모델...")
-                time.sleep(2)
-                continue
+            time.sleep(2)
             continue
     return None
 
@@ -89,34 +94,33 @@ def clean_json_response(text):
 def process_topic_one_shot(topic):
     print(f"🚀 [Gemini] '{topic}' 수익화 분석 시작...")
     
-    # 🔥 [V3.5 핵심] 키워드 정제 명령 추가 ("투자", "전망" 금지)
+    # 🔥 [V4.5 프롬프트] 구체적인 계산기 타입(type) 선택 요청
     prompt = f"""
     Role: Real Estate Power Blogger.
     Task: Analyze "{topic}" and write a blog post.
     
-    Format: Output ONLY a single valid JSON object. No intro text.
+    Format: Output ONLY a single valid JSON object.
 
     JSON Keys required:
     1. "viral_title": Provocative Korean title with emojis.
     
-    2. "seo_description": A 2-line summary for Google Search.
+    2. "category": Choose ONE from ["부동산 분석", "청약 정보", "투자 꿀팁", "시장 전망", "세금/정책"].
     
-    3. "category": Choose ONE from ["부동산 분석", "청약 정보", "투자 꿀팁", "시장 전망", "정책 분석"].
+    3. "search_keyword": Specific Location + Property Type. NO abstract words like "투자/전망".
     
-    4. "search_keyword": A Specific Location + Property Type ONLY.
-       - **RULES**: DO NOT include abstract words like "투자(Investment)", "전망(Outlook)", "갭투자", "분석".
-       - **Bad Examples**: "성수동 상가 투자", "강남 재건축 전망", "송파구 갭투자"
-       - **Good Examples**: "성수동 상가", "은마아파트", "송파구 아파트", "한남동 빌딩"
+    4. "roi_data": {{ "years": [2024, 2025, 2026, 2027], "values": [100, 115, 130, 150], "title": "Price Trend" }}
     
-    5. "roi_data": {{ "years": [2024, 2025, 2026, 2027], "values": [100, 115, 130, 150], "title": "Price Trend" }}
+    5. "calculator_type": Choose ONE best match from:
+       ['dsr', 'interest', 'fee', 'tax', 'transfer', 'hold', 'sub', 'rent', 'salary', 'none'].
+       - Example: Buying a house -> 'tax' or 'dsr'. Selling -> 'transfer'. Renting -> 'rent'. Subscription -> 'sub'.
     
     6. "blog_body_markdown": Korean Markdown content.
-       - **Hypothetical Simulation**: MUST include a Markdown Table showing expected costs/profits.
+       - **Hypothetical Simulation**: MUST include a Markdown Table.
        - **Style**: Short paragraphs (2-3 lines), bold keywords, bullet points.
-       - Structure: Hook -> Money Flow -> [[MID_IMAGE]] -> **Simulation Table(Must)** -> Analysis -> Action Plan.
+       - Structure: Hook -> Money Flow -> **Simulation Table** -> Analysis -> Action Plan.
        
-    7. "tistory_teaser": HTML format text.
-       - Length: 10-15 lines. Storytelling style.
+    7. "tistory_teaser": HTML format text (10-15 lines).
+       - **Hook**: Mention the calculator. Ex: "Calculate your exact taxes/limit inside the blog!"
     """
     
     result = generate_one_shot(prompt)
@@ -125,16 +129,8 @@ def process_topic_one_shot(topic):
     data = clean_json_response(result)
     
     if not data:
-        print("⚠️ 분석 실패 (데이터 오류).")
-        return {
-            "viral_title": f"🚨 {topic} 긴급 분석",
-            "seo_description": "부동산 긴급 분석 리포트입니다.",
-            "category": "부동산 분석",
-            "search_keyword": topic,
-            "roi_data": {"years": [2024,2025], "values": [100,100], "title":"준비중"},
-            "blog_body_markdown": f"## {topic}\n\n데이터 분석 중입니다.",
-            "tistory_teaser": "<p>분석 내용 요약입니다.</p>"
-        }
+        print("⚠️ 분석 실패.")
+        return None
     return data
 
 def generate_graph(filename_base, data_dict):
@@ -167,7 +163,7 @@ def create_final_content(data, graph_url):
     keyword = data.get('search_keyword', '부동산')
     title = data.get('viral_title', '부동산 리포트')
     category = data.get('category', '부동산 분석')
-    description = data.get('seo_description', title)
+    calc_type = data.get('calculator_type', 'none')
     
     if not USE_AI_IMAGE:
         body = body.replace("[[MID_IMAGE]]", "")
@@ -175,8 +171,29 @@ def create_final_content(data, graph_url):
     encoded_keyword = urllib.parse.quote(keyword)
     naver_land_url = f"https://new.land.naver.com/search?sk={encoded_keyword}"
 
-    # 🔥 [수정됨] 링크 텍스트 변경: '보기' -> '시세/실거래가 확인하기'
-    # STO 투자자에게도 "기초 자산의 가격 확인"은 필수 과정이므로 자연스럽게 연결됩니다.
+    # 🔥 [V4.5] 맞춤형 계산기 버튼 생성
+    calculator_btn = ""
+    if calc_type in CALCULATOR_MAP and calc_type != 'none':
+        info = CALCULATOR_MAP[calc_type]
+        calculator_btn = f"""
+<div style="margin-top: 30px; margin-bottom: 30px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
+    <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 내 조건으로 정확하게 계산해보고 싶다면?</p>
+    <a href="{MAIN_DOMAIN_URL}{info['url']}" target="_blank" style="
+        display: inline-block; 
+        background-color: #00C853; 
+        color: white; 
+        padding: 15px 30px; 
+        border-radius: 50px; 
+        font-weight: bold; 
+        text-decoration: none; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: 0.3s;">
+        🧮 <strong>{info['text']}</strong>
+    </a>
+    <p style="margin-top: 10px; font-size: 12px; color: #868e96;">(2026년 최신 기준 / 사용자 입력 가능)</p>
+</div>
+"""
+
     footer = f"""
 \n
 ---
@@ -184,6 +201,8 @@ def create_final_content(data, graph_url):
 
 부동산은 **타이밍**이 생명입니다.
 내 자금으로 가능한 **최고의 매물**이 무엇인지 지금 바로 확인하세요.
+
+{calculator_btn}
 
 📉 **신용점수 영향 없는** 안심 한도 조회
 👉 <a href="{KAKAO_OPEN_CHAT_URL}" target="_blank" rel="noopener noreferrer"><strong>💰 나의 대출 한도 1분 조회하기 (클릭)</strong></a>
@@ -203,7 +222,7 @@ date: {now.strftime("%Y-%m-%d")}
 draft: false
 categories: ["{category}"]
 tags: ["{keyword}", "부동산투자", "재테크"]
-description: "{description}"
+description: "{title}"
 image: "{graph_url}"
 ---
 """
@@ -214,6 +233,7 @@ def deploy_to_github(title, content):
     print(f"🚀 [Git] 깃허브 배포 시작...") 
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "-")
     safe_filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{safe_title}.md"
+    # 🔥 [수정] 포스팅 저장 위치 확인 (calculators 폴더와 섞이지 않게)
     filepath = os.path.join(BLOG_DIR, "content", "posts", safe_filename)
     
     with open(filepath, 'w', encoding='utf-8') as f: 
@@ -258,7 +278,7 @@ def save_tistory_snippet(title, teaser, link):
                 border-radius: 8px; 
                 font-size: 18px;
                 box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-                👉 리포트 전문(Full) 무료로 보기
+                👉 리포트 전문(Full) 무료로 보기 & 계산기 사용하기
             </a>
             <p style="color: #666; font-size: 14px; margin-top: 10px;">
                 (클릭 시 광고 없이 원본 사이트로 이동합니다)
@@ -273,10 +293,10 @@ def save_tistory_snippet(title, teaser, link):
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech 수익화 봇 V3.5 (키워드/링크 정밀 타격)")
-    print("   ✅ 네이버 부동산 검색어 최적화 ('투자' 단어 자동 삭제)")
-    print("   ✅ 링크 멘트 수정: '시세/실거래가 확인하기'로 자연스럽게 유도")
-    print("   ✅ 시뮬레이션 표 강제 삽입 유지")
+    print("🔥 PropTech 수익화 봇 V4.5 (계산기 자동 매칭)")
+    print("   ✅ 주제에 딱 맞는 계산기(9종 중 택1)를 골라 추천합니다.")
+    print("   ✅ 계산기 URL 경로 수정 완료 (/calculators/...)")
+    print("   ✅ 기준일 업데이트 안내 문구 추가")
     print("="*60)
     
     topic = input("\n✍️  분석할 부동산 주제/지역을 입력하세요: ")
