@@ -1,15 +1,6 @@
-PropTech 블로그 봇 V3.4
-사용자설정 Gem
-1단계: 저장 정보
-경로: content/posts/analysis/
-
-파일명: 2026-01-26-1st-gen-new-town-reconstruction.md
-
-2단계: 메인 블로그 포스팅 (Hugo Markdown)
-Markdown
 ---
 title: "💸 분당·일산 선도지구: '억' 소리 나는 분담금, 그래도 들어갈까? (수익성 시뮬레이션)"
-date: 2026-01-26
+date: 2026-01-25
 draft: false
 categories: ["부동산 분석", "재건축 시뮬레이션"]
 tags: ["분당재건축", "일산재건축", "선도지구", "분담금", "노후계획도시특별법", "부동산투자"]
@@ -83,49 +74,3 @@ image: "/images/1st-gen-simulation.png"
 
 ---
 <small>※ 본 포스팅은 데이터 분석에 기반한 정보 제공을 목적으로 하며, 투자의 책임은 전적으로 투자자 본인에게 있습니다. 재건축 사업 단계 및 정책 변화에 따라 실제 수치는 달라질 수 있습니다.</small>
-3단계: 티스토리 업로드용 (Teaser HTML)
-파일 정보: tistory_drafts/Tistory-2026-01-26-1st-gen-new-town.txt
-
-HTML
-<h2>💣 1기 신도시 선도지구: "분담금 5억" 통지서 받기 전에 필독</h2>
-
-<p>
-    "옆 단지는 선도지구 신청했다는데, 우리는 왜 가만히 있나요?"<br>
-    지금 1기 신도시(분당, 일산, 평촌 등) 단톡방이 뜨겁습니다. 통합 재건축 동의율 90% 달성, 선도지구 지정 임박... 뉴스만 보면 내일 당장 천지개벽할 것 같습니다.<br><br>
-    하지만 정작 조합원들이 외면하고 있는 <b>'불편한 진실'</b>이 하나 있습니다. 바로 <b>폭등한 공사비와 기부채납 비율</b>입니다.<br>
-    용적률 360%를 받는다고 무조건 이득일까요? 시뮬레이션을 돌려보면 의외로 <b>'마이너스 수익률'</b>이 나오는 단지들이 수두룩합니다.<br><br>
-    단순히 "몸테크하면 되겠지"라고 생각했다가는, 입주 시점에 <b>수억 원의 현금 청구서</b>를 받고 쫓겨날 수도 있습니다.<br>
-    PropTech Lab에서 <b>분당 시범단지와 일산 강촌마을의 실제 예상 분담금</b>을 공사비 인상분을 반영하여 정밀 시뮬레이션했습니다.<br>
-    지금 당신이 계약금을 쏘기 전에 반드시 확인해야 할 <b>'숫자의 진실'</b>을 공개합니다.
-</p>
-
-<div style="text-align: center; margin: 30px 0;">
-    <a href="https://tech.mdeeno.com/posts/analysis/2026-01-26-1st-gen-new-town-reconstruction/" 
-       style="background-color: #0056b3; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em;">
-       👉 [충격 분석] 분담금 시뮬레이션 리포트 전(Full)문 무료로 보기
-    </a>
-</div>
-
-<p style="color: #666; font-size: 0.9em; margin-top: 20px;">
-    (해당 리포트는 무료로 제공되며, 추후 유료로 전환될 수 있습니다.)
-</p>
-검색 태그: 1기신도시,분당재건축,일산재건축,선도지구,재건축분담금,부동산시뮬레이션,노후계획도시특별법,분당시범단지,일산강촌마을,부동산투자,갭투자,재건축초과이익환수제,GTX-A,성남역,용적률상향
-
-4단계: 이미지 가이드
-파일명: 1st-gen-simulation.png
-
-저장 위치: 블로그 프로젝트 폴더 내 static/images/
-
-이미지 내용 추천:
-
-좌우 분할 화면: 왼쪽에는 낡은 1기 신도시 아파트 전경, 오른쪽에는 화려한 조감도.
-
-중앙에 붉은색 텍스트로 "분담금 5억 vs 2억" 대비 효과 삽입.
-
-또는 '공사비 지수 급등 그래프' 위에 아파트 모형이 위태롭게 서 있는 일러스트.
-
-5단계: 배포 명령어 (Git)
-Bash
-git add content/posts/analysis/2026-01-26-1st-gen-new-town-reconstruction.md
-git commit -m "New Post: 1기 신도시 재건축 선도지구 분담금 및 수익성 분석 시뮬레이션"
-git push origin main
