@@ -29,8 +29,16 @@ MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 KAKAO_OPEN_CHAT_URL = "https://open.kakao.com/o/YOUR_LINK_HERE" 
 USE_AI_IMAGE = False 
 
-# 🔥 [계산기 매핑 정보]
-# AI가 'type'을 선택하면, 그에 맞는 URL과 버튼 멘트를 매칭합니다.
+# 🔥 [폴더 매핑] 한글 카테고리를 영문 폴더명으로 변환
+CATEGORY_FOLDER_MAP = {
+    "부동산 분석": "analysis",
+    "청약 정보": "subscription",
+    "투자 꿀팁": "tips",
+    "시장 전망": "outlook",
+    "세금/정책": "policy"
+}
+
+# 🔥 [계산기 매핑] AI가 선택한 타입에 따라 버튼 연결
 CALCULATOR_MAP = {
     "dsr": {"url": "/calculators/calc_dsr/", "text": "📉 내 연봉으로 이 집 대출 나올까? (DSR 계산기)"},
     "interest": {"url": "/calculators/calc_interest/", "text": "💰 매달 갚아야 할 원리금은 얼마? (이자 계산기)"},
@@ -52,7 +60,6 @@ MODEL_CANDIDATES = [
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# ... (generate_one_shot, set_korean_font, clean_json_response 함수는 기존과 동일) ...
 def generate_one_shot(prompt):
     """Gemini API 호출"""
     for model_name in MODEL_CANDIDATES:
@@ -94,7 +101,7 @@ def clean_json_response(text):
 def process_topic_one_shot(topic):
     print(f"🚀 [Gemini] '{topic}' 수익화 분석 시작...")
     
-    # 🔥 [V4.5 프롬프트] 구체적인 계산기 타입(type) 선택 요청
+    # 🔥 [V5.0 프롬프트] 카테고리 선택지 명확화
     prompt = f"""
     Role: Real Estate Power Blogger.
     Task: Analyze "{topic}" and write a blog post.
@@ -106,13 +113,12 @@ def process_topic_one_shot(topic):
     
     2. "category": Choose ONE from ["부동산 분석", "청약 정보", "투자 꿀팁", "시장 전망", "세금/정책"].
     
-    3. "search_keyword": Specific Location + Property Type. NO abstract words like "투자/전망".
+    3. "search_keyword": Specific Location + Property Type. NO abstract words.
     
     4. "roi_data": {{ "years": [2024, 2025, 2026, 2027], "values": [100, 115, 130, 150], "title": "Price Trend" }}
     
     5. "calculator_type": Choose ONE best match from:
        ['dsr', 'interest', 'fee', 'tax', 'transfer', 'hold', 'sub', 'rent', 'salary', 'none'].
-       - Example: Buying a house -> 'tax' or 'dsr'. Selling -> 'transfer'. Renting -> 'rent'. Subscription -> 'sub'.
     
     6. "blog_body_markdown": Korean Markdown content.
        - **Hypothetical Simulation**: MUST include a Markdown Table.
@@ -120,7 +126,7 @@ def process_topic_one_shot(topic):
        - Structure: Hook -> Money Flow -> **Simulation Table** -> Analysis -> Action Plan.
        
     7. "tistory_teaser": HTML format text (10-15 lines).
-       - **Hook**: Mention the calculator. Ex: "Calculate your exact taxes/limit inside the blog!"
+       - **Hook**: Mention the calculator.
     """
     
     result = generate_one_shot(prompt)
@@ -229,12 +235,26 @@ image: "{graph_url}"
     
     return f"{front_matter}\n\n![전망 차트]({graph_url})\n*▲ AI 분석 데이터 ({now.year}년 기준)*\n\n{body}\n{footer}"
 
-def deploy_to_github(title, content):
+def deploy_to_github(title, content, category_kr):
     print(f"🚀 [Git] 깃허브 배포 시작...") 
+    
+    # 🔥 [V5.0 핵심] 카테고리별 폴더 분류 로직
+    # 1. 한글 카테고리를 영문 폴더명으로 변환 (기본값: tips)
+    folder_name = CATEGORY_FOLDER_MAP.get(category_kr, "tips")
+    
+    # 2. 저장할 폴더 경로 생성 (content/posts/category_name)
+    target_dir = os.path.join(BLOG_DIR, "content", "posts", folder_name)
+    
+    # 3. 폴더가 없으면 생성
+    if not os.path.exists(target_dir):
+        os.makedirs(target_dir)
+        print(f"   📂 새 카테고리 폴더 생성: {folder_name}")
+
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "-")
     safe_filename = f"{datetime.datetime.now().strftime('%Y-%m-%d')}-{safe_title}.md"
-    # 🔥 [수정] 포스팅 저장 위치 확인 (calculators 폴더와 섞이지 않게)
-    filepath = os.path.join(BLOG_DIR, "content", "posts", safe_filename)
+    
+    # 4. 파일 저장 (지정된 폴더 안에)
+    filepath = os.path.join(target_dir, safe_filename)
     
     with open(filepath, 'w', encoding='utf-8') as f: 
         f.write(content)
@@ -246,7 +266,9 @@ def deploy_to_github(title, content):
         origin = repo.remote(name='origin')
         origin.push()
         
-        post_url = f"{MAIN_DOMAIN_URL}/posts/{safe_filename.replace('.md', '')}"
+        # URL은 폴더 구조를 따라갈 수도, 아닐 수도 있음 (Hugo 설정에 따름)
+        # 보통은 /posts/folder/filename 형태로 접근 가능
+        post_url = f"{MAIN_DOMAIN_URL}/posts/{folder_name}/{safe_filename.replace('.md', '')}"
         print(f"✅ [Success] 배포 완료! \n🔗 링크: {post_url}")
         return post_url
     except Exception as e:
@@ -293,10 +315,10 @@ def save_tistory_snippet(title, teaser, link):
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech 수익화 봇 V4.5 (계산기 자동 매칭)")
-    print("   ✅ 주제에 딱 맞는 계산기(9종 중 택1)를 골라 추천합니다.")
-    print("   ✅ 계산기 URL 경로 수정 완료 (/calculators/...)")
-    print("   ✅ 기준일 업데이트 안내 문구 추가")
+    print("🔥 PropTech 수익화 봇 V5.0 (카테고리 폴더 자동화)")
+    print("   ✅ 'content/posts/카테고리명/' 폴더에 자동 분산 저장")
+    print("   ✅ 카테고리 매핑: 부동산 분석(analysis), 세금(policy) 등")
+    print("   ✅ 계산기 자동 추천 및 티스토리 연동 완비")
     print("="*60)
     
     topic = input("\n✍️  분석할 부동산 주제/지역을 입력하세요: ")
@@ -307,9 +329,12 @@ if __name__ == "__main__":
             roi_data = data.get('roi_data', {})
             graph_url = generate_graph("chart", roi_data)
             full_content = create_final_content(data, graph_url)
-            link = deploy_to_github(data.get('viral_title'), full_content)
+            
+            # 🔥 [수정] deploy 함수에 카테고리 정보도 같이 넘겨줌
+            link = deploy_to_github(data.get('viral_title'), full_content, data.get('category'))
+            
             save_tistory_snippet(data.get('viral_title'), data.get('tistory_teaser'), link)
-            print(f"\n🎉 발행 완료!")
+            print(f"\n🎉 발행 완료! (폴더별 저장 성공)")
         else:
             print("❌ 실패.")
     else:
