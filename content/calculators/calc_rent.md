@@ -1,7 +1,6 @@
 ---
 title: '🔄 전월세 전환율 계산기'
-date: 2026-01-26
-layout: 'page'
+date: 2026-01-01
 summary: '전세 3억을 월세로 바꾸면 얼마? 법정 전환율 계산'
 ---
 
@@ -16,11 +15,69 @@ summary: '전세 3억을 월세로 바꾸면 얼마? 법정 전환율 계산'
 
 ### 🧮 전환 계산기
 
+
+
 <style>
-  .calc-box-rent { background: #e6fcf5; padding: 25px; border-radius: 12px; margin-top: 20px; border: 1px solid #96f2d7; }
-  .calc-btn-rent { width: 100%; padding: 15px; background: #20c997; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 10px; }
-  .calc-btn-rent:hover { background: #12b886; }
+/* 1. 계산기 박스 */
+div[class*="calc-box"], .calc-container {
+    background-color: #ffffff !important;
+    padding: 20px !important;
+    border-radius: 16px !important;
+    margin-top: 20px !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05) !important;
+    color: #333333 !important;
+}
+
+/* 2. 라벨 */
+label, .calc-label {
+    display: block !important;
+    margin-bottom: 5px !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    color: #212529 !important;
+}
+
+/* 3. 입력창 */
+input, select, .calc-input {
+    width: 100% !important;
+    padding: 12px !important;
+    margin-bottom: 15px !important;
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 8px !important;
+    font-size: 16px !important; 
+    line-height: 1.5 !important;
+}
+
+/* 4. 버튼 (범위 제한: .calc-container 안에 있는 버튼만!) */
+.calc-container button, div[class*="calc-box"] button {
+    width: 100% !important;
+    padding: 15px !important;
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border: none !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    margin-top: 5px !important;
+}
+
+/* 5. 결과창 */
+div[id$="Result"], .result-area {
+    margin-top: 20px !important;
+    padding: 20px !important;
+    background-color: #f1f3f5 !important;
+    border-radius: 12px !important;
+    border-left: 5px solid #00C853 !important;
+    color: #333333 !important;
+    display: none;
+}
 </style>
+
+
 
 <div class="calc-box-rent">
   <div class="calc-row">

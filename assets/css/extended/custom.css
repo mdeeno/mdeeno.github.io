@@ -1,0 +1,23 @@
+
+/* 모바일 화면 (폭 768px 이하) 설정 */
+@media screen and (max-width: 768px) {
+    /* 1. 포스팅 제목 크기 축소 (기존 40px -> 24px) */
+    .post-title {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* 2. 본문 제목 h1, h2 크기 축소 */
+    .post-content h1 { font-size: 22px !important; }
+    .post-content h2 { font-size: 20px !important; }
+    
+    /* 3. 계산기 제목 축소 */
+    h1 { font-size: 24px !important; }
+}
+
+/* 4. 야간모드 버튼 강제 축소 (혹시 모를 오류 방지) */
+#theme-toggle {
+    width: auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+}

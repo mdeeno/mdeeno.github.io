@@ -14,6 +14,8 @@ theme = 'PaperMod'
   # 메인 화면 모드 (글 목록 스타일)
   homeInfoParams.Title = "🚀 PropTech Lab"
   homeInfoParams.Content = "부동산 데이터 분석 & 투자 전략 연구소"
+  
+  mainSections = ["posts"]
 
   [params.cover]
     hidden = false
