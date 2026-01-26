@@ -2,7 +2,7 @@
 title: "2026 서울 젠트리피케이션 위험 지도: 다음 성수동은 어디인가?"
 date: 2026-01-25
 draft: false
-categories: ["부동산 분석"]
+categories: ["시장 전망"]
 tags: ["젠트리피케이션", "서울상권분석", "부동산투자"]
 description: "AI 데이터로 분석한 2026년 서울 젠트리피케이션 고위험 지역 TOP 5와 투자 전략. 성수동을 넘어설 다음 격전지를 공개합니다."
 image: "/images/seoul-gentrification-2026.png"

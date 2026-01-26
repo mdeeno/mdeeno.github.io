@@ -2,7 +2,7 @@
 title: "🚀 GTX-C 착공 사이렌! 삼성역 20분 컷, 아직 8억대 진입 가능한 '이곳' (Top 3)"
 date: 2026-01-25
 draft: false
-categories: ['부동산 분석']
+categories: ['투자 꿀팁']
 tags:
   [
     'GTX-C',
@@ -83,7 +83,7 @@ _(84㎡ 기준 / 2026년 1월 호가 기준)_
 >
 > 2026년 최신 DSR 규제를 반영한 대출 한도, 10초 만에 계산해보세요.
 >
-> 👉 **[📉 DSR 및 주택담보대출 계산기 돌려보기](/calculators/calc_dsr/)**
+> 👉 **[📉 DSR 및 주택담보대출 계산기 돌려보기](https://tech.mdeeno.com/calculators/calc_dsr/)**
 
 ---
 
