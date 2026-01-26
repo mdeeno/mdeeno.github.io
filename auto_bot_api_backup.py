@@ -29,13 +29,13 @@ BLOG_DIR = os.getenv("BLOG_DIR")
 MAIN_DOMAIN_URL = "https://tech.mdeeno.com"
 USE_AI_IMAGE = False 
 
-# 🎨 디자인 설정 (차트 및 버튼 색상)
+# 🎨 디자인 설정
 COLOR_PRIMARY = "#FF5252"
 COLOR_LINE = "#D32F2F"       
 COLOR_BTN_BG = "#00C853"
 COLOR_TISTORY = "#D32F2F"    
 
-# 📂 카테고리 매핑 (5개 카테고리 전체)
+# 📂 카테고리 매핑
 CATEGORY_FOLDER_MAP = {
     "부동산 분석": "analysis",
     "청약 정보": "subscription",
@@ -58,21 +58,19 @@ CALCULATOR_MAP = {
 }
 
 # 🔗 프롬프트 주입용 링크 메뉴 (자동 생성)
-# 인공지능이 텍스트만 뱉지 않도록 [이름](URL) 형태로 강제 주입합니다.
 CALC_MENU_STR = "\n".join([f"- [{v['text']}]({MAIN_DOMAIN_URL}{v['url']})" for k, v in CALCULATOR_MAP.items()])
 
-# 🔥 [모델 설정] - 가용 모델 전체 리스트
+# 🔥 [모델 설정] - 1.5 버전 삭제 및 고성능 모델 원복
 MODEL_CANDIDATES = [
-    'gemini-2.0-flash-exp',
-    'gemini-flash-latest',
-    'gemini-exp-1206',
-    'gemini-2.0-flash-lite-preview-02-05',
+    'gemini-2.0-flash-exp',       # 1순위: 성능 최우선
+    'gemini-flash-latest',        # 2순위: 2.0 쿼터 초과 시 대타
+    'gemini-exp-1206',            
     'gemini-pro-latest'
 ]
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# 안전 설정 해제 (검열 방지)
+# 안전 설정 해제
 SAFETY_SETTINGS = [
     {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
     {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
@@ -88,13 +86,12 @@ def set_smart_font():
     elif system_name == "Windows":
         rc('font', family='Malgun Gothic')
     else:
-        # 리눅스 등 기타 환경
         try: rc('font', family='NanumGothic') 
         except: pass
     plt.rcParams['axes.unicode_minus'] = False 
 
 def generate_one_shot(prompt):
-    """Gemini API를 호출하여 텍스트를 생성합니다 (재시도 로직 포함)."""
+    """Gemini API를 호출하여 텍스트를 생성합니다."""
     for model_name in MODEL_CANDIDATES:
         try:
             print(f"   ... 🧠 모델 가동 중: {model_name}")
@@ -117,7 +114,6 @@ def clean_json_response(text):
         clean_text = text.replace("```json", "").replace("```", "").strip()
         return json.loads(clean_text)
     except json.JSONDecodeError:
-        # JSON 형식이 깨졌을 경우 정규식으로 복구 시도
         try:
             match = re.search(r'(\{.*\})', text, re.DOTALL)
             if match:
@@ -130,33 +126,36 @@ def clean_json_response(text):
 def process_topic_one_shot(topic):
     """주제를 받아 전체 분석 프로세스를 실행하고 데이터를 반환합니다."""
     now = datetime.datetime.now()
-    # 🕒 서버 시차 해결: 배포 즉시 노출을 위해 '어제' 날짜로 고정
-    safety_date = (now - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+    
+    # 🕒 [핵심 수정] 시:분:초(%H:%M:%S)까지 포함하여 정렬 순서 강제 고정
+    # 어제 날짜로 하되, 현재 시간을 붙여서 겹치지 않게 함
+    yesterday = now - datetime.timedelta(days=1)
+    safety_date = yesterday.strftime("%Y-%m-%d %H:%M:%S")
     current_year = now.year
     
-    print(f"🚀 [Gemini API] '{topic}' 분석 시작 (V25.0 최종본)...")
+    print(f"🚀 [Gemini API] '{topic}' 분석 시작 (V28.0 초단위 정렬 패치)...")
     
-    # 🔥 [V25.0 프롬프트] 링크 강제, 개조식 강제, 차트 데이터 강제
+    # 🔥 [V28.0 프롬프트] 
     prompt = f"""
     Role: Senior Real Estate Investment Analyst (Top-tier Expert).
     Task: Write a high-quality, professional blog post about "{topic}".
     
-    # 🛑 CRITICAL RULES (MUST FOLLOW)
-    1. CLICKABLE LINKS: You MUST use Markdown link format `[Text](URL)` for all internal calculators provided below. Do NOT just write text.
-    2. BULLET POINTS ONLY: No long prose. Use (*) for all analysis sections to ensure mobile readability.
-    3. SUMMARY TABLE: Mandatory Markdown Table at the start of Body (comparing 3 items/areas).
-    4. NO GREETINGS: Start directly with a Hook. No "Hello" or "I am an editor".
-    5. DATA SAFETY: Use realistic price ranges (e.g. "8억 중반 ~ 9억 초반") marked as estimates.
+    # 🛑 CRITICAL RULES
+    1. CLICKABLE LINKS: You MUST use Markdown link format `[Text](URL)` for all internal calculators.
+    2. BULLET POINTS ONLY: No long prose. Use (*) for all analysis sections.
+    3. SUMMARY TABLE: Mandatory Markdown Table at the start of Body.
+    4. NO GREETINGS: Start directly with a Hook.
+    5. DATA SAFETY: Use realistic price ranges.
     
     Format: Output ONLY a single valid JSON object.
     JSON Keys:
-    - "viral_title": Provocative Korean title (Clickable but Truthful).
+    - "viral_title": Provocative Korean title.
     - "category": Choose ONE from ["부동산 분석", "청약 정보", "투자 꿀팁", "시장 전망", "세금/정책"].
-    - "search_keyword": Topic-related keyword for SEO.
+    - "search_keyword": Topic-related keyword.
     - "roi_data": {{"years": [{current_year-2}, {current_year-1}, {current_year}, {current_year+1}], "values": [4 realistic index numbers], "title": "Price Trend Forecast"}}
     - "calculator_type": Choose ONE best match from ['dsr', 'interest', 'fee', 'tax', 'transfer', 'hold', 'sub', 'rent', 'salary'].
     - "blog_body_markdown": Korean Markdown content (Insert CLICKABLE links from the menu below).
-    - "tistory_teaser": HTML Teaser content (10+ lines, inviting click).
+    - "tistory_teaser": HTML Teaser content.
     
     # 🧮 CALCULATOR MENU (USE THESE LINKS EXACTLY):
     {CALC_MENU_STR}
@@ -169,7 +168,7 @@ def process_topic_one_shot(topic):
     return data, safety_date
 
 def generate_graph(filename_base, data_dict):
-    """Matplotlib을 사용하여 차트를 생성합니다 (빈 차트 방지 로직 포함)."""
+    """Matplotlib을 사용하여 차트를 생성합니다."""
     print(f"📊 [Matplotlib] 차트 생성 중...")
     set_smart_font()
     image_dir = os.path.join(BLOG_DIR, "static", "images")
@@ -182,7 +181,7 @@ def generate_graph(filename_base, data_dict):
     values = data_dict.get('values', [])
     title = data_dict.get('title', 'Price Trend')
     
-    # 🛑 차트 데이터 누락 방지 (AI가 빈 값을 줄 경우 기본값 사용)
+    # 🛑 차트 데이터 누락 방지
     if not years or len(values) < 2:
         print("   ⚠️ 차트 데이터 누락 감지 -> 기본 데이터로 보정합니다.")
         years = [2024, 2025, 2026, 2027]
@@ -197,7 +196,7 @@ def generate_graph(filename_base, data_dict):
     return f"/images/{img_filename}"
 
 def create_final_content(data, graph_url, post_date):
-    """Markdown 본문, 차트, 버튼, 네이버 링크를 조립합니다."""
+    """Markdown 본문 조립 (시간 포함 날짜 적용)"""
     print(f"✍️ [Editor] 포스팅 조립 중...")
     body = data.get('blog_body_markdown', '')
     keyword = data.get('search_keyword', '부동산')
@@ -205,27 +204,24 @@ def create_final_content(data, graph_url, post_date):
     category = data.get('category', '부동산 분석')
     calc_type = data.get('calculator_type', 'none')
     
-    # AI 이미지 플레이스홀더 제거
     if not USE_AI_IMAGE:
         body = body.replace("[[MID_IMAGE]]", "")
 
-    # 네이버 부동산 검색 링크 생성
     encoded_keyword = urllib.parse.quote(keyword)
     naver_land_url = f"https://new.land.naver.com/search?sk={encoded_keyword}"
 
-    # 사용자 맞춤형 계산기 버튼 생성 (HTML 스타일 적용)
     calculator_btn = ""
     if calc_type in CALCULATOR_MAP:
         info = CALCULATOR_MAP[calc_type]
         calculator_btn = f"""
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>
-    <a href="{MAIN_DOMAIN_URL}{info['url']}" target="_blank" style="display: inline-block; background-color: {COLOR_BTN_BG}; color: white; padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">
+    <a href="{MAIN_DOMAIN_URL}{info['url']}" target="_blank" style="display: inline-block; background-color: {COLOR_BTN_BG}; color: white; padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
         🧮 <strong>{info['text']} 돌려보기</strong>
     </a>
 </div>"""
 
-    # Front Matter 생성
+    # 🔥 [중요] Front Matter의 date 필드에 '시:분:초'가 포함됩니다.
     front_matter = f"""---
 title: "{title}"
 date: {post_date}
@@ -236,7 +232,6 @@ description: "{title}"
 image: "{graph_url}"
 ---
 """
-    # Footer (하단 공통 링크 및 면책 조항)
     footer = f"""\n
 ---
 ### 🛑 {keyword} 투자, 아직도 고민만 하시나요?
@@ -258,15 +253,16 @@ image: "{graph_url}"
     return f"{front_matter}\n\n![전망 차트]({graph_url})\n*▲ AI 분석 데이터 ({post_date} 기준)*\n\n{body}{footer}"
 
 def deploy_to_github(title, content, category_kr, post_date):
-    """완성된 파일을 Git에 저장하고 Push합니다."""
+    """Git 배포"""
     print(f"🚀 [Git] 배포 시작...") 
     folder = CATEGORY_FOLDER_MAP.get(category_kr, "tips")
     target_dir = os.path.join(BLOG_DIR, "content", "posts", folder)
     if not os.path.exists(target_dir): os.makedirs(target_dir)
 
-    # 파일명 안전하게 변환
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "-")
-    filename = f"{post_date}-{safe_title}_auto.md"
+    # 파일명은 깔끔하게 날짜만 (YYYY-MM-DD)
+    filename_date = post_date.split(' ')[0]
+    filename = f"{filename_date}-{safe_title}_auto.md"
     filepath = os.path.join(target_dir, filename)
     
     with open(filepath, 'w', encoding='utf-8') as f:
@@ -285,7 +281,7 @@ def deploy_to_github(title, content, category_kr, post_date):
         return MAIN_DOMAIN_URL
 
 def save_tistory_snippet(title, teaser, link):
-    """티스토리용 요약 HTML 파일을 생성합니다."""
+    """티스토리 요약본 저장"""
     draft_dir = "tistory_drafts"
     if not os.path.exists(draft_dir): os.makedirs(draft_dir)
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "-")
@@ -306,8 +302,9 @@ def save_tistory_snippet(title, teaser, link):
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech API Bot V25.0 (클론 코딩용 최종 완성본)")
-    print("   ✅ 360줄 로직 100% 보존 | V24.0 프롬프트 | 차트/링크 보정")
+    print("🔥 PropTech API Bot V28.0 (1.5 삭제 & 초단위 정렬 패치)")
+    print("   ✅ UI 뒤죽박죽 해결: 날짜에 시:분:초 포함")
+    print("   ✅ 1.5 모델 삭제: 사용자 요청 반영 완료")
     print("="*60)
     
     topic = input("\n✍️ 분석 주제 입력: ")
