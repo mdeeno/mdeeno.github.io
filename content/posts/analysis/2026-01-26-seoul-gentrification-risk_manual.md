@@ -1,12 +1,6 @@
-PropTech 블로그 봇 V5.0
-사용자설정 Gem
-Markdown
-경로: content/posts/analysis/
-파일명: 2026-01-26-seoul-gentrification-risk.md
-Markdown
 ---
 title: "2026 서울 젠트리피케이션 위험 지도: 다음 성수동은 어디인가?"
-date: 2026-01-26
+date: 2026-01-25
 draft: false
 categories: ["부동산 분석"]
 tags: ["젠트리피케이션", "서울상권분석", "부동산투자"]
