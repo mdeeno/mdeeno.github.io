@@ -60,10 +60,10 @@ CALCULATOR_MAP = {
 # 🔗 프롬프트 주입용 링크 메뉴 (자동 생성)
 CALC_MENU_STR = "\n".join([f"- [{v['text']}]({MAIN_DOMAIN_URL}{v['url']})" for k, v in CALCULATOR_MAP.items()])
 
-# 🔥 [모델 설정] - 1.5 버전 삭제 및 고성능 모델 원복
+# 🔥 [모델 설정] - 1.5 삭제 및 안정적 모델 구성
 MODEL_CANDIDATES = [
-    'gemini-2.0-flash-exp',       # 1순위: 성능 최우선
-    'gemini-flash-latest',        # 2순위: 2.0 쿼터 초과 시 대타
+    'gemini-2.0-flash-exp',       
+    'gemini-flash-latest',        
     'gemini-exp-1206',            
     'gemini-pro-latest'
 ]
@@ -127,15 +127,13 @@ def process_topic_one_shot(topic):
     """주제를 받아 전체 분석 프로세스를 실행하고 데이터를 반환합니다."""
     now = datetime.datetime.now()
     
-    # 🕒 [핵심 수정] 시:분:초(%H:%M:%S)까지 포함하여 정렬 순서 강제 고정
-    # 어제 날짜로 하되, 현재 시간을 붙여서 겹치지 않게 함
+    # 🕒 [시간 정렬 유지] 시:분:초 포함
     yesterday = now - datetime.timedelta(days=1)
     safety_date = yesterday.strftime("%Y-%m-%d %H:%M:%S")
     current_year = now.year
     
-    print(f"🚀 [Gemini API] '{topic}' 분석 시작 (V28.0 초단위 정렬 패치)...")
+    print(f"🚀 [Gemini API] '{topic}' 분석 시작 (V29.0 쌍따옴표 방지)...")
     
-    # 🔥 [V28.0 프롬프트] 
     prompt = f"""
     Role: Senior Real Estate Investment Analyst (Top-tier Expert).
     Task: Write a high-quality, professional blog post about "{topic}".
@@ -181,7 +179,6 @@ def generate_graph(filename_base, data_dict):
     values = data_dict.get('values', [])
     title = data_dict.get('title', 'Price Trend')
     
-    # 🛑 차트 데이터 누락 방지
     if not years or len(values) < 2:
         print("   ⚠️ 차트 데이터 누락 감지 -> 기본 데이터로 보정합니다.")
         years = [2024, 2025, 2026, 2027]
@@ -196,7 +193,7 @@ def generate_graph(filename_base, data_dict):
     return f"/images/{img_filename}"
 
 def create_final_content(data, graph_url, post_date):
-    """Markdown 본문 조립 (시간 포함 날짜 적용)"""
+    """Markdown 본문 조립 (쌍따옴표 에러 방지 적용)"""
     print(f"✍️ [Editor] 포스팅 조립 중...")
     body = data.get('blog_body_markdown', '')
     keyword = data.get('search_keyword', '부동산')
@@ -204,6 +201,9 @@ def create_final_content(data, graph_url, post_date):
     category = data.get('category', '부동산 분석')
     calc_type = data.get('calculator_type', 'none')
     
+    # 🔥 [핵심 수정] 제목 내의 쌍따옴표(")를 작은따옴표(')로 치환하여 YAML 에러 방지
+    clean_title = title.replace('"', "'")
+
     if not USE_AI_IMAGE:
         body = body.replace("[[MID_IMAGE]]", "")
 
@@ -221,14 +221,14 @@ def create_final_content(data, graph_url, post_date):
     </a>
 </div>"""
 
-    # 🔥 [중요] Front Matter의 date 필드에 '시:분:초'가 포함됩니다.
+    # clean_title 사용
     front_matter = f"""---
-title: "{title}"
+title: "{clean_title}"
 date: {post_date}
 draft: false
 categories: ["{category}"]
 tags: ["{keyword}", "부동산투자", "재테크"]
-description: "{title}"
+description: "{clean_title}"
 image: "{graph_url}"
 ---
 """
@@ -260,7 +260,7 @@ def deploy_to_github(title, content, category_kr, post_date):
     if not os.path.exists(target_dir): os.makedirs(target_dir)
 
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "-")
-    # 파일명은 깔끔하게 날짜만 (YYYY-MM-DD)
+    # 파일명은 날짜만 (YYYY-MM-DD)
     filename_date = post_date.split(' ')[0]
     filename = f"{filename_date}-{safe_title}_auto.md"
     filepath = os.path.join(target_dir, filename)
@@ -302,9 +302,9 @@ def save_tistory_snippet(title, teaser, link):
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech API Bot V28.0 (1.5 삭제 & 초단위 정렬 패치)")
-    print("   ✅ UI 뒤죽박죽 해결: 날짜에 시:분:초 포함")
-    print("   ✅ 1.5 모델 삭제: 사용자 요청 반영 완료")
+    print("🔥 PropTech API Bot V29.0 (쌍따옴표 에러 Fix)")
+    print("   ✅ 제목 내 \" -> ' 자동 변환 (Hugo 빌드 에러 방지)")
+    print("   ✅ 날짜+시간 정렬 유지 | 1.5 모델 삭제")
     print("="*60)
     
     topic = input("\n✍️ 분석 주제 입력: ")
