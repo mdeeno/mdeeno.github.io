@@ -1,89 +1,87 @@
 {{ define "main" }}
-    {{ if .Site.Params.homeInfoParams }}
-        {{ partial "home_info.html" . }}
-    {{ else }}
-        {{ partial "index_profile.html" . }}
-    {{ end }}
 
-    <div class="category-dashboard" style="max-width: var(--main-width); margin: 40px auto; padding: 0 var(--gap);">
-        <h3 style="margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; display: inline-block;">
-            📂 토픽별 모아보기
-        </h3>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
-            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-            <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" style="text-decoration: none;">
-                <div style="
-                    background: var(--entry); 
-                    padding: 20px; 
-                    border-radius: var(--radius); 
-                    border: 1px solid var(--border);
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-                    transition: transform 0.2s;
-                    height: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                " onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
-                    
-                    <div>
-                        <h4 style="margin: 0; font-size: 18px; color: var(--primary);">
-                            {{ $name }}
-                        </h4>
-                    </div>
-                    
-                    <span style="
-                        background-color: var(--primary); 
-                        color: var(--theme); 
-                        padding: 4px 10px; 
-                        border-radius: 15px; 
-                        font-size: 12px; 
-                        font-weight: bold;">
-                        {{ $taxonomy.Count }}
-                    </span>
-                </div>
-            </a>
-            {{ end }}
-        </div>
+<article class="first-entry home-info">
+    {{- .Content -}}
+    <header class="entry-header">
+        <h1>{{ .Site.Title | default "PropTech Lab" }} 🚀</h1>
+    </header>
+    <div class="entry-content">
+        <p>{{ .Site.Params.homeInfoParams.Content | default "부동산 데이터 분석 & 투자 전략 연구소" }}</p>
     </div>
+</article>
 
-    <div style="margin-top: 60px; padding: 0 var(--gap);">
-        <h3 style="margin-bottom: 10px;">🔥 최신 리포트</h3>
-    </div>
+<div style="margin-bottom: 40px; text-align: center;">
+    <h3 style="font-size: 1.2rem; margin-bottom: 15px; border-bottom: 2px solid #333; display: inline-block; padding-bottom: 5px;">
+        📂 토픽별 모아보기
+    </h3>
     
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    {{ range $paginator.Pages }}
-        <article class="post-entry">
-            {{ $isHidden := .Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList }}
-            {{ partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-            <header class="entry-header">
-                <h2>
-                    {{- .Title }}
-                    {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-                </h2>
-            </header>
-            {{- if (ne .Site.Params.hideSummary true) }}
-            <div class="entry-content">
-                <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-            </div>
-            {{- end }}
-            <footer class="entry-footer">
-                {{- partial "post_meta.html" . -}}
-            </footer>
-            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-        </article>
-    {{- end }}
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 800px; margin: 0 auto;">
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" 
+           style="
+               background-color: #f3f4f6; 
+               color: #374151; 
+               padding: 8px 16px; 
+               border-radius: 20px; 
+               text-decoration: none; 
+               font-size: 0.9rem; 
+               font-weight: 500;
+               transition: all 0.2s;
+               border: 1px solid #e5e7eb;
+               display: flex;
+               align-items: center;
+               gap: 6px;
+           "
+           onmouseover="this.style.backgroundColor='#e5e7eb'"
+           onmouseout="this.style.backgroundColor='#f3f4f6'">
+            <span>{{ $name }}</span>
+            <span style="background-color: #333; color: #fff; font-size: 0.7rem; padding: 2px 6px; border-radius: 10px;">{{ $taxonomy.Count }}</span>
+        </a>
+        {{ end }}
+    </div>
+</div>
 
-    {{- if gt $paginator.TotalPages 1 }}
-    <footer class="page-footer">
-        <nav class="pagination">
-            {{- if $paginator.HasPrev }}
-            <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
-            {{- end }}
-            {{- if $paginator.HasNext }}
-            <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
-            {{- end }}
-        </nav>
-    </footer>
+<div style="margin-top: 20px;">
+    <h3 style="font-size: 1.5rem; margin-bottom: 20px;">🔥 최신 리포트</h3>
+</div>
+
+{{- $pages := union .Site.RegularPages .Site.Sections }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $paginator := .Paginate $pages }}
+
+{{- range $paginator.Pages }}
+<article class="post-entry">
+  {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInList }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+  <header class="entry-header">
+    <h2>
+      {{- .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[Draft]</span></sup>{{- end }}
+    </h2>
+  </header>
+  {{- if (ne .Params.hideSummary true) }}
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>
     {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }} »</a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
 {{ end }}
