@@ -60,7 +60,7 @@ CALCULATOR_MAP = {
 # 🔗 프롬프트 주입용 링크 메뉴 (자동 생성)
 CALC_MENU_STR = "\n".join([f"- [{v['text']}]({MAIN_DOMAIN_URL}{v['url']})" for k, v in CALCULATOR_MAP.items()])
 
-# 🔥 [모델 설정] - 1.5 삭제 및 안정적 모델 구성
+# 🔥 [모델 설정] - 안정성 최우선
 MODEL_CANDIDATES = [
     'gemini-2.0-flash-exp',       
     'gemini-flash-latest',        
@@ -127,12 +127,12 @@ def process_topic_one_shot(topic):
     """주제를 받아 전체 분석 프로세스를 실행하고 데이터를 반환합니다."""
     now = datetime.datetime.now()
     
-    # 🕒 [시간 정렬 유지] 시:분:초 포함
+    # 🕒 [시간 정렬] 시:분:초 포함 (어제 날짜 + 현재 시간)
     yesterday = now - datetime.timedelta(days=1)
     safety_date = yesterday.strftime("%Y-%m-%d %H:%M:%S")
     current_year = now.year
     
-    print(f"🚀 [Gemini API] '{topic}' 분석 시작 (V29.0 쌍따옴표 방지)...")
+    print(f"🚀 [Gemini API] '{topic}' 분석 시작 (V31.0 안전 패치)...")
     
     prompt = f"""
     Role: Senior Real Estate Investment Analyst (Top-tier Expert).
@@ -201,7 +201,7 @@ def create_final_content(data, graph_url, post_date):
     category = data.get('category', '부동산 분석')
     calc_type = data.get('calculator_type', 'none')
     
-    # 🔥 [핵심 수정] 제목 내의 쌍따옴표(")를 작은따옴표(')로 치환하여 YAML 에러 방지
+    # 제목 내 쌍따옴표 자동 치환
     clean_title = title.replace('"', "'")
 
     if not USE_AI_IMAGE:
@@ -221,7 +221,6 @@ def create_final_content(data, graph_url, post_date):
     </a>
 </div>"""
 
-    # clean_title 사용
     front_matter = f"""---
 title: "{clean_title}"
 date: {post_date}
@@ -260,9 +259,11 @@ def deploy_to_github(title, content, category_kr, post_date):
     if not os.path.exists(target_dir): os.makedirs(target_dir)
 
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title).replace(" ", "-")
-    # 파일명은 날짜만 (YYYY-MM-DD)
+    
+    # 파일명 날짜만 (YYYY-MM-DD)
     filename_date = post_date.split(' ')[0]
-    filename = f"{filename_date}-{safe_title}_auto.md"
+    clean_safe_title = safe_title.strip('-')
+    filename = f"{filename_date}-{clean_safe_title}_auto.md"
     filepath = os.path.join(target_dir, filename)
     
     with open(filepath, 'w', encoding='utf-8') as f:
@@ -302,17 +303,23 @@ def save_tistory_snippet(title, teaser, link):
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("🔥 PropTech API Bot V29.0 (쌍따옴표 에러 Fix)")
-    print("   ✅ 제목 내 \" -> ' 자동 변환 (Hugo 빌드 에러 방지)")
-    print("   ✅ 날짜+시간 정렬 유지 | 1.5 모델 삭제")
+    print("🔥 PropTech API Bot V31.0 (쿼터 초과 충돌 방지)")
+    print("   ✅ 모든 모델 실패 시 안전 종료 (Traceback 에러 해결)")
+    print("   ✅ V30.0 로직 100% 보존")
     print("="*60)
     
     topic = input("\n✍️ 분석 주제 입력: ")
     if topic:
-        data, s_date = process_topic_one_shot(topic)
-        if data:
+        # 🔥 [핵심] 결과값이 None인지 확인 후 처리 (충돌 방지)
+        result_tuple = process_topic_one_shot(topic)
+        
+        if result_tuple:
+            data, s_date = result_tuple
             graph_url = generate_graph("chart", data.get('roi_data', {}))
             full_content = create_final_content(data, graph_url, s_date)
             link = deploy_to_github(data.get('viral_title'), full_content, data.get('category'), s_date)
             save_tistory_snippet(data.get('viral_title'), data.get('tistory_teaser'), link)
             print(f"🎉 모든 작업 완료! (날짜: {s_date})")
+        else:
+            print("\n❌ [실패] 모든 AI 모델의 사용 한도(Quota)가 초과되었습니다.")
+            print("   👉 약 1~2분 뒤에 다시 시도해주세요.")
