@@ -1,0 +1,67 @@
+baseURL = 'https://tech.mdeeno.com/'
+languageCode = 'ko-kr'
+title = 'PropTech Lab'
+theme = 'PaperMod'
+
+[params]
+
+  defaultTheme = "dark"
+  disableThemeToggle = true
+  ShowShareButtons = true
+  ShowReadingTime = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  # 메인 화면 모드 (글 목록 스타일)
+  homeInfoParams.Title = "🚀 PropTech Lab"
+  homeInfoParams.Content = "부동산 데이터 분석 & 투자 전략 연구소"
+  
+  mainSections = ["posts"]
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+    responsiveImages = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"] # 검색 기능을 위해 JSON 필수
+
+# 상단 메뉴바 설정 
+[[menu.main]]
+  identifier = "archives"
+  name = "🗂️ 전체보기"
+  url = "/archives/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "categories"
+  name = "📂 카테고리"
+  url = "/categories/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "prop-logic"
+  name = "🔬 Prop-Logic"
+  url = "/categories/prop-logic"
+  weight = 22
+
+[[menu.main]]
+  identifier = "calculators"
+  name = "🧮 시뮬레이터"
+  url = "/calculators/"
+  weight = 25
+
+
+[[menu.main]]
+  identifier = "search"
+  name = "🔍 검색"
+  url = "/search/"
+  weight = 40
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

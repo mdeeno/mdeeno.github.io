@@ -1,0 +1,36 @@
+
+node_modules/
+public/
+static/
+
+
+# 환경변수 파일 
+.env
+
+# 티스토리 업로드 파일
+tistory_drafts
+
+._*
+
+# 삭제 폴더
+_DEL
+
+.git/objects/pack/._*
+
+
+# Mac OS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.env
+
+# Hugo
+public/
+resources/
+.hugo_build.lock

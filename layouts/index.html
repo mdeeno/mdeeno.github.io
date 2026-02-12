@@ -1,0 +1,83 @@
+{{ define "main" }}
+{{ .Scratch.Set "math" true }} {{ partial "math.html" . }}
+{{ $style := resources.Get "css/lab-style.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<div class="lab-intro-section"><br>
+    <div class="lab-header">
+        <h1 class="lab-title">💻 PropTech Lab</h1>
+        <p class="lab-subtitle">내 집이 새 집이 될 때,<br> 내 돈은 얼마나 더 들어갈까?</p>
+        <p class="lab-subtitle">내 돈은 어디에 투자하면 좋을까?</p>
+    </div>
+
+    <section>
+        <h2 class="lab-section-title">[연구소 소개: 어려운 데이터에서 쉬운 숫자로]</h2>
+        <p class="lab-text">
+          PropTech Lab은 복잡한 정비사업 용어를 몰라도 <strong>'공사비가 오르면 내 돈이 얼마나 더 들지'</strong>를 숫자로 체감할 수 있게 돕는 비영리 기술 연구소입니다.<br> <br>
+          <strong>도시공학 석사</strong>이며, <strong>10여년 도시계획 실무를 경험한 전문가</strong>가 그동안 게시된 재건축, 재개발 사업지 분석, 정책 해설, 교통 호재 등의 실제 사례를 분석하여 만든 'Prop-Logic' 엔진으로 사업의 안전성을 미리 확인해 보세요.  
+        </p>
+    </section>
+
+    <div class="lab-formula-box">
+      <h2>Prop-Logic:<br> 우리 단지 사업안전도 분석기</h2>
+      <div class="lab-formula-text">
+        <!-- $$R = \frac{V_{after} - C_{total}}{V_{before}} \times 100$$ -->
+        $$점수(R) = \frac{분양수익 - 총공사비}{종전자산가치} \times 100$$
+      </div>
+        <p class="lab-formula-caption">* <strong>점수(R)가 100 미만</strong>으로 떨어지면<br> 
+          내가 내야 할 돈(추가 분담금)이 생길 가능성이 커집니다.</p>
+    </div>
+
+    <div class="lab-principles">
+        <div class="lab-card">
+          <strong>1. 비영리 연구 프로젝트</strong><br>
+            <small>돈을 벌지 않고 오직 로직의 정확성만 연구합니다.</small>
+        </div>
+        <div class="lab-card">
+            <strong>2. 개인정보 0%</strong><br>
+            <small>입력한 정보는 저장되지 않고 계산 후 바로 사라집니다.</small>
+        </div>
+    </div>
+    
+    <div class="lab-btn-wrap">
+        <a href="https://tech.mdeeno.com/posts/prop-logic-04-engine/" class="lab-btn">📊 내 단지 분담금 검증 참여하기</a>
+    </div>
+</div>
+
+<br>
+<div class="topic-wrap">
+    <h3 class="topic-title">📂 토픽별 모아보기</h3>
+    <div class="topic-list">
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="topic-item">
+            <span>{{ $name }}</span>
+            <span class="topic-count">{{ $taxonomy.Count }}</span>
+        </a>
+        {{ end }}
+    </div>
+</div>
+
+<div class="report-section">
+    <h3 class="report-title">🔥 최신 리포트</h3>
+</div>
+
+{{- $pages := union .Site.RegularPages .Site.Sections }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $paginator := .Paginate $pages }}
+
+{{- range $paginator.Pages }}
+<article class="post-entry">
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true) }}
+  <header class="entry-header">
+    <h2>{{ .Title }}</h2>
+  </header>
+  <div class="entry-content">
+    <p>{{ .Summary | plainify }}...</p>
+  </div>
+  <footer class="entry-footer">{{- partial "post_meta.html" . -}}</footer>
+  <a class="entry-link" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{{ end }}
