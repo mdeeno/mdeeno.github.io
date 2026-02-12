@@ -10,7 +10,7 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
 
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769525676.png)
+<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769525676.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-01-26 23:54:18 기준)*
 
 단순한 편의 기능을 넘어, 스마트홈 시스템은 이제 아파트의 '숨겨진 프리미엄'으로 작용하고 있습니다. 특히 국내 양대 가전 거인인 삼성 스마트싱스(SmartThings)와 LG 씽큐(ThinQ)의 연동성이 아파트 매매가에 미치는 실질적인 가치를 분석합니다.

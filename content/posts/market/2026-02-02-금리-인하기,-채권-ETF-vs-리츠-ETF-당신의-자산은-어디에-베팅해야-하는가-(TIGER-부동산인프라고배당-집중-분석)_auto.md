@@ -10,7 +10,7 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
 
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770118671.png)
+<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770118671.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-02-02 20:37:31 기준)*
 
 # 금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가?

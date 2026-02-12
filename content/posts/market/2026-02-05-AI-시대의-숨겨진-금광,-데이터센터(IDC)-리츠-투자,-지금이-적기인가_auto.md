@@ -8,7 +8,7 @@ description: "AI 시대의 숨겨진 금광, 데이터센터(IDC) 리츠 투자,
 image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770366839.png"
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770366839.png)
+<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770366839.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-02-05 17:33:40 기준)*
 
 최근 주식 시장을 뜨겁게 달구는 키워드는 단연 ‘AI’입니다. 챗GPT나 제미나이 같은 인공지능 모델이 세상을 바꾸고 있지만, 이 거대한 AI를 돌리는 데는 엄청난 양의 전력과 서버가 필요합니다. 이 서버들이 모여 사는 곳이 바로 **데이터센터(IDC)**입니다.
