@@ -6,9 +6,8 @@ categories: ["시장 분석"]
 tags: ["코리빙 투자 수익률", "부동산투자", "재테크"]
 description: "대학가 하숙집은 왜 몰락했나? 프리미엄 코리빙(Co-living) 투자로 월세 수익률 5% 돌파 전략"
 image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770196438.png"
+
 ---
-
-
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770196438.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-02-03 18:13:36 기준)*
@@ -56,7 +55,23 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 서울 주요 대학가 인근의 대표적인 주거 시설 3곳을 비교하여 투자 매력을 분석합니다.
 
 | 구분 | 신촌 푸르지오 시티 (오피스텔) | 연희동 다가구 (하숙집 형태) | 맹그로브 신촌 (프리미엄 코리빙) |
-| :--- | :--- | :--- | :--- |
+| :
+
+---
+
+ | :
+
+---
+
+ | :
+
+---
+
+ | :
+
+---
+
+ |
 | **주거 형태** | 소형 스튜디오 (20㎡) | 다가구 주택 (방 1개) | 개인실 (12~15㎡) + 공유 공간 |
 | **매매가 (추정)** | 약 2.8억 원 | 약 12억 원 | N/A (기관 소유 BTR) |
 | **월 임대료 (순수)** | 1000/85만 원 | 50/50만 원 (식사 제외) | 100/95만 원 (관리비 포함) |
@@ -91,6 +106,8 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 결론적으로, 대학가 부동산 시장은 이제 **'노동 집약적 하숙업'**에서 **'자본 집약적 서비스업'**으로 진화하고 있습니다. 투자자들은 이 새로운 패러다임에 맞춰 포트폴리오를 재편해야 안정적인 월세 수익률을 확보할 수 있을 것입니다.
 
 ---
+
+
 ### 🛑 코리빙 투자 수익률 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
@@ -101,7 +118,9 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 글은 PropTech Lab의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
 > 
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.

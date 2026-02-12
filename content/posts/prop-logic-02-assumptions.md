@@ -3,7 +3,9 @@ title: 'Prop-Logic: 시뮬레이션 엔진의 5대 핵심 변수와 로직'
 date: 2026-02-05T17:02:00+09:00
 categories: ['Prop-Logic']
 weight: 2
+
 ---
+
 <div class="lab-stepper">
 <a href="/posts/prop-logic-01-intro/" class="lab-step-dot done">1</a>
 <a href="/posts/prop-logic-02-assumptions/" class="lab-step-dot active">2</a>
@@ -42,6 +44,7 @@ $$Total Cost = (GFA \times Cost_{pyeong}) \times (1 + Ratio_{other})$$
 </div>
 
 ---
+
 > **※ 본 글은 PropTech Lab의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
 > 
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.

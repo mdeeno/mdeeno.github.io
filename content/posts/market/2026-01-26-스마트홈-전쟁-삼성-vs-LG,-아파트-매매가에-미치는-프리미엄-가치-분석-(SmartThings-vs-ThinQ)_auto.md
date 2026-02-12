@@ -6,9 +6,8 @@ categories: ["시장 분석"]
 tags: ["스마트홈 아파트 프리미엄", "부동산투자", "재테크"]
 description: "스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치는 프리미엄 가치 분석 (SmartThings vs ThinQ)"
 image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769525676.png"
+
 ---
-
-
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769525676.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-01-26 23:54:18 기준)*
@@ -18,7 +17,15 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 ## 📊 삼성 vs LG 스마트홈 시스템 비교 및 프리미엄 추정
 
 | 구분 | 삼성 스마트싱스 (SmartThings) | LG 씽큐 (ThinQ) | 투자 가치 평가 |
-|---|---|---|---|
+|
+
+---
+
+|---|
+
+---
+
+|---|
 | **주요 강점** | 개방성, 폭넓은 기기 호환성 (타사 포함) | 가전제품 자체의 높은 완성도 및 직관성 | 호환성 vs. 완성도 |
 | **주요 건설사 연동** | 래미안, 자이 (일부), 롯데캐슬 | 푸르지오, 힐스테이트 (일부), 아이파크 | 건설사 파트너십 중요 |
 | **잠재적 프리미엄 (추정)** | 1,500만 원 ~ 3,000만 원 | 1,000만 원 ~ 2,500만 원 | 시장 선호도에 따라 변동 |
@@ -54,6 +61,8 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 *   **세금 계획:** 투자 수익 실현 시 [💸 양도소득세 계산기](https://tech.mdeeno.com/calculators/calc_transfer/)를 활용하여 매각 비용을 사전에 정확히 산출해야 합니다.
 
 ---
+
+
 ### 🛑 스마트홈 아파트 프리미엄 투자, 아직도 고민만 하시나요?
 
 부동산은 **타이밍**이 생명입니다.
@@ -64,7 +73,9 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 분석은 PropTech Lab의 정비사업 및 부동산 구조 연구를 위해 공개 자료와 가정값을 기반으로 정리된 시뮬레이션 사례입니다.**
 > 
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.

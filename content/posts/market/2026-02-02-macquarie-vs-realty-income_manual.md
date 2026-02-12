@@ -6,8 +6,8 @@ categories: ["부동산 분석"]
 tags: ["맥쿼리인프라", "리얼티인컴", "은퇴설계", "배당주투자", "월배당"]
 description: "한국과 미국을 대표하는 배당주 1등, 맥쿼리인프라와 리얼티인컴을 정밀 비교합니다. 2026년 최신 배당 수익률과 은퇴자를 위한 최적의 포트폴리오 전략을 공개합니다."
 image: "/images/macquarie-vs-realty-income.png"
----
 
+---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>## 💰 "매달 꼬박꼬박 들어오는 월세 같은 배당, 누구를 선택할까요?"
 * 한국 도로 통행료를 받을까(맥쿼리), 미국 편의점 월세를 받을까(리얼티)?
@@ -16,19 +16,31 @@ image: "/images/macquarie-vs-realty-income.png"
 
 ---
 
+
 ### 📊 2026년 한·미 배당 대장주 핵심 비교
 
 | 구분 | 맥쿼리인프라 (088980) | 리얼티인컴 (O) |
-| :--- | :--- | :--- |
+| :
+
+---
+
+ | :
+
+---
+
+ | :
+
+---
+
+ |
 | **자산 성격** | 국내 유료도로, 교량, 데이터센터 | 미국·유럽 상업용 부동산(리테일) |
 | **배당 주기** | 연 2회 (반기 배당) | **연 12회 (월배당)** |
 | **2026 예상 수익률** | **약 6.6% ~ 6.8%** | **약 5.3% ~ 5.5%** |
 | **배당 성장성** | 자산 만기에 따른 변동성 존재 | 600개월 이상 배당 지급 및 성장 |
 | **세금 혜택** | ISA 계좌 활용 시 극대화 | 연금저축/IRP 내 국내상장 ETF로 절세 |
 
-
-
 ---
+
 
 ### 🚀 은퇴자를 위한 1등 배당주 정밀 분석
 
@@ -44,6 +56,7 @@ image: "/images/macquarie-vs-realty-income.png"
 
 ---
 
+
 ### 🧮 은퇴 후 현금흐름 계산기
 배당 소득이 일정 금액(2,000만 원)을 넘으면 금융소득종합과세 대상이 됩니다. 미리 계산해 보세요.
 
@@ -51,6 +64,7 @@ image: "/images/macquarie-vs-realty-income.png"
 * [💸 양도세 및 배당소득 절세 전략 확인하기](https://tech.mdeeno.com/calculators/calc_transfer/)
 
 ---
+
 
 ### 💡 결론: '맥쿼리 6 : 리얼티 4'의 황금 비율을 추천합니다
 2026년 시장 상황에서 맥쿼리인프라는 **높은 원화 인컴**을, 리얼티인컴은 **안정적인 달러 인컴과 월 복리 효과**를 제공합니다. 은퇴자라면 국내 ISA 계좌를 통해 맥쿼리인프라를 담아 절세 혜택을 누리고, 연금 계좌에서는 리얼티인컴 비중이 높은 ETF를 편입하여 과세이연 효과를 극대화하는 전략이 유효합니다.
@@ -62,7 +76,9 @@ image: "/images/macquarie-vs-realty-income.png"
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 분석은 PropTech Lab의 정비사업 및 부동산 구조 연구를 위해 공개 자료와 가정값을 기반으로 정리된 시뮬레이션 사례입니다.**
 > 
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.

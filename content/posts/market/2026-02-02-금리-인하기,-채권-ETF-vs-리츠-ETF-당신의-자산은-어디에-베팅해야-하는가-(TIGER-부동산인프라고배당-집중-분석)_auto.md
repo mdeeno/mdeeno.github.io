@@ -6,9 +6,8 @@ categories: ["시장 분석"]
 tags: ["금리 인하기 투자 전략, 채권 ETF, 리츠 ETF, TIGER 부동산인프라고배당", "부동산투자", "재테크"]
 description: "금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)"
 image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770118671.png"
+
 ---
-
-
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770118671.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-02-02 20:37:31 기준)*
@@ -85,7 +84,19 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 금리 인하기에는 채권 ETF와 리츠 ETF 모두 매력적이지만, 투자 목적과 시점에 따라 전략을 달리해야 합니다.
 
 | 구분 | 채권 ETF (장기물) | 리츠 ETF (TIGER 부동산인프라고배당 등) |
-| :--- | :--- | :--- |
+| :
+
+---
+
+ | :
+
+---
+
+ | :
+
+---
+
+ |
 | **주요 수익원** | 자본 이득 (Price Appreciation) | 배당 수익 + 자본 이득 (중장기) |
 | **최적 매수 시점** | 금리 인하 기대감 형성 시점 (선행) | 금리 인하 시작 후, 실물 경제 회복 단계 (후행) |
 | **리스크** | 금리 변동성 및 정책 불확실성 | 실물 부동산 경기 침체 장기화 |
@@ -96,13 +107,17 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
 > **전문가 조언:** 금리 인하기에는 변동성이 커지므로, 두 자산을 50:50으로 분산 투자하여 리스크를 관리하고, 특히 리츠 투자는 배당 재투자(DRP)를 통해 복리 효과를 극대화하는 전략을 추천합니다.
 
---- 
+---
+
+ 
 
 ### 💰 대출 이자 계산기 활용 팁
 
 금리 인하가 실제로 나의 투자 여력에 미치는 영향을 확인하고 싶다면, [💰 대출 이자 계산기](https://tech.mdeeno.com/calculators/calc_interest/)를 활용하여 대출 금리 0.5%p 하락이 월 상환액에 미치는 변화를 시뮬레이션 해보시기 바랍니다. 리츠의 FFO 개선 효과를 간접적으로 이해하는 데 도움이 됩니다.
 
 ---
+
+
 ### 🛑 금리 인하기 투자 전략, 채권 ETF, 리츠 ETF, TIGER 부동산인프라고배당 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
@@ -113,7 +128,9 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 글은 PropTech Lab의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
 > 
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.

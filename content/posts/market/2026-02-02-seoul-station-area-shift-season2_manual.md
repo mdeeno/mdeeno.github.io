@@ -6,8 +6,8 @@ categories: ["세금/정책"]
 tags: ["역세권장기전세", "서울시프트", "용적률500", "부동산투자", "재건축"]
 description: "서울시가 역세권 장기전세주택(시프트) 운영기준을 개정하며 고밀 개발의 문을 열었습니다. 준주거지역 용적률 상향 수혜를 입을 핵심 후보 단지들의 현재 시세를 분석합니다."
 image: "/images/seoul-shift-season2.png"
----
 
+---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>## 🏗️ "역세권 아파트, 35층 높이 제한 풀리고 용적률은 500%까지?"
 * 서울시 '역세권 장기전세 2.0' 본격화, 내 아파트도 고밀 개발 대상일까요?
@@ -16,6 +16,7 @@ image: "/images/seoul-shift-season2.png"
 
 ---
 
+
 ### 📊 역세권 장기전세주택(시프트) 시즌2 핵심 정리
 최근 서울시는 운영기준을 개정하여 역세권 고밀 개발을 통한 주택 공급 확대에 박차를 가하고 있습니다.
 
@@ -23,9 +24,8 @@ image: "/images/seoul-shift-season2.png"
 * **높이 규제 폐지:** 일률적이었던 35층 규제가 유연해지면서 역세권 랜드마크 조성이 가능해졌습니다.
 * **공급 방식:** 민간 사업자가 용적률 혜택을 받는 대신, 늘어난 용적률의 50%를 서울시가 매입하여 '장기전세주택'으로 공급합니다.
 
-
-
 ---
+
 
 ### 🚀 용적률 상향 및 고밀 개발 수혜 후보 단지 TOP 3
 
@@ -46,6 +46,7 @@ image: "/images/seoul-shift-season2.png"
 
 ---
 
+
 ### 🧮 투자 및 입주 전 필수 체크리스트
 용적률 상향은 호재지만, 기부채납 비율과 사업 속도를 반드시 따져봐야 합니다.
 
@@ -53,6 +54,7 @@ image: "/images/seoul-shift-season2.png"
 * [💰 대출 한도 및 DSR 계산기](https://tech.mdeeno.com/calculators/calc_dsr/)
 
 ---
+
 
 ### 💡 결론: '역세권'의 정의가 바뀌는 시점입니다
 서울시는 앞으로 역세권 350m 이내의 노후 저층 주거지와 구축 단지들을 고밀 개발하여 주거 문제를 해결하겠다는 의지가 확고합니다. 투자자 입장에서는 **용도지역 상향 가능성**이 높은 역세권 단지를 선점하는 것이 핵심이며, 실거주자에게는 시세보다 저렴한 **장기전세주택 공급 물량**에 주목할 기회입니다.
@@ -64,5 +66,7 @@ image: "/images/seoul-shift-season2.png"
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 글은 PropTech Lab의 정비사업 및 주거 정책 변화가 시장에 미치는 구조적 영향을 정리한 연구 노트입니다.**

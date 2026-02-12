@@ -6,6 +6,7 @@ categories: ["시장 분석"]
 tags: ["데이터센터 리츠 투자", "부동산투자", "재테크"]
 description: "AI 시대의 숨겨진 금광, 데이터센터(IDC) 리츠 투자, 지금이 적기인가?"
 image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770366839.png"
+
 ---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770366839.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">

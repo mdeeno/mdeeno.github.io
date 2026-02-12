@@ -6,8 +6,8 @@ categories: ["시장 분석"]
 tags: ['부동산STO', '조각투자', '카사', '소유', '펀블', '재테크', '건물주']
 description: '2026년 법제화와 함께 폭발하는 STO 시장! 카사, 소유, 펀블 중 당신의 자산을 불려줄 최적의 플랫폼은 어디일까요?'
 image: '/images/2026-01-26-realestate-sto-analysis.png'
----
 
+---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>"강남 빌딩의 주인이 되는 데 필요한 돈, 단돈 5,000원입니다."
 
@@ -45,7 +45,59 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 한눈에 비교하고 내 성향에 맞는 플랫폼을 찾아보세요.
 
 | 구분            | 🥇 카사 (Kasa)     | 🥈 소유 (SOU)       | 🥉 펀블 (FUNBLE)   |
-| :-------------- | :----------------- | :------------------ | :----------------- |
+| :
+
+---
+
+--
+
+---
+
+--
+
+---
+
+- | :
+
+---
+
+--
+
+---
+
+--
+
+---
+
+---- | :
+
+---
+
+--
+
+---
+
+--
+
+---
+
+--
+
+---
+
+ | :
+
+---
+
+--
+
+---
+
+--
+
+---
+
+---- |
 | **핵심 타겟**   | 강남 오피스/안정성 | MZ 핫플레이스/경험  | 물류센터/고배당    |
 | **평균 수익률** | **연 4.2% ~ 4.8%** | **연 3.5% ~ 5.2%**  | **연 5.5% ~ 6.3%** |
 | **강점**        | 압도적 매각 사례   | 강력한 혜택(바우처) | 산업 인프라 특화   |
@@ -119,6 +171,7 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 3. **포트폴리오 배분:** 카사(안정성)와 펀블(수익성)을 적절히 섞으세요.
 
 토큰증권 법제화가 뿌리내린 지금,
+
 ---
 
 <small>※ 본 분석 글은 투자 참고용이며, 모든 투자의 책임은 본인에게 있습니다.</small>
@@ -128,7 +181,9 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 분석은 PropTech Lab의 정비사업 및 부동산 구조 연구를 위해 공개 자료와 가정값을 기반으로 정리된 시뮬레이션 사례입니다.**
 > 
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.

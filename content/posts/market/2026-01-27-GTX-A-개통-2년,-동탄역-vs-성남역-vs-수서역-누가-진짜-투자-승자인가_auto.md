@@ -6,9 +6,8 @@ categories: ["시장 분석"]
 tags: ["GTX-A 시세 상승률", "부동산투자", "재테크"]
 description: "GTX-A 개통 2년, 동탄역 vs 성남역 vs 수서역: 누가 진짜 투자 승자인가?"
 image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608431.png"
+
 ---
-
-
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608431.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-01-27 22:53:34 기준)*
@@ -18,7 +17,27 @@ GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년
 ## 📊 GTX-A 개통 전후 2년 시세 상승률 비교 (84㎡ 기준)
 
 | 구분 | 대표 단지 (84㎡ 기준) | 2022년 Q1 시세 (억 원) | 2024년 Q1 시세 (억 원) | 상승률 (%) |
-| :--- | :--- | :--- | :--- | :--- |
+| :
+
+---
+
+ | :
+
+---
+
+ | :
+
+---
+
+ | :
+
+---
+
+ | :
+
+---
+
+ |
 | **동탄역** | 동탄역 시범 우남퍼스트빌 | 13.5 | 15.2 | 12.6% |
 | **성남역** | 판교 푸르지오 그랑블 | 18.0 | 19.5 | 8.3% |
 | **수서역** | 수서 삼성아파트 | 17.0 | 18.8 | 10.6% |
@@ -55,6 +74,8 @@ GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년
 *   향후 GTX-A 전체 구간(운정~동탄) 개통 및 삼성역 복합환승센터 완공 시점에 맞춰 2차 시세 변동이 예상되므로, 지속적인 모니터링이 필수입니다.
 
 ---
+
+
 ### 🛑 GTX-A 시세 상승률 투자, 아직도 고민만 하시나요?
 
 부동산은 **타이밍**이 생명입니다.
@@ -65,7 +86,9 @@ GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 분석은 PropTech Lab의 정비사업 및 부동산 구조 연구를 위해 공개 자료와 가정값을 기반으로 정리된 시뮬레이션 사례입니다.**
 > 
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.

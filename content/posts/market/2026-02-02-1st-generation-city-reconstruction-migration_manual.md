@@ -6,8 +6,8 @@ categories: ["세금/정책"]
 tags: ["1기신도시", "노후계획도시특별법", "분당재건축", "전세난", "선도지구"]
 description: "2026년, 1기 신도시 선도지구 이주가 가시권에 들어왔습니다. 분당, 일산 등 약 3.6만 가구의 대이동이 불러올 전세 시장의 지각변동과 정부의 이주 대책을 정밀 분석합니다."
 image: "/images/reconstruction-migration-2026.png"
----
 
+---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>## 🏗️ "3만 가구가 한꺼번에 짐을 싼다면, 어디로 가야 할까요?"
 * 분당 양지마을, 일산 강촌마을... 선도지구 선정 후 이주 시계는 더 빨라졌습니다.
@@ -16,6 +16,7 @@ image: "/images/reconstruction-migration-2026.png"
 
 ---
 
+
 ### 📊 노후계획도시 정비 이주 대책 및 수급 현황
 2026년 현재, 1기 신도시(분당·일산·평촌·산본·중동)는 선도지구 지정을 마치고 본격적인 특별정비구역 수립 단계에 있습니다.
 
@@ -23,9 +24,8 @@ image: "/images/reconstruction-migration-2026.png"
 * **지자체 주도 이주 대책:** 과거 사업시행자가 전담하던 이주 대책을 지자체가 주도하며 유휴 부지 활용, 순환형 주택 공급을 추진 중입니다.
 * **전세 시장 압박:** 공급 부족과 대규모 멸실 수요가 맞물리며, 서남권 및 경기 동남권 전세가는 이미 우상향 곡선을 그리고 있습니다.
 
-
-
 ---
+
 
 ### 🚀 이주 수요가 집중될 주요 단지 및 시세 분석
 
@@ -46,6 +46,7 @@ image: "/images/reconstruction-migration-2026.png"
 
 ---
 
+
 ### 🧮 이주 자금 마련을 위한 필수 계산기
 재건축 이주 시 이주비 대출 한도와 전세금 반환에 따른 세금 문제를 미리 체크하세요.
 
@@ -53,6 +54,7 @@ image: "/images/reconstruction-migration-2026.png"
 * [💸 양도소득세 및 비과세 혜택 계산기](https://tech.mdeeno.com/calculators/calc_transfer/)
 
 ---
+
 
 ### 💡 결론: 2026년은 '선제적 전세 확보'의 해
 정부의 순환용 주택 공급은 전체 이주 수요의 10~20% 수준에 불과할 것이라는 우려가 큽니다. 1기 신도시 재건축 대상지에 거주 중인 임차인이라면 **이주 1~2년 전 미리 대체 거주지를 확보**하거나, 상대적으로 저평가된 인근 비재건축 단지로의 이동을 고려해야 합니다. 투자자에게는 멸실로 인한 전세가 상승이 매매가를 지지하는 강력한 동력이 될 것입니다.
@@ -70,7 +72,9 @@ image: "/images/reconstruction-migration-2026.png"
 <a href="https://appu.kr/?i=21451182&gb=7" target="_blank" rel="nofollow sponsored" style="padding:10px 20px;border:1px solid #388e3c;border-radius:50px;color:#388e3c;font-weight:bold;text-decoration:none;font-size:0.9rem;">🎁 인터넷 지원금 조회</a>
 </div>
 </div>
+
 ---
+
 > **※ 본 분석은 PropTech Lab의 정비사업 및 부동산 구조 연구를 위해 공개 자료와 가정값을 기반으로 정리된 시뮬레이션 사례입니다.**
 > 
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.

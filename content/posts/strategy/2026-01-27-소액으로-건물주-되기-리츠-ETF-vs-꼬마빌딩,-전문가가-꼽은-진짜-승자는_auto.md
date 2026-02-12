@@ -6,9 +6,8 @@ categories: ["자산 전략"]
 tags: ["리츠 ETF 실물 부동산 비교", "부동산투자", "재테크"]
 description: "소액으로 건물주 되기? 리츠 ETF vs 꼬마빌딩, 전문가가 꼽은 진짜 승자는?"
 image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608608.png"
+
 ---
-
-
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608608.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-01-27 22:56:31 기준)*
@@ -19,10 +18,23 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
 ---
 
+
 ### 1. 핵심 비교 분석 요약 테이블
 
 | 구분 | 리츠(REITs) ETF | 실물 부동산 (꼬마빌딩/상가) |
-| :--- | :--- | :--- |
+| :
+
+---
+
+ | :
+
+---
+
+ | :
+
+---
+
+ |
 | 최소 투자금 | 1만 원 내외 | 수억 ~ 수십억 원 |
 | 유동성 | 매우 높음 (주식시장 거래) | 매우 낮음 (매매 기간 소요) |
 | 주요 수익 | 배당 수익 (분기/반기) | 임대 수익 + 시세 차익 |
@@ -31,6 +43,7 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 | 세금 구조 | 배당 소득세 (분리과세 혜택 가능) | 취득세, 보유세, 양도세 (중과 가능) |
 
 ---
+
 
 ### 2. REITs ETF 투자 분석 (소액 투자자의 최적 대안)
 
@@ -77,6 +90,8 @@ REITs ETF는 소액으로 우량 부동산에 간접 투자하고 배당 수익�
 *   **분산 투자 전략:** 실물 부동산 투자자라 하더라도, 포트폴리오의 유동성 확보 및 배당 수익 강화를 위해 REITs ETF를 일부 편입하는 것이 현명한 전략입니다.
 
 ---
+
+
 ### 🛑 리츠 ETF 실물 부동산 비교 투자, 아직도 고민만 하시나요?
 
 부동산은 **타이밍**이 생명입니다.
@@ -87,7 +102,9 @@ REITs ETF는 소액으로 우량 부동산에 간접 투자하고 배당 수익�
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 글은 PropTech Lab의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
 > 
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.

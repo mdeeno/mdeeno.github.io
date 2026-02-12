@@ -6,8 +6,8 @@ categories: ["시장 분석"]
 tags: ['성수동', '한남동', '팝업스토어', '리테일트렌드', '상업용부동산']
 description: '하루 대관료 1,500만 원 시대, 성수와 한남의 데이터 격차를 분석합니다.'
 image: '/images/2026-seongsu-hannam-rent-chart.png'
----
 
+---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>"하루 빌리는 데 1,500만 원이라고요?"
 
@@ -30,7 +30,63 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 ## 📊 2. 성수 vs 한남 리테일 데이터 비교 (2026 Q1)
 
 | 구분            | 🥇 성수동 (연무장길)   | 🥈 한남동 (독서당로)  | 비고               |
-| :-------------- | :--------------------- | :-------------------- | :----------------- |
+| :
+
+---
+
+--
+
+---
+
+--
+
+---
+
+- | :
+
+---
+
+--
+
+---
+
+--
+
+---
+
+--
+
+---
+
+--- | :
+
+---
+
+--
+
+---
+
+--
+
+---
+
+--
+
+---
+
+-- | :
+
+---
+
+--
+
+---
+
+--
+
+---
+
+---- |
 | **일일 대관료** | **800만 ~ 1,500만 원** | 500만 ~ 900만 원      | 성수 압승          |
 | **평균 공실률** | **1.8% (사실상 전무)** | 3.2% (선별적 입점)    | 공급 부족 심화     |
 | **주요 타겟**   | 글로벌 관광객 & Gen Z  | 하이엔드 자산가 & VIP | 객단가는 한남 우세 |
@@ -88,7 +144,9 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 글은 PropTech Lab의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
 > 
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.

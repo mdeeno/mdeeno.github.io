@@ -6,8 +6,8 @@ categories: ["부동산 분석"]
 tags: ["재개발", "노후도완화", "성북구빌라", "은평구재개발", "소액투자"]
 description: "서울시 재개발 구역 지정 요건이 노후도 60%로 완화되면서 성북구와 은평구의 빌라 밀집 지역이 기회의 땅으로 부상했습니다. 초기 재개발 후보지 TOP 3를 공개합니다."
 image: "/images/seongbuk-eunpyeong-redevelopment.png"
----
 
+---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>## 🏗️ "낡은 빌라촌이 신축 아파트 단지로, 문턱이 낮아졌습니다"
 * 노후도 요건 67% → 60% 완화, 그동안 탈락했던 구역들이 다시 움직입니다.
@@ -15,6 +15,7 @@ image: "/images/seongbuk-eunpyeong-redevelopment.png"
 * 현금 1~2억 원으로 서울 신축 입주권을 노리는 가장 현실적인 방법은?
 
 ---
+
 
 ### 📊 재개발 요건 완화(노후도 60%)의 의미
 정부의 '1·10 대책'과 서울시의 정비사업 가이드라인 개정으로 초기 재개발 진입 장벽이 획기적으로 낮아졌습니다.
@@ -24,6 +25,7 @@ image: "/images/seongbuk-eunpyeong-redevelopment.png"
 * **성북·은평의 특징:** 서울 내 대표적인 저층 주거지 밀집 지역으로, 이번 규제 완화의 최대 수혜지로 꼽힙니다.
 
 ---
+
 
 ### 🚀 성북구 & 은평구 초기 재개발 유망 후보지 분석
 
@@ -44,6 +46,7 @@ image: "/images/seongbuk-eunpyeong-redevelopment.png"
 
 ---
 
+
 ### 🧮 투자 전 필수 체크리스트
 초기 재개발은 하이 리스크-하이 리턴입니다. '현금청산' 리스크를 반드시 피해야 합니다.
 
@@ -52,6 +55,7 @@ image: "/images/seongbuk-eunpyeong-redevelopment.png"
 * [⚠️ 권리산정기준일 확인하기 (현금청산 방지)](https://tech.mdeeno.com/calculators/calc_transfer/)
 
 ---
+
 
 ### 💡 결론: '노후도'가 아닌 '추진위의 의지'를 보세요
 규제 완화로 인해 많은 구역이 대상지가 되었지만, 결국 사업을 성공시키는 것은 조합원들의 단합된 의지입니다. 2026년 현재 성북구와 은평구는 서울 내에서 비교적 소액으로 접근 가능한 마지막 보루입니다. 발품을 팔아 **추진위 사무실이 활발히 돌아가는 곳**, **동의서 징구 속도가 빠른 곳**을 선점하신다면 5~10년 후 신축 아파트 입주권이라는 열매를 맺을 수 있을 것입니다.
@@ -63,7 +67,9 @@ image: "/images/seongbuk-eunpyeong-redevelopment.png"
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
 ---
+
 > **※ 본 분석은 PropTech Lab의 정비사업 및 부동산 구조 연구를 위해 공개 자료와 가정값을 기반으로 정리된 시뮬레이션 사례입니다.**
 > 
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.
