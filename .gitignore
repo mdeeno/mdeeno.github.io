@@ -1,36 +1,25 @@
-
-node_modules/
-public/
-static/
-
-
-# 환경변수 파일 
+# [Security] 개인정보 및 임시 폴더 차단
+~*/
+ChromeTemp/
 .env
+.env.example
 
-# 티스토리 업로드 파일
-tistory_drafts
-
-._*
-
-# 삭제 폴더
-_DEL
-
-.git/objects/pack/._*
-
-
-# Mac OS
+# [System] macOS 유령 파일 및 시스템 찌꺼기
 .DS_Store
 ._*
+.git/objects/pack/._*
+_DEL/
 
-# Python
+# [Python] 가상환경 및 캐시
 __pycache__/
 *.pyc
 .venv/
 venv/
 env/
-.env
+tistory_drafts/
 
-# Hugo
+# [Hugo] 빌드 결과물 및 리소스 (포스팅 원본 md는 제외하지 마세요)
 public/
 resources/
+node_modules/
 .hugo_build.lock
