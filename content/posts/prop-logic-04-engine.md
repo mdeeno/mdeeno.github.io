@@ -5,7 +5,6 @@ categories: ['Prop-Logic']
 weight: 1
 math: true
 showPostNavLinks: false
-
 ---
 
 <div class="lab-stepper">
@@ -60,14 +59,28 @@ showPostNavLinks: false
     <p><span>1️⃣ 우리 단지 정보 입력</span></p>
     <div class="lab-grid">
       <div>
-        <label class="lab-label">건축 연면적 (평)</label>
-        <input type="number" id="input-building-area" value="5000" class="lab-input">
+        <label class="lab-label">건축 연면적</label>
+        <div style="display: flex; gap: 5px;">
+          <input type="number" id="input-building-area" value="5000" class="lab-input" style="flex: 1;">
+          <select id="input-area-unit" class="lab-input" style="width: 70px; padding: 5px;">
+            <option value="py">평</option>
+            <option value="m2">㎡</option>
+          </select>
+        </div>
+        <p style="font-size: 0.75rem; color: #888; margin-top: 4px;">* 지상층 + 지하층 합계 총 연면적 기준</p>
       </div>
       <div>
         <label class="lab-label">종전자산 평가액 (억원)</label>
         <input type="number" id="input-asset-value" value="250" class="lab-input">
       </div>
       <p style="font-size: 0.75rem; color: #888;">* 가치(종전자산): 현재 단지 내 땅과 건물의 전체 평가액입니다.</p>
+      <div class="scenario-guide" style="margin-top: 20px; border-top: 1px dashed #ddd; padding-top: 15px;">
+      <p class="lab-small-text">
+      💡 <strong>입력 팁:</strong> 단지 정보를 잘 모르신다면? <br>
+      - 네이버 부동산 <strong>'단지정보'</strong> 탭의 <strong>'면적별 정보'</strong>에서 연면적 합계를 확인하실 수 있습니다. <br>
+      - 종전자산 평가는 현재 KB시세의 80~90% 수준으로 가입력해 보세요.
+      </p>
+      </div>
     </div>
   <hr>
     <div style="display: flex; justify-content: space-between;">
@@ -142,8 +155,16 @@ showPostNavLinks: false
 <script>
 
 async function calc() {
+  const rawValue = document.getElementById('input-building-area').value;
+  const unit = document.getElementById('input-area-unit').value;
+
+  // 단위가 m2라면 환산하고, 아니면(py) 그대로 유지
+  const areaValue = (unit === "m2") 
+    ? (rawValue * 0.3025).toFixed(2) 
+    : rawValue;
+
   const data = {
-    area: document.getElementById('input-building-area').value,
+    area: areaValue, // 위에서 계산한 환산 변수를 사용
     asset_value: document.getElementById('input-asset-value').value,
     cost: document.getElementById('input-cost-number').value,
     scenario: document.querySelector('input[name="market-scenario"]:checked').value
@@ -208,6 +229,8 @@ function updateScenario() {
 function init() {
   const ids = ['input-cost-slider', 'input-cost-number', 'input-building-area', 'input-asset-value'];
   
+  document.getElementById('input-area-unit').addEventListener('change', calc);
+
   ids.forEach(id => {
     const el = document.getElementById(id);
     if (el) {
