@@ -1,4 +1,5 @@
 {{ define "main" }}
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 {{ .Scratch.Set "math" true }} {{ partial "math.html" . }}
 {{ $style := resources.Get "css/lab-style.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -27,7 +28,7 @@
 
         <div class="email-collect-box">
           <p class="email-title">📩 분석 결과 & 최신 리포트 받아보기</p>
-          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="email-form">
+          <form id="supabase-lead-form" class="email-form">
             <input type="email" name="email" placeholder="이메일 주소를 입력하세요" required class="email-input">
             <button type="submit" class="email-btn">
               PDF 받기
@@ -173,4 +174,51 @@
 {{- end }}
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+  // 1. 수파베이스 초기화
+  const supabaseUrl = 'https://ohmybbgvdlqgyvuvmewz.supabase.co';
+  const supabaseKey = 'REDACTED_SUPABASE_ANON_KEY';
+  
+  // supabasejs 객체가 없다면 window.supabase를 시도합니다.
+  const { createClient } = window.supabase; 
+  const supabase = createClient(supabaseUrl, supabaseKey);
+
+  // 2. 폼 제출 이벤트 가로채기 (이하 동일)
+  document.getElementById('supabase-lead-form').addEventListener('submit', async function(e) {
+    
+    e.preventDefault(); // 페이지 새로고침 방지
+
+    const emailInput = this.querySelector('.email-input');
+    const submitBtn = this.querySelector('.email-btn');
+    const email = emailInput.value;
+
+    if (!email) return;
+
+    // 상태 표시
+    submitBtn.innerText = '전송 중...';
+    submitBtn.disabled = true;
+
+    try {
+      // 3. lead_emails 테이블에 데이터 직접 저장
+      const { error } = await supabase
+        .from('lead_emails')
+        .insert([{ 
+          email: email, 
+          source: 'home_landing' 
+        }]);
+
+      if (error) throw error;
+
+      alert('📩 신청이 완료되었습니다! 수파베이스에 안전하게 저장되었습니다.');
+      emailInput.value = ''; // 입력창 비우기
+
+    } catch (err) {
+      console.error('Error:', err.message);
+      alert('오류가 발생했습니다: ' + err.message);
+    } finally {
+      submitBtn.innerText = 'PDF 받기';
+      submitBtn.disabled = false;
+    }
+  });
+</script>
 {{ end }}
