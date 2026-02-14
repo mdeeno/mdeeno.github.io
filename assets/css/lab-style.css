@@ -220,26 +220,81 @@
   font-size: 0.9rem;
 }
 
-/* 버튼 */
+/* --------- 버튼 -------- */
+/* 버튼 감싸는 컨테이너 */
 .lab-btn-wrap {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  gap: 15px; /* 버튼 사이 간격 */
   margin-top: 40px;
-  text-align: center;
+  width: 100%;
 }
-.lab-btn {
-  background: #0056b3;
-  color: #fff;
-  padding: 16px 40px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-decoration: none;
 
-  display: inline-block;
+/* 기본 버튼 공통 스타일 (모양/폰트) */
+.lab-btn {
+  display: flex;
+  align-items: center;
   justify-content: center;
 
-  box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+  /* 크기 및 폰트 */
+  padding: 14px 28px;
+  min-width: 200px; /* 버튼 최소 너비 확보 */
+  font-size: 1rem;
+  font-weight: 700;
+
+  /* 테두리 및 모양 */
+  border-radius: 8px; /* 둥근 사각형 (SaaS 느낌) */
+  border: none;
+  text-decoration: none;
+  color: #fff; /* 글자색 흰색 */
+
+  /* 애니메이션 */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
+/* 1. 개인용 (Personal) */
+.lab-btn-personal {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+.lab-btn-personal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #4aa3df 0%, #2c8ac8 100%);
+}
+
+/* 2. 기업용 (Enterprise) */
+.lab-btn-enterprise {
+  background: linear-gradient(
+    135deg,
+    #e0eafc 0%,
+    #cfdef3 100%
+  ); /* 실버 그라데이션 */
+  color: #2c3e50; /* 글자색을 어둡게 (중요) */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+  border: none;
+  font-weight: 800; /* 글자 더 굵게 */
+}
+
+.lab-btn-enterprise:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); /* 흰색 광채 */
+}
+
+/* 모바일 반응형: 버튼을 세로로 쌓기 */
+@media (max-width: 600px) {
+  .lab-btn-wrap {
+    flex-direction: column; /* 세로 배치 */
+    gap: 12px;
+  }
+  .lab-btn {
+    width: 100%;
+    min-width: auto;
+  }
+}
 /* ------ [토픽 알약 레이아웃] ------ */
 .topic-list {
   display: flex;

@@ -1,9 +1,11 @@
 baseURL = 'https://tech.mdeeno.com/'
 languageCode = 'ko-kr'
-title = 'PropTech Lab'
+title = 'M-DEENO'
 theme = 'PaperMod'
 
 [params]
+  description = "M-DEENO: 데이터로 증명하는 부동산 투자 전략 & Prop-Logic 분석 엔진" 
+  author = "M-DEENO Corp." 
 
   defaultTheme = "dark"
   disableThemeToggle = true
@@ -13,9 +15,15 @@ theme = 'PaperMod'
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   
-  # 메인 화면 모드 (글 목록 스타일)
-  homeInfoParams.Title = "🚀 PropTech Lab"
-  homeInfoParams.Content = "부동산 데이터 분석 & 투자 전략 연구소"
+  # 메인 화면 모드 (랜딩 페이지 브랜딩)
+  [params.homeInfoParams]
+    Title = "🚀 M-DEENO | Prop-Logic Lab"
+    Content = """
+    **데이터로 증명하는 부동산의 미래 가치**
+    <br>
+    자체 개발한 **Prop-Logic™** 엔진을 통해
+    재건축·재개발의 사업성을 정밀 시뮬레이션합니다.
+    """
   
   mainSections = ["posts"]
 
@@ -26,40 +34,38 @@ theme = 'PaperMod'
     responsiveImages = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"] # 검색 기능을 위해 JSON 필수
+  home = ["HTML", "RSS", "JSON"]
 
-# 상단 메뉴바 설정 
+# 상단 메뉴바 설정 (전문성 강화)
 [[menu.main]]
   identifier = "archives"
-  name = "🗂️ 전체보기"
+  name = "🗂️ 전체 리포트"
   url = "/archives/"
   weight = 10
 
 [[menu.main]]
   identifier = "categories"
-  name = "📂 카테고리"
+  name = "📂 분석 분야"
   url = "/categories/"
   weight = 20
 
 [[menu.main]]
   identifier = "prop-logic"
-  name = "🔬 Prop-Logic"
+  name = "🧬 Prop-Logic"
   url = "/categories/prop-logic"
   weight = 22
 
 [[menu.main]]
   identifier = "calculators"
-  name = "🧮 시뮬레이터"
+  name = "📊 솔루션(SaaS)"
   url = "/calculators/"
   weight = 25
 
-
 [[menu.main]]
   identifier = "search"
-  name = "🔍 검색"
+  name = "🔍 데이터 검색"
   url = "/search/"
   weight = 40
-
 
 [markup]
   [markup.goldmark]
