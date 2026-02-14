@@ -2,11 +2,10 @@
 title: "2026년 주담대 7% 시대 생존법: 생애최초 주택 구입, 지금이 '지각비' 낼 마지막 기회인가?"
 date: 2026-01-25
 draft: false
-categories: ["시장 분석"]
+categories: ['시장 분석']
 tags: ['주택담보대출', '금리전망', '생애최초', '내집마련', '2026부동산']
 description: '주담대 상단 7% 진입과 서울 공급 부족이 맞물린 2026년, 무주택자를 위한 최적의 매수 타이밍과 자금 전략을 공개합니다.'
 image: '/images/2026-mortgage-timing.png'
-
 ---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>지금 집을 사면 '영끌'의 늪에 빠지는 걸까요?
@@ -14,7 +13,6 @@ image: '/images/2026-mortgage-timing.png'
 생애최초 구입자에게 남은 '마지막 골든타임'은 언제일까요?
 
 ---
-
 
 ### 1. 2026년 시장 상황: 고금리와 공급 부족의 기묘한 동거
 
@@ -25,10 +23,9 @@ image: '/images/2026-mortgage-timing.png'
 
 ---
 
-
 ### 2. 무주택자 유형별 TOP 3 공략지 분석
 
-|   구분   | 🥇 대장주 (서울 핵심지) | 🥈 가성비 (수도권 상급지) | 🥉 소액투자 (공공분양/뉴홈) |
+| 구분 | 🥇 대장주 (서울 핵심지) | 🥈 가성비 (수도권 상급지) | 🥉 소액투자 (공공분양/뉴홈) |
 | :
 
 ---
@@ -90,8 +87,8 @@ image: '/images/2026-mortgage-timing.png'
 ---
 
 --- |
-| **타겟** | 자금력 있는 생애최초    | 실거주 위주 맞벌이 부부   | 저축액 높은 청년/신혼       |
-| **지역** | 마포, 성동, 동작        | 광명, 하남, 성남 수정     | 3기 신도시(계양, 대장)      |
+| **타겟** | 자금력 있는 생애최초 | 실거주 위주 맞벌이 부부 | 저축액 높은 청년/신혼 |
+| **지역** | 마포, 성동, 동작 | 광명, 하남, 성남 수정 | 3기 신도시(계양, 대장) |
 
 #### 🥇 [대장주] 서울 핵심지 입성 전략
 
@@ -116,7 +113,6 @@ image: '/images/2026-mortgage-timing.png'
 
 ---
 
-
 ### 3. 나의 대출 한도 및 월 상환액 계산하기
 
 자신의 소득과 부채 상황에 맞는 정확한 DSR 계산이 내 집 마련의 시작입니다.
@@ -124,7 +120,6 @@ image: '/images/2026-mortgage-timing.png'
 - [DSR 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_dsr/)
 
 ---
-
 
 ### 4. 결론: 2026년 '지각비'를 내지 않는 법
 
@@ -136,7 +131,6 @@ image: '/images/2026-mortgage-timing.png'
 
 ---
 
-
 ###
 
 <div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);">
@@ -147,6 +141,6 @@ image: '/images/2026-mortgage-timing.png'
 
 ---
 
-> **※ 본 글은 PropTech Lab의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
-> 
+> **※ 본 글은 M-DEENO의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
+>
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.

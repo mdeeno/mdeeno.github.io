@@ -3,51 +3,144 @@
 {{ $style := resources.Get "css/lab-style.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-<div class="lab-intro-section"><br>
-    <div class="lab-header">
-        <h1 class="lab-title">🚀 M-DEENO <span style="font-size: 0.6em; font-weight: normal; color: #888;">| Prop-Logic Lab</span></h1>
-        <p class="lab-subtitle">재건축의 미래,<br>감(Feel)이 아닌 <strong>데이터(Data)</strong>로 증명합니다.</p>
+<div class="lab-intro-section">
+    <div class="landing-hero">
+        <span class="hero-badge">🚀 M-DEENO Prop-Logic™ v1.3</span>
+        <h1 class="hero-title">
+          재건축 분담금,<br>
+          <span class="hero-highlight">미리 계산</span>해보셨습니까?
+        </h1>
+        <p class="hero-desc">
+          "설마 내가 낼 돈이 늘어나겠어?"<br>
+          공사비 상승과 금리 변동 리스크,<br> 
+          <strong>M-DEENO</strong>가 미리 계산해 드립니다.
+        </p>
+
+        <div class="lab-btn-wrap">
+          <a href="https://tech.mdeeno.com/posts/prop-logic-04-engine/" class="lab-btn lab-btn-personal">
+            📈 내 아파트 리스크 진단하기 (무료)
+          </a>
+        </div>
+        <p style="text-align: center; font-size: 0.8rem; color: #888; margin-top: 10px;">
+          * 회원가입 없음 · 3분 소요 · 즉시 결과 확인
+        </p>
+
+        <div class="email-collect-box">
+          <p class="email-title">📩 분석 결과 & 최신 리포트 받아보기</p>
+          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="email-form">
+            <input type="email" name="email" placeholder="이메일 주소를 입력하세요" required class="email-input">
+            <button type="submit" class="email-btn">
+              PDF 받기
+            </button>
+          </form>
+          <p class="email-note">* 스팸 발송 없음. 언제든 구독 취소 가능.</p>
+        </div>
     </div>
 
-    <section>
-        <h2 class="lab-section-title">[ 기업 소개 : M-DEENO ]</h2>
-        <p class="lab-text">
-          <strong>M-DEENO</strong>는 정비사업의 불확실성을 걷어내고 <strong>'투입 대비 수익(ROI)'</strong>을 숫자로 시각화하는 프롭테크 기업입니다.<br><br>
-          자체 개발한 <strong>'Prop-Logic™'</strong> 엔진을 통해 개인 투자자에게는 <strong>'적정 분담금'</strong>을, 조합 및 시행사에게는 <strong>'사업 리스크 최소화 솔루션'</strong>을 제공합니다.
-        </p>
-    </section>
+    <div class="problem-section">
+      <h2 class="landing-section-title">⚠️ 당신의 재건축이 위험한 이유</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-icon">💸</span>
+          <span class="problem-title">공사비 폭등</span>
+          <p class="problem-desc">공사비 상승은 분담금에 직접적인 영향을 줍니다.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">📉</span>
+          <span class="problem-title">미분양 리스크</span>
+          <p class="problem-desc">일반분양 수익이 줄어들면 그 손해는 고스란히 조합원 몫입니다.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">⏳</span>
+          <span class="problem-title">사업 지연</span>
+          <p class="problem-desc">이주비 이자가 늘어날수록 최종 수익률(ROI)은 곤두박질칩니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-works-section">
+      <h2 class="landing-section-title">📊 3단계 리스크 진단 프로세스</h2>
+      <div class="how-steps">
+        <div class="how-step-card">
+          <span class="how-step-num">01</span>
+          <div class="how-step-title">단지 정보 입력</div>
+            <p class="how-step-desc">연면적, 종전자산 등<br>기초 데이터를 입력합니다.</p>
+        </div>
+        <div class="how-arrow">→</div>
+        <div class="how-step-card">
+          <span class="how-step-num">02</span>
+          <div class="how-step-title">변수 시뮬레이션</div>
+          <p class="how-step-desc">공사비, 일반분양가 등<br>핵심 변수를 조정합니다.</p>
+        </div>
+        <div class="how-arrow">→</div>
+        <div class="how-step-card">
+          <span class="how-step-num">03</span>
+          <div class="how-step-title">리스크 확인</div>
+          <p class="how-step-desc">R-Score 및 분담금 변동폭을<br>즉시 확인합니다.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="stat-row">
+      <div class="stat-item">
+        <h3>로직 검증</h3>
+        <p>내부 시나리오 30개 검증 완료</p>
+      </div>
+      <div class="stat-item">
+        <h3>35개</h3>
+        <p>분석 지표</p>
+      </div>
+    </div>
 
     <div class="lab-formula-box">
-      <h2>Prop-Logic™<br> 핵심 분석 알고리즘</h2>
+      <h2>Prop-Logic™ 분석 엔진</h2>
       <div class="lab-formula-text">
-        $$Score(R) = \frac{예상분양수익 - 총사업비}{종전자산가치} \times 100$$
+        $$점수(R-Score) = \frac{예상분양수익 - 총사업비}{종전자산가치} \times 100$$
       </div>
-        <p class="lab-formula-caption">
-          * <strong>Score(R)</strong>은 M-DEENO의 독자적인 사업 안정성 지표입니다.<br> 
-          * 공사비 변동에 따른 <strong>조합원 분담금 민감도</strong>를 즉시 산출합니다.
-        </p>
-    </div>
-    
-    <div class="lab-btn-wrap">
-        <a href="https://tech.mdeeno.com/posts/prop-logic-04-engine/" class="lab-btn lab-btn-personal">
-            📊 [개인] 무료 시뮬레이션
-        </a>
         
-        <a href="mailto:mdeeno.official@gmail.com?subject=[기업문의] 정밀 분석 리포트 요청" class="lab-btn lab-btn-enterprise">
-            🏢 [기업] 정밀 분석·제휴 문의
-        </a>
+      <div class="score-guide-box">
+        <div class="score-item score-safe">
+          <strong>🔵 120점 이상</strong>
+          <span>사업성 우수<br>(환급 가능성)</span>
+        </div>
+        <div class="score-item score-warn">
+          <strong>🟡 90 ~ 110점</strong>
+          <span>주의 구간<br>(변수 관리 필요)</span>
+        </div>
+        <div class="score-item score-danger">
+          <strong>🔴 90점 미만</strong>
+          <span>위험 구간<br>(분담금 폭탄 주의)</span>
+        </div>
+      </div>
     </div>
-    
-    <p style="text-align: center; font-size: 0.8rem; color: #999; margin-top: 15px;">
-        * 개인 투자자는 즉시 웹에서 확인 가능하며, 기업 고객은 별도 데이터셋을 제공합니다.
-    </p>
+
+    <div class="b2b-card">
+      <h3 class="b2b-title">🏢 기업 및 조합 정밀 분석 솔루션</h3>      
+      <p class="b2b-desc">
+        시행사, 조합, 법인을 위한 <strong>민감도 분석 리포트(Sensitivity Report)</strong>가 필요하신가요?<br>
+        M-DEENO의 데이터랩이 정밀한 시나리오 분석을 제공합니다.
+      </p>
+
+      <div class="b2b-tags-wrapper">
+          <span class="b2b-tag">✔ 공사비 민감도 분석</span>
+          <span class="b2b-tag">✔ 분양가 시나리오 비교</span>
+          <span class="b2b-tag">✔ 분담금 구간별 리스크</span>
+      </div>
+
+      <div class="b2b-btn-wrapper">
+        <a href="mailto:mdeeno.official@gmail.com?subject=[기업문의] 정밀 분석 리포트 요청" class="lab-btn lab-btn-enterprise">
+          📩 기업 정밀 분석 문의하기
+        </a>
+      </div>
+    </div>
+
 </div>
 
 <br>
 <hr style="opacity: 0.2;">
 
 <div class="topic-wrap">
-    <h3 class="topic-title">📂 분석 분야별 리포트</h3>
+    <h3 class="topic-title">📂 데이터 기반 리포트</h3>
     <div class="topic-list">
         {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
         <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="topic-item">
@@ -62,8 +155,7 @@
     <h3 class="report-title">🔥 최신 인사이트 (Insights)</h3>
 </div>
 
-{{- $pages := union .Site.RegularPages .Site.Sections }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $paginator := .Paginate $pages }}
 
 {{- range $paginator.Pages }}

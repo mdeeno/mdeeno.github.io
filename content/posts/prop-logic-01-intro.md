@@ -3,7 +3,6 @@ title: 'Prop-Logic 연구소: 도시정비사업 구조 연구의 시작'
 date: 2026-02-05T17:01:00+09:00
 categories: ['Prop-Logic']
 weight: 1
-
 ---
 
 <div class="lab-stepper">
@@ -29,7 +28,7 @@ weight: 1
 Prop-Logic은 단순한 수익성 계산을 넘어, 정비사업의 **'구조적 임계점'**을 탐구합니다.
 
 **1. Insight to Logic**
-PropTech Lab은 도시공학적 관점에서 부동산 정비사업의 구조적 변동성을 탐구하는 <strong>비영리 기술 연구소</strong>입니다.
+M-DEENO은 도시공학적 관점에서 부동산 정비사업의 구조적 변동성을 탐구하는 <strong>비영리 기술 연구소</strong>입니다.
 그동안 게시된 정비사업지 분석, 세금 시뮬레이션, 정책 해설, GTX·교통망 분석 리포트는 'Prop-Logic' 엔진 설계를 위한 실제 사례 연구(Case Study)였습니다.
 
 **2. 비상업적 공공성**

@@ -1,12 +1,11 @@
 ---
-title: "대학가 하숙집은 왜 몰락했나? 프리미엄 코리빙(Co-living) 투자로 월세 수익률 5% 돌파 전략"
+title: '대학가 하숙집은 왜 몰락했나? 프리미엄 코리빙(Co-living) 투자로 월세 수익률 5% 돌파 전략'
 date: 2026-02-03 18:13:36
 draft: false
-categories: ["시장 분석"]
-tags: ["코리빙 투자 수익률", "부동산투자", "재테크"]
-description: "대학가 하숙집은 왜 몰락했나? 프리미엄 코리빙(Co-living) 투자로 월세 수익률 5% 돌파 전략"
-image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770196438.png"
-
+categories: ['시장 분석']
+tags: ['코리빙 투자 수익률', '부동산투자', '재테크']
+description: '대학가 하숙집은 왜 몰락했나? 프리미엄 코리빙(Co-living) 투자로 월세 수익률 5% 돌파 전략'
+image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770196438.png'
 ---
 
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770196438.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
@@ -31,12 +30,13 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 3.  **높은 공실 위험:** 기말고사나 방학 기간에는 공실이 발생하거나, 식사 제공을 중단해야 하는 등 수익의 변동성이 큽니다.
 
 **[사례 분석: 연희동/창천동 구(舊) 다가구 주택 (하숙집 형태)]**
-*   **매매 호가:** 약 12억 원 (대지 50평 기준)
-*   **총 방 수:** 5개 (공용 공간 제외)
-*   **월 평균 수익 (식사 포함):** 350만 원 (총 매출)
-*   **운영 비용 (식비, 관리):** 180만 원
-*   **순 월세 수익:** 170만 원
-*   **순수익률 (Net Yield):** 약 1.7% (매우 낮음)
+
+- **매매 호가:** 약 12억 원 (대지 50평 기준)
+- **총 방 수:** 5개 (공용 공간 제외)
+- **월 평균 수익 (식사 포함):** 350만 원 (총 매출)
+- **운영 비용 (식비, 관리):** 180만 원
+- **순 월세 수익:** 170만 원
+- **순수익률 (Net Yield):** 약 1.7% (매우 낮음)
 
 ---
 
@@ -59,19 +59,19 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
 ---
 
- | :
+| :
 
 ---
 
- | :
+| :
 
 ---
 
- | :
+| :
 
 ---
 
- |
+|
 | **주거 형태** | 소형 스튜디오 (20㎡) | 다가구 주택 (방 1개) | 개인실 (12~15㎡) + 공유 공간 |
 | **매매가 (추정)** | 약 2.8억 원 | 약 12억 원 | N/A (기관 소유 BTR) |
 | **월 임대료 (순수)** | 1000/85만 원 | 50/50만 원 (식사 제외) | 100/95만 원 (관리비 포함) |
@@ -79,7 +79,7 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 | **순수익률 (Net)** | 3.2% (관리비 제외) | **1.7% (운영 비용 포함)** | **4.8%~5.2% (전문 관리비 제외)** |
 | **주요 장점** | 환금성 우수 | 토지 가치 상승 기대 | 높은 임대 프리미엄, 낮은 공실 |
 
-*   *참고: 맹그로브 신촌 등 코리빙 시설은 대부분 기관이 직접 개발/운영하는 BTR(Build-to-Rent) 모델이므로, 개인 투자자는 간접 투자(리츠, 펀드)를 통해 접근해야 합니다.*
+- _참고: 맹그로브 신촌 등 코리빙 시설은 대부분 기관이 직접 개발/운영하는 BTR(Build-to-Rent) 모델이므로, 개인 투자자는 간접 투자(리츠, 펀드)를 통해 접근해야 합니다._
 
 ### 📍 사례 1: 신촌 푸르지오 시티 (오피스텔)
 
@@ -107,7 +107,6 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
 ---
 
-
 ### 🛑 코리빙 투자 수익률 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
@@ -121,6 +120,6 @@ image: "https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
 ---
 
-> **※ 본 글은 PropTech Lab의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
-> 
+> **※ 본 글은 M-DEENO의 정비사업·부동산 의사결정 구조 연구 과정에서 정리된 사례 분석 리포트의 일부입니다.**
+>
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.
