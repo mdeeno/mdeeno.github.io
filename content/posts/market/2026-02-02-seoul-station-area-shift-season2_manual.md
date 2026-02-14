@@ -63,6 +63,9 @@ image: '/images/seoul-shift-season2.png'
 <small>본 분석은 서울시 운영기준과 현재 시장 호가를 바탕으로 작성되었으며, 실제 정비계획 수립 과정에서 용적률 및 사업 방식은 변동될 수 있습니다.</small>
 
 
+
+
+
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -70,7 +73,7 @@ image: '/images/seoul-shift-season2.png'
     </p>
     <div style="display: flex; gap: 10px;">
         <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-            style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
         <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
             무료 신청
         </button>
@@ -91,7 +94,7 @@ image: '/images/seoul-shift-season2.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'legacy_post_update' 
+        source: 'blog: 서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
     }]);
 
     if (!error) {
@@ -110,6 +113,10 @@ image: '/images/seoul-shift-season2.png'
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
+
+
+
 
 
 ---

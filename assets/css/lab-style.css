@@ -707,3 +707,9 @@
     width: 100%;
   }
 }
+
+.lab-lead-form input#blog-lead-email {
+  color: #333 !important;
+  background-color: #ffffff !important;
+  -webkit-text-fill-color: #333 !important; /* 아이폰/사파리 대응 */
+}

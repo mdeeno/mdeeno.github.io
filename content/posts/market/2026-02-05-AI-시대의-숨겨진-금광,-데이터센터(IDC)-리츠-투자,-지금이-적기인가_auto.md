@@ -81,6 +81,9 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
 투자에 앞서 [💰 대출 이자 계산기](https://tech.mdeeno.com/calculators/calc_interest/)를 활용하여 본인의 재무 상태를 점검해 보시는 것도 잊지 마세요!
 
 
+
+
+
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -88,7 +91,7 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
     </p>
     <div style="display: flex; gap: 10px;">
         <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-            style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
         <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
             무료 신청
         </button>
@@ -109,7 +112,7 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'legacy_post_update' 
+        source: 'blog: AI 시대의 숨겨진 금광, 데이터센터(IDC) 리츠 투자, 지금이 적기인가?'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
     }]);
 
     if (!error) {
@@ -128,3 +131,7 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
+
+
+

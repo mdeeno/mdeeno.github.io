@@ -86,6 +86,9 @@ STO(Security Token Offering)는 실물 부동산을 기초 자산으로 발행�
 <small>본 리포트는 플랫폼별 공시 자료와 2026년 시장 상황을 바탕으로 작성되었으며, 특정 플랫폼의 수익을 보장하지 않습니다. 모든 투자 결정은 본인의 판단하에 이루어져야 합니다.</small>
 
 
+
+
+
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -93,7 +96,7 @@ STO(Security Token Offering)는 실물 부동산을 기초 자산으로 발행�
     </p>
     <div style="display: flex; gap: 10px;">
         <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-            style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
         <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
             무료 신청
         </button>
@@ -114,7 +117,7 @@ STO(Security Token Offering)는 실물 부동산을 기초 자산으로 발행�
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'legacy_post_update' 
+        source: 'blog: 소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
     }]);
 
     if (!error) {
@@ -133,6 +136,10 @@ STO(Security Token Offering)는 실물 부동산을 기초 자산으로 발행�
 <p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
 <a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
 </div>
+
+
+
+
 
 
 ---

@@ -49,6 +49,9 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 - 셋째, 대출 금리 부담이 월 임대 수익 예상치를 상회한다면 '세금 폭탄'보다 '역전세 폭탄'이 더 무섭습니다.
 
 
+
+
+
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -56,7 +59,7 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
     </p>
     <div style="display: flex; gap: 10px;">
         <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-            style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
         <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
             무료 신청
         </button>
@@ -77,7 +80,7 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'legacy_post_update' 
+        source: 'blog: 분양권 양도세 66% 폭탄 피하기: '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
     }]);
 
     if (!error) {
@@ -92,6 +95,10 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 </script>
 
 <div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #d32f2f;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">🛑 감당하기 힘든 부채, 해결책이 있습니다</h3><p style="margin-bottom:15px;font-size:0.9rem;color:#666;">혼자 고민하지 마세요. 비공개 무료 상담으로 탕감률을 확인하세요.</p><a href="https://appu.kr/?i=21451182&gb=4" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #d32f2f;border-radius:50px;color:#d32f2f;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">📊 내 탕감률 조회하기</a></div>
+
+
+
+
 
 
 ---
