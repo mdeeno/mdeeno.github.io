@@ -2,21 +2,20 @@
 title: "마이너스 프리미엄 분양권, '양도세 매수자 부담' 조건이 독이 되는 이유 (M-DEENO 분석)"
 date: 2026-02-14 20:42:58
 draft: false
-categories: ["자산 전략"]
-tags: ["분양권 마피 양도세 매수자 부담", "부동산투자", "데이터분석", "프롭테크", "재테크", "M-DEENO"]
+categories: ['자산 전략']
+tags:
+  [
+    '분양권 마피 양도세 매수자 부담',
+    '부동산투자',
+    '데이터분석',
+    '프롭테크',
+    '재테크',
+    'M-DEENO',
+  ]
 description: "마이너스 프리미엄 분양권, '양도세 매수자 부담' 조건이 독이 되는 이유 (M-DEENO 분석) - M-DEENO 데이터 분석"
 ---
 
-
 <p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>
-
-
-<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771155957.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
-        ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-14 20:42:58 기준)
-    </p>
-</div>
 
 ---
 
@@ -60,9 +59,9 @@ description: "마이너스 프리미엄 분양권, '양도세 매수자 부담' 
 
 많은 투자자가 간과하는 사실은 매수자가 대신 낸 양도소득세가 **취득세 과세표준**에도 포함된다는 점입니다.
 
-*   매수자가 대납한 세금만큼 취득가액이 상승하여 취득세 납부액이 증가합니다.
-*   추후 매도 시, 취득가액이 높게 잡혀 양도차익은 줄어들 수 있으나 초기 자금 부담이 가중됩니다.
-*   **M-DEENO 데이터 랩**의 시뮬레이션 결과, 대납 조건 유무에 따라 초기 현금 동원력이 약 15~20%가량 차이 날 수 있습니다.
+- 매수자가 대납한 세금만큼 취득가액이 상승하여 취득세 납부액이 증가합니다.
+- 추후 매도 시, 취득가액이 높게 잡혀 양도차익은 줄어들 수 있으나 초기 자금 부담이 가중됩니다.
+- **M-DEENO 데이터 랩**의 시뮬레이션 결과, 대납 조건 유무에 따라 초기 현금 동원력이 약 15~20%가량 차이 날 수 있습니다.
 
 ### 현명한 매수를 위한 M-DEENO의 제언
 
@@ -73,7 +72,6 @@ description: "마이너스 프리미엄 분양권, '양도세 매수자 부담' 
 단순히 마이너스 금액에 현혹되지 말고, 등기 시점까지 들어가는 모든 비용을 데이터 기반으로 산출하는 것이 자산 방어의 핵심입니다.
 
 <div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-top:3px solid #f57c00;border-radius:8px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">🚚 이사/입주 준비, '혜택' 챙기셨나요?</h3><p style="margin-bottom:20px;font-size:0.9rem;color:#666;">이사비용 견적 비교부터 인터넷 가입 현금 지원금까지 한 번에 확인하세요.</p><div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;"><a href="https://appu.kr/?i=21451182&gb=5" target="_blank" rel="nofollow sponsored" style="padding:10px 20px;border:1px solid #f57c00;border-radius:50px;color:#f57c00;font-weight:bold;text-decoration:none;font-size:0.9rem;">📝 이사 무료 견적</a><a href="https://appu.kr/?i=21451182&gb=7" target="_blank" rel="nofollow sponsored" style="padding:10px 20px;border:1px solid #388e3c;border-radius:50px;color:#388e3c;font-weight:bold;text-decoration:none;font-size:0.9rem;">🎁 인터넷 지원금 조회</a></div></div>
-
 
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
@@ -126,19 +124,16 @@ description: "마이너스 프리미엄 분양권, '양도세 매수자 부담' 
   }
 </script>
 
-
-
 ---
+
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
 
-
-
 ---
+
 ### 🛑 분양권 마피 양도세 매수자 부담 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>
