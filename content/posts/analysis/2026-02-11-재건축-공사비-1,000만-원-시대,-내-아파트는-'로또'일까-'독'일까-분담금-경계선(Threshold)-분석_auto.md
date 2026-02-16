@@ -13,8 +13,6 @@ description: "재건축 공사비 1,000만 원 시대, 내 아파트는 '로또'
 image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904170.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>
-
 ![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904170.png)
 _▲ AI 분석 데이터 (2026-02-11 22:49:14 기준)_
 
@@ -63,10 +61,6 @@ _▲ AI 분석 데이터 (2026-02-11 22:49:14 기준)_
 - 선도지구 지정을 앞두고 추격 매수를 고려한다면, 반드시 해당 단지의 **분담금 경계선**을 직접 계산해 보시기 바랍니다.
 - 비용을 감당하지 못한 조합원들의 급매물이 사업 시행 인가 전후로 쏟아질 수 있음을 유의해야 합니다.
 
-
-
-
-
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -108,13 +102,6 @@ _▲ AI 분석 데이터 (2026-02-11 22:49:14 기준)_
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3><p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p><a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a></div>
-
-
-
-
-
 
 ---
 

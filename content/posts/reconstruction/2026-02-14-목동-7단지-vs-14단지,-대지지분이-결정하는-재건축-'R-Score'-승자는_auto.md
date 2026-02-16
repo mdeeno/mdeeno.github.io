@@ -2,14 +2,18 @@
 title: "목동 7단지 vs 14단지, 대지지분이 결정하는 재건축 'R-Score' 승자는?"
 date: 2026-02-14 20:55:45
 draft: false
-categories: ["정비 사업"]
-tags: ["목동 재건축 대지지분 비교", "부동산투자", "분담금예측", "재건축리스크", "재테크", "M-DEENO"]
+categories: ['정비 사업']
+tags:
+  [
+    '목동 재건축 대지지분 비교',
+    '부동산투자',
+    '분담금예측',
+    '재건축리스크',
+    '재테크',
+    'M-DEENO',
+  ]
 description: "목동 7단지 vs 14단지, 대지지분이 결정하는 재건축 'R-Score' 승자는? - M-DEENO 데이터 분석"
 ---
-
-
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771156694.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -40,9 +44,9 @@ description: "목동 7단지 vs 14단지, 대지지분이 결정하는 재건축
 
 목동 7단지는 목동역(5호선) 초역세권이라는 압도적인 입지 조건을 갖추고 있습니다.
 
-* **평균 대지지분**: 목동 전체 단지 중 최상위권에 속하며, 지분당 가치가 매우 높게 평가됩니다.
-* **시세 형성**: 최근 거래 사례를 분석하면 전용 84㎡ 기준 **22~25억대**의 넓은 스펙트럼을 형성하고 있습니다.
-* **사업 안정성**: 높은 대지지분 덕분에 대형 평형 배정 시 유리하며, M-DEENO 분석 결과 사업 안정성 점수가 매우 높습니다.
+- **평균 대지지분**: 목동 전체 단지 중 최상위권에 속하며, 지분당 가치가 매우 높게 평가됩니다.
+- **시세 형성**: 최근 거래 사례를 분석하면 전용 84㎡ 기준 **22~25억대**의 넓은 스펙트럼을 형성하고 있습니다.
+- **사업 안정성**: 높은 대지지분 덕분에 대형 평형 배정 시 유리하며, M-DEENO 분석 결과 사업 안정성 점수가 매우 높습니다.
 
 해당 단지의 구체적인 거래 내역은 반드시 **국토교통부 실거래가 공개시스템 확인**을 권장합니다.
 
@@ -50,9 +54,9 @@ description: "목동 7단지 vs 14단지, 대지지분이 결정하는 재건축
 
 목동 14단지는 신정동에 위치하며, 목동 신시가지 중 가장 큰 세대수를 자랑하는 '메머드급' 단지입니다.
 
-* **사업 규모**: 3,000세대가 넘는 대단지 특성상 커뮤니티 시설 및 랜드마크 조성에 유리합니다.
-* **시세 형성**: 전용 84㎡ 기준 대략 **14~17억대** 내외로 시세가 형성되어 있어 7단지 대비 진입 장벽이 낮습니다.
-* **R-Score 분석**: 대지지분 자체는 7단지에 비해 소폭 낮으나, 단지 통합 재건축 시 발생하는 규모의 경제 효과가 이를 보완합니다.
+- **사업 규모**: 3,000세대가 넘는 대단지 특성상 커뮤니티 시설 및 랜드마크 조성에 유리합니다.
+- **시세 형성**: 전용 84㎡ 기준 대략 **14~17억대** 내외로 시세가 형성되어 있어 7단지 대비 진입 장벽이 낮습니다.
+- **R-Score 분석**: 대지지분 자체는 7단지에 비해 소폭 낮으나, 단지 통합 재건축 시 발생하는 규모의 경제 효과가 이를 보완합니다.
 
 상세한 가격 변동 추이는 **국토교통부 실거래가 공개시스템 확인**이 필수적입니다.
 
@@ -60,9 +64,9 @@ description: "목동 7단지 vs 14단지, 대지지분이 결정하는 재건축
 
 M-DEENO 데이터 랩은 객관성을 위해 인근 **목동 11단지**를 대조군으로 포함하여 분석했습니다.
 
-* **목동 7단지**: 높은 초기 투자금이 필요하지만, 입지 가중치 덕분에 R-Score가 가장 견고합니다.
-* **목동 14단지**: 초기 투자금 대비 향후 세대수 증가에 따른 일반분양 수익성이 기대되는 '가성비' 모델입니다.
-* **목동 11단지**: 최근 **13~15억대**의 시세를 형성하며 14단지와 유사한 흐름을 보이나, 교육 인프라 접근성에서 차이를 보입니다.
+- **목동 7단지**: 높은 초기 투자금이 필요하지만, 입지 가중치 덕분에 R-Score가 가장 견고합니다.
+- **목동 14단지**: 초기 투자금 대비 향후 세대수 증가에 따른 일반분양 수익성이 기대되는 '가성비' 모델입니다.
+- **목동 11단지**: 최근 **13~15억대**의 시세를 형성하며 14단지와 유사한 흐름을 보이나, 교육 인프라 접근성에서 차이를 보입니다.
 
 모든 단지의 시세 정보는 **국토교통부 실거래가 공개시스템 확인 권장** 문구를 참고하시기 바랍니다.
 
@@ -70,14 +74,11 @@ M-DEENO 데이터 랩은 객관성을 위해 인근 **목동 11단지**를 대�
 
 **M-DEENO의 Prop-Logic™ 알고리즘** 분석 결과, 단기적인 자산 가치 상승폭은 7단지가 우세할 것으로 예측됩니다.
 
-* 하지만 장기적인 실거주 만족도와 대단지 프리미엄을 고려한다면 14단지의 잠재력도 무시할 수 없습니다.
-* 재건축은 속도전이 아닌 **사업 안정성**의 싸움이며, 대지지분은 그 싸움에서 가장 강력한 무기가 됩니다.
-* 투자 전 반드시 본인의 자금 흐름에 맞는 **추가 분담금 경계선**을 계산해 보시길 권장합니다.
+- 하지만 장기적인 실거주 만족도와 대단지 프리미엄을 고려한다면 14단지의 잠재력도 무시할 수 없습니다.
+- 재건축은 속도전이 아닌 **사업 안정성**의 싸움이며, 대지지분은 그 싸움에서 가장 강력한 무기가 됩니다.
+- 투자 전 반드시 본인의 자금 흐름에 맞는 **추가 분담금 경계선**을 계산해 보시길 권장합니다.
 
 [🏠 내 자산 규모에 맞는 취득세 계산해보기](https://tech.mdeeno.com/calculators/calc_tax/)
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3><p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p><a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a></div>
-
 
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
@@ -130,19 +131,16 @@ M-DEENO 데이터 랩은 객관성을 위해 인근 **목동 11단지**를 대�
   }
 </script>
 
-
-
 ---
+
 > **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
-
 ---
+
 ### 🛑 목동 재건축 대지지분 비교 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

@@ -17,7 +17,7 @@ description: 'GTX-C 노선 착공과 함께 판이 바뀝니다. 과천, 인덕�
 image: '/images/gtx-c-map-2026.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>GTX-C 노선이 드디어 삽을 뜹니다.
+GTX-C 노선이 드디어 삽을 뜹니다.
 단순히 "좋아진다"는 계획 단계와, 실제 펜스가 쳐지고 덤프트럭이 오가는 **'착공'** 단계는 시장의 온도가 180도 다릅니다.
 
 사람들은 눈에 보여야 믿고, 눈에 보일 때 움직이면 이미 늦습니다.
@@ -165,10 +165,6 @@ GTX-C 착공은 단순한 공사가 아닙니다. 수도권의 지도가 **'시�
 
 <small>※ 본 포스팅은 정보 제공을 목적으로 하며, 투자의 책임은 전적으로 투자자 본인에게 있습니다.</small>
 
-
-
-
-
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -210,17 +206,6 @@ GTX-C 착공은 단순한 공사가 아닙니다. 수도권의 지도가 **'시�
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);">
-<h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3>
-<p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
-<a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
-</div>
-
-
-
-
-
 
 ---
 

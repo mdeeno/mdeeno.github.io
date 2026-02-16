@@ -8,7 +8,7 @@ description: '2026년, 1기 신도시 선도지구 이주가 가시권에 들어
 image: '/images/reconstruction-migration-2026.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>## 🏗️ "3만 가구가 한꺼번에 짐을 싼다면, 어디로 가야 할까요?"
+## 🏗️ "3만 가구가 한꺼번에 짐을 싼다면, 어디로 가야 할까요?"
 * 분당 양지마을, 일산 강촌마을... 선도지구 선정 후 이주 시계는 더 빨라졌습니다.
 * 정부가 내놓은 '순환용 주택'과 '영구임대 재건축', 과연 전세난을 막을 수 있을까요?
 * 1기 신도시 구축 전세를 살고 있는 임차인들은 지금 어떤 준비를 해야 할까요?
@@ -116,8 +116,8 @@ image: '/images/reconstruction-migration-2026.png'
 <h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">🚚 이사/입주 준비, '혜택' 챙기셨나요?</h3>
 <p style="margin-bottom:20px;font-size:0.9rem;color:#666;">이사비용 견적 비교부터 인터넷 가입 현금 지원금까지 한 번에 확인하세요.</p>
 <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
-<a href="https://appu.kr/?i=21451182&gb=5" target="_blank" rel="nofollow sponsored" style="padding:10px 20px;border:1px solid #f57c00;border-radius:50px;color:#f57c00;font-weight:bold;text-decoration:none;font-size:0.9rem;">📝 이사 무료 견적</a>
-<a href="https://appu.kr/?i=21451182&gb=7" target="_blank" rel="nofollow sponsored" style="padding:10px 20px;border:1px solid #388e3c;border-radius:50px;color:#388e3c;font-weight:bold;text-decoration:none;font-size:0.9rem;">🎁 인터넷 지원금 조회</a>
+
+
 </div>
 
 

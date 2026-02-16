@@ -13,8 +13,6 @@ description: "선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 
 image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904196.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>
-
 ![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904196.png)
 _▲ AI 분석 데이터 (2026-02-11 22:49:41 기준)_
 
@@ -60,10 +58,6 @@ Safety Score = (평균 대지 지분 ÷ 현재 용적률) × 통합 재건축 �
 - 취득세와 보유세 부담을 고려하여 실거주 요건을 채울 수 있는 단지를 우선순위에 두십시오.
 - 특히 지자체별 배점 기준에서 '주민 동의율' 배점이 가장 높으므로, 단지 내 커뮤니티 활성화 정도를 반드시 확인해야 합니다.
 
-
-
-
-
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -105,13 +99,6 @@ Safety Score = (평균 대지 지분 ÷ 현재 용적률) × 통합 재건축 �
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3><p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p><a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a></div>
-
-
-
-
-
 
 ---
 

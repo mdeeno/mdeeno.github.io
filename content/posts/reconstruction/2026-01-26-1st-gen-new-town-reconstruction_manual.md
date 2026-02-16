@@ -16,7 +16,7 @@ description: '용적률 360%의 환상 뒤에 숨겨진 공사비 폭등의 현�
 image: '/images/1st-gen-simulation.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>"용적률 500% 준다더라", "통합 재건축하면 분담금 없다더라."
+"용적률 500% 준다더라", "통합 재건축하면 분담금 없다더라."
 혹시 아직도 이런 '카더라' 통신을 믿고 계십니까?
 
 그렇다면 당신의 자산은 지금 위험합니다. 1기 신도시 선도지구 지정은 축복이 아니라, **가장 고통스러운 '청구서'를 확인하는 시작점**이기 때문입니다.
@@ -169,10 +169,6 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 
 <small>※ 본 포스팅은 데이터 분석에 기반한 정보 제공을 목적으로 하며, 투자의 책임은 전적으로 투자자 본인에게 있습니다.</small>
 
-
-
-
-
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -214,17 +210,6 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);">
-<h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3>
-<p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
-<a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
-</div>
-
-
-
-
-
 
 ---
 

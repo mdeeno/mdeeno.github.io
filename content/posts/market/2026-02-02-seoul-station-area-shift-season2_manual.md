@@ -8,10 +8,11 @@ description: '서울시가 역세권 장기전세주택(시프트) 운영기준�
 image: '/images/seoul-shift-season2.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>## 🏗️ "역세권 아파트, 35층 높이 제한 풀리고 용적률은 500%까지?"
-* 서울시 '역세권 장기전세 2.0' 본격화, 내 아파트도 고밀 개발 대상일까요?
-* 용적률 인센티브를 받는 대신 시가 매입하는 장기전세, 사업성은 충분할까요?
-* 1차 역세권(250m~350m)에 포함된 노후 단지 중 어디를 주목해야 할까요?
+## 🏗️ "역세권 아파트, 35층 높이 제한 풀리고 용적률은 500%까지?"
+
+- 서울시 '역세권 장기전세 2.0' 본격화, 내 아파트도 고밀 개발 대상일까요?
+- 용적률 인센티브를 받는 대신 시가 매입하는 장기전세, 사업성은 충분할까요?
+- 1차 역세권(250m~350m)에 포함된 노후 단지 중 어디를 주목해야 할까요?
 
 ---
 
@@ -62,10 +63,6 @@ image: '/images/seoul-shift-season2.png'
 
 <small>본 분석은 서울시 운영기준과 현재 시장 호가를 바탕으로 작성되었으며, 실제 정비계획 수립 과정에서 용적률 및 사업 방식은 변동될 수 있습니다.</small>
 
-
-
-
-
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -107,17 +104,6 @@ image: '/images/seoul-shift-season2.png'
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);">
-<h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3>
-<p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
-<a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
-</div>
-
-
-
-
-
 
 ---
 

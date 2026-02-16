@@ -8,10 +8,11 @@ description: '서울시 재개발 구역 지정 요건이 노후도 60%로 완�
 image: '/images/seongbuk-eunpyeong-redevelopment.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>## 🏗️ "낡은 빌라촌이 신축 아파트 단지로, 문턱이 낮아졌습니다"
-* 노후도 요건 67% → 60% 완화, 그동안 탈락했던 구역들이 다시 움직입니다.
-* 성북구의 가파른 언덕, 은평구의 좁은 골목길이 '황금 알'로 변하는 법.
-* 현금 1~2억 원으로 서울 신축 입주권을 노리는 가장 현실적인 방법은?
+## 🏗️ "낡은 빌라촌이 신축 아파트 단지로, 문턱이 낮아졌습니다"
+
+- 노후도 요건 67% → 60% 완화, 그동안 탈락했던 구역들이 다시 움직입니다.
+- 성북구의 가파른 언덕, 은평구의 좁은 골목길이 '황금 알'로 변하는 법.
+- 현금 1~2억 원으로 서울 신축 입주권을 노리는 가장 현실적인 방법은?
 
 ---
 
@@ -63,10 +64,6 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
 <small>본 리포트는 정책 변화와 현장 시세를 바탕으로 작성되었으며, 투자의 책임은 본인에게 있습니다. 반드시 해당 지자체 정비과를 통해 구역 추진 현황을 확인하시기 바랍니다.</small>
 
-
-
-
-
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -108,17 +105,6 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);">
-<h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3>
-<p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
-<a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
-</div>
-
-
-
-
-
 
 ---
 

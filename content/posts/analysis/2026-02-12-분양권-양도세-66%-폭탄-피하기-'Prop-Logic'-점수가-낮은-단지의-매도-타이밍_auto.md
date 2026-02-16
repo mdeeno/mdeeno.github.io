@@ -13,7 +13,7 @@ description: "분양권 양도세 66% 폭탄 피하기: 'Prop-Logic' 점수가 �
 image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>
+
 
 ![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png)
 _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
@@ -94,7 +94,7 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
   }
 </script>
 
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #d32f2f;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">🛑 감당하기 힘든 부채, 해결책이 있습니다</h3><p style="margin-bottom:15px;font-size:0.9rem;color:#666;">혼자 고민하지 마세요. 비공개 무료 상담으로 탕감률을 확인하세요.</p><a href="https://appu.kr/?i=21451182&gb=4" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #d32f2f;border-radius:50px;color:#d32f2f;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">📊 내 탕감률 조회하기</a></div>
+<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #d32f2f;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">🛑 감당하기 힘든 부채, 해결책이 있습니다</h3><p style="margin-bottom:15px;font-size:0.9rem;color:#666;">혼자 고민하지 마세요. 비공개 무료 상담으로 탕감률을 확인하세요.</p></div>
 
 
 

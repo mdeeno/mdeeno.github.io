@@ -8,7 +8,7 @@ description: '2026년 강남 3구 분양 물량 확대에도 불구하고 예상
 image: '/images/2026-gangnam-cutoff.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>4인 가족 만점(69점)으로도 강남 입성이 불가능한 시대가 온 걸까요?
+4인 가족 만점(69점)으로도 강남 입성이 불가능한 시대가 온 걸까요?
 시세 차익 10억 원 이상의 '로또 단지'가 쏟아지는 2026년, 당첨 가점의 하한선은 어디일까요?
 청약 통장 점수가 낮은 세대에게 남은 틈새 공략법은 무엇일까요?
 
@@ -155,8 +155,8 @@ image: '/images/2026-gangnam-cutoff.png'
 <h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">🚚 이사/입주 준비, '혜택' 챙기셨나요?</h3>
 <p style="margin-bottom:20px;font-size:0.9rem;color:#666;">이사비용 견적 비교부터 인터넷 가입 현금 지원금까지 한 번에 확인하세요.</p>
 <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
-<a href="https://appu.kr/?i=21451182&gb=5" target="_blank" rel="nofollow sponsored" style="padding:10px 20px;border:1px solid #f57c00;border-radius:50px;color:#f57c00;font-weight:bold;text-decoration:none;font-size:0.9rem;">📝 이사 무료 견적</a>
-<a href="https://appu.kr/?i=21451182&gb=7" target="_blank" rel="nofollow sponsored" style="padding:10px 20px;border:1px solid #388e3c;border-radius:50px;color:#388e3c;font-weight:bold;text-decoration:none;font-size:0.9rem;">🎁 인터넷 지원금 조회</a>
+
+
 </div>
 
 

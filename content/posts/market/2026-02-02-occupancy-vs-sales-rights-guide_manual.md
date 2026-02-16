@@ -8,10 +8,11 @@ description: '입주권과 분양권, 이름은 비슷하지만 세금과 투자
 image: '/images/occupancy-vs-sales-rights.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p>## 🧐 "새 아파트 갖는 법, 입주권이 유리할까 분양권이 빠를까?"
-* 입주권은 왜 초기 투자금이 많이 들고, 분양권은 왜 청약 경쟁이 치열할까요?
-* 관리처분인가 이후 '주택'으로 간주되는 입주권, 세금 폭탄 피하는 법은?
-* 전매 제한 해제와 실거주 의무, 2026년 현재 기준은 어떻게 적용될까요?
+## 🧐 "새 아파트 갖는 법, 입주권이 유리할까 분양권이 빠를까?"
+
+- 입주권은 왜 초기 투자금이 많이 들고, 분양권은 왜 청약 경쟁이 치열할까요?
+- 관리처분인가 이후 '주택'으로 간주되는 입주권, 세금 폭탄 피하는 법은?
+- 전매 제한 해제와 실거주 의무, 2026년 현재 기준은 어떻게 적용될까요?
 
 ---
 
@@ -76,10 +77,6 @@ image: '/images/occupancy-vs-sales-rights.png'
 
 <small>본 리포트는 2026년 2월 기준 세법 및 시장 데이터를 기반으로 작성되었으며, 투자의 책임은 본인에게 있습니다.</small>
 
-
-
-
-
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -121,17 +118,6 @@ image: '/images/occupancy-vs-sales-rights.png'
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);">
-<h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3>
-<p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
-<a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
-</div>
-
-
-
-
-
 
 ---
 

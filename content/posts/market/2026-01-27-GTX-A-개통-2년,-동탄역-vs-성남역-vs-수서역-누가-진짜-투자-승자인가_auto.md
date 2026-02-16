@@ -8,7 +8,7 @@ description: 'GTX-A 개통 2년, 동탄역 vs 성남역 vs 수서역: 누가 진
 image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608431.png'
 ---
 
-<p style="font-size:10px;color:#ccc;margin-bottom:10px;text-align:right;">이 포스팅은 애드릭스 수익을 위해 작성되었습니다.</p><img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608431.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+<img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608431.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-01-27 22:53:34 기준)*
 
 GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년 3월 수서~동탄 구간 개통 이후, 투자자들의 관심은 '실제 가치 상승'으로 옮겨갔다. 동탄, 성남, 수서 세 핵심 역세권의 2년 시세 상승률을 비교 분석하여, GTX 프리미엄의 실체를 파악한다.
@@ -79,10 +79,6 @@ GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년
 부동산은 **타이밍**이 생명입니다.
 내 자금으로 가능한 **최고의 매물**이 무엇인지 지금 바로 확인하세요.
 
-
-
-
-
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
     <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
@@ -124,17 +120,6 @@ GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #1976d2;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);">
-<h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">💰 최저 금리 & 한도 통합 조회</h3>
-<p style="margin-bottom:15px;font-size:0.9rem;color:#666;">내 조건에 맞는 최적의 자금 상품을 금융사별로 한눈에 비교해보세요.</p>
-<a href="https://appu.kr/?i=21451182&gb=8" target="_blank" rel="nofollow sponsored" style="display:inline-block;padding:10px 25px;border:1px solid #1976d2;border-radius:50px;color:#1976d2;font-weight:bold;text-decoration:none;font-size:0.95rem;transition:all 0.3s;">🔍 맞춤 한도/금리 확인</a>
-</div>
-
-
-
-
-
 
 ---
 
