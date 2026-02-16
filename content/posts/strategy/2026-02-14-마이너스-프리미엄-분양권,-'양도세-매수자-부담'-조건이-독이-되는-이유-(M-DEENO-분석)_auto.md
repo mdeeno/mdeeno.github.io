@@ -15,8 +15,6 @@ tags:
 description: "마이너스 프리미엄 분양권, '양도세 매수자 부담' 조건이 독이 되는 이유 (M-DEENO 분석) - M-DEENO 데이터 분석"
 ---
 
-
-
 ---
 
 <div class="lab-card">
@@ -71,7 +69,7 @@ description: "마이너스 프리미엄 분양권, '양도세 매수자 부담' 
 
 단순히 마이너스 금액에 현혹되지 말고, 등기 시점까지 들어가는 모든 비용을 데이터 기반으로 산출하는 것이 자산 방어의 핵심입니다.
 
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-top:3px solid #f57c00;border-radius:8px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">🚚 이사/입주 준비, '혜택' 챙기셨나요?</h3><p style="margin-bottom:20px;font-size:0.9rem;color:#666;">이사비용 견적 비교부터 인터넷 가입 현금 지원금까지 한 번에 확인하세요.</p><div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;"></div></div>
+</div>
 
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>

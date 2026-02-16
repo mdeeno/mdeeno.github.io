@@ -13,8 +13,6 @@ description: "분양권 양도세 66% 폭탄 피하기: 'Prop-Logic' 점수가 �
 image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png'
 ---
 
-
-
 ![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png)
 _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 
@@ -47,10 +45,6 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 - 첫째, 보유 기간을 2년 이상으로 늘려 **일반 세율(6~45%)**을 적용받을 수 있는지 확인하십시오.
 - 둘째, 주변 입주 물량이 향후 2년 내에 현재의 150%를 초과한다면 과감한 매도를 고려해야 합니다.
 - 셋째, 대출 금리 부담이 월 임대 수익 예상치를 상회한다면 '세금 폭탄'보다 '역전세 폭탄'이 더 무섭습니다.
-
-
-
-
 
 <div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
     <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
@@ -93,13 +87,6 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
     btn.disabled = false;
   }
 </script>
-
-<div style="margin:40px 0;padding:25px;background-color:#fff;border:1px solid #eee;border-left:4px solid #d32f2f;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.03);"><h3 style="margin:0 0 8px;font-size:1.1rem;color:#333;font-weight:bold;">🛑 감당하기 힘든 부채, 해결책이 있습니다</h3><p style="margin-bottom:15px;font-size:0.9rem;color:#666;">혼자 고민하지 마세요. 비공개 무료 상담으로 탕감률을 확인하세요.</p></div>
-
-
-
-
-
 
 ---
 
