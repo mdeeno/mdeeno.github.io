@@ -125,3 +125,7 @@ Safety Score = (평균 대지 지분 ÷ 현재 용적률) × 통합 재건축 �
 <a href="https://new.land.naver.com/search?sk=1%EA%B8%B0%20%EC%8B%A0%EB%8F%84%EC%8B%9C%20%EC%84%A0%EB%8F%84%EC%A7%80%EA%B5%AC%2C%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%82%AC%EC%97%85%EC%84%B1%2C%20%EB%B6%84%EB%8B%B9%20%EC%9E%AC%EA%B1%B4%EC%B6%95%2C%20%EC%9D%BC%EC%82%B0%20%EC%9E%AC%EA%B1%B4%EC%B6%95%2C%20%ED%8F%89%EC%B4%8C%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%8B%9C%EC%84%B8" target="_blank">👉 <strong>네이버 부동산에서 '1기 신도시 선도지구, 재건축 사업성, 분당 재건축, 일산 재건축, 평촌 재건축 시세' 시세 확인하기</strong></a>
 
 <br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
+
+
+
+{{< mdeeno_cpa type="loan" >}}

@@ -128,3 +128,7 @@ _▲ AI 분석 데이터 (2026-02-11 22:49:14 기준)_
 <a href="https://new.land.naver.com/search?sk=%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%B6%94%EA%B0%80%20%EB%B6%84%EB%8B%B4%EA%B8%88%2C%201%EA%B8%B0%20%EC%8B%A0%EB%8F%84%EC%8B%9C%20%EC%84%A0%EB%8F%84%EC%A7%80%EA%B5%AC%2C%20%EA%B3%B5%EC%82%AC%EB%B9%84%201000%EB%A7%8C%EC%9B%90%2C%20%EB%B6%84%EB%8B%B9%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%82%AC%EC%97%85%EC%84%B1%2C%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%88%98%EC%9D%B5%EC%84%B1%20%EB%B6%84%EC%84%9D" target="_blank">👉 <strong>네이버 부동산에서 '재건축 추가 분담금, 1기 신도시 선도지구, 공사비 1000만원, 분당 재건축 사업성, 재건축 수익성 분석' 시세 확인하기</strong></a>
 
 <br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
+
+
+
+{{< mdeeno_cpa type="loan" >}}

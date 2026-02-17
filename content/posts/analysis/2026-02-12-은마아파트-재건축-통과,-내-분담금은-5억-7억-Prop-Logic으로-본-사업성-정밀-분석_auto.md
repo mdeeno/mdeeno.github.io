@@ -129,3 +129,7 @@ _▲ AI 분석 데이터 (2026-02-12 19:46:31 기준)_
 <a href="https://new.land.naver.com/search?sk=%EC%9D%80%EB%A7%88%EC%95%84%ED%8C%8C%ED%8A%B8%20%EC%9E%AC%EA%B1%B4%EC%B6%95%2C%20%EC%9D%80%EB%A7%88%EC%95%84%ED%8C%8C%ED%8A%B8%20%EB%B6%84%EB%8B%B4%EA%B8%88%2C%20%EB%8C%80%EC%B9%98%EB%8F%99%20%EB%B6%80%EB%8F%99%EC%82%B0%20%EC%A0%84%EB%A7%9D%2C%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%82%AC%EC%97%85%EC%84%B1%20%EB%B6%84%EC%84%9D" target="_blank">👉 <strong>네이버 부동산에서 '은마아파트 재건축, 은마아파트 분담금, 대치동 부동산 전망, 재건축 사업성 분석' 시세 확인하기</strong></a>
 
 <br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
+
+
+
+{{< mdeeno_cpa type="loan" >}}

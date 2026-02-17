@@ -173,3 +173,7 @@ Image Generation Prompt:
 A futuristic 3D isometric map of Seoul city, highlighting specific neighborhoods (Seongsu, Yongsan, Mapo) with glowing red and gold heat zones. High-tech data charts and holographic rent price graphs floating above the map. Professional financial aesthetic, dark mode background with cyan and orange accents, 16:9 aspect ratio, high resolution, photorealistic.
 
 Would you like me to generate a specific cash flow simulation for one of these areas?
+
+
+
+{{< mdeeno_cpa type="loan" >}}

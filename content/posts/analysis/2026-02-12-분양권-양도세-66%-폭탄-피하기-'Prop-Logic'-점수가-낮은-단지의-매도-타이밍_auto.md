@@ -113,3 +113,7 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 <a href="https://new.land.naver.com/search?sk=%EB%B6%84%EC%96%91%EA%B6%8C%20%EC%96%91%EB%8F%84%EC%86%8C%EB%93%9D%EC%84%B8%2C%20%EB%B6%84%EC%96%91%EA%B6%8C%20%EB%A7%A4%EB%8F%84%20%ED%83%80%EC%9D%B4%EB%B0%8D%2C%20%EC%96%91%EB%8F%84%EC%84%B8%2066%25%2C%20%ED%94%84%EB%A1%AD%EB%A1%9C%EC%A7%81%20%EC%A0%90%EC%88%98%2C%20%EC%8B%A4%EA%B1%B0%EC%A3%BC%20%EC%9D%98%EB%AC%B4" target="_blank">👉 <strong>네이버 부동산에서 '분양권 양도소득세, 분양권 매도 타이밍, 양도세 66%, 프롭로직 점수, 실거주 의무' 시세 확인하기</strong></a>
 
 <br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
+
+
+
+{{< mdeeno_cpa type="loan" >}}
