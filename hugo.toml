@@ -3,6 +3,9 @@ languageCode = 'ko-kr'
 title = 'M-DEENO'
 theme = 'PaperMod'
 
+enableRobotsTXT = true
+canonifyURLs = true
+
 [params]
   description = "M-DEENO: 데이터로 증명하는 부동산 투자 전략 & Prop-Logic 분석 엔진" 
   author = "M-DEENO Corp." 
@@ -14,6 +17,8 @@ theme = 'PaperMod'
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+
+  naver_verify = "코드값"
   
   # 메인 화면 모드 (랜딩 페이지 브랜딩)
   [params.homeInfoParams]
