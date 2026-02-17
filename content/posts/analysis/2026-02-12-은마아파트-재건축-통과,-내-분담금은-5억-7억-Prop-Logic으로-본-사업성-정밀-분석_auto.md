@@ -90,7 +90,7 @@ _▲ AI 분석 데이터 (2026-02-12 19:46:31 기준)_
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 은마아파트 재건축 통과, 내 분담금은 5억? 7억? Prop-Logic으로 본 사업성 정밀 분석'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 은마아파트 재건축 통과, 내 분담금은 5억? 7억? Prop-Logic으로 본 사업성 정밀 분석'
     }]);
 
     if (!error) {

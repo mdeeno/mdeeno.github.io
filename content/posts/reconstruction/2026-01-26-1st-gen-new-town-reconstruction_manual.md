@@ -197,7 +197,7 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 💸 분당·일산 선도지구: '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 💸 분당·일산 선도지구: 억 소리 나는 분담금, 그래도 들어갈까? (수익성 시뮬레이션)'
     }]);
 
     if (!error) {

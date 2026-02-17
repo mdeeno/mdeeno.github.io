@@ -91,7 +91,7 @@ image: '/images/homaesil-line-analysis.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 신분당선 호매실 연장 착공! 수원 금곡·호매실동 '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 신분당선 호매실 연장 착공! 수원 금곡·호매실동 저평가 단지 TOP 3 정밀 분석'
     }]);
 
     if (!error) {

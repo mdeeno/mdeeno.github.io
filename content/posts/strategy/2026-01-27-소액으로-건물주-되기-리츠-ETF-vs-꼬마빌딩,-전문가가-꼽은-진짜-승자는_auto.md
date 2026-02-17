@@ -121,7 +121,7 @@ REITs ETF는 소액으로 우량 부동산에 간접 투자하고 배당 수익�
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 소액으로 건물주 되기? 리츠 ETF vs 꼬마빌딩, 전문가가 꼽은 진짜 승자는?'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 소액으로 건물주 되기? 리츠 ETF vs 꼬마빌딩, 전문가가 꼽은 진짜 승자는?'
     }]);
 
     if (!error) {

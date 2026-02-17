@@ -91,7 +91,7 @@ image: '/images/seoul-shift-season2.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가'
     }]);
 
     if (!error) {

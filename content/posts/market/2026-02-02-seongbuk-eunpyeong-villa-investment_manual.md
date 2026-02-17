@@ -92,7 +92,7 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 재개발 노후도 60% 완화! 성북구·은평구 빌라 투자 유망지 및 실전 전략'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 재개발 노후도 60% 완화! 성북구·은평구 빌라 투자 유망지 및 실전 전략'
     }]);
 
     if (!error) {

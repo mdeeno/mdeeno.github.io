@@ -107,7 +107,7 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: AI 시대의 숨겨진 금광, 데이터센터(IDC) 리츠 투자, 지금이 적기인가?'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: AI 시대의 숨겨진 금광, 데이터센터(IDC) 리츠 투자, 지금이 적기인가?'
     }]);
 
     if (!error) {

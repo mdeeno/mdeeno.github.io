@@ -134,7 +134,7 @@ image: '/images/seoul-gentrification-2026.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 2026 서울 젠트리피케이션 위험 지도: 다음 성수동은 어디인가?'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 2026 서울 젠트리피케이션 위험 지도: 다음 성수동은 어디인가?'
     }]);
 
     if (!error) {

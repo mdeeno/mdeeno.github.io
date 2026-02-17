@@ -114,7 +114,7 @@ STO(Security Token Offering)는 실물 부동산을 기초 자산으로 발행�
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석'
     }]);
 
     if (!error) {

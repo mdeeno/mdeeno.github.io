@@ -166,7 +166,7 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 성수동 vs 한남동, 팝업스토어 임대료 전쟁: 2026년 승자는? 🏢'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 성수동 vs 한남동, 팝업스토어 임대료 전쟁: 2026년 승자는? 🏢'
     }]);
 
     if (!error) {

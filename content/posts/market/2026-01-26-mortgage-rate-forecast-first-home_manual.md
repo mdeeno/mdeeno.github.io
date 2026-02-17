@@ -161,7 +161,7 @@ image: '/images/2026-mortgage-timing.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 2026년 주담대 7% 시대 생존법: 생애최초 주택 구입, 지금이 '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 2026년 주담대 7% 시대 생존법: 생애최초 주택 구입, 지금이 지각비 낼 마지막 기회인가?'
     }]);
 
     if (!error) {

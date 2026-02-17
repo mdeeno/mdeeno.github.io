@@ -140,7 +140,7 @@ image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 대학가 하숙집은 왜 몰락했나? 프리미엄 코리빙(Co-living) 투자로 월세 수익률 5% 돌파 전략'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 대학가 하숙집은 왜 몰락했나? 프리미엄 코리빙(Co-living) 투자로 월세 수익률 5% 돌파 전략'
     }]);
 
     if (!error) {

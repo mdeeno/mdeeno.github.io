@@ -152,7 +152,7 @@ image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)'
     }]);
 
     if (!error) {

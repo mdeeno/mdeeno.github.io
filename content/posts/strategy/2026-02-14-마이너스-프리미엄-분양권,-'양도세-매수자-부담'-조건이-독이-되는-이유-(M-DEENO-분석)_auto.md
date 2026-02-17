@@ -106,7 +106,7 @@ description: "마이너스 프리미엄 분양권, '양도세 매수자 부담' 
     try {
       const { error } = await sb.from('lead_emails').insert([{ 
           email: email, 
-          source: 'blog: 마이너스 프리미엄 분양권, '양도세 매수자 부담' 조건이 독이 되는 이유 (M-DEENO 분석)' 
+          source: 'blog: 마이너스 프리미엄 분양권, 양도세 매수자 부담 조건이 독이 되는 이유 (M-DEENO 분석)'
       }]);
 
       if (error) throw error;

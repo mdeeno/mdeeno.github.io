@@ -99,7 +99,7 @@ image: '/images/macquarie-vs-realty-income.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 은퇴자 배당주 대결! 맥쿼리인프라 vs 리얼티인컴(O) 수익률 및 안정성 완벽 비교'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 은퇴자 배당주 대결! 맥쿼리인프라 vs 리얼티인컴(O) 수익률 및 안정성 완벽 비교'
     }]);
 
     if (!error) {

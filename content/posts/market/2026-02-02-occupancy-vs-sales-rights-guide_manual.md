@@ -105,7 +105,7 @@ image: '/images/occupancy-vs-sales-rights.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 재개발 입주권 vs 분양권 완벽 비교! 2026년 최신 세금·투자금·전매 규정 총정리'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 재개발 입주권 vs 분양권 완벽 비교! 2026년 최신 세금·투자금·전매 규정 총정리'
     }]);
 
     if (!error) {

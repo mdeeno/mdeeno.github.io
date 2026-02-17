@@ -86,7 +86,7 @@ Safety Score = (평균 대지 지분 ÷ 현재 용적률) × 통합 재건축 �
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 Safety Score 기반 저평가 단지 선별법'
     }]);
 
     if (!error) {

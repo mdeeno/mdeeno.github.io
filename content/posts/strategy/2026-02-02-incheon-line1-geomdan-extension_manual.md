@@ -83,7 +83,7 @@ image: '/images/geomdan-subway-2026.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 인천 1호선 연장 개통! 검단신도시 101·102·103역 대장주 TOP 3와 현재 호가 분석'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 인천 1호선 연장 개통! 검단신도시 101·102·103역 대장주 TOP 3와 현재 호가 분석'
     }]);
 
     if (!error) {

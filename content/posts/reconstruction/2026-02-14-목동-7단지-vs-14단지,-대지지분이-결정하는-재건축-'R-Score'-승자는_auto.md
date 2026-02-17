@@ -115,7 +115,7 @@ M-DEENO 데이터 랩은 객관성을 위해 인근 **목동 11단지**를 대�
     try {
       const { error } = await sb.from('lead_emails').insert([{ 
           email: email, 
-          source: 'blog: 목동 7단지 vs 14단지, 대지지분이 결정하는 재건축 'R-Score' 승자는?' 
+          source: 'blog: 목동 7단지 vs 14단지, 대지지분이 결정하는 재건축 R-Score 승자는?'
       }]);
 
       if (error) throw error;

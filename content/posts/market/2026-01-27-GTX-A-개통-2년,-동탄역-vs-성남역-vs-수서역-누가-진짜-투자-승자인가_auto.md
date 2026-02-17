@@ -107,7 +107,7 @@ GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: GTX-A 개통 2년, 동탄역 vs 성남역 vs 수서역: 누가 진짜 투자 승자인가?'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: GTX-A 개통 2년, 동탄역 vs 성남역 vs 수서역: 누가 진짜 투자 승자인가?'
     }]);
 
     if (!error) {

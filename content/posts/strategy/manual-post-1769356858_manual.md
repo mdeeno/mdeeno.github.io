@@ -193,7 +193,7 @@ GTX-C 착공은 단순한 공사가 아닙니다. 수도권의 지도가 **'시�
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 🚀 GTX-C 착공 사이렌! 삼성역 20분 컷, 아직 8억대 진입 가능한 '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 🚀 GTX-C 착공 사이렌! 삼성역 20분 컷, 아직 8억대 진입 가능한 이곳 (Top 3)'
     }]);
 
     if (!error) {

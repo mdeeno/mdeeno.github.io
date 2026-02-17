@@ -203,7 +203,7 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 💰 2026 부동산 조각투자 STO 완벽 가이드: '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 💰 2026 부동산 조각투자 STO 완벽 가이드: 천원 건물주의 수익률 반전은 사실일까?'
     }]);
 
     if (!error) {

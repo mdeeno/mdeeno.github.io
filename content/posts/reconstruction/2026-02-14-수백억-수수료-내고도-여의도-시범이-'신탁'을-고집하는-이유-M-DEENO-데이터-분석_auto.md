@@ -116,7 +116,7 @@ M-DEENO의 분석 결과, 금리 변동성이 큰 현 시장 상황에서는 **�
     try {
       const { error } = await sb.from('lead_emails').insert([{ 
           email: email, 
-          source: 'blog: 수백억 수수료 내고도 여의도 시범이 '신탁'을 고집하는 이유: M-DEENO 데이터 분석' 
+          source: 'blog: 수백억 수수료 내고도 여의도 시범이 신탁을 고집하는 이유: M-DEENO 데이터 분석'
       }]);
 
       if (error) throw error;

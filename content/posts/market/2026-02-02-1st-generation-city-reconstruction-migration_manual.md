@@ -95,7 +95,7 @@ image: '/images/reconstruction-migration-2026.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 1기 신도시 통합 재건축 '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 1기 신도시 통합 재건축 이주 대란 현실화? 선도지구 이주 대책과 2026 전세 전망'
     }]);
 
     if (!error) {

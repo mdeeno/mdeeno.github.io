@@ -89,7 +89,7 @@ _▲ AI 분석 데이터 (2026-02-11 22:49:14 기준)_
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 재건축 공사비 1,000만 원 시대, 내 아파트는 '  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 재건축 공사비 1,000만 원 시대, 내 아파트는 로또일까 독일까? 분담금 경계선(Threshold) 분석'
     }]);
 
     if (!error) {

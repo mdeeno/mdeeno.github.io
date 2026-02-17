@@ -133,7 +133,7 @@ image: '/images/2026-gangnam-cutoff.png'
 
     const { error } = await sb.from('lead_emails').insert([{ 
         email: email, 
-        source: 'blog: 강남 3구 로또 청약, 3인 가족은 포기? 2026년 예상 커트라인 및 필승 전략'  // 🔥 이 부분이 실제 제목으로 바뀝니다!
+        source: 'blog: 강남 3구 로또 청약, 3인 가족은 포기? 2026년 예상 커트라인 및 필승 전략'
     }]);
 
     if (!error) {
