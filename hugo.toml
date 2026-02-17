@@ -9,6 +9,7 @@ canonifyURLs = true
 [params]
   description = "M-DEENO: 데이터로 증명하는 부동산 투자 전략 & Prop-Logic 분석 엔진" 
   author = "M-DEENO Corp." 
+  env = "production"
 
   defaultTheme = "dark"
   disableThemeToggle = true
@@ -37,6 +38,10 @@ canonifyURLs = true
     hiddenInList = false
     hiddenInSingle = false
     responsiveImages = true
+
+
+  [params.verification]
+    naver = "2f237c17ee6a92cf4e3591b76895cfd73bf59bca"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
