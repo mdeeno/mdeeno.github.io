@@ -1,0 +1,162 @@
+---
+title: "[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼"
+date: 2026-03-04 10:19:22
+draft: false
+categories: ["정비 사업"]
+tags: ["부평 재개발 상가 쪼개기, 권리가액 산정, 부평 아파트 시세, 재개발 추가분담금, 입주권 리스크", "부동산투자", "데이터분석", "재건축리스크", "재테크", "M-DEENO"]
+description: "[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼 - M-DEENO 데이터 분석"
+---
+
+
+
+
+
+<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1772673577.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
+    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-03-04 10:19:22 기준)
+    </p>
+</div>
+
+---
+
+<div class='lab-card'>부평 재개발 구역에서 성행하던 '상가 쪼개기'가 권리가액 급감이라는 부메랑으로 돌아오고 있습니다. M-DEENO 데이터 랩은 이번 사태의 본질을 분석하고, 소유주들이 실질적으로 대응할 수 있는 Prop-Logic™ 기반의 자산 방어 전략을 제시합니다.</div>
+
+### 상가 쪼개기의 달콤한 유혹과 잔인한 현실
+
+인천 부평 일대 재개발 구역에서 상가 지분을 잘게 나누어 아파트 입주권을 노리던 투자자들이 비상에 걸렸습니다.
+
+과거에는 소액 투자로 신축 아파트를 분양받을 수 있는 '황금 티켓'으로 여겨졌으나, 최근 감정평가 결과가 예상보다 낮게 책정되며 자산 가치가 급락하는 사례가 속출하고 있습니다.
+
+M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 무분별한 지분 쪼개기는 구역 내 전체 비례율(사업 안정성 점수)을 하락시켜 결국 소유주 전체의 부담으로 전이되는 구조를 가집니다.
+
+### 부평 주요 단지 시세 및 재개발 현황 분석
+
+현재 부평 내 주요 신축 및 재개발 인접 단지들의 시세 흐름을 파악하는 것은 내 자산의 상대적 가치를 평가하는 첫걸음입니다.
+
+*   **부평 SK VIEW 해모로**: 최근 시세는 대략 6~8억대 범위를 형성하고 있으며, 단지별 컨디션에 따라 차이가 존재합니다. (국토교통부 실거래가 공개시스템 확인 권장)
+*   **더샵 부평센트럴시티**: 대규모 단지 프리미엄을 바탕으로 5~7억대 중반의 가격대를 유지 중입니다. (국토교통부 실거래가 공개시스템 확인 권장)
+*   **e편한세상 부평 그랑힐스**: 신축 입주 장세가 마무리되며 6~8억대 초반의 호가가 형성되어 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+
+위 단지들의 시세와 비교했을 때, 권리가액이 낮게 책정된 상가 소유주들은 과도한 추가 분담금 발생으로 인해 실제 수익성이 마이너스로 돌아설 위험이 큽니다.
+
+### M-DEENO Prop-Logic™ 자산 가치 평가 공식
+
+권리가액이 왜 반토막 났는지 이해하려면 정비사업의 핵심 공식을 반드시 숙지해야 합니다.
+
+<div class='lab-formula-box'>권리가액 = 감정평가액 × 비례율(사업 안정성 점수)
+* 비례율 = (종후 자산평가액 - 총 사업비) ÷ 종전 자산평가액</div>
+
+상가 쪼개기가 많아지면 분양 대상자가 늘어나 일반 분양 수익이 줄어들고, 이는 결국 비례율 하락으로 이어져 개별 소유주의 권리가액을 깎아먹는 악순환을 만듭니다.
+
+### 소유주를 위한 긴급 대응 매뉴얼
+
+그렇다면 이미 권리가액 통보를 받은 소유주는 손을 놓고 있어야 할까요? M-DEENO 데이터 랩은 다음과 같은 단계별 대응을 제안합니다.
+
+첫째, **감정평가서 세부 내역을 분석**하여 인근 유사 상가와의 형평성을 검토하고 필요시 이의신청 기간 내에 정당한 권리를 주장해야 합니다.
+
+둘째, **추가 분담금 금융 전략**을 선제적으로 수립해야 합니다. 권리가액이 낮아진 만큼 대출 실행 가능 금액도 줄어들 수 있으므로 자금 조달 계획을 재점검하십시오.
+
+셋째, **현금청산 vs 입주권 유지**의 기로에서 Prop-Logic™ 시뮬레이션을 통해 어떤 선택이 세후 수익률 측면에서 유리한지 냉정하게 따져봐야 합니다.
+
+### 💡 자주 묻는 질문 (FAQ)
+
+### Q1. 상가 쪼개기로 받은 입주권도 일반 아파트 입주권과 권리가 동일한가요?
+정관에 따라 다르지만, 일반적으로 순위에서 밀리거나 특정 평형 배정에서 불이익을 받을 가능성이 존재하므로 조합 정관 확인이 필수적입니다.
+
+### Q2. 권리가액 이의신청을 하면 실제로 상향될 가능성이 있나요?
+객관적인 비교 사례나 평가 과정에서의 명백한 오류를 증명할 경우 조정될 수 있으나, 구역 전체의 형평성 때문에 큰 폭의 상향은 어려울 수 있습니다.
+
+### Q3. 지금이라도 상가 지분을 매도하는 것이 나을까요?
+현재 부평 재개발 시장의 매수 심리가 위축된 상태이므로, 급매보다는 향후 완공 시점의 기대 가치와 현재의 기회비용을 M-DEENO의 데이터 분석을 통해 비교해 본 후 결정하시길 권장합니다.
+
+
+
+
+{{< mdeeno_cpa type="loan" >}}
+
+
+
+<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
+    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
+    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
+    </p>
+    <div style="display: flex; gap: 10px;">
+        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
+          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
+          color: #333 !important; background-color: #ffffff !important; 
+         -webkit-text-fill-color: #333 !important;">
+        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
+            무료 신청
+        </button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  async function submitBlogLead() {
+    const { createClient } = window.supabase;
+
+
+    // .env에서 가져온 값을 안전하게 주입
+    const sbUrl = 'https://ohmybbgvdlqgyvuvmewz.supabase.co';
+    const sbKey = 'REDACTED_SUPABASE_ANON_KEY';
+    
+    const sb = createClient(sbUrl, sbKey);
+    const email = document.getElementById('blog-lead-email').value;
+    const btn = document.getElementById('blog-lead-btn');
+    
+    if(!email) return alert('이메일을 입력해주세요.');
+    btn.innerText = '전송 중...';
+    btn.disabled = true;
+
+    try {
+      const { error } = await sb.from('lead_emails').insert([{ 
+          email: email, 
+          source: 'blog: [충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼' 
+      }]);
+
+      if (error) throw error;
+      alert('✅ 신청이 완료되었습니다!');
+      document.getElementById('blog-lead-email').value = '';
+    } catch (err) {
+      console.error(err);
+      alert('❌ 오류가 발생했습니다: ' + err.message);
+    } finally {
+      btn.innerText = '무료 신청';
+      btn.disabled = false;
+    }
+  }
+</script>
+
+
+
+---
+> **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
+
+
+
+---
+### 🛑 부평 재개발 상가 쪼개기, 권리가액 산정, 부평 아파트 시세, 재개발 추가분담금, 입주권 리스크 투자, 고민되시나요?
+
+부동산은 **타이밍**입니다.
+내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
+
+
+<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
+    <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>
+    <a href="https://tech.mdeeno.com/calculators/calc_transfer/" target="_blank" style="display: inline-block; background-color: #00C853; color: white; padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        🧮 <strong>💸 양도소득세 계산기 돌려보기</strong>
+    </a>
+</div>
+
+📉 **대출 가능 여부 확인**
+👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 내 연봉으로 대출 한도 셀프 계산하기 (DSR 계산기)</strong></a>
+
+🚀 **실시간 호가 확인**
+<a href="https://new.land.naver.com/search?sk=%EB%B6%80%ED%8F%89%20%EC%9E%AC%EA%B0%9C%EB%B0%9C%20%EC%83%81%EA%B0%80%20%EC%AA%BC%EA%B0%9C%EA%B8%B0%2C%20%EA%B6%8C%EB%A6%AC%EA%B0%80%EC%95%A1%20%EC%82%B0%EC%A0%95%2C%20%EB%B6%80%ED%8F%89%20%EC%95%84%ED%8C%8C%ED%8A%B8%20%EC%8B%9C%EC%84%B8%2C%20%EC%9E%AC%EA%B0%9C%EB%B0%9C%20%EC%B6%94%EA%B0%80%EB%B6%84%EB%8B%B4%EA%B8%88%2C%20%EC%9E%85%EC%A3%BC%EA%B6%8C%20%EB%A6%AC%EC%8A%A4%ED%81%AC" target="_blank">👉 <strong>네이버 부동산에서 '부평 재개발 상가 쪼개기, 권리가액 산정, 부평 아파트 시세, 재개발 추가분담금, 입주권 리스크' 시세 확인하기</strong></a>
+
+<br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
+
+※ 시뮬레이션 데이터이므로 실거래가 공개시스템 등을 통한 추가 확인을 권장합니다.
