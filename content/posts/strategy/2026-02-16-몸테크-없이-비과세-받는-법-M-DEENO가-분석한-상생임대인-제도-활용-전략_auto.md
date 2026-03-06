@@ -1,15 +1,19 @@
 ---
-title: "몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생임대인 제도 활용 전략"
+title: '몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생임대인 제도 활용 전략'
 date: 2026-02-16 19:30:02
 draft: false
-categories: ["자산 전략"]
-tags: ["상생임대인 비과세 혜택, 1세대 1주택 거주요건 면제, 상생임대인 조건", "부동산투자", "프롭테크", "데이터분석", "재테크", "M-DEENO"]
-description: "몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생임대인 제도 활용 전략 - M-DEENO 데이터 분석"
+categories: ['자산 전략']
+tags:
+  [
+    '상생임대인 비과세 혜택, 1세대 1주택 거주요건 면제, 상생임대인 조건',
+    '부동산투자',
+    '프롭테크',
+    '데이터분석',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생임대인 제도 활용 전략 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771324219.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -62,9 +66,9 @@ M-DEENO의 분석 결과, 고가 주택일수록 실거주를 위해 이사하�
 
 ### 상생임대인 적용 시 반드시 체크해야 할 3가지
 
-*   **계약 기간 준수**: 직전 계약은 최소 1년 6개월, 상생 계약은 최소 2년을 유지해야 인정됩니다.
-*   **임대인 명의 일치**: 직전 임대차 계약 체결 당시의 임대인과 상생 임대차 계약의 임대인이 동일해야 합니다.
-*   **한시적 제도**: 현재 이 제도는 2024년 12월 31일까지 체결된 계약에 한해 적용되므로 일정을 반드시 확인하세요.
+- **계약 기간 준수**: 직전 계약은 최소 1년 6개월, 상생 계약은 최소 2년을 유지해야 인정됩니다.
+- **임대인 명의 일치**: 직전 임대차 계약 체결 당시의 임대인과 상생 임대차 계약의 임대인이 동일해야 합니다.
+- **한시적 제도**: 현재 이 제도는 2024년 12월 31일까지 체결된 계약에 한해 적용되므로 일정을 반드시 확인하세요.
 
 ### M-DEENO의 데이터 기반 결론
 
@@ -78,28 +82,7 @@ M-DEENO의 분석 결과, 고가 주택일수록 실거주를 위해 이사하�
 [💰 대출 이자 계산기](https://tech.mdeeno.com/calculators/calc_interest/)
 [🏠 보유세(재산세+종부세) 계산기](https://tech.mdeeno.com/calculators/calc_hold/)
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -138,19 +121,16 @@ M-DEENO의 분석 결과, 고가 주택일수록 실거주를 위해 이사하�
   }
 </script>
 
-
-
 ---
+
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
 
-
-
 ---
+
 ### 🛑 상생임대인 비과세 혜택, 1세대 1주택 거주요건 면제, 상생임대인 조건 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

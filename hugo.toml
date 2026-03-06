@@ -60,14 +60,8 @@ canonifyURLs = true
   weight = 20
 
 [[menu.main]]
-  identifier = "prop-logic"
-  name = "🧬 Prop-Logic"
-  url = "/categories/prop-logic"
-  weight = 22
-
-[[menu.main]]
   identifier = "calculators"
-  name = "📊 솔루션(SaaS)"
+  name = "📊 부동산/금융 계산기"
   url = "/calculators/"
   weight = 25
 

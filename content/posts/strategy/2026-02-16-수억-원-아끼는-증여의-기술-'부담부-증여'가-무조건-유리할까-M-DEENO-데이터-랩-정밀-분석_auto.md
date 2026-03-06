@@ -1,15 +1,19 @@
 ---
-title: "수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까? M-DEENO 데이터 랩 정밀 분석"
+title: '수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까? M-DEENO 데이터 랩 정밀 분석'
 date: 2026-02-16 19:28:50
 draft: false
-categories: ["자산 전략"]
-tags: ["부담부 증여 양도세 증여세 비교", "부동산투자", "프롭테크", "데이터분석", "재테크", "M-DEENO"]
-description: "수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까? M-DEENO 데이터 랩 정밀 분석 - M-DEENO 데이터 분석"
+categories: ['자산 전략']
+tags:
+  [
+    '부담부 증여 양도세 증여세 비교',
+    '부동산투자',
+    '프롭테크',
+    '데이터분석',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까? M-DEENO 데이터 랩 정밀 분석 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771324146.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -64,9 +68,9 @@ M-DEENO 데이터 랩의 분석 결과, 전세 비중이 50%를 상회하는 이
 
 ### 부담부 증여 시 반드시 체크해야 할 리스크
 
-*   **자녀의 채무 상환 능력**: 국세청은 자녀가 실제 보증금을 반환할 능력이 있는지 사후 관리 시스템을 통해 엄격히 모니터링합니다.
-*   **취득세율의 차이**: 증여 취득세는 일반 매매보다 높게 설정될 수 있으며, 조정대상지역 여부에 따라 세율이 중과될 수 있습니다.
-*   **미래 가치 상승분**: 지금 당장의 세금뿐만 아니라, 자녀가 향후 해당 주택을 매도할 때의 취득가액(이월과세)까지 고려한 장기 시뮬레이션이 필수적입니다.
+- **자녀의 채무 상환 능력**: 국세청은 자녀가 실제 보증금을 반환할 능력이 있는지 사후 관리 시스템을 통해 엄격히 모니터링합니다.
+- **취득세율의 차이**: 증여 취득세는 일반 매매보다 높게 설정될 수 있으며, 조정대상지역 여부에 따라 세율이 중과될 수 있습니다.
+- **미래 가치 상승분**: 지금 당장의 세금뿐만 아니라, 자녀가 향후 해당 주택을 매도할 때의 취득가액(이월과세)까지 고려한 장기 시뮬레이션이 필수적입니다.
 
 ### 결론: 데이터 기반의 의사결정이 필요한 이유
 
@@ -76,28 +80,7 @@ M-DEENO의 분석 데이터에 따르면 부동산 시장의 변동성이 클수
 
 전문가와의 상담 전, 반드시 본인의 다주택 여부와 자녀의 자금 출처 증빙 가능성을 먼저 검토하시기 바랍니다.
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -136,19 +119,16 @@ M-DEENO의 분석 데이터에 따르면 부동산 시장의 변동성이 클수
   }
 </script>
 
-
-
 ---
+
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
 
-
-
 ---
+
 ### 🛑 부담부 증여 양도세 증여세 비교 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

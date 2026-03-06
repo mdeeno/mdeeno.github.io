@@ -63,20 +63,6 @@ image: '/images/homaesil-line-analysis.png'
 
 <small>본 포스팅은 데이터 분석을 기반으로 한 개인적인 의견이며, 모든 투자의 책임은 본인에게 있습니다. 반드시 현장 임장 후 결정하시기 바랍니다.</small>
 
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 상세 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   async function submitBlogLead() {
@@ -110,7 +96,5 @@ image: '/images/homaesil-line-analysis.png'
 > **※ 본 분석은 M-DEENO의 정비사업 및 부동산 구조 연구를 위해 공개 자료와 가정값을 기반으로 정리된 시뮬레이션 사례입니다.**
 >
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.
-
-
 
 {{< mdeeno_cpa type="loan" >}}

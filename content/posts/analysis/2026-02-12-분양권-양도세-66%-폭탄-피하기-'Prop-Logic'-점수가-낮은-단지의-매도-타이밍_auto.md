@@ -46,20 +46,6 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 - 둘째, 주변 입주 물량이 향후 2년 내에 현재의 150%를 초과한다면 과감한 매도를 고려해야 합니다.
 - 셋째, 대출 금리 부담이 월 임대 수익 예상치를 상회한다면 '세금 폭탄'보다 '역전세 폭탄'이 더 무섭습니다.
 
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 상세 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   async function submitBlogLead() {
@@ -113,7 +99,5 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 <a href="https://new.land.naver.com/search?sk=%EB%B6%84%EC%96%91%EA%B6%8C%20%EC%96%91%EB%8F%84%EC%86%8C%EB%93%9D%EC%84%B8%2C%20%EB%B6%84%EC%96%91%EA%B6%8C%20%EB%A7%A4%EB%8F%84%20%ED%83%80%EC%9D%B4%EB%B0%8D%2C%20%EC%96%91%EB%8F%84%EC%84%B8%2066%25%2C%20%ED%94%84%EB%A1%AD%EB%A1%9C%EC%A7%81%20%EC%A0%90%EC%88%98%2C%20%EC%8B%A4%EA%B1%B0%EC%A3%BC%20%EC%9D%98%EB%AC%B4" target="_blank">👉 <strong>네이버 부동산에서 '분양권 양도소득세, 분양권 매도 타이밍, 양도세 66%, 프롭로직 점수, 실거주 의무' 시세 확인하기</strong></a>
 
 <br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
-
-
 
 {{< mdeeno_cpa type="loan" >}}

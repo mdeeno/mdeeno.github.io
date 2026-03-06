@@ -55,20 +55,6 @@ image: '/images/geomdan-subway-2026.png'
 - [💰 내 연봉으로 대출 한도 계산하기](https://tech.mdeeno.com/calculators/calc_dsr/)
 - [🏠 취득세 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_tax/)
 
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 상세 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   async function submitBlogLead() {
@@ -104,7 +90,5 @@ image: '/images/geomdan-subway-2026.png'
 인천 1호선 개통은 시작일 뿐입니다. 향후 GTX-D 노선과 서울 5호선 연장 논의가 구체화될수록 검단의 가치는 한 단계 더 점프할 것입니다. 특히 84타입 기준 7~9억 원대 시세는 서울 인접 신도시들과 비교할 때 여전히 매력적인 구간입니다.
 
 <small>본 포스팅은 데이터 분석을 기반으로 한 개인적인 의견이며, 모든 투자의 책임은 본인에게 있습니다. 반드시 현장 임장 후 결정하시기 바랍니다.</small>
-
-
 
 {{< mdeeno_cpa type="loan" >}}

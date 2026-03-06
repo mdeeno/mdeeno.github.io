@@ -1,15 +1,19 @@
 ---
-title: "9억 이하 아파트 갈아타기, 신생아 특례대출 개편이 만든 역대급 기회: M-DEENO 데이터 분석 보고서"
+title: '9억 이하 아파트 갈아타기, 신생아 특례대출 개편이 만든 역대급 기회: M-DEENO 데이터 분석 보고서'
 date: 2026-02-25 10:20:15
 draft: false
-categories: ["자산 전략"]
-tags: ["신생아 특례대출 조건 완화, 9억 이하 아파트 갈아타기, 주택담보대출 금리 인하, 내 집 마련 전략", "부동산투자", "프롭테크", "재건축리스크", "재테크", "M-DEENO"]
-description: "9억 이하 아파트 갈아타기, 신생아 특례대출 개편이 만든 역대급 기회: M-DEENO 데이터 분석 보고서 - M-DEENO 데이터 분석"
+categories: ['자산 전략']
+tags:
+  [
+    '신생아 특례대출 조건 완화, 9억 이하 아파트 갈아타기, 주택담보대출 금리 인하, 내 집 마련 전략',
+    '부동산투자',
+    '프롭테크',
+    '재건축리스크',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '9억 이하 아파트 갈아타기, 신생아 특례대출 개편이 만든 역대급 기회: M-DEENO 데이터 분석 보고서 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1772068832.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -52,9 +56,9 @@ M-DEENO 데이터 랩은 이번 정책 변화가 단순한 복지 차원을 넘�
 
 이번 정책의 최대 수혜지로 꼽히는 수도권 주요 단지 3곳을 M-DEENO가 직접 데이터로 필터링했습니다.
 
-*   **성북구 길음뉴타운 8단지(래미안)**: 서울 내 대표적인 9억 원 이하 매물 밀집 지역으로, 초품아 입지와 인프라가 탄탄하여 갈아타기 수요가 꾸준합니다.
-*   **하남시 미사강변도시 18단지**: 신축급 컨디션과 강남 접근성 덕분에 젊은 부부들의 선호도가 매우 높으며, 최근 시세는 **8~9억 원대**를 형성하고 있습니다.
-*   **수원시 광교호수마을 참누리레이크**: 경기 남부 핵심 입지로, 최근 실거래 사례를 보면 정책 대출 가이드라인인 9억 원 경계선에 걸쳐 있어 가격 방어력이 우수합니다.
+- **성북구 길음뉴타운 8단지(래미안)**: 서울 내 대표적인 9억 원 이하 매물 밀집 지역으로, 초품아 입지와 인프라가 탄탄하여 갈아타기 수요가 꾸준합니다.
+- **하남시 미사강변도시 18단지**: 신축급 컨디션과 강남 접근성 덕분에 젊은 부부들의 선호도가 매우 높으며, 최근 시세는 **8~9억 원대**를 형성하고 있습니다.
+- **수원시 광교호수마을 참누리레이크**: 경기 남부 핵심 입지로, 최근 실거래 사례를 보면 정책 대출 가이드라인인 9억 원 경계선에 걸쳐 있어 가격 방어력이 우수합니다.
 
 위 단지들의 정확한 시세 정보는 변동성이 크므로, 반드시 **국토교통부 실거래가 공개시스템 확인**을 권장합니다.
 
@@ -69,36 +73,18 @@ M-DEENO 데이터 랩은 이번 정책 변화가 단순한 복지 차원을 넘�
 ### 💡 자주 묻는 질문 (FAQ)
 
 ### Q1. 소득 요건이 완화되면 기존 대출자도 대환이 가능한가요?
+
 네, 대출 신청일 기준 2년 이내에 출산(내년 기준 23년생부터 포함 가능성)한 무주택 세대주 또는 1주택자라면 **대환 대출** 목적으로 이용이 가능합니다. 다만, 세부적인 소득 구간별 금리 적용안을 반드시 체크해야 합니다.
 
 ### Q2. 9억 원 초과 아파트를 계약하고 잔금 때 가격이 떨어지면 신청 가능한가요?
+
 아니요, 대출 승인 시점의 평가 가액이 아닌 **매매 계약서상 거래 가액** 또는 KB시세 중 낮은 금액이 9억 원 이하인 경우에만 승인됩니다. 계약 전 반드시 시세 확인이 필수입니다.
 
 ### Q3. 맞벌이 부부 합산 소득이 2억 원을 넘어도 정말 가능한가요?
+
 정부의 최신 발표안에 따르면, 한시적으로 맞벌이 가구에 한해 소득 기준을 **최대 2.5억 원**까지 상향하는 방안이 추진 중입니다. 이는 고소득 전문직 부부들에게도 정책 금융의 문턱을 낮추겠다는 신호로 해석됩니다.
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -137,19 +123,16 @@ M-DEENO 데이터 랩은 이번 정책 변화가 단순한 복지 차원을 넘�
   }
 </script>
 
-
-
 ---
+
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
 
-
-
 ---
+
 ### 🛑 신생아 특례대출 조건 완화, 9억 이하 아파트 갈아타기, 주택담보대출 금리 인하, 내 집 마련 전략 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

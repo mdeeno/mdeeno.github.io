@@ -1,15 +1,19 @@
 ---
-title: "대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법"
+title: '대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법'
 date: 2026-03-04 10:20:25
 draft: false
-categories: ["정비 사업"]
-tags: ["대구 재건축, 범어동 아파트 시세, 추가 분담금, 수성구 부동산 전망, Prop-Logic", "부동산투자", "부동산SaaS", "프롭테크", "재테크", "M-DEENO"]
-description: "대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법 - M-DEENO 데이터 분석"
+categories: ['정비 사업']
+tags:
+  [
+    '대구 재건축, 범어동 아파트 시세, 추가 분담금, 수성구 부동산 전망, Prop-Logic',
+    '부동산투자',
+    '부동산SaaS',
+    '프롭테크',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1772673638.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -36,9 +40,9 @@ description: "대구 미분양 공포 속 추가 분담금 0원? 범어동 재�
 
 <div class='lab-formula-box'>사업 안정성 점수 = (평균 대지지분 ÷ 기존 용적률) × 인근 신축 시세 가중치</div>
 
-*   **평균 대지지분**: 최소 15평 이상을 확보해야 일반 분양 물량이 확보되어 분담금이 줄어듭니다.
-*   **용적률 여유**: 현재 용적률이 150% 이하인 단지가 3종 일반주거지역(최대 250~300%)으로 상향될 때 수익성이 극대화됩니다.
-*   **인근 신축 시세**: 주변 신축 아파트가 일정 가격대를 유지해줘야 일반 분양가를 높게 책정할 수 있습니다.
+- **평균 대지지분**: 최소 15평 이상을 확보해야 일반 분양 물량이 확보되어 분담금이 줄어듭니다.
+- **용적률 여유**: 현재 용적률이 150% 이하인 단지가 3종 일반주거지역(최대 250~300%)으로 상향될 때 수익성이 극대화됩니다.
+- **인근 신축 시세**: 주변 신축 아파트가 일정 가격대를 유지해줘야 일반 분양가를 높게 책정할 수 있습니다.
 
 ### M-DEENO 데이터 랩이 분석한 범어동 주요 단지 비교
 
@@ -77,36 +81,18 @@ M-DEENO의 Prop-Logic™ 분석에 따르면, 현재 대구 시장은 **양극�
 ### 💡 자주 묻는 질문 (FAQ)
 
 ### Q1. 추가 분담금이 정말 0원이 가능할까요?
+
 최근 공사비 급등으로 인해 '완전 0원'은 현실적으로 어렵지만, 대지지분이 넓은 단지는 일반 분양 수익으로 분담금을 대폭 상쇄하여 실질 투입 비용을 최소화할 수 있습니다.
 
 ### Q2. 대구 미분양이 많은데 재건축 일반 분양이 잘 될까요?
+
 수성구 범어동은 대구 내에서도 독립적인 수요층을 가진 시장입니다. 핵심 입지의 신축 공급은 미분양 정체기에도 대기 수요가 탄탄한 편입니다.
 
 ### Q3. 투자 시 가장 주의해야 할 리스크는 무엇인가요?
+
 금리 인상에 따른 금융 비용 증가와 조합 내 갈등으로 인한 사업 지연입니다. M-DEENO는 사업 진행 단계가 투명하게 공개되는 단지를 우선 추천합니다.
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -145,19 +131,16 @@ M-DEENO의 Prop-Logic™ 분석에 따르면, 현재 대구 시장은 **양극�
   }
 </script>
 
-
-
 ---
+
 > **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
-
 ---
+
 ### 🛑 대구 재건축, 범어동 아파트 시세, 추가 분담금, 수성구 부동산 전망, Prop-Logic 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

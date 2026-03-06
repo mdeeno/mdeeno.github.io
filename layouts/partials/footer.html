@@ -1,13 +1,4 @@
 {{- if not (.Param "hideFooter") }}
-<!-- <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #666;">
-    <span id="busuanzi_container_site_uv">
-        🙋‍♂️ 총 방문자: <span id="busuanzi_value_site_uv"></span>명
-    </span>
-    &nbsp;|&nbsp;
-    <span id="busuanzi_container_site_pv">
-        📄 총 조회수: <span id="busuanzi_value_site_pv"></span>회
-    </span>
-</div> -->
 <footer class="footer">
     {{- if not site.Params.footer.hideCopyright }}
         {{- if site.Copyright }}
@@ -159,27 +150,3 @@
 
 
 {{- end }}
-<script>
-    // Busuanzi 숫자가 로딩된 후 실행
-    var busuanziLoaded = setInterval(function() {
-        var uvElement = document.getElementById('busuanzi_value_site_uv');
-        var pvElement = document.getElementById('busuanzi_value_site_pv');
-        
-        if (uvElement && pvElement && uvElement.innerText !== "") {
-            clearInterval(busuanziLoaded);
-            
-            // 현재 찍힌 5000만이라는 말도 안 되는 숫자 가져오기
-            var currentUV = parseInt(uvElement.innerText);
-            var currentPV = parseInt(pvElement.innerText);
-            
-            // 강제로 뺄 숫자 (현재 보이는 숫자 - 원하는 시작 숫자)
-            // 예: 54205857명이 보이면, 54205800을 빼서 57명으로 만듦
-            var offsetUV = 54205000; 
-            var offsetPV = 77790000;
-
-            // 보정된 값 다시 넣기 (음수 방지)
-            uvElement.innerText = Math.max(1, currentUV - offsetUV);
-            pvElement.innerText = Math.max(1, currentPV - offsetPV);
-        }
-    }, 100);
-</script>

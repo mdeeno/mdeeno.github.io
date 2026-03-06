@@ -1,15 +1,19 @@
 ---
-title: "신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법"
+title: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법'
 date: 2026-03-04 10:22:43
 draft: false
-categories: ["정비 사업"]
-tags: ["신길뉴타운, 공공재개발, 민간재개발, 신길2구역, 신길15구역, 신길래미안에스티움, 보라매SK뷰, 시세, 분담금, R-Score", "부동산투자", "분담금예측", "프롭테크", "재테크", "M-DEENO"]
-description: "신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법 - M-DEENO 데이터 분석"
+categories: ['정비 사업']
+tags:
+  [
+    '신길뉴타운, 공공재개발, 민간재개발, 신길2구역, 신길15구역, 신길래미안에스티움, 보라매SK뷰, 시세, 분담금, R-Score',
+    '부동산투자',
+    '분담금예측',
+    '프롭테크',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1772673796.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -34,8 +38,8 @@ description: "신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 
 
 현재 신길 해제 구역들은 '도심 공공주택 복합사업'과 '민간 재개발'이라는 두 갈래 길에 서 있습니다.
 
-*   **공공재개발**: LH/SH가 주도하여 용적률 인센티브와 빠른 인허가를 제공하지만, 브랜드 선택의 제한과 현금청산 리스크가 존재합니다.
-*   **민간재개발**: 소유주들의 의사결정권이 높고 프리미엄 브랜드 도입이 가능하지만, 공사비 갈등이나 사업 지연 시 추가 분담금 리스크가 큽니다.
+- **공공재개발**: LH/SH가 주도하여 용적률 인센티브와 빠른 인허가를 제공하지만, 브랜드 선택의 제한과 현금청산 리스크가 존재합니다.
+- **민간재개발**: 소유주들의 의사결정권이 높고 프리미엄 브랜드 도입이 가능하지만, 공사비 갈등이나 사업 지연 시 추가 분담금 리스크가 큽니다.
 
 그렇다면 지금 시점에서 어떤 방식이 내 자산에 더 유리할까요? 단순히 '빨리 된다'는 말만 믿고 동의서를 써주기엔 리스크가 너무 큽니다.
 
@@ -51,9 +55,9 @@ M-DEENO 데이터 랩은 정비 사업의 불확실성을 수치화하기 위해
 
 현재 신길 뉴타운의 가치를 가늠해볼 수 있는 대장주들과 신규 추진 구역의 시세를 비교해 보겠습니다.
 
-*   **래미안 에스티움 (신길 7구역)**: 전용 84㎡ 기준 최근 **13~15억대** 사이에서 실거래 및 호가가 형성되어 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
-*   **보라매 SK 뷰 (신길 5구역)**: 신길역과 보라매역 사이의 입지 장점으로 전용 84㎡ 기준 **12~14억대** 범위를 유지하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
-*   **신길 2구역 (도심복합사업 추진)**: 후보지 지정 이후 빌라 매물은 대지 지분에 따라 **5~7억대**로 형성되어 있으나, 권리산정일 이후 매수 시 청산 위험이 있으므로 주의가 필요합니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **래미안 에스티움 (신길 7구역)**: 전용 84㎡ 기준 최근 **13~15억대** 사이에서 실거래 및 호가가 형성되어 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **보라매 SK 뷰 (신길 5구역)**: 신길역과 보라매역 사이의 입지 장점으로 전용 84㎡ 기준 **12~14억대** 범위를 유지하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **신길 2구역 (도심복합사업 추진)**: 후보지 지정 이후 빌라 매물은 대지 지분에 따라 **5~7억대**로 형성되어 있으나, 권리산정일 이후 매수 시 청산 위험이 있으므로 주의가 필요합니다. (국토교통부 실거래가 공개시스템 확인 권장)
 
 대장주들의 견고한 시세는 해제 구역이 신축으로 변모했을 때의 미래 가치를 보증하는 강력한 지표가 됩니다.
 
@@ -78,28 +82,7 @@ A2. 브랜드 가치 상승으로 일반분양가는 높아질 수 있으나, �
 **Q3. 추가 분담금이 무서운데 지금이라도 팔아야 할까요?**
 A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 금액이 인근 래미안 에스티움 시세의 80%를 넘는다면 매도를 고려해볼 만합니다. 정확한 분석을 위해 Prop-Logic™ 시뮬레이션을 활용해 보세요.
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -138,19 +121,16 @@ A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 
   }
 </script>
 
-
-
 ---
+
 > **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
-
 ---
+
 ### 🛑 신길뉴타운, 공공재개발, 민간재개발, 신길2구역, 신길15구역, 신길래미안에스티움, 보라매SK뷰, 시세, 분담금, R-Score 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

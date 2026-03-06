@@ -62,20 +62,6 @@ _▲ AI 분석 데이터 (2026-02-12 19:46:31 기준)_
 
 결론적으로 은마아파트는 상징성과 입지 면에서 독보적이지만, **실질 분담금 규모**에 따라 향후 매수세의 향방이 결정될 것입니다.
 
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 상세 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   async function submitBlogLead() {
@@ -129,7 +115,5 @@ _▲ AI 분석 데이터 (2026-02-12 19:46:31 기준)_
 <a href="https://new.land.naver.com/search?sk=%EC%9D%80%EB%A7%88%EC%95%84%ED%8C%8C%ED%8A%B8%20%EC%9E%AC%EA%B1%B4%EC%B6%95%2C%20%EC%9D%80%EB%A7%88%EC%95%84%ED%8C%8C%ED%8A%B8%20%EB%B6%84%EB%8B%B4%EA%B8%88%2C%20%EB%8C%80%EC%B9%98%EB%8F%99%20%EB%B6%80%EB%8F%99%EC%82%B0%20%EC%A0%84%EB%A7%9D%2C%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%82%AC%EC%97%85%EC%84%B1%20%EB%B6%84%EC%84%9D" target="_blank">👉 <strong>네이버 부동산에서 '은마아파트 재건축, 은마아파트 분담금, 대치동 부동산 전망, 재건축 사업성 분석' 시세 확인하기</strong></a>
 
 <br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
-
-
 
 {{< mdeeno_cpa type="loan" >}}

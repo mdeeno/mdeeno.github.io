@@ -1,15 +1,19 @@
 ---
-title: "[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼"
+title: '[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼'
 date: 2026-03-04 10:19:22
 draft: false
-categories: ["정비 사업"]
-tags: ["부평 재개발 상가 쪼개기, 권리가액 산정, 부평 아파트 시세, 재개발 추가분담금, 입주권 리스크", "부동산투자", "데이터분석", "재건축리스크", "재테크", "M-DEENO"]
-description: "[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼 - M-DEENO 데이터 분석"
+categories: ['정비 사업']
+tags:
+  [
+    '부평 재개발 상가 쪼개기, 권리가액 산정, 부평 아파트 시세, 재개발 추가분담금, 입주권 리스크',
+    '부동산투자',
+    '데이터분석',
+    '재건축리스크',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1772673577.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -34,9 +38,9 @@ M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 무분별한 지분 �
 
 현재 부평 내 주요 신축 및 재개발 인접 단지들의 시세 흐름을 파악하는 것은 내 자산의 상대적 가치를 평가하는 첫걸음입니다.
 
-*   **부평 SK VIEW 해모로**: 최근 시세는 대략 6~8억대 범위를 형성하고 있으며, 단지별 컨디션에 따라 차이가 존재합니다. (국토교통부 실거래가 공개시스템 확인 권장)
-*   **더샵 부평센트럴시티**: 대규모 단지 프리미엄을 바탕으로 5~7억대 중반의 가격대를 유지 중입니다. (국토교통부 실거래가 공개시스템 확인 권장)
-*   **e편한세상 부평 그랑힐스**: 신축 입주 장세가 마무리되며 6~8억대 초반의 호가가 형성되어 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **부평 SK VIEW 해모로**: 최근 시세는 대략 6~8억대 범위를 형성하고 있으며, 단지별 컨디션에 따라 차이가 존재합니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **더샵 부평센트럴시티**: 대규모 단지 프리미엄을 바탕으로 5~7억대 중반의 가격대를 유지 중입니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **e편한세상 부평 그랑힐스**: 신축 입주 장세가 마무리되며 6~8억대 초반의 호가가 형성되어 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
 
 위 단지들의 시세와 비교했을 때, 권리가액이 낮게 책정된 상가 소유주들은 과도한 추가 분담금 발생으로 인해 실제 수익성이 마이너스로 돌아설 위험이 큽니다.
 
@@ -62,36 +66,18 @@ M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 무분별한 지분 �
 ### 💡 자주 묻는 질문 (FAQ)
 
 ### Q1. 상가 쪼개기로 받은 입주권도 일반 아파트 입주권과 권리가 동일한가요?
+
 정관에 따라 다르지만, 일반적으로 순위에서 밀리거나 특정 평형 배정에서 불이익을 받을 가능성이 존재하므로 조합 정관 확인이 필수적입니다.
 
 ### Q2. 권리가액 이의신청을 하면 실제로 상향될 가능성이 있나요?
+
 객관적인 비교 사례나 평가 과정에서의 명백한 오류를 증명할 경우 조정될 수 있으나, 구역 전체의 형평성 때문에 큰 폭의 상향은 어려울 수 있습니다.
 
 ### Q3. 지금이라도 상가 지분을 매도하는 것이 나을까요?
+
 현재 부평 재개발 시장의 매수 심리가 위축된 상태이므로, 급매보다는 향후 완공 시점의 기대 가치와 현재의 기회비용을 M-DEENO의 데이터 분석을 통해 비교해 본 후 결정하시길 권장합니다.
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -130,19 +116,16 @@ M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 무분별한 지분 �
   }
 </script>
 
-
-
 ---
+
 > **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
-
 ---
+
 ### 🛑 부평 재개발 상가 쪼개기, 권리가액 산정, 부평 아파트 시세, 재개발 추가분담금, 입주권 리스크 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

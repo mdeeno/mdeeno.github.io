@@ -1,5 +1,4 @@
 {{ define "main" }}
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 {{ .Scratch.Set "math" true }} {{ partial "math.html" . }}
 {{ $style := resources.Get "css/lab-style.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -18,7 +17,7 @@
         </p>
 
         <div class="lab-btn-wrap">
-          <a href="https://mdeeno.com/mvp" target="_blank" rel="noopener noreferrer" class="lab-btn lab-btn-personal">
+          <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer" class="lab-btn lab-btn-personal">
             📈 내 아파트 리스크 진단하기 (무료) →
           </a>
         </div>
@@ -26,17 +25,7 @@
           * 회원가입 없음 · 3분 소요 · 즉시 결과 확인
         </p>
 
-        <div class="email-collect-box">
-          <p class="email-title">📩 정비사업 핵심 분석 리포트 정기구독</p>
-          <form id="supabase-lead-form" class="email-form">
-            <input type="email" name="email" placeholder="이메일 주소를 입력하세요" required class="email-input"
-              style="color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
-            <button type="submit" class="email-btn">
-              무료 구독하기
-            </button>
-          </form>
-          <p class="email-note">* 조합이 알려주지 않는 공사비/분담금 리스크 분석 자료를 비정기적으로 보내드립니다. 언제든 취소 가능합니다.</p>
-        </div>
+
     </div>
 
     <div class="problem-section">
@@ -58,6 +47,22 @@
           <p class="problem-desc">이주비 이자가 늘어날수록 최종 수익률(ROI)은 곤두박질칩니다.</p>
         </div>
       </div>
+    </div>
+
+    <div class="landing-cta-block">
+      <p class="landing-cta-eyebrow">📊 내 아파트 재건축 리스크 무료 분석</p>
+      <p class="landing-cta-body">
+        공사비 상승과 일반분양가 변화에 따라<br>
+        추가 분담금이 수천만원~수억원 차이 날 수 있습니다.<br><br>
+        M-DEENO 계산기로 내 아파트 리스크를 무료로 분석해보세요.
+      </p>
+      <a href="https://mdeeno.com/member"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="mvp-cta-button landing-cta-btn"
+         onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: 'landing_problem_section'})">
+        무료 리스크 분석 시작 →
+      </a>
     </div>
 
     <div class="how-works-section">
@@ -116,25 +121,23 @@
       </div>
     </div>
 
-    <div class="b2b-card">
-      <h3 class="b2b-title">🏢 기업 및 조합 정밀 분석 솔루션</h3>      
-      <p class="b2b-desc">
-        시행사, 조합, 법인을 위한 <strong>민감도 분석 리포트(Sensitivity Report)</strong>가 필요하신가요?<br>
-        M-DEENO의 데이터랩이 정밀한 시나리오 분석을 제공합니다.
+    <div class="landing-cta-block">
+      <p class="landing-cta-eyebrow">📊 내 아파트 재건축 리스크 무료 분석</p>
+      <p class="landing-cta-body">
+        공사비 상승과 일반분양가 변화에 따라<br>
+        추가 분담금이 수천만원~수억원 차이 날 수 있습니다.<br><br>
+        M-DEENO 계산기로 내 아파트 리스크를 무료로 분석해보세요.
       </p>
-
-      <div class="b2b-tags-wrapper">
-          <span class="b2b-tag">✔ 공사비 민감도 분석</span>
-          <span class="b2b-tag">✔ 분양가 시나리오 비교</span>
-          <span class="b2b-tag">✔ 분담금 구간별 리스크</span>
-      </div>
-
-      <div class="b2b-btn-wrapper">
-        <a href="mailto:mdeeno.official@gmail.com?subject=[기업문의] 정밀 분석 리포트 요청" class="lab-btn lab-btn-enterprise">
-          📩 기업 정밀 분석 문의하기
-        </a>
-      </div>
+      <a href="https://mdeeno.com/member"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="mvp-cta-button landing-cta-btn"
+         onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: 'landing_engine_section'})">
+        무료 리스크 분석 시작 →
+      </a>
     </div>
+
+
 
 </div>
 
@@ -177,30 +180,19 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
   (function() {
-    // 1. 초기화 (전역 변수 충돌 방지를 위해 즉시 실행 함수로 감쌉니다)
-    const supabaseUrl = 'https://ohmybbgvdlqgyvuvmewz.supabase.co';
-    const supabaseKey = 'REDACTED_SUPABASE_ANON_KEY';
-
-    // 중복 선언 방지: window 객체에 할당하여 관리
-    if (!window.supabaseClient) {
-      const { createClient } = window.supabase;
-      window.supabaseClient = createClient(supabaseUrl, supabaseKey);
-    }
-
-    // 2. 이벤트 리스너 등록
     document.addEventListener('DOMContentLoaded', function() {
       const form = document.getElementById('supabase-lead-form');
-      
+
       if (form && !form.dataset.attached) {
-        form.dataset.attached = "true"; // 중복 이벤트 방지 플래그
-        
+        form.dataset.attached = "true";
+
         form.addEventListener('submit', async function(e) {
-          e.preventDefault(); 
+          e.preventDefault();
           e.stopPropagation();
 
           const emailInput = this.querySelector('.email-input');
           const submitBtn = this.querySelector('.email-btn');
-          const email = emailInput.value;
+          const email = emailInput.value.trim();
 
           if (!email) return;
 
@@ -208,21 +200,20 @@
           submitBtn.disabled = true;
 
           try {
-            const { error } = await window.supabaseClient
-              .from('lead_emails')
-              .insert([{ 
-                email: email, 
-                source: 'home_landing' 
-              }]);
+            const res = await fetch('https://mdeeno.com/api/beta-waitlist', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email: email, source: 'blog_landing' })
+            });
 
-            if (error) throw error;
+            if (!res.ok) throw new Error('서버 오류: ' + res.status);
 
-            alert('📩 신청이 완료되었습니다!');
+            alert('📩 베타 신청이 완료되었습니다!');
             emailInput.value = '';
 
           } catch (err) {
             console.error('전송 실패:', err.message);
-            alert('오류가 발생했습니다: ' + err.message);
+            alert('오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
           } finally {
             submitBtn.innerText = '무료 구독하기';
             submitBtn.disabled = false;

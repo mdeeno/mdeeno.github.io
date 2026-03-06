@@ -1,15 +1,19 @@
 ---
-title: "법인 파산의 늪, 대표이사 가수금 회수와 부동산 공매의 모든 것: M-DEENO 데이터 랩 정밀 분석"
+title: '법인 파산의 늪, 대표이사 가수금 회수와 부동산 공매의 모든 것: M-DEENO 데이터 랩 정밀 분석'
 date: 2026-02-19 11:42:37
 draft: false
-categories: ["자산 전략"]
-tags: ["법인파산 가수금 처리, 법인 부동산 공매, 대표이사 가수금 반환, 법인 파산 절차", "부동산투자", "분담금예측", "데이터분석", "재테크", "M-DEENO"]
-description: "법인 파산의 늪, 대표이사 가수금 회수와 부동산 공매의 모든 것: M-DEENO 데이터 랩 정밀 분석 - M-DEENO 데이터 분석"
+categories: ['자산 전략']
+tags:
+  [
+    '법인파산 가수금 처리, 법인 부동산 공매, 대표이사 가수금 반환, 법인 파산 절차',
+    '부동산투자',
+    '분담금예측',
+    '데이터분석',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '법인 파산의 늪, 대표이사 가수금 회수와 부동산 공매의 모든 것: M-DEENO 데이터 랩 정밀 분석 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771555388.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -30,9 +34,9 @@ description: "법인 파산의 늪, 대표이사 가수금 회수와 부동산 �
 
 **M-DEENO의 Prop-Logic™ 알고리즘** 분석에 따르면, 파산 절차에서 가수금은 '일반 파산채권'으로 분류되어 다른 일반 채권자들과 동일한 순위로 배당받게 됩니다.
 
-*   **회수 가능성**: 담보권이 설정되지 않은 경우, 국세나 임금 채권보다 후순위로 밀려 실제 회수율은 낮아질 수 있습니다.
-*   **증빙의 중요성**: 가수금 입금 내역과 이사회 결의서 등 객관적 증빙이 없으면 부인권 행사의 대상이 될 수 있습니다.
-*   **상계 처리**: 법인에 갚아야 할 가지급금이 있다면 가수금과 상계하여 개인의 책임을 덜어내는 전략이 필요합니다.
+- **회수 가능성**: 담보권이 설정되지 않은 경우, 국세나 임금 채권보다 후순위로 밀려 실제 회수율은 낮아질 수 있습니다.
+- **증빙의 중요성**: 가수금 입금 내역과 이사회 결의서 등 객관적 증빙이 없으면 부인권 행사의 대상이 될 수 있습니다.
+- **상계 처리**: 법인에 갚아야 할 가지급금이 있다면 가수금과 상계하여 개인의 책임을 덜어내는 전략이 필요합니다.
 
 ### 법인 명의 부동산 공매 처분 절차
 
@@ -40,9 +44,9 @@ description: "법인 파산의 늪, 대표이사 가수금 회수와 부동산 �
 
 부동산의 경우 경매보다 **공매(KAMCO)**를 통해 처분되는 사례가 빈번하며, 이는 매각 속도를 높여 채권자들에게 신속히 배당하기 위함입니다.
 
-*   **감정평가**: 파산관재인이 지정한 감정평가 법인을 통해 공매 시작가를 결정합니다.
-*   **입찰 진행**: 온비드(Onbid) 시스템을 통해 공개 경쟁 입찰 방식으로 진행됩니다.
-*   **배당 순위**: 매각 대금은 체납 세금, 근저당권자, 임금 채권 순으로 우선 배당된 후 남은 금액이 가수금 등 일반 채권에 돌아갑니다.
+- **감정평가**: 파산관재인이 지정한 감정평가 법인을 통해 공매 시작가를 결정합니다.
+- **입찰 진행**: 온비드(Onbid) 시스템을 통해 공개 경쟁 입찰 방식으로 진행됩니다.
+- **배당 순위**: 매각 대금은 체납 세금, 근저당권자, 임금 채권 순으로 우선 배당된 후 남은 금액이 가수금 등 일반 채권에 돌아갑니다.
 
 ### 실제 부동산 단지 사례 분석
 
@@ -62,9 +66,9 @@ description: "법인 파산의 늪, 대표이사 가수금 회수와 부동산 �
 
 **M-DEENO**의 데이터 분석 결과, 파산 신청 최소 6개월 전부터 준비된 증빙 자료가 있는 경우 채권 승인율이 85% 이상 높게 나타났습니다.
 
-*   **시점 확인**: 파산 직전 급격한 가수금 변제는 '편파 변제'로 간주되어 취소될 위험이 큽니다.
-*   **세무 리스크**: 가수금을 포기할 경우 법인에게는 채무면제이익이 발생하여 세무적 검토가 병행되어야 합니다.
-*   **전문가 협업**: 파산 전문 변호사와 세무사의 통합 솔루션이 필수적입니다.
+- **시점 확인**: 파산 직전 급격한 가수금 변제는 '편파 변제'로 간주되어 취소될 위험이 큽니다.
+- **세무 리스크**: 가수금을 포기할 경우 법인에게는 채무면제이익이 발생하여 세무적 검토가 병행되어야 합니다.
+- **전문가 협업**: 파산 전문 변호사와 세무사의 통합 솔루션이 필수적입니다.
 
 ### 결론 및 대응 전략
 
@@ -74,28 +78,7 @@ description: "법인 파산의 늪, 대표이사 가수금 회수와 부동산 �
 
 부동산 공매 절차 역시 시세보다 낮은 가격에 매각될 리스크가 있으므로, **M-DEENO**의 분석 데이터를 바탕으로 최적의 매각 시점과 법적 방어권을 확보하시기 바랍니다.
 
-
-
-
 {{< mdeeno_cpa type="debt" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -134,19 +117,16 @@ description: "법인 파산의 늪, 대표이사 가수금 회수와 부동산 �
   }
 </script>
 
-
-
 ---
+
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
 
-
-
 ---
+
 ### 🛑 법인파산 가수금 처리, 법인 부동산 공매, 대표이사 가수금 반환, 법인 파산 절차 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

@@ -1,15 +1,19 @@
 ---
-title: "분당 시범단지 선도지구 탈락? 우리 아파트 분담금 3억 폭탄 막아낼 R-Score 긴급 점검"
+title: '분당 시범단지 선도지구 탈락? 우리 아파트 분담금 3억 폭탄 막아낼 R-Score 긴급 점검'
 date: 2026-02-23 20:26:04
 draft: false
-categories: ["정비 사업"]
-tags: ["분당 재건축 선도지구 분담금", "부동산투자", "분담금예측", "데이터분석", "재테크", "M-DEENO"]
-description: "분당 시범단지 선도지구 탈락? 우리 아파트 분담금 3억 폭탄 막아낼 R-Score 긴급 점검 - M-DEENO 데이터 분석"
+categories: ['정비 사업']
+tags:
+  [
+    '분당 재건축 선도지구 분담금',
+    '부동산투자',
+    '분담금예측',
+    '데이터분석',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '분당 시범단지 선도지구 탈락? 우리 아파트 분담금 3억 폭탄 막아낼 R-Score 긴급 점검 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771932393.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -41,9 +45,9 @@ M-DEENO 데이터 랩의 **Prop-Logic™ 알고리즘** 분석에 따르면, 단
 
 현재 시범단지 내 주요 분석 대상은 다음과 같습니다.
 
-*   **시범삼성·한양**: 통합 재건축 추진의 선두주자로, 역세권 입지와 규모 면에서 높은 점수를 받고 있습니다. 현재 시세는 전용 84㎡ 기준 **15~17억대** 범위를 형성하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
-*   **시범우성·현대**: 대형 평형 비중이 높아 대지지분 확보에 유리하며, R-Score 분석 결과 사업 안정성이 견고한 편입니다. 시세는 **16~19억대** 수준에서 움직이고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
-*   **시범한신·한양**: 중소형 평형의 밀도가 변수이나, 통합 재건축을 통한 용적률 인센티브 확보가 관건입니다. 시세는 **14~16억대** 내외로 파악됩니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **시범삼성·한양**: 통합 재건축 추진의 선두주자로, 역세권 입지와 규모 면에서 높은 점수를 받고 있습니다. 현재 시세는 전용 84㎡ 기준 **15~17억대** 범위를 형성하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **시범우성·현대**: 대형 평형 비중이 높아 대지지분 확보에 유리하며, R-Score 분석 결과 사업 안정성이 견고한 편입니다. 시세는 **16~19억대** 수준에서 움직이고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **시범한신·한양**: 중소형 평형의 밀도가 변수이나, 통합 재건축을 통한 용적률 인센티브 확보가 관건입니다. 시세는 **14~16억대** 내외로 파악됩니다. (국토교통부 실거래가 공개시스템 확인 권장)
 
 ### 분담금 3억 폭탄, 단순한 괴담이 아닙니다
 
@@ -92,28 +96,7 @@ M-DEENO의 시뮬레이션 결과, 기부채납 비율이 높아지거나 일반
 
 분당은 타 신도시 대비 시세가 높게 형성되어 있어 일반분양가 책정에 유리합니다. 이는 곧 사업성 향상으로 이어지지만, 그만큼 초기 투자 비용이 크다는 점을 유의해야 합니다.
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -152,19 +135,16 @@ M-DEENO의 시뮬레이션 결과, 기부채납 비율이 높아지거나 일반
   }
 </script>
 
-
-
 ---
+
 > **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
-
 ---
+
 ### 🛑 분당 재건축 선도지구 분담금 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

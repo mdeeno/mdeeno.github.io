@@ -1,15 +1,19 @@
 ---
-title: "LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까? M-DEENO의 정밀 사업성 분석"
+title: 'LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까? M-DEENO의 정밀 사업성 분석'
 date: 2026-02-16 23:35:33
 draft: false
-categories: ["정비 사업"]
-tags: ["방화 뉴타운 재개발, LG사이언스파크 배후수요, 방화5구역 사업성, 마곡지구 아파트 시세", "부동산투자", "재건축리스크", "부동산SaaS", "재테크", "M-DEENO"]
-description: "LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까? M-DEENO의 정밀 사업성 분석 - M-DEENO 데이터 분석"
+categories: ['정비 사업']
+tags:
+  [
+    '방화 뉴타운 재개발, LG사이언스파크 배후수요, 방화5구역 사업성, 마곡지구 아파트 시세',
+    '부동산투자',
+    '재건축리스크',
+    '부동산SaaS',
+    '재테크',
+    'M-DEENO',
+  ]
+description: 'LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까? M-DEENO의 정밀 사업성 분석 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771338958.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -26,7 +30,7 @@ description: "LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡
 
 ### 마곡의 확장이 불러온 방화 뉴타운의 재평가
 
-마곡지구 내 신축 아파트 공급이 한계에 다다르면서, 바로 인접한 **방화 뉴타운**으로 투자자와 실거주자의 시선이 집중되고 있습니다. 
+마곡지구 내 신축 아파트 공급이 한계에 다다르면서, 바로 인접한 **방화 뉴타운**으로 투자자와 실거주자의 시선이 집중되고 있습니다.
 
 특히 LG사이언스파크를 비롯한 대기업 연구인력들의 주거 수요는 단순한 주택 공급을 넘어 '고급 주거 단지'에 대한 갈증으로 이어지고 있는 상황입니다.
 
@@ -42,17 +46,17 @@ description: "LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡
 재개발 사업 안정성 점수 = (인근 신축 시세 - 조합원 분양가) / (추가 분담금 리스크 지수)
 </div>
 
-*   **방화 5구역**: 약 1,600세대 이상의 대단지로 조성될 예정이며, 마곡지구 접근성이 가장 뛰어나 대장주 역할을 할 것으로 분석됩니다.
-*   **방화 3구역**: 9호선 공항시장역과 인접한 역세권 입지로, 평지 위주의 지형 덕분에 공사비 절감 및 평면 설계에서 우위를 점할 가능성이 높습니다.
-*   **방화 6구역**: 가장 빠른 진행 속도를 보이며 마곡지구 신축 수요를 가장 먼저 흡수할 '퍼스트 무버'로서의 프리미엄이 기대됩니다.
+- **방화 5구역**: 약 1,600세대 이상의 대단지로 조성될 예정이며, 마곡지구 접근성이 가장 뛰어나 대장주 역할을 할 것으로 분석됩니다.
+- **방화 3구역**: 9호선 공항시장역과 인접한 역세권 입지로, 평지 위주의 지형 덕분에 공사비 절감 및 평면 설계에서 우위를 점할 가능성이 높습니다.
+- **방화 6구역**: 가장 빠른 진행 속도를 보이며 마곡지구 신축 수요를 가장 먼저 흡수할 '퍼스트 무버'로서의 프리미엄이 기대됩니다.
 
 ### 인근 단지 비교 및 시세 흐름 분석
 
 현재 방화 뉴타운의 미래 가치를 가늠하기 위해 M-DEENO는 인근의 주요 단지 3곳의 시세 데이터를 대조군으로 설정했습니다.
 
-*   **마곡 M-밸리 7단지**: 마곡의 대장주로, 최근 전용 84㎡ 기준 대략적인 시세 범위는 **14억~16억 원대**를 형성하고 있습니다.
-*   **마곡 힐스테이트**: 방화역 인근의 준신축 단지로, 현재 **12억~14억 원대**의 가격 범위를 보이며 방화 뉴타운의 하방 지지선 역할을 합니다.
-*   **방화 도시개발 5단지**: 재건축 및 리모델링 기대감이 섞인 구축 단지로, 현재 **7억~9억 원대**의 시세를 형성하며 뉴타운 개발에 따른 동반 상승이 관측됩니다.
+- **마곡 M-밸리 7단지**: 마곡의 대장주로, 최근 전용 84㎡ 기준 대략적인 시세 범위는 **14억~16억 원대**를 형성하고 있습니다.
+- **마곡 힐스테이트**: 방화역 인근의 준신축 단지로, 현재 **12억~14억 원대**의 가격 범위를 보이며 방화 뉴타운의 하방 지지선 역할을 합니다.
+- **방화 도시개발 5단지**: 재건축 및 리모델링 기대감이 섞인 구축 단지로, 현재 **7억~9억 원대**의 시세를 형성하며 뉴타운 개발에 따른 동반 상승이 관측됩니다.
 
 국토교통부 실거래가 공개시스템 확인 권장
 
@@ -60,9 +64,9 @@ description: "LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡
 
 M-DEENO의 분석 결과, 방화 뉴타운은 마곡지구라는 확실한 배후 수요를 확보하고 있으나 **공사비 증액 리스크**는 여전히 변수로 남아 있습니다.
 
-*   최근 원자재 가격 상승으로 인해 조합원들이 부담해야 할 '사업 안정성 점수(비례율)'의 변동 폭이 커지고 있는 추세입니다.
-*   따라서 초기 투자 시 단순히 감정평가액만 볼 것이 아니라, 예상 추가 분담금의 경계선을 보수적으로 설정하는 전략이 필요합니다.
-*   LG사이언스파크 2단계 입주 시점과 방화 뉴타운의 완공 시점이 맞물릴 경우, 폭발적인 임대 수요와 매매가 상승이 동반될 것으로 예측됩니다.
+- 최근 원자재 가격 상승으로 인해 조합원들이 부담해야 할 '사업 안정성 점수(비례율)'의 변동 폭이 커지고 있는 추세입니다.
+- 따라서 초기 투자 시 단순히 감정평가액만 볼 것이 아니라, 예상 추가 분담금의 경계선을 보수적으로 설정하는 전략이 필요합니다.
+- LG사이언스파크 2단계 입주 시점과 방화 뉴타운의 완공 시점이 맞물릴 경우, 폭발적인 임대 수요와 매매가 상승이 동반될 것으로 예측됩니다.
 
 ### 결론: 마곡의 낙수효과를 선점하는 법
 
@@ -74,28 +78,7 @@ M-DEENO의 분석 결과, 방화 뉴타운은 마곡지구라는 확실한 배�
 
 [💰 나의 대출 이자 및 한도 확인하기](https://tech.mdeeno.com/calculators/calc_interest/)
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -134,19 +117,16 @@ M-DEENO의 분석 결과, 방화 뉴타운은 마곡지구라는 확실한 배�
   }
 </script>
 
-
-
 ---
+
 > **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
-
 ---
+
 ### 🛑 방화 뉴타운 재개발, LG사이언스파크 배후수요, 방화5구역 사업성, 마곡지구 아파트 시세 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

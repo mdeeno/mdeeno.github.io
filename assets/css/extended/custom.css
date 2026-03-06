@@ -15,6 +15,117 @@
     h1 { font-size: 24px !important; }
 }
 
+/* MVP CTA 배너 */
+.mvp-cta {
+    margin: 2rem 0;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 1.5rem 2rem;
+}
+
+[data-theme="dark"] .mvp-cta {
+    background: linear-gradient(135deg, #1e3a5f 0%, #1e40af22 100%);
+    border-color: #3b82f6;
+}
+
+.mvp-cta__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.mvp-cta__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1e40af;
+}
+
+[data-theme="dark"] .mvp-cta__title {
+    color: #93c5fd;
+}
+
+.mvp-cta__desc {
+    font-size: 0.95rem;
+    margin: 0;
+    color: #374151;
+}
+
+[data-theme="dark"] .mvp-cta__desc {
+    color: #d1d5db;
+}
+
+.mvp-cta-button {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.65rem 1.5rem;
+    background: #2563eb;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    text-decoration: none !important;
+    align-self: flex-start;
+    transition: background 0.2s ease;
+}
+
+.mvp-cta-button:hover {
+    background: #1d4ed8;
+}
+
+@media screen and (max-width: 768px) {
+    .mvp-cta {
+        padding: 1.25rem 1rem;
+    }
+    .mvp-cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* 랜딩페이지 인라인 CTA 블록 */
+.landing-cta-block {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border: 2px solid #2563eb;
+    text-align: center;
+}
+
+[data-theme="dark"] .landing-cta-block {
+    background: linear-gradient(135deg, #1e3a5f 0%, #1e40af22 100%);
+    border-color: #3b82f6;
+}
+
+.landing-cta-eyebrow {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1e40af;
+    margin: 0 0 0.75rem;
+}
+
+[data-theme="dark"] .landing-cta-eyebrow {
+    color: #93c5fd;
+}
+
+.landing-cta-body {
+    font-size: 0.95rem;
+    color: #374151;
+    margin: 0 0 1.25rem;
+    line-height: 1.7;
+}
+
+[data-theme="dark"] .landing-cta-body {
+    color: #d1d5db;
+}
+
+.landing-cta-btn {
+    align-self: unset;
+    display: inline-block;
+}
+
 /* 4. 야간모드 버튼 강제 축소 (혹시 모를 오류 방지) */
 #theme-toggle {
     width: auto !important;

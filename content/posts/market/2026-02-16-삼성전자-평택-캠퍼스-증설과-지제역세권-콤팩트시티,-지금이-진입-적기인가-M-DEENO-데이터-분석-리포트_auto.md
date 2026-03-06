@@ -1,15 +1,19 @@
 ---
-title: "삼성전자 평택 캠퍼스 증설과 지제역세권 콤팩트시티, 지금이 진입 적기인가? M-DEENO 데이터 분석 리포트"
+title: '삼성전자 평택 캠퍼스 증설과 지제역세권 콤팩트시티, 지금이 진입 적기인가? M-DEENO 데이터 분석 리포트'
 date: 2026-02-16 23:36:14
 draft: false
-categories: ["시장 분석"]
-tags: ["평택 지제역세권 투자 타이밍", "부동산투자", "재건축리스크", "데이터분석", "재테크", "M-DEENO"]
-description: "삼성전자 평택 캠퍼스 증설과 지제역세권 콤팩트시티, 지금이 진입 적기인가? M-DEENO 데이터 분석 리포트 - M-DEENO 데이터 분석"
+categories: ['시장 분석']
+tags:
+  [
+    '평택 지제역세권 투자 타이밍',
+    '부동산투자',
+    '재건축리스크',
+    '데이터분석',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '삼성전자 평택 캠퍼스 증설과 지제역세권 콤팩트시티, 지금이 진입 적기인가? M-DEENO 데이터 분석 리포트 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771339012.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -44,9 +48,9 @@ M-DEENO의 분석 결과, 교통 허브의 완성 시점과 삼성전자 신규 
 
 평택 지제역 인근의 핵심 단지들은 시장의 변동성 속에서도 견고한 흐름을 보이고 있습니다.
 
-*   **평택지제역자이**: 지제역 도보권의 대장주로 꼽히며, 최근 시세는 6~8억 원대 사이에서 형성되어 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
-*   **힐스테이트 지제역**: 브랜드 인지도와 역세권 입지를 동시에 갖춘 단지로, 대략적인 호가는 5~7억 원대 범위를 유지 중입니다. (국토교통부 실거래가 공개시스템 확인 권장)
-*   **평택 센트럴자이 3단지**: 대규모 단지 프리미엄과 안정적인 커뮤니티를 바탕으로 4~6억 원대 시세를 형성하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **평택지제역자이**: 지제역 도보권의 대장주로 꼽히며, 최근 시세는 6~8억 원대 사이에서 형성되어 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **힐스테이트 지제역**: 브랜드 인지도와 역세권 입지를 동시에 갖춘 단지로, 대략적인 호가는 5~7억 원대 범위를 유지 중입니다. (국토교통부 실거래가 공개시스템 확인 권장)
+- **평택 센트럴자이 3단지**: 대규모 단지 프리미엄과 안정적인 커뮤니티를 바탕으로 4~6억 원대 시세를 형성하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
 
 위 단지들은 콤팩트시티 개발에 따른 인프라 공유 수혜를 직접적으로 입을 것으로 M-DEENO 데이터 랩은 전망하고 있습니다.
 
@@ -68,28 +72,7 @@ M-DEENO는 데이터에 기반하여 여러분의 자산 가치를 극대화할 
 
 [💰 내 투자 자금에 맞는 최적의 대출 이자 계산해보기](https://tech.mdeeno.com/calculators/calc_interest/)
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -128,20 +111,16 @@ M-DEENO는 데이터에 기반하여 여러분의 자산 가치를 극대화할 
   }
 </script>
 
-
-
 ---
+
 > **※ 본 글은 M-DEENO 데이터 랩의 시장 분석 리포트입니다.**
 
-
-
 ---
+
 ### 🛑 평택 지제역세권 투자 타이밍 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
-
 
 📉 **대출 가능 여부 확인**
 👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 내 연봉으로 대출 한도 셀프 계산하기 (DSR 계산기)</strong></a>

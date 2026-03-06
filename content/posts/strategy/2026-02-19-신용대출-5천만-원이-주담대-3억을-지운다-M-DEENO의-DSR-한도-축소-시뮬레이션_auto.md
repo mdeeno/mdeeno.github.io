@@ -1,15 +1,19 @@
 ---
-title: "신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션"
+title: '신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션'
 date: 2026-02-19 11:34:22
 draft: false
-categories: ["자산 전략"]
-tags: ["DSR 계산법, 신용대출 주담대 한도, DSR 40% 시뮬레이션", "부동산투자", "데이터분석", "재건축리스크", "재테크", "M-DEENO"]
-description: "신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션 - M-DEENO 데이터 분석"
+categories: ['자산 전략']
+tags:
+  [
+    'DSR 계산법, 신용대출 주담대 한도, DSR 40% 시뮬레이션',
+    '부동산투자',
+    '데이터분석',
+    '재건축리스크',
+    '재테크',
+    'M-DEENO',
+  ]
+description: '신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션 - M-DEENO 데이터 분석'
 ---
-
-
-
-
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771554877.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
@@ -34,23 +38,23 @@ description: "신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO�
 
 M-DEENO 데이터 랩에서 서울 주요 단지를 대상으로, 연소득 7,000만 원 직장인이 신용대출 5,000만 원(금리 5%)을 보유했을 때의 주담대 한도 변화를 분석했습니다.
 
-*   **마포래미안푸르지오 (마포구 아현동)**
-    - 최근 시세 형성 범위: 17~19억대 형성
-    - 신용대출 없을 시 주담대 한도: 약 4.8억~5.2억 내외 추정
-    - 신용대출 5,000만 원 보유 시: 약 3.5억~3.8억으로 **약 1.3억 이상 축소**
-    - 국토교통부 실거래가 공개시스템 확인 권장
+- **마포래미안푸르지오 (마포구 아현동)**
+  - 최근 시세 형성 범위: 17~19억대 형성
+  - 신용대출 없을 시 주담대 한도: 약 4.8억~5.2억 내외 추정
+  - 신용대출 5,000만 원 보유 시: 약 3.5억~3.8억으로 **약 1.3억 이상 축소**
+  - 국토교통부 실거래가 공개시스템 확인 권장
 
-*   **헬리오시티 (송파구 가락동)**
-    - 최근 시세 형성 범위: 19~21억대 형성
-    - 신용대출 없을 시 주담대 한도: 소득 기준 최대치 도달 가능성 높음
-    - 신용대출 보유 시 영향: 연간 원리금 상환액 중 약 1,250만 원이 신용대출에 할당되어 주담대 실행 가능액 급감
-    - 국토교통부 실거래가 공개시스템 확인 권장
+- **헬리오시티 (송파구 가락동)**
+  - 최근 시세 형성 범위: 19~21억대 형성
+  - 신용대출 없을 시 주담대 한도: 소득 기준 최대치 도달 가능성 높음
+  - 신용대출 보유 시 영향: 연간 원리금 상환액 중 약 1,250만 원이 신용대출에 할당되어 주담대 실행 가능액 급감
+  - 국토교통부 실거래가 공개시스템 확인 권장
 
-*   **반포자이 (서초구 반포동)**
-    - 최근 시세 형성 범위: 34~37억대 형성
-    - 고가 주택의 경우 대출 규제와 DSR이 동시에 작동하여 신용대출의 영향력이 자금 조달 계획의 성패를 결정함
-    - 분석 결과, 신용대출 상환 여부에 따라 주담대 실행액이 **2억 원 이상의 차이**를 보일 수 있음
-    - 국토교통부 실거래가 공개시스템 확인 권장
+- **반포자이 (서초구 반포동)**
+  - 최근 시세 형성 범위: 34~37억대 형성
+  - 고가 주택의 경우 대출 규제와 DSR이 동시에 작동하여 신용대출의 영향력이 자금 조달 계획의 성패를 결정함
+  - 분석 결과, 신용대출 상환 여부에 따라 주담대 실행액이 **2억 원 이상의 차이**를 보일 수 있음
+  - 국토교통부 실거래가 공개시스템 확인 권장
 
 ### M-DEENO Prop-Logic™ 기반 전략적 제언
 
@@ -62,28 +66,7 @@ M-DEENO 데이터 랩에서 서울 주요 단지를 대상으로, 연소득 7,00
 
 [📉 M-DEENO DSR & 대출 한도 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_dsr/)
 
-
-
-
 {{< mdeeno_cpa type="loan" >}}
-
-
-
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; 
-          color: #333 !important; background-color: #ffffff !important; 
-         -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -122,19 +105,16 @@ M-DEENO 데이터 랩에서 서울 주요 단지를 대상으로, 연소득 7,00
   }
 </script>
 
-
-
 ---
+
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
 
-
-
 ---
+
 ### 🛑 DSR 계산법, 신용대출 주담대 한도, DSR 40% 시뮬레이션 투자, 고민되시나요?
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>

@@ -58,20 +58,6 @@ Safety Score = (평균 대지 지분 ÷ 현재 용적률) × 통합 재건축 �
 - 취득세와 보유세 부담을 고려하여 실거주 요건을 채울 수 있는 단지를 우선순위에 두십시오.
 - 특히 지자체별 배점 기준에서 '주민 동의율' 배점이 가장 높으므로, 단지 내 커뮤니티 활성화 정도를 반드시 확인해야 합니다.
 
-<div class="lab-lead-form" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 1px solid #dee2e6; margin: 30px 0;">
-    <h4 style="margin-top: 0; color: #2c3e50;">📩 상세 데이터 리포트 신청</h4>
-    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-        본 리포트의 <strong>시뮬레이션 상세 데이터셋(PDF)</strong>을 이메일로 보내드립니다.
-    </p>
-    <div style="display: flex; gap: 10px;">
-        <input type="email" id="blog-lead-email" placeholder="이메일 주소 입력" required 
-          style="flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; color: #333 !important; background-color: white !important; -webkit-text-fill-color: #333 !important;">
-        <button onclick="submitBlogLead()" id="blog-lead-btn" style="background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
-            무료 신청
-        </button>
-    </div>
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   async function submitBlogLead() {
@@ -125,7 +111,5 @@ Safety Score = (평균 대지 지분 ÷ 현재 용적률) × 통합 재건축 �
 <a href="https://new.land.naver.com/search?sk=1%EA%B8%B0%20%EC%8B%A0%EB%8F%84%EC%8B%9C%20%EC%84%A0%EB%8F%84%EC%A7%80%EA%B5%AC%2C%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%82%AC%EC%97%85%EC%84%B1%2C%20%EB%B6%84%EB%8B%B9%20%EC%9E%AC%EA%B1%B4%EC%B6%95%2C%20%EC%9D%BC%EC%82%B0%20%EC%9E%AC%EA%B1%B4%EC%B6%95%2C%20%ED%8F%89%EC%B4%8C%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%8B%9C%EC%84%B8" target="_blank">👉 <strong>네이버 부동산에서 '1기 신도시 선도지구, 재건축 사업성, 분당 재건축, 일산 재건축, 평촌 재건축 시세' 시세 확인하기</strong></a>
 
 <br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
-
-
 
 {{< mdeeno_cpa type="loan" >}}
