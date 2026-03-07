@@ -543,6 +543,15 @@
   max-width: 600px;
   margin: 0 auto 30px;
 }
+.hero-trust {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+.hero-trust p {
+  margin: 4px 0;
+}
 
 /* 2. 문제 제기 그리드 (카드 3개) */
 .problem-section {
