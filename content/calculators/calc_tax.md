@@ -6,6 +6,11 @@ summary: '집 살 때 필수! 1주택자부터 다주택자까지 취득세 자�
 
 ## 🧾 취득세, 미리 준비 안 하면 낭패!
 
+재건축 아파트를 매수할 때는 **취득세를 현금으로 즉시 납부**해야 합니다. 관리처분인가 이후 조합원 지위 양수도 시에도 취득세가 발생합니다.
+
+- 관련 분석: [재건축 분담금 폭탄, 내 아파트는 안전할까?](/posts/reconstruction/)
+- 관련 분석: [재건축 용적률의 비밀: 분담금 0원이 가능할까?](/posts/reconstruction/)
+
 부동산을 살 때는 집값만 있으면 안 됩니다. 집값의 **1.1% ~ 12%**에 달하는 취득세를 현금으로 준비해야 등기를 칠 수 있습니다.
 
 - **1주택자:** 1% ~ 3% (비교적 저렴)
@@ -137,3 +142,12 @@ function calcTax() {
   document.getElementById('taxResult').style.display = 'block';
 }
 </script>
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">취득세 외에도 분담금·이주비 부담이 걱정되시나요?</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 정밀 리포트는 재건축 전 과정의 비용을 통합 시뮬레이션합니다.</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    재건축 비용 통합 분석 →
+  </a>
+</div>

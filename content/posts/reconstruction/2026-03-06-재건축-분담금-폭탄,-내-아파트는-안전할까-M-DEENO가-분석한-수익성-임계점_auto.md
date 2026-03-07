@@ -159,27 +159,6 @@ M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 최근 서울 주요 
 
 
 
----
-### 🛑 재건축 분담금, 추가분담금, 비례율, 공사비 갈등, 재건축 수익성 투자, 고민되시나요?
-
-부동산은 **타이밍**입니다.
-내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
-
-<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
-    <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">👇 이 매물, 내 조건으로 계산해보기</p>
-    <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank" style="display: inline-block; background-color: #00C853; color: white; padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        🧮 <strong>📉 DSR & 대출 한도 계산기 돌려보기</strong>
-    </a>
-</div>
-
-📉 **대출 가능 여부 확인**
-👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 내 연봉으로 대출 한도 셀프 계산하기 (DSR 계산기)</strong></a>
-
-🚀 **실시간 호가 확인**
-<a href="https://new.land.naver.com/search?sk=%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EB%B6%84%EB%8B%B4%EA%B8%88%2C%20%EC%B6%94%EA%B0%80%EB%B6%84%EB%8B%B4%EA%B8%88%2C%20%EB%B9%84%EB%A1%80%EC%9C%A8%2C%20%EA%B3%B5%EC%82%AC%EB%B9%84%20%EA%B0%88%EB%93%B1%2C%20%EC%9E%AC%EA%B1%B4%EC%B6%95%20%EC%88%98%EC%9D%B5%EC%84%B1" target="_blank">👉 <strong>네이버 부동산에서 '재건축 분담금, 추가분담금, 비례율, 공사비 갈등, 재건축 수익성' 시세 확인하기</strong></a>
-
-<br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
 
 
 <div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">

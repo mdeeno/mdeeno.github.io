@@ -6,6 +6,11 @@ summary: '나는 매년 얼마를 내야 할까? 공시가격 기준 보유세 �
 
 ## 😰 가만히 있어도 나가는 돈, 보유세
 
+재건축을 기다리는 **대기 기간(착공~준공) 동안에도 보유세는 계속 납부**해야 합니다. 사업 기간이 10~15년으로 길어질수록 보유세 누적 부담이 분담금만큼 커질 수 있습니다.
+
+- 관련 분석: [내 아파트 새집 되는 데 15년? 재건축 기간 단축의 핵심 변수](/posts/reconstruction/)
+- 관련 분석: [재건축 이주비 대출: 억 단위 이자 부담 피하는 방법](/posts/reconstruction/)
+
 집을 가지고만 있어도 매년 6월 1일 기준으로 세금이 부과됩니다.
 
 1.  **재산세:** 모든 주택 소유자가 냅니다. (7월, 9월 반반 납부)
@@ -127,3 +132,12 @@ function calcHold() {
   document.getElementById('holdResult').style.display = 'block';
 }
 </script>
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">재건축 대기 기간의 보유세, 분담금과 함께 계산해보셨나요?</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 정밀 리포트는 보유세·이주비·분담금을 통합해 실제 수익성을 계산합니다.</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 단지 수익성 통합 분析 →
+  </a>
+</div>

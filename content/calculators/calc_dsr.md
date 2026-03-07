@@ -4,7 +4,19 @@ date: 2026-01-01
 summary: '내 연봉으로 얼마까지 대출이 나올까? DSR 40% 규제 완벽 분석'
 ---
 
-## 🧐 DSR이 도대체 뭔가요?
+## 재건축 이주비 대출, 내가 받을 수 있을까?
+
+재건축 조합원이 가장 먼저 확인해야 할 것이 **이주비 대출 가능 여부**입니다.
+DSR 한도가 꽉 차면 이주비 대출이 막히고, 이주가 불가능해져 분담금 전략 전체가 무너집니다.
+
+아래 계산기로 현재 소득 기준 대출 한도를 먼저 확인하세요.
+
+- 관련 분석: [재건축 이주비 대출, 억 단위 이자 부담 피하는 방법](/posts/reconstruction/)
+- 관련 분석: [재건축 분담금 폭탄, 내 아파트는 안전할까?](/posts/reconstruction/)
+
+---
+
+## DSR이 도대체 뭔가요?
 
 **DSR(총부채원리금상환비율)**은 쉽게 말해 **"네가 버는 돈 중에서 빚 갚는 데 얼마를 쓰니?"**라는 비율입니다.
 
@@ -112,6 +124,15 @@ div[id$="Result"], .result-area {
     <p>예상 DSR: <strong id="dsrValue" style="color: #d6336c; font-size: 24px;">0</strong> %</p>
     <p id="dsrComment"></p>
   </div>
+</div>
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">DSR 계산 후 다음 단계가 필요하신가요?</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 정밀 리포트는 내 단지의 이주비 한도·공사비·분담금을 종합 시뮬레이션합니다.</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    재건축 리스크 정밀 분析 →
+  </a>
 </div>
 
 <script>

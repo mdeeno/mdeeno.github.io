@@ -4,7 +4,19 @@ date: 2026-01-01
 summary: "매달 얼마씩 갚아야 할까? 원리금 균등 vs 원금 균등 비교"
 ---
 
-## 🏦 이자 갚는 방식, 뭐가 다를까?
+## 재건축 이주비 후불이자, 얼마나 쌓일까?
+
+재건축 이주 단계에서 조합원은 **이주비 대출 이자를 입주 시점까지 후불로 납부**합니다.
+사업 기간이 길어질수록 이자가 누적되어 최종 분담금에 수천만 원이 추가될 수 있습니다.
+
+아래 계산기로 이주비 대출의 총 이자 부담을 미리 시뮬레이션해 보세요.
+
+- 관련 분석: [재건축 이주비 대출, 억 단위 이자 부담 피하는 방법](/posts/reconstruction/)
+- 관련 분석: [내 아파트 새집 되는 데 15년? 재건축 기간 단축의 핵심 변수](/posts/reconstruction/)
+
+---
+
+## 이자 갚는 방식, 뭐가 다를까?
 대출을 받을 때 가장 고민되는 것이 **"어떻게 갚느냐"**입니다.
 
 1.  **원리금 균등 상환 (가장 추천 👍):**
@@ -104,6 +116,15 @@ div[id$="Result"], .result-area {
     <p>총 이자액: <span id="intTotal">0</span> 만원</p>
     <p style="font-size: 14px; color: #666;">(원리금 균등 상환 기준)</p>
   </div>
+</div>
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">이자 계산 결과가 예상보다 많나요?</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 정밀 리포트는 이주비 이자·공사비 상승·분담금을 통합 시뮬레이션합니다.</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    재건축 리스크 정밀 분析 →
+  </a>
 </div>
 
 <script>

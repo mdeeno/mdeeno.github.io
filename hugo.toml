@@ -6,9 +6,13 @@ theme = 'PaperMod'
 enableRobotsTXT = true
 canonifyURLs = true
 
+# Google Analytics 4 — GA4 측정 ID를 아래에 입력하세요 (예: G-XXXXXXXXXX)
+[services.googleAnalytics]
+  ID = "G-XXXXXXXXXX"
+
 [params]
-  description = "M-DEENO: 데이터로 증명하는 부동산 투자 전략 & Prop-Logic 분석 엔진" 
-  author = "M-DEENO Corp." 
+  description = "재건축 분담금, 비례율, 용적률, 이주비 — M-DEENO가 데이터로 분석하는 정비사업 리스크 가이드"
+  author = "M-DEENO Corp."
   env = "production"
 
   defaultTheme = "dark"
@@ -20,15 +24,14 @@ canonifyURLs = true
   ShowCodeCopyButtons = true
 
   naver_verify = "코드값"
-  
+
   # 메인 화면 모드 (랜딩 페이지 브랜딩)
   [params.homeInfoParams]
-    Title = "🚀 M-DEENO | Prop-Logic Lab"
+    Title = "M-DEENO | 재건축·재개발 데이터 분석"
     Content = """
-    **데이터로 증명하는 부동산의 미래 가치**
-    <br>
-    자체 개발한 **Prop-Logic™** 엔진을 통해
-    재건축·재개발의 사업성을 정밀 시뮬레이션합니다.
+    재건축 분담금이 얼마나 나올지 아직 모르신다면,<br>
+    지금 바로 **<a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer">M-DEENO 무료 분석</a>** 을 시작하세요.<br><br>
+    Prop-Logic™ 엔진이 공사비 상승·비례율 변동·분담금 리스크를 시뮬레이션합니다.
     """
   
   mainSections = ["posts"]
