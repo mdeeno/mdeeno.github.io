@@ -1,18 +1,16 @@
 ---
-title: '분당 시범단지 선도지구 발표 임박, R-Score로 분석한 환급금 1억 유망 단지 TOP 3'
+title: 분당 시범단지 선도지구 발표 임박, R-Score로 분석한 환급금 1억 유망 단지 TOP 3
 date: 2026-02-25 10:24:44
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '분당 선도지구, 시범단지 재건축, 분당 환급금, R-Score, 분당 아파트 시세',
-    '부동산투자',
-    '부동산SaaS',
-    '분담금예측',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '분당 시범단지 선도지구 발표 임박, R-Score로 분석한 환급금 1억 유망 단지 TOP 3 - M-DEENO 데이터 분석'
+- 분당 선도지구
+- 시범단지 재건축
+- 분당 환급금
+- R-Score
+- 분당 아파트 시세
+description: 분당 시범단지 선도지구 발표 임박, R-Score로 분석한 환급금 1억 유망 단지 TOP 3 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

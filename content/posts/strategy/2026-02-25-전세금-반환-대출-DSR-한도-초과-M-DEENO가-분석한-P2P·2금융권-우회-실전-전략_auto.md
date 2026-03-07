@@ -1,18 +1,16 @@
 ---
-title: '전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P·2금융권 우회 실전 전략'
+title: 전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P·2금융권 우회 실전 전략
 date: 2026-02-25 09:50:15
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '전세보증금 반환 대출 DSR 안보는곳',
-    '부동산투자',
-    '프롭테크',
-    '데이터분석',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P·2금융권 우회 실전 전략 - M-DEENO 데이터 분석'
+- 전세보증금 반환 대출 DSR 안보는곳
+- 부동산투자
+- 프롭테크
+- 데이터분석
+- 재테크
+description: 전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P·2금융권 우회 실전 전략 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

@@ -1,18 +1,17 @@
 ---
-title: 'LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까? M-DEENO의 정밀 사업성 분석'
+title: LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까? M-DEENO의 정밀 사업성 분석
 date: 2026-02-16 23:35:33
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '방화 뉴타운 재개발, LG사이언스파크 배후수요, 방화5구역 사업성, 마곡지구 아파트 시세',
-    '부동산투자',
-    '재건축리스크',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: 'LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까? M-DEENO의 정밀 사업성 분석 - M-DEENO 데이터 분석'
+- 방화 뉴타운 재개발
+- LG사이언스파크 배후수요
+- 방화5구역 사업성
+- 마곡지구 아파트 시세
+- 부동산투자
+description: LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까? M-DEENO의 정밀 사업성 분석 - M-DEENO 데이터
+  분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

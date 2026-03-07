@@ -2,17 +2,16 @@
 title: '수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까? M-DEENO 데이터 랩 정밀 분석'
 date: 2026-02-16 19:28:50
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '부담부 증여 양도세 증여세 비교',
-    '부동산투자',
-    '프롭테크',
-    '데이터분석',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까? M-DEENO 데이터 랩 정밀 분석 - M-DEENO 데이터 분석'
+- 부담부 증여 양도세 증여세 비교
+- 부동산투자
+- 프롭테크
+- 데이터분석
+- 재테크
+description: '수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까? M-DEENO 데이터 랩 정밀 분석 - M-DEENO 데이터
+  분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

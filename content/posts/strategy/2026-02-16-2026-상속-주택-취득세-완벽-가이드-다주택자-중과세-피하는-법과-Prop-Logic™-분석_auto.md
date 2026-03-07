@@ -2,17 +2,16 @@
 title: '2026 상속 주택 취득세 완벽 가이드: 다주택자 중과세 피하는 법과 Prop-Logic™ 분석'
 date: 2026-02-16 19:28:13
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '상속주택 취득세율, 다주택자 상속 주택수, 상속세 감면 혜택, 2026 부동산 세금',
-    '부동산투자',
-    '분담금예측',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '2026 상속 주택 취득세 완벽 가이드: 다주택자 중과세 피하는 법과 Prop-Logic™ 분석 - M-DEENO 데이터 분석'
+- 상속주택 취득세율
+- 다주택자 상속 주택수
+- 상속세 감면 혜택
+- 2026 부동산 세금
+- 부동산투자
+description: '2026 상속 주택 취득세 완벽 가이드: 다주택자 중과세 피하는 법과 Prop-Logic™ 분석 - M-DEENO 데이터
+  분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

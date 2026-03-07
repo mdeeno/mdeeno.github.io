@@ -1,18 +1,17 @@
 ---
-title: '삼성전자 평택 캠퍼스 증설과 지제역세권 콤팩트시티, 지금이 진입 적기인가? M-DEENO 데이터 분석 리포트'
+title: 삼성전자 평택 캠퍼스 증설과 지제역세권 콤팩트시티, 지금이 진입 적기인가? M-DEENO 데이터 분석 리포트
 date: 2026-02-16 23:36:14
 draft: false
-categories: ['시장 분석']
+categories:
+- 시장 분석
 tags:
-  [
-    '평택 지제역세권 투자 타이밍',
-    '부동산투자',
-    '재건축리스크',
-    '데이터분석',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '삼성전자 평택 캠퍼스 증설과 지제역세권 콤팩트시티, 지금이 진입 적기인가? M-DEENO 데이터 분석 리포트 - M-DEENO 데이터 분석'
+- 평택 지제역세권 투자 타이밍
+- 부동산투자
+- 재건축리스크
+- 데이터분석
+- 재테크
+description: 삼성전자 평택 캠퍼스 증설과 지제역세권 콤팩트시티, 지금이 진입 적기인가? M-DEENO 데이터 분석 리포트 - M-DEENO
+  데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

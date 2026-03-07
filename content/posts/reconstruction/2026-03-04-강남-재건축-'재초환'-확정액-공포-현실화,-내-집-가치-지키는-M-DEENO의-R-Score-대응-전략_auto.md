@@ -1,18 +1,17 @@
 ---
-title: '강남 재건축 재초환 확정액 공포 현실화, 내 집 가치 지키는 M-DEENO의 R-Score 대응 전략'
+title: 강남 재건축 재초환 확정액 공포 현실화, 내 집 가치 지키는 M-DEENO의 R-Score 대응 전략
 date: 2026-03-04 10:16:04
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '강남 재건축 초과이익환수제 시세 전망 분담금',
-    '부동산투자',
-    '재건축리스크',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '강남 재건축 재초환 확정액 공포 현실화, 내 집 가치 지키는 M-DEENO의 R-Score 대응 전략 - M-DEENO 데이터 분석'
+- 강남 재건축 초과이익환수제 시세 전망 분담금
+- 부동산투자
+- 재건축리스크
+- 부동산SaaS
+- 재테크
+description: 강남 재건축 재초환 확정액 공포 현실화, 내 집 가치 지키는 M-DEENO의 R-Score 대응 전략 - M-DEENO 데이터
+  분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

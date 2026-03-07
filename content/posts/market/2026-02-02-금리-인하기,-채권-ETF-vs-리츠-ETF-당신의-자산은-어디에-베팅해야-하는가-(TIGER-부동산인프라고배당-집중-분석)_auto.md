@@ -2,15 +2,17 @@
 title: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)'
 date: 2026-02-02 20:37:31
 draft: false
-categories: ['시장 분석']
+categories:
+- 시장 분석
 tags:
-  [
-    '금리 인하기 투자 전략, 채권 ETF, 리츠 ETF, TIGER 부동산인프라고배당',
-    '부동산투자',
-    '재테크',
-  ]
-description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)'
-image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770118671.png'
+- 금리 인하기 투자 전략
+- 채권 ETF
+- 리츠 ETF
+- TIGER 부동산인프라고배당
+- 부동산투자
+description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중
+  분석)'
+image: https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770118671.png
 ---
 
 <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770118671.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">

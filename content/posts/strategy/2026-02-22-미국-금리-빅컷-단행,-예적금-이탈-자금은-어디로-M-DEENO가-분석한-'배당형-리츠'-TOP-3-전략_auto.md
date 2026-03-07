@@ -1,18 +1,17 @@
 ---
-title: '미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? M-DEENO가 분석한 배당형 리츠 TOP 3 전략'
+title: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? M-DEENO가 분석한 배당형 리츠 TOP 3 전략
 date: 2026-02-22 21:44:38
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '금리 인하 리츠 전망, 배당형 리츠 추천, 부동산 자금 흐름, 미국 빅컷 수혜주',
-    '부동산투자',
-    '재건축리스크',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? M-DEENO가 분석한 배당형 리츠 TOP 3 전략 - M-DEENO 데이터 분석'
+- 금리 인하 리츠 전망
+- 배당형 리츠 추천
+- 부동산 자금 흐름
+- 미국 빅컷 수혜주
+- 부동산투자
+description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? M-DEENO가 분석한 배당형 리츠 TOP 3 전략 - M-DEENO 데이터
+  분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

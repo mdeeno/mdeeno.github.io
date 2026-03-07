@@ -1,18 +1,16 @@
 ---
-title: '분당 시범단지 선도지구 탈락? 우리 아파트 분담금 3억 폭탄 막아낼 R-Score 긴급 점검'
+title: 분당 시범단지 선도지구 탈락? 우리 아파트 분담금 3억 폭탄 막아낼 R-Score 긴급 점검
 date: 2026-02-23 20:26:04
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '분당 재건축 선도지구 분담금',
-    '부동산투자',
-    '분담금예측',
-    '데이터분석',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '분당 시범단지 선도지구 탈락? 우리 아파트 분담금 3억 폭탄 막아낼 R-Score 긴급 점검 - M-DEENO 데이터 분석'
+- 분당 재건축 선도지구 분담금
+- 부동산투자
+- 분담금예측
+- 데이터분석
+- 재테크
+description: 분당 시범단지 선도지구 탈락? 우리 아파트 분담금 3억 폭탄 막아낼 R-Score 긴급 점검 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

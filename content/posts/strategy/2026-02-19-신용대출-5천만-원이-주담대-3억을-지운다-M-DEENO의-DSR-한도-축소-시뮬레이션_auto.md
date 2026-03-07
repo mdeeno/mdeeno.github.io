@@ -1,18 +1,16 @@
 ---
-title: '신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션'
+title: 신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션
 date: 2026-02-19 11:34:22
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    'DSR 계산법, 신용대출 주담대 한도, DSR 40% 시뮬레이션',
-    '부동산투자',
-    '데이터분석',
-    '재건축리스크',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션 - M-DEENO 데이터 분석'
+- DSR 계산법
+- 신용대출 주담대 한도
+- DSR 40% 시뮬레이션
+- 부동산투자
+- 데이터분석
+description: 신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

@@ -2,17 +2,16 @@
 title: '9억 이하 아파트 갈아타기, 신생아 특례대출 개편이 만든 역대급 기회: M-DEENO 데이터 분석 보고서'
 date: 2026-02-25 10:20:15
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '신생아 특례대출 조건 완화, 9억 이하 아파트 갈아타기, 주택담보대출 금리 인하, 내 집 마련 전략',
-    '부동산투자',
-    '프롭테크',
-    '재건축리스크',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '9억 이하 아파트 갈아타기, 신생아 특례대출 개편이 만든 역대급 기회: M-DEENO 데이터 분석 보고서 - M-DEENO 데이터 분석'
+- 신생아 특례대출 조건 완화
+- 9억 이하 아파트 갈아타기
+- 주택담보대출 금리 인하
+- 내 집 마련 전략
+- 부동산투자
+description: '9억 이하 아파트 갈아타기, 신생아 특례대출 개편이 만든 역대급 기회: M-DEENO 데이터 분석 보고서 - M-DEENO
+  데이터 분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

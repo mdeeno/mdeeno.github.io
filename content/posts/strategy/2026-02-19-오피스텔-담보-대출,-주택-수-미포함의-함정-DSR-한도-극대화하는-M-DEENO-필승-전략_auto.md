@@ -1,18 +1,16 @@
 ---
-title: '오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는 M-DEENO 필승 전략'
+title: 오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는 M-DEENO 필승 전략
 date: 2026-02-19 11:37:32
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '오피스텔 담보 대출 금리 비교',
-    '부동산투자',
-    '데이터분석',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는 M-DEENO 필승 전략 - M-DEENO 데이터 분석'
+- 오피스텔 담보 대출 금리 비교
+- 부동산투자
+- 데이터분석
+- 부동산SaaS
+- 재테크
+description: 오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는 M-DEENO 필승 전략 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

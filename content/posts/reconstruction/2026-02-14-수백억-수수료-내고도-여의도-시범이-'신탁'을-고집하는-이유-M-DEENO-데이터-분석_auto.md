@@ -2,17 +2,15 @@
 title: '수백억 수수료 내고도 여의도 시범이 신탁을 고집하는 이유: M-DEENO 데이터 분석'
 date: 2026-02-14 20:54:47
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '여의도 시범아파트 재건축, 신탁방식 재건축 수수료, 여의도 재건축 시세, 한국자산신탁 재건축',
-    '부동산투자',
-    '프롭테크',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: "수백억 수수료 내고도 여의도 시범이 '신탁'을 고집하는 이유: M-DEENO 데이터 분석 - M-DEENO 데이터 분석"
+- 여의도 시범아파트 재건축
+- 신탁방식 재건축 수수료
+- 여의도 재건축 시세
+- 한국자산신탁 재건축
+- 부동산투자
+description: '수백억 수수료 내고도 여의도 시범이 ''신탁''을 고집하는 이유: M-DEENO 데이터 분석 - M-DEENO 데이터 분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

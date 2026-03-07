@@ -1,16 +1,17 @@
 ---
-title: "분양권 양도세 66% 폭탄 피하기: 'Prop-Logic' 점수가 낮은 단지의 매도 타이밍"
+title: '분양권 양도세 66% 폭탄 피하기: ''Prop-Logic'' 점수가 낮은 단지의 매도 타이밍'
 date: 2026-02-12 17:49:06
 draft: false
-categories: ['세금/정책']
+categories:
+- 세금/정책
 tags:
-  [
-    '분양권 양도소득세, 분양권 매도 타이밍, 양도세 66%, 프롭로직 점수, 실거주 의무',
-    '부동산투자',
-    '재테크',
-  ]
-description: "분양권 양도세 66% 폭탄 피하기: 'Prop-Logic' 점수가 낮은 단지의 매도 타이밍"
-image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png'
+- 분양권 양도소득세
+- 분양권 매도 타이밍
+- 양도세 66%
+- 프롭로직 점수
+- 실거주 의무
+description: '분양권 양도세 66% 폭탄 피하기: ''Prop-Logic'' 점수가 낮은 단지의 매도 타이밍'
+image: https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png
 ---
 
 ![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png)

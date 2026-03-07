@@ -1,18 +1,16 @@
 ---
-title: '대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법'
+title: 대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법
 date: 2026-03-04 10:20:25
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '대구 재건축, 범어동 아파트 시세, 추가 분담금, 수성구 부동산 전망, Prop-Logic',
-    '부동산투자',
-    '부동산SaaS',
-    '프롭테크',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법 - M-DEENO 데이터 분석'
+- 대구 재건축
+- 범어동 아파트 시세
+- 추가 분담금
+- 수성구 부동산 전망
+- Prop-Logic
+description: 대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

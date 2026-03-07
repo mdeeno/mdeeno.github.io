@@ -1,18 +1,16 @@
 ---
-title: '3%대 금리 진입, 고정 vs 변동 ‘유불리’의 임계점은? M-DEENO 데이터 랩 분석'
+title: 3%대 금리 진입, 고정 vs 변동 ‘유불리’의 임계점은? M-DEENO 데이터 랩 분석
 date: 2026-02-17 12:15:42
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '주택담보대출 금리 비교, 고정금리 변동금리 차이, 중도상환수수료 면제, 3%대 주담대 전략',
-    '부동산투자',
-    '프롭테크',
-    '분담금예측',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '3%대 금리 진입, 고정 vs 변동 ‘유불리’의 임계점은? M-DEENO 데이터 랩 분석 - M-DEENO 데이터 분석'
+- 주택담보대출 금리 비교
+- 고정금리 변동금리 차이
+- 중도상환수수료 면제
+- 3%대 주담대 전략
+- 부동산투자
+description: 3%대 금리 진입, 고정 vs 변동 ‘유불리’의 임계점은? M-DEENO 데이터 랩 분석 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

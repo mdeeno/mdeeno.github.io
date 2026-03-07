@@ -2,17 +2,16 @@
 title: '법인 파산의 늪, 대표이사 가수금 회수와 부동산 공매의 모든 것: M-DEENO 데이터 랩 정밀 분석'
 date: 2026-02-19 11:42:37
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '법인파산 가수금 처리, 법인 부동산 공매, 대표이사 가수금 반환, 법인 파산 절차',
-    '부동산투자',
-    '분담금예측',
-    '데이터분석',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '법인 파산의 늪, 대표이사 가수금 회수와 부동산 공매의 모든 것: M-DEENO 데이터 랩 정밀 분석 - M-DEENO 데이터 분석'
+- 법인파산 가수금 처리
+- 법인 부동산 공매
+- 대표이사 가수금 반환
+- 법인 파산 절차
+- 부동산투자
+description: '법인 파산의 늪, 대표이사 가수금 회수와 부동산 공매의 모든 것: M-DEENO 데이터 랩 정밀 분석 - M-DEENO 데이터
+  분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

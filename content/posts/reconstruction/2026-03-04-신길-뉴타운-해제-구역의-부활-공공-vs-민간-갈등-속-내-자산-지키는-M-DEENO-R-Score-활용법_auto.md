@@ -2,17 +2,16 @@
 title: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법'
 date: 2026-03-04 10:22:43
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '신길뉴타운, 공공재개발, 민간재개발, 신길2구역, 신길15구역, 신길래미안에스티움, 보라매SK뷰, 시세, 분담금, R-Score',
-    '부동산투자',
-    '분담금예측',
-    '프롭테크',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법 - M-DEENO 데이터 분석'
+- 신길뉴타운
+- 공공재개발
+- 민간재개발
+- 신길2구역
+- 신길15구역
+description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법 - M-DEENO
+  데이터 분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

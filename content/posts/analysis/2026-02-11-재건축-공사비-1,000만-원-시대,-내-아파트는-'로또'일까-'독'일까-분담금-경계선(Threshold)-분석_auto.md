@@ -1,16 +1,17 @@
 ---
-title: "재건축 공사비 1,000만 원 시대, 내 아파트는 '로또'일까 '독'일까? 분담금 경계선(Threshold) 분석"
+title: 재건축 공사비 1,000만 원 시대, 내 아파트는 '로또'일까 '독'일까? 분담금 경계선(Threshold) 분석
 date: 2026-02-11 22:49:14
 draft: false
-categories: ['재건축/재개발']
+categories:
+- 재건축/재개발
 tags:
-  [
-    '재건축 추가 분담금, 1기 신도시 선도지구, 공사비 1000만원, 분당 재건축 사업성, 재건축 수익성 분석',
-    '부동산투자',
-    '재테크',
-  ]
-description: "재건축 공사비 1,000만 원 시대, 내 아파트는 '로또'일까 '독'일까? 분담금 경계선(Threshold) 분석"
-image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904170.png'
+- 재건축 추가 분담금
+- 1기 신도시 선도지구
+- 공사비 1000만원
+- 분당 재건축 사업성
+- 재건축 수익성 분석
+description: 재건축 공사비 1,000만 원 시대, 내 아파트는 '로또'일까 '독'일까? 분담금 경계선(Threshold) 분석
+image: https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904170.png
 ---
 
 ![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904170.png)

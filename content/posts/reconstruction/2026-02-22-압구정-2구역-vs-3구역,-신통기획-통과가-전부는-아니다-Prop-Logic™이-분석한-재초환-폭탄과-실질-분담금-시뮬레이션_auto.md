@@ -1,18 +1,17 @@
 ---
-title: '압구정 2구역 vs 3구역, 신통기획 통과가 전부는 아니다? Prop-Logic™이 분석한 재초환 폭탄과 실질 분담금 시뮬레이션'
+title: 압구정 2구역 vs 3구역, 신통기획 통과가 전부는 아니다? Prop-Logic™이 분석한 재초환 폭탄과 실질 분담금 시뮬레이션
 date: 2026-02-22 19:08:10
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '압구정 재건축, 신속통합기획, 초과이익환수제, 압구정 3구역 분담금, 압구정 현대아파트 시세',
-    '부동산투자',
-    '데이터분석',
-    '재건축리스크',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '압구정 2구역 vs 3구역, 신통기획 통과가 전부는 아니다? Prop-Logic™이 분석한 재초환 폭탄과 실질 분담금 시뮬레이션 - M-DEENO 데이터 분석'
+- 압구정 재건축
+- 신속통합기획
+- 초과이익환수제
+- 압구정 3구역 분담금
+- 압구정 현대아파트 시세
+description: 압구정 2구역 vs 3구역, 신통기획 통과가 전부는 아니다? Prop-Logic™이 분석한 재초환 폭탄과 실질 분담금 시뮬레이션
+  - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

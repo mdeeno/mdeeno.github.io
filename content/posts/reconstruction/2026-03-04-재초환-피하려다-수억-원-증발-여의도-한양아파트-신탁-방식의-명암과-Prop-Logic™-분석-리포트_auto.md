@@ -1,18 +1,17 @@
 ---
-title: '재초환 피하려다 수억 원 증발? 여의도 한양아파트 신탁 방식의 명암과 Prop-Logic™ 분석 리포트'
+title: 재초환 피하려다 수억 원 증발? 여의도 한양아파트 신탁 방식의 명암과 Prop-Logic™ 분석 리포트
 date: 2026-03-04 10:28:21
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '여의도 한양아파트 재건축, 신탁 방식 재건축, 재건축 초과이익 환수제, 여의도 재건축 시세, 분담금 계산',
-    '부동산투자',
-    '데이터분석',
-    '프롭테크',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '재초환 피하려다 수억 원 증발? 여의도 한양아파트 신탁 방식의 명암과 Prop-Logic™ 분석 리포트 - M-DEENO 데이터 분석'
+- 여의도 한양아파트 재건축
+- 신탁 방식 재건축
+- 재건축 초과이익 환수제
+- 여의도 재건축 시세
+- 분담금 계산
+description: 재초환 피하려다 수억 원 증발? 여의도 한양아파트 신탁 방식의 명암과 Prop-Logic™ 분석 리포트 - M-DEENO 데이터
+  분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

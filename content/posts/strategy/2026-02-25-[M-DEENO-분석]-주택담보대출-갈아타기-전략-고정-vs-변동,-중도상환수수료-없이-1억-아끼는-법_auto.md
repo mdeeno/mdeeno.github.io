@@ -2,17 +2,16 @@
 title: '[M-DEENO 분석] 주택담보대출 갈아타기 전략: 고정 vs 변동, 중도상환수수료 없이 1억 아끼는 법'
 date: 2026-02-25 09:48:56
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '주택담보대출 갈아타기, 대환대출 금리비교, 중도상환수수료 면제, 고정금리 변동금리 비교, DSR 계산',
-    '부동산투자',
-    '데이터분석',
-    '프롭테크',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '[M-DEENO 분석] 주택담보대출 갈아타기 전략: 고정 vs 변동, 중도상환수수료 없이 1억 아끼는 법 - M-DEENO 데이터 분석'
+- 주택담보대출 갈아타기
+- 대환대출 금리비교
+- 중도상환수수료 면제
+- 고정금리 변동금리 비교
+- DSR 계산
+description: '[M-DEENO 분석] 주택담보대출 갈아타기 전략: 고정 vs 변동, 중도상환수수료 없이 1억 아끼는 법 - M-DEENO
+  데이터 분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

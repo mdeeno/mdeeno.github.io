@@ -1,18 +1,16 @@
 ---
-title: '강남 재초환 억대 고지서 현실화, 내 집 가치 지키는 M-DEENO의 3단계 방어 전략'
+title: 강남 재초환 억대 고지서 현실화, 내 집 가치 지키는 M-DEENO의 3단계 방어 전략
 date: 2026-02-25 09:24:09
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '재건축 초과이익환수제, 강남 재건축 시세, 재초환 분담금, 반포 현대 재건축, 잠실 진주 아파트, 재건축 절세',
-    '부동산투자',
-    '프롭테크',
-    '데이터분석',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '강남 재초환 억대 고지서 현실화, 내 집 가치 지키는 M-DEENO의 3단계 방어 전략 - M-DEENO 데이터 분석'
+- 재건축 초과이익환수제
+- 강남 재건축 시세
+- 재초환 분담금
+- 반포 현대 재건축
+- 잠실 진주 아파트
+description: 강남 재초환 억대 고지서 현실화, 내 집 가치 지키는 M-DEENO의 3단계 방어 전략 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

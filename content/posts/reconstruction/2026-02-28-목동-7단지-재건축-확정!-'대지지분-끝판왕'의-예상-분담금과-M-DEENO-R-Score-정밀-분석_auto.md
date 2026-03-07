@@ -1,18 +1,17 @@
 ---
-title: '목동 7단지 재건축 확정! 대지지분 끝판왕의 예상 분담금과 M-DEENO R-Score 정밀 분석'
+title: 목동 7단지 재건축 확정! 대지지분 끝판왕의 예상 분담금과 M-DEENO R-Score 정밀 분석
 date: 2026-02-28 19:57:34
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '목동 7단지 재건축 시세 분담금',
-    '부동산투자',
-    '프롭테크',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '목동 7단지 재건축 확정! 대지지분 끝판왕의 예상 분담금과 M-DEENO R-Score 정밀 분석 - M-DEENO 데이터 분석'
+- 목동 7단지 재건축 시세 분담금
+- 부동산투자
+- 프롭테크
+- 부동산SaaS
+- 재테크
+description: 목동 7단지 재건축 확정! 대지지분 끝판왕의 예상 분담금과 M-DEENO R-Score 정밀 분석 - M-DEENO 데이터
+  분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

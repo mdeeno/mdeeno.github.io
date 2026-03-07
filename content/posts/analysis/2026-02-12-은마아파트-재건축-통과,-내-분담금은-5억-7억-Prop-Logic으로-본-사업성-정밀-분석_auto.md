@@ -1,16 +1,17 @@
 ---
-title: '은마아파트 재건축 통과, 내 분담금은 5억? 7억? Prop-Logic으로 본 사업성 정밀 분석'
+title: 은마아파트 재건축 통과, 내 분담금은 5억? 7억? Prop-Logic으로 본 사업성 정밀 분석
 date: 2026-02-12 19:46:31
 draft: false
-categories: ['재건축/재개발']
+categories:
+- 재건축/재개발
 tags:
-  [
-    '은마아파트 재건축, 은마아파트 분담금, 대치동 부동산 전망, 재건축 사업성 분석',
-    '부동산투자',
-    '재테크',
-  ]
-description: '은마아파트 재건축 통과, 내 분담금은 5억? 7억? Prop-Logic으로 본 사업성 정밀 분석'
-image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770979615.png'
+- 은마아파트 재건축
+- 은마아파트 분담금
+- 대치동 부동산 전망
+- 재건축 사업성 분석
+- 부동산투자
+description: 은마아파트 재건축 통과, 내 분담금은 5억? 7억? Prop-Logic으로 본 사업성 정밀 분석
+image: https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770979615.png
 ---
 
 ![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770979615.png)

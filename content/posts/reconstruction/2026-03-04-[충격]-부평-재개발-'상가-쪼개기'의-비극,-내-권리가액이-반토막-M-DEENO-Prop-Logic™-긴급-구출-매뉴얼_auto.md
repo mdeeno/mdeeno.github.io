@@ -2,17 +2,16 @@
 title: '[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼'
 date: 2026-03-04 10:19:22
 draft: false
-categories: ['정비 사업']
+categories:
+- 정비 사업
 tags:
-  [
-    '부평 재개발 상가 쪼개기, 권리가액 산정, 부평 아파트 시세, 재개발 추가분담금, 입주권 리스크',
-    '부동산투자',
-    '데이터분석',
-    '재건축리스크',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼 - M-DEENO 데이터 분석'
+- 부평 재개발 상가 쪼개기
+- 권리가액 산정
+- 부평 아파트 시세
+- 재개발 추가분담금
+- 입주권 리스크
+description: '[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO Prop-Logic™ 긴급 구출 매뉴얼 -
+  M-DEENO 데이터 분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

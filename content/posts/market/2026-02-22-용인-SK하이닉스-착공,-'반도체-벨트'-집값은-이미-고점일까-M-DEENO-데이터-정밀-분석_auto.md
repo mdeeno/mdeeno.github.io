@@ -1,18 +1,16 @@
 ---
-title: '용인 SK하이닉스 착공, 반도체 벨트 집값은 이미 고점일까? M-DEENO 데이터 정밀 분석'
+title: 용인 SK하이닉스 착공, 반도체 벨트 집값은 이미 고점일까? M-DEENO 데이터 정밀 분석
 date: 2026-02-22 22:17:20
 draft: false
-categories: ['시장 분석']
+categories:
+- 시장 분석
 tags:
-  [
-    '용인 반도체 클러스터, 처인구 아파트 시세, 기흥구 신축 매매, SK하이닉스 착공 수혜',
-    '부동산투자',
-    '프롭테크',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '용인 SK하이닉스 착공, 반도체 벨트 집값은 이미 고점일까? M-DEENO 데이터 정밀 분석 - M-DEENO 데이터 분석'
+- 용인 반도체 클러스터
+- 처인구 아파트 시세
+- 기흥구 신축 매매
+- SK하이닉스 착공 수혜
+- 부동산투자
+description: 용인 SK하이닉스 착공, 반도체 벨트 집값은 이미 고점일까? M-DEENO 데이터 정밀 분석 - M-DEENO 데이터 분석
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">

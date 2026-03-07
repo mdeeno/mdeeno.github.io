@@ -2,17 +2,16 @@
 title: '초고령화 시대의 생존 전략, 의세권 아파트가 부의 지도를 바꾼다: M-DEENO 실버 프리미엄 리포트'
 date: 2026-02-22 22:19:23
 draft: false
-categories: ['자산 전략']
+categories:
+- 자산 전략
 tags:
-  [
-    '의세권 아파트 시세, 실버 프리미엄, 대형병원 인근 아파트, 초고령화 부동산 전망',
-    '부동산투자',
-    '프롭테크',
-    '부동산SaaS',
-    '재테크',
-    'M-DEENO',
-  ]
-description: '초고령화 시대의 생존 전략, 의세권 아파트가 부의 지도를 바꾼다: M-DEENO 실버 프리미엄 리포트 - M-DEENO 데이터 분석'
+- 의세권 아파트 시세
+- 실버 프리미엄
+- 대형병원 인근 아파트
+- 초고령화 부동산 전망
+- 부동산투자
+description: '초고령화 시대의 생존 전략, 의세권 아파트가 부의 지도를 바꾼다: M-DEENO 실버 프리미엄 리포트 - M-DEENO 데이터
+  분석'
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
