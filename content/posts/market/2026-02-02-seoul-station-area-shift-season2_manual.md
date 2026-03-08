@@ -93,3 +93,5 @@ image: '/images/seoul-shift-season2.png'
 > **※ 본 글은 M-DEENO의 정비사업 및 주거 정책 변화가 시장에 미치는 구조적 영향을 정리한 연구 노트입니다.**
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}

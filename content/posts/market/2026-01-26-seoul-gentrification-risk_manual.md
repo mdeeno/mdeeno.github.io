@@ -158,3 +158,5 @@ A futuristic 3D isometric map of Seoul city, highlighting specific neighborhoods
 Would you like me to generate a specific cash flow simulation for one of these areas?
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}

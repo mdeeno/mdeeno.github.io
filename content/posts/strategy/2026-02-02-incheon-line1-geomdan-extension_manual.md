@@ -89,3 +89,5 @@ image: '/images/geomdan-subway-2026.png'
 <small>본 포스팅은 데이터 분석을 기반으로 한 개인적인 의견이며, 모든 투자의 책임은 본인에게 있습니다. 반드시 현장 임장 후 결정하시기 바랍니다.</small>
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}

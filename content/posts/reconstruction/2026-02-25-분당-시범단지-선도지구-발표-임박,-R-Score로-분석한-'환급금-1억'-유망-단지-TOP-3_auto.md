@@ -104,3 +104,5 @@ R-Score(Reconstruction Score) = (평균 대지지분 × 용적률 여유도) / �
 
 
 ※ 해당 리포트는 가상 시나리오를 바탕으로 작성되었습니다. 투자 시 유의하세요.
+
+{{< ad_cpa type="finance" >}}

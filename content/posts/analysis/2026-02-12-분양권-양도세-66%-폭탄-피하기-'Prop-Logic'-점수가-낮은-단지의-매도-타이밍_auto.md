@@ -86,3 +86,5 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}

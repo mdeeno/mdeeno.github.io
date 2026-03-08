@@ -87,3 +87,5 @@ description: 마이너스 프리미엄 분양권, '양도세 매수자 부담' �
 ※ M-DEENO 데이터랩의 예측 모델 결과입니다. 실제 시세와 차이가 있을 수 있습니다.
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}

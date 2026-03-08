@@ -98,3 +98,5 @@ Safety Score = (평균 대지 지분 ÷ 현재 용적률) × 통합 재건축 �
 
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}

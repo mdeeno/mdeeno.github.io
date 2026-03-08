@@ -125,3 +125,5 @@ REITs ETF는 소액으로 우량 부동산에 간접 투자하고 배당 수익�
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}

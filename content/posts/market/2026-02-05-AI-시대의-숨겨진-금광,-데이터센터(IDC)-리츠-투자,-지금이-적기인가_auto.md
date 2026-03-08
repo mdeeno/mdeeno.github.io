@@ -105,3 +105,5 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
 </script>
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}

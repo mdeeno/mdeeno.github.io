@@ -170,3 +170,5 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.
 
 {{< mdeeno_cpa type="loan" >}}
+
+{{< ad_cpa type="finance" >}}
