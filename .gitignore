@@ -17,6 +17,7 @@ __pycache__/
 venv/
 env/
 tistory_drafts/
+repomix-output.xml
 
 # [Hugo] 빌드 결과물 및 리소스 (포스팅 원본 md는 제외하지 마세요)
 public/
