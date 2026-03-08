@@ -8,7 +8,7 @@ canonifyURLs = true
 
 # Google Analytics 4 — GA4 측정 ID를 아래에 입력하세요 (예: G-XXXXXXXXXX)
 [services.googleAnalytics]
-  ID = "G-XXXXXXXXXX"
+  ID = "G-77C1K4JKYP"
 
 [params]
   description = "재건축 분담금, 비례율, 용적률, 이주비 — M-DEENO가 데이터로 분석하는 정비사업 리스크 가이드"
