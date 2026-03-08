@@ -2,7 +2,7 @@
 title: "🚀 GTX-C 착공 사이렌! 삼성역 20분 컷, 아직 8억대 진입 가능한 '이곳' (Top 3)"
 date: 2026-01-25
 draft: false
-categories: ['자산 전략']
+categories: ["투자 전략"]
 tags:
   [
     'GTX-C',

@@ -1,0 +1,141 @@
+{{- define "main" -}}
+{{- $posts := where .Site.RegularPages "Section" "in" (slice "posts") -}}
+<div class="home-wrap">
+
+  {{/* ── HERO ── */}}
+  <section class="home-hero">
+    <span class="hero-badge">📊 2026년 최신 데이터 · AI 분析 엔진</span>
+    <h1>재건축·재개발<br><span class="hero-accent">진짜 수익성</span>을 데이터로 확인하세요</h1>
+    <p class="hero-sub">
+      분담금 계산부터 수익률 시뮬레이션까지<br>
+      국내 최다 재건축 특화 데이터 분析 블로그
+    </p>
+    <div class="hero-btns">
+      <a href="/calculators/" class="hbtn hbtn-green">🧮 무료 계산기 시작하기</a>
+      <a href="https://mdeeno.com/member" target="_blank" rel="noopener" class="hbtn hbtn-ghost">📋 프리미엄 리포트 →</a>
+    </div>
+  </section>
+
+  {{/* ── STATS ── */}}
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-n">{{ len $posts }}<span>개</span></div>
+      <div class="stat-l">분析 리포트</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-n">10<span>개</span></div>
+      <div class="stat-l">무료 계산기</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-n">매일</div>
+      <div class="stat-l">자동 업데이트</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-n">무료</div>
+      <div class="stat-l">전면 무료 제공</div>
+    </div>
+  </div>
+
+  {{/* ── CATEGORY CARDS ── */}}
+  <section class="home-section">
+    <h2 class="sec-title">분야별 분析 바로가기</h2>
+    <div class="cat-grid">
+      <a href="/posts/reconstruction/" class="cat-card cc-green">
+        <div class="cc-icon">🏗️</div>
+        <div class="cc-body">
+          <strong>재건축/재개발</strong>
+          <p>분담금 · 사업성 · 조합원 전략 · 절차</p>
+        </div>
+        <span class="cc-arrow">→</span>
+      </a>
+      <a href="/posts/market/" class="cat-card">
+        <div class="cc-icon">📈</div>
+        <div class="cc-body">
+          <strong>시장 분析</strong>
+          <p>단지별 시세 · 입지 분析 · 수급 동향</p>
+        </div>
+        <span class="cc-arrow">→</span>
+      </a>
+      <a href="/posts/analysis/" class="cat-card">
+        <div class="cc-icon">💸</div>
+        <div class="cc-body">
+          <strong>세금/정책</strong>
+          <p>양도세 · 취득세 · 보유세 · 정부 정책</p>
+        </div>
+        <span class="cc-arrow">→</span>
+      </a>
+      <a href="/posts/strategy/" class="cat-card">
+        <div class="cc-icon">🎯</div>
+        <div class="cc-body">
+          <strong>투자 전략</strong>
+          <p>수익률 분析 · 청약 전략 · 포트폴리오</p>
+        </div>
+        <span class="cc-arrow">→</span>
+      </a>
+      <a href="/calculators/" class="cat-card cc-blue">
+        <div class="cc-icon">🧮</div>
+        <div class="cc-body">
+          <strong>무료 계산기 10종</strong>
+          <p>DSR · 양도세 · 취득세 · 보유세 · 중개보수</p>
+        </div>
+        <span class="cc-arrow">→</span>
+      </a>
+      <a href="/archives/" class="cat-card">
+        <div class="cc-icon">📰</div>
+        <div class="cc-body">
+          <strong>전체 리포트 보기</strong>
+          <p>{{ len $posts }}개 분析 리포트 모두 보기</p>
+        </div>
+        <span class="cc-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  {{/* ── LATEST POSTS ── */}}
+  <section class="home-section">
+    <div class="sec-header">
+      <h2 class="sec-title" style="margin-bottom:0">최신 분析 리포트</h2>
+      <a href="/archives/" class="see-all">전체보기 →</a>
+    </div>
+    <div class="posts-grid">
+      {{- range first 6 $posts -}}
+      <a href="{{ .RelPermalink }}" class="post-card">
+        <div class="pc-meta">
+          {{- with index .Params.categories 0 -}}
+          <span class="pc-cat">{{ . }}</span>
+          {{- end -}}
+          <span class="pc-date">{{ .Date.Format "01.02" }}</span>
+        </div>
+        <h3 class="pc-title">{{ .Title }}</h3>
+        {{- if .Description -}}
+        <p class="pc-desc">{{ truncate 65 .Description }}</p>
+        {{- end -}}
+      </a>
+      {{- end -}}
+    </div>
+  </section>
+
+  {{/* ── CALCULATOR BAND ── */}}
+  <div class="calc-band">
+    <div class="calc-band-text">
+      <strong>10가지 무료 부동산·금융 계산기</strong>
+      <p>DSR 한도 · 양도소득세 · 취득세 · 보유세 · 중개보수 · 청약가점 · 전월세환산</p>
+    </div>
+    <a href="/calculators/" class="hbtn hbtn-green">계산기 바로가기 →</a>
+  </div>
+
+  {{/* ── PREMIUM CTA ── */}}
+  <section class="premium-band">
+    <div class="premium-label">M-DEENO PREMIUM</div>
+    <h2>우리 아파트 재건축, 진짜 수익성은?</h2>
+    <p>
+      분담금 · 이주비 · 보유세 · 수익률을 통합 시뮬레이션<br>
+      조합원 의사결정에 필요한 모든 데이터를 한 리포트로
+    </p>
+    <a href="https://mdeeno.com/member" target="_blank" rel="noopener" class="hbtn hbtn-blue">
+      무료 체험 신청하기 →
+    </a>
+  </section>
+
+</div>
+{{- end -}}

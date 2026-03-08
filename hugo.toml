@@ -25,14 +25,10 @@ canonifyURLs = true
 
   naver_verify = "코드값"
 
-  # 메인 화면 모드 (랜딩 페이지 브랜딩)
+  # homeInfoParams — 커스텀 index.html로 대체됨
   [params.homeInfoParams]
-    Title = "M-DEENO | 재건축·재개발 데이터 분석"
-    Content = """
-    재건축 분담금이 얼마나 나올지 아직 모르신다면,<br>
-    지금 바로 **<a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer">M-DEENO 무료 분석</a>** 을 시작하세요.<br><br>
-    Prop-Logic™ 엔진이 공사비 상승·비례율 변동·분담금 리스크를 시뮬레이션합니다.
-    """
+    Title = "M-DEENO | 재건축·재개발 데이터 분析"
+    Content = "재건축 분담금·수익률을 데이터로 분析합니다."
   
   mainSections = ["posts"]
 
