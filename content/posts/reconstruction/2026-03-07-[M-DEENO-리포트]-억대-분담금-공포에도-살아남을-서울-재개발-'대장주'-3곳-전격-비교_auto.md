@@ -1,0 +1,173 @@
+---
+title: "[M-DEENO 리포트] 억대 분담금 공포에도 살아남을 서울 재개발 대장주 3곳 전격 비교"
+date: 2026-03-07 04:36:21
+draft: false
+categories: ["정비 사업"]
+tags: ["서울 재개발 예정지", "한남뉴타운 시세", "부동산투자", "프롭테크", "부동산SaaS"]
+description: "공사비 폭등으로 재개발 수익성이 악화되는 지금, M-DEENO의 Prop-Logic™ 알고리즘으로 선별한 서울 핵심 재개발 예정지를 공개합니다. 한남, 성수, 노량진의 사업 안정성과 시세 범위를 확인하세요."
+---
+
+
+
+
+
+<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1772944597.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
+    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-03-07 04:36:21 기준)
+    </p>
+</div>
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px;">📊 내 아파트 재건축 리스크 무료 분석</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7;">
+    공사비 상승과 일반분양가 변화에 따라<br>
+    추가 분담금이 수천만원~수억원 차이 날 수 있습니다.<br>
+    M-DEENO 계산기로 내 아파트 리스크를 무료로 분석해보세요.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;">
+    무료 리스크 분석 시작 →
+  </a>
+</div>
+
+---
+
+<div class="lab-card">서울 하늘 아래 내 집 마련의 꿈이 '공사비 인상'이라는 거대한 벽에 부딪혔습니다. M-DEENO 데이터 랩은 단순한 입지 분석을 넘어, 공사비 변동성과 사업 안정성을 수치화한 Prop-Logic™ 알고리즘을 통해 현재 가장 주목해야 할 서울 재개발 예정지 3곳을 분석했습니다.</div>
+
+### 고분양가 시대, 왜 다시 재개발인가?
+
+최근 신축 아파트 분양가가 천정부지로 솟으면서, 상대적으로 저평가된 **서울 재개발 예정지**로 투자자들의 시선이 다시 모이고 있습니다.
+
+단순히 '낡은 동네'가 바뀌는 것을 넘어, 인프라 자체가 재구성되는 뉴타운급 사업지는 하락장에서도 강한 하방 경직성을 보입니다.
+
+M-DEENO의 분석에 따르면, 서울 내 주요 정비 사업지의 **사업 안정성 점수**는 최근 공사비 협상 타결 여부에 따라 극명하게 갈리고 있습니다.
+
+### 1. 한남뉴타운 (한남3구역 중심)
+
+서울 재개발의 '끝판왕'이라 불리는 한남뉴타운은 배산임수의 전형적인 명당이자 용산 공원 호재를 직접적으로 받는 곳입니다.
+
+* **사업 단계**: 한남3구역은 현재 이주 및 철거 단계에 진입하여 가시성이 가장 높습니다.
+* **시세 형성**: 구역 내 대지 지분 및 권리가액에 따라 대략 20~25억대 범위에서 매물이 형성되어 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+* **M-DEENO View**: 한남4, 5구역 역시 속도를 내고 있어, 구역 전체가 완성될 경우 강남에 준하는 부촌 지도를 형성할 것으로 예측됩니다.
+
+국토교통부 실거래가 공개시스템 확인 권장
+
+### 2. 성수전략정비구역 (성수1지구)
+
+'한강변 70층'이라는 압도적인 랜드마크 가치를 지닌 성수동은 젊은 고소득층의 수요가 집중되는 곳입니다.
+
+* **특이점**: 서울시의 유연한 층수 제한 완화 정책의 수혜를 직접적으로 입는 지역입니다.
+* **시세 형성**: 한강 조망권 프리미엄이 반영되어 25~30억대 이상의 높은 호가 범위를 형성하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+* **사업 안정성**: M-DEENO의 Prop-Logic™ 알고리즘 분석 결과, 성수동은 높은 일반 분양가 책정이 가능해 공사비 상승분을 상쇄할 수 있는 몇 안 되는 지역으로 분류됩니다.
+
+국토교통부 실거래가 공개시스템 확인 권장
+
+### 3. 노량진뉴타운 (노량진1구역)
+
+여의도와 용산을 잇는 '골든 트라이앵글'의 핵심 배후 주거지로 평가받는 곳입니다.
+
+* **입지적 가치**: 1, 9호선 더블 역세권과 올림픽대로 접근성이 뛰어나 직주근접 수요가 탄탄합니다.
+* **시세 형성**: 최근 84타입 배정 가능 매물들이 13~16억대 사이에서 거래 범위를 형성하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+* **리스크 관리**: 최근 시공사 선정 과정에서 발생한 공사비 갈등은 향후 '추가 분담금 경계선'을 결정짓는 핵심 변수가 될 것입니다.
+
+국토교통부 실거래가 공개시스템 확인 권장
+
+### 사업 안정성을 결정짓는 핵심 공식
+
+재개발 투자에서 가장 위험한 것은 '장밋빛 미래'만 보는 것입니다. M-DEENO 데이터 랩은 아래의 공식을 통해 구역의 체력을 측정합니다.
+
+<div class="lab-formula-box">사업 안정성 점수 = (예상 일반 분양가 - 예상 공사비) / 조합원 수</div>
+
+이 점수가 높을수록 조합원의 분담금 부담이 줄어들며, 외부 경기 충격에도 사업이 중단되지 않고 진행될 확률이 높습니다.
+
+그렇다면 지금 같은 고금리 시기에 무리한 대출을 끼고 진입해도 괜찮을까요? M-DEENO는 자금 조달 계획 시 반드시 **DSR(총부채원리금상환비율)** 한도를 먼저 체크할 것을 권고합니다.
+
+### 💡 자주 묻는 질문 (FAQ)
+
+**Q1. 공사비가 계속 오르는데 재개발 사업이 중단되지는 않을까요?**
+최근 서울 주요 사업지들은 공사비 증액을 수용하는 대신 고급화 전략을 택하고 있습니다. 사업성이 낮은 외곽 지역은 지연될 수 있으나, 본문에 언급된 핵심지는 속도 조절은 있을지언정 중단 가능성은 낮습니다.
+
+**Q2. 초기 투자금이 너무 많이 드는데, 소액으로 접근 가능한 곳은 없나요?**
+소액 투자를 원하신다면 모아타운이나 신통기획 후보지를 고려할 수 있으나, 이는 권리산정기준일 등 법적 검토가 훨씬 까다롭습니다. 반드시 전문가의 데이터 분석을 선행해야 합니다.
+
+**Q3. 재개발 매수 시 가장 주의해야 할 점은 무엇인가요?**
+'현금청산' 대상인지 확인하는 것이 1순위입니다. 또한, 조합원 지위 승계 제한 규정(투기과열지구 등)을 면밀히 살펴야 소중한 자산을 지킬 수 있습니다.
+
+[💰 나에게 맞는 대출 이자 및 한도 계산해보기](https://tech.mdeeno.com/calculators/calc_interest/)
+
+
+
+
+{{< mdeeno_cpa type="loan" >}}
+
+
+
+
+<div style="margin:40px 0;padding:25px;background:#f0f7ff;border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📩 재건축 리스크 분석 리포트 베타 신청</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    M-DEENO 프리미엄 리포트가 2026년 6월 정식 출시 예정입니다.<br>
+    베타 테스트 알림을 먼저 받아보세요.
+  </p>
+  <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;">
+    <input id="blog-lead-email" type="email" placeholder="이메일을 입력하세요"
+      style="padding:10px 16px;border:1px solid #93c5fd;border-radius:8px;font-size:0.9rem;width:220px;outline:none;" />
+    <button id="blog-lead-btn" onclick="submitBlogLead()"
+      style="padding:10px 20px;background:#2563eb;color:#fff;border:none;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer;">
+      베타 신청
+    </button>
+  </div>
+</div>
+
+## 함께 읽으면 좋은 글
+
+- [1기 신도시 재건축, 5억 분담금의 진실: M-DEENO 데이터 랩의 팩트 체크](/posts/reconstruction/2026-02-23-1기-신도시-재건축,-5억-분담금의-진실-M-DEENO-데이터-랩의-팩트-체크_auto/)
+- [목동 재건축, 대지지분 1평에 숨겨진 억 단위 수익률의 비밀: M-DEENO 정밀 분석](/posts/reconstruction/2026-02-25-목동-재건축,-'대지지분-1평'에-숨겨진-억-단위-수익률의-비밀-M-DEENO-정밀-분석_auto/)
+- [재건축 분담금 폭탄, 내 아파트는 안전할까? M-DEENO가 분석한 수익성 임계점](/posts/reconstruction/2026-03-06-재건축-분담금-폭탄,-내-아파트는-안전할까-M-DEENO가-분석한-수익성-임계점_auto/)
+
+<script>
+  async function submitBlogLead() {
+    const email = document.getElementById('blog-lead-email').value.trim();
+    const btn = document.getElementById('blog-lead-btn');
+    if (!email) return alert('이메일을 입력해주세요.');
+    btn.innerText = '전송 중...';
+    btn.disabled = true;
+    try {
+      const res = await fetch('https://mdeeno.com/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, source: 'blog: [M-DEENO 리포트] 억대 분담금 공포에도 살아남을 서울 재개발 대장주 3곳 전격 비교' })
+      });
+      if (!res.ok) throw new Error('서버 오류: ' + res.status);
+      alert('✅ 베타 신청이 완료되었습니다!');
+      document.getElementById('blog-lead-email').value = '';
+    } catch (err) {
+      console.error(err);
+      alert('오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
+    } finally {
+      btn.innerText = '베타 신청';
+      btn.disabled = false;
+    }
+  }
+</script>
+
+
+
+---
+> **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
+
+
+
+---
+
+
+
+📉 **이주비 대출 한도 미리 확인**
+👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 DSR 기준 대출 한도 계산기</strong></a>
+
+<br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
+
+※ 시뮬레이션 데이터이므로 실거래가 공개시스템 등을 통한 추가 확인을 권장합니다.
