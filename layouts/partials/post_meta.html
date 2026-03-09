@@ -1,0 +1,40 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime)))) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "words" .WordCount | default (printf "%d words" .WordCount)))) }}
+{{- end }}
+
+{{- if not (.Param "hideAuthor") -}}
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" .)) }}
+{{- end }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}
+
+{{/* GoatCounter 뷰 카운터 */}}
+{{- if .IsPage -}}
+&nbsp;·&nbsp;<span id="gc-views" style="font-size:0.85em;opacity:0.7;">
+  <span id="gc-count">…</span> views
+</span>
+<script>
+  (function(){
+    var el = document.getElementById('gc-count');
+    if (!el) return;
+    fetch('https://mdeeno.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
+      .then(function(r){ return r.json(); })
+      .then(function(d){ el.innerText = Number(d.count).toLocaleString(); })
+      .catch(function(){ document.getElementById('gc-views').style.display='none'; });
+  })();
+</script>
+{{- end -}}

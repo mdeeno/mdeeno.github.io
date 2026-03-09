@@ -76,18 +76,37 @@
       <div class="stat-l">분석 리포트</div>
     </div>
     <div class="stat-box">
-      <div class="stat-n">10<span>개</span></div>
-      <div class="stat-l">무료 계산기</div>
+      <div class="stat-n" id="gc-total-visitors">…</div>
+      <div class="stat-l">누적 방문자</div>
     </div>
     <div class="stat-box">
-      <div class="stat-n">매일</div>
-      <div class="stat-l">자동 업데이트</div>
+      <div class="stat-n" id="gc-today-visitors">…</div>
+      <div class="stat-l">오늘 방문자</div>
     </div>
     <div class="stat-box stat-box-highlight">
       <div class="stat-n">무료</div>
       <div class="stat-l">프리미엄 리포트 체험</div>
     </div>
   </div>
+  <script>
+  (function(){
+    // 총 방문자 (홈 기준 전체 카운트)
+    fetch('https://mdeeno.goatcounter.com/counter//index.html.json')
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        var el = document.getElementById('gc-total-visitors');
+        if (el) el.innerText = Number(d.count).toLocaleString();
+      }).catch(function(){});
+
+    // 오늘 방문자 — 홈페이지 오늘 조회수로 표시
+    fetch('https://mdeeno.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        var el = document.getElementById('gc-today-visitors');
+        if (el) el.innerText = Number(d.count_unique || d.count).toLocaleString();
+      }).catch(function(){});
+  })();
+  </script>
 
   {{/* ── LATEST POSTS ── */}}
   <section class="home-section">
