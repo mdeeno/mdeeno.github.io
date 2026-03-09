@@ -1,5 +1,5 @@
 ---
-title: 신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션
+title: 신용대출 5천만 원이 주담대 3억을 지운다
 date: 2026-02-19 11:34:22
 draft: false
 categories:

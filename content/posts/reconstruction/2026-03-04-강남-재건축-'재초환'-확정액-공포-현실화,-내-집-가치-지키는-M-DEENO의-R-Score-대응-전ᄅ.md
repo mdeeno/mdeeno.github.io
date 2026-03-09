@@ -1,5 +1,5 @@
 ---
-title: 강남 재건축 재초환 확정액 공포 현실화, 내 집 가치 지키는 M-DEENO의 R-Score 대응 전략
+title: 강남 재건축 재초환 확정액 공포 현실화, 내 집 가치 지키는
 date: 2026-03-04 10:16:04
 draft: false
 categories:

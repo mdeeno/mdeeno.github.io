@@ -1,5 +1,5 @@
 ---
-title: "재개발 분담금 5억 시대? M-DEENO가 분석한 추가 분담금 리스크와 생존 전략"
+title: "재개발 분담금 5억 시대"
 date: 2026-03-08 04:56:51
 draft: false
 categories: ["정비 사업"]

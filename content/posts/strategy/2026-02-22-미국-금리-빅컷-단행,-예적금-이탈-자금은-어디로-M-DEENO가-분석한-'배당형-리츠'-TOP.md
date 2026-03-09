@@ -1,5 +1,5 @@
 ---
-title: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? M-DEENO가 분석한 배당형 리츠 TOP 3 전략
+title: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로
 date: 2026-02-22 21:44:38
 draft: false
 categories:

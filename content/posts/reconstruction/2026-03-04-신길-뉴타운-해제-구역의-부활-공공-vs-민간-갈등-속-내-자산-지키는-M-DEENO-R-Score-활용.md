@@ -1,5 +1,5 @@
 ---
-title: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법'
+title: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는'
 date: 2026-03-04 10:22:43
 draft: false
 categories:

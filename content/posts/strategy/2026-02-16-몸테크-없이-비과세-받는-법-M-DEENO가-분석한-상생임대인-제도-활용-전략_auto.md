@@ -1,5 +1,5 @@
 ---
-title: '몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생임대인 제도 활용 전략'
+title: '몸테크 없이 비과세 받는 법:'
 date: 2026-02-16 19:30:02
 draft: false
 categories:
