@@ -2,7 +2,7 @@
 title: "신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저평가 단지' TOP 3 정밀 분석"
 date: 2026-02-01
 draft: false
-categories: ["시장 分析"]
+categories: ["시장 分석"]
 tags: ['신분당선', '호매실연장', '수원부동산', '저평가아파트']
 description: '신분당선 광교~호매실 연장선이 2024년 10월 본격 착공하며 서수원 일대가 들썩이고 있습니다. 강남 40분 시대를 열어줄 호매실역 인근 저평가 단지 3곳을 선정했습니다.'
 image: '/images/homaesil-line-analysis.png'

@@ -2,7 +2,7 @@
 title: '재개발 노후도 60% 완화! 성북구·은평구 빌라 투자 유망지 및 실전 전략'
 date: 2026-02-01
 draft: false
-categories: ["시장 分析"]
+categories: ["시장 分석"]
 tags: ['재개발', '노후도완화', '성북구빌라', '은평구재개발', '소액투자']
 description: '서울시 재개발 구역 지정 요건이 노후도 60%로 완화되면서 성북구와 은평구의 빌라 밀집 지역이 기회의 땅으로 부상했습니다. 초기 재개발 후보지 TOP 3를 공개합니다.'
 image: '/images/seongbuk-eunpyeong-redevelopment.png'

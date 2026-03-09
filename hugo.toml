@@ -27,8 +27,8 @@ canonifyURLs = true
 
   # homeInfoParams — 커스텀 index.html로 대체됨
   [params.homeInfoParams]
-    Title = "M-DEENO | 재건축·재개발 데이터 분析"
-    Content = "재건축 분담금·수익률을 데이터로 분析합니다."
+    Title = "M-DEENO | 재건축·재개발 데이터 분석"
+    Content = "재건축 분담금·수익률을 데이터로 분석합니다."
   
   mainSections = ["posts"]
 

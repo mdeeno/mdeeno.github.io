@@ -8,8 +8,8 @@ summary: '집 팔 때 세금 폭탄 피하는 법! 1세대 1주택 비과세 체
 
 재건축 사업에서 **현금청산을 선택하거나 조합원 지위를 매도**할 때도 양도소득세가 발생합니다. 청산 금액과 원래 취득가액의 차이에 세금이 부과되므로, 실제 수익을 계산하려면 반드시 사전 시뮬레이션이 필요합니다.
 
-- 관련 분析: [재건축 현금청산: 내 집 뺏기는 걸까, 돈 버는 기회일까?](/posts/reconstruction/)
-- 관련 분析: [재건축 10년의 여정: 수익률을 가르는 결정적 단계는?](/posts/reconstruction/)
+- 관련 분석: [재건축 현금청산: 내 집 뺏기는 걸까, 돈 버는 기회일까?](/posts/reconstruction/)
+- 관련 분석: [재건축 10년의 여정: 수익률을 가르는 결정적 단계는?](/posts/reconstruction/)
 
 양도세는 **'번 만큼 내는 세금'**입니다. 5억에 사서 10억에 팔았다면, 차익 5억에 대해 세금을 냅니다.
 
@@ -159,6 +159,6 @@ function calcTransfer() {
   <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO Prop-Logic™ 엔진이 양도세·분담금·수익성을 종합 시뮬레이션합니다.</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
-    청산·보유 비교 분析 시작 →
+    청산·보유 비교 분석 시작 →
   </a>
 </div>

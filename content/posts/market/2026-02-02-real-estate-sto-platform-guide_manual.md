@@ -2,7 +2,7 @@
 title: '소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석'
 date: 2026-02-01
 draft: false
-categories: ["시장 分析"]
+categories: ["시장 分석"]
 tags: ['부동산조각투자', 'STO', '카사', '소유', '펀블', '강남빌딩투자']
 description: '커피 한 잔 가격으로 강남 빌딩의 주인이 될 수 있다? 2026년 제도권에 안착한 부동산 STO 플랫폼별 장단점과 수수료, 실제 상장 건물 사례를 정밀 분석합니다.'
 image: '/images/real-estate-sto-guide.png'

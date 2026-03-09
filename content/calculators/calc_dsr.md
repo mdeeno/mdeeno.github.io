@@ -131,7 +131,7 @@ div[id$="Result"], .result-area {
   <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 정밀 리포트는 내 단지의 이주비 한도·공사비·분담금을 종합 시뮬레이션합니다.</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
-    재건축 리스크 정밀 분析 →
+    재건축 리스크 정밀 분석 →
   </a>
 </div>
 
