@@ -1,8 +1,8 @@
 {{- define "main" -}}
 <div class="terms-page">
   <div class="terms-header">
-    <h1>분야별 분析</h1>
-    <p class="terms-desc">관심 있는 분야를 선택하면 관련 분析 리포트를 모아볼 수 있습니다</p>
+    <h1>분야별 분석</h1>
+    <p class="terms-desc">관심 있는 분야를 선택하면 관련 분석 리포트를 모아볼 수 있습니다</p>
   </div>
 
   <div class="terms-grid">
@@ -12,25 +12,25 @@
     {{- $name := .Name -}}
     {{- if findRE "재건|정비|분담금" $name -}}
       {{- $icon = "🏗️" -}}
-      {{- $desc = "분담금 · 사업성 · 조합원 전략 · 절차 분析" -}}
+      {{- $desc = "분담금 · 사업성 · 조합원 전략 · 절차 분석" -}}
     {{- else if findRE "시장|전망|입지|수급|호재|교통" $name -}}
       {{- $icon = "📈" -}}
-      {{- $desc = "단지별 시세 · 수급 동향 · 입지 분析" -}}
+      {{- $desc = "단지별 시세 · 수급 동향 · 입지 분석" -}}
     {{- else if findRE "세금|정책|양도|취득|보유|규제" $name -}}
       {{- $icon = "💸" -}}
       {{- $desc = "양도세 · 취득세 · 보유세 · 정부 정책" -}}
     {{- else if findRE "전략|청약|꿀팁|투자|포트폴리오|자산" $name -}}
       {{- $icon = "🎯" -}}
-      {{- $desc = "수익률 극대화 · 청약 전략 · 타이밍 분析" -}}
+      {{- $desc = "수익률 극대화 · 청약 전략 · 타이밍 분석" -}}
     {{- else if findRE "대출|금융|DSR|이자|금리" $name -}}
       {{- $icon = "🏦" -}}
-      {{- $desc = "DSR · 이주비 · 분담금 대출 분析" -}}
+      {{- $desc = "DSR · 이주비 · 분담금 대출 분석" -}}
     {{- else if findRE "상권|틈새|경매|NPL" $name -}}
       {{- $icon = "💎" -}}
-      {{- $desc = "틈새시장 · 상권 분析 · 경매 전략" -}}
-    {{- else if findRE "분析|분석|리포트" $name -}}
+      {{- $desc = "틈새시장 · 상권 분석 · 경매 전략" -}}
+    {{- else if findRE "분석|분석|리포트" $name -}}
       {{- $icon = "📊" -}}
-      {{- $desc = "데이터 기반 부동산 분析 리포트" -}}
+      {{- $desc = "데이터 기반 부동산 분석 리포트" -}}
     {{- end -}}
     <a href="{{ .Page.RelPermalink }}" class="term-card">
       <span class="tc-icon">{{ $icon }}</span>
