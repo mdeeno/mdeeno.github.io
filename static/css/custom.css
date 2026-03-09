@@ -17,6 +17,217 @@
 }
 
 /* ==========================================================
+   GLOBAL TYPOGRAPHY — Pretendard 한국어 최적화
+   ========================================================== */
+
+body, html {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR',
+    sans-serif !important;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================
+   ARTICLE PAGE — 본문 가독성 전면 개선
+   ========================================================== */
+
+/* 본문 컨테이너 최대 너비 */
+.post-single .post-content {
+  max-width: 740px;
+}
+
+/* 본문 텍스트 */
+.post-content {
+  font-size: 1.05rem;
+  line-height: 2.0;
+  letter-spacing: -0.01em;
+  color: #d4d4d4;
+}
+
+.post-content p {
+  margin-bottom: 1.4rem;
+}
+
+/* 헤딩 계층 */
+.post-content h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem 0 0.6rem 1rem;
+  border-left: 4px solid var(--md-green);
+  border-bottom: none;
+  background: rgba(0, 200, 83, 0.04);
+  border-radius: 0 8px 8px 0;
+  color: #f0f0f0;
+  letter-spacing: -0.02em;
+}
+
+.post-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 2.2rem;
+  margin-bottom: 0.75rem;
+  color: #e0e0e0;
+  padding-left: 0.5rem;
+  border-left: 2px solid rgba(0, 200, 83, 0.5);
+}
+
+.post-content h4 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+/* 강조 */
+.post-content strong {
+  color: #f0f0f0;
+  font-weight: 700;
+}
+
+.post-content em {
+  color: #b0b0b0;
+  font-style: normal;
+  border-bottom: 1px dashed #555;
+}
+
+/* 인용구 — 콜아웃 스타일 */
+.post-content blockquote {
+  margin: 1.75rem 0;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid var(--md-green);
+  border-radius: 0 10px 10px 0;
+  color: #c0c0c0;
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+.post-content blockquote p {
+  margin: 0;
+}
+
+/* 구분선 */
+.post-content hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 2.5rem 0;
+}
+
+/* 목록 */
+.post-content ul, .post-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.post-content li {
+  margin-bottom: 0.45rem;
+  line-height: 1.85;
+}
+
+/* 인라인 코드 */
+.post-content code {
+  background: rgba(255,255,255,0.08);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.88em;
+  color: #a5f3a5;
+}
+
+/* 표 — 완전 재스타일 */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+.post-content thead tr {
+  background: rgba(0, 200, 83, 0.12);
+}
+
+.post-content thead th {
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  color: #e0e0e0;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 200, 83, 0.25);
+  white-space: nowrap;
+}
+
+.post-content tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: background 0.15s;
+}
+
+.post-content tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.post-content tbody td {
+  padding: 0.65rem 1rem;
+  color: #c0c0c0;
+  vertical-align: top;
+  line-height: 1.7;
+}
+
+/* 포스트 제목 영역 */
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: clamp(1.4rem, 4vw, 1.9rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.03em !important;
+  color: #f5f5f5 !important;
+}
+
+/* 포스트 메타 (날짜, views) */
+.post-meta {
+  font-size: 0.82rem;
+  color: #666;
+}
+
+/* ==========================================================
+   AUTO-POST CUSTOM CLASSES (lab-card, lab-formula-box 등)
+   ========================================================== */
+
+.lab-card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 12px !important;
+  padding: 1.25rem 1.5rem !important;
+  margin: 1.5rem 0 !important;
+}
+
+.lab-formula-box {
+  background: linear-gradient(135deg, rgba(0,200,83,0.06), rgba(0,200,83,0.02)) !important;
+  border: 1px solid rgba(0,200,83,0.2) !important;
+  border-radius: 12px !important;
+  padding: 1.25rem 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  font-size: 0.95rem !important;
+}
+
+.lab-graph-wrapper {
+  background: rgba(255,255,255,0.02) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin: 1.75rem 0 !important;
+  overflow-x: auto;
+}
+
+/* ==========================================================
    HOMEPAGE
    ========================================================== */
 
@@ -532,47 +743,91 @@
 }
 .entry-content p { font-size: 0.85rem !important; line-height: 1.6; color: #999; }
 
-/* ==========================================================
-   ARTICLE PAGE READABILITY
-   ========================================================== */
-
-.post-content {
-  font-size: 1rem;
-  line-height: 1.85;
-}
-.post-content h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-top: 2.5rem;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--md-border);
-}
-.post-content h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 0.6rem;
-}
-.post-content p { margin-bottom: 1.2rem; }
-
-/* Fix the chart image containers in auto posts */
-.lab-graph-wrapper {
-  margin: 2rem 0 !important;
-  border-radius: 12px !important;
-}
+/* (article styles moved to top — GLOBAL TYPOGRAPHY section) */
 
 /* ==========================================================
    GENERAL IMPROVEMENTS
    ========================================================== */
 
-/* Navbar logo */
-.logo a { font-weight: 800; letter-spacing: -0.02em; }
+/* Navbar */
+.logo a {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: 1.05rem;
+}
+
+nav#TableOfContents {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+nav#TableOfContents a {
+  color: #888;
+  text-decoration: none;
+}
+
+nav#TableOfContents a:hover {
+  color: var(--md-green);
+}
 
 /* Search page */
 #searchResults .post-entry { margin-bottom: 0.75rem; }
 
-/* Archives page — make it more scannable */
+/* Archives page */
 .archive-month { padding: 0 !important; }
 .archive-entry { border-radius: 8px; transition: background 0.15s; }
 .archive-entry:hover { background: var(--md-card); }
+.archive-entry a { font-size: 0.9rem; word-break: keep-all; }
+
+/* ==========================================================
+   POST LIST (section pages) — 카드 가독성 개선
+   ========================================================== */
+
+.post-entry {
+  border-radius: 12px !important;
+  padding: 1.25rem 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s !important;
+}
+
+.post-entry:hover {
+  border-color: var(--md-green) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.post-entry .entry-header h2 {
+  font-size: 1.0rem !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+  word-break: keep-all;
+  letter-spacing: -0.02em;
+}
+
+.entry-content p {
+  font-size: 0.84rem !important;
+  line-height: 1.65;
+  color: #888;
+  word-break: keep-all;
+}
+
+/* ==========================================================
+   MOBILE ARTICLE
+   ========================================================== */
+
+@media (max-width: 600px) {
+  .post-content {
+    font-size: 0.98rem;
+    line-height: 1.95;
+  }
+  .post-content h2 {
+    font-size: 1.15rem;
+  }
+  .post-content table {
+    font-size: 0.82rem;
+  }
+  .post-content thead th,
+  .post-content tbody td {
+    padding: 0.5rem 0.65rem;
+  }
+}
