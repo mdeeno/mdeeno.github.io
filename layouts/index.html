@@ -4,114 +4,50 @@
 
   {{/* ── HERO ── */}}
   <section class="home-hero">
-    <span class="hero-badge">📊 2026년 최신 데이터 · AI 분석 엔진</span>
-    <h1>재건축·재개발<br><span class="hero-accent">분담금과 수익률</span>을<br>정확하게 계산하세요</h1>
-    <p class="hero-sub">
-      우리 단지 비례율부터 이주비 리스크까지<br>
-      M-DEENO가 조합원 의사결정에 필요한 숫자를 알려드립니다
-    </p>
+    <span class="hero-badge">🏗️ 재건축·재개발 전문 데이터 분析</span>
+    <h1>내 아파트 <span class="hero-accent">수익성</span>,<br>데이터로 정확하게 확인하세요</h1>
+    <p class="hero-sub">분담금 · 비례율 · 양도세 · 수익률 — 조합원 의사결정에 필요한 모든 숫자</p>
+
+    <div class="hero-search">
+      <input type="text" id="hs-input" placeholder="단지명, 키워드로 검색 (예: 분담금, 은마, 양도세)">
+      <button onclick="var q=document.getElementById('hs-input').value; if(q) location.href='/search/?q='+encodeURIComponent(q);">검색</button>
+    </div>
+    <script>
+      document.getElementById('hs-input').addEventListener('keydown', function(e){
+        if(e.key==='Enter'){ var q=this.value; if(q) location.href='/search/?q='+encodeURIComponent(q); }
+      });
+    </script>
+
+    <div class="hero-tags">
+      <a href="/posts/reconstruction/" class="hero-tag">재건축 분담금</a>
+      <a href="/posts/reconstruction/" class="hero-tag">비례율 계산</a>
+      <a href="/posts/reconstruction/" class="hero-tag">공사비 리스크</a>
+      <a href="/posts/analysis/" class="hero-tag">양도소득세</a>
+      <a href="/posts/strategy/" class="hero-tag">청약 전략</a>
+      <a href="/calculators/" class="hero-tag">🧮 무료 계산기</a>
+    </div>
+
     <div class="hero-btns">
       <a href="https://mdeeno.com/member" target="_blank" rel="noopener"
-         onclick="typeof gtag !== 'undefined' && gtag('event', 'hero_mvp_click', {event_category: 'CTA', event_label: 'homepage_hero'})"
-         class="hbtn hbtn-blue">📋 내 단지 무료 분석 신청 →</a>
-      <a href="/calculators/" class="hbtn hbtn-ghost">🧮 무료 계산기</a>
+         onclick="typeof gtag!=='undefined'&&gtag('event','hero_cta',{event_category:'CTA',event_label:'hero'})"
+         class="hbtn hbtn-primary">📋 내 단지 무료 분析 신청</a>
+      <a href="/calculators/" class="hbtn hbtn-outline">🧮 계산기 바로가기</a>
     </div>
   </section>
 
-  {{/* ── TRUST STRIP ── */}}
-  <div class="trust-strip">
-    <div class="trust-item">
-      <span class="trust-icon">🏗️</span>
-      <span>재건축 전문 분석</span>
-    </div>
-    <div class="trust-sep">|</div>
-    <div class="trust-item">
-      <span class="trust-icon">📊</span>
-      <span>비례율 · 분담금 시뮬레이션</span>
-    </div>
-    <div class="trust-sep">|</div>
-    <div class="trust-item">
-      <span class="trust-icon">⚡</span>
-      <span>신청 후 24시간 내 리포트</span>
-    </div>
-    <div class="trust-sep">|</div>
-    <div class="trust-item">
-      <span class="trust-icon">🔒</span>
-      <span>개인정보 안전 보호</span>
-    </div>
+  {{/* ── MVP STRIP ── */}}
+  <div class="mvp-strip">
+    <span>💡 <strong>M-DEENO 프리미엄</strong> — 분담금·비례율·이주비·수익률 통합 시뮬레이션</span>
+    <a href="https://mdeeno.com/member" target="_blank" rel="noopener"
+       onclick="typeof gtag!=='undefined'&&gtag('event','strip_cta',{event_category:'CTA',event_label:'strip'})">
+      무료 체험 신청 →
+    </a>
   </div>
-
-  {{/* ── MVP VALUE PROP ── */}}
-  <section class="value-band">
-    <div class="value-inner">
-      <div class="value-label">M-DEENO PREMIUM REPORT</div>
-      <h2 class="value-title">재건축 투자, 이 세 가지를 모르면 손해봅니다</h2>
-      <div class="value-grid">
-        <div class="value-item">
-          <div class="value-num">01</div>
-          <strong>비례율이 얼마인지</strong>
-          <p>사업성이 나빠지면 조합원 손실이 직접 발생합니다</p>
-        </div>
-        <div class="value-item">
-          <div class="value-num">02</div>
-          <strong>추가 분담금 시나리오</strong>
-          <p>공사비 10% 오르면 내 분담금은 얼마나 늘어날까요</p>
-        </div>
-        <div class="value-item">
-          <div class="value-num">03</div>
-          <strong>실제 수익률 계산</strong>
-          <p>취득·보유·양도세까지 포함한 세후 수익이 진짜 수익입니다</p>
-        </div>
-      </div>
-      <a href="https://mdeeno.com/member" target="_blank" rel="noopener"
-         onclick="typeof gtag !== 'undefined' && gtag('event', 'value_mvp_click', {event_category: 'CTA', event_label: 'homepage_value_band'})"
-         class="hbtn hbtn-blue hbtn-lg">내 단지 전문 분석 무료 신청 →</a>
-    </div>
-  </section>
-
-  {{/* ── STATS ── */}}
-  <div class="stat-row">
-    <div class="stat-box">
-      <div class="stat-n">{{ len $posts }}<span>개</span></div>
-      <div class="stat-l">분석 리포트</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-n" id="gc-total-visitors">…</div>
-      <div class="stat-l">누적 방문자</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-n" id="gc-today-visitors">…</div>
-      <div class="stat-l">오늘 방문자</div>
-    </div>
-    <div class="stat-box stat-box-highlight">
-      <div class="stat-n">무료</div>
-      <div class="stat-l">프리미엄 리포트 체험</div>
-    </div>
-  </div>
-  <script>
-  (function(){
-    // 총 방문자 (홈 기준 전체 카운트)
-    fetch('https://mdeeno.goatcounter.com/counter//index.html.json')
-      .then(function(r){ return r.json(); })
-      .then(function(d){
-        var el = document.getElementById('gc-total-visitors');
-        if (el) el.innerText = Number(d.count).toLocaleString();
-      }).catch(function(){});
-
-    // 오늘 방문자 — 홈페이지 오늘 조회수로 표시
-    fetch('https://mdeeno.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
-      .then(function(r){ return r.json(); })
-      .then(function(d){
-        var el = document.getElementById('gc-today-visitors');
-        if (el) el.innerText = Number(d.count_unique || d.count).toLocaleString();
-      }).catch(function(){});
-  })();
-  </script>
 
   {{/* ── LATEST POSTS ── */}}
   <section class="home-section">
     <div class="sec-header">
-      <h2 class="sec-title" style="margin-bottom:0">최신 분석 리포트</h2>
+      <h2 class="sec-title">최신 분析 리포트</h2>
       <a href="/archives/" class="see-all">전체보기 →</a>
     </div>
     <div class="posts-grid">
@@ -125,34 +61,66 @@
         </div>
         <h3 class="pc-title">{{ .Title }}</h3>
         {{- if .Description -}}
-        <p class="pc-desc">{{ truncate 65 .Description }}</p>
+        <p class="pc-desc">{{ truncate 70 .Description }}</p>
         {{- end -}}
       </a>
       {{- end -}}
     </div>
   </section>
 
+  {{/* ── STATS ── */}}
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-n">{{ len $posts }}<span>개</span></div>
+      <div class="stat-l">분析 리포트</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-n" id="gc-total-visitors">-</div>
+      <div class="stat-l">누적 방문자</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-n" id="gc-today-visitors">-</div>
+      <div class="stat-l">오늘 방문자</div>
+    </div>
+    <div class="stat-box stat-box-highlight">
+      <div class="stat-n">10<span>종</span></div>
+      <div class="stat-l">무료 계산기</div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    fetch('https://mdeeno.goatcounter.com/counter/%2F.json')
+      .then(function(r){return r.json();})
+      .then(function(d){var el=document.getElementById('gc-total-visitors');if(el&&d.count)el.innerText=Number(d.count).toLocaleString();})
+      .catch(function(){});
+    fetch('https://mdeeno.goatcounter.com/counter/'+encodeURIComponent(location.pathname)+'.json')
+      .then(function(r){return r.json();})
+      .then(function(d){var el=document.getElementById('gc-today-visitors');if(el&&d.count)el.innerText=Number(d.count).toLocaleString();})
+      .catch(function(){});
+  })();
+  </script>
+
   {{/* ── CATEGORY CARDS ── */}}
   <section class="home-section">
-    <h2 class="sec-title">분야별 심층 분석</h2>
+    <h2 class="sec-title" style="margin-bottom:1rem">분야별 심층 분析</h2>
     <div class="cat-grid">
-      <a href="/posts/reconstruction/" class="cat-card cc-green">
+      <a href="/posts/reconstruction/" class="cat-card cc-recon">
         <div class="cc-icon">🏗️</div>
         <div class="cc-body">
           <strong>재건축/재개발</strong>
-          <p>분담금 · 사업성 · 조합원 전략 · 절차</p>
+          <p>분담금 · 비례율 · 조합원 전략 · 사업성</p>
         </div>
         <span class="cc-arrow">→</span>
       </a>
-      <a href="/posts/market/" class="cat-card">
+      <a href="/posts/market/" class="cat-card cc-market">
         <div class="cc-icon">📈</div>
         <div class="cc-body">
-          <strong>시장 분석</strong>
-          <p>단지별 시세 · 입지 분석 · 수급 동향</p>
+          <strong>시장 분析</strong>
+          <p>단지별 시세 · 입지 분析 · 수급 동향</p>
         </div>
         <span class="cc-arrow">→</span>
       </a>
-      <a href="/posts/analysis/" class="cat-card">
+      <a href="/posts/analysis/" class="cat-card cc-tax">
         <div class="cc-icon">💸</div>
         <div class="cc-body">
           <strong>세금/정책</strong>
@@ -160,19 +128,19 @@
         </div>
         <span class="cc-arrow">→</span>
       </a>
-      <a href="/posts/strategy/" class="cat-card">
+      <a href="/posts/strategy/" class="cat-card cc-strat">
         <div class="cc-icon">🎯</div>
         <div class="cc-body">
           <strong>투자 전략</strong>
-          <p>수익률 분석 · 청약 전략 · 포트폴리오</p>
+          <p>수익률 분析 · 청약 · 갈아타기 전략</p>
         </div>
         <span class="cc-arrow">→</span>
       </a>
-      <a href="/calculators/" class="cat-card cc-blue">
+      <a href="/calculators/" class="cat-card cc-calc">
         <div class="cc-icon">🧮</div>
         <div class="cc-body">
           <strong>무료 계산기 10종</strong>
-          <p>DSR · 양도세 · 취득세 · 보유세 · 중개보수</p>
+          <p>DSR · 양도세 · 취득세 · 보유세 · 전월세</p>
         </div>
         <span class="cc-arrow">→</span>
       </a>
@@ -180,25 +148,25 @@
         <div class="cc-icon">📰</div>
         <div class="cc-body">
           <strong>전체 리포트 보기</strong>
-          <p>{{ len $posts }}개 분석 리포트 모두 보기</p>
+          <p>{{ len $posts }}개 분析 리포트 전체 목록</p>
         </div>
         <span class="cc-arrow">→</span>
       </a>
     </div>
   </section>
 
-  {{/* ── BOTTOM MVP CTA ── */}}
+  {{/* ── PREMIUM CTA ── */}}
   <section class="premium-band">
     <div class="premium-label">M-DEENO PREMIUM</div>
-    <h2>우리 아파트 재건축, 지금 바로 분석받으세요</h2>
+    <h2>우리 아파트 재건축,<br>진짜 수익성을 지금 확인하세요</h2>
     <p>
-      분담금 · 이주비 · 비례율 · 수익률을 종합 시뮬레이션<br>
+      분담금 · 이주비 · 비례율 · 수익률을 통합 시뮬레이션<br>
       조합원 의사결정에 필요한 모든 데이터를 한 리포트로
     </p>
     <a href="https://mdeeno.com/member" target="_blank" rel="noopener"
-       onclick="typeof gtag !== 'undefined' && gtag('event', 'bottom_mvp_click', {event_category: 'CTA', event_label: 'homepage_bottom'})"
-       class="hbtn hbtn-blue">무료 분석 신청하기 →</a>
-    <p class="premium-note">신청 후 24시간 이내 전문 리포트 제공 · 완전 무료</p>
+       onclick="typeof gtag!=='undefined'&&gtag('event','bottom_cta',{event_category:'CTA',event_label:'premium_band'})"
+       class="hbtn hbtn-blue hbtn-lg">무료 분析 신청하기 →</a>
+    <p class="premium-note">신청 후 24시간 이내 리포트 제공 · 완전 무료</p>
   </section>
 
 </div>

@@ -15,8 +15,8 @@ canonifyURLs = true
   author = "M-DEENO Corp."
   env = "production"
 
-  defaultTheme = "dark"
-  disableThemeToggle = true
+  defaultTheme = "light"
+  disableThemeToggle = false
   ShowShareButtons = true
   ShowReadingTime = false
   ShowPostNavLinks = true
@@ -45,29 +45,29 @@ canonifyURLs = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-# 상단 메뉴바 설정 (전문성 강화)
+# 상단 메뉴
 [[menu.main]]
-  identifier = "archives"
-  name = "🗂️ 전체 리포트"
-  url = "/archives/"
+  identifier = "reconstruction"
+  name = "재건축"
+  url = "/posts/reconstruction/"
   weight = 10
 
 [[menu.main]]
-  identifier = "categories"
-  name = "📂 분석 분야"
-  url = "/categories/"
+  identifier = "archives"
+  name = "전체 리포트"
+  url = "/archives/"
   weight = 20
 
 [[menu.main]]
   identifier = "calculators"
-  name = "📊 부동산/금융 계산기"
+  name = "계산기"
   url = "/calculators/"
-  weight = 25
+  weight = 30
 
 [[menu.main]]
-  identifier = "search"
-  name = "🔍 데이터 검색"
-  url = "/search/"
+  identifier = "mvp"
+  name = "📋 무료 분析 신청"
+  url = "https://mdeeno.com/member"
   weight = 40
 
 [markup]
