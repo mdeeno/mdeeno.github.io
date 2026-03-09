@@ -1,0 +1,171 @@
+---
+title: "재개발 투자, 이 단계 모르면 원금 회수 불가? M-DEENO가 분석한 재개발 9단계 완벽 가이드"
+date: 2026-03-08 04:26:16
+draft: false
+categories: ["정비 사업"]
+tags: ["재개발 절차", "사업시행인가", "부동산투자", "분담금예측", "프롭테크"]
+description: "재개발 절차 9단계를 M-DEENO가 완벽 분석합니다. 사업시행인가부터 관리처분인가까지, 비례율과 분담금 계산법 및 한남3구역 등 실제 사례를 통해 실패 없는 투자 전략을 세우세요."
+---
+
+
+
+
+
+<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1773030395.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
+    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-03-08 04:26:16 기준)
+    </p>
+</div>
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px;">📊 내 아파트 재건축 리스크 무료 분석</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7;">
+    공사비 상승과 일반분양가 변화에 따라<br>
+    추가 분담금이 수천만원~수억원 차이 날 수 있습니다.<br>
+    M-DEENO 계산기로 내 아파트 리스크를 무료로 분석해보세요.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;">
+    무료 리스크 분석 시작 →
+  </a>
+</div>
+
+---
+
+<div class='lab-card'>내 집이 새 아파트가 되는 과정은 평균 10년 이상의 시간이 소요되는 마라톤과 같습니다. M-DEENO 데이터 랩은 복잡한 재개발 절차를 9단계로 압축하고, 투자자가 반드시 체크해야 할 '사업 안정성 점수' 분석법을 공개합니다.</div>
+
+### 재개발의 서막: 기본계획 수립부터 구역 지정까지
+
+모든 재개발은 도시 및 주거환경정비 기본계획 수립에서 시작됩니다. 지자체가 노후도를 평가해 정비구역으로 지정하면 비로소 공식적인 사업의 발판이 마련됩니다.
+
+M-DEENO의 **Prop-Logic™ 알고리즘** 분석에 따르면, 이 단계에서의 진입은 리스크가 가장 크지만 기대 수익률이 가장 높은 시점입니다. 노후도 요건이 충족되지 않아 구역 지정이 해제되는 사례가 빈번하므로 주의가 필요합니다.
+
+*	정비구역 지정: 사업의 공식적인 시작
+*	추진위원회 구성: 조합 설립을 위한 준비 단계
+*	노후도 및 동의율: 구역 지정의 핵심 변수
+
+### 조합 설립과 시공사 선정: 속도가 곧 수익률이다
+
+토지등소유자의 75% 이상 동의를 얻어 조합이 설립되면 사업은 본궤도에 오릅니다. 이후 시공사를 선정하게 되는데, 최근 공사비 갈등으로 인해 이 단계에서 사업이 정체되는 경우가 많습니다.
+
+그렇다면 지금 매수해도 될까요? M-DEENO 데이터 랩은 시공사 선정 시점의 공사비 제안서를 정밀 분석하여 향후 발생할 '추가 분담금 경계선'을 예측합니다.
+
+*	조합 설립 인가: 법적 주체 탄생
+*	시공사 선정: 브랜드 가치와 공사비의 저울질
+*	조합원 지위 양도 제한: 투기과열지구 여부 확인 필수
+
+### 사업시행인가와 관리처분인가: '사업 안정성 점수'의 결정판
+
+사업시행인가는 설계도면이 확정되는 단계이며, 관리처분인가는 조합원의 자산 가치와 분담금이 최종 확정되는 가장 중요한 관문입니다. 이 단계가 지나면 사실상 '새 아파트'로 변모하는 것이 확정적이라 볼 수 있습니다.
+
+<div class='lab-formula-box'>사업 안정성 점수(비례율) = (종후 자산 평가액 - 총 사업비) / 종전 자산 평가액 × 100</div>
+
+비례율이 100%를 넘을수록 조합원에게 유리하며, 이는 곧 투자 수익성과 직결됩니다. M-DEENO의 분석 모델은 인근 신축 단지의 시세를 기반으로 이 비례율의 변동 가능성을 실시간으로 추적합니다.
+
+### 실전 사례 분석: 한남3구역, 성수전략정비구역, 북아현2구역
+
+실제 재개발 시장의 대장주들을 통해 현재 흐름을 파악해 보겠습니다. 각 단지는 서로 다른 단계에 위치하며 고유의 리스크와 기회를 가지고 있습니다.
+
+*	**한남3구역**: 현재 이주 및 철거 단계에 진입한 강북 최대어입니다. 최근 매물 시세는 프리미엄을 포함해 20~25억대 범위를 형성하고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+*	**성수전략정비구역 1지구**: 층수 제한 완화 호재로 주목받는 곳입니다. 대략적인 지분 시세는 25~30억대 내외로 형성되어 있으나 구역별 차이가 큽니다. (국토교통부 실거래가 공개시스템 확인 권장)
+*	**북아현2구역**: 사업시행인가 이후 관리처분을 준비 중인 단지입니다. 인근 신축 시세 영향으로 15~18억대 범위의 시세를 보이고 있습니다. (국토교통부 실거래가 공개시스템 확인 권장)
+
+### 이주, 철거 그리고 일반분양: 마지막 관문
+
+관리처분인가 이후에는 기존 거주자들이 이주하고 건물을 철거합니다. 이후 착공과 함께 일반분양이 진행되며, 조합원은 동·호수 추첨을 통해 자신의 집을 확정받게 됩니다.
+
+이 시기에는 이주비 대출과 중도금 대출 승계 여부가 자금 계획의 핵심입니다. M-DEENO 데이터 랩은 금리 변동에 따른 금융 비용 증가가 최종 수익률에 미치는 영향을 시뮬레이션하여 최적의 매도 시점을 제안합니다.
+
+### 💡 자주 묻는 질문 (FAQ)
+
+**Q1. 재개발 빌라 매수 시 가장 주의해야 할 점은 무엇인가요?**
+가장 위험한 것은 '현금청산' 대상 여부입니다. 권리산정기준일 이후 지분 쪼개기가 된 물건인지 M-DEENO의 권리분석 리포트나 전문가의 확인을 반드시 거쳐야 합니다.
+
+**Q2. 추가 분담금은 언제 확정되나요?**
+대략적인 금액은 관리처분계획 수립 시점에 알 수 있지만, 최종 금액은 입주 시점의 정산 단계에서 확정됩니다. 최근처럼 공사비가 급등하는 시기에는 예비비를 충분히 고려한 자금 계획이 필요합니다.
+
+**Q3. 조합원 입주권과 일반분양권 중 무엇이 더 유리한가요?**
+조합원은 로열동·호수 배정 혜택과 발코니 확장 등 무상 옵션 혜택이 큽니다. 반면 초기 투자금이 많이 들기 때문에, 자금 여력에 따라 M-DEENO의 수익률 비교 툴을 활용해 결정하는 것이 현명합니다.
+
+
+
+
+{{< mdeeno_cpa type="loan" >}}
+
+
+
+
+<div style="margin:40px 0;padding:25px;background:#f0f7ff;border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📩 재건축 리스크 분석 리포트 베타 신청</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    M-DEENO 프리미엄 리포트가 2026년 6월 정식 출시 예정입니다.<br>
+    베타 테스트 알림을 먼저 받아보세요.
+  </p>
+  <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;">
+    <input id="blog-lead-email" type="email" placeholder="이메일을 입력하세요"
+      style="padding:10px 16px;border:1px solid #93c5fd;border-radius:8px;font-size:0.9rem;width:220px;outline:none;" />
+    <button id="blog-lead-btn" onclick="submitBlogLead()"
+      style="padding:10px 20px;background:#2563eb;color:#fff;border:none;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer;">
+      베타 신청
+    </button>
+  </div>
+</div>
+
+## 함께 읽으면 좋은 글
+
+- [내 집이 황금알을 낳기까지, 재개발 절차 10단계 완벽 가이드 (ft. 한남3·성수)](/posts/reconstruction/2026-03-07-내-집이-황금알을-낳기까지,-재개발-절차-10단계-완벽-가이드-(ft.-한남3·성수)_auto/)
+- [재개발 수익률, 뜬구름 잡는 소리에 속지 마세요: M-DEENO의 데이터 기반 절차 가이드](/posts/reconstruction/2026-03-07-재개발-수익률,-뜬구름-잡는-소리에-속지-마세요-M-DEENO의-데이터-기반-절차-가이드_auto/)
+- [공사비 1,000만 원 시대, 내 집 재개발 분담금 폭탄 피하는 3가지 핵심 지표](/posts/reconstruction/2026-03-07-공사비-1,000만-원-시대,-내-집-재개발-분담금-'폭탄'-피하는-3가지-핵심-지표_auto/)
+
+<script>
+  async function submitBlogLead() {
+    const email = document.getElementById('blog-lead-email').value.trim();
+    const btn = document.getElementById('blog-lead-btn');
+    if (!email) return alert('이메일을 입력해주세요.');
+    btn.innerText = '전송 중...';
+    btn.disabled = true;
+    try {
+      const res = await fetch('https://mdeeno.com/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, source: 'blog: 재개발 투자, 이 단계 모르면 원금 회수 불가? M-DEENO가 분석한 재개발 9단계 완벽 가이드' })
+      });
+      if (!res.ok) throw new Error('서버 오류: ' + res.status);
+      alert('✅ 베타 신청이 완료되었습니다!');
+      document.getElementById('blog-lead-email').value = '';
+    } catch (err) {
+      console.error(err);
+      alert('오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
+    } finally {
+      btn.innerText = '베타 신청';
+      btn.disabled = false;
+    }
+  }
+</script>
+
+
+
+---
+> **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
+
+
+
+---
+
+
+<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
+    <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">🧮 직접 계산해보기</p>
+    <a href="https://tech.mdeeno.com/calculators/calc_tax/" target="_blank" style="display: inline-block; background-color: #00C853; color: white; padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <strong>🏠 취득세 계산기 바로가기</strong>
+    </a>
+</div>
+
+📉 **이주비 대출 한도 미리 확인**
+👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 DSR 기준 대출 한도 계산기</strong></a>
+
+<br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
+
+※ 해당 리포트는 가상 시나리오를 바탕으로 작성되었습니다. 투자 시 유의하세요.
