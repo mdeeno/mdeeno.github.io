@@ -2,7 +2,7 @@
 title: '은퇴자 배당주 대결! 맥쿼리인프라 vs 리얼티인컴(O) 수익률 및 안정성 완벽 비교'
 date: 2026-02-01
 draft: false
-categories: ["시장 分석"]
+categories: ["시장 분석"]
 tags: ['맥쿼리인프라', '리얼티인컴', '은퇴설계', '배당주투자', '월배당']
 description: '한국과 미국을 대표하는 배당주 1등, 맥쿼리인프라와 리얼티인컴을 정밀 비교합니다. 2026년 최신 배당 수익률과 은퇴자를 위한 최적의 포트폴리오 전략을 공개합니다.'
 image: '/images/macquarie-vs-realty-income.png'

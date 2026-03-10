@@ -2,7 +2,7 @@
 title: '재개발 입주권 vs 분양권 완벽 비교! 2026년 최신 세금·투자금·전매 규정 총정리'
 date: 2026-02-01
 draft: false
-categories: ["시장 分석"]
+categories: ["시장 분석"]
 tags: ['재개발입주권', '분양권', '부동산세금', '초기투자금', '전매제한']
 description: '입주권과 분양권, 이름은 비슷하지만 세금과 투자 방식은 완전히 다릅니다. 2026년 시장 상황에 맞춘 대장주 시세와 함께 실전 투자 가이드를 공개합니다.'
 image: '/images/occupancy-vs-sales-rights.png'
