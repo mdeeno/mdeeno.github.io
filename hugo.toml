@@ -66,7 +66,7 @@ canonifyURLs = true
 
 [[menu.main]]
   identifier = "mvp"
-  name = "📋 무료 분析 신청"
+  name = "📋 무료 분석 신청"
   url = "https://mdeeno.com/member"
   weight = 40
 
