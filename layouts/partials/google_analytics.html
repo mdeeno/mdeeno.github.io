@@ -1,0 +1,29 @@
+{{/* GA4 — 사용자 인터랙션 후 또는 5초 뒤 lazy load
+     FCP/LCP 블로킹 제거 + 미사용 JS 115KiB 절감 */}}
+{{- with site.Config.Services.GoogleAnalytics.ID }}
+<script>
+(function(){
+  var GA_ID = '{{ . }}';
+  var loaded = false;
+  function loadGA() {
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  }
+  // 첫 인터랙션 시 로드
+  ['mousedown','keydown','touchstart','scroll','pointerdown'].forEach(function(e){
+    document.addEventListener(e, loadGA, {once:true, passive:true});
+  });
+  // 최대 5초 후 강제 로드 (bounce 방문자도 추적)
+  setTimeout(loadGA, 5000);
+})();
+</script>
+{{- end }}

@@ -47,9 +47,11 @@ body[data-theme="dark"] {
 }
 
 /* ── Global Typography ─────────────────────────────────── */
+/* 폰트 비동기 로드: 로드 전엔 시스템 폰트로 즉시 렌더링, 완료 후 Pretendard 교체 */
 body, html {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system,
-    BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif !important;
+  font-family: 'Pretendard Variable', Pretendard,
+    -apple-system, BlinkMacSystemFont,
+    'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif !important;
   word-break: keep-all;
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
@@ -785,32 +787,6 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 #gc-views { font-size: 0.82em; color: var(--md-subtle); }
 
 /* ==========================================================
-   RESPONSIVE
-   ========================================================== */
-
-@media (max-width: 760px) {
-  .stat-row    { grid-template-columns: repeat(2, 1fr); }
-  .cat-grid    { grid-template-columns: repeat(2, 1fr); }
-  .posts-grid  { grid-template-columns: 1fr; }
-  .mvp-strip   { flex-direction: column; text-align: center; }
-}
-
-@media (max-width: 480px) {
-  .home-hero   { padding: 2.5rem 1rem 2rem; margin: 0 -1rem 1.5rem; }
-  .cat-grid    { grid-template-columns: 1fr; }
-  .hero-btns   { flex-direction: column; align-items: stretch; }
-  .hbtn        { text-align: center; }
-  .post-content { font-size: 0.98rem; }
-  .post-content h2 { font-size: 1.15rem; }
-  .post-content table { font-size: 0.82rem; }
-  .post-content thead th,
-  .post-content tbody td { padding: 0.5rem 0.65rem; }
-  .terms-grid  { grid-template-columns: 1fr; }
-  .premium-band { padding: 2rem 1.25rem; }
-  .premium-band h2 { font-size: 1.25rem; }
-}
-
-/* ==========================================================
    POST FOOTER — Tags / Prev-Next / Share
    ========================================================== */
 
@@ -1036,41 +1012,75 @@ article.post-single .post-content {
    RESPONSIVE — Mobile readability
    ========================================================== */
 
-/* Table: horizontal scroll on small screens */
+/* Table: 스크롤 래퍼로 가로 오버플로우 처리 */
 .post-content table {
   display: block !important;
+  width: 100% !important;
   overflow-x: auto !important;
   -webkit-overflow-scrolling: touch !important;
-  white-space: nowrap !important;
 }
-
-/* But allow text cells to still wrap */
+/* 셀 내부 텍스트는 줄바꿈 허용 */
+.post-content thead th,
 .post-content tbody td {
   white-space: normal !important;
-  min-width: 80px;
+  min-width: 60px;
+  word-break: keep-all;
+}
+/* 숫자/단위 셀은 줄바꿈 방지 */
+.post-content thead th:first-child { white-space: nowrap !important; }
+
+@media (max-width: 760px) {
+  .stat-row    { grid-template-columns: repeat(2, 1fr); }
+  .cat-grid    { grid-template-columns: repeat(2, 1fr); }
+  .posts-grid  { grid-template-columns: 1fr; }
+  .mvp-strip   { flex-direction: column; text-align: center; }
+
+  /* 포스트 내용 너비 제한 해제 */
+  article.post-single .post-content { max-width: 100%; }
+  .post-header { max-width: 100%; }
+  .post-single { max-width: 100%; }
 }
 
 @media (max-width: 600px) {
-  /* Paginav stacks on mobile */
-  .paginav {
-    grid-template-columns: 1fr !important;
-  }
+  /* 이전/다음 1열 스택 */
+  .paginav { grid-template-columns: 1fr !important; }
   .paginav .next { align-items: flex-start !important; text-align: left !important; }
 
-  /* Headings don't shrink too aggressively */
-  .post-content h2 { font-size: 1.1rem !important; }
-  .post-content h3 { font-size: 1.0rem !important; }
+  /* 제목 최소 크기 보장 */
+  .post-content h2 { font-size: clamp(1.05rem, 4vw, 1.25rem) !important; }
+  .post-content h3 { font-size: clamp(0.98rem, 3.5vw, 1.1rem) !important; }
 
-  /* Table minimum font */
-  .post-content table { font-size: 0.8rem !important; }
+  /* 표 최소 폰트 */
+  .post-content table { font-size: 0.82rem !important; }
   .post-content thead th,
   .post-content tbody td { padding: 0.45rem 0.6rem !important; }
 
-  /* Post title */
-  .post-title { font-size: clamp(1.2rem, 5vw, 1.6rem) !important; }
+  /* 포스트 제목 */
+  .post-title { font-size: clamp(1.15rem, 5vw, 1.6rem) !important; }
 
-  /* Post footer */
+  /* 포스트 푸터 */
   .post-footer { margin-top: 2rem; }
+
+  /* 태그 칩 크기 */
+  .post-tags a { font-size: 0.75rem !important; padding: 3px 12px !important; }
+}
+
+@media (max-width: 480px) {
+  .home-hero   { padding: 2.5rem 1rem 2rem; margin: 0 -1rem 1.5rem; }
+  .cat-grid    { grid-template-columns: 1fr; }
+  .hero-btns   { flex-direction: column; align-items: stretch; }
+  .hbtn        { text-align: center; }
+  .post-content { font-size: 0.98rem; }
+  .terms-grid  { grid-template-columns: 1fr; }
+  .premium-band { padding: 2rem 1.25rem; }
+  .premium-band h2 { font-size: 1.25rem; }
+
+  /* 히어로 검색바 */
+  .hero-search input { font-size: 0.88rem; }
+  .hero-search button { padding: 0 1rem; font-size: 0.85rem; }
+
+  /* stat 숫자 */
+  .stat-n { font-size: 1.25rem; }
 }
 
 /* Dark mode article adjustments */
