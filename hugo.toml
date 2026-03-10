@@ -6,6 +6,17 @@ theme = 'PaperMod'
 enableRobotsTXT = true
 canonifyURLs = true
 
+[related]
+  includeNewer = true
+  threshold    = 60
+  toLower      = true
+  [[related.indices]]
+    name   = "tags"
+    weight = 80
+  [[related.indices]]
+    name   = "categories"
+    weight = 20
+
 # Google Analytics 4 — GA4 측정 ID를 아래에 입력하세요 (예: G-XXXXXXXXXX)
 [services.googleAnalytics]
   ID = "G-77C1K4JKYP"

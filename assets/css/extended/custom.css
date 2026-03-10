@@ -132,3 +132,116 @@
     padding: 0 !important;
     background: transparent !important;
 }
+
+/* ── 관련 포스트 위젯 ─────────────────────────────────── */
+.related-posts {
+  margin: 40px 0 8px;
+  padding: 24px 28px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.related-posts-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.related-posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.related-posts-item {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.related-posts-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.related-posts-link {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-decoration: none;
+}
+
+.related-posts-item-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.related-posts-item-title:hover {
+  color: #2563eb;
+}
+
+.related-posts-item-desc {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* ── 카테고리별 계산기 컨텍스트 링크 ────────────────────── */
+.calc-cta-box {
+  margin: 28px 0;
+  padding: 18px 22px;
+  background: #f0fdf4;
+  border: 1.5px solid #bbf7d0;
+  border-radius: 10px;
+}
+
+.calc-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.calc-cta-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 4px;
+}
+
+.calc-cta-desc {
+  font-size: 0.8rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.calc-cta-btn {
+  display: inline-block;
+  padding: 9px 20px;
+  background: #16a34a;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 7px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.calc-cta-btn:hover {
+  background: #15803d;
+}
+
+@media (max-width: 480px) {
+  .calc-cta-inner { flex-direction: column; align-items: flex-start; }
+  .calc-cta-btn   { width: 100%; text-align: center; }
+}
