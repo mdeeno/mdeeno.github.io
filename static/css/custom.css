@@ -874,47 +874,54 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 }
 
 /* ── Prev / Next Nav ─────────────────────────────────────── */
+/* 컨테이너 배경 제거 (PaperMod 다크 entry 색상 덮어쓰기) */
 .paginav {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
   gap: 0.75rem !important;
-  margin: 1.5rem 0 !important;
+  margin: 2rem 0 1.5rem !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
 }
 
 .paginav a {
   display: flex !important;
   flex-direction: column !important;
-  background: var(--md-card) !important;
-  border: 1px solid var(--md-border) !important;
+  background: #ffffff !important;
+  border: 1.5px solid var(--md-border) !important;
   border-radius: 12px !important;
   padding: 1rem 1.25rem !important;
   text-decoration: none !important;
-  transition: border-color 0.2s, box-shadow 0.2s !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
+  color: inherit !important;
 }
 
 .paginav a:hover {
   border-color: var(--md-blue) !important;
-  box-shadow: 0 4px 16px rgba(13,36,97,0.09) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(13,36,97,0.1) !important;
 }
 
 .paginav .prev { align-items: flex-start !important; }
 .paginav .next { align-items: flex-end !important; text-align: right !important; }
 
 .paginav span:first-child {
-  font-size: 0.72rem !important;
-  color: var(--md-muted) !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.05em !important;
+  font-size: 0.68rem !important;
+  color: var(--md-blue) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 6px !important;
 }
 
 .paginav span:last-child {
   font-size: 0.88rem !important;
-  font-weight: 700 !important;
-  color: var(--md-navy) !important;
-  line-height: 1.4 !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  line-height: 1.5 !important;
   display: -webkit-box !important;
   -webkit-line-clamp: 2 !important;
   -webkit-box-orient: vertical !important;
@@ -924,47 +931,49 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 /* ── Share Buttons ───────────────────────────────────────── */
 .share-buttons {
   display: flex !important;
-  gap: 0.5rem !important;
+  gap: 8px !important;
   flex-wrap: wrap !important;
   align-items: center !important;
-  padding: 0 !important;
-  margin: 1.25rem 0 0 !important;
+  padding: 1rem 0 0 !important;
+  margin: 0 !important;
   list-style: none !important;
+  border-top: 1px solid var(--md-border) !important;
 }
 
 .share-buttons li { list-style: none !important; }
 
 .share-buttons > span {
-  font-size: 0.78rem !important;
-  color: var(--md-muted) !important;
-  font-weight: 600 !important;
-  margin-right: 4px !important;
+  font-size: 0.75rem !important;
+  color: var(--md-subtle) !important;
+  font-weight: 500 !important;
+  margin-right: 2px !important;
 }
 
 .share-buttons a {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 36px !important;
-  height: 36px !important;
+  width: 34px !important;
+  height: 34px !important;
   border-radius: 8px !important;
-  background: var(--md-card) !important;
-  border: 1px solid var(--md-border) !important;
-  color: var(--md-muted) !important;
+  background: #f8fafc !important;
+  border: 1px solid #e4e7ec !important;
+  color: #6b7280 !important;
   text-decoration: none !important;
-  transition: border-color 0.15s, background 0.15s, color 0.15s !important;
+  transition: all 0.15s !important;
   flex-shrink: 0 !important;
 }
 
 .share-buttons a:hover {
+  background: var(--md-blue) !important;
   border-color: var(--md-blue) !important;
-  background: var(--md-blue-lt) !important;
-  color: var(--md-blue) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
 }
 
 .share-buttons a svg {
-  width: 18px !important;
-  height: 18px !important;
+  width: 16px !important;
+  height: 16px !important;
   fill: currentColor !important;
 }
 
@@ -1102,22 +1111,29 @@ body[data-theme="dark"] .post-tags a:hover {
   color: #93c5fd !important;
   background: rgba(29,111,232,0.12) !important;
 }
+body[data-theme="dark"] .paginav { background: transparent !important; }
 body[data-theme="dark"] .paginav a {
   background: #1e293b !important;
   border-color: #334155 !important;
 }
-body[data-theme="dark"] .paginav a:hover { border-color: var(--md-blue) !important; }
-body[data-theme="dark"] .paginav span:first-child { color: #64748b !important; }
+body[data-theme="dark"] .paginav a:hover {
+  border-color: var(--md-blue) !important;
+  box-shadow: 0 6px 20px rgba(29,111,232,0.15) !important;
+}
+body[data-theme="dark"] .paginav span:first-child { color: #60a5fa !important; }
 body[data-theme="dark"] .paginav span:last-child { color: #f1f5f9 !important; }
+body[data-theme="dark"] .share-buttons {
+  border-color: #334155 !important;
+}
 body[data-theme="dark"] .share-buttons a {
   background: #1e293b !important;
   border-color: #334155 !important;
   color: #64748b !important;
 }
 body[data-theme="dark"] .share-buttons a:hover {
+  background: var(--md-blue) !important;
   border-color: var(--md-blue) !important;
-  background: rgba(29,111,232,0.12) !important;
-  color: #93c5fd !important;
+  color: #ffffff !important;
 }
 body[data-theme="dark"] .toc {
   background: #1e293b;
