@@ -1,5 +1,5 @@
 ---
-title: 재초환 피하려다 수억 원 증발? 여의도 한양아파트 신탁 방식의 명암과 Prop-Logic™ 분석 리포트
+title: "재초환 피하려다 수억 원 증발? 여의도 한양아파트 신탁 방식의 명암과 Prop-Logic™ 분석 리포트"
 date: 2026-03-04 10:28:21
 draft: false
 categories:

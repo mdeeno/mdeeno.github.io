@@ -1,5 +1,5 @@
 ---
-title: '분양권 양도세 66% 폭탄 피하기: ''Prop-Logic'' 점수가 낮은 단지의 매도 타이밍'
+title: "분양권 양도세 66% 폭탄 피하기: 'Prop-Logic' 점수가 낮은 단지의 매도 타이밍"
 date: 2026-02-12 17:49:06
 draft: false
 categories:

@@ -1,5 +1,5 @@
 ---
-title: '선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 ''Safety Score'' 기반 저평가 단지 선별법'
+title: "선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 'Safety Score' 기반 저평가 단지 선별법"
 date: 2026-02-11 22:49:41
 draft: false
 categories:

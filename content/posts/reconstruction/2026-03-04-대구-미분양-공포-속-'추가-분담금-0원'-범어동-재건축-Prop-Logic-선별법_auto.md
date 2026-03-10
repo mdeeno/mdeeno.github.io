@@ -1,5 +1,5 @@
 ---
-title: 대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법
+title: "대구 미분양 공포 속 추가 분담금 0원? 범어동 재건축 Prop-Logic 선별법"
 date: 2026-03-04 10:20:25
 draft: false
 categories:

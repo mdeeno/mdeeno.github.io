@@ -1,5 +1,5 @@
 ---
-title: 분당 시범단지 선도지구 발표 임박, R-Score로 분석한 환급금 1억 유망 단지 TOP 3
+title: "분당 시범단지 선도지구 발표 임박, R-Score로 분석한 환급금 1억 유망 단지 TOP 3"
 date: 2026-02-25 10:24:44
 draft: false
 categories:

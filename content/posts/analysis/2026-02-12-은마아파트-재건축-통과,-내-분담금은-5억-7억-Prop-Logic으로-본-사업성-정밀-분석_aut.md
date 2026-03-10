@@ -1,5 +1,5 @@
 ---
-title: 은마아파트 재건축 통과, 내 분담금은 5억? 7억? Prop-Logic으로 본 사업성 정밀 분석
+title: "은마아파트 재건축 통과, 내 분담금은 5억? 7억? Prop-Logic으로 본 사업성 정밀 분석"
 date: 2026-02-12 19:46:31
 draft: false
 categories:

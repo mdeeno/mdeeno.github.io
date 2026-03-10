@@ -1,5 +1,5 @@
 ---
-title: 목동 7단지 vs 14단지, 대지지분이 결정하는 재건축 R-Score 승자는?
+title: "목동 7단지 vs 14단지, 대지지분이 결정하는 재건축 R-Score 승자는?"
 date: 2026-02-14 20:55:45
 draft: false
 categories:
