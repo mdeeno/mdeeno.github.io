@@ -34,7 +34,7 @@ canonifyURLs = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
-  naver_verify = "코드값"
+  naver_verify = "2f237c17ee6a92cf4e3591b76895cfd73bf59bca"
 
   # homeInfoParams — 커스텀 index.html로 대체됨
   [params.homeInfoParams]
