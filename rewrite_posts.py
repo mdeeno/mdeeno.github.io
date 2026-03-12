@@ -11,7 +11,11 @@ from google import genai
 from google.genai import types
 
 # --- Config ---
-GEMINI_API_KEY = "REDACTED_GEMINI_KEY"
+from dotenv import load_dotenv
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
+    raise EnvironmentError("GEMINI_API_KEY가 .env에 설정되어 있지 않습니다.")
 BASE_DIR = "/Users/suhun/Desktop/document/mdeeno.github.io/content/posts/reconstruction"
 
 TARGET_FILES = [
