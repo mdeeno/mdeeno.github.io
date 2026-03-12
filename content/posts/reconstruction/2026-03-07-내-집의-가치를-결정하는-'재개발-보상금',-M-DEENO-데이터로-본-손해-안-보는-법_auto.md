@@ -24,7 +24,7 @@ description: "재개발 보상금이 적게 나올까 걱정되시나요? M-DEEN
 
 최근 원자재 가격과 인건비가 급등하면서 서울 주요 재개발 구역의 공사비가 평당 800만~1,000만 원 시대를 맞이했습니다. M-DEENO 데이터 랩의 시뮬레이션에 따르면, 공사비가 20% 상승할 때 일반적인 재개발 구역의 비례율은 약 12~15% 하락하는 결과를 보였습니다. 이는 감정평가액 10억 원인 집을 가진 조합원이 앉은자리에서 1억 5,000만 원의 추가 지출을 떠안게 된다는 의미입니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -55,7 +55,7 @@ M-DEENO가 분석한 주요 단지들의 사례를 보면 입지에 따른 보�
 
 보상금을 많이 받는 법은 결국 지출을 줄이거나 수입을 늘리는 구조를 만드는 것입니다. 조합원으로서 사업비 지출 항목을 꼼꼼히 감시하고, 일반분양 수익을 극대화할 수 있는 고급화 전략과 비용 효율성 사이의 균형점을 찾는 목소리를 내야 합니다. 데이터는 거짓말을 하지 않으며, 준비된 조합원만이 자신의 자산 가치를 온전히 지켜낼 수 있습니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>

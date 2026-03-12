@@ -32,7 +32,7 @@ M-DEENO Prop-Logic™ 알고리즘이 도출한 데이터에 따르면, 현재 �
 
 사업의 막바지 단계인 관리처분(이주·철거 직전 단계로, 분담금이 확정되는 시점) 인가 시점에 이 숫자들이 확정되는데, 최근에는 이 단계에서도 공사비 증액 이슈로 인해 숫자가 계속해서 변하고 있습니다. M-DEENO 데이터 랩은 현재 서울 주요 단지의 평균 비례율이 기존 110%대에서 90% 중반까지 하락한 것으로 파악하고 있습니다. 이는 10억 원 가치의 아파트를 가진 조합원이 가만히 앉아서 5,000만 원 이상의 추가 부담을 안게 되었음을 의미합니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -64,7 +64,7 @@ M-DEENO Prop-Logic™ 알고리즘이 도출한 데이터에 따르면, 현재 �
 
 결국 핵심은 '정보의 비대칭성'을 해소하는 것입니다. 조합이 제공하는 자료만 믿지 말고, 객관적인 3자 데이터를 통해 내 자산의 위치를 파악하십시오. M-DEENO의 분석 툴은 실거래가 데이터와 최신 공사비 트렌드를 결합하여 가장 정밀한 예측치를 제공합니다. 지금 이 순간에도 공사비는 오르고 있으며, 당신의 결정이 늦어질수록 리스크는 커집니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>

@@ -18,7 +18,7 @@ description: "재개발 분담금 폭탄이 걱정되시나요? M-DEENO 데이�
 
 정비사업의 수익성을 나타내는 핵심 지표들이 급격히 악화되면서, 자산 가치 보존을 위한 정교한 데이터 분석은 이제 생존을 위한 필수 조건이 되었습니다. M-DEENO 데이터 랩은 최근 3년간의 공사비 지수와 금리 변동 추이를 추적하여, 조합원이 직면할 실질적인 현금 흐름 리스크를 심층 분석했습니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -63,7 +63,7 @@ M-DEENO 데이터 랩이 분석한 서울 3대 핵심 정비사업지의 현황�
 
 추가 분담금은 예측 불가능한 재앙이 아니라, 데이터를 통해 사전에 충분히 가늠해 볼 수 있는 변수입니다. 자금 계획이 어긋나 입주 직전에 눈물의 급매를 내놓지 않으려면, 지금 당장 내 단지의 실질적인 사업성을 객관적인 수치로 점검해 보아야 합니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>

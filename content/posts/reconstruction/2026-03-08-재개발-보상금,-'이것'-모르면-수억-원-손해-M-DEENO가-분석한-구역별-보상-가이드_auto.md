@@ -11,7 +11,7 @@ description: "재개발 보상금(권리가액) 산정 방식이 궁금하신가
 
 M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 재개발 구역에서 조합원이 예상했던 권리가액(비례율을 적용한 내 실질 지분 가치)과 실제 통보된 금액 사이의 괴리가 평균 15% 이상 벌어진 것으로 나타났습니다. 이는 원자재 가격 상승과 고금리 기조가 맞물리며 사업 비용이 폭증했기 때문인데, 이러한 시장의 변화를 읽지 못하면 자산 전략의 실패로 이어질 수밖에 없습니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -59,7 +59,7 @@ M-DEENO가 제공하는 리스크 분석 도구는 국토교통부 실거래 데
 
 [재건축 초과이익 환수제 완화의 실질적 효과](/posts/reconstruction/reconstruction-tax-relief/)
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>

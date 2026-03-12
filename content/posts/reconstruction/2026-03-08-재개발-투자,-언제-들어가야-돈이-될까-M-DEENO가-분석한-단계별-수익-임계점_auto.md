@@ -17,7 +17,7 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 
 성수전략정비구역 1지구와 같은 초우량 입지의 경우, 조합 설립 이후 한강변 초고층 랜드마크에 대한 기대감이 선반영되면서 매물 가격이 25억 원에서 30억 원대를 상회하는 기현상을 보이고 있습니다. 이는 사업 초기 단계임에도 불구하고 입지적 희소성이 리스크를 압도한 사례로 볼 수 있습니다. 다만 일반적인 구역에서는 조합 설립 인가(토지등소유자 75% 동의)가 난 직후가 리스크는 줄어들면서 프리미엄은 아직 본격적으로 붙지 않은 '1차 매수 타이밍'으로 꼽힙니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -42,7 +42,7 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 
 셋째, 현금 흐름의 데드크로스를 경계하십시오. 재개발 투자는 입주 시점까지 자금이 묶이는 '시간 투자'입니다. 이주비 대출과 중도금 대출의 금리가 1%만 올라도 전체 수익률은 급격히 하락합니다. 특히 DSR 규제로 인해 추가 자금 조달이 막힐 경우, 완공을 코앞에 두고 급매로 물건을 던져야 하는 상황이 발생할 수 있습니다. 본인의 가용 자산 중 최소 20%는 예비비로 확보해두는 유연함이 필요합니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>

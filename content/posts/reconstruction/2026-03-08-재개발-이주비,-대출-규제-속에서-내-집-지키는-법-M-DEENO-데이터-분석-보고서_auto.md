@@ -22,7 +22,7 @@ description: "재개발 이주비 대출 한도와 이자 부담 때문에 고�
 
 M-DEENO 데이터 랩의 시뮬레이션에 따르면, 이주 기간이 6개월 지연될 때마다 조합원 1인당 발생하는 보이지 않는 금융 손실은 권리가액(비례율을 적용한 내 실질 지분 가치) 대비 약 2.5%에 달합니다. 단순히 빌려 쓰는 돈이 아니라, 내 자산 가치를 갉아먹으며 진행되는 고위험 금융 거래임을 직시해야 합니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -55,7 +55,7 @@ M-DEENO Prop-Logic™ 알고리즘 분석 결과, 이주비 대출 이자를 후
 
 따라서 조합원은 매달 발송되는 조합 소식지를 통해 사업비 지출 내역을 모니터링하고, 본인의 권리가액이 비례율 변동에 따라 어떻게 변하는지 실시간으로 추적해야 합니다. 막연한 낙관론보다는 최악의 금리 상황을 가정한 보수적인 자금 운용이 내 집을 지키는 가장 확실한 방법입니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>

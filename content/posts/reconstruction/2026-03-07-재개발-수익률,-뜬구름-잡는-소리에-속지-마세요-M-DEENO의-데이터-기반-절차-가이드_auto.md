@@ -18,7 +18,7 @@ description: "재개발 투자의 성패는 절차별 리스크 관리에 있습
 
 재개발 사업은 단순한 노후 주택 정비가 아닌, 복잡한 금융 구조와 도정법(도시 및 주거환경정비법)이라는 법적 테두리 안에서 움직이는 고난도 자산 전략입니다. 최근 원자재 가격 폭등과 고금리 기조는 기존의 사업성 분석 모델을 완전히 무력화시켰으며, 이제는 감이 아닌 정밀한 데이터 시뮬레이션만이 유일한 생존 전략이 되었습니다. M-DEENO는 자체 개발한 Prop-Logic™ 알고리즘을 통해 전국 1,200여 개 정비사업지의 실질 수익성을 실시간으로 추적하고 있습니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -55,7 +55,7 @@ Prop-Logic™ 분석 결과, 서울 강북권 주요 재개발 구역의 평균 
 
 결국 성공적인 투자를 위해서는 '어떤 브랜드가 들어오느냐'보다 '어떤 구조로 사업비를 절감하느냐'에 집중해야 합니다. 도정법상의 각종 인센티브를 최대한 활용하여 용적률을 확보하고, 공사 기간을 단축하여 금융 비용을 줄이는 것이 실질적인 수익률 방어의 핵심입니다. 데이터는 거짓말을 하지 않으며, 화려한 조감도 뒤에 숨겨진 숫자의 진실을 읽어낼 수 있어야 합니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>

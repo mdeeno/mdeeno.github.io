@@ -24,7 +24,7 @@ M-DEENO 데이터 랩의 시뮬레이션에 따르면, 공사비가 20% 상승�
 
 결국 종전자산(재건축 전 내 아파트의 감정평가 금액)이 높더라도 사업성이 낮은 구역에서는 새 아파트를 받기 위해 내야 하는 돈이 집값의 절반에 육박하는 기현상이 발생합니다. 자금 동원 능력이 부족한 고령층 조합원이나 무리하게 '영끌'로 진입한 투자자들에게 이러한 비용 상승은 단순한 수익률 저하가 아닌 생존의 문제입니다. [공사비 급등에 따른 정비사업 수익성 변화 분석](/posts/reconstruction/construction-cost-impact/) 데이터를 통해 현재 내 단지의 위치를 객관적으로 파악해야 하는 이유입니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -45,7 +45,7 @@ M-DEENO가 제안하는 최적 자금 조달 공식은 `(감정평가액 × 비�
 
 특히 금리 인상기에는 대출 이자 자체가 분담금의 일부라는 인식이 필요합니다. 연 5% 금리로 5억 원을 대출받을 경우, 매달 나가는 이자만 200만 원이 넘습니다. 이는 실질적인 주거 비용의 상승을 의미하며, 향후 집값 상승분이 이 금융 비용을 상쇄하지 못한다면 재건축은 '남는 것 없는 장사'가 될 수 있습니다. 따라서 대출 실행 시점을 최대한 늦추거나, 중도상환수수료가 없는 상품을 선택해 금리 하락기에 대환 대출을 노리는 전략적 접근이 요구됩니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>

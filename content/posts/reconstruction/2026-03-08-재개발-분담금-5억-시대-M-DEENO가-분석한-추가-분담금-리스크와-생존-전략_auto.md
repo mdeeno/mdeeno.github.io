@@ -16,7 +16,7 @@ description: "재개발 분담금이 얼마나 오를지 불안하신가요? M-D
     </p>
 </div>
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
@@ -61,7 +61,7 @@ M-DEENO 데이터 랩의 시뮬레이션에 따르면, 공사비가 평당 100�
 
 지금 보유 중인, 혹은 눈여겨보고 있는 정비사업지의 사업성을 직접 검증해 보십시오. 조합의 설명회 자료에 나오는 숫자 뒤에 숨겨진 진짜 리스크를 발견하는 순간, 당신의 투자 성적표가 달라질 것입니다. 데이터는 거짓말을 하지 않으며, 준비된 자만이 5억 원의 분담금 공포를 이겨내고 상급지 입성의 꿈을 이룰 수 있습니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
   <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
 </div>
