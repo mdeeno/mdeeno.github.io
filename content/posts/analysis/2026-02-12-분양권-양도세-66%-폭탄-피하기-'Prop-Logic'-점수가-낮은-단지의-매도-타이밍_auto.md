@@ -47,6 +47,28 @@ _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 - 둘째, 주변 입주 물량이 향후 2년 내에 현재의 150%를 초과한다면 과감한 매도를 고려해야 합니다.
 - 셋째, 대출 금리 부담이 월 임대 수익 예상치를 상회한다면 '세금 폭탄'보다 '역전세 폭탄'이 더 무섭습니다.
 
+<div style="margin:40px 0;padding:25px;background:#f0f7ff;border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📩 재건축 리스크 분석 리포트 사전 신청</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    M-DEENO 프리미엄 리포트가 2026년 6월 정식 출시 예정입니다.<br>
+    지금 사전 신청하면 출시 특가를 먼저 받아보실 수 있습니다.
+  </p>
+  <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;">
+    <input id="blog-lead-email" type="email" placeholder="이메일을 입력하세요"
+      style="padding:10px 16px;border:1px solid #93c5fd;border-radius:8px;font-size:0.9rem;width:220px;outline:none;" />
+    <button id="blog-lead-btn" onclick="submitBlogLead()"
+      style="padding:10px 20px;background:#2563eb;color:#fff;border:none;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer;">
+      사전 신청
+    </button>
+  </div>
+  <div style="margin-top:12px;">
+    <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+      style="display:inline-block;padding:10px 24px;background:#ffffff;color:#1e40af;border:2px solid #2563eb;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">
+      📊 지금 바로 무료 분담금 계산하기 →
+    </a>
+  </div>
+</div>
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

@@ -97,6 +97,12 @@ Prop-Logic™ 분석 결과, 서울 강북권 주요 재개발 구역의 평균 
       사전 신청
     </button>
   </div>
+  <div style="margin-top:12px;">
+    <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+      style="display:inline-block;padding:10px 24px;background:#ffffff;color:#1e40af;border:2px solid #2563eb;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">
+      📊 지금 바로 무료 분담금 계산하기 →
+    </a>
+  </div>
 </div>
 
 ## 함께 읽으면 좋은 글

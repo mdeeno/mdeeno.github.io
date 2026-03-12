@@ -90,6 +90,12 @@ A3. 이주비 대출은 내 권리가액을 담보로 이주 기간 동안 빌�
       사전 신청
     </button>
   </div>
+  <div style="margin-top:12px;">
+    <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+      style="display:inline-block;padding:10px 24px;background:#ffffff;color:#1e40af;border:2px solid #2563eb;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;">
+      📊 지금 바로 무료 분담금 계산하기 →
+    </a>
+  </div>
 </div>
 
 ## 함께 읽으면 좋은 글
