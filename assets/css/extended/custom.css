@@ -57,16 +57,18 @@
 }
 
 .mvp-cta-button {
-    display: inline-block;
+    display: block;
+    width: 100%;
     margin-top: 0.75rem;
-    padding: 0.65rem 1.5rem;
+    padding: 13px 20px;
     background: #2563eb;
     color: #fff !important;
     font-weight: 700;
     font-size: 0.95rem;
     border-radius: 8px;
     text-decoration: none !important;
-    align-self: flex-start;
+    text-align: center;
+    box-sizing: border-box;
     transition: background 0.2s ease;
 }
 
