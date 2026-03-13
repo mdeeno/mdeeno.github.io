@@ -20,3 +20,11 @@
 {{/* ── GoatCounter — async ─────────────────────────────────── */}}
 <script data-goatcounter="https://mdeeno.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+{{/* ── Google AdSense — 6/15 이후 빌드부터 자동 활성화 ──────── */}}
+{{/* publisher_id: hugo.toml params.adsense_publisher_id 에서 관리 */}}
+{{- $adsense_date := time .Site.Params.adsense_active_date -}}
+{{- if and .Site.Params.adsense_publisher_id (ge now.Unix $adsense_date.Unix) -}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsense_publisher_id }}"
+     crossorigin="anonymous"></script>
+{{- end -}}

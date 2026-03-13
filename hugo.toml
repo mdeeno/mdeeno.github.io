@@ -36,6 +36,13 @@ canonifyURLs = true
 
   naver_verify = "2f237c17ee6a92cf4e3591b76895cfd73bf59bca"
 
+  # AdSense — 6/15 활성화.
+  # publisher_id: ca-pub-XXXXXXXXXXXXXXXX 형식으로 입력
+  # slot_id: AdSense 계정 > 광고 단위에서 생성한 숫자 ID (예: "1234567890")
+  adsense_publisher_id = "ca-pub-XXXXXXXXXXXXXXXX"
+  adsense_slot_id      = "XXXXXXXXXX"
+  adsense_active_date  = "2026-06-15"
+
   # homeInfoParams — 커스텀 index.html로 대체됨
   [params.homeInfoParams]
     Title = "M-DEENO | 재건축·재개발 데이터 분석"

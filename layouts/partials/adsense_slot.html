@@ -1,0 +1,23 @@
+{{/* ── AdSense 광고 슬롯 ────────────────────────────────────────
+   호출: {{ partial "adsense_slot.html" . }}
+
+   설정 위치: hugo.toml [params]
+     adsense_publisher_id = "ca-pub-XXXXXXXXXXXXXXXX"
+     adsense_slot_id      = "XXXXXXXXXX"
+     adsense_active_date  = "2026-06-15"
+
+   6/15 이전 빌드 → 이 partial은 빈 출력 (HTML에 광고 코드 없음)
+   6/15 이후 빌드 → 반응형 디스플레이 광고 렌더링
+   ─────────────────────────────────────────────────────────── */}}
+{{- $adsense_date := time .Site.Params.adsense_active_date -}}
+{{- if and .Site.Params.adsense_publisher_id (ge now.Unix $adsense_date.Unix) -}}
+<div class="adsense-wrap" style="text-align:center;margin:2rem 0;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ .Site.Params.adsense_publisher_id }}"
+       data-ad-slot="{{ .Site.Params.adsense_slot_id }}"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+{{- end -}}
