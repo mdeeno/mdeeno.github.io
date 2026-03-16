@@ -34,8 +34,11 @@ genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-flash-latest")
 
 # ── 설정 ───────────────────────────────────────────────────────────────────────
-BATCH_SIZE     = 8    # 한 번에 Gemini에 보낼 포스트 수
+BATCH_SIZE     = 16   # 한 번에 Gemini에 보낼 포스트 수 (16 × 5배치 = 80포스트/일)
 DELAY_SECONDS  = 3    # 배치 간 딜레이 (rate limit 방어)
+# 포스팅 엔진이 5~15 API콜/일 사용 → SEO 스크립트는 기본 5배치(5콜)로 제한
+# 포스팅이 적었던 날은 --max-batches 10 으로 늘려서 실행 가능
+DEFAULT_MAX_BATCHES = 5
 
 # ── 로그 로드/저장 ──────────────────────────────────────────────────────────────
 def load_log():
@@ -138,6 +141,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="파일 미수정 (테스트)")
     parser.add_argument("--folder", default=None, help="특정 폴더만 처리 (예: reconstruction)")
+    parser.add_argument("--max-batches", type=int, default=DEFAULT_MAX_BATCHES,
+                        help=f"하루 최대 배치 수 (기본 {DEFAULT_MAX_BATCHES}, 포스팅 엔진 할당량 고려)")
     args = parser.parse_args()
 
     log = load_log()
@@ -146,7 +151,11 @@ def main():
     all_files = collect_files(args.folder)
     pending = [f for f in all_files if str(f) not in done_set]
 
-    print(f"\n{'[DRY-RUN] ' if args.dry_run else ''}총 {len(all_files)}개 중 {len(pending)}개 처리 예정\n")
+    max_posts = args.max_batches * BATCH_SIZE
+    pending = pending[:max_posts]
+
+    print(f"\n{'[DRY-RUN] ' if args.dry_run else ''}총 {len(all_files)}개 중 {len(pending)}개 처리 예정")
+    print(f"배치 크기: {BATCH_SIZE} | 최대 배치: {args.max_batches} | 이번 실행 최대: {max_posts}개\n")
 
     updated = 0
     failed  = 0
