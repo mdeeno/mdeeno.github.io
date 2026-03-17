@@ -250,4 +250,13 @@
 @media (max-width: 480px) {
   .calc-cta-inner { flex-direction: column; align-items: flex-start; }
   .calc-cta-btn   { width: 100%; text-align: center; }
+  .calc-cta-box   { padding: 14px 16px; margin: 20px 0; }
+
+  .mvp-cta { padding: 1rem 0.85rem; margin: 1.5rem 0; }
+  .mvp-cta__title { font-size: 1rem; }
+  .mvp-cta-button { padding: 14px 20px; font-size: 0.95rem; }
+
+  .landing-cta-block { padding: 1.25rem; margin: 1.75rem 0; }
+  .landing-cta-eyebrow { font-size: 1rem; }
+  .landing-cta-body { font-size: 0.9rem; margin-bottom: 1rem; }
 }
