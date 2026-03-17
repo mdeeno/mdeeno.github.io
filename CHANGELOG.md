@@ -7,6 +7,18 @@
 ## 2026-03
 
 ### 2026-03-17
+**[SEO]** Schema.org 구조화 데이터 + 이미지 lazy loading 추가
+- 포스트 페이지에 Article JSON-LD 구조화 데이터 삽입 (검색 리치 결과 대응)
+- 마크다운 이미지 render hook으로 lazy loading 자동 적용 (LCP/CLS 개선)
+- 관련 파일: `layouts/partials/extend_head.html`, `layouts/_default/_markup/render-image.html`
+
+**[접근성]** 고령층 접근성 개선 — CTA 버튼/폰트 크기 확대
+- CTA 버튼 패딩 확대 (13px 20px → 16px 24px), min-height: 44px 추가
+- 모바일 포스트 제목 크기 24px → 26px
+- 계산기 버튼 패딩 확대 (12px → 14px 24px), 히어로 버튼 통일
+- cta_auto.html 인라인 스타일 동기화
+- 관련 파일: `assets/css/extended/custom.css`, `assets/css/lab-style.css`, `layouts/partials/cta_auto.html`
+
 **[SEO]** 테마 중복 포스트 150개 삭제 — keyword cannibalization 제거
 - 42개 중복 클러스터 식별 (분담금 5억, 은마 재건축, 이주비 대출, 로또 청약 등)
 - 클러스터당 대표 1개 보존, 나머지 삭제 (592개 → 442개)

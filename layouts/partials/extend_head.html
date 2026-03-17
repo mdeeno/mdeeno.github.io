@@ -28,3 +28,27 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsense_publisher_id }}"
      crossorigin="anonymous"></script>
 {{- end -}}
+
+{{/* ── Schema.org JSON-LD (Article) ──────────────────────────── */}}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "M-DEENO",
+    "url": "https://mdeeno.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "M-DEENO",
+    "url": "https://mdeeno.com"
+  },
+  "description": "{{ .Description | default .Summary | plainify | truncate 160 }}"
+}
+</script>
+{{ end }}
