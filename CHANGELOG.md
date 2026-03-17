@@ -6,6 +6,12 @@
 
 ## 2026-03
 
+### 2026-03-17 (2)
+**[모바일 반응형]** 480px 브레이크포인트 강화
+- `static/css/custom.css`: 히어로/스탯/MVP스트립/프리미엄밴드/포스트카드/기사콘텐츠 등 480px 여백·폰트 축소
+- `assets/css/extended/custom.css`: CTA 블록(mvp-cta, landing-cta, calc-cta) 480px 패딩·폰트 최적화
+- 관련 파일: 2개 CSS 파일, +53줄
+
 ### 2026-03-17
 **[SEO]** Schema.org 구조화 데이터 + 이미지 lazy loading 추가
 - 포스트 페이지에 Article JSON-LD 구조화 데이터 삽입 (검색 리치 결과 대응)
