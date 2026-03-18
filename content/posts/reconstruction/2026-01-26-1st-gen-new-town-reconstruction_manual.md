@@ -191,6 +191,13 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [GTX-C 착공 사이렌! 삼성역 20분 컷, 아직 8억대 진입 가능한 '이곳' (Top 3)](/posts/strategy/manual-post-1769356858_manual/)
+- [재건축 공사비 1,000만 원 시대, 내 아파트는 '로또'일까 '독'일까? 분담금 경계선(Threshold) 분석](/posts/analysis/2026-02-11-재건축-공사비-1,000만-원-시대,-내-아파트는-'로또'일까-'독'일까-분담금-경계선(Threshold)/)
+- [2026 부동산 조각투자 STO 완벽 가이드: '천원 건물주'의 수익률 반전은 사실일까?](/posts/market/2026-01-26-realestate-sto-guide_manual/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

@@ -101,6 +101,13 @@ GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [2026년 신안산선 개통 D-2년, 시흥/안산 '이 아파트' 8억 돌파 초읽기 TOP 3](/posts/strategy/2026-01-25-2026년-신안산선-개통-D-2년,-시흥안산-'이-아파트'-8억-돌파-초읽기-TOP-3_auto/)
+- ['제2의 판교'를 꿈꾸는 월판선 수혜지, 인덕원 vs 안양 vs 시흥 시세 변동률 심층 분석](/posts/market/2026-01-25-제2의-판교를-꿈꾸는-월판선-수혜지,-인덕원-vs-안양-vs-시흥-시세-변동률-심층-/)
+- [GTX-A vs. 강남 접근성: 하남 교산 vs 고양 창릉 3기 신도시, 승자는?](/posts/market/2026-01-26-GTX-A-vs.-강남-접근성-하남-교산-vs-고양-창릉-3기-신도시,-승자는_auto/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

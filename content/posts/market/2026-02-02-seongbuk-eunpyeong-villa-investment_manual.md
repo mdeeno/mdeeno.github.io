@@ -86,6 +86,13 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [신생아 특례 대출 2억 소득 시대: 9억 이하 아파트, 폭등할 단지 리스트 7](/posts/market/2026-01-26-신생아-특례-대출-2억-소득-시대-9억-이하-아파트,-폭등할-단지-리스트-7_auto/)
+- [2030 엑스포 무산? 부산 북항 2단계, 오션뷰 단지 투자는 지금이 기회다 (전문가 분석)](/posts/market/2026-01-27-2030-엑스포-무산-부산-북항-2단계,-오션뷰-단지-투자는-지금이-기회다-(전문가-분석/)
+- [서울 도심의 마지막 금싸라기 땅: 세운지구 고밀도 개발, 지금 사야 할 이유](/posts/market/2026-01-27-서울-도심의-마지막-금싸라기-땅-세운지구-고밀도-개발,-지금-사야-할-이유_auto/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

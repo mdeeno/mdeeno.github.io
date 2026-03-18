@@ -93,6 +93,13 @@ image: '/images/macquarie-vs-realty-income.png'
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [잠실 주공 5단지 2026년 이주 확정적? 재초환 억대 부담금 사라질까? (실제 시뮬레이션)](/posts/analysis/2026-02-12-잠실-주공-5단지-2026년-이주-확정적-재초환-억대-부담금-사라질까-(실제-시뮬레ᄋ/)
+- [2030 세대 월세 전쟁: 역세권 초소형 아파트 vs 오피스텔, 수익률 4%의 함정](/posts/strategy/2026-01-26-2030-세대-월세-전쟁-역세권-초소형-아파트-vs-오피스텔,-수익률-4%의-함정_auto/)
+- [2026 부동산 조각투자 STO 완벽 가이드: '천원 건물주'의 수익률 반전은 사실일까?](/posts/market/2026-01-26-realestate-sto-guide_manual/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

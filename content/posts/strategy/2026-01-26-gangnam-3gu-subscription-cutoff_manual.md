@@ -127,6 +127,13 @@ image: '/images/2026-gangnam-cutoff.png'
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [자녀 1명으로 서울 청약 당첨? 신혼부부 특공 '바늘구멍' 데이터 분석](/posts/analysis/2026-02-09-자녀-1명으로-서울-청약-당첨-신혼부부-특공-'바늘구멍'-데이터-분석_auto/)
+- [청약 통장 25만 원 상향, 안 올리면 무조건 손해일까? 데이터로 본 당첨 전략](/posts/analysis/2026-02-10-청약-통장-25만-원-상향,-안-올리면-무조건-손해일까-데이터로-본-당첨-전략_/)
+- [공공분양 당첨 후 '금리 폭탄' 피하는 법: 대출 예약 시스템과 최적의 실행 타이밍](/posts/analysis/2026-02-11-공공분양-당첨-후-'금리-폭탄'-피하는-법-대출-예약-시스템과-최적의-실행-타/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

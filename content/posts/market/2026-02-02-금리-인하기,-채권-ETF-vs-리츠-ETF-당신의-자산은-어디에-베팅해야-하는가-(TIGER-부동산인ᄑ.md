@@ -148,6 +148,13 @@ image: https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/ima
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [내 집 마련 꿈 실현! 생애최초 디딤돌 대출, 2024년 최신 금리/한도/조건 완벽 분석](/posts/reconstruction/2026-01-29-내-집-마련-꿈-실현!-생애최초-디딤돌-대출,-2024년-최신-금리한도조건-완벽-분ᄉ/)
+- [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-TOP-5_auto/)
+- [법인 대출 막혔다고 포기? '개인 사업자'로 우회하는 3가지 실전 루트 정밀 분석](/posts/analysis/2026-02-08-법인-대출-막혔다고-포기-'개인-사업자'로-우회하는-3가지-실전-루트-정밀-분석_auto/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

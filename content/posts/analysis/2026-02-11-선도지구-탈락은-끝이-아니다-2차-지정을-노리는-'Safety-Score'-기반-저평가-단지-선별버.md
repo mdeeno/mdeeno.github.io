@@ -81,6 +81,13 @@ Safety Score = (평균 대지 지분 ÷ 현재 용적률) × 통합 재건축 �
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [선도지구 탈락은 악재인가, 기회인가? 평촌/산본 1기 신도시 '저가 매수' 기회 분석](/posts/strategy/2026-01-25-선도지구-탈락은-악재인가,-기회인가-평촌산본-1기-신도시-'저가-매수'-기회-분서/)
+- [평당 공사비 1,000만 원 시대, 내 아파트는 '재건축'일까 '재앙'일까? R-Score 분석](/posts/analysis/2026-02-11-평당-공사비-1,000만-원-시대,-내-아파트는-'재건축'일까-'재앙'일까-R-Score-분석_auto/)
+- [송파 올림픽선수촌 재건축, 공사비 1,200만 원 시대의 생존 전략: M-DEENO 데이터 분석](/posts/reconstruction/2026-02-25-송파-올림픽선수촌-재건축,-공사비-1,200만-원-시대의-생존-전략-M-DEENO-데이터-분서/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

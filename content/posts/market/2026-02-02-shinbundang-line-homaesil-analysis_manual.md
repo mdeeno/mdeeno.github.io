@@ -85,6 +85,13 @@ image: '/images/homaesil-line-analysis.png'
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [인천 1호선 연장 개통! 검단신도시 101·102·103역 대장주 TOP 3와 현재 호가 분석](/posts/strategy/2026-02-02-incheon-line1-geomdan-extension_manual/)
+- [8호선 별내선 개통 임박! 구리/다산 '강남 30분 시대' 수혜 단지 TOP 3 분석](/posts/market/2026-02-01-8호선-별내선-개통-임박!-구리다산-'강남-30분-시대'-수혜-단지-TOP-3-분석_auto/)
+- [소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석](/posts/market/2026-02-02-real-estate-sto-platform-guide_manual/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

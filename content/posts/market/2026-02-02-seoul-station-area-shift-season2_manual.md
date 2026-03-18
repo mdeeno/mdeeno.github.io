@@ -85,6 +85,13 @@ image: '/images/seoul-shift-season2.png'
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [여의도 재건축, 35층 족쇄 풀리자 사업성 30% 급등: 시범/한양 아파트 투자 분석](/posts/market/2026-01-25-여의도-재건축,-35층-족쇄-풀리자-사업성-30%-급등-시범한양-아파트-투자-분석_auto/)
+- [인천 1호선 연장 개통! 검단신도시 101·102·103역 대장주 TOP 3와 현재 호가 분석](/posts/strategy/2026-02-02-incheon-line1-geomdan-extension_manual/)
+- [서울 도심의 마지막 금싸라기 땅: 세운지구 고밀도 개발, 지금 사야 할 이유](/posts/market/2026-01-27-서울-도심의-마지막-금싸라기-땅-세운지구-고밀도-개발,-지금-사야-할-이유_auto/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

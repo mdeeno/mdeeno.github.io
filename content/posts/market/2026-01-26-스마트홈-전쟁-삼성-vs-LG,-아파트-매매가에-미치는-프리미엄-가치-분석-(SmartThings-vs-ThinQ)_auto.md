@@ -88,6 +88,13 @@ image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/im
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [삼성/LG 스마트홈 아파트, 투자 가치 7% 더 오른다? IoT 프리미엄 심층 분석](/posts/market/2026-01-31-삼성LG-스마트홈-아파트,-투자-가치-7%-더-오른다-IoT-프리미엄-심층-분석_auto/)
+- [서부권 교통 혁명, 대장홍대선 역세권 5년 후 시세 폭발 지역은? (전문가 분석)](/posts/market/2026-01-27-서부권-교통-혁명,-대장홍대선-역세권-5년-후-시세-폭발-지역은-(전문가-분서/)
+- [용산 국제업무지구, 2027년 완공 시나리오: 주변 아파트 3대 투자 핵심 분석](/posts/market/2026-01-25-용산-국제업무지구,-2027년-완공-시나리오-주변-아파트-3대-투자-핵심-분석_auto/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();

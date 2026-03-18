@@ -187,6 +187,13 @@ GTX-C 착공은 단순한 공사가 아닙니다. 수도권의 지도가 **'시�
   </div>
 </div>
 
+
+## 함께 읽으면 좋은 글
+
+- [2026 부동산 조각투자 STO 완벽 가이드: '천원 건물주'의 수익률 반전은 사실일까?](/posts/market/2026-01-26-realestate-sto-guide_manual/)
+- [분당·일산 선도지구: '억' 소리 나는 분담금, 그래도 들어갈까? (수익성 시뮬레이션)](/posts/reconstruction/2026-01-26-1st-gen-new-town-reconstruction_manual/)
+- [신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저평가 단지' TOP 3 정밀 분석](/posts/market/2026-02-02-shinbundang-line-homaesil-analysis_manual/)
+
 <script>
   async function submitBlogLead() {
     const email = document.getElementById('blog-lead-email').value.trim();
