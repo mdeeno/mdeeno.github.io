@@ -43,7 +43,7 @@ description: 해운대 우동 vs 중동, 부의 축이 이동할까? M-DEENO가 
 
 ([국토교통부 실거래가 공개시스템](https://rt.molit.go.kr/) 확인 권장)
 
-### M-DEENO M-DEENO 분석 엔진 알고리즘 분석 결과
+### M-DEENO 분석 엔진 알고리즘 분석 결과
 
 <div class="lab-formula-box">자산 가치 상승 잠재력 = (교통 인프라 개선 지수 × 배후 수요 확장성) + 관광 클러스터 결합도</div>
 
