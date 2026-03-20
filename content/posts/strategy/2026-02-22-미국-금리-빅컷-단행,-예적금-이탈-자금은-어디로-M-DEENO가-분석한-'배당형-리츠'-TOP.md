@@ -71,6 +71,17 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 단기적으로는 이자 부담 증가로 하락할 수 있습니다. 하지만 장기적으로는 인플레이션에 따른 **임대료 인상**분이 반영되므로 자산 가치를 방어하는 헤지(Hedge) 수단이 됩니다.
 
 
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
+     target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 분담금 위험도 확인하기 →
+  </a>
+</div>
+
 ## 함께 읽으면 좋은 글
 
 - [2026년 다주택자 취득세 중과 폐지 현실화될까? 비규제지역 알짜 단지 분석 및 절세 전략](/posts/strategy/2026-02-22-2026년-다주택자-취득세-중과-폐지-현실화될까-비규제지역-'알짜'-단지-분석-및-절/)

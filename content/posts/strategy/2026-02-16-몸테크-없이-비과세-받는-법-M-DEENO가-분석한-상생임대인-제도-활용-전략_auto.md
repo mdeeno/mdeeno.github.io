@@ -91,6 +91,17 @@ M-DEENO의 분석 결과, 고가 주택일수록 실거주를 위해 이사하�
 **Q3. 상생임대인 제도는 다주택자도 활용할 수 있나요?**
 상생임대인 요건 충족 시 거주 요건은 면제되지만, 다주택자의 경우 양도 시점에 1세대 1주택 요건을 별도로 충족해야 비과세가 적용됩니다. 다주택 상태에서의 활용은 제한적입니다.
 
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
+     target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 분담금 위험도 확인하기 →
+  </a>
+</div>
+
 ## 함께 읽으면 좋은 글
 
 - [양도세 아끼려다 집 한 채 날린다? 다운계약서 적발 시 비과세 박탈의 무서운 진실](/posts/strategy/2026-02-19-양도세-아끼려다-집-한-채-날린다-다운계약서-적발-시-'비과세-박탈'의-무서운-진/)

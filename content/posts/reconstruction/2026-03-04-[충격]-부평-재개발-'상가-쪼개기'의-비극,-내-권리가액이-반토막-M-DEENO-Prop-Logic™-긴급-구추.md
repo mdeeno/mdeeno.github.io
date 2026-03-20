@@ -76,6 +76,17 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 무분별한 지분 쪼�
 현재 부평 재개발 시장의 매수 심리가 위축된 상태이므로, 급매보다는 향후 완공 시점의 기대 가치와 현재의 기회비용을 M-DEENO의 데이터 분석을 통해 비교해 본 후 결정하시길 권장합니다.
 
 
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
+     target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 분담금 위험도 확인하기 →
+  </a>
+</div>
+
 ## 함께 읽으면 좋은 글
 
 - [초고령화 시대의 생존 전략, 의세권 아파트가 부의 지도를 바꾼다: M-DEENO 실버 프리미엄 리포트](/posts/strategy/2026-02-22-초고령화-시대의-생존-전략,-'의세권'-아파트가-부의-지도를-바꾼다-M-DEENO-실버-프리미어/)

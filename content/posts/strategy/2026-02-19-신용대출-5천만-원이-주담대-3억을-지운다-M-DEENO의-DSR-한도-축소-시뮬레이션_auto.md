@@ -64,6 +64,17 @@ M-DEENO 데이터 랩에서 서울 주요 단지를 대상으로, 연소득 7,00
 [📉 M-DEENO DSR & 대출 한도 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_dsr/)
 
 
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
+     target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 분담금 위험도 확인하기 →
+  </a>
+</div>
+
 ## 함께 읽으면 좋은 글
 
 - [DSR 규제 우회의 핵심, 개인사업자 주택담보대출 LTV 90% 후순위 금리 정밀 분석](/posts/strategy/2026-02-16-DSR-규제-우회의-핵심,-개인사업자-주택담보대출-LTV-90%-후순위-금리-정밀-분석_auto/)

@@ -13,8 +13,6 @@ tags:
 description: '선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 ''Safety Score'' 기반 저평가 단지 선별법'
 ---
 
-_▲ AI 분석 데이터 (2026-02-11 22:49:41 기준)_
-
 ---
 
 <div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">

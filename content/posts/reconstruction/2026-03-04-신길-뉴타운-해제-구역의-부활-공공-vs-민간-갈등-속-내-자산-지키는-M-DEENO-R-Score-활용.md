@@ -81,6 +81,17 @@ A2. 브랜드 가치 상승으로 일반분양가는 높아질 수 있으나, �
 A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 금액이 인근 래미안 에스티움 시세의 80%를 넘는다면 매도를 고려해볼 만합니다. 정확한 분석을 위해 M-DEENO 분석 엔진 시뮬레이션을 활용해 보세요.
 
 
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
+     target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 분담금 위험도 확인하기 →
+  </a>
+</div>
+
 ## 함께 읽으면 좋은 글
 
 - [송파 올림픽선수촌 재건축, 공사비 1,200만 원 시대의 생존 전략: M-DEENO 데이터 분석](/posts/reconstruction/2026-02-25-송파-올림픽선수촌-재건축,-공사비-1,200만-원-시대의-생존-전략-M-DEENO-데이터-분서/)

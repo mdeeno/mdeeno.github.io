@@ -82,6 +82,17 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 상속 주택은 취득 
 상속 시점에 무주택 세대주가 1가구 1주택이 되는 경우, 특례 세율인 0.8%를 적용받습니다. 이는 일반 상속 세율보다 훨씬 저렴하여 세부담을 크게 줄일 수 있는 제도입니다.
 
 
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
+     target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 분담금 위험도 확인하기 →
+  </a>
+</div>
+
 ## 함께 읽으면 좋은 글
 
 - [다주택자 중과세 공포 끝? 2024년 주택 수 제외 '소형 주택 특례' 완벽 분석](/posts/analysis/2026-02-11-다주택자-중과세-공포-끝-2024년-주택-수-제외-'소형-주택-특례'-완벽-분석_auto/)

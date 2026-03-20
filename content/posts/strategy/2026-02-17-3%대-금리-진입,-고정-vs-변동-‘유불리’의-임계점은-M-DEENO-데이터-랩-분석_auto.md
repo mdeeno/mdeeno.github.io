@@ -82,6 +82,17 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 이는 단순한 수치 
 [💰 나에게 맞는 대출 이자 계산해보기](https://tech.mdeeno.com/calculators/calc_interest/)
 
 
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
+     target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 분담금 위험도 확인하기 →
+  </a>
+</div>
+
 ## 함께 읽으면 좋은 글
 
 - [금리 1%에 5천만 원이 왔다 갔다? 주담대 고정 vs 변동, 당신의 선택은?](/posts/analysis/2026-02-12-금리-1%에-5천만-원이-왔다-갔다-주담대-고정-vs-변동,-당신의-선택은_auto/)

@@ -83,6 +83,17 @@ M-DEENO의 **M-DEENO 분석 엔진 알고리즘**에 따르면, 현재 우동은
 **Q3. 부산 해운대 투자는 서울 투자 대비 어떤 장점이 있나요?**
 서울 대비 진입 가격이 크게 낮으면서도, 관광·해양 인프라라는 고유한 프리미엄이 있습니다. 특히 은퇴 후 이주 수요와 외국인 관광 수요가 뒷받침되어 장기적 수요 기반이 탄탄합니다.
 
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
+     target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    내 분담금 위험도 확인하기 →
+  </a>
+</div>
+
 ## 함께 읽으면 좋은 글
 
 - [LG사이언스파크의 배후, 방화 뉴타운이 제2의 마곡이 될 수 있을까](/posts/reconstruction/2026-02-16-LG사이언스파크의-배후,-방화-뉴타운이-'제2의-마곡'이-될-수-있을까-M-DEENO의-정밀-사업서/)
