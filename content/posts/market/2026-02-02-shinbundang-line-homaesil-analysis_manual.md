@@ -63,26 +63,17 @@ image: '/images/homaesil-line-analysis.png'
 
 <small>본 포스팅은 데이터 분석을 기반으로 한 개인적인 의견이며, 모든 투자의 책임은 본인에게 있습니다. 반드시 현장 임장 후 결정하시기 바랍니다.</small>
 
-<div style="margin:40px 0;padding:25px;background:#f0f7ff;border:2px solid #2563eb;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">🔢 내 추가 분담금, 지금 바로 무료 계산하기</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">입력값 기반 즉시 분석 · 무료 · 1분 소요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-    style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;font-size:0.95rem;">
-    무료 분담금 계산 시작 →
-  </a>
-  <div style="border-top:1px solid #bfdbfe;margin:20px 0 14px;"></div>
-  <p style="font-size:0.85rem;font-weight:700;color:#1e40af;margin:0 0 6px;">📩 리포트 출시 알림 이메일 등록</p>
-  <p style="font-size:0.82rem;color:#374151;margin:0 0 12px;">
-    6월 정식 출시 시 출시 특가 결제 링크를 먼저 받아보실 수 있습니다.
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
   </p>
-  <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;">
-    <input id="blog-lead-email" type="email" placeholder="이메일을 입력하세요"
-      style="padding:10px 16px;border:1px solid #93c5fd;border-radius:8px;font-size:0.9rem;width:220px;outline:none;" />
-    <button id="blog-lead-btn" onclick="submitBlogLead()"
-      style="padding:10px 20px;background:#2563eb;color:#fff;border:none;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer;">
-      출시 알림 신청
-    </button>
-  </div>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
 </div>
 
 
@@ -92,30 +83,6 @@ image: '/images/homaesil-line-analysis.png'
 - [8호선 별내선 개통 임박! 구리/다산 '강남 30분 시대' 수혜 단지 TOP 3 분석](/posts/market/2026-02-01-8호선-별내선-개통-임박!-구리다산-'강남-30분-시대'-수혜-단지-TOP-3-분석_auto/)
 - [소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석](/posts/market/2026-02-02-real-estate-sto-platform-guide_manual/)
 
-<script>
-  async function submitBlogLead() {
-    const email = document.getElementById('blog-lead-email').value.trim();
-    const btn = document.getElementById('blog-lead-btn');
-    if (!email) return alert('이메일을 입력해주세요.');
-    btn.innerText = '전송 중...';
-    btn.disabled = true;
-    try {
-      const res = await fetch('https://mdeeno.com/api/waitlist', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, source: window.location.pathname })
-      });
-      if (!res.ok) throw new Error('서버 오류: ' + res.status);
-      alert('✅ 사전 신청이 완료되었습니다!');
-      document.getElementById('blog-lead-email').value = '';
-    } catch (err) {
-      alert('오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
-    } finally {
-      btn.innerText = '사전 신청';
-      btn.disabled = false;
-    }
-  }
-</script>
 
 ---
 
