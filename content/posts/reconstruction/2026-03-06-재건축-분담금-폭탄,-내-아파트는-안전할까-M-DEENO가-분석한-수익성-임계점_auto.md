@@ -30,7 +30,7 @@ description: "재건축 분담금 폭탄, 내 아파트는 안전할까? M-DEENO
 
 
 ---
-> **※ 본 리포트는 M-DEENO Corp.의 M-DEENO 분석 엔진을 활용한 시뮬레이션 분석입니다.**
+> **※ 본 리포트는 M-DEENO 분석 엔진을 활용한 시뮬레이션 분석입니다.**
 
 
 <div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
