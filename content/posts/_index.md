@@ -1,7 +1,7 @@
 ---
 title: 'Posts'
 summary: '부동산 분석 및 투자 정보'
-draft: true
+draft: false
 ---
 
 {{< mdeeno_cpa type="loan" >}}
