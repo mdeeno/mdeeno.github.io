@@ -37,8 +37,8 @@
   {{- if .Content }}
   <div class="post-content">
 
-    {{/* ── 인트로 CTA: 본문 시작 전 ── */}}
-    {{- partial "cta_auto.html" . }}
+    {{/* ── 상단 CTA 배너: 본문 시작 전 ── */}}
+    {{- partial "top_cta.html" . }}
 
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
