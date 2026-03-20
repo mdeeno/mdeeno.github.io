@@ -5,10 +5,8 @@ draft: false
 categories: ["투자 전략"]
 tags: ['리츠 ETF 실물 부동산 비교', '부동산투자', '재테크']
 description: '소액으로 건물주 되기? 리츠 ETF vs 꼬마빌딩, 전문가가 꼽은 진짜 승자는?'
-image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608608.png'
 ---
 
-<img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608608.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-01-27 22:56:31 기준)*
 
 ## 소액 투자자를 위한 건물주 로드맵: REITs ETF vs 실물 부동산
@@ -105,7 +103,6 @@ REITs ETF는 소액으로 우량 부동산에 간접 투자하고 배당 수익�
     내 분담금 무료 분석하기 →
   </a>
 </div>
-
 
 
 ## 자주 묻는 질문

@@ -14,8 +14,7 @@ description: 해운대 우동 vs 중동, 부의 축이 이동할까? M-DEENO가 
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771555622.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-19 11:46:45 기준)
     </p>
 </div>
@@ -44,11 +43,11 @@ description: 해운대 우동 vs 중동, 부의 축이 이동할까? M-DEENO가 
 
 ([국토교통부 실거래가 공개시스템](https://rt.molit.go.kr/) 확인 권장)
 
-### M-DEENO Prop-Logic™ 알고리즘 분석 결과
+### M-DEENO M-DEENO 분석 엔진 알고리즘 분석 결과
 
 <div class="lab-formula-box">자산 가치 상승 잠재력 = (교통 인프라 개선 지수 × 배후 수요 확장성) + 관광 클러스터 결합도</div>
 
-M-DEENO의 **Prop-Logic™ 알고리즘**에 따르면, 현재 우동은 '보유 가치' 측면에서 우세하나, 중동은 '성장 모멘텀' 측면에서 더 높은 점수를 기록하고 있습니다.
+M-DEENO의 **M-DEENO 분석 엔진 알고리즘**에 따르면, 현재 우동은 '보유 가치' 측면에서 우세하나, 중동은 '성장 모멘텀' 측면에서 더 높은 점수를 기록하고 있습니다.
 
 - 우동은 이미 완성된 인프라로 인해 가격 방어력이 뛰어나지만, 추가적인 대규모 개발 부지가 부족한 상태입니다.
 - 반면 중동은 오시리아 관광단지로 이어지는 관문 입지로서 외부 자본 유입의 직접적인 수혜를 입고 있습니다.
@@ -82,7 +81,6 @@ M-DEENO의 **Prop-Logic™ 알고리즘**에 따르면, 현재 우동은 '보유
 {{< mdeeno_cpa type="loan" >}}
 
 
-
 ---
 
 > **※ 본 글은 M-DEENO 데이터 랩의 시장 분석 리포트입니다.**
@@ -93,7 +91,6 @@ M-DEENO의 **Prop-Logic™ 알고리즘**에 따르면, 현재 우동은 '보유
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 
 ※ 본 분석은 시뮬레이션 수치이며 실거래가는 국토부 시스템 확인이 필수입니다.

@@ -1,4 +1,5 @@
 ---
 title: "세금/정책"
 description: "양도소득세, 취득세, 보유세, 부동산 정부 정책 분석 리포트"
+draft: true
 ---

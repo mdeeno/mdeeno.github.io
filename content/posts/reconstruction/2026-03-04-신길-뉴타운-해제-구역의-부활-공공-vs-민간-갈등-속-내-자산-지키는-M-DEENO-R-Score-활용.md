@@ -15,8 +15,7 @@ description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1772673796.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-03-04 10:22:43 기준)
     </p>
 </div>
@@ -31,7 +30,7 @@ description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 
 
 서울 도심 내 대규모 신축 아파트 공급이 희소해지면서, 이미 인프라가 검증된 신길 뉴타운 인근의 입지적 가치가 다시 평가받고 있기 때문입니다.
 
-**M-DEENO의 Prop-Logic™ 알고리즘 분석**에 따르면, 신길동 일대는 여의도 및 강남 접근성이 우수하여 정비 사업 완료 시 자산 가치 상승 잠재력이 서울 평균을 상회하는 것으로 나타났습니다.
+**M-DEENO의 M-DEENO 분석 엔진 알고리즘 분석**에 따르면, 신길동 일대는 여의도 및 강남 접근성이 우수하여 정비 사업 완료 시 자산 가치 상승 잠재력이 서울 평균을 상회하는 것으로 나타났습니다.
 
 ### 공공 vs 민간: 당신의 선택이 자산 가치를 결정한다
 
@@ -42,7 +41,7 @@ description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 
 
 그렇다면 지금 시점에서 어떤 방식이 내 자산에 더 유리할까요? 단순히 '빨리 된다'는 말만 믿고 동의서를 써주기엔 리스크가 너무 큽니다.
 
-### M-DEENO Prop-Logic™ 기반 R-Score 활용법
+### M-DEENO M-DEENO 분석 엔진 기반 R-Score 활용법
 
 M-DEENO 데이터 랩은 정비 사업의 불확실성을 수치화하기 위해 **R-Score(Risk-Reward Score)** 모델을 개발했습니다.
 
@@ -79,7 +78,7 @@ A1. 도심복합사업의 경우 권리산정기준일(2021년 6월 29일) 이�
 A2. 브랜드 가치 상승으로 일반분양가는 높아질 수 있으나, 용적률 혜택이 줄어들고 사업 기간이 길어질 수 있습니다. M-DEENO 데이터 랩은 인근 시세가 평당 4,500만 원 이상일 때 민간 방식의 수익성이 극대화된다고 분석합니다.
 
 **Q3. 추가 분담금이 무서운데 지금이라도 팔아야 할까요?**
-A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 금액이 인근 래미안 에스티움 시세의 80%를 넘는다면 매도를 고려해볼 만합니다. 정확한 분석을 위해 Prop-Logic™ 시뮬레이션을 활용해 보세요.
+A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 금액이 인근 래미안 에스티움 시세의 80%를 넘는다면 매도를 고려해볼 만합니다. 정확한 분석을 위해 M-DEENO 분석 엔진 시뮬레이션을 활용해 보세요.
 
 
 ## 함께 읽으면 좋은 글
@@ -91,10 +90,9 @@ A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 
 {{< mdeeno_cpa type="loan" >}}
 
 
-
 ---
 
-> **※ 본 리포트는 M-DEENO Corp.의 Prop-Logic™ 엔진을 활용한 시뮬레이션 분석입니다.**
+> **※ 본 리포트는 M-DEENO Corp.의 M-DEENO 분석 엔진을 활용한 시뮬레이션 분석입니다.**
 
 ---
 
@@ -102,7 +100,6 @@ A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 
 ※ 시뮬레이션 데이터이므로 실거래가 공개시스템 등을 통한 추가 확인을 권장합니다.

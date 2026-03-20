@@ -14,8 +14,7 @@ description: 전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1772067032.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-25 09:50:15 기준)
     </p>
 </div>
@@ -30,7 +29,7 @@ description: 전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P
 
 연봉 7,000만 원인 직장인이 이미 주택담보대출을 보유하고 있다면, 추가로 받을 수 있는 퇴거 자금 한도는 사실상 제로에 가깝습니다.
 
-**M-DEENO의 Prop-Logic™ 알고리즘** 분석 결과, 수도권 주요 단지의 전세가 하락기에는 보증금 차액을 메우기 위한 추가 대출 수요가 급증하지만 제도권 금융의 문턱은 여전히 높은 것으로 나타났습니다.
+**M-DEENO의 M-DEENO 분석 엔진 알고리즘** 분석 결과, 수도권 주요 단지의 전세가 하락기에는 보증금 차액을 메우기 위한 추가 대출 수요가 급증하지만 제도권 금융의 문턱은 여전히 높은 것으로 나타났습니다.
 
 ### 실제 단지별 퇴거 자금 부족 사례 분석
 
@@ -56,7 +55,7 @@ description: 전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P
 
 P2P 금융은 제도권 금융기관에 해당하지만, 대출 실행 시 **DSR 규제를 직접적으로 적용받지 않는** 경우가 많습니다.
 
-**M-DEENO의 Prop-Logic™** 분석 데이터에 따르면, P2P 대출은 차주의 소득보다는 해당 부동산의 담보 가치와 LTV 여력을 우선적으로 평가합니다.
+**M-DEENO의 M-DEENO 분석 엔진** 분석 데이터에 따르면, P2P 대출은 차주의 소득보다는 해당 부동산의 담보 가치와 LTV 여력을 우선적으로 평가합니다.
 
 - 기존 1금융권 대출이 있어도 후순위로 추가 대출이 가능합니다.
 - 심사 기간이 3~5일 내외로 매우 빨라 긴급한 퇴거 자금 마련에 적합합니다.
@@ -94,7 +93,6 @@ P2P 금융은 제도권 금융기관에 해당하지만, 대출 실행 시 **DSR
 {{< mdeeno_cpa type="loan" >}}
 
 
-
 ---
 
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
@@ -105,7 +103,6 @@ P2P 금융은 제도권 금융기관에 해당하지만, 대출 실행 시 **DSR
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 
 ※ 시뮬레이션 데이터이므로 실거래가 공개시스템 등을 통한 추가 확인을 권장합니다.

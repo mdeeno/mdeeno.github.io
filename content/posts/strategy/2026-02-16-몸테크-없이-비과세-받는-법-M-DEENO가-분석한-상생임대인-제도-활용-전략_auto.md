@@ -14,8 +14,7 @@ description: '몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771324219.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-16 19:30:02 기준)
     </p>
 </div>
@@ -32,7 +31,7 @@ description: '몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생
 
 하지만 M-DEENO의 분석에 따르면, 상생임대인 제도를 전략적으로 활용할 경우 실제 입주 없이도 비과세 혜택을 100% 누릴 수 있습니다.
 
-### M-DEENO Prop-Logic™이 분석한 상생임대인 핵심 원리
+### M-DEENO M-DEENO 분석 엔진이 분석한 상생임대인 핵심 원리
 
 상생임대인 제도는 임대료를 **5% 이내**로 인상하는 착한 임대인에게 거주 요건 2년을 면제해 주는 파격적인 혜택입니다.
 
@@ -90,7 +89,6 @@ M-DEENO의 분석 결과, 고가 주택일수록 실거주를 위해 이사하�
 {{< mdeeno_cpa type="loan" >}}
 
 
-
 ---
 
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
@@ -101,7 +99,6 @@ M-DEENO의 분석 결과, 고가 주택일수록 실거주를 위해 이사하�
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 
 ※ 본 분석은 시뮬레이션 수치이며 실거래가는 국토부 시스템 확인이 필수입니다.

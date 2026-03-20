@@ -15,8 +15,7 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771850713.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-22 21:44:38 기준)
     </p>
 </div>
@@ -29,7 +28,7 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 
 ### 금리 하락기가 리츠에 '기회'인 과학적 이유
 
-금리가 내려가면 리츠(REITs)의 수익성은 두 가지 경로로 개선됩니다. M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 조달 금리 하락에 따른 **이자 비용 절감**과 보유 자산의 **자산 가치 상승**이 동시에 발생하기 때문입니다.
+금리가 내려가면 리츠(REITs)의 수익성은 두 가지 경로로 개선됩니다. M-DEENO의 M-DEENO 분석 엔진 알고리즘 분석에 따르면, 조달 금리 하락에 따른 **이자 비용 절감**과 보유 자산의 **자산 가치 상승**이 동시에 발생하기 때문입니다.
 
 <div class="lab-formula-box">
 리츠 수익성(Alpha) = (임대 수익 - 하락된 이자 비용) + 자산 평가 이익 증대
@@ -81,7 +80,6 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 {{< mdeeno_cpa type="loan" >}}
 
 
-
 ---
 
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
@@ -92,7 +90,6 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 
 ※ 해당 리포트는 가상 시나리오를 바탕으로 작성되었습니다. 투자 시 유의하세요.

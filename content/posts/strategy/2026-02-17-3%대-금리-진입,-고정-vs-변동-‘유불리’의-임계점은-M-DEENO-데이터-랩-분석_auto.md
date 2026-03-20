@@ -14,8 +14,7 @@ description: 3%대 금리 진입, 고정 vs 변동 ‘유불리’의 임계점�
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771384560.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-17 12:15:42 기준)
     </p>
 </div>
@@ -28,7 +27,7 @@ description: 3%대 금리 진입, 고정 vs 변동 ‘유불리’의 임계점�
 
 최근 시장 금리의 하향 안정세가 지속되면서 주요 시중 은행의 주택담보대출 금리 하단이 **3%대**에 안착하는 모습입니다.
 
-M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 이는 단순한 수치 하락을 넘어 대출 구조의 재편을 예고하는 신호로 해석됩니다.
+M-DEENO의 M-DEENO 분석 엔진 알고리즘 분석에 따르면, 이는 단순한 수치 하락을 넘어 대출 구조의 재편을 예고하는 신호로 해석됩니다.
 
 과거 고금리 시기에 변동금리를 선택했던 차주들이 낮은 고정금리로 갈아타려는 수요가 폭증하며 대출 시장의 유동성이 활발해지고 있습니다.
 
@@ -92,7 +91,6 @@ M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 이는 단순한 수�
 {{< mdeeno_cpa type="loan" >}}
 
 
-
 ---
 
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
@@ -103,7 +101,6 @@ M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 이는 단순한 수�
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 
 ※ 해당 리포트는 가상 시나리오를 바탕으로 작성되었습니다. 투자 시 유의하세요.

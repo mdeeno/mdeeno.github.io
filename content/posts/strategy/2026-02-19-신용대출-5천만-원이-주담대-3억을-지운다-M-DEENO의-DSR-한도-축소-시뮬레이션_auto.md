@@ -14,8 +14,7 @@ description: 신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771554877.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-19 11:34:22 기준)
     </p>
 </div>
@@ -26,7 +25,7 @@ description: 신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의
 
 ### 신용대출이 주담대 한도를 잠식하는 메커니즘
 
-주택담보대출의 한도를 결정짓는 가장 강력한 족쇄는 **DSR 40% 규제**입니다. M-DEENO의 Prop-Logic™ 알고리즘 분석 결과, 신용대출은 연간 원리금 상환액을 계산할 때 실제 만기와 상관없이 **5년(60개월)**을 기준으로 산정됩니다.
+주택담보대출의 한도를 결정짓는 가장 강력한 족쇄는 **DSR 40% 규제**입니다. M-DEENO의 M-DEENO 분석 엔진 알고리즘 분석 결과, 신용대출은 연간 원리금 상환액을 계산할 때 실제 만기와 상관없이 **5년(60개월)**을 기준으로 산정됩니다.
 
 반면 주담대는 보통 30년에서 40년으로 나누어 상환하기 때문에, 같은 금액을 빌리더라도 신용대출이 연간 원리금 부담액을 훨씬 가파르게 상승시킵니다. 이는 결국 주담대로 빌릴 수 있는 가용 한도를 직접적으로 축소시키는 결과를 초래합니다.
 
@@ -54,7 +53,7 @@ M-DEENO 데이터 랩에서 서울 주요 단지를 대상으로, 연소득 7,00
   - 분석 결과, 신용대출 상환 여부에 따라 주담대 실행액이 **2억 원 이상의 차이**를 보일 수 있음
   - [국토교통부 실거래가 공개시스템](https://rt.molit.go.kr/) 확인 권장
 
-### M-DEENO Prop-Logic™ 기반 전략적 제언
+### M-DEENO M-DEENO 분석 엔진 기반 전략적 제언
 
 데이터 분석 결과, 신용대출의 금리보다 더 무서운 것은 **'산정 만기'**입니다. 주담대 실행 전 신용대출을 일부 상환하거나, 중도상환수수료를 감수하더라도 대환을 통해 만기를 조정하는 것이 유리할 수 있습니다.
 
@@ -74,7 +73,6 @@ M-DEENO 데이터 랩에서 서울 주요 단지를 대상으로, 연소득 7,00
 {{< mdeeno_cpa type="loan" >}}
 
 
-
 ---
 
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
@@ -85,7 +83,6 @@ M-DEENO 데이터 랩에서 서울 주요 단지를 대상으로, 연소득 7,00
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 
 ※ M-DEENO 데이터랩의 예측 모델 결과입니다. 실제 시세와 차이가 있을 수 있습니다.

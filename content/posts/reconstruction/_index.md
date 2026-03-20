@@ -1,12 +1,13 @@
 ---
 title: "재건축·정비사업 분석"
 description: "재건축 분담금, 비례율, 용적률, 이주비, 현금청산 — M-DEENO 데이터 랩이 분석한 정비사업 핵심 정보"
+draft: true
 ---
 
 재건축·재개발 투자는 시간과의 싸움입니다.
 10년 이상의 사업 기간 동안 **공사비 상승, 비례율 변동, 분담금 폭탄** 리스크를 정확히 파악해야 합니다.
 
-M-DEENO 데이터 랩은 Prop-Logic™ 알고리즘으로 사업성을 분석하여,
+M-DEENO 데이터 랩은 M-DEENO 분석 엔진 알고리즘으로 사업성을 분석하여,
 조합원이 정확한 타이밍에 정확한 결정을 내릴 수 있도록 돕습니다.
 
 <div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">

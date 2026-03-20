@@ -69,7 +69,6 @@ image: '/images/geomdan-subway-2026.png'
 </div>
 
 
-
 ## 자주 묻는 질문
 
 ### Q1. 인천 1호선 검단 연장선 개통으로 어떤 변화가 생겼나요?
@@ -88,7 +87,7 @@ image: '/images/geomdan-subway-2026.png'
 ## 함께 읽으면 좋은 글
 
 - [서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가](/posts/market/2026-02-02-seoul-station-area-shift-season2_manual/)
-- [[단독 분석] 검단 넥스트콤플렉스(롯데몰) 착공, 인천 1호선 연장 역세권 프리미엄은 얼마?](/posts/market/2026-01-30-[단독-분석]-검단-넥스트콤플렉스(롯데몰)-착공,-인천-1호선-연장-역세권-/)
+- [단독 분석] 검단 넥스트콤플렉스(롯데몰) 착공, 인천 1호선 연장 역세권 프리미엄은 얼마?
 - [신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저평가 단지' TOP 3 정밀 분석](/posts/market/2026-02-02-shinbundang-line-homaesil-analysis_manual/)
 
 

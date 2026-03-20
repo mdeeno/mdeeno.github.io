@@ -5,10 +5,8 @@ draft: false
 categories: ['시장 분석']
 tags: ['데이터센터 리츠 투자', '부동산투자', '재테크']
 description: 'AI 시대의 숨겨진 금광, 데이터센터(IDC) 리츠 투자, 지금이 적기인가?'
-image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770366839.png'
 ---
 
-<img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770366839.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-02-05 17:33:40 기준)*
 
 최근 주식 시장을 뜨겁게 달구는 키워드는 단연 ‘AI’입니다. 챗GPT나 제미나이 같은 인공지능 모델이 세상을 바꾸고 있지만, 이 거대한 AI를 돌리는 데는 엄청난 양의 전력과 서버가 필요합니다. 이 서버들이 모여 사는 곳이 바로 **데이터센터(IDC)**입니다.
@@ -96,8 +94,7 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
 ## 함께 읽으면 좋은 글
 
 - [은행도 안 알려주는 NPL 경매 수익의 비밀: 질권 대출로 수익률 200% 만드는 법](/posts/analysis/2026-02-09-은행도-안-알려주는-NPL-경매-수익의-비밀-질권-대출로-수익률-200%-만드는-법_auto/)
-- [마이너스 프리미엄 분양권, 양도세 매수자 부담 조건이 독이 되는 이유](/posts/strategy/2026-02-14-마이너스-프리미엄-분양권,-'양도세-매수자-부담'-조건이-독이-되는-이유-(M-DEENO-분석)_auto/)
-- [서울 도심의 마지막 금싸라기 땅: 세운지구 고밀도 개발, 지금 사야 할 이유](/posts/market/2026-01-27-서울-도심의-마지막-금싸라기-땅-세운지구-고밀도-개발,-지금-사야-할-이유_auto/)
+- 마이너스 프리미엄 분양권, 양도세 매수자 부담 조건이 독이 되는 이유_auto/)
 
 
 {{< mdeeno_cpa type="loan" >}}

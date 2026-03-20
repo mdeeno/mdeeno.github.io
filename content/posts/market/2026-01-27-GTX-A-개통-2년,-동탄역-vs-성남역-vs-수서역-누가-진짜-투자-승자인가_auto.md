@@ -5,10 +5,8 @@ draft: false
 categories: ['시장 분석']
 tags: ['GTX-A 시세 상승률', '부동산투자', '재테크']
 description: 'GTX-A 개통 2년, 동탄역 vs 성남역 vs 수서역: 누가 진짜 투자 승자인가?'
-image: 'https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608431.png'
 ---
 
-<img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1769608431.png" alt="전망 차트" style="width:100%; max-width:800px; height:auto; display:block; margin:20px auto; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
 *▲ AI 분석 데이터 (2026-01-27 22:53:34 기준)*
 
 GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년 3월 수서~동탄 구간 개통 이후, 투자자들의 관심은 '실제 가치 상승'으로 옮겨갔다. 동탄, 성남, 수서 세 핵심 역세권의 2년 시세 상승률을 비교 분석하여, GTX 프리미엄의 실체를 파악한다.

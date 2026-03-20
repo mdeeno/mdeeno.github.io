@@ -1,7 +1,7 @@
 ---
-title: "분양권 양도세 66% 폭탄 피하기: 'Prop-Logic' 점수가 낮은 단지의 매도 타이밍"
+title: "분양권 양도세 66% 폭탄 피하기: 'M-DEENO 분석 엔진' 점수가 낮은 단지의 매도 타이밍"
 date: 2026-02-12 17:49:06
-draft: false
+draft: true
 categories:
 - 세금/정책
 tags:
@@ -10,11 +10,9 @@ tags:
 - 양도세 66%
 - 프롭로직 점수
 - 실거주 의무
-description: '분양권 양도세 66% 폭탄 피하기: ''Prop-Logic'' 점수가 낮은 단지의 매도 타이밍'
-image: https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png
+description: '분양권 양도세 66% 폭탄 피하기: ''M-DEENO 분석 엔진'' 점수가 낮은 단지의 매도 타이밍'
 ---
 
-![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770972564.png)
 _▲ AI 분석 데이터 (2026-02-12 17:49:06 기준)_
 
 ---

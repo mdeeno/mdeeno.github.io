@@ -1,7 +1,7 @@
 ---
 title: "선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 'Safety Score' 기반 저평가 단지 선별법"
 date: 2026-02-11 22:49:41
-draft: false
+draft: true
 categories:
 - 재건축/재개발
 tags:
@@ -11,10 +11,8 @@ tags:
 - 일산 재건축
 - 평촌 재건축 시세
 description: '선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 ''Safety Score'' 기반 저평가 단지 선별법'
-image: https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904196.png
 ---
 
-![전망 차트](https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1770904196.png)
 _▲ AI 분석 데이터 (2026-02-11 22:49:41 기준)_
 
 ---

@@ -14,8 +14,7 @@ description: 오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한
 ---
 
 <div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <img src="https://raw.githubusercontent.com/mdeeno/mdeeno.github.io/main/static/images/chart-1771555069.png" alt="시계열 분석 전망 차트" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-19 11:37:32 기준)
     </p>
 </div>
@@ -31,7 +30,7 @@ description: 오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한
 최근 고금리 기조가 유지되면서 오피스텔 담보 대출 금리는 시중 은행권 기준 **대략 4% 중반에서 5% 후반대**의 범위를 형성하고 있습니다.
 
 - 아파트 담보 대출 대비 약 0.5%~1%p 가량 가산 금리가 높게 측정되는 경향이 있습니다.
-- M-DEENO의 Prop-Logic™ 알고리즘 분석에 따르면, 이는 오피스텔의 낮은 환금성과 감가상각 위험이 금리에 반영된 결과입니다.
+- M-DEENO의 M-DEENO 분석 엔진 알고리즘 분석에 따르면, 이는 오피스텔의 낮은 환금성과 감가상각 위험이 금리에 반영된 결과입니다.
 - 금융권마다 감정가 산정 방식이 다르므로, 실제 대출 가능액은 단순 시세와 차이가 발생할 수 있습니다.
 
 ### 주택 수 미포함과 대출 한도의 상관관계
@@ -67,7 +66,7 @@ M-DEENO 데이터 랩에서 분석한 주요 권역별 오피스텔 사례를 �
 
 오피스텔은 주택 수 미포함이라는 강력한 세제 이점이 있지만, 대출에 있어서는 아파트보다 까다로운 잣대가 적용됩니다.
 
-M-DEENO의 Prop-Logic™ 분석 결과, 향후 금리 변동성에 대비해 고정 금리와 변동 금리의 혼합형 상품이 리스크 관리에 유리한 것으로 나타났습니다.
+M-DEENO의 M-DEENO 분석 엔진 분석 결과, 향후 금리 변동성에 대비해 고정 금리와 변동 금리의 혼합형 상품이 리스크 관리에 유리한 것으로 나타났습니다.
 
 정확한 대출 한도와 이자 비용을 미리 계산해보고, 자산 운용 계획을 수립하시기 바랍니다.
 
@@ -81,7 +80,6 @@ M-DEENO의 Prop-Logic™ 분석 결과, 향후 금리 변동성에 대비해 고
 {{< mdeeno_cpa type="loan" >}}
 
 
-
 ---
 
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
@@ -92,7 +90,6 @@ M-DEENO의 Prop-Logic™ 분석 결과, 향후 금리 변동성에 대비해 고
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 
 ※ M-DEENO 데이터랩의 예측 모델 결과입니다. 실제 시세와 차이가 있을 수 있습니다.
