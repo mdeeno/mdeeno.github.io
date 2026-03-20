@@ -8,7 +8,7 @@ M-DEENO는 재건축·재개발 조합원을 위한 **데이터 기반 리스크
 
 <div style="margin:24px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 아파트 재건축 리스크, 지금 바로 무료 분석</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">Prop-Logic™ 엔진이 공사비·비례율·분담금을 시뮬레이션합니다.</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">M-DEENO 분석 엔진이 공사비·비례율·분담금을 시뮬레이션합니다.</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
     무료 분석 시작 →
@@ -62,7 +62,7 @@ M-DEENO는 재건축·재개발 조합원을 위한 **데이터 기반 리스크
 ## M-DEENO 정밀 분석 리포트
 
 계산기와 아티클을 넘어, **조합원 맞춤형 리스크 리포트**가 필요하신가요?
-M-DEENO의 Prop-Logic™ 엔진이 내 단지의 분담금·수익성·리스크를 정밀 시뮬레이션합니다.
+M-DEENO 분석 엔진이 내 단지의 분담금·수익성·리스크를 정밀 시뮬레이션합니다.
 
 <div style="margin:24px 0;padding:20px 28px;background:#f0f7ff;border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-weight:700;color:#1e40af;margin:0 0 8px;">M-DEENO 프리미엄 리포트 — 2026년 6월 출시 예정</p>

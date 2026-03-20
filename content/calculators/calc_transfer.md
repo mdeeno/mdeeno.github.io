@@ -156,7 +156,7 @@ function calcTransfer() {
 
 <div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">청산 vs 보유, 내 단지는 어떤 선택이 유리할까요?</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO Prop-Logic™ 엔진이 양도세·분담금·수익성을 종합 시뮬레이션합니다.</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 분석 엔진이 양도세·분담금·수익성을 종합 시뮬레이션합니다.</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
     청산·보유 비교 분석 시작 →
