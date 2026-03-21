@@ -146,7 +146,6 @@ image: '/images/2026-mortgage-timing.png'
   </a>
 </div>
 
-
 ### 자주 묻는 질문 (FAQ)
 
 **Q1. 생애최초 주택 구입 시 LTV 80%가 적용되나요?**
@@ -161,9 +160,7 @@ image: '/images/2026-mortgage-timing.png'
 ## 함께 읽으면 좋은 글
 
 - [강남 3구 로또 청약, 3인 가족은 포기? 2026년 예상 커트라인 및 필승 전략](/posts/strategy/2026-01-26-gangnam-3gu-subscription-cutoff_manual/)
-- [내 집 마련 꿈 실현! 생애최초 디딤돌 대출, 2024년 최신 금리/한도/조건 완벽 분석](/posts/reconstruction/2026-01-29-내-집-마련-꿈-실현!-생애최초-디딤돌-대출,-2024년-최신-금리한도조건-완벽-분ᄉ/)
 - [신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저평가 단지' TOP 3 정밀 분석](/posts/market/2026-02-02-shinbundang-line-homaesil-analysis_manual/)
-
 
 ---
 
