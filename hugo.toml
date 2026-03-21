@@ -47,7 +47,7 @@ canonifyURLs = true
   # homeInfoParams — 커스텀 index.html로 대체됨
   [params.label]
     text = "M-DEENO"
-    icon = "/logo.png"
+    icon = "images/logo.png"
     iconHeight = 28
 
   [params.homeInfoParams]
