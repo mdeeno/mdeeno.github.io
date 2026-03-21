@@ -21,7 +21,7 @@ M-DEENO 분석 엔진의 데이터에 따르면, 서울 내 주요 정비사업�
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box">
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
     내 분담금 무료 분석하기 →
   </a>
 </div>
@@ -106,7 +106,7 @@ M-DEENO 분석 엔진의 데이터에 따르면, 서울 내 주요 정비사업�
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none">
+     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;color:#fff">
     무료 분담금 계산 시작 →
   </a>
 </div>

@@ -25,7 +25,7 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box">
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
     내 분담금 무료 분석하기 →
   </a>
 </div>
@@ -54,7 +54,7 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef">
     <p style="margin-bottom: 10px; font-weight: bold; color: #374151">🧮 직접 계산해보기</p>
-    <a href="https://tech.mdeeno.com/calculators/calc_tax/" target="_blank" style="display: inline-block; background-color: #00C853;padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1)">
+    <a href="https://tech.mdeeno.com/calculators/calc_tax/" target="_blank" style="display: inline-block; background-color: #00C853;padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);color:#fff">
         <strong>🏠 취득세 계산기 바로가기</strong>
     </a>
 </div>

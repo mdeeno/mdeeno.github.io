@@ -14,7 +14,7 @@ M-DEENO 데이터 랩은 M-DEENO 분석 엔진 알고리즘으로 사업성을 �
   <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px">📊 내 아파트 재건축 리스크 무료 분석</p>
   <p style="font-size:0.9rem;color:#374151;margin:0 0 14px">공사비·비례율·분담금 시뮬레이션 — M-DEENO 계산기로 즉시 확인</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none">
+     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none;color:#fff">
     무료 분석 시작 →
   </a>
 </div>

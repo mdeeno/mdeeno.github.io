@@ -1122,9 +1122,9 @@ article.post-single .post-content {
 body[data-theme="dark"] .post-content { color: #cbd5e1; }
 body[data-theme="dark"] .post-content h2 {
   background: rgba(29,111,232,0.1);
-  color: #93c5fd;
+  color: #60a5fa;
 }
-body[data-theme="dark"] .post-content h3 { color: #bfdbfe; }
+body[data-theme="dark"] .post-content h3 { color: #60a5fa; }
 body[data-theme="dark"] .post-content blockquote {
   background: rgba(29,111,232,0.08);
   color: #cbd5e1;

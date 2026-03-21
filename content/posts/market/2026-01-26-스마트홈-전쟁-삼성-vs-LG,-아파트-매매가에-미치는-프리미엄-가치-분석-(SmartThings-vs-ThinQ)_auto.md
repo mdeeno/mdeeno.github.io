@@ -70,7 +70,7 @@ description: '스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치�
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box">
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
     내 분담금 무료 분석하기 →
   </a>
 </div>

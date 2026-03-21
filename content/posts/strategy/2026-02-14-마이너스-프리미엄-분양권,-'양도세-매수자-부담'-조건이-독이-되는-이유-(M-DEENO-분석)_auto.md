@@ -99,7 +99,7 @@ description: 마이너스 프리미엄 분양권, '양도세 매수자 부담' �
   <p style="font-size:0.9rem;color:#374151;margin:0 0 16px">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
      target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none">
+     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none;color:#fff">
     내 분담금 위험도 확인하기 →
   </a>
 </div>
