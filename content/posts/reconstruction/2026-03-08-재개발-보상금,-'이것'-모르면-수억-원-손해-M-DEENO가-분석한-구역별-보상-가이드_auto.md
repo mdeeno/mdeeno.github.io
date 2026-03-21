@@ -11,15 +11,15 @@ description: "재개발 보상금(권리가액) 산정 방식이 궁금하신가
 
 M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 재개발 구역에서 조합원이 예상했던 권리가액(비례율을 적용한 내 실질 지분 가치)과 실제 통보된 금액 사이의 괴리가 평균 15% 이상 벌어진 것으로 나타났습니다. 이는 원자재 가격 상승과 고금리 기조가 맞물리며 사업 비용이 폭증했기 때문인데, 이러한 시장의 변화를 읽지 못하면 자산 전략의 실패로 이어질 수밖에 없습니다.
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box">
     내 분담금 무료 분석하기 →
   </a>
 </div>
@@ -73,9 +73,9 @@ M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 �
 
 ---
 
-<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
-    <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">🧮 직접 계산해보기</p>
-    <a href="https://tech.mdeeno.com/calculators/calc_tax/" target="_blank" style="display: inline-block; background-color: #00C853; color: white; padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef">
+    <p style="margin-bottom: 10px; font-weight: bold; color: #374151">🧮 직접 계산해보기</p>
+    <a href="https://tech.mdeeno.com/calculators/calc_tax/" target="_blank" style="display: inline-block; background-color: #00C853;padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1)">
         <strong>🏠 취득세 계산기 바로가기</strong>
     </a>
 </div>

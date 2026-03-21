@@ -9,15 +9,15 @@ description: "재개발 보상금이 적게 나올까 걱정되시나요? M-DEEN
 
 주변 시세가 15억 원인 내 집이 재개발 구역에 포함된 후 받은 감정평가액이 9억 원에 불과하다면, 당신은 그 자리에서 6억 원의 자산을 손해 본 것일까요? 재개발 현장에서 흔히 발생하는 이 '평가액 쇼크'는 많은 조합원을 패닉에 빠뜨리지만, 실제 내 집의 가치를 결정하는 숫자는 따로 있습니다. 감정평가서에 찍힌 금액보다 더 중요한 것은 사업의 수익성을 나타내는 지표와 이를 기반으로 산출되는 최종 권리가액입니다.
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box">
     내 분담금 무료 분석하기 →
   </a>
 </div>
@@ -73,9 +73,9 @@ M-DEENO 분석 엔진은 감정평가액 대비 권리가액 변동 시나리오
 
 ---
 
-<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
-    <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">🧮 직접 계산해보기</p>
-    <a href="https://tech.mdeeno.com/calculators/calc_transfer/" target="_blank" style="display: inline-block; background-color: #00C853; color: white; padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef">
+    <p style="margin-bottom: 10px; font-weight: bold; color: #374151">🧮 직접 계산해보기</p>
+    <a href="https://tech.mdeeno.com/calculators/calc_transfer/" target="_blank" style="display: inline-block; background-color: #00C853;padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1)">
         <strong>💸 양도소득세 계산기 바로가기</strong>
     </a>
 </div>

@@ -14,8 +14,8 @@ description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 
   데이터 분석'
 ---
 
-<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05)">
+        <p style="color: #6b7280; font-size: 0.85em; margin-top: 15px; font-style: italic">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-03-04 10:22:43 기준)
     </p>
 </div>
@@ -80,12 +80,12 @@ A2. 브랜드 가치 상승으로 일반분양가는 높아질 수 있으나, �
 **Q3. 추가 분담금이 무서운데 지금이라도 팔아야 할까요?**
 A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 금액이 인근 래미안 에스티움 시세의 80%를 넘는다면 매도를 고려해볼 만합니다. 정확한 분석을 위해 M-DEENO 분석 엔진 시뮬레이션을 활용해 보세요.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
      target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none">
     내 분담금 위험도 확인하기 →
   </a>
 </div>

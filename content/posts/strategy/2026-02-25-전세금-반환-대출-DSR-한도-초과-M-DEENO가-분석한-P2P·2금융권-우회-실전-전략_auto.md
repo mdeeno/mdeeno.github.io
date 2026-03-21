@@ -13,8 +13,8 @@ tags:
 description: 전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P·2금융권 우회 실전 전략 - M-DEENO 데이터 분석
 ---
 
-<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05)">
+        <p style="color: #6b7280; font-size: 0.85em; margin-top: 15px; font-style: italic">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-25 09:50:15 기준)
     </p>
 </div>
@@ -83,12 +83,12 @@ P2P 금융은 제도권 금융기관에 해당하지만, 대출 실행 시 **DSR
 
 - A3. 특례보건자리론 종료 이후 현재는 역전세 반환 대출에 한해 한시적으로 DSR 대신 DTI 60%를 적용하는 정책이 있으나, 요건이 까다로우므로 본인의 해당 여부를 먼저 확인해야 합니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
      target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none">
     내 분담금 위험도 확인하기 →
   </a>
 </div>

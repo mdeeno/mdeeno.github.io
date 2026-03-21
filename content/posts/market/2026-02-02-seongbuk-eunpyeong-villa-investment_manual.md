@@ -64,15 +64,15 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
 <small>본 리포트는 정책 변화와 현장 시세를 바탕으로 작성되었으며, 투자의 책임은 본인에게 있습니다. 반드시 해당 지자체 정비과를 통해 구역 추진 현황을 확인하시기 바랍니다.</small>
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7;">
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box">
     내 분담금 무료 분석하기 →
   </a>
 </div>

@@ -13,8 +13,8 @@ tags:
 description: 오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는 M-DEENO 필승 전략 - M-DEENO 데이터 분석
 ---
 
-<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-        <p style="color: #888; font-size: 0.85em; margin-top: 15px; font-style: italic;">
+<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05)">
+        <p style="color: #6b7280; font-size: 0.85em; margin-top: 15px; font-style: italic">
         ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-19 11:37:32 기준)
     </p>
 </div>
@@ -81,12 +81,12 @@ M-DEENO 분석 엔진 분석 결과, 향후 금리 변동성에 대비해 고정
 **Q3. DSR 한도를 극대화하는 방법이 있나요?**
 기존 대출을 저금리로 대환하여 연간 원리금 상환액을 줄이거나, 상환 기간을 늘려 월 납입액을 낮추는 방법이 있습니다. 신용대출을 먼저 상환하는 것도 DSR 개선에 효과적입니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center">
+  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
      target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none">
     내 분담금 위험도 확인하기 →
   </a>
 </div>
