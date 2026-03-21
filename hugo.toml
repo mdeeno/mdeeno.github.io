@@ -1,6 +1,6 @@
 baseURL = 'https://tech.mdeeno.com/'
 languageCode = 'ko-kr'
-title = 'M-DEENO'
+title = 'M-DEENO | BLOG'
 theme = 'PaperMod'
 
 enableRobotsTXT = true
@@ -46,9 +46,9 @@ canonifyURLs = true
 
   # homeInfoParams — 커스텀 index.html로 대체됨
   [params.label]
-    text = "M-DEENO"
+    text = "BLOG"
     icon = "images/logo.png"
-    iconHeight = 28
+    iconHeight = 22
 
   [params.homeInfoParams]
     Title = "M-DEENO | 재건축·재개발 데이터 분석"

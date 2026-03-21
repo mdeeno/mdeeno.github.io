@@ -2,6 +2,20 @@
    M-DEENO — Light-first Professional Design System
    ========================================================== */
 
+/* ── Header Logo ───────────────────────────────────────── */
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-text {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #6b7684;
+  letter-spacing: 0.08em;
+}
+
 /* ── Design Tokens ─────────────────────────────────────── */
 :root {
   --md-navy:     #0d2461;
