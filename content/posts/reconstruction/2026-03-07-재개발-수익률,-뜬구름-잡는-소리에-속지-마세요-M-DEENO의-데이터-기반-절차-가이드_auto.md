@@ -64,13 +64,10 @@ M-DEENO 분석 엔진은 공사비 변동, 금리 변동, 분양가 시나리오
 - 입주권 사도 비과세라고? 세금 0원으로 상급지 갈아타는 대체주택 실전 전략
 - 재건축 10년의 여정, 수익률을 가르는 결정적 단계는? (M-DEENO 데이터 랩 분석)_auto/)
 
-
 ---
 > **※ 본 리포트는 M-DEENO 분석 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
 ---
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">🧮 직접 계산해보기</p>

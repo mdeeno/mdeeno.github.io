@@ -43,17 +43,14 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 
 ## 함께 읽으면 좋은 글
 
-- [재개발 수익률, 뜬구름 잡는 소리에 속지 마세요: M-DEENO의 데이터 기반 절차 가이드](/posts/reconstruction/2026-03-07-재개발-수익률,-뜬구름-잡는-소리에-속지-마세요-M-DEENO의-데이터-기반-절차-가이드_auto/)
+- [재개발 수익률, 뜬구름 잡는 소리에 속지 마세요: M-DEENO의 데이터 기반 절차 가이드](/posts/reconstruction/2026-03-07-재개발-수익률-뜬구름-잡는-소리에-속지-마세요-m-deeno의-데이터-기반-절차-가이드_auto)
 - 재개발 투자, 이 단계 모르면 원금 회수 불가? M-DEENO가 분석한 재개발 9단계 완벽 가이드
 - 내 집이 황금알을 낳기까지, 재개발 절차 10단계 완벽 가이드 (ft. 한남3·성수)_auto/)
-
 
 ---
 > **※ 본 리포트는 M-DEENO 분석 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
 ---
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">🧮 직접 계산해보기</p>

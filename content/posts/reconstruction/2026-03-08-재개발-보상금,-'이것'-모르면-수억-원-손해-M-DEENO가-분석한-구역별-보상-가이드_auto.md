@@ -64,17 +64,14 @@ M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 �
 
 ## 함께 읽으면 좋은 글
 
-- [내 집의 가치를 결정하는 재개발 보상금, M-DEENO 데이터로 본 손해 안 보는 법](/posts/reconstruction/2026-03-07-내-집의-가치를-결정하는-'재개발-보상금',-M-DEENO-데이터로-본-손해-안-보는-법_auto/)
+- [내 집의 가치를 결정하는 재개발 보상금, M-DEENO 데이터로 본 손해 안 보는 법](/posts/reconstruction/2026-03-07-내-집의-가치를-결정하는-재개발-보상금-m-deeno-데이터로-본-손해-안-보는-법_auto)
 - 내 집이 빚더미로? 재개발 분담금 폭탄 피하는 M-DEENO의 데이터 기반 생존 전략
-- [재건축 분담금 폭탄, 내 아파트는 안전할까? M-DEENO가 분석한 수익성 임계점](/posts/reconstruction/2026-03-06-재건축-분담금-폭탄,-내-아파트는-안전할까-M-DEENO가-분석한-수익성-임계점_auto/)
-
+- [재건축 분담금 폭탄, 내 아파트는 안전할까? M-DEENO가 분석한 수익성 임계점](/posts/reconstruction/2026-03-06-재건축-분담금-폭탄-내-아파트는-안전할까-m-deeno가-분석한-수익성-임계점_auto)
 
 ---
 > **※ 본 리포트는 M-DEENO 분석 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
 ---
-
 
 <div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef;">
     <p style="margin-bottom: 10px; font-weight: bold; color: #495057;">🧮 직접 계산해보기</p>

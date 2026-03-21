@@ -97,7 +97,6 @@ M-DEENO 분석 엔진의 데이터에 따르면, 서울 내 주요 정비사업�
 ---
 > **※ 본 리포트는 M-DEENO 분석 엔진을 활용한 시뮬레이션 분석입니다.**
 
-
 <div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px;">내 아파트 재건축 리스크 무료 분석</p>
   <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7;">
