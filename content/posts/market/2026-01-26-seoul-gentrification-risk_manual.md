@@ -16,8 +16,6 @@ image: '/images/seoul-gentrification-2026.png'
 
 - 젠트리피케이션의 파도를 수익으로 바꿀 실전 투자 전략은 무엇인가?
 
----
-
 ### 1. 2026년 서울 상권 현황 및 위험 징후
 
 - **상권 양극화 심화**: 강남(GBD) 등 기존 업무지구의 공실률은 1%대로 역대 최저치를 기록하며 임대료 폭등 지속.
@@ -28,30 +26,18 @@ image: '/images/seoul-gentrification-2026.png'
 
 - **교통 호재의 역설**: GTX-A 개통 및 연장 노선 인근 골목 상권의 공시지가가 전년 대비 평균 15% 이상 급등.
 
----
-
 ### 2. 젠트리피케이션 위험 지역 TOP 3 상세 분석
 
 | 순위 | 지역명 | 위험 지수 | 핵심 지표 | 투자 성격 |
 | :
 
----
+| :
 
 | :
 
----
-
 | :
 
----
-
 | :
-
----
-
-| :
-
----
 
 |
 | **🥇 1위** | **성동구 성수동2가** | 98.5 | 임대료 상승률 서울 1위 | **대장주 (수익 확정형)** |
@@ -88,8 +74,6 @@ image: '/images/seoul-gentrification-2026.png'
 
 - **투자 전략**: 한강 공원 진입로 인근의 노후 주택을 타깃으로 하여 1층 근생 시설 확보에 집중.
 
----
-
 ### 3. 실전 자금 계획 및 체크리스트
 
 - **대출 규제 대응**: DSR 40% 적용에 따른 상가 담보 대출 한도 사전 확인 필수.
@@ -97,8 +81,6 @@ image: '/images/seoul-gentrification-2026.png'
 - **수익률 계산**: 최소 연 3.5% 이상의 임대 수익률이 확보되지 않는다면 매입 보류 권장.
 
 - **도구 활용**: [DSR 계산기 및 대출 한도 조회](https://tech.mdeeno.com/calculators/calc_dsr/)를 통해 자금 동원 능력을 체크하세요.
-
----
 
 ### 4. 결론: 2026년 생존 전략
 
@@ -117,8 +99,6 @@ image: '/images/seoul-gentrification-2026.png'
 
 **Q3. 꼬마빌딩 투자 시 최소 얼마 정도의 자금이 필요한가요?**
 마포구 망원동 기준 10억~20억 원대 꼬마빌딩이 거래되고 있으며, 대출을 활용하면 자기자본 3억~5억 원 수준에서 진입이 가능합니다. 다만 공실 리스크와 이자 부담을 반드시 감안해야 합니다.
-
----
 
 HTML
 
@@ -143,5 +123,3 @@ Image Generation Prompt:
 A futuristic 3D isometric map of Seoul city, highlighting specific neighborhoods (Seongsu, Yongsan, Mapo) with glowing red and gold heat zones. High-tech data charts and holographic rent price graphs floating above the map. Professional financial aesthetic, dark mode background with cyan and orange accents, 16:9 aspect ratio, high resolution, photorealistic.
 
 Would you like me to generate a specific cash flow simulation for one of these areas?
-
-

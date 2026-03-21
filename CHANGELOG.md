@@ -6,6 +6,27 @@
 
 ## 2026-03
 
+### 2026-03-21 (4)
+**[Phase 3: 450개 포스트 도입부+결론부 리라이트]**
+- 밋밋한 도입부("~에 대해 알아보겠습니다") → "공포 후킹 → 공감 → 본론 약속" 구조로 교체
+- 결론부 없는 포스트에 "핵심 정리" 섹션 추가 (M-DEENO 자연스러운 언급)
+- 도입부 인라인 스타일 CTA 블록 제거 (layouts 자동 삽입으로 대체)
+- 본론/FAQ/관련글/front matter는 건드리지 않음
+- 관련 파일: `content/posts/**/*.md`
+- 도구: `posting-engine/rewrite_intros.py`
+
+### 2026-03-21 (3)
+**[Phase 2: 블로그 UI 리디자인 — toss/브런치 수준 UX]**
+- CTA 파셜 인라인 스타일 → CSS 클래스 전환 (`blog-cta--top`, `blog-cta--bottom`)
+- 홈페이지: 히어로 여백 확대, 카드 멀티레이어 그림자, 프리미엄 밴드 그래디언트
+- 포스트 카드: 텍스트 크기 증가 (1rem), 부드러운 호버 애니메이션
+- lab-card/lab-formula-box: 좌측 컬러 보더 + 그래디언트 배경
+- FAQ details: 좌측 파란 보더, open 시각 피드백
+- 관련 포스트 위젯: 카드형 디자인, 호버 배경 효과
+- TOC/계산기 CTA: 그림자/패딩 업그레이드
+- 다크모드 토글 비활성화 (`disableThemeToggle = true`)
+- 관련 파일: `static/css/custom.css`, `assets/css/extended/*.css`, `layouts/partials/*.html`, `hugo.toml`
+
 ### 2026-03-21 (2)
 **[블로그 인라인 색상 전수 수정 — 450개 파일]**
 - `color:#fff` 제거 후 CSS 관리로 전환 (2,187건)
