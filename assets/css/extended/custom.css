@@ -136,7 +136,7 @@
 }
 
 .related-posts-title {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -182,8 +182,8 @@
 }
 
 .related-posts-item-desc {
-  font-size: 0.78rem;
-  color: #94a3b8;
+  font-size: 0.85rem;
+  color: #6b7684;
   line-height: 1.5;
 }
 
@@ -212,7 +212,7 @@
 }
 
 .calc-cta-desc {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   color: #374151;
   line-height: 1.5;
 }
