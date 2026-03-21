@@ -27,7 +27,7 @@ canonifyURLs = true
   env = "production"
 
   defaultTheme = "light"
-  disableThemeToggle = false
+  disableThemeToggle = true
   ShowShareButtons = true
   ShowReadingTime = false
   ShowPostNavLinks = true
