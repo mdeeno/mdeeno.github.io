@@ -183,6 +183,101 @@
   }
 }
 
+/* === FAQ 스타일 === */
+.post-content .faq-section h3,
+.post-content h3:has(+ ul),
+.post-content details summary {
+  color: #1e40af;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+.post-content details {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #f9fafb;
+}
+
+.post-content details summary {
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.post-content details p {
+  margin-top: 12px;
+  color: #374151;
+}
+
+/* === 차트/그래프 래퍼 === */
+.lab-graph-wrapper {
+  text-align: center;
+  margin: 2em 0;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.lab-graph-wrapper .chart-caption,
+.lab-graph-wrapper figcaption {
+  font-size: 14px;
+  color: #6b7684;
+  margin-top: 8px;
+}
+
+/* === 인라인 스타일 CTA 블록 오버라이드 === */
+.post-content div[style*="background"] a[href*="calculator"],
+.post-content div[style*="background"] a[href*="member"],
+.post-content .calc-cta-box a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #1e40af;
+  color: #fff !important;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.post-content div[style*="background"] a[href*="calculator"]:hover,
+.post-content div[style*="background"] a[href*="member"]:hover {
+  background: #1e3a8a;
+}
+
+/* === FAQ 질문 텍스트 통일 === */
+.post-content h3 strong,
+.post-content h4 strong {
+  font-weight: inherit;
+}
+
+/* === FAQ 답변 영역 === */
+.post-content blockquote + ul,
+.post-content blockquote + ol {
+  margin-top: -0.5em;
+}
+
+/* === FAQ/차트 다크모드 === */
+.dark .post-content details {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.dark .post-content details summary {
+  color: #60a5fa;
+}
+
+.dark .post-content details p {
+  color: #cbd5e1;
+}
+
+.dark .lab-graph-wrapper {
+  background: #1e293b;
+  border-color: #334155;
+}
+
 /* === 작은 모바일 (375px 이하) === */
 @media (max-width: 375px) {
   .post-content {
