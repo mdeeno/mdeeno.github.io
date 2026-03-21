@@ -48,7 +48,7 @@ canonifyURLs = true
   [params.label]
     text = "BLOG"
     icon = "images/logo.png"
-    iconHeight = 22
+    iconHeight = 24
 
   [params.homeInfoParams]
     Title = "M-DEENO | 재건축·재개발 데이터 분석"

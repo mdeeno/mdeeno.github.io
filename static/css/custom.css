@@ -16,6 +16,13 @@
   letter-spacing: 0.08em;
 }
 
+/* 모바일 로고 크기 (MVP와 통일: 20px) */
+@media (max-width: 760px) {
+  .logo a img {
+    height: 20px !important;
+  }
+}
+
 /* ── Design Tokens ─────────────────────────────────────── */
 :root {
   --md-navy:     #0d2461;
