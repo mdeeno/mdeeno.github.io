@@ -281,6 +281,28 @@
   border-color: #334155;
 }
 
+/* === 모바일 인라인 CTA 버튼 강제 풀폭 (768px 이하) === */
+@media (max-width: 768px) {
+  .post-content a[style*="inline-block"] {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    min-height: 48px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* === 차트 캡션 최소 폰트 14px 보장 === */
+.post-content [style*="font-size: 0.85"],
+.post-content [style*="font-size:0.85"] {
+  font-size: 0.875rem !important;
+}
+
+/* === <small> 태그 최소 폰트 === */
+.post-content small {
+  font-size: 0.875rem;
+}
+
 /* === 작은 모바일 (375px 이하) === */
 @media (max-width: 375px) {
   .post-content {

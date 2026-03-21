@@ -10,7 +10,7 @@ M-DEENO는 재건축·재개발 조합원을 위한 **데이터 기반 리스크
   <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 아파트 재건축 리스크, 지금 바로 무료 분석</p>
   <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">M-DEENO 분석 엔진이 공사비·비례율·분담금을 시뮬레이션합니다.</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+     style="display:block;width:100%;padding:14px 28px;background:#2563eb;color:#fff;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;min-height:48px;">
     무료 분석 시작 →
   </a>
 </div>
@@ -68,7 +68,7 @@ M-DEENO 분석 엔진이 내 단지의 분담금·수익성·리스크를 정밀
   <p style="font-weight:700;color:#1e40af;margin:0 0 8px;">M-DEENO 프리미엄 리포트 — 2026년 6월 출시 예정</p>
   <p style="font-size:0.9rem;color:#374151;margin:0 0 12px;">지금 베타 신청하면 정식 출시 전 분석 리포트를 먼저 받아보실 수 있습니다.</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+     style="display:block;width:100%;padding:14px 28px;background:#2563eb;color:#fff;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;min-height:48px;">
     리포트 무료 신청 →
   </a>
 </div>

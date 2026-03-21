@@ -1046,66 +1046,66 @@ article.post-single .post-content {
   .paginav { grid-template-columns: 1fr !important; }
   .paginav .next { align-items: flex-start !important; text-align: left !important; }
 
-  /* 제목 최소 크기 보장 */
-  .post-content h2 { font-size: clamp(1.05rem, 4vw, 1.25rem) !important; }
-  .post-content h3 { font-size: clamp(0.98rem, 3.5vw, 1.1rem) !important; }
+  /* 제목 최소 크기 보장 (50~60대 가독성) */
+  .post-content h2 { font-size: clamp(1.25rem, 4vw, 1.4rem) !important; }
+  .post-content h3 { font-size: clamp(1.1rem, 3.5vw, 1.2rem) !important; }
 
-  /* 표 최소 폰트 */
-  .post-content table { font-size: 0.82rem !important; }
+  /* 표 최소 폰트 — 14px 이상 보장 */
+  .post-content table { font-size: 0.875rem !important; }
   .post-content thead th,
-  .post-content tbody td { padding: 0.45rem 0.6rem !important; }
+  .post-content tbody td { padding: 0.5rem 0.65rem !important; }
 
   /* 포스트 제목 */
-  .post-title { font-size: clamp(1.15rem, 5vw, 1.6rem) !important; }
+  .post-title { font-size: clamp(1.3rem, 5vw, 1.6rem) !important; word-break: keep-all; }
 
   /* 포스트 푸터 */
   .post-footer { margin-top: 2rem; }
 
-  /* 태그 칩 크기 */
-  .post-tags a { font-size: 0.75rem !important; padding: 3px 12px !important; }
+  /* 태그 칩 크기 — 터치 타겟 보장 */
+  .post-tags a { font-size: 0.8rem !important; padding: 5px 14px !important; min-height: 32px; }
 }
 
 @media (max-width: 480px) {
   .home-hero   { padding: 2rem 1rem 1.75rem; margin: 0 -1rem 1.25rem; }
-  .home-hero h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-  .hero-sub    { font-size: 0.9rem; margin-bottom: 1.25rem; }
-  .hero-badge  { font-size: 0.72rem; padding: 3px 12px; margin-bottom: 0.75rem; }
+  .home-hero h1 { font-size: 1.5rem; margin-bottom: 0.5rem; word-break: keep-all; }
+  .hero-sub    { font-size: 0.95rem; margin-bottom: 1.25rem; }
+  .hero-badge  { font-size: 0.75rem; padding: 4px 14px; margin-bottom: 0.75rem; }
   .cat-grid    { grid-template-columns: 1fr; }
   .hero-btns   { flex-direction: column; align-items: stretch; }
-  .hbtn        { text-align: center; }
-  .hbtn-primary, .hbtn-blue { padding: 12px 24px; font-size: 0.95rem; }
-  .post-content { font-size: 0.98rem; line-height: 1.85; }
+  .hbtn        { text-align: center; min-height: 48px; }
+  .hbtn-primary, .hbtn-blue { padding: 14px 24px; font-size: 1rem; min-height: 52px; }
+  .post-content { font-size: 1rem; line-height: 1.85; }
   .post-content p { margin-bottom: 1.1rem; }
   .post-content blockquote { padding: 0.75rem 1rem; margin: 1.25rem 0; }
   .post-content h2 { margin-top: 2rem; padding: 0.5rem 0.85rem; }
   .post-content h3 { margin-top: 1.5rem; }
   .terms-grid  { grid-template-columns: 1fr; }
   .premium-band { padding: 1.75rem 1.15rem; }
-  .premium-band h2 { font-size: 1.2rem; margin-bottom: 0.5rem; }
-  .premium-band p { font-size: 0.85rem; margin-bottom: 1.25rem; }
+  .premium-band h2 { font-size: 1.25rem; margin-bottom: 0.5rem; word-break: keep-all; }
+  .premium-band p { font-size: 0.9rem; margin-bottom: 1.25rem; }
 
-  /* 히어로 검색바 */
+  /* 히어로 검색바 — iOS 자동줌 방지: input 16px 이상 */
   .hero-search { border-radius: 10px; }
-  .hero-search input { font-size: 0.88rem; padding: 0.75rem 1rem; }
-  .hero-search button { padding: 0 1rem; font-size: 0.85rem; }
+  .hero-search input { font-size: 1rem; padding: 0.75rem 1rem; }
+  .hero-search button { padding: 0 1rem; font-size: 0.9rem; min-height: 48px; }
 
-  /* stat 숫자 */
+  /* stat 숫자 — 라벨 최소 12px 보장 */
   .stat-row { gap: 0.5rem; }
   .stat-box { padding: 0.85rem 0.5rem; border-radius: 10px; }
-  .stat-n { font-size: 1.2rem; }
-  .stat-l { font-size: 0.7rem; }
+  .stat-n { font-size: 1.25rem; }
+  .stat-l { font-size: 0.75rem; }
 
   /* MVP 스트립 */
   .mvp-strip { padding: 0.75rem 1rem; border-radius: 10px; gap: 0.75rem; }
-  .mvp-strip span { font-size: 0.85rem; }
+  .mvp-strip span { font-size: 0.9rem; }
 
   /* 섹션 간격 */
   .home-section { margin-bottom: 1.75rem; }
   .sec-title { font-size: 0.95rem; }
 
-  /* 포스트 카드 */
+  /* 포스트 카드 — 제목 14px→15px */
   .post-card { padding: 1rem; border-radius: 12px; }
-  .pc-title { font-size: 0.88rem; }
+  .pc-title { font-size: 0.95rem; }
 
   /* 카테고리 카드 */
   .cat-card { padding: 0.85rem 1rem; }
