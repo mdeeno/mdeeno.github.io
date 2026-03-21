@@ -169,18 +169,6 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 
 <small>※ 본 포스팅은 데이터 분석에 기반한 정보 제공을 목적으로 하며, 투자의 책임은 전적으로 투자자 본인에게 있습니다.</small>
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -193,6 +181,9 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 **Q3. 분당과 일산 중 어디가 재건축 투자에 더 유리한가요?**
 분당은 강남 접근성과 높은 시세로 사업성이 양호하지만 진입 비용이 높습니다. 일산은 상대적으로 저렴하나 사업 추진 속도가 느릴 수 있습니다. 투자 여력과 보유 기간에 따라 선택이 달라집니다.
 
+## 핵심 정리
+용적률 상향이 곧 수익 보장이라는 공식은 공사비 급등 시대에 더 이상 통하지 않습니다. 분당·일산 선도지구의 실제 예상 분담금은 단순 기대수익을 훌쩍 넘는 수준으로, 숫자를 직접 검증하지 않으면 수억 원의 손실로 이어질 수 있습니다. M-DEENO 분석 엔진에서 내 단지의 예상 분담금과 수익성 시뮬레이션을 확인하시고, 지금 바로 투자 결정 전 위험도를 점검해 보세요.
+
 ## 함께 읽으면 좋은 글
 
 - [GTX-C 착공 사이렌! 삼성역 20분 컷, 아직 8억대 진입 가능한 '이곳' (Top 3)](/posts/strategy/manual-post-1769356858_manual/)
@@ -203,6 +194,4 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 
 > **※ 본 글은 M-DEENO의 정비사업 및 주거 정책 변화가 시장에 미치는 구조적 영향을 정리한 연구 노트입니다.**
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}

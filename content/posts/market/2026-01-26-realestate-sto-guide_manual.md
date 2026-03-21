@@ -175,18 +175,6 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 
 <small>※ 본 분석 글은 투자 참고용이며, 모든 투자의 책임은 본인에게 있습니다.</small>
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -199,6 +187,9 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 **Q3. 어떤 플랫폼을 먼저 시작하는 것이 좋을까요?**
 투자 초보자라면 매각(엑시트) 실적이 가장 많은 카사(Kasa)부터 시작하는 것을 추천합니다. 안정적인 오피스 자산 위주로 구성되어 있어 리스크가 상대적으로 낮습니다.
 
+## 핵심 정리
+2026년 법제화로 STO 시장이 제도권에 안착했지만, 플랫폼별 수수료 구조와 유동성 차이가 실질 수익률에 생각보다 큰 격차를 만들어 냅니다. '연 수익률 몇 퍼센트'라는 숫자보다 실제 배당 이력과 토큰 매각 가능 여부를 먼저 확인하는 것이 안전한 투자의 출발점입니다. 이미 재건축 단지를 보유하고 계신 분이라면 M-DEENO 분석 엔진으로 기존 자산의 분담금 부담부터 점검하신 후 추가 투자 여력을 판단해 보세요.
+
 ## 함께 읽으면 좋은 글
 
 - 소액으로 강남 건물주 되기? 부동산 조각 투자(STO) 플랫폼 3사 완벽 비교 분석 (수수료, 수익률)-플랫폼-3사-완벽-비교-분석-(수ᄉ/)
@@ -209,6 +200,4 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 >
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}

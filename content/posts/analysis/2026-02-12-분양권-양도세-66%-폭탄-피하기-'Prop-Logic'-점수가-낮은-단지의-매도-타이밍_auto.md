@@ -13,24 +13,9 @@ tags:
 description: '분양권 양도세 66% 폭탄 피하기: ''M-DEENO 분석 엔진'' 점수가 낮은 단지의 매도 타이밍'
 ---
 
----
-
 분양권을 보유하고 계신 분이라면 반드시 알아야 할 숫자가 있습니다. 바로 **66%**입니다. 분양권을 1년 미만 보유 후 양도하면 양도소득세율이 최대 66%(지방소득세 포함)에 달합니다. 프리미엄이 1억이면 세금만 6,600만 원을 내야 하는 셈입니다.
 
 문제는 분양권의 사업성이 좋지 않은 단지, 즉 M-DEENO 분석 엔진 점수가 낮은 단지의 경우입니다. "언제 팔아야 세금도 줄이고 손해도 최소화할 수 있을까?" 오늘은 이 질문에 대한 답을 찾아보겠습니다.
-
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ## 분양권 양도세의 구조 이해
 
@@ -91,6 +76,9 @@ M-DEENO 분석 엔진은 단지별 사업 안정성, 공사비 리스크, 분양
 
 M-DEENO 분석 엔진으로 내 분양권 단지의 사업 안정성 점수를 확인하고, 시나리오별 세후 수익을 비교해 보세요. 최적의 매도 타이밍은 시장이 아니라 숫자가 알려줍니다.
 
+## 핵심 정리
+분양권 양도세 66%는 보유 기간과 매도 시점을 어떻게 설정하느냐에 따라 세 부담이 크게 달라지는 구조입니다. 특히 M-DEENO 분석 엔진 점수가 낮은 단지는 사업 지연 가능성이 높아 보유 기간이 길어질 위험이 있으므로, 매도 타이밍 결정을 더욱 신중하게 하셔야 합니다. 절세 전략을 세우기 전에 먼저 지금 내 단지의 사업 안정성과 분담금 위험도를 확인해 보시기 바랍니다.
+
 ## 자주 묻는 질문 (FAQ)
 
 **Q1. 분양권을 가족에게 증여하면 양도세를 피할 수 있나요?**
@@ -105,22 +93,9 @@ M-DEENO 분석 엔진으로 내 분양권 단지의 사업 안정성 점수를 �
 
 분양권 매도 시 취득에 들어간 비용(분양대행 수수료, 중개보수 등)은 필요경비로 공제받을 수 있습니다. 분양권 프리미엄 매수 시 지불한 중개수수료 영수증을 반드시 보관하세요. 이러한 공제 항목이 세후 수익에 영향을 미칩니다.
 
-{{< mdeeno_cpa >}}
 
 ## 함께 읽으면 좋은 글
 
 - [분양권 매도, 하루 차이로 수천만 원 날린다? 66% 양도세 폭탄 피하는 골든타임 분석](/posts/analysis/2026-02-10-분양권-매도-하루-차이로-수천만-원-날린다-66-양도세-폭탄-피하는-골든타임-부)
 ---
 
-> **※ 본 글은 M-DEENO의 부동산 의사결정 연구 노트입니다.**
-
----
-
-### 🛑 분양권 양도소득세, 분양권 매도 타이밍, 양도세 66%, 프롭로직 점수, 실거주 의무 투자, 고민되시나요?
-
-부동산은 **타이밍**입니다.
-내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
-{{< mdeeno_cpa type="loan" >}}
-
-{{< ad_cpa type="finance" >}}

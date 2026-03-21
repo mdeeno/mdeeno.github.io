@@ -62,18 +62,6 @@ description: '스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치�
 부동산은 **타이밍**이 생명입니다.
 내 자금으로 가능한 **최고의 매물**이 무엇인지 지금 바로 확인하세요.
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -92,6 +80,8 @@ description: '스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치�
 >
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}
+## 핵심 정리
+삼성 SmartThings와 LG ThinQ의 스마트홈 시스템은 단순 편의 기능을 넘어 아파트 매매가에 실질적인 프리미엄 격차를 만들어 내고 있습니다. 브랜드 생태계의 호환성과 입주민 실사용 만족도가 향후 시세에 지속적으로 영향을 줄 수 있다는 점을 투자 판단 시 반드시 고려하셔야 합니다. 우리 단지의 재건축 사업성과 시세 경쟁력을 M-DEENO 분석 엔진으로 종합적으로 점검해 보시길 권해 드립니다.
+
+내 단지의 분담금 위험도와 사업성 지표를 지금 바로 확인해 보세요.

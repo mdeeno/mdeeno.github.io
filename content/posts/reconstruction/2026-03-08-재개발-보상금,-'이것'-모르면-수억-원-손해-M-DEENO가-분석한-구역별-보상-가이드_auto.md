@@ -11,19 +11,6 @@ description: "재개발 보상금(권리가액) 산정 방식이 궁금하신가
 
 M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 재개발 구역에서 조합원이 예상했던 권리가액(비례율을 적용한 내 실질 지분 가치)과 실제 통보된 금액 사이의 괴리가 평균 15% 이상 벌어진 것으로 나타났습니다. 이는 원자재 가격 상승과 고금리 기조가 맞물리며 사업 비용이 폭증했기 때문인데, 이러한 시장의 변화를 읽지 못하면 자산 전략의 실패로 이어질 수밖에 없습니다.
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
-
 ## 구역별 보상금 격차가 발생하는 근본 원인
 
 같은 서울 안에서도 구역별로 보상금(권리가액) 수준은 극명하게 차이납니다. 이 차이를 만드는 핵심 요인은 세 가지입니다.
@@ -60,7 +47,9 @@ M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 �
 
 반대만으로는 보상금을 높일 수 없습니다. 사업이 진행되면 동의 여부와 관계없이 관리처분계획에 따라 보상이 이뤄집니다. 분양 신청을 하지 않으면 현금청산 대상이 되며, 이때 받는 금액은 감정평가액 기준이므로 오히려 불리할 수 있습니다.
 
-{{< mdeeno_cpa >}}
+
+## 핵심 정리
+재개발 보상금(권리가액)은 감정평가액에 비례율을 곱해 결정되기 때문에, 감정평가 단계에서 적극적으로 이의를 제기하고 비례율을 높이는 사업장을 선별하는 것이 수억 원의 차이를 만들 수 있습니다. 한남3구역 사례처럼 비례율이 조금만 달라져도 실수령 보상금이 크게 흔들리므로, 이 구조를 이해하지 못하면 정당한 권리를 스스로 포기하는 셈입니다. M-DEENO 분석 엔진으로 지금 내 단지의 분담금 위험도와 예상 권리가액을 먼저 확인해 보신 후, 대응 전략을 세우시길 권해 드립니다.
 
 ## 함께 읽으면 좋은 글
 
@@ -73,12 +62,6 @@ M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 �
 
 ---
 
-<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef">
-    <p style="margin-bottom: 10px; font-weight: bold; color: #374151">🧮 직접 계산해보기</p>
-    <a href="https://tech.mdeeno.com/calculators/calc_tax/" target="_blank" style="display: inline-block; background-color: #00C853;padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);color:#fff">
-        <strong>🏠 취득세 계산기 바로가기</strong>
-    </a>
-</div>
 
 📉 **이주비 대출 한도 미리 확인**
 👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 DSR 기준 대출 한도 계산기</strong></a>

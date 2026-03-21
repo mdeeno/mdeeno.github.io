@@ -133,18 +133,6 @@ image: '/images/2026-mortgage-timing.png'
 
 ###
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -168,6 +156,7 @@ image: '/images/2026-mortgage-timing.png'
 >
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}
+## 핵심 정리
+주담대 금리 7% 시대에도 서울의 공급 부족과 전세가 상승 압력은 무주택자에게 매수 시점을 늦출수록 불리해지는 구조를 만들어 내고 있습니다. 생애최초 특례대출과 디딤돌 대출을 최대한 활용하되, 원리금 상환 부담이 가처분 소득의 30%를 넘지 않는 선에서 매수를 결정하시는 것이 안전합니다.
+내 자금 구조에서 실제로 감당 가능한 대출 한도와 리스크를 M-DEENO 분석 엔진으로 지금 바로 시뮬레이션해 보시기 바랍니다.

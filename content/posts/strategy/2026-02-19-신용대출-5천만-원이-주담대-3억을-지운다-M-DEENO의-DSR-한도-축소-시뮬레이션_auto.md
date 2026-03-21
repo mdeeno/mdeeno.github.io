@@ -13,14 +13,6 @@ tags:
 description: 신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션 - M-DEENO 데이터 분석
 ---
 
-<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05)">
-        <p style="color: #6b7280; font-size: 0.85em; margin-top: 15px; font-style: italic">
-        ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-19 11:34:22 기준)
-    </p>
-</div>
-
----
-
 <div class="lab-card">신용대출을 보유한 상태에서 주택담보대출(주담대)을 신청할 경우, DSR(총부채원리금상환비율) 규제로 인해 실제 대출 가능 금액은 예상보다 훨씬 크게 줄어듭니다. M-DEENO 데이터 랩의 분석에 따르면, 신용대출은 주담대보다 상환 기간이 짧게 산정되어 DSR 점유율을 급격히 높이는 주범이 됩니다.</div>
 
 ### 신용대출이 주담대 한도를 잠식하는 메커니즘
@@ -63,15 +55,6 @@ M-DEENO 데이터 랩에서 서울 주요 단지를 대상으로, 연소득 7,00
 
 [📉 M-DEENO DSR & 대출 한도 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_dsr/)
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
-     target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none;color:#fff">
-    내 분담금 위험도 확인하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -89,19 +72,12 @@ DSR(총부채원리금상환비율) 규제에 따라, 신용대출 5,000만 원�
 - [수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까](/posts/strategy/2026-02-16-수억-원-아끼는-증여의-기술-부담부-증여가-무조건-유리할까-m-deeno-데이터-랩-정밀-ᄇ)
 - [[위기의 영끌족] 주담대 연체 후 경매까지 단 6개월, 내 집을 지키는 골든타임 사수법](/posts/strategy/2026-02-16-위기의-영끌족-주담대-연체-후-경매까지-단-6개월-내-집을-지키는-골든타임-사/)
 
-{{< mdeeno_cpa type="loan" >}}
-
 ---
 
 > **※ 본 글은 시장 데이터에 기반한 M-DEENO의 자산 전략 리포트입니다.**
 
 ---
 
-### 🛑 DSR 계산법, 신용대출 주담대 한도, DSR 40% 시뮬레이션 투자, 고민되시나요?
-
-부동산은 **타이밍**입니다.
-내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
-※ M-DEENO 데이터랩의 예측 모델 결과입니다. 실제 시세와 차이가 있을 수 있습니다.
-
-{{< ad_cpa type="finance" >}}
+## 핵심 정리
+신용대출 5천만 원은 DSR 계산 구조상 주담대 한도를 최대 3억 원 가까이 줄일 수 있으며, 이 사실을 모르고 대출을 받으러 갔다가 낭패를 보는 경우가 많습니다. 주택 구입을 계획하고 계신다면 신용대출을 먼저 정리하는 것이 실질 한도를 확보하는 가장 빠른 방법입니다.
+M-DEENO 분석 엔진으로 내 신용대출이 주담대 한도에 미치는 영향을 지금 바로 시뮬레이션해 보세요.

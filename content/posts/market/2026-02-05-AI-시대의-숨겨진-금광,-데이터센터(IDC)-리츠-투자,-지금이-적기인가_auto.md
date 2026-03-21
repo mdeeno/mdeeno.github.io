@@ -75,18 +75,6 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
 
 투자에 앞서 [💰 대출 이자 계산기](https://tech.mdeeno.com/calculators/calc_interest/)를 활용하여 본인의 재무 상태를 점검해 보시는 것도 잊지 마세요!
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -99,10 +87,11 @@ IDC 리츠는 변동성이 큰 기술주에 직접 투자하는 것보다 훨씬
 **Q3. 국내에도 데이터센터 리츠가 있나요?**
 현재 국내 상장 데이터센터 전문 리츠는 제한적이지만, SK리츠 등 일부 리츠가 데이터센터 자산을 편입하고 있으며, 향후 전문 리츠 상장이 확대될 것으로 예상됩니다.
 
+## 핵심 정리
+AI 인프라 수요 급증으로 데이터센터 리츠는 장기 성장 가능성이 높지만, 금리 민감도와 환율 리스크는 반드시 점검해야 할 변수입니다. 리츠 투자 수익은 부동산 포트폴리오와 함께 구성할 때 시너지가 날 수 있으나, 어떤 투자든 정확한 수익·비용 분석이 선행되어야 합니다. 투자 결정 전에 M-DEENO 분석 엔진을 통해 보유 단지의 재건축 수익성과 리스크를 함께 점검해 보시기 바랍니다.
+
 ## 함께 읽으면 좋은 글
 
 - 마이너스 프리미엄 분양권, 양도세 매수자 부담 조건이 독이 되는 이유_auto/)
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}

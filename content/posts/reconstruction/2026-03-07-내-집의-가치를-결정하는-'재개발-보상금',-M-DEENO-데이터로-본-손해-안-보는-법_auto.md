@@ -9,19 +9,6 @@ description: "재개발 보상금이 적게 나올까 걱정되시나요? M-DEEN
 
 주변 시세가 15억 원인 내 집이 재개발 구역에 포함된 후 받은 감정평가액이 9억 원에 불과하다면, 당신은 그 자리에서 6억 원의 자산을 손해 본 것일까요? 재개발 현장에서 흔히 발생하는 이 '평가액 쇼크'는 많은 조합원을 패닉에 빠뜨리지만, 실제 내 집의 가치를 결정하는 숫자는 따로 있습니다. 감정평가서에 찍힌 금액보다 더 중요한 것은 사업의 수익성을 나타내는 지표와 이를 기반으로 산출되는 최종 권리가액입니다.
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
-
 ## 재개발 보상금의 구조: 감정평가액과 권리가액의 차이
 
 재개발 보상금을 이해하려면 먼저 두 가지 핵심 개념을 구분해야 합니다. **감정평가액**은 감정평가법인이 현재 부동산의 가치를 평가한 금액이고, **권리가액**은 감정평가액에 비례율을 곱해서 산출되는 조합원의 실질적인 지분 가치입니다.
@@ -60,7 +47,11 @@ M-DEENO 분석 엔진은 감정평가액 대비 권리가액 변동 시나리오
 
 현금청산 시 보상금은 감정평가액 기준으로 지급됩니다. 이 금액에 불복하면 수용재결과 이의재결 절차를 거칠 수 있고, 최종적으로 행정소송까지 진행할 수 있습니다. 다만 소송 기간이 수년에 달할 수 있으므로 시간 비용도 함께 계산해야 합니다.
 
-{{< mdeeno_cpa >}}
+
+## 핵심 정리
+재개발 보상금은 감정평가액과 비례율의 조합으로 결정되기 때문에, 어느 한 쪽만 높아도 충분하지 않습니다. 감정평가 과정에 적극적으로 참여하고 비례율 산정 근거를 꼼꼼히 검토하는 것이, 보상금 손해를 막는 가장 확실한 방법입니다. M-DEENO 분석 엔진으로 내 단지의 비례율과 예상 보상금을 미리 시뮬레이션해 두시면 조합 총회나 이의신청 시 훨씬 유리한 위치에 설 수 있습니다.
+
+지금 내 단지의 비례율과 예상 보상금 수준을 직접 확인해 보세요.
 
 ## 함께 읽으면 좋은 글
 
@@ -73,12 +64,6 @@ M-DEENO 분석 엔진은 감정평가액 대비 권리가액 변동 시나리오
 
 ---
 
-<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef">
-    <p style="margin-bottom: 10px; font-weight: bold; color: #374151">🧮 직접 계산해보기</p>
-    <a href="https://tech.mdeeno.com/calculators/calc_transfer/" target="_blank" style="display: inline-block; background-color: #00C853;padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);color:#fff">
-        <strong>💸 양도소득세 계산기 바로가기</strong>
-    </a>
-</div>
 
 📉 **이주비 대출 한도 미리 확인**
 👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 DSR 기준 대출 한도 계산기</strong></a>
@@ -87,4 +72,3 @@ M-DEENO 분석 엔진은 감정평가액 대비 권리가액 변동 시나리오
 
 ※ 시뮬레이션 데이터이므로 실거래가 공개시스템 등을 통한 추가 확인을 권장합니다.
 
-{{< ad_cpa type="finance" >}}

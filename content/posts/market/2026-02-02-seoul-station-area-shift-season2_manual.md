@@ -8,6 +8,8 @@ description: '서울시가 역세권 장기전세주택(시프트) 운영기준�
 image: '/images/seoul-shift-season2.png'
 ---
 
+서울시가 역세권 용적률을 최대 500%까지 허용하는 장기전세주택 시즌2를 공식화하면서, 수혜 단지의 호가가 한 달 새 5,000만 원 이상 뛰어오른 사례가 속출하고 있습니다. '이 단지가 해당되는지', '지금 들어가면 늦은 건지' — 이런 고민을 하루에도 수십 명씩 커뮤니티에서 털어놓고 있습니다. 이 글에서는 준주거지역 용적률 상향 수혜를 직접 받을 핵심 후보 단지 TOP 3와 현재 호가를 실거래 기준으로 짚어드립니다.
+
 ## 🏗️ "역세권 아파트, 35층 높이 제한 풀리고 용적률은 500%까지?"
 
 - 서울시 '역세권 장기전세 2.0' 본격화, 내 아파트도 고밀 개발 대상일까요?
@@ -63,18 +65,6 @@ image: '/images/seoul-shift-season2.png'
 
 <small>본 분석은 서울시 운영기준과 현재 시장 호가를 바탕으로 작성되었으며, 실제 정비계획 수립 과정에서 용적률 및 사업 방식은 변동될 수 있습니다.</small>
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -87,6 +77,9 @@ image: '/images/seoul-shift-season2.png'
 **Q3. 시프트 대상지 주변 아파트에 투자해도 괜찮을까요?**
 시프트 대상지 주변은 고밀 개발로 인한 인프라 확충 효과를 받을 수 있으나, 대규모 공급 증가로 인한 일시적 시세 조정 가능성도 있습니다. 장기적 관점에서 역세권 생활 인프라 개선 효과를 기대할 수 있습니다.
 
+## 핵심 정리
+역세권 장기전세 제도 개정으로 용적률 500% 상향이 가능해지면서, 핵심 후보 단지들의 개발 기대감이 크게 높아진 것은 사실입니다. 다만 현재 호가에는 이미 기대감이 선반영된 경우가 많으므로, 실제 사업 진행 속도와 수익성을 냉정하게 따져보시는 것이 중요합니다. M-DEENO 분석 엔진으로 관심 단지의 개발 수익성과 투자 적정 가격을 지금 바로 확인해 보세요.
+
 ## 함께 읽으면 좋은 글
 
 - [인천 1호선 연장 개통! 검단신도시 101·102·103역 대장주 TOP 3와 현재 호가 분석](/posts/strategy/2026-02-02-incheon-line1-geomdan-extension_manual/)
@@ -94,6 +87,4 @@ image: '/images/seoul-shift-season2.png'
 
 > **※ 본 글은 M-DEENO의 정비사업 및 주거 정책 변화가 시장에 미치는 구조적 영향을 정리한 연구 노트입니다.**
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}

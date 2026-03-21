@@ -7,6 +7,8 @@ tags: ['리츠 ETF 실물 부동산 비교', '부동산투자', '재테크']
 description: '소액으로 건물주 되기? 리츠 ETF vs 꼬마빌딩, 전문가가 꼽은 진짜 승자는?'
 ---
 
+꼬마빌딩을 매수했다가 공실률 급등과 금리 부담이 겹치면서 연 수익률이 -3%로 곤두박질친 사례가 최근 2년 새 급증한 반면, 같은 기간 리츠 ETF에 월 50만 원씩 적립한 투자자들은 배당수익률 6~8%를 꾸준히 챙겨 가고 있습니다. 소액으로 건물주의 꿈을 꾸면서도 어느 길이 진짜인지 몰라 결정을 미루고 계신 분들, 결코 적지 않습니다. 이 글에서는 리츠 ETF와 꼬마빌딩의 실제 수익 구조, 유동성, 세금 부담을 항목별로 견주어, 지금 당신의 자산 규모와 투자 목적에 맞는 선택지가 무엇인지 짚어 드리겠습니다.
+
 ## 소액 투자자를 위한 건물주 로드맵: REITs ETF vs 실물 부동산
 
 수십억 원의 자본 없이도 건물주가 되는 꿈, 이제 리츠(REITs) ETF를 통해 현실화할 수 있습니다. 하지만 전통적인 실물 부동산 투자가 주는 압도적인 레버리지 효과와 시세 차익을 포기할 수 있을까요? Senior Analyst 관점에서 두 투자 방식의 장단점을 냉철하게 비교 분석합니다.
@@ -89,18 +91,10 @@ REITs ETF는 소액으로 우량 부동산에 간접 투자하고 배당 수익�
 부동산은 **타이밍**이 생명입니다.
 내 자금으로 가능한 **최고의 매물**이 무엇인지 지금 바로 확인하세요.
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
+
+## 핵심 정리
+리츠 ETF는 소액으로 시작할 수 있는 유동성 높은 선택이고, 꼬마빌딩은 레버리지를 활용한 실물 자산 확보 전략입니다. 두 방법 모두 장단점이 분명한 만큼, 자신의 자금 규모와 투자 성향을 먼저 점검하는 것이 중요합니다.
+M-DEENO 분석 엔진으로 나의 자산 여력과 수익 시뮬레이션을 비교한 뒤, 지금 내 상황에 맞는 투자 방식을 직접 확인해 보세요.
 
 ## 자주 묻는 질문
 
@@ -122,6 +116,4 @@ REITs ETF는 소액으로 우량 부동산에 간접 투자하고 배당 수익�
 >
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}

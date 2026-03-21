@@ -138,18 +138,6 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 
 <small>※ 본 분석은 시장 데이터를 바탕으로 한 에디터의 주관적인 견해이며, 투자 시 실거래가 확인이 필요합니다.</small>
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -162,6 +150,9 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 **Q3. 젠트리피케이션이 진행되면 임대 수익률이 오히려 떨어질 수 있나요?**
 네, 가능합니다. 매매가가 급등하면 임대 수익률(Cap Rate)은 오히려 낮아질 수 있습니다. 투자 시점의 매입가 대비 임대료 비율을 반드시 확인해야 합니다.
 
+## 핵심 정리
+성수동과 한남동의 팝업 임대료 격차는 단순한 유행이 아니라, 해당 상권의 소비 집객력과 브랜드 노출 가치가 수치로 드러난 결과입니다. 두 지역 모두 단기 과열 리스크를 안고 있는 만큼, 상업 부동산과 인접 주거지 가치를 함께 살펴보는 시각이 필요합니다. M-DEENO 분석 엔진으로 내가 보유하거나 관심 있는 단지의 상권 영향과 자산 리스크를 지금 바로 점검해 보세요.
+
 ## 함께 읽으면 좋은 글
 
 - [2026 부동산 조각투자 STO 완벽 가이드: '천원 건물주'의 수익률 반전은 사실일까?](/posts/market/2026-01-26-realestate-sto-guide_manual/)
@@ -172,6 +163,4 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 >
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}

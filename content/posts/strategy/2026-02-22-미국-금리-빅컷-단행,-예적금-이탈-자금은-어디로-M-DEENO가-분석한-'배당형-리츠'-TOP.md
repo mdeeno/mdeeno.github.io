@@ -14,14 +14,6 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
   분석
 ---
 
-<div class="lab-graph-wrapper" style="text-align: center; margin: 30px 0; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05)">
-        <p style="color: #6b7280; font-size: 0.85em; margin-top: 15px; font-style: italic">
-        ▲ 위 차트는 M-DEENO AI가 분석한 시장 전망 시뮬레이션 데이터입니다 (2026-02-22 21:44:38 기준)
-    </p>
-</div>
-
----
-
 <div class="lab-card">
 미국 연준(Fed)의 0.5%p 금리 인하(빅컷) 이후, 연 3%대 예적금의 매력이 급감하고 있습니다. M-DEENO 데이터 랩은 은행을 떠난 스마트 머니가 실물 자산 기반의 '배당형 리츠'로 빠르게 이동하는 경로를 포착했습니다. 본 포스팅에서는 안정성과 수익성을 동시에 잡을 수 있는 리츠 TOP 3와 핵심 투자 전략을 공개합니다.
 </div>
@@ -70,23 +62,11 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 
 단기적으로는 이자 부담 증가로 하락할 수 있습니다. 하지만 장기적으로는 인플레이션에 따른 **임대료 인상**분이 반영되므로 자산 가치를 방어하는 헤지(Hedge) 수단이 됩니다.
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=inline_cta"
-     target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;font-weight:700;border-radius:8px;text-decoration:none;color:#fff">
-    내 분담금 위험도 확인하기 →
-  </a>
-</div>
-
 ## 함께 읽으면 좋은 글
 
 - [2026년 다주택자 취득세 중과 폐지 현실화될까? 비규제지역 알짜 단지 분석 및 절세 전략](/posts/strategy/2026-02-22-2026년-다주택자-취득세-중과-폐지-현실화될까-비규제지역-알짜-단지-분석-및-절)
 - [2026년 소득 기준 폐지 확정? 9억 이하 수도권 국평 선점 전략: M-DEENO 데이터 랩 정밀 분석](/posts/strategy/2026-02-22-2026년-소득-기준-폐지-확정-9억-이하-수도권-국평-선점-전략-m-deeno-데이터-랩-정밀-)
 - [2026년 주택담보대출 갈아타기 필승 전략: 중도상환수수료 내고도 연 500만 원 아끼는 데이터 분석법](/posts/strategy/2026-02-25-2026년-주택담보대출-갈아타기-필승-전략-중도상환수수료-내고도-연-500만-원-아ᄁ/)
-
-{{< mdeeno_cpa type="loan" >}}
 
 ---
 
@@ -94,11 +74,6 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 
 ---
 
-### 🛑 금리 인하 리츠 전망, 배당형 리츠 추천, 부동산 자금 흐름, 미국 빅컷 수혜주 투자, 고민되시나요?
-
-부동산은 **타이밍**입니다.
-내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
-※ 해당 리포트는 가상 시나리오를 바탕으로 작성되었습니다. 투자 시 유의하세요.
-
-{{< ad_cpa type="finance" >}}
+## 핵심 정리
+미국 금리 빅컷 이후 예·적금에서 빠져나온 자금은 배당 수익과 자본 차익을 동시에 노릴 수 있는 배당형 리츠로 유입되는 흐름이 뚜렷합니다. 다만 리츠도 금리 방향과 공실률에 따라 배당이 줄어들 수 있어, 단순 수익률만 보지 말고 기초자산 안정성을 반드시 확인하셔야 합니다. M-DEENO 분석 엔진은 재건축·부동산 시장 전반의 데이터를 종합해 투자 리스크를 수치로 짚어 드립니다.
+지금 내 단지의 분담금 위험도를 확인해 보세요.

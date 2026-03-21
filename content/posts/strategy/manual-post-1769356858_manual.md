@@ -165,18 +165,11 @@ GTX-C 착공은 단순한 공사가 아닙니다. 수도권의 지도가 **'시�
 
 <small>※ 본 포스팅은 정보 제공을 목적으로 하며, 투자의 책임은 전적으로 투자자 본인에게 있습니다.</small>
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
+
+## 핵심 정리
+GTX-C 착공은 삼성역 20분 생활권이라는 새로운 기준을 만들고 있으며, 아직 8억대 진입이 가능한 수혜 단지들은 착공 확정 이후 빠르게 가격이 재편될 가능성이 높습니다. 단, 교통 호재만 보고 접근하기보다는 해당 단지의 노후도와 재건축 추진 현황, 예상 분담금 수준을 함께 검토해야 실질 수익을 지킬 수 있습니다.
+M-DEENO 분석 엔진으로 관심 단지의 재건축 분담금 위험도를 미리 점검하신 뒤 매수 시점을 결정하시길 권장합니다.
+지금 내 단지의 분담금 위험도를 확인해 보세요.
 
 ## 자주 묻는 질문
 
@@ -204,6 +197,4 @@ GTX-C 착공은 단순한 공사가 아닙니다. 수도권의 지도가 **'시�
 >
 > 실제 사업 조건, 지역, 시점에 따라 결과는 달라질 수 있습니다.
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}

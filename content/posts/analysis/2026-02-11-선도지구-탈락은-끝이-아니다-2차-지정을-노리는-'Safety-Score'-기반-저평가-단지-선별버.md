@@ -13,20 +13,6 @@ tags:
 description: '선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 ''Safety Score'' 기반 저평가 단지 선별법'
 ---
 
----
-
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 1기 신도시 선도지구 지정 결과가 발표될 때마다, 탈락한 단지의 조합원들은 좌절합니다. "우리 단지는 끝난 건가?" 하는 불안감이 퍼집니다. 하지만 선도지구 지정은 1차로 끝나는 것이 아닙니다. 2차, 3차 지정이 예정되어 있으며, 1차 탈락 단지 중에서도 충분한 사업성을 가진 곳들이 있습니다.
 
@@ -80,7 +66,9 @@ M-DEENO 분석 엔진을 활용하면 내 단지의 Safety Score와 분담금 �
 
 2차 지정 가능성이 높은 단지라면 현재의 시세 하락이 매수 기회가 될 수 있습니다. 하지만 탈락 원인이 구조적(사업성 부족, 주민 갈등 등)이라면 추가 하락 가능성도 있으므로, 반드시 데이터 기반으로 판단해야 합니다.
 
-{{< mdeeno_cpa >}}
+
+## 핵심 정리
+선도지구 탈락이 곧 사업 불가를 뜻하지는 않으며, Safety Score 기반으로 사업 안정성이 높은 단지를 먼저 골라두면 2차 지정 때 오히려 더 유리한 진입 타이밍을 잡을 수 있습니다. 저평가 단지를 놓치지 않으려면 지금 이 순간이 바로 선별 작업을 시작해야 할 시점입니다. M-DEENO 분석 엔진으로 내 관심 단지의 Safety Score를 지금 확인해 보세요.
 
 ## 함께 읽으면 좋은 글
 
@@ -88,15 +76,3 @@ M-DEENO 분석 엔진을 활용하면 내 단지의 Safety Score와 분담금 �
 
 ---
 
-> **※ 본 글은 M-DEENO의 부동산 의사결정 연구 노트입니다.**
-
----
-
-### 🛑 1기 신도시 선도지구, 재건축 사업성, 분당 재건축, 일산 재건축, 평촌 재건축 시세 투자, 고민되시나요?
-
-부동산은 **타이밍**입니다.
-내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
-{{< mdeeno_cpa type="loan" >}}
-
-{{< ad_cpa type="finance" >}}

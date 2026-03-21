@@ -9,19 +9,6 @@ description: "재개발 투자의 성패는 절차별 리스크 관리에 있습
 
 평당 공사비 1,000만 원 시대가 현실화되면서, 당신이 철석같이 믿고 있던 재개발 수익률 15%는 이미 마이너스 5% 이하로 추락했을 가능성이 93%를 상회합니다. 과거의 문법으로 계산된 '장밋빛 미래'는 이제 독이 든 성배가 되었으며, 단순히 입지가 좋다는 이유만으로 진입했다가는 수억 원의 추가 분담금 폭탄을 맞고 자산이 묶이는 최악의 상황을 맞이할 수 있습니다. M-DEENO 데이터 랩의 시뮬레이션에 따르면, 서울 내 주요 사업지 10곳 중 7곳은 현재의 공사비 상승분을 반영할 경우 비례율(사업 수익성이 높을수록 올라가는 지수로, 100% 이하면 조합원 추가 분담금이 발생)이 급격히 붕괴되는 임계점에 도달한 상태입니다.
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
-
 ## 재개발 수익률의 진짜 공식: 왜 대부분의 계산이 틀린가
 
 부동산 카페나 유튜브에서 접하는 재개발 수익률 계산에는 대부분 치명적인 허점이 있습니다. 바로 **공사비 변동, 금융비용, 사업 지연에 따른 이자 비용**이 반영되지 않는다는 점입니다.
@@ -56,7 +43,9 @@ M-DEENO 분석 엔진은 공사비 변동, 금리 변동, 분양가 시나리오
 
 건설업계에서는 원자재 가격 안정 여부와 인건비 상승 추이에 따라 공사비 흐름이 결정될 것으로 보고 있습니다. 다만 고령화에 따른 숙련 기능공 감소, 친환경 건축 기준 강화 등 구조적 상승 요인이 있어, 과거 수준으로의 회귀는 어려울 것이라는 전망이 우세합니다.
 
-{{< mdeeno_cpa >}}
+
+## 핵심 정리
+재개발 수익률은 사업 초기 홍보 자료가 아니라, 각 단계별 리스크가 실제로 어떻게 현실화되느냐에 따라 결정됩니다. 조합 설립부터 관리처분까지 절차마다 놓치기 쉬운 변수를 미리 점검한 조합원만이 기대 수익을 온전히 지킬 수 있습니다. M-DEENO 분석 엔진으로 지금 내 단지의 단계별 분담금 위험도를 직접 확인해 보세요.
 
 ## 함께 읽으면 좋은 글
 
@@ -69,12 +58,6 @@ M-DEENO 분석 엔진은 공사비 변동, 금리 변동, 분양가 시나리오
 
 ---
 
-<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef">
-    <p style="margin-bottom: 10px; font-weight: bold; color: #374151">🧮 직접 계산해보기</p>
-    <a href="https://tech.mdeeno.com/calculators/calc_tax/" target="_blank" style="display: inline-block; background-color: #00C853;padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);color:#fff">
-        <strong>🏠 취득세 계산기 바로가기</strong>
-    </a>
-</div>
 
 📉 **이주비 대출 한도 미리 확인**
 👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 DSR 기준 대출 한도 계산기</strong></a>
@@ -83,4 +66,3 @@ M-DEENO 분석 엔진은 공사비 변동, 금리 변동, 분양가 시나리오
 
 ※ 해당 리포트는 가상 시나리오를 바탕으로 작성되었습니다. 투자 시 유의하세요.
 
-{{< ad_cpa type="finance" >}}

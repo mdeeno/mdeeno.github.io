@@ -8,6 +8,8 @@ description: '한국과 미국을 대표하는 배당주 1등, 맥쿼리인프�
 image: '/images/macquarie-vs-realty-income.png'
 ---
 
+배당 수익으로 노후를 설계하려다 잘못된 종목 선택 하나로 연간 수백만 원 손실을 입는 은퇴자가 매년 늘고 있으며, 환율 변동까지 겹치면 손실 폭은 순식간에 두 배로 불어납니다. 맥쿼리인프라와 리얼티인컴 중 어디에 자금을 넣어야 할지 결정을 내리지 못하고 계신 분들, 그 신중함이 오히려 옳은 태도입니다. 이 글에서는 2026년 최신 배당 수익률·세금 구조·환율 리스크까지 항목별로 정밀 비교해, 은퇴 포트폴리오에 실제로 적합한 선택지를 냉정하게 짚어드립니다.
+
 ## 💰 "매달 꼬박꼬박 들어오는 월세 같은 배당, 누구를 선택할까요?"
 
 - 한국 도로 통행료를 받을까(맥쿼리), 미국 편의점 월세를 받을까(리얼티)?
@@ -71,18 +73,6 @@ image: '/images/macquarie-vs-realty-income.png'
 
 <small>본 분석은 2026년 2월 시장 데이터를 기반으로 작성되었으며, 종목 추천이 아닌 정보 제공을 목적으로 합니다. 모든 투자의 책임은 본인에게 있습니다.</small>
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -95,6 +85,11 @@ ISA(개인종합자산관리계좌)나 연금저축 계좌를 활용하면 배�
 **Q3. 금리 인하기에 배당주 투자를 시작해도 늦지 않았나요?**
 금리 인하기 초기에는 배당주의 상대적 매력이 높아지므로 아직 기회가 있습니다. 다만 이미 주가에 상당 부분 반영된 경우도 있으므로, 분할 매수 전략으로 접근하는 것이 안전합니다.
 
+## 핵심 정리
+맥쿼리인프라와 리얼티인컴은 각각 국내·해외 배당 투자의 대표 선택지이지만, 환율 리스크와 세금 구조를 함께 고려하면 단순 수익률 비교만으로는 판단이 어렵습니다. 은퇴 포트폴리오에서 배당주와 부동산 자산의 비중을 균형 있게 가져가는 것이 장기 안정성의 핵심이며, 특히 재건축 단지 보유자라면 예상 분담금이 현금 흐름에 미치는 영향을 반드시 사전에 파악하셔야 합니다.
+
+보유 부동산의 재건축 수익성이 궁금하시다면 M-DEENO 분석 엔진으로 지금 바로 점검해 보세요.
+
 ## 함께 읽으면 좋은 글
 
 - [잠실 주공 5단지 2026년 이주 확정적? 재초환 억대 부담금 사라질까? (실제 시뮬레이션)](/posts/analysis/2026-02-12-잠실-주공-5단지-2026년-이주-확정적-재초환-억대-부담금-사라질까-실제-시뮬레ᄋ)
@@ -106,6 +101,4 @@ ISA(개인종합자산관리계좌)나 연금저축 계좌를 활용하면 배�
 >
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}

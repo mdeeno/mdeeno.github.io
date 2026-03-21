@@ -17,18 +17,6 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 
 성수전략정비구역 1지구와 같은 초우량 입지의 경우, 조합 설립 이후 한강변 초고층 랜드마크에 대한 기대감이 선반영되면서 매물 가격이 25억 원에서 30억 원대를 상회하는 기현상을 보이고 있습니다. 이는 사업 초기 단계임에도 불구하고 입지적 희소성이 리스크를 압도한 사례로 볼 수 있습니다. 다만 일반적인 구역에서는 조합 설립 인가(토지등소유자 75% 동의)가 난 직후가 리스크는 줄어들면서 프리미엄은 아직 본격적으로 붙지 않은 '1차 매수 타이밍'으로 꼽힙니다.
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -52,12 +40,6 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 
 ---
 
-<div style="margin: 30px 0; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e9ecef">
-    <p style="margin-bottom: 10px; font-weight: bold; color: #374151">🧮 직접 계산해보기</p>
-    <a href="https://tech.mdeeno.com/calculators/calc_tax/" target="_blank" style="display: inline-block; background-color: #00C853;padding: 15px 30px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);color:#fff">
-        <strong>🏠 취득세 계산기 바로가기</strong>
-    </a>
-</div>
 
 📉 **이주비 대출 한도 미리 확인**
 👉 <a href="https://tech.mdeeno.com/calculators/calc_dsr/" target="_blank"><strong>💰 DSR 기준 대출 한도 계산기</strong></a>
@@ -65,3 +47,7 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 <br><hr><small>📢 **면책 조항**<br>본 분석은 참고용이며, 투자의 책임은 본인에게 있습니다.</small>
 
 ※ M-DEENO 데이터랩의 예측 모델 결과입니다. 실제 시세와 차이가 있을 수 있습니다.
+
+## 핵심 정리
+재개발 투자의 수익은 '어느 단지냐'보다 '언제 들어가느냐'에 의해 크게 좌우되며, 정비구역 지정 전후와 사업시행인가 전후는 리스크 대비 기대 수익률이 현격히 달라집니다. 진입 시점을 잘못 잡으면 프리미엄만 지불하고 분담금 부담은 고스란히 안게 됩니다. M-DEENO 분석 엔진으로 현재 사업 단계와 예상 수익률 임계점을 데이터로 확인하신 뒤 투자 결정을 내리시기를 권합니다.
+지금 내 단지의 분담금 위험도를 확인해 보세요.

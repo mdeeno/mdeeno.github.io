@@ -8,6 +8,7 @@ description: '서울시 재개발 구역 지정 요건이 노후도 60%로 완�
 image: '/images/seongbuk-eunpyeong-redevelopment.png'
 ---
 
+
 ## 🏗️ "낡은 빌라촌이 신축 아파트 단지로, 문턱이 낮아졌습니다"
 
 - 노후도 요건 67% → 60% 완화, 그동안 탈락했던 구역들이 다시 움직입니다.
@@ -64,18 +65,6 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
 <small>본 리포트는 정책 변화와 현장 시세를 바탕으로 작성되었으며, 투자의 책임은 본인에게 있습니다. 반드시 해당 지자체 정비과를 통해 구역 추진 현황을 확인하시기 바랍니다.</small>
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 10px">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 18px;line-height:1.7">
-    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
-    회원가입도 필요 없습니다.
-  </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;color:#fff">
-    내 분담금 무료 분석하기 →
-  </a>
-</div>
 
 ### 자주 묻는 질문 (FAQ)
 
@@ -94,6 +83,6 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 >
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.
 
-{{< mdeeno_cpa type="loan" >}}
 
-{{< ad_cpa type="finance" >}}
+## 핵심 정리
+노후도 기준 60% 완화는 그동안 구역 지정 문턱에 막혀 있던 성북구·은평구 빌라 밀집지역에 실질적인 사업 추진 가능성을 열어 준 조치입니다. 초기 후보지일수록 시세에 아직 프리미엄이 덜 반영되어 있어 선제적으로 접근하는 것이 유리하지만, 사업성 분석 없이 기대감만으로 진입하는 것은 위험합니다. M-DEENO 분석 엔진으로 내 단지의 분담금 위험도와 예상 수익성을 지금 바로 확인해 보세요.
