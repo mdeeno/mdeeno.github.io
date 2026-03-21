@@ -123,3 +123,9 @@ Image Generation Prompt:
 A futuristic 3D isometric map of Seoul city, highlighting specific neighborhoods (Seongsu, Yongsan, Mapo) with glowing red and gold heat zones. High-tech data charts and holographic rent price graphs floating above the map. Professional financial aesthetic, dark mode background with cyan and orange accents, 16:9 aspect ratio, high resolution, photorealistic.
 
 Would you like me to generate a specific cash flow simulation for one of these areas?
+
+## 함께 읽으면 좋은 글
+
+- [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-top-5-auto/)
+- [송리단길 vs 망리단길, '젠트리피케이션' 속 권리금 시세 추이 분석: 어디에 투자해야 할까?](/posts/market/2026-01-28-송리단길-vs-망리단길-젠트리피케이션-속-권리금-시세-추이-분석-어디에-투자해/)
+- [금리 인하 시계, 2026년 폭발적 상승 예상: 월세처럼 받는 한국형 리츠 TOP 5 분석](/posts/strategy/2026-01-25-금리-인하-시계-2026년-폭발적-상승-예상-월세처럼-받는-한국형-리츠-top-5-분석-au/)

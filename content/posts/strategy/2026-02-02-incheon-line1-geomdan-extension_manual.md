@@ -69,3 +69,9 @@ image: '/images/geomdan-subway-2026.png'
 ### Q3. 현재 검단신도시 전용 84㎡ 아파트의 시세는 어느 정도인가요?
 
 역세권 주요 단지 기준으로 약 7억 원 초반에서 9억 원 초반까지 형성되어 있습니다. 101역 인근이 가장 높고, 102역과 103역 인근 단지들이 그 뒤를 이어 갭 메우기(가격 차이를 좁히는 현상)를 진행 중입니다.
+
+## 함께 읽으면 좋은 글
+
+- [신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저평가 단지' TOP 3 정밀 분석](/posts/market/2026-02-02-shinbundang-line-homaesil-analysis-manual/)
+- [서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가](/posts/market/2026-02-02-seoul-station-area-shift-season2-manual/)
+- [서울 재개발 예정지, 상위 1%만 아는 옥석 가리기...분석 결과](/posts/reconstruction/2026-03-08-서울-재개발-예정지-상위-1만-아는-옥석-가리기-m-deeno-prop-logic-분석-결과-auto/)
