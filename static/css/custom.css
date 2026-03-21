@@ -540,7 +540,7 @@ body, html {
   border-bottom: none;
   background: var(--md-blue-lt);
   border-radius: 0 8px 8px 0;
-  color: var(--md-navy);
+  color: #1e40af;
   letter-spacing: -0.02em;
 }
 
@@ -549,7 +549,7 @@ body, html {
   font-weight: 700;
   margin-top: 2.2rem;
   margin-bottom: 0.75rem;
-  color: var(--md-navy);
+  color: #1e40af;
   padding-left: 0.6rem;
   border-left: 2px solid var(--md-blue-bd);
 }
