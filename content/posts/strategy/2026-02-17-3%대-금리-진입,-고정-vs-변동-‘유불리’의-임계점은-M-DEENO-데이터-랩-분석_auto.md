@@ -81,8 +81,6 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 이는 단순한 수치 
 
 [💰 나에게 맞는 대출 이자 계산해보기](https://tech.mdeeno.com/calculators/calc_interest/)
 
-
-
 <div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
   <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
@@ -106,12 +104,8 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 이는 단순한 수치 
 
 ## 함께 읽으면 좋은 글
 
-- [금리 1%에 5천만 원이 왔다 갔다? 주담대 고정 vs 변동, 당신의 선택은?](/posts/analysis/2026-02-12-금리-1%에-5천만-원이-왔다-갔다-주담대-고정-vs-변동,-당신의-선택은_auto/)
-- [주택담보대출 갈아타기 전략: 고정 vs 변동, 중도상환수수료 없이 1억 아끼는 법](/posts/strategy/2026-02-25-[M-DEENO-분석]-주택담보대출-갈아타기-전략-고정-vs-변동,-중도상환수수료-없이-1억-/)
-- [오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는](/posts/strategy/2026-02-19-오피스텔-담보-대출,-주택-수-미포함의-함정-DSR-한도-극대화하는-M-DEENO-필승-전략_auto/)
-
+- [주택담보대출 갈아타기 전략: 고정 vs 변동, 중도상환수수료 없이 1억 아끼는 법](/posts/strategy/2026-02-25-m-deeno-분석-주택담보대출-갈아타기-전략-고정-vs-변동-중도상환수수료-없이-1억-/)
 {{< mdeeno_cpa type="loan" >}}
-
 
 ---
 
@@ -123,7 +117,6 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 이는 단순한 수치 
 
 부동산은 **타이밍**입니다.
 내 자금 상황에 맞는 **최적의 매물**을 지금 확인하세요.
-
 
 ※ 해당 리포트는 가상 시나리오를 바탕으로 작성되었습니다. 투자 시 유의하세요.
 
