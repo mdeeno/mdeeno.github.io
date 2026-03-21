@@ -7,6 +7,16 @@
 ## 2026-03
 
 ### 2026-03-21
+**[블로그 모바일 가독성 전면 개선 — 50~60대 타겟]**
+- iOS Safari 자동줌 방지: 검색 input font-size 16px 이상
+- 모바일 인라인 CTA 버튼 강제 풀폭 (display:block, min-height 48px)
+- 차트 캡션/small 태그 최소 14px 보장
+- H2/H3/table/post-title 600px breakpoint 폰트 상향
+- 홈 히어로/MVP strip/premium band 폰트 확대
+- 포스트 카드 제목, stat 라벨 확대
+- 모든 CTA min-height 48~52px 보장
+- 관련 파일: `static/css/custom.css`, `assets/css/extended/custom-typography.css`, `content/_index.md`
+
 **[블로그 CTA/FAQ 가시성 개선]**
 - FAQ 섹션 스타일링 추가 (파란색 헤딩, details/summary 카드 디자인)
 - 차트 래퍼(lab-graph-wrapper) 폴백 스타일
