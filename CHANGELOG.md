@@ -6,6 +6,28 @@
 
 ## 2026-03
 
+### 2026-03-21 (9)
+**[면책조항 + 저작권 표시 Hugo partial로 복구]**
+- `post_disclaimer.html` partial 신규 생성
+- 모든 포스트 하단에 면책조항 + © 저작권 자동 표시
+- 마크다운 인라인 방식 → 템플릿 일괄 관리로 전환
+- 관련 파일: `layouts/partials/post_disclaimer.html`, `layouts/_default/single.html`, `static/css/custom.css`
+
+### 2026-03-21 (8)
+**[내부 링크 450개 포스트 일괄 삽입 + Hugo 관련글 위젯 제거]**
+- internal_linker (Jaccard 유사도) 포스트당 3개 내부 링크 추가 (총 1,350개)
+- Hugo `related_posts.html` 위젯 제거 — internal_linker로 통일
+- cleanup/internal_linker 충돌 해결: cleanup rule 9 제거
+- SEO 내부 링크 최소 3개 요구사항 충족
+- 관련 파일: `layouts/_default/single.html`, 450개 포스트
+
+### 2026-03-21 (7)
+**[수동 HTML CTA 제거 + 로고 크기 통일 + OG 이미지 교체]**
+- 인라인 스타일 CTA div 22개 제거 (Hugo 자동 CTA로 대체)
+- 로고 크기 MVP와 통일: Desktop 24px, Mobile 20px
+- OG 이미지 로고4(심볼 파랑 + 텍스트 검정)로 교체
+- 관련 파일: `hugo.toml`, `static/css/custom.css`, `static/og-image.png`, 21개 포스트
+
 ### 2026-03-21 (6)
 **[M-DEENO 브랜드 로고 적용]**
 - 헤더: PaperMod label.icon으로 로고4 이미지 적용 (iconHeight 28)

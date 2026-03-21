@@ -1353,3 +1353,31 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
   margin-left: 0;
   color: #374151;
 }
+
+/* ── 면책 조항 + 저작권 ──────────────────────── */
+.post-disclaimer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+.post-disclaimer .disclaimer-text {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin: 0 0 6px;
+  line-height: 1.6;
+}
+.post-disclaimer .copyright-text {
+  font-size: 0.78rem;
+  color: #9ca3af;
+  margin: 0;
+}
+.dark .post-disclaimer {
+  border-top-color: #374151;
+}
+.dark .post-disclaimer .disclaimer-text {
+  color: #9ca3af;
+}
+.dark .post-disclaimer .copyright-text {
+  color: #6b7280;
+}
