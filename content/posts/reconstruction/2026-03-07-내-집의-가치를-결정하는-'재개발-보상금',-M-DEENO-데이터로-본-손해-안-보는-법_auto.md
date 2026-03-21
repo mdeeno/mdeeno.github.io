@@ -31,6 +31,15 @@ description: "재개발 보상금이 적게 나올까 걱정되시나요? M-DEEN
 
 **세 번째, 현금청산과 입주 사이에서 손익분기점을 계산하세요.** 비례율이 지나치게 낮아 권리가액이 감정평가액보다 크게 밑돌 경우, 현금청산을 선택하는 것이 유리할 수 있습니다. 하지만 현금청산 시에는 감정평가액 기준으로 보상이 이뤄지므로, 시세와의 괴리가 큰 경우 수용재결(행정 절차를 통한 보상금 재산정)을 통해 보상금을 높일 수 있는 경로도 열려 있습니다.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ## 결론: 숫자를 아는 조합원이 자산을 지킨다
 
 재개발 보상금에서 손해를 보지 않으려면 감정평가액이라는 겉 숫자에 매몰되지 말고, 비례율과 권리가액이라는 실질 지표를 기준으로 판단해야 합니다. 공사비 상승기에는 특히 비례율 하락 리스크가 커지므로, 내 자산의 현재 위치를 데이터로 정확히 파악하는 것이 무엇보다 중요합니다.
@@ -62,3 +71,16 @@ M-DEENO 분석 엔진은 감정평가액 대비 권리가액 변동 시나리오
 - [재개발 보상금, 시세보다 적게 받으면 어쩌나](/posts/reconstruction/2026-03-07-재개발-보상금-시세보다-적게-받으면-어쩌나-m-deeno가-분석한-현금청산-리스크와-ᄇ/)
 - [재개발 보상금, 이것 모르면 수억 원 손해](/posts/reconstruction/2026-03-08-재개발-보상금-이것-모르면-수억-원-손해-m-deeno가-분석한-구역별-보상-가이드-auto/)
 - [공사비 1,000만 원 시대, 내 집 재개발 분담금 폭탄 피하는 3가지 핵심 지표](/posts/reconstruction/2026-03-07-공사비-1000만-원-시대-내-집-재개발-분담금-폭탄-피하는-3가지-핵심-지표-auto/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

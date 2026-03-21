@@ -31,6 +31,15 @@ description: "재개발 투자의 성패는 절차별 리스크 관리에 있습
 
 **3단계 - 관리처분 전 분담금 시나리오 확인:** 관리처분계획인가 전에 공사비 상승 시나리오별 분담금 변동폭을 반드시 확인해야 합니다. 공사비가 10% 추가 상승할 경우, 20% 상승할 경우의 분담금이 각각 얼마인지를 사전에 파악해야 관리처분 총회에서 올바른 판단을 내릴 수 있습니다.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ## 결론: 감으로 하는 투자는 끝났다
 
 재개발 수익률을 제대로 계산하지 않고 "강남이니까", "역세권이니까"라는 막연한 기대로 진입하는 시대는 지났습니다. 공사비 1,000만 원 시대에는 데이터에 기반한 정밀 분석만이 내 자산을 지키는 유일한 방법입니다.
@@ -56,3 +65,16 @@ M-DEENO 분석 엔진은 공사비 변동, 금리 변동, 분양가 시나리오
 - [모아타운 분담금 2억 폭탄? 지금 안 보면 나중에 후회할 핵심 숫자](/posts/reconstruction/2026-03-09-모아타운-분담금-2억-폭탄-지금-안-보면-나중에-후회할-핵심-숫자-auto/)
 - [내 집이 황금알을 낳기까지, 재개발 절차 10단계 완벽 가이드 (ft. 한남3·성수)](/posts/reconstruction/2026-03-07-내-집이-황금알을-낳기까지-재개발-절차-10단계-완벽-가이드-ft-한남3성수-auto/)
 - [분담금 5억 폭탄? 재건축 조합원이 지금 당장 확인해야 할 숫자](/posts/reconstruction/2026-03-17-분담금-5억-폭탄-재건축-조합원이-지금-당장-확인해야-할-숫자-auto/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

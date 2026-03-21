@@ -29,6 +29,15 @@ description: '스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치�
 - 스마트홈 연동 아파트는 향후 매각 시 '기술적 노후화' 리스크를 상쇄하는 요소로 작용하여 거래 속도를 높이는 효과가 있음.
 - 스마트홈 시스템 도입 비용은 통상적으로 분양가에 포함되지만, 그 이상의 프리미엄을 형성하여 투자 회수율(ROI)을 높이는 핵심 요소로 작용.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ## II. 삼성 스마트싱스 (SmartThings)의 투자 매력도
 
 - **개방형 생태계:** 삼성 가전 외에도 Matter 표준을 기반으로 수많은 타사 IoT 기기와의 연동이 용이하여, 입주민의 라이프스타일에 맞춘 확장성이 극대화됨.
@@ -81,3 +90,16 @@ description: '스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치�
 - [삼성/LG 스마트홈 아파트, 투자 가치 7% 더 오른다? IoT 프리미엄 심층 분석](/posts/market/2026-01-31-삼성lg-스마트홈-아파트-투자-가치-7-더-오른다-iot-프리미엄-심층-분석-auto/)
 - [2026년 비트코인 반감기, 서울 아파트 가격 폭등의 방아쇠가 될까? (전문가 분석)](/posts/market/2026-01-28-2026년-비트코인-반감기-서울-아파트-가격-폭등의-방아쇠가-될까-전문가-분석-auto/)
 - [서부권 교통 혁명, 대장홍대선 역세권 5년 후 시세 폭발 지역은? (전문가 분석)](/posts/market/2026-01-27-서부권-교통-혁명-대장홍대선-역세권-5년-후-시세-폭발-지역은-전문가-분서/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

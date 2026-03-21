@@ -84,6 +84,15 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 
 <br>
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ### 🥇 1. 분당 시범단지 (삼성·한신): "왕관의 무게를 견뎌라"
 
 분당의 심장입니다. 학군(서현초·고), 상권(AK플라자), 교통(수인분당, GTX성남) 모든 것이 완벽한 **육각형 입지**입니다.
@@ -111,6 +120,19 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 > 무리한 투자는 독입니다. DSR 규제를 통과할 수 있는지 지금 바로 계산해보세요.
 >
 > 👉 **[
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>
+
 ---
 
 ## 3. 결론: "속도보다 자금력"

@@ -36,6 +36,15 @@ M-DEENO 분석 엔진 점수가 낮다는 것은 해당 단지의 재건축·재
 - **지금 팔면**: 높은 양도세율을 적용받지만, 향후 가격 하락이나 사업 지연 리스크를 피할 수 있습니다.
 - **더 보유하면**: 세율은 낮아지지만, 사업성 악화로 프리미엄이 줄어들거나 매수자를 찾기 어려워질 수 있습니다.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ## 매도 타이밍별 손익 시뮬레이션
 
 분양가 5억 원, 현재 프리미엄 8,000만 원인 분양권을 예시로 살펴봅니다.
@@ -98,3 +107,16 @@ M-DEENO 분석 엔진으로 내 분양권 단지의 사업 안정성 점수를 �
 - [분양권 매도, 하루 차이로 수천만 원 날린다? 66% 양도세 폭탄 피하는 골든타임 분석](/posts/analysis/2026-02-10-분양권-매도-하루-차이로-수천만-원-날린다-66-양도세-폭탄-피하는-골든타임-부/)
 - [수억 원 아끼는 증여의 기술: 부담부 증여가 무조건 유리할까](/posts/strategy/2026-02-16-수억-원-아끼는-증여의-기술-부담부-증여가-무조건-유리할까-m-deeno-데이터-랩-정밀-ᄇ/)
 - [다주택자 양도세 중과 배제, 2025년 5월 이후 폭탄 피하는 법 (증여 vs 매도 최적 전략)](/posts/reconstruction/2026-01-31-다주택자-양도세-중과-배제-2025년-5월-이후-폭탄-피하는-법-증여-vs-매도-최적-전략-aut/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

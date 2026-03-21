@@ -77,6 +77,15 @@ image: '/images/2026-mortgage-timing.png'
 - **금리 메리트**: 시중 금리 6%대 시대에 2~3%대 저금리를 유지할 수 있는 유일한 통로.
 - **주의사항**: 전매 제한 및 거주 의무 기간을 반드시 확인하고, 장기적인 자산 형성 관점에서 접근할 것.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ### 3. 나의 대출 한도 및 월 상환액 계산하기
 
 자신의 소득과 부채 상황에 맞는 정확한 DSR 계산이 내 집 마련의 시작입니다.
@@ -114,3 +123,16 @@ image: '/images/2026-mortgage-timing.png'
 - [신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저평가 단지' TOP 3 정밀 분석](/posts/market/2026-02-02-shinbundang-line-homaesil-analysis-manual/)
 - [내 집 마련 꿈 실현! 생애최초 디딤돌 대출, 2024년 최신 금리/한도/조건 완벽 분석](/posts/reconstruction/2026-01-29-내-집-마련-꿈-실현-생애최초-디딤돌-대출-2024년-최신-금리한도조건-완벽-분ᄉ/)
 - [2026년 스트레스 DSR 3단계 비상! 연봉 5천 직장인이 주담대 한도 1억 더 받는 마지막 좁은 문](/posts/strategy/2026-02-23-2026년-스트레스-dsr-3단계-비상-연봉-5천-직장인이-주담대-한도-1억-더-받는-마지막/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

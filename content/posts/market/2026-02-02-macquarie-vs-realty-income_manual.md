@@ -32,6 +32,15 @@ image: '/images/macquarie-vs-realty-income.png'
 | **배당 성장성** | 자산 만기에 따른 변동성 존재 | 600개월 이상 배당 지급 및 성장 |
 | **세금 혜택** | ISA 계좌 활용 시 극대화 | 연금저축/IRP 내 국내상장 ETF로 절세 |
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ### 🚀 은퇴자를 위한 1등 배당주 정밀 분석
 
 #### 🥇 [수익률 대장] 맥쿼리인프라 (Macquarie Korea Infrastructure Fund)
@@ -81,3 +90,16 @@ ISA(개인종합자산관리계좌)나 연금저축 계좌를 활용하면 배�
 - [2026 부동산 조각투자 STO 완벽 가이드: '천원 건물주'의 수익률 반전은 사실일까?](/posts/market/2026-01-26-realestate-sto-guide-manual/)
 - [월세 수익률 1위는? 오피스텔 원룸 vs 투룸, 투자 전략의 승자는?](/posts/strategy/2026-02-07-월세-수익률-1위는-오피스텔-원룸-vs-투룸-투자-전략의-승자는-auto/)
 - [2026년 금리 인하, 지금 '갈아타기 벌금' 내고 주담대 바꾸는 게 이득일까? 전문가의 손익분기점 분석](/posts/market/2026-02-07-2026년-금리-인하-지금-갈아타기-벌금-내고-주담대-바꾸는-게-이득일까-전문가의-ᄉ/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

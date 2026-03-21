@@ -38,6 +38,15 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 상속 주택은 취득 
 - **공동 상속 시 기준**: 지분이 가장 큰 상속인, 해당 주택에 거주하는 사람, 최연장자 순으로 주택 소유자를 판정합니다.
 - **5년 경과 후 리스크**: 상속 후 5년이 지나는 시점부터는 정식 주택 수에 포함되어, 추가 주택 매수 시 중과세율(8~12%)이 적용될 수 있음을 유의해야 합니다.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ### 주요 단지별 상속 시뮬레이션 및 시세 영향
 
 실제 시장에서 선호도가 높은 단지들을 대상으로 M-DEENO 데이터 랩이 분석한 대략적인 가액 범위입니다.
@@ -83,3 +92,16 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 상속 주택은 취득 
 - [3년 골든타임 놓치면 수억 원 증발? 일시적 2주택 비과세 실패 시 세금 폭탄 대응 전략](/posts/strategy/2026-02-16-3년-골든타임-놓치면-수억-원-증발-일시적-2주택-비과세-실패-시-세금-폭탄-대/)
 - [인구 감소 지역 부동산 투자: 취득세 폭탄 피하고 억대 자산 증식 기회 잡는 법 (전문가 분석)](/posts/reconstruction/2026-01-31-인구-감소-지역-부동산-투자-취득세-폭탄-피하고-억대-자산-증식-기회-잡는-법/)
 - [상속받은 아파트, 지금 팔까? 5년 더 버틸까? 세무 전문가가 공개하는 '세금 폭탄' 피하는 법](/posts/analysis/2026-02-11-상속받은-아파트-지금-팔까-5년-더-버틸까-세무-전문가가-공개하는-세금-폭탄/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

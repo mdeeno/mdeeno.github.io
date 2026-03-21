@@ -33,6 +33,15 @@ M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 �
 
 **이의신청과 수용재결의 기한을 놓치지 마세요.** 감정평가 결과 통보 후 이의신청 기한은 정해져 있으며, 이 기한을 넘기면 재평가 기회를 잃게 됩니다. 현금청산의 경우에도 수용재결 신청 기한이 있으므로, 법적 절차의 타임라인을 미리 숙지해 두는 것이 중요합니다.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ## 결론: 보상금은 알아야 지킬 수 있다
 
 재개발 보상금에서 수억 원의 손해를 보지 않으려면, 감정평가 구조와 비례율 메커니즘을 정확히 이해하고 사전에 대비해야 합니다. 구역마다 보상금 수준이 다른 이유를 알고, 내 구역의 비례율이 어떤 조건에서 악화되는지를 파악하는 것이 자산을 지키는 첫걸음입니다.
@@ -60,3 +69,16 @@ M-DEENO 데이터 랩의 분석에 따르면, 최근 2년 사이 서울 주요 �
 - [재개발 보상금, 시세보다 적게 받으면 어쩌나](/posts/reconstruction/2026-03-07-재개발-보상금-시세보다-적게-받으면-어쩌나-m-deeno가-분석한-현금청산-리스크와-ᄇ/)
 - [내 집의 가치를 결정하는 재개발 보상금 손해 안 보는 법](/posts/reconstruction/2026-03-07-내-집의-가치를-결정하는-재개발-보상금-m-deeno-데이터로-본-손해-안-보는-법-auto/)
 - [재개발 투자, 이 단계 모르면 원금 회수 불가능합니다](/posts/reconstruction/2026-03-07-재개발-투자-이-단계-모르면-원금-회수-불가능합니다-m-deeno-데이터-랩의-단계별-리스/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

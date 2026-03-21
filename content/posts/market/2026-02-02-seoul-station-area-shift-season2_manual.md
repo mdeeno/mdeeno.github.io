@@ -24,6 +24,15 @@ image: '/images/seoul-shift-season2.png'
 - **높이 규제 폐지:** 일률적이었던 35층 규제가 유연해지면서 역세권 랜드마크 조성이 가능해졌습니다.
 - **공급 방식:** 민간 사업자가 용적률 혜택을 받는 대신, 늘어난 용적률의 50%를 서울시가 매입하여 '장기전세주택'으로 공급합니다.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ### 🚀 용적률 상향 및 고밀 개발 수혜 후보 단지 TOP 3
 
 #### 🥇 [영등포구] 신길 우성 1차 (신풍역 역세권)
@@ -77,3 +86,16 @@ image: '/images/seoul-shift-season2.png'
 - [여의도 재건축, 35층 족쇄 풀리자 사업성 30% 급등: 시범/한양 아파트 투자 분석](/posts/market/2026-01-25-여의도-재건축-35층-족쇄-풀리자-사업성-30-급등-시범한양-아파트-투자-분석-auto/)
 - [8호선 별내선 개통 임박! 구리/다산 '강남 30분 시대' 수혜 단지 TOP 3 분석](/posts/market/2026-02-01-8호선-별내선-개통-임박-구리다산-강남-30분-시대-수혜-단지-top-3-분석-auto/)
 - [현금 1억으로 서울 입성? 생애최초 LTV 80%로 잡는 6억 이하 알짜 단지 TOP 3](/posts/analysis/2026-02-12-현금-1억으로-서울-입성-생애최초-ltv-80로-잡는-6억-이하-알짜-단지-top-3-auto/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

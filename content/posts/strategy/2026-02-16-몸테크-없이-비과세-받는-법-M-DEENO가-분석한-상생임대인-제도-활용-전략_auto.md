@@ -33,6 +33,15 @@ description: '몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생
 
 단, 직전 계약은 본인이 주택을 매수한 후 체결한 계약이어야 하며, 승계받은 계약은 인정되지 않는다는 점을 유의해야 합니다.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ### 실제 단지 사례로 본 상생임대인 시뮬레이션
 
 **1. 마포구 마포래미안푸르지오 (아현동)**
@@ -91,3 +100,16 @@ M-DEENO의 분석 결과, 고가 주택일수록 실거주를 위해 이사하�
 - [양도세 아끼려다 집 한 채 날린다? 다운계약서 적발 시 비과세 박탈의 무서운 진실](/posts/strategy/2026-02-19-양도세-아끼려다-집-한-채-날린다-다운계약서-적발-시-비과세-박탈의-무서운-진/)
 - [이주비 대출 0원? 재건축 조합원이 입주 전 반드시 체크할 3가지](/posts/reconstruction/2026-03-17-이주비-대출-0원-재건축-조합원이-입주-전-반드시-체크할-3가지-auto/)
 - [법인 파산의 늪, 대표이사 가수금 회수와 부동산 공매의 모든 것: M-DEENO 데이터 랩 정밀 분석](/posts/strategy/2026-02-19-법인-파산의-늪-대표이사-가수금-회수와-부동산-공매의-모든-것-m-deeno-데이터-랩-정ᄆ/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

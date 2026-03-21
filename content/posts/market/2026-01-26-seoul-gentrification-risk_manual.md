@@ -26,6 +26,15 @@ image: '/images/seoul-gentrification-2026.png'
 
 - **교통 호재의 역설**: GTX-A 개통 및 연장 노선 인근 골목 상권의 공시지가가 전년 대비 평균 15% 이상 급등.
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ### 2. 젠트리피케이션 위험 지역 TOP 3 상세 분석
 
 | 순위 | 지역명 | 위험 지수 | 핵심 지표 | 투자 성격 |
@@ -129,3 +138,16 @@ Would you like me to generate a specific cash flow simulation for one of these a
 - [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-top-5-auto/)
 - [송리단길 vs 망리단길, '젠트리피케이션' 속 권리금 시세 추이 분석: 어디에 투자해야 할까?](/posts/market/2026-01-28-송리단길-vs-망리단길-젠트리피케이션-속-권리금-시세-추이-분석-어디에-투자해/)
 - [금리 인하 시계, 2026년 폭발적 상승 예상: 월세처럼 받는 한국형 리츠 TOP 5 분석](/posts/strategy/2026-01-25-금리-인하-시계-2026년-폭발적-상승-예상-월세처럼-받는-한국형-리츠-top-5-분석-au/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>

@@ -30,6 +30,15 @@ description: '소액으로 건물주 되기? 리츠 ETF vs 꼬마빌딩, 전문�
 | 관리 부담 | 없음 | 매우 높음 (임차인, 시설 관리) |
 | 세금 구조 | 배당 소득세 (분리과세 혜택 가능) | 취득세, 보유세, 양도세 (중과 가능) |
 
+
+<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
+  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+    무료 분석하기 →
+  </a>
+</div>
+
 ### 2. REITs ETF 투자 분석 (소액 투자자의 최적 대안)
 
 REITs ETF는 소액으로 우량 부동산에 간접 투자하고 배당 수익을 얻는 방식입니다.
@@ -106,3 +115,16 @@ M-DEENO 분석 엔진으로 나의 자산 여력과 수익 시뮬레이션을 �
 - [금리 인하 임박! 지금 사야 할 미국 부동산 펀드/리츠 BEST 3 섹터 분석](/posts/strategy/2026-01-27-금리-인하-임박-지금-사야-할-미국-부동산-펀드리츠-best-3-섹터-분석-auto/)
 - [아파트 대체제, 오피스텔/도생의 역습! 청약 경쟁률 급변의 의미와 투자 전략.](/posts/strategy/2026-01-31-아파트-대체제-오피스텔도생의-역습-청약-경쟁률-급변의-의미와-투자-전략-auto/)
 - [1억 미만 소액으로 수도권 빌라 경매 성공? 2024년 실제 낙찰 사례와 수익률 분석](/posts/strategy/2026-01-27-1억-미만-소액으로-수도권-빌라-경매-성공-2024년-실제-낙찰-사례와-수익률-분석-a/)
+
+
+<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+    내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
+    회원가입도 필요 없습니다.
+  </p>
+  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+    내 분담금 무료 분석하기 →
+  </a>
+</div>
