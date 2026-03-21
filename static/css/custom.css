@@ -138,7 +138,7 @@ body, html {
   border: none;
   outline: none;
   padding: 0.85rem 1.1rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: inherit;
   background: transparent;
   color: var(--md-text);
@@ -176,7 +176,7 @@ body, html {
   border: 1px solid var(--md-border);
   border-radius: 999px;
   padding: 4px 14px;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 500;
   text-decoration: none !important;
   transition: border-color 0.15s, color 0.15s;
@@ -339,7 +339,7 @@ body, html {
 }
 
 .pc-cat {
-  font-size: 0.68rem;
+  font-size: 0.82rem;
   background: var(--md-blue-lt);
   color: var(--md-blue);
   padding: 2px 9px;
@@ -351,7 +351,7 @@ body, html {
   max-width: 120px;
 }
 
-.pc-date { font-size: 0.7rem; color: var(--md-subtle); flex-shrink: 0; }
+.pc-date { font-size: 0.82rem; color: var(--md-muted); flex-shrink: 0; }
 
 .pc-title {
   font-size: 0.92rem;
@@ -458,7 +458,7 @@ body, html {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.cc-body p { font-size: 0.72rem; color: var(--md-muted); margin: 0; line-height: 1.4; }
+.cc-body p { font-size: 0.82rem; color: var(--md-muted); margin: 0; line-height: 1.4; }
 .cc-arrow { color: var(--md-subtle); font-size: 0.9rem; flex-shrink: 0; }
 .cat-card:hover .cc-arrow { color: var(--md-blue); }
 
@@ -478,7 +478,7 @@ body, html {
   border: 1px solid rgba(29,111,232,0.4);
   border-radius: 999px;
   padding: 3px 14px;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   margin-bottom: 1rem;
@@ -502,8 +502,8 @@ body, html {
 }
 
 .premium-note {
-  font-size: 0.75rem !important;
-  color: rgba(255,255,255,0.35) !important;
+  font-size: 0.82rem !important;
+  color: rgba(255,255,255,0.5) !important;
   margin-top: 0.75rem !important;
   margin-bottom: 0 !important;
 }
@@ -523,8 +523,7 @@ body, html {
 .post-meta { font-size: 0.82rem; color: var(--md-muted); }
 
 .post-content {
-  font-size: 1.05rem;
-  line-height: 2.0;
+  /* font-size/line-height → custom-typography.css (single source of truth) */
   letter-spacing: -0.01em;
   color: #1f2937;
 }
@@ -532,7 +531,7 @@ body, html {
 .post-content p { margin-bottom: 1.4rem; }
 
 .post-content h2 {
-  font-size: 1.3rem;
+  /* font-size → custom-typography.css */
   font-weight: 800;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -546,7 +545,7 @@ body, html {
 }
 
 .post-content h3 {
-  font-size: 1.1rem;
+  /* font-size → custom-typography.css */
   font-weight: 700;
   margin-top: 2.2rem;
   margin-bottom: 0.75rem;
@@ -744,9 +743,9 @@ body, html {
 .tc-icon { font-size: 1.8rem; flex-shrink: 0; }
 .tc-body { flex: 1; min-width: 0; }
 .tc-body strong { display: block; font-size: 0.95rem; font-weight: 700; color: var(--md-text); margin-bottom: 3px; }
-.tc-body span { font-size: 0.78rem; color: var(--md-muted); }
+.tc-body span { font-size: 0.82rem; color: var(--md-muted); }
 .tc-count {
-  font-size: 0.77rem;
+  font-size: 0.82rem;
   background: var(--md-blue-lt);
   color: var(--md-blue);
   padding: 3px 10px;
@@ -792,8 +791,8 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 
 /* ── Breadcrumbs ─────────────────────────────────────────── */
 .breadcrumbs {
-  font-size: 0.8rem !important;
-  color: var(--md-subtle) !important;
+  font-size: 0.82rem !important;
+  color: var(--md-muted) !important;
   margin-bottom: 0.75rem !important;
 }
 .breadcrumbs a {
@@ -885,7 +884,7 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 .paginav .next { align-items: flex-end !important; text-align: right !important; }
 
 .paginav span:first-child {
-  font-size: 0.68rem !important;
+  font-size: 0.82rem !important;
   color: var(--md-blue) !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em !important;
@@ -919,8 +918,8 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 .share-buttons li { list-style: none !important; }
 
 .share-buttons > span {
-  font-size: 0.75rem !important;
-  color: var(--md-subtle) !important;
+  font-size: 0.82rem !important;
+  color: var(--md-muted) !important;
   font-weight: 500 !important;
   margin-right: 2px !important;
 }
@@ -929,8 +928,8 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 34px !important;
-  height: 34px !important;
+  width: 44px !important;
+  height: 44px !important;
   border-radius: 8px !important;
   background: #f8fafc !important;
   border: 1px solid #e4e7ec !important;
@@ -1046,9 +1045,7 @@ article.post-single .post-content {
   .paginav { grid-template-columns: 1fr !important; }
   .paginav .next { align-items: flex-start !important; text-align: left !important; }
 
-  /* 제목 최소 크기 보장 (50~60대 가독성) */
-  .post-content h2 { font-size: clamp(1.25rem, 4vw, 1.4rem) !important; }
-  .post-content h3 { font-size: clamp(1.1rem, 3.5vw, 1.2rem) !important; }
+  /* H2/H3 font-size → custom-typography.css 768px/375px breakpoints에서 관리 */
 
   /* 표 최소 폰트 — 14px 이상 보장 */
   .post-content table { font-size: 0.875rem !important; }
@@ -1074,7 +1071,7 @@ article.post-single .post-content {
   .hero-btns   { flex-direction: column; align-items: stretch; }
   .hbtn        { text-align: center; min-height: 48px; }
   .hbtn-primary, .hbtn-blue { padding: 14px 24px; font-size: 1rem; min-height: 52px; }
-  .post-content { font-size: 1rem; line-height: 1.85; }
+  /* post-content font-size → custom-typography.css에서 관리 */
   .post-content p { margin-bottom: 1.1rem; }
   .post-content blockquote { padding: 0.75rem 1rem; margin: 1.25rem 0; }
   .post-content h2 { margin-top: 2rem; padding: 0.5rem 0.85rem; }

@@ -50,7 +50,7 @@
     width: 100%;
     margin-top: 0.75rem;
     padding: 16px 24px;
-    min-height: 44px;
+    min-height: 48px;
     background: #2563eb;
     color: #fff !important;
     font-weight: 700;
@@ -116,7 +116,7 @@
 .landing-cta-btn {
     align-self: unset;
     display: inline-block;
-    min-height: 44px;
+    min-height: 48px;
 }
 
 /* 4. 야간모드 버튼 강제 축소 (혹시 모를 오류 방지) */
@@ -220,10 +220,10 @@
 .calc-cta-btn {
   display: inline-block;
   padding: 14px 24px;
-  min-height: 44px;
+  min-height: 48px;
   background: #16a34a;
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
   border-radius: 7px;
   text-decoration: none;
