@@ -6,6 +6,13 @@
 
 ## 2026-03
 
+### 2026-03-21 (6)
+**[M-DEENO 브랜드 로고 적용]**
+- 헤더: PaperMod label.icon으로 로고4 이미지 적용 (iconHeight 28)
+- 파비콘: 심볼 crop 기반 16/32px + ICO + apple-touch-icon
+- OG 이미지: 1200x630 소셜 공유 썸네일
+- 관련 파일: `hugo.toml`, `static/logo.png`, `static/favicon*`, `static/og-image.png`
+
 ### 2026-03-21 (5)
 **[포스트 정리 2차 — 잔여 불필요 요소 일괄 제거]**
 - 면책문구 160개 제거 (※ 본 리포트는..., 📢 면책 조항 등 전 변형)
