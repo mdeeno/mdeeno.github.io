@@ -129,19 +129,22 @@
 /* ── 관련 포스트 위젯 ─────────────────────────────────── */
 .related-posts {
   margin: 40px 0 8px;
-  padding: 24px 28px;
-  background: #f8fafc;
+  padding: 28px 28px;
+  background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .related-posts-title {
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #64748b;
-  margin-bottom: 14px;
+  color: #1e40af;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .related-posts-list {
@@ -150,12 +153,13 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
 }
 
 .related-posts-item {
-  border-bottom: 1px solid #e2e8f0;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 12px 0;
+  transition: background 0.15s;
 }
 
 .related-posts-item:last-child {
@@ -163,22 +167,34 @@
   padding-bottom: 0;
 }
 
+.related-posts-item:first-child {
+  padding-top: 0;
+}
+
 .related-posts-link {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
   text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.related-posts-link:hover {
+  background: #f8fafc;
 }
 
 .related-posts-item-title {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: #1e293b;
-  line-height: 1.4;
+  line-height: 1.45;
+  transition: color 0.15s;
 }
 
-.related-posts-item-title:hover {
-  color: #2563eb;
+.related-posts-link:hover .related-posts-item-title {
+  color: #1e40af;
 }
 
 .related-posts-item-desc {
@@ -190,10 +206,11 @@
 /* ── 카테고리별 계산기 컨텍스트 링크 ────────────────────── */
 .calc-cta-box {
   margin: 28px 0;
-  padding: 18px 22px;
-  background: #f0fdf4;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
   border: 1.5px solid #bbf7d0;
-  border-radius: 10px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 .calc-cta-inner {

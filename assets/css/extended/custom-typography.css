@@ -194,21 +194,39 @@
 }
 
 .post-content details {
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 12px;
-  background: #f9fafb;
+  border: 1px solid #e2e8f0;
+  border-left: 3px solid #1e40af;
+  border-radius: 0 12px 12px 0;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  background: #fafbfc;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.post-content details:hover {
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.06);
+}
+
+.post-content details[open] {
+  background: #f8fafc;
+  border-left-color: #2563eb;
 }
 
 .post-content details summary {
   cursor: pointer;
   margin-top: 0;
+  padding: 2px 0;
+  font-size: 1rem;
+}
+
+.post-content details summary::marker {
+  color: #1e40af;
 }
 
 .post-content details p {
-  margin-top: 12px;
+  margin-top: 14px;
   color: #374151;
+  line-height: 1.75;
 }
 
 /* === 차트/그래프 래퍼 === */

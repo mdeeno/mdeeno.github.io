@@ -73,10 +73,10 @@ body, html {
 /* ── Hero ──────────────────────────────────────────────── */
 .home-hero {
   text-align: center;
-  padding: 4rem 2rem 3.5rem;
-  background: linear-gradient(180deg, #e8f0fe 0%, #f5f7fa 100%);
+  padding: 5rem 2rem 4rem;
+  background: linear-gradient(180deg, #edf2ff 0%, var(--md-bg) 100%);
   border-bottom: 1px solid var(--md-border);
-  margin: 0 -1rem 2rem;
+  margin: 0 -1rem 2.5rem;
 }
 
 .hero-badge {
@@ -87,19 +87,19 @@ body, html {
   color: var(--md-blue);
   border: 1px solid var(--md-blue-bd);
   border-radius: 999px;
-  padding: 4px 16px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  margin-bottom: 1.25rem;
+  padding: 5px 18px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
 }
 
 .home-hero h1 {
-  font-size: clamp(1.7rem, 5vw, 2.6rem);
-  font-weight: 800;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 900;
   line-height: 1.25;
   color: var(--md-navy);
-  margin: 0 0 0.75rem;
+  margin: 0 0 1rem;
   border: none;
   padding: 0;
   letter-spacing: -0.03em;
@@ -108,11 +108,11 @@ body, html {
 .hero-accent { color: var(--md-blue); }
 
 .hero-sub {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--md-muted);
-  line-height: 1.7;
-  margin: 0 auto 2rem;
-  max-width: 480px;
+  line-height: 1.75;
+  margin: 0 auto 2.25rem;
+  max-width: 520px;
 }
 
 /* ── Search Bar ────────────────────────────────────────── */
@@ -309,7 +309,7 @@ body, html {
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .post-card {
@@ -317,17 +317,17 @@ body, html {
   flex-direction: column;
   background: var(--md-card);
   border: 1px solid var(--md-border);
-  border-radius: 14px;
-  padding: 1.25rem;
+  border-radius: 16px;
+  padding: 1.5rem;
   text-decoration: none !important;
-  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: border-color 0.25s, transform 0.2s ease, box-shadow 0.25s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 0 1px rgba(0,0,0,0.06);
 }
 
 .post-card:hover {
   border-color: var(--md-blue);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(13,36,97,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(13,36,97,0.1), 0 2px 6px rgba(13,36,97,0.06);
 }
 
 .pc-meta {
@@ -339,26 +339,26 @@ body, html {
 }
 
 .pc-cat {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   background: var(--md-blue-lt);
   color: var(--md-blue);
-  padding: 2px 9px;
-  border-radius: 5px;
+  padding: 3px 10px;
+  border-radius: 6px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 120px;
+  max-width: 140px;
 }
 
-.pc-date { font-size: 0.82rem; color: var(--md-muted); flex-shrink: 0; }
+.pc-date { font-size: 0.82rem; color: var(--md-subtle); flex-shrink: 0; }
 
 .pc-title {
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--md-text);
   line-height: 1.5;
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -370,9 +370,9 @@ body, html {
 }
 
 .pc-desc {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--md-muted);
-  line-height: 1.55;
+  line-height: 1.6;
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -391,10 +391,10 @@ body, html {
 .stat-box {
   background: var(--md-card);
   border: 1px solid var(--md-border);
-  border-radius: 12px;
-  padding: 1.1rem 0.75rem;
+  border-radius: 14px;
+  padding: 1.25rem 0.85rem;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .stat-n {
@@ -423,21 +423,21 @@ body, html {
 .cat-card {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   background: var(--md-card);
   border: 1px solid var(--md-border);
   border-left: 4px solid var(--md-border);
-  border-radius: 12px;
-  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  padding: 1.15rem 1.25rem;
   text-decoration: none !important;
-  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: border-color 0.25s, transform 0.2s ease, box-shadow 0.25s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .cat-card:hover {
   border-left-color: var(--md-blue);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(13,36,97,0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(13,36,97,0.09);
 }
 
 .cat-card.cc-recon  { border-left-color: #0d9b6e; }
@@ -465,10 +465,10 @@ body, html {
 /* ── Premium Band ──────────────────────────────────────── */
 .premium-band {
   text-align: center;
-  background: var(--md-navy);
-  border-radius: 16px;
-  padding: 3rem 2rem;
-  margin-top: 1rem;
+  background: linear-gradient(135deg, #0d2461 0%, #162d5a 100%);
+  border-radius: 20px;
+  padding: 3.5rem 2rem;
+  margin-top: 1.5rem;
 }
 
 .premium-label {
@@ -638,29 +638,34 @@ body, html {
 
 /* Auto-post classes */
 .lab-card {
-  background: #f8fafc !important;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
   border: 1px solid var(--md-border) !important;
-  border-radius: 12px !important;
-  padding: 1.25rem 1.5rem !important;
-  margin: 1.5rem 0 !important;
+  border-left: 4px solid var(--md-blue) !important;
+  border-radius: 0 14px 14px 0 !important;
+  padding: 1.5rem 1.75rem !important;
+  margin: 1.75rem 0 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
 }
 
 .lab-formula-box {
-  background: var(--md-teal-lt) !important;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%) !important;
   border: 1px solid var(--md-teal-bd) !important;
-  border-radius: 12px !important;
-  padding: 1.25rem 1.5rem !important;
-  margin: 1.5rem 0 !important;
+  border-left: 4px solid var(--md-teal) !important;
+  border-radius: 0 14px 14px 0 !important;
+  padding: 1.5rem 1.75rem !important;
+  margin: 1.75rem 0 !important;
   font-size: 0.95rem !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
 }
 
 .lab-graph-wrapper {
   background: #f8fafc !important;
   border: 1px solid var(--md-border) !important;
-  border-radius: 12px !important;
-  padding: 1.5rem !important;
-  margin: 1.75rem 0 !important;
+  border-radius: 14px !important;
+  padding: 1.75rem !important;
+  margin: 2rem 0 !important;
   overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
 }
 
 /* ==========================================================
@@ -669,22 +674,22 @@ body, html {
 
 .post-entry {
   background: var(--md-card) !important;
-  border-radius: 12px !important;
-  padding: 1.25rem 1.5rem !important;
-  margin-bottom: 0.75rem !important;
+  border-radius: 14px !important;
+  padding: 1.35rem 1.5rem !important;
+  margin-bottom: 0.85rem !important;
   border: 1px solid var(--md-border) !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
-  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
+  transition: border-color 0.25s, transform 0.2s ease, box-shadow 0.25s !important;
 }
 
 .post-entry:hover {
   border-color: var(--md-blue) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(13,36,97,0.09) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(13,36,97,0.09) !important;
 }
 
 .post-entry .entry-header h2 {
-  font-size: 1.0rem !important;
+  font-size: 1.05rem !important;
   font-weight: 700 !important;
   line-height: 1.5 !important;
   color: var(--md-text) !important;
@@ -692,7 +697,7 @@ body, html {
 }
 
 .entry-content p {
-  font-size: 0.84rem !important;
+  font-size: 0.88rem !important;
   line-height: 1.65;
   color: var(--md-muted);
 }
@@ -960,10 +965,11 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
   background: var(--md-card);
   border: 1px solid var(--md-border);
   border-left: 4px solid var(--md-blue);
-  border-radius: 0 12px 12px 0;
-  padding: 1.1rem 1.25rem;
+  border-radius: 0 14px 14px 0;
+  padding: 1.25rem 1.5rem;
   margin: 2rem 0;
   font-size: 0.875rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 .toc details summary {
@@ -1063,9 +1069,9 @@ article.post-single .post-content {
 }
 
 @media (max-width: 480px) {
-  .home-hero   { padding: 2rem 1rem 1.75rem; margin: 0 -1rem 1.25rem; }
-  .home-hero h1 { font-size: 1.5rem; margin-bottom: 0.5rem; word-break: keep-all; }
-  .hero-sub    { font-size: 0.95rem; margin-bottom: 1.25rem; }
+  .home-hero   { padding: 2.5rem 1.25rem 2rem; margin: 0 -1rem 1.5rem; }
+  .home-hero h1 { font-size: 1.6rem; margin-bottom: 0.6rem; word-break: keep-all; }
+  .hero-sub    { font-size: 0.95rem; margin-bottom: 1.5rem; }
   .hero-badge  { font-size: 0.75rem; padding: 4px 14px; margin-bottom: 0.75rem; }
   .cat-grid    { grid-template-columns: 1fr; }
   .hero-btns   { flex-direction: column; align-items: stretch; }
@@ -1100,8 +1106,8 @@ article.post-single .post-content {
   .home-section { margin-bottom: 1.75rem; }
   .sec-title { font-size: 0.95rem; }
 
-  /* 포스트 카드 — 제목 14px→15px */
-  .post-card { padding: 1rem; border-radius: 12px; }
+  /* 포스트 카드 */
+  .post-card { padding: 1.15rem; border-radius: 14px; }
   .pc-title { font-size: 0.95rem; }
 
   /* 카테고리 카드 */
@@ -1190,3 +1196,139 @@ body[data-theme="dark"] .toc a:hover { color: #93c5fd; }
 body[data-theme="dark"] .breadcrumbs { color: #475569 !important; }
 body[data-theme="dark"] .breadcrumbs a { color: #64748b !important; }
 body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
+
+/* ==========================================================
+   UNIFIED BLOG CTA
+   ========================================================== */
+
+/* ── 상단 CTA (본문 시작 직후) ─── */
+.blog-cta--top {
+  margin: 20px 0 28px;
+  padding: 16px 22px;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 12px 12px 0;
+}
+
+.blog-cta--top .blog-cta__text {
+  font-size: 0.95rem;
+  color: #78350f;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.blog-cta--top .blog-cta__icon {
+  margin-right: 4px;
+}
+
+.blog-cta--top .blog-cta__text strong {
+  color: #92400e;
+  font-weight: 700;
+}
+
+.blog-cta--top .blog-cta__link {
+  color: #1e40af;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.blog-cta--top .blog-cta__link:hover {
+  text-decoration: underline;
+}
+
+/* ── 하단 CTA (본문 끝) ─── */
+.blog-cta--bottom {
+  margin: 36px 0 8px;
+  padding: 28px 32px;
+  background: linear-gradient(135deg, #eef2ff 0%, #dbeafe 100%);
+  border: 2px solid #93b4f4;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.blog-cta--bottom .blog-cta__title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1e40af;
+  margin: 0 0 8px;
+}
+
+.blog-cta--bottom .blog-cta__desc {
+  font-size: 0.95rem;
+  color: #374151;
+  margin: 0 0 20px;
+  line-height: 1.7;
+}
+
+.blog-cta__btn {
+  display: inline-block;
+  padding: 14px 32px;
+  min-height: 48px;
+  background: #1e40af;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none !important;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.blog-cta__btn:hover {
+  background: #1e3a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.25);
+}
+
+/* ── CTA 반응형 ─── */
+@media (max-width: 600px) {
+  .blog-cta--bottom {
+    padding: 24px 20px;
+    margin: 28px 0 8px;
+  }
+  .blog-cta--bottom .blog-cta__title { font-size: 1.05rem; }
+  .blog-cta--bottom .blog-cta__desc { font-size: 0.9rem; }
+  .blog-cta__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 16px 24px;
+    min-height: 52px;
+  }
+  .blog-cta--top {
+    padding: 14px 18px;
+    margin: 16px 0 24px;
+  }
+}
+
+/* ==========================================================
+   FAQ SECTION STYLING
+   ========================================================== */
+
+/* FAQ 섹션 전체 래퍼 — "자주 묻는 질문" h2 다음 영역 */
+.post-content h2 + h3[id^="q1"],
+.post-content h2 + h3[id^="q"] {
+  margin-top: 1.5em;
+}
+
+/* FAQ Q 카드 스타일 */
+.post-content h3[id^="q"] {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #1e40af;
+  border-radius: 0 10px 10px 0;
+  padding: 12px 16px;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+  font-size: 1.05rem;
+  color: #1e293b;
+}
+
+/* FAQ 답변 텍스트 */
+.post-content h3[id^="q"] + p {
+  padding-left: 20px;
+  border-left: 2px solid #e2e8f0;
+  margin-left: 0;
+  color: #374151;
+}
