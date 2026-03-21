@@ -68,7 +68,6 @@ image: '/images/geomdan-subway-2026.png'
   </a>
 </div>
 
-
 ## 자주 묻는 질문
 
 ### Q1. 인천 1호선 검단 연장선 개통으로 어떤 변화가 생겼나요?
@@ -83,13 +82,11 @@ image: '/images/geomdan-subway-2026.png'
 
 역세권 주요 단지 기준으로 약 7억 원 초반에서 9억 원 초반까지 형성되어 있습니다. 101역 인근이 가장 높고, 102역과 103역 인근 단지들이 그 뒤를 이어 갭 메우기(가격 차이를 좁히는 현상)를 진행 중입니다.
 
-
 ## 함께 읽으면 좋은 글
 
 - [서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가](/posts/market/2026-02-02-seoul-station-area-shift-season2_manual/)
 - [단독 분석] 검단 넥스트콤플렉스(롯데몰) 착공, 인천 1호선 연장 역세권 프리미엄은 얼마?
 - [신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저평가 단지' TOP 3 정밀 분석](/posts/market/2026-02-02-shinbundang-line-homaesil-analysis_manual/)
-
 
 ---
 
