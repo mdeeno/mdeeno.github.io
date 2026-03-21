@@ -6,6 +6,15 @@
 
 ## 2026-03
 
+### 2026-03-21
+**[블로그 CTA/FAQ 가시성 개선]**
+- FAQ 섹션 스타일링 추가 (파란색 헤딩, details/summary 카드 디자인)
+- 차트 래퍼(lab-graph-wrapper) 폴백 스타일
+- CTA 블록 다크모드 오버라이드
+- 인라인 스타일 CTA 블록에 브랜드 컬러 적용
+- FAQ 구조 정규화 (h3/h4 strong 상속)
+- 관련 파일: `assets/css/extended/custom-typography.css`, `assets/css/extended/custom.css`
+
 ### 2026-03-20 (3)
 **[SEO]** 블로그 FAQ 섹션 일괄 추가 (배치 3)
 - 대상: 69개 포스트 (market 30, niche 19, reconstruction 20)
