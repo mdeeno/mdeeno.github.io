@@ -1,0 +1,199 @@
+/* ============================================
+   M-DEENO 블로그 타이포그래피 — 50~60대 가독성 최적화
+   PaperMod 테마 오버라이드
+   ============================================ */
+
+/* === 기본 본문 === */
+.post-content {
+  font-size: 17px;
+  line-height: 1.8;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.post-content p {
+  margin-bottom: 1.2em;
+}
+
+/* === H2 — 대섹션 === */
+.post-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 3em;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid #e5e7eb;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+[data-theme="dark"] .post-content h2 {
+  color: #f1f5f9;
+  border-bottom-color: #374151;
+}
+
+.post-content h2:first-of-type {
+  margin-top: 1.5em;
+}
+
+/* === H3 — 소섹션 === */
+.post-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e40af;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+[data-theme="dark"] .post-content h3 {
+  color: #93c5fd;
+}
+
+/* === H4 — 서브 항목 === */
+.post-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+[data-theme="dark"] .post-content h4 {
+  color: #d1d5db;
+}
+
+/* === 리스트 === */
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.2em;
+  padding-left: 1.5em;
+}
+
+.post-content li {
+  margin-bottom: 0.4em;
+  line-height: 1.7;
+}
+
+/* === 강조 텍스트 === */
+.post-content strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+[data-theme="dark"] .post-content strong {
+  color: #f3f4f6;
+}
+
+/* === 인용 블록 === */
+.post-content blockquote {
+  border-left: 4px solid #2563eb;
+  padding: 12px 20px;
+  margin: 1.5em 0;
+  background: #f8fafc;
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+  color: #475569;
+}
+
+[data-theme="dark"] .post-content blockquote {
+  background: rgba(37, 99, 235, 0.08);
+  color: #94a3b8;
+  border-left-color: #3b82f6;
+}
+
+/* === 표 === */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 15px;
+}
+
+.post-content table th {
+  background: #f1f5f9;
+  font-weight: 700;
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+[data-theme="dark"] .post-content table th {
+  background: #1e293b;
+  border-bottom-color: #475569;
+}
+
+.post-content table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+[data-theme="dark"] .post-content table td {
+  border-bottom-color: #374151;
+}
+
+/* === 포스트 제목 === */
+.post-title {
+  word-break: keep-all;
+}
+
+/* === 모바일 반응형 (768px 이하) === */
+@media (max-width: 768px) {
+  .post-title {
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+  }
+
+  .post-content {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .post-content h2 {
+    font-size: 22px;
+    margin-top: 2.5em;
+    margin-bottom: 0.6em;
+    padding-bottom: 0.3em;
+  }
+
+  .post-content h3 {
+    font-size: 18px;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+  }
+
+  .post-content h4 {
+    font-size: 16px;
+    margin-top: 1.3em;
+  }
+
+  .post-content blockquote {
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+
+  .post-content table {
+    font-size: 13px;
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* === 작은 모바일 (375px 이하) === */
+@media (max-width: 375px) {
+  .post-content {
+    font-size: 15px;
+  }
+
+  .post-content h2 {
+    font-size: 20px;
+  }
+
+  .post-content h3 {
+    font-size: 17px;
+  }
+}
