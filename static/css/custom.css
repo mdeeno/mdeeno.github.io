@@ -1068,9 +1068,11 @@ article.post-single .post-content {
 }
 
 @media (max-width: 600px) {
-  /* 이전/다음 1열 스택 */
-  .paginav { grid-template-columns: 1fr !important; }
-  .paginav .next { align-items: flex-start !important; text-align: left !important; }
+  /* 이전/다음 2열 유지 — 폰트만 축소 */
+  .paginav { grid-template-columns: 1fr 1fr !important; gap: 0.5rem !important; }
+  .paginav a { padding: 0.75rem 0.85rem !important; }
+  .paginav span:first-child { font-size: 0.7rem !important; margin-bottom: 4px !important; }
+  .paginav span:last-child { font-size: 0.78rem !important; -webkit-line-clamp: 2 !important; }
 
   /* H2/H3 font-size → custom-typography.css 768px/375px breakpoints에서 관리 */
 
