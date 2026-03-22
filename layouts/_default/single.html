@@ -44,10 +44,7 @@
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
 
-    {{/* ── 카테고리별 계산기 컨텍스트 링크 ── */}}
-    {{- partial "calc_cta.html" . }}
-
-    {{/* ── 마무리 CTA: 본문 끝 후 ── */}}
+    {{/* ── 마무리 CTA: 본문 끝 후 (계산기 링크 통합) ── */}}
     {{- partial "cta_auto.html" . }}
 
     {{/* ── 면책 조항 + 저작권 ── */}}

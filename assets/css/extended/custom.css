@@ -281,3 +281,129 @@
   .landing-cta-eyebrow { font-size: 1rem; }
   .landing-cta-body { font-size: 0.9rem; margin-bottom: 1rem; }
 }
+
+/* ── 통합 CTA 하단 계산기 보조 링크 ──────────────────────── */
+.blog-cta__calc-link {
+  margin: 12px 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0.88rem;
+}
+
+.blog-cta__calc-link a {
+  color: #6b7280;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+
+.blog-cta__calc-link a:hover {
+  color: #1e40af;
+}
+
+[data-theme="dark"] .blog-cta__calc-link a {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .blog-cta__calc-link a:hover {
+  color: #93c5fd;
+}
+
+/* ── Prev/Next 포스트 네비게이션 ──────────────────────────── */
+.paginav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 32px 0 16px;
+  padding: 0;
+  border: none;
+}
+
+.paginav a {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  text-decoration: none;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.paginav a:hover {
+  border-color: #1e40af;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.1);
+  transform: translateY(-2px);
+}
+
+.paginav a:first-child {
+  text-align: left;
+}
+
+.paginav a:last-child {
+  text-align: right;
+}
+
+/* "이전 글" / "다음 글" 라벨 — PaperMod가 &laquo; / &raquo; 와 함께 출력 */
+.paginav .title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1e40af;
+  margin: 0;
+}
+
+/* 포스트 제목 */
+.paginav span:not(.title) {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.paginav a:hover span:not(.title) {
+  color: #1e40af;
+}
+
+/* ── 다크모드 ── */
+[data-theme="dark"] .paginav a {
+  background: #1a1a2e;
+  border-color: #2d3748;
+}
+
+[data-theme="dark"] .paginav a:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+[data-theme="dark"] .paginav .title {
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .paginav span:not(.title) {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .paginav a:hover span:not(.title) {
+  color: #93c5fd;
+}
+
+/* ── 모바일: 세로 스택 ── */
+@media (max-width: 640px) {
+  .paginav {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .paginav a {
+    padding: 16px;
+    text-align: left !important;
+  }
+}
