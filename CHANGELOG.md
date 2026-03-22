@@ -6,6 +6,18 @@
 
 ## 2026-03
 
+### 2026-03-22 (12)
+**[FAQ 줄넘김 전체 수정]**
+- 268개 포스트 FAQ 질문(Q)과 답변(A) 사이 빈 줄 누락 일괄 수정
+- `fix_faq_linebreak.py` 스크립트로 일괄 처리
+- 관련 파일: `content/posts/**/*.md`
+
+### 2026-03-22 (11)
+**[Google Search Console 인증 메타태그 추가]**
+- `hugo.toml`에 `[params.analytics.google] SiteVerificationTag` 설정
+- PaperMod 테마 `head.html`이 자동으로 `<meta name="google-site-verification">` 렌더링
+- 관련 파일: `hugo.toml`
+
 ### 2026-03-22 (10)
 **[404개 포스트 OG 이미지 생성 및 삽입]**
 - 브랜드 카드형 OG 이미지 404개 자동 생성 (`static/images/og/`)
