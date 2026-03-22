@@ -27,6 +27,9 @@ canonifyURLs = true
   author = "M-DEENO Corp."
   env = "production"
 
+  [params.analytics.google]
+    SiteVerificationTag = "egpUo4dD8e73c7-Sgf7SNHoeFg6kOsPtJf6JoYGE6pw"
+
   defaultTheme = "light"
   disableThemeToggle = true
   ShowShareButtons = true
