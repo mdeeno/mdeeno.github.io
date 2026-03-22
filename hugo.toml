@@ -26,10 +26,6 @@ canonifyURLs = true
   description = "재건축 분담금, 비례율, 용적률, 이주비 — M-DEENO가 데이터로 분석하는 정비사업 리스크 가이드"
   author = "M-DEENO Corp."
   env = "production"
-
-  [params.analytics.google]
-    SiteVerificationTag = "egpUo4dD8e73c7-Sgf7SNHoeFg6kOsPtJf6JoYGE6pw"
-
   defaultTheme = "light"
   disableThemeToggle = true
   ShowShareButtons = true
@@ -37,17 +33,17 @@ canonifyURLs = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-
   naver_verify = "2f237c17ee6a92cf4e3591b76895cfd73bf59bca"
+  mainSections = ["posts"]
 
   # AdSense — 6/15 활성화.
-  # publisher_id: ca-pub-XXXXXXXXXXXXXXXX 형식으로 입력
-  # slot_id: AdSense 계정 > 광고 단위에서 생성한 숫자 ID (예: "1234567890")
   adsense_publisher_id = "ca-pub-4528164523701174"
   adsense_slot_id      = "7677212790"
   adsense_active_date  = "2026-06-15"
 
-  # homeInfoParams — 커스텀 index.html로 대체됨
+  [params.analytics.google]
+    SiteVerificationTag = "egpUo4dD8e73c7-Sgf7SNHoeFg6kOsPtJf6JoYGE6pw"
+
   [params.label]
     text = "BLOG"
     icon = "images/logo.png"
@@ -57,14 +53,11 @@ canonifyURLs = true
     Title = "M-DEENO | 재건축·재개발 데이터 분석"
     Content = "재건축 분담금·수익률을 데이터로 분석합니다."
 
-  mainSections = ["posts"]
-
   [params.cover]
     hidden = false
     hiddenInList = false
     hiddenInSingle = false
     responsiveImages = true
-
 
   [params.verification]
     naver = "2f237c17ee6a92cf4e3591b76895cfd73bf59bca"
