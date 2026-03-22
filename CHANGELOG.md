@@ -6,6 +6,13 @@
 
 ## 2026-03
 
+### 2026-03-22 (10)
+**[404개 포스트 OG 이미지 생성 및 삽입]**
+- 브랜드 카드형 OG 이미지 404개 자동 생성 (`static/images/og/`)
+- 카테고리별 악센트 컬러, M-DEENO 로고, mdeeno.com URL 포함
+- 각 포스트 front matter에 `image:` 필드 자동 삽입
+- 관련 파일: `static/images/og/og-*.png`, `content/posts/**/*.md`
+
 ### 2026-03-21 (9)
 **[면책조항 + 저작권 표시 Hugo partial로 복구]**
 - `post_disclaimer.html` partial 신규 생성
