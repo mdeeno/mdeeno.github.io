@@ -10,6 +10,7 @@ tags:
 - 상생임대인 조건
 - 부동산투자
 - 프롭테크
+image: "/images/og/og-558f002d.png"
 description: '몸테크 없이 비과세 받는 법: M-DEENO가 분석한 상생임대인 제도 활용 전략 - M-DEENO 데이터 분석'
 ---
 

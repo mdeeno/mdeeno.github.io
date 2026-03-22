@@ -10,6 +10,7 @@ tags:
 - 부동산 자금 흐름
 - 미국 빅컷 수혜주
 - 부동산투자
+image: "/images/og/og-4515d9cf.png"
 description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? M-DEENO가 분석한 배당형 리츠 TOP 3 전략 - M-DEENO 데이터
   분석
 ---

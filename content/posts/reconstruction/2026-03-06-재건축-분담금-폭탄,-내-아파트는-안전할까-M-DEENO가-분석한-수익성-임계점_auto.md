@@ -4,6 +4,7 @@ date: 2026-03-06 13:19:53
 draft: false
 categories: ["재건축/재개발"]
 tags: ["재건축 분담금", "추가분담금", "부동산투자", "분담금예측", "부동산SaaS"]
+image: "/images/og/og-0adb4581.png"
 description: "재건축 분담금 폭탄, 내 아파트는 안전할까? M-DEENO가 분석한 수익성 임계점 - M-DEENO 데이터 분석"
 ---
 

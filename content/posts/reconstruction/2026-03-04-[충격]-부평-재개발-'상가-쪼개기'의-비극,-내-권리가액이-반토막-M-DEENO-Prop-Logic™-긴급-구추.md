@@ -10,6 +10,7 @@ tags:
 - 부평 아파트 시세
 - 재개발 추가분담금
 - 입주권 리스크
+image: "/images/og/og-8fd5d4d1.png"
 description: '[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO 분석 엔진 긴급 구출 매뉴얼 -
   M-DEENO 데이터 분석'
 ---

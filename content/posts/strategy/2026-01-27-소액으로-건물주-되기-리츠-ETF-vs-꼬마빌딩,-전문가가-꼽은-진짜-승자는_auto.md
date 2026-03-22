@@ -4,6 +4,7 @@ date: 2026-01-27 22:56:31
 draft: false
 categories: ["투자 전략"]
 tags: ['리츠 ETF 실물 부동산 비교', '부동산투자', '재테크']
+image: "/images/og/og-d0143388.png"
 description: '소액으로 건물주 되기? 리츠 ETF vs 꼬마빌딩, 전문가가 꼽은 진짜 승자는?'
 ---
 

@@ -10,6 +10,7 @@ tags:
 - 우동 중동 대장주
 - 부동산투자
 - 부동산SaaS
+image: "/images/og/og-c5ba9599.png"
 description: 해운대 우동 vs 중동, 부의 축이 이동할까? M-DEENO가 분석한 오시리아 시너지의 실체 - M-DEENO 데이터 분석
 ---
 

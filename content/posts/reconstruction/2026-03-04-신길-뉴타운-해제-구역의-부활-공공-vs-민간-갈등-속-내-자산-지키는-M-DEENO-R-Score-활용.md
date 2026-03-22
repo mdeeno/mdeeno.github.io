@@ -10,6 +10,7 @@ tags:
 - 민간재개발
 - 신길2구역
 - 신길15구역
+image: "/images/og/og-a5322352.png"
 description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법 - M-DEENO
   데이터 분석'
 ---

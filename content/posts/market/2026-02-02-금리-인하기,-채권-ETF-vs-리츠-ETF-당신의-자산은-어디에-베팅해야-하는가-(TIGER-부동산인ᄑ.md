@@ -10,6 +10,7 @@ tags:
 - 리츠 ETF
 - TIGER 부동산인프라고배당
 - 부동산투자
+image: "/images/og/og-ce8dfd8d.png"
 description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중
   분석)'
 ---

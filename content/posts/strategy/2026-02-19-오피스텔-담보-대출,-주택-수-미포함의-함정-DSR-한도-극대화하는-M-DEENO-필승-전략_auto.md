@@ -10,6 +10,7 @@ tags:
 - 데이터분석
 - 부동산SaaS
 - 재테크
+image: "/images/og/og-815f8e72.png"
 description: 오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는 M-DEENO 필승 전략 - M-DEENO 데이터 분석
 ---
 

@@ -4,6 +4,7 @@ date: 2026-02-05 17:33:40
 draft: false
 categories: ['시장 분석']
 tags: ['데이터센터 리츠 투자', '부동산투자', '재테크']
+image: "/images/og/og-473da26e.png"
 description: 'AI 시대의 숨겨진 금광, 데이터센터(IDC) 리츠 투자, 지금이 적기인가?'
 ---
 

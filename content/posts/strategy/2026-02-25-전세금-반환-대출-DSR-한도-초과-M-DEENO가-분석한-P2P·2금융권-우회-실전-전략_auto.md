@@ -10,6 +10,7 @@ tags:
 - 프롭테크
 - 데이터분석
 - 재테크
+image: "/images/og/og-d5df0e31.png"
 description: 전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P·2금융권 우회 실전 전략 - M-DEENO 데이터 분석
 ---
 

@@ -10,6 +10,7 @@ tags:
 - 데이터분석
 - 프롭테크
 - 재테크
+image: "/images/og/og-141000d9.png"
 description: 마이너스 프리미엄 분양권, '양도세 매수자 부담' 조건이 독이 되는 이유 (M-DEENO 분석) - M-DEENO 데이터 분석
 ---
 

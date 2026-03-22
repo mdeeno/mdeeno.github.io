@@ -10,6 +10,7 @@ tags:
 - 상속세 감면 혜택
 - 2026 부동산 세금
 - 부동산투자
+image: "/images/og/og-02339c59.png"
 description: '2026 상속 주택 취득세 완벽 가이드: 다주택자 중과세 피하는 법과 M-DEENO 분석 엔진 분석 - M-DEENO 데이터
   분석'
 ---

@@ -10,6 +10,7 @@ tags:
 - 분당 재건축
 - 일산 재건축
 - 평촌 재건축 시세
+image: "/images/og/og-04fe10a5.png"
 description: '선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 ''Safety Score'' 기반 저평가 단지 선별법'
 ---
 

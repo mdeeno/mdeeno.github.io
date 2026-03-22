@@ -10,6 +10,7 @@ tags:
 - DSR 40% 시뮬레이션
 - 부동산투자
 - 데이터분석
+image: "/images/og/og-c4f232c2.png"
 description: 신용대출 5천만 원이 주담대 3억을 지운다? M-DEENO의 DSR 한도 축소 시뮬레이션 - M-DEENO 데이터 분석
 ---
 

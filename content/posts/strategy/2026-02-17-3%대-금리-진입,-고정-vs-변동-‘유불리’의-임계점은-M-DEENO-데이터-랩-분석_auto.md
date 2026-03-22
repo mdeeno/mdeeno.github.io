@@ -10,6 +10,7 @@ tags:
 - 중도상환수수료 면제
 - 3%대 주담대 전략
 - 부동산투자
+image: "/images/og/og-1171d446.png"
 description: 3%대 금리 진입, 고정 vs 변동 ‘유불리’의 임계점은? M-DEENO 데이터 랩 분석 - M-DEENO 데이터 분석
 ---
 
