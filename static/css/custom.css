@@ -1497,12 +1497,179 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
   color: #9ca3af;
 }
 
+/* ── CPA Ad Boxes 반응형 ─── */
+@media (max-width: 600px) {
+  .blog-cpa-box { padding: 18px 16px; }
+  .blog-cpa__link,
+  .blog-cpa__link--move,
+  .blog-cpa__link--internet {
+    display: block;
+    width: 100%;
+    text-align: center;
+    min-height: 48px;
+    box-sizing: border-box;
+    padding: 14px 20px;
+  }
+}
+
 /* ── 공정위 공시 ─── */
 .blog-disclosure {
   font-size: 10px;
   color: #ccc;
   margin-bottom: 10px;
   text-align: right;
+}
+
+/* ==========================================================
+   M-DEENO CPA Shortcode Boxes
+   ========================================================== */
+.mdeeno-cpa {
+  margin: 40px 0;
+  padding: 24px 28px;
+  border-radius: 12px;
+  text-align: center;
+}
+.mdeeno-cpa--loan {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border: 2px solid #16a34a;
+}
+.mdeeno-cpa--report {
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+  border: 2px solid #7c3aed;
+}
+.mdeeno-cpa--default {
+  margin: 32px 0;
+  padding: 20px 28px;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border: 2px solid #2563eb;
+}
+.mdeeno-cpa__hook {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.mdeeno-cpa--loan .mdeeno-cpa__hook    { color: #15803d; }
+.mdeeno-cpa--report .mdeeno-cpa__hook  { color: #6d28d9; }
+.mdeeno-cpa--default .mdeeno-cpa__hook { color: #1e40af; font-size: 1.1rem; }
+.mdeeno-cpa__desc {
+  font-size: 0.88rem;
+  color: #374151;
+  margin: 0 0 16px;
+  line-height: 1.7;
+}
+.mdeeno-cpa--default .mdeeno-cpa__desc { font-size: 0.9rem; }
+.mdeeno-cpa__btn {
+  display: inline-block;
+  padding: 12px 28px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.mdeeno-cpa__btn:hover { opacity: 0.9; }
+.mdeeno-cpa__btn:active { opacity: 0.75; transform: scale(0.98); }
+.mdeeno-cpa--loan .mdeeno-cpa__btn    { background: #16a34a; }
+.mdeeno-cpa--report .mdeeno-cpa__btn  { background: #7c3aed; }
+.mdeeno-cpa--default .mdeeno-cpa__btn { background: #2563eb; }
+
+/* ── Ad CPA Shortcode Boxes ─── */
+.ad-cpa {
+  margin: 36px 0;
+  padding: 22px 28px;
+  border-radius: 12px;
+  text-align: center;
+}
+.ad-cpa__sponsor {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #adb5bd;
+  margin: 0 0 4px;
+  letter-spacing: 0.05em;
+}
+.ad-cpa__hook {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.ad-cpa__desc {
+  font-size: 0.88rem;
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+.ad-cpa__btn {
+  display: inline-block;
+  padding: 13px 32px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.ad-cpa__btn:hover { opacity: 0.9; }
+.ad-cpa__btn:active { opacity: 0.75; transform: scale(0.98); }
+.ad-cpa__btn-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ad-cpa__btn-row .ad-cpa__btn {
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  min-width: 140px;
+}
+/* bankruptcy */
+.ad-cpa--bankruptcy {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+.ad-cpa--bankruptcy .ad-cpa__hook { color: #f8f9fa; }
+.ad-cpa--bankruptcy .ad-cpa__desc { color: #ced4da; }
+.ad-cpa--bankruptcy .ad-cpa__btn  { background: #e63946; }
+/* moving */
+.ad-cpa--moving {
+  background: linear-gradient(135deg, #f0fff4, #e6f4ff);
+  border: 1px solid #c3e6cb;
+}
+.ad-cpa--moving .ad-cpa__sponsor { color: #6c757d; }
+.ad-cpa--moving .ad-cpa__hook    { color: #1a3c34; }
+.ad-cpa--moving .ad-cpa__desc    { color: #495057; }
+.ad-cpa--moving .ad-cpa__btn:first-child { background: #28a745; }
+.ad-cpa--moving .ad-cpa__btn:last-child  { background: #1565c0; }
+/* finance */
+.ad-cpa--finance {
+  background: linear-gradient(135deg, #fffde7, #fff8e1);
+  border: 1px solid #ffe082;
+}
+.ad-cpa--finance .ad-cpa__sponsor { color: #6c757d; }
+.ad-cpa--finance .ad-cpa__hook    { color: #5d4037; }
+.ad-cpa--finance .ad-cpa__desc    { color: #6d4c41; }
+.ad-cpa--finance .ad-cpa__btn     { background: #f9a825; color: #212529; }
+
+/* ── CPA Shortcode 반응형 ─── */
+@media (max-width: 600px) {
+  .mdeeno-cpa,
+  .ad-cpa {
+    padding: 20px 16px;
+  }
+  .mdeeno-cpa__btn,
+  .ad-cpa__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
+  .ad-cpa__btn-row {
+    flex-direction: column;
+  }
+  .ad-cpa__btn-row .ad-cpa__btn {
+    min-width: unset;
+    width: 100%;
+  }
 }
 
 /* ── SaaS CTA Box ─── */
@@ -1553,6 +1720,10 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
 .blog-cta-box__btn:hover {
   opacity: 0.9;
 }
+.blog-cta-box__btn:active {
+  opacity: 0.75;
+  transform: scale(0.98);
+}
 .blog-cta-box--primary .blog-cta-box__btn {
   display: block;
   width: 100%;
@@ -1579,4 +1750,48 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
 }
 .dark .blog-cta-box__desc {
   color: #9ca3af;
+}
+
+/* ── Blog CTA Box 반응형 ─── */
+@media (max-width: 600px) {
+  .blog-cta-box--primary {
+    margin: 28px 0;
+    padding: 20px 18px;
+  }
+  .blog-cta-box--secondary {
+    margin: 24px 0;
+    padding: 16px 16px;
+  }
+  .blog-cta-box__hook {
+    font-size: 0.95rem !important;
+  }
+  .blog-cta-box__desc {
+    font-size: 0.85rem;
+  }
+  /* 모든 CTA 버튼: 모바일에서 full-width + 터치 타겟 48px */
+  .blog-cta-box__btn {
+    display: block !important;
+    width: 100% !important;
+    text-align: center;
+    padding: 14px 20px !important;
+    font-size: 0.95rem !important;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
+}
+
+/* ── Calculator Button 반응형 ─── */
+@media (max-width: 600px) {
+  .blog-calc-box {
+    padding: 16px;
+    margin: 24px 0;
+  }
+  .blog-calc__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
 }

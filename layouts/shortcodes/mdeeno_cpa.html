@@ -1,9 +1,9 @@
 {{- $type := .Get "type" | default "default" -}}
 
 {{- if eq $type "loan" -}}
-<div style="margin:40px 0;padding:24px 28px;background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:2px solid #16a34a;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#15803d;margin:0 0 8px;">&#x1F4B0; 재건축 이주비·중도금 대출 무료 상담</p>
-  <p style="font-size:0.88rem;color:#374151;margin:0 0 16px;line-height:1.7;">
+<div class="mdeeno-cpa mdeeno-cpa--loan">
+  <p class="mdeeno-cpa__hook">&#x1F4B0; 재건축 이주비·중도금 대출 무료 상담</p>
+  <p class="mdeeno-cpa__desc">
     이주비 대출 한도와 금리를 지금 바로 비교하세요.<br>
     내 조건에 맞는 최적 상품을 전문 상담사가 안내해드립니다.
   </p>
@@ -11,15 +11,15 @@
      target="_blank"
      rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'cpa_loan_click', {event_category: 'CPA', event_label: window.location.pathname})"
-     style="display:inline-block;padding:12px 28px;background:#16a34a;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;">
+     class="mdeeno-cpa__btn">
     대출 무료 상담 신청 →
   </a>
 </div>
 
 {{- else if eq $type "report" -}}
-<div style="margin:40px 0;padding:24px 28px;background:linear-gradient(135deg,#faf5ff,#f3e8ff);border:2px solid #7c3aed;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#6d28d9;margin:0 0 8px;">&#x1F4CB; 내 단지 맞춤 재건축 리스크 리포트</p>
-  <p style="font-size:0.88rem;color:#374151;margin:0 0 16px;line-height:1.7;">
+<div class="mdeeno-cpa mdeeno-cpa--report">
+  <p class="mdeeno-cpa__hook">&#x1F4CB; 내 단지 맞춤 재건축 리스크 리포트</p>
+  <p class="mdeeno-cpa__desc">
     M-DEENO 분석 엔진이 분담금·비례율·공사비 리스크를 종합 분석합니다.<br>
     M-DEENO 프리미엄 리포트로 정확한 숫자를 확인하세요.
   </p>
@@ -27,20 +27,20 @@
      target="_blank"
      rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'cpa_report_click', {event_category: 'CPA', event_label: window.location.pathname})"
-     style="display:inline-block;padding:12px 28px;background:#7c3aed;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;">
+     class="mdeeno-cpa__btn">
     정밀 리포트 무료 신청 →
   </a>
 </div>
 
 {{- else -}}
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
-  <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
+<div class="mdeeno-cpa mdeeno-cpa--default">
+  <p class="mdeeno-cpa__hook">&#x26A0;&#xFE0F; 공사비 10% 오르면 분담금 최대 70% 증가합니다</p>
+  <p class="mdeeno-cpa__desc">내 단지는 몇 % 오를까? 30초면 바로 확인됩니다.</p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=shortcode&utm_campaign=mdeeno_cpa"
      target="_blank"
      rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'cpa_default_click', {event_category: 'CPA', event_label: window.location.pathname})"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+     class="mdeeno-cpa__btn">
     내 분담금 위험도 확인하기 →
   </a>
 </div>
