@@ -75,10 +75,10 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 <br>
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -136,14 +136,14 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 >
 > 👉 **[
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>
@@ -184,4 +184,4 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 
 - [소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석](/posts/market/2026-02-02-real-estate-sto-platform-guide-manual/)
 - [소액으로 강남 건물주 되기? 부동산 조각 투자(STO) 플랫폼 3사 완벽 비교 분석 (수수료, 수익률)](/posts/market/2026-02-02-소액으로-강남-건물주-되기-부동산-조각-투자sto-플랫폼-3사-완벽-비교-분석-수ᄉ/)
-- [카사 vs 비브릭, 진짜 수익률은? 부동산 조각 투자 1년 실전 비교 분석](/posts/strategy/2026-01-29-카사-vs-비브릭-진짜-수익률은-부동산-조각-투자-1년-실전-비교-분석-auto/)
+- [카사 vs 비브릭, 진짜 수익률은? 부동산 조각 투자 1년 실전 비교 분석](/posts/strategy/2026-01-29-카사-vs-비브릭-진짜-수익률은-부동산-조각-투자-1년-실전-비교-분석_auto/)

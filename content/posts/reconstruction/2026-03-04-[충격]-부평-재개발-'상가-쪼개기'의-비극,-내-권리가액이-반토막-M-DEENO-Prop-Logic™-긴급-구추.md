@@ -36,10 +36,10 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 무분별한 지분 쪼�
 위 단지들의 시세와 비교했을 때, 권리가액이 낮게 책정된 상가 소유주들은 과도한 추가 분담금 발생으로 인해 실제 수익성이 마이너스로 돌아설 위험이 큽니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -83,18 +83,18 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 무분별한 지분 쪼�
 ## 함께 읽으면 좋은 글
 
 - [대구 미분양 공포를 뚫은 범어동의 저력: 학군지 불패의 실체와 신고가 단지 심층 분석](/posts/market/2026-02-19-대구-미분양-공포를-뚫은-범어동의-저력-학군지-불패의-실체와-신고가-단지-ᄉ/)
-- [재건축 아파트 들고 있다가 현금청산 당하면 수억 날릴까?](/posts/reconstruction/2026-03-17-재건축-아파트-들고-있다가-현금청산-당하면-수억-날릴까-auto/)
+- [재건축 아파트 들고 있다가 현금청산 당하면 수억 날릴까?](/posts/reconstruction/2026-03-17-재건축-아파트-들고-있다가-현금청산-당하면-수억-날릴까_auto/)
 - [이자 폭탄에 내 집이 경매로? 영끌족을 위한 마지막 탈출구, 채무조정 완벽 가이드](/posts/strategy/2026-03-04-이자-폭탄에-내-집이-경매로-영끌족을-위한-마지막-탈출구-채무조정-완벽-가ᄋ/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

@@ -36,10 +36,10 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 - **SK리츠**: SK서린빌딩, SK에너지 주유소 등 우량 임차인을 확보하여 배당의 **연속성**이 매우 높습니다. 분기 배당을 실시하므로 현금 흐름을 중시하는 투자자에게 적합합니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -78,19 +78,19 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 
 ## 함께 읽으면 좋은 글
 
-- [금리 인하 임박! 지금 사야 할 미국 부동산 펀드/리츠 BEST 3 섹터 분석](/posts/strategy/2026-01-27-금리-인하-임박-지금-사야-할-미국-부동산-펀드리츠-best-3-섹터-분석-auto/)
+- [금리 인하 임박! 지금 사야 할 미국 부동산 펀드/리츠 BEST 3 섹터 분석](/posts/strategy/2026-01-27-금리-인하-임박-지금-사야-할-미국-부동산-펀드리츠-best-3-섹터-분석_auto/)
 - [금리 인하 시계, 2026년 폭발적 상승 예상: 월세처럼 받는 한국형 리츠 TOP 5 분석](/posts/strategy/2026-01-25-금리-인하-시계-2026년-폭발적-상승-예상-월세처럼-받는-한국형-리츠-top-5-분석-au/)
 - [2026년 다주택자 취득세 중과 폐지 현실화될까? 비규제지역 알짜 단지 분석 및 절세 전략](/posts/strategy/2026-02-22-2026년-다주택자-취득세-중과-폐지-현실화될까-비규제지역-알짜-단지-분석-및-절/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

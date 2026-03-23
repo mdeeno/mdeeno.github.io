@@ -17,10 +17,10 @@ image: '/images/2026-gangnam-cutoff.png'
 서초구나 강남구 인기 단지는 커트라인(합격선)이 70점대로 예상되어 당첨이 어려울 수 있습니다. 상대적으로 가점 장벽이 낮은 송파구의 소형 평수나 비선호 타입을 공략하는 것이 현실적입니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -41,17 +41,17 @@ M-DEENO 분석 엔진에서 내 청약 가점과 목표 단지의 예상 커트�
 
 - [무순위 줍줍 계약 취소분 vs 미계약분 차이점 모르면 청약 통장 날린다? 2026년 실전 당첨 가이드](/posts/strategy/2026-02-22-무순위-줍줍-계약-취소분-vs-미계약분-차이점-모르면-청약-통장-날린다-2026년-ᄉ/)
 - [강남 로또 청약 2026년 대격돌: 반포 1단지 vs 잠실 3대장, 분양가 3.3㎡당 8천만원 돌파 가능성 분석](/posts/strategy/2026-02-03-강남-로또-청약-2026년-대격돌-반포-1단지-vs-잠실-3대장-분양가-33당-8천만원-도/)
-- [아파트 대체제, 오피스텔/도생의 역습! 청약 경쟁률 급변의 의미와 투자 전략.](/posts/strategy/2026-01-31-아파트-대체제-오피스텔도생의-역습-청약-경쟁률-급변의-의미와-투자-전략-auto/)
+- [아파트 대체제, 오피스텔/도생의 역습! 청약 경쟁률 급변의 의미와 투자 전략.](/posts/strategy/2026-01-31-아파트-대체제-오피스텔도생의-역습-청약-경쟁률-급변의-의미와-투자-전략_auto/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

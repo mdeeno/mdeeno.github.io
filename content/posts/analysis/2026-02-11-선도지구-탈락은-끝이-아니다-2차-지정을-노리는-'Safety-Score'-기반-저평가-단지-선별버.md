@@ -48,10 +48,10 @@ M-DEENO 분석 엔진의 Safety Score는 재건축 단지의 사업성과 리스
 이 세 가지 요소를 종합적으로 분석하면, 1차 탈락 단지 중에서도 **2차 지정 확률이 높고 현재 시세가 저평가된 단지**를 걸러낼 수 있습니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -84,17 +84,17 @@ M-DEENO 분석 엔진을 활용하면 내 단지의 Safety Score와 분담금 �
 
 - [재건축 공사비 1,000만 원 시대, 내 아파트는 '로또'일까 '독'일까? 분담금 경계선(Threshold) 분석](/posts/analysis/2026-02-11-재건축-공사비-1000만-원-시대-내-아파트는-로또일까-독일까-분담금-경계선threshold/)
 - [선도지구 탈락은 악재인가, 기회인가? 평촌/산본 1기 신도시 '저가 매수' 기회 분석](/posts/strategy/2026-01-25-선도지구-탈락은-악재인가-기회인가-평촌산본-1기-신도시-저가-매수-기회-분서/)
-- [평당 공사비 1,000만 원 시대, 내 아파트는 '재건축'일까 '재앙'일까? R-Score 분석](/posts/analysis/2026-02-11-평당-공사비-1000만-원-시대-내-아파트는-재건축일까-재앙일까-r-score-분석-auto/)
+- [평당 공사비 1,000만 원 시대, 내 아파트는 '재건축'일까 '재앙'일까? R-Score 분석](/posts/analysis/2026-02-11-평당-공사비-1000만-원-시대-내-아파트는-재건축일까-재앙일까-r-score-분석_auto/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

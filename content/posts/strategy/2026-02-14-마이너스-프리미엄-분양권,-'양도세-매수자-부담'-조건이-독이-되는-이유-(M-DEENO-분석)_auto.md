@@ -37,10 +37,10 @@ description: 마이너스 프리미엄 분양권, '양도세 매수자 부담' �
 </div>
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -100,19 +100,19 @@ M-DEENO 분석 엔진으로 분양권 양도세 실부담액을 계약 전에 �
 
 ## 함께 읽으면 좋은 글
 
-- [월세보다 무서운 관리비? 수익률 박살 내는 '관리비 폭탄' 아파트 리스크 분석](/posts/analysis/2026-02-09-월세보다-무서운-관리비-수익률-박살-내는-관리비-폭탄-아파트-리스크-분석-auto/)
+- [월세보다 무서운 관리비? 수익률 박살 내는 '관리비 폭탄' 아파트 리스크 분석](/posts/analysis/2026-02-09-월세보다-무서운-관리비-수익률-박살-내는-관리비-폭탄-아파트-리스크-분석_auto/)
 - [양도세 아끼려다 집 한 채 날린다? 다운계약서 적발 시 비과세 박탈의 무서운 진실](/posts/strategy/2026-02-19-양도세-아끼려다-집-한-채-날린다-다운계약서-적발-시-비과세-박탈의-무서운-진/)
-- [상가주택 대출, 이자율 1%p 차이의 비밀: 주택 vs. 비주택 비율 분석](/posts/strategy/2026-02-07-상가주택-대출-이자율-1p-차이의-비밀-주택-vs-비주택-비율-분석-auto/)
+- [상가주택 대출, 이자율 1%p 차이의 비밀: 주택 vs. 비주택 비율 분석](/posts/strategy/2026-02-07-상가주택-대출-이자율-1p-차이의-비밀-주택-vs-비주택-비율-분석_auto/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

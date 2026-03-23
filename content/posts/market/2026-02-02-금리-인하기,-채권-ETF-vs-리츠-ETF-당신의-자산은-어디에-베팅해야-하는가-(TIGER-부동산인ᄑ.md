@@ -31,10 +31,10 @@ description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
 - **부동산 (Real Estate/REITs):** 이자 비용 감소는 부동산 운영 주체(REITs)의 순영업소득(NOI)을 개선시키고, 자산 매입 시의 금융 비용 부담을 줄여 투자 활성화를 유도합니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -120,18 +120,18 @@ description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
 ## 함께 읽으면 좋은 글
 
 - [내 집 마련 꿈 실현! 생애최초 디딤돌 대출, 2024년 최신 금리/한도/조건 완벽 분석](/posts/reconstruction/2026-01-29-내-집-마련-꿈-실현-생애최초-디딤돌-대출-2024년-최신-금리한도조건-완벽-분ᄉ/)
-- [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-top-5-auto/)
-- [2026년 전세 대란, 버팀목 vs 시중은행? 3억 대출 시 이자 1,500만원 차이 분석](/posts/market/2026-01-26-2026년-전세-대란-버팀목-vs-시중은행-3억-대출-시-이자-1500만원-차이-분석-auto/)
+- [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-top-5_auto/)
+- [2026년 전세 대란, 버팀목 vs 시중은행? 3억 대출 시 이자 1,500만원 차이 분석](/posts/market/2026-01-26-2026년-전세-대란-버팀목-vs-시중은행-3억-대출-시-이자-1500만원-차이-분석_auto/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

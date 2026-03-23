@@ -24,10 +24,10 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 - **성북·은평의 특징:** 서울 내 대표적인 저층 주거지 밀집 지역으로, 이번 규제 완화의 최대 수혜지로 꼽힙니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -90,19 +90,19 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
 ## 함께 읽으면 좋은 글
 
-- [신생아 특례 대출 2억 소득 시대: 9억 이하 아파트, 폭등할 단지 리스트 7](/posts/market/2026-01-26-신생아-특례-대출-2억-소득-시대-9억-이하-아파트-폭등할-단지-리스트-7-auto/)
+- [신생아 특례 대출 2억 소득 시대: 9억 이하 아파트, 폭등할 단지 리스트 7](/posts/market/2026-01-26-신생아-특례-대출-2억-소득-시대-9억-이하-아파트-폭등할-단지-리스트-7_auto/)
 - [부산의 센트럴파크, 1만 세대 하이엔드 전쟁의 승자는? | 부산 시민공원 촉진지구 재개발 분석](/posts/reconstruction/2026-02-05-부산의-센트럴파크-1만-세대-하이엔드-전쟁의-승자는-부산-시민공원-촉진지ᄀ/)
-- [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-top-5-auto/)
+- [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-top-5_auto/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

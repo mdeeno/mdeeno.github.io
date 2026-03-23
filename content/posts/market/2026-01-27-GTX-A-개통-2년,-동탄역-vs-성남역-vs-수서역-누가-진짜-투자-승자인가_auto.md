@@ -36,10 +36,10 @@ GTX-A 개통 2년 차, 기대감은 이미 시세에 반영되었을까? 2024년
 - 다만, 이미 기대감이 상당 부분 반영되었으므로, 향후 추가적인 급등보다는 안정적인 우상향 흐름이 예상됨.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -89,19 +89,19 @@ GTX-B, C 노선 개통 시 수혜 지역이 확대되면서 기존 GTX-A 역세�
 
 ## 함께 읽으면 좋은 글
 
-- [2026년 신안산선 개통 D-2년, 시흥/안산 '이 아파트' 8억 돌파 초읽기 TOP 3](/posts/strategy/2026-01-25-2026년-신안산선-개통-d-2년-시흥안산-이-아파트-8억-돌파-초읽기-top-3-auto/)
+- [2026년 신안산선 개통 D-2년, 시흥/안산 '이 아파트' 8억 돌파 초읽기 TOP 3](/posts/strategy/2026-01-25-2026년-신안산선-개통-d-2년-시흥안산-이-아파트-8억-돌파-초읽기-top-3_auto/)
 - ['제2의 판교'를 꿈꾸는 월판선 수혜지, 인덕원 vs 안양 vs 시흥 시세 변동률 심층 분석](/posts/market/2026-01-25-제2의-판교를-꿈꾸는-월판선-수혜지-인덕원-vs-안양-vs-시흥-시세-변동률-심층/)
-- [GTX-A vs. 강남 접근성: 하남 교산 vs 고양 창릉 3기 신도시, 승자는?](/posts/market/2026-01-26-gtx-a-vs-강남-접근성-하남-교산-vs-고양-창릉-3기-신도시-승자는-auto/)
+- [GTX-A vs. 강남 접근성: 하남 교산 vs 고양 창릉 3기 신도시, 승자는?](/posts/market/2026-01-26-gtx-a-vs-강남-접근성-하남-교산-vs-고양-창릉-3기-신도시-승자는_auto/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

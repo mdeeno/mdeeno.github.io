@@ -22,10 +22,10 @@ description: 'AI 시대의 숨겨진 금광, 데이터센터(IDC) 리츠 투자,
 - **공급 부족 심화:** 전 세계적으로 AI 수요를 감당할 수 있는 전력 용량을 갖춘 데이터센터 부지가 극도로 부족해지고 있습니다. 특히 한국처럼 수도권에 전력 공급이 제한적인 지역에서는 IDC 부지 자체가 희소 자원이 됩니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -105,19 +105,19 @@ AI 인프라 수요 급증으로 데이터센터 리츠는 장기 성장 가능�
 
 ## 함께 읽으면 좋은 글
 
-- [은행도 안 알려주는 NPL 경매 수익의 비밀: 질권 대출로 수익률 200% 만드는 법](/posts/analysis/2026-02-09-은행도-안-알려주는-npl-경매-수익의-비밀-질권-대출로-수익률-200-만드는-법-auto/)
+- [은행도 안 알려주는 NPL 경매 수익의 비밀: 질권 대출로 수익률 200% 만드는 법](/posts/analysis/2026-02-09-은행도-안-알려주는-npl-경매-수익의-비밀-질권-대출로-수익률-200-만드는-법_auto/)
 - [금리 인하 시계, 2026년 폭발적 상승 예상: 월세처럼 받는 한국형 리츠 TOP 5 분석](/posts/strategy/2026-01-25-금리-인하-시계-2026년-폭발적-상승-예상-월세처럼-받는-한국형-리츠-top-5-분석-au/)
 - [강원특별자치도 시대: 춘천/원주/강릉 역세권, '숨겨진 가치'가 폭발하는 3대 투자 거점 분석](/posts/market/2026-02-06-강원특별자치도-시대-춘천원주강릉-역세권-숨겨진-가치가-폭발하는-3대-투/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

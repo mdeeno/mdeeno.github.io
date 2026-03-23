@@ -35,10 +35,10 @@ description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 
 그렇다면 지금 시점에서 어떤 방식이 내 자산에 더 유리할까요? 단순히 '빨리 된다'는 말만 믿고 동의서를 써주기엔 리스크가 너무 큽니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -90,19 +90,19 @@ A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 
 
 ## 함께 읽으면 좋은 글
 
-- [신용대출 5천만 원이 주담대 3억을 지운다](/posts/strategy/2026-02-19-신용대출-5천만-원이-주담대-3억을-지운다-m-deeno의-dsr-한도-축소-시뮬레이션-auto/)
-- [해운대 우동 vs 중동, 부의 축이 이동할까](/posts/market/2026-02-19-해운대-우동-vs-중동-부의-축이-이동할까-m-deeno가-분석한-오시리아-시너지의-실체-auto/)
+- [신용대출 5천만 원이 주담대 3억을 지운다](/posts/strategy/2026-02-19-신용대출-5천만-원이-주담대-3억을-지운다-m-deeno의-dsr-한도-축소-시뮬레이션_auto/)
+- [해운대 우동 vs 중동, 부의 축이 이동할까](/posts/market/2026-02-19-해운대-우동-vs-중동-부의-축이-이동할까-m-deeno가-분석한-오시리아-시너지의-실체_auto/)
 - [북가좌동 재건축 공사비 검증 거부 사태! 내 자산 1억 증발 막는 조합원 필승 대응법](/posts/reconstruction/2026-03-04-북가좌동-재건축-공사비-검증-거부-사태-내-자산-1억-증발-막는-조합원-필승/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

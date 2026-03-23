@@ -27,10 +27,10 @@ image: '/images/seoul-gentrification-2026.png'
 - **교통 호재의 역설**: GTX-A 개통 및 연장 노선 인근 골목 상권의 공시지가가 전년 대비 평균 15% 이상 급등.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -114,14 +114,14 @@ image: '/images/seoul-gentrification-2026.png'
 
 HTML
 
-<div style="padding: 20px; border: 1px solid #eee; border-radius: 10px">
-    <h2 style="color: #1f2937">2026년 서울 젠트리피케이션 위험 지역 TOP 5: 당신의 자산은 안전합니까?</h2>
-    <p style="line-height: 1.8">
+<div class="blog-cta-box blog-cta-box--secondary">
+    <h2 class="blog-cta-box__hook">2026년 서울 젠트리피케이션 위험 지역 TOP 5: 당신의 자산은 안전합니까?</h2>
+    <p class="blog-cta-box__desc">
         2026년 서울 부동산 시장은 '하이퍼 양극화' 시대로 진입했습니다. 성수동 연무장길의 평당 가격이 3.5억 원을 돌파하며 자영업자들의 탈출이 시작된 가운데, 자본은 이미 다음 목적지를 향하고 있습니다. 본 포스팅에서는 M-DEENO의 독자적인 AI 알고리즘을 통해 추출한 <b>젠트리피케이션 고위험 지역 리스트</b>와 각 지역별 상세 투자 전략을 공개합니다.<br><br>
         단순히 뜨는 동네를 찾는 시대는 끝났습니다. 임대료 상승 곡선과 매출 지표가 교차하는 지점을 선점해야만 자산을 지킬 수 있습니다. 용산, 성수, 망원을 잇는 2026년 서울 상권 지도를 지금 바로 확인하세요. 전문 데이터 분석가가 제안하는 <b>유료 강의급 인사이트</b>를 무료로 제공합니다.
     </p>
-    <a href="https://tech.mdeeno.com" style="display: inline-block; padding: 10px 20px; background-color: #1e40af;text-decoration: none; border-radius: 5px; margin-top: 15px;color:#fff">상세 분석 리포트 전체 보기</a>
-    <p style="margin-top: 20px; color: #6b7280">태그: 젠트리피케이션, 서울부동산, 상권분석, 성수동, 용산투자, 2026부동산전망</p>
+    <a href="https://tech.mdeeno.com" class="blog-cta-box__btn">상세 분석 리포트 전체 보기</a>
+    <p class="blog-cta-box__desc">태그: 젠트리피케이션, 서울부동산, 상권분석, 성수동, 용산투자, 2026부동산전망</p>
 </div>
 Bash
 git add .
@@ -138,19 +138,19 @@ Would you like me to generate a specific cash flow simulation for one of these a
 
 ## 함께 읽으면 좋은 글
 
-- [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-top-5-auto/)
+- [빅데이터 분석: 2026년 서울 아파트 전세가율 폭등 예상 지역 TOP 5](/posts/market/2026-01-30-빅데이터-분석-2026년-서울-아파트-전세가율-폭등-예상-지역-top-5_auto/)
 - [송리단길 vs 망리단길, '젠트리피케이션' 속 권리금 시세 추이 분석: 어디에 투자해야 할까?](/posts/market/2026-01-28-송리단길-vs-망리단길-젠트리피케이션-속-권리금-시세-추이-분석-어디에-투자해/)
 - [금리 인하 시계, 2026년 폭발적 상승 예상: 월세처럼 받는 한국형 리츠 TOP 5 분석](/posts/strategy/2026-01-25-금리-인하-시계-2026년-폭발적-상승-예상-월세처럼-받는-한국형-리츠-top-5-분석-au/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>

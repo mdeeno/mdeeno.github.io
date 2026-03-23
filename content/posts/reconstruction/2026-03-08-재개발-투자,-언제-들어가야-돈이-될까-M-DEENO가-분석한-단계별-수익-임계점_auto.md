@@ -37,10 +37,10 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 최근 2년간 서울 주요 정비구역의 평균 공사비가 약 30% 이상 상승했습니다. 공사비 10% 상승 시 조합원 분담금이 수천만 원에서 억 단위로 증가할 수 있어, 수익률에 결정적 영향을 미칩니다.
 
 
-<div style="margin:32px 0;padding:20px 24px;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;text-align:center;">
-  <p style="font-size:0.95rem;font-weight:700;color:#1e40af;margin:0 0 12px;">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#1e40af;color:#fff;font-weight:700;font-size:0.9rem;border-radius:8px;text-decoration:none;">
+     class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
 </div>
@@ -53,17 +53,17 @@ description: "재개발 투자의 성패는 진입 시점에 달려 있습니다
 
 - [재개발 투자, 이 단계 모르면 원금 회수 불가능합니다](/posts/reconstruction/2026-03-07-재개발-투자-이-단계-모르면-원금-회수-불가능합니다-m-deeno-데이터-랩의-단계별-리스/)
 - [내 집이 새 아파트가 되기까지 10년, 재개발 단계별 수익 구간과 탈출 전략 총정리](/posts/reconstruction/2026-03-07-내-집이-새-아파트가-되기까지-10년-재개발-단계별-수익-구간과-탈출-전략-총정ᄅ/)
-- [내 집이 황금알을 낳기까지, 재개발 절차 10단계 완벽 가이드 (ft. 한남3·성수)](/posts/reconstruction/2026-03-07-내-집이-황금알을-낳기까지-재개발-절차-10단계-완벽-가이드-ft-한남3성수-auto/)
+- [내 집이 황금알을 낳기까지, 재개발 절차 10단계 완벽 가이드 (ft. 한남3·성수)](/posts/reconstruction/2026-03-07-내-집이-황금알을-낳기까지-재개발-절차-10단계-완벽-가이드-ft-한남3성수_auto/)
 
 
-<div style="margin:40px 0;padding:25px 30px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #1e40af;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">
+<div class="blog-cta-box blog-cta-box--primary">
+  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
-     style="display:block;width:100%;padding:13px 20px;background:#1e40af;color:#fff;font-weight:700;font-size:0.95rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;">
+     class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
 </div>
