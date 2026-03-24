@@ -6,6 +6,14 @@
 
 ## 2026-03
 
+### 2026-03-24 (13)
+**[SEO 일괄 개선: alt태그 + _auto 슬러그 마이그레이션 + 내부링크]**
+- 38개 포스트 차트 alt 태그: generic "M-DEENO 시장 전망 분석 차트" → title 기반 키워드 alt로 변환
+- 217개 _auto 파일명 제거 + Hugo aliases 추가 (기존 URL 301 redirect 보장)
+- 415개 파일에서 921개 내부 링크 _auto 참조 업데이트
+- Hugo 빌드 검증 완료 (1175 aliases 정상 생성)
+- 관련 스크립트: `posting-engine/batch_improve_posts.py`
+
 ### 2026-03-22 (12)
 **[FAQ 줄넘김 전체 수정]**
 - 268개 포스트 FAQ 질문(Q)과 답변(A) 사이 빈 줄 누락 일괄 수정
