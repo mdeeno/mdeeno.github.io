@@ -1,0 +1,68 @@
+{{- $pageurl := .Permalink }}
+{{- $title := .Title }}
+{{- $desc := .Description | default (.Summary | plainify | truncate 100) }}
+{{- $img := "" }}
+{{- with .Params.cover.image }}{{ $img = . }}{{ end }}
+
+<ul class="share-buttons">
+    <!-- 카카오톡 (SDK 있으면 리치 미리보기, 없으면 웹 폴백) -->
+    <li>
+        <a href="javascript:void(0)" aria-label="share {{ $title | plainify }} on KakaoTalk"
+            onclick="shareKakao(this)" class="kakao-share-btn"
+            data-url="{{ $pageurl }}"
+            data-title="{{ $title | plainify }}"
+            data-desc="{{ $desc | plainify }}"
+            data-img="{{ $img }}">
+            <svg viewBox="0 0 512 512" height="30px" width="30px">
+                <rect width="512" height="512" rx="62.554" fill="#FEE500"/>
+                <path d="M256,130c-72.5,0-131.3,45.8-131.3,102.3c0,36.4,24.2,68.3,60.6,86.4l-9.6,35.3c-0.7,2.7 2.4,4.9 4.8,3.3l41.9-28.3c10.8,1.6 22,2.5 33.5,2.5c72.5,0 131.3-45.8 131.3-102.3C387.3,175.8 328.5,130 256,130Z" fill="#3C1E1E"/>
+            </svg>
+        </a>
+    </li>
+    <!-- Facebook -->
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on facebook"
+            href="https://facebook.com/sharer/sharer.php?u={{ $pageurl }}">
+            <svg viewBox="0 0 512 512" height="30px" width="30px" fill="currentColor">
+                <path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"/>
+            </svg>
+        </a>
+    </li>
+    <!-- X (Twitter) -->
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on x"
+            href="https://x.com/intent/tweet/?text={{ $title }}&amp;url={{ $pageurl }}">
+            <svg viewBox="0 0 512 512" height="30px" width="30px" fill="currentColor">
+                <path d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"/>
+            </svg>
+        </a>
+    </li>
+</ul>
+
+<script>
+function shareKakao(el) {
+  var url = el.getAttribute('data-url');
+  var title = el.getAttribute('data-title');
+  var desc = el.getAttribute('data-desc');
+  var img = el.getAttribute('data-img');
+
+  if (typeof Kakao !== 'undefined' && Kakao.isInitialized()) {
+    var linkObj = {
+      objectType: 'feed',
+      content: {
+        title: title,
+        description: desc,
+        imageUrl: img || '',
+        link: { webUrl: url, mobileWebUrl: url }
+      },
+      buttons: [{
+        title: '자세히 보기',
+        link: { webUrl: url, mobileWebUrl: url }
+      }]
+    };
+    Kakao.Share.sendDefault(linkObj);
+  } else {
+    window.open('https://story.kakao.com/share?url=' + encodeURIComponent(url), '_blank');
+  }
+}
+</script>

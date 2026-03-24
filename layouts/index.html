@@ -9,13 +9,17 @@
     <p class="hero-sub">공사비 상승이 분담금을 얼마나 올릴까요?<br>의결권 행사 전에, 내 아파트 숫자부터 확인하세요</p>
 
     <div class="hero-search">
-      <input type="text" id="hs-input" placeholder="단지명, 키워드로 검색 (예: 분담금, 은마, 양도세)">
+      <input type="text" id="hs-input" placeholder="단지명·키워드 검색 (예: 분담금, 은마)">
       <button onclick="var q=document.getElementById('hs-input').value; if(q) location.href='/search/?q='+encodeURIComponent(q);">검색</button>
     </div>
     <script>
-      document.getElementById('hs-input').addEventListener('keydown', function(e){
-        if(e.key==='Enter'){ var q=this.value; if(q) location.href='/search/?q='+encodeURIComponent(q); }
-      });
+      (function(){
+        var el=document.getElementById('hs-input');
+        if(window.innerWidth<=480) el.placeholder='단지명·키워드 검색';
+        el.addEventListener('keydown',function(e){
+          if(e.key==='Enter'){var q=this.value;if(q)location.href='/search/?q='+encodeURIComponent(q);}
+        });
+      })();
     </script>
 
     <div class="hero-tags">
@@ -157,6 +161,20 @@
       </a>
     </div>
   </section>
+
+  {{/* ── 카카오톡 채널 ── */}}
+  <div class="kakao-home-banner">
+    <div class="kakao-home-banner__inner">
+      <span class="kakao-home-banner__icon">💬</span>
+      <div class="kakao-home-banner__text">
+        <strong>카카오톡으로 재건축 뉴스 받기</strong>
+        <span>매주 핵심 분석을 카카오톡으로 보내드립니다</span>
+      </div>
+      <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+         onclick="typeof gtag!=='undefined'&&gtag('event','kakao_channel_home',{event_category:'CTA',event_label:'home'})"
+         class="kakao-home-banner__btn">채널 추가 →</a>
+    </div>
+  </div>
 
   {{/* ── PREMIUM CTA ── */}}
   <section class="premium-band">

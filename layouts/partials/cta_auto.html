@@ -38,3 +38,18 @@
   </p>
   {{- end }}
 </div>
+
+{{/* ── 카카오톡 채널 추가 배너 ── */}}
+<div class="kakao-channel-cta">
+  <div class="kakao-channel-cta__inner">
+    <span class="kakao-channel-cta__icon">💬</span>
+    <div class="kakao-channel-cta__text">
+      <strong>카카오톡으로 재건축 뉴스 받기</strong>
+      <span>매주 핵심 분석을 카카오톡으로 보내드립니다</span>
+    </div>
+    <a href="https://pf.kakao.com/_xmHdlX"
+       target="_blank" rel="noopener noreferrer"
+       onclick="typeof gtag !== 'undefined' && gtag('event', 'kakao_channel_click', {event_category: 'CTA', event_label: window.location.pathname})"
+       class="kakao-channel-cta__btn">채널 추가</a>
+  </div>
+</div>
