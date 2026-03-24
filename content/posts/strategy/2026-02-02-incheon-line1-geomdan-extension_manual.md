@@ -83,7 +83,7 @@ image: '/images/geomdan-subway-2026.png'
 
 - [신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저평가 단지' TOP 3 정밀 분석](/posts/market/2026-02-02-shinbundang-line-homaesil-analysis_manual/)
 - [서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가](/posts/market/2026-02-02-seoul-station-area-shift-season2_manual/)
-- [서울 재개발 예정지, 상위 1%만 아는 옥석 가리기...분석 결과](/posts/reconstruction/2026-03-08-서울-재개발-예정지,-상위-1%만-아는-'옥석-가리기'...-M-DEENO-Prop-Logic™-분석-결과_auto/)
+- [서울 재개발 예정지, 상위 1%만 아는 옥석 가리기...분석 결과](/posts/reconstruction/2026-03-08-서울-재개발-예정지,-상위-1%만-아는-'옥석-가리기'...-M-DEENO-Prop-Logic™-분석-결과/)
 
 
 <div class="blog-cta-box blog-cta-box--primary">
