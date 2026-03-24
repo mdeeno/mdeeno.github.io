@@ -156,6 +156,7 @@ body, html {
 
 .hero-search input {
   flex: 1;
+  min-width: 0;
   border: none;
   outline: none;
   padding: 0.85rem 1.1rem;
@@ -165,7 +166,7 @@ body, html {
   color: var(--md-text);
 }
 
-.hero-search input::placeholder { color: var(--md-subtle); }
+.hero-search input::placeholder { color: var(--md-muted); }
 
 .hero-search button {
   background: var(--md-blue);
@@ -178,6 +179,7 @@ body, html {
   cursor: pointer;
   transition: background 0.15s;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .hero-search button:hover { background: #1558cc; }
@@ -932,9 +934,10 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 /* ── Share Buttons ───────────────────────────────────────── */
 .share-buttons {
   display: flex !important;
-  gap: 8px !important;
-  flex-wrap: wrap !important;
+  gap: 6px !important;
+  flex-wrap: nowrap !important;
   align-items: center !important;
+  justify-content: center !important;
   padding: 1rem 0 0 !important;
   margin: 0 !important;
   list-style: none !important;
@@ -954,15 +957,16 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 44px !important;
-  height: 44px !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 0 !important;
   border-radius: 8px !important;
   background: #f8fafc !important;
   border: 1px solid #e4e7ec !important;
   color: #6b7280 !important;
   text-decoration: none !important;
   transition: all 0.15s !important;
-  flex-shrink: 0 !important;
+  flex-shrink: 1 !important;
 }
 
 .share-buttons a:hover {
@@ -1068,41 +1072,26 @@ article.post-single .post-content {
 }
 
 @media (max-width: 600px) {
-  /* 이전/다음 → 1열 스택, 가독성 우선 */
+  /* 이전/다음 → 모바일에서도 가로 병렬 유지 */
   .paginav {
-    grid-template-columns: 1fr !important;
-    gap: 0.5rem !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px !important;
   }
   .paginav a {
-    padding: 0.85rem 1rem !important;
-    min-height: 56px !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 10px !important;
+    padding: 10px 12px !important;
+    min-height: auto !important;
+    flex-direction: column !important;
+    gap: 4px !important;
   }
-  .paginav .prev { text-align: left !important; }
-  .paginav .next { text-align: right !important; flex-direction: row-reverse !important; }
   .paginav span:first-child {
-    font-size: 0 !important;
-    margin: 0 !important;
-    flex-shrink: 0;
-  }
-  .paginav .prev span:first-child::after {
-    content: '←';
-    font-size: 1.1rem;
-    color: var(--md-blue);
-    font-weight: 700;
-  }
-  .paginav .next span:first-child::after {
-    content: '→';
-    font-size: 1.1rem;
-    color: var(--md-blue);
-    font-weight: 700;
+    font-size: 0.75rem !important;
   }
   .paginav span:last-child {
-    font-size: 0.88rem !important;
+    font-size: 0.82rem !important;
     -webkit-line-clamp: 2 !important;
-    flex: 1;
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
   }
 
   /* H2/H3 font-size → custom-typography.css 768px/375px breakpoints에서 관리 */
@@ -1434,15 +1423,16 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
 .blog-calc__btn {
   display: inline-block;
   background-color: #1e40af;
-  color: #fff;
+  color: #fff !important;
   padding: 15px 30px;
   border-radius: 50px;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: none !important;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .blog-calc__btn:hover {
   background-color: #1e3a8a;
+  color: #fff !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
@@ -1592,11 +1582,11 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
 .mdeeno-cpa__btn {
   display: inline-block;
   padding: 12px 28px;
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
   font-size: 0.95rem;
   border-radius: 8px;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: opacity 0.2s;
 }
 .mdeeno-cpa__btn:hover { opacity: 0.9; }
@@ -1632,11 +1622,11 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
 .ad-cpa__btn {
   display: inline-block;
   padding: 13px 32px;
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
   font-size: 0.95rem;
   border-radius: 8px;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: opacity 0.2s;
 }
 .ad-cpa__btn:hover { opacity: 0.9; }
@@ -1824,5 +1814,53 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
     padding: 14px 24px;
     min-height: 48px;
     box-sizing: border-box;
+  }
+}
+
+/* ==========================================================
+   강제 다크모드 방지 (Samsung Internet, Chrome forced dark)
+   ========================================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only !important;
+  }
+
+  html, body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  /* 주요 컨테이너 명시적 배경 */
+  .header, .nav, .main, .footer, .post-content, .archive-entry {
+    background-color: inherit !important;
+    color: inherit !important;
+  }
+
+  /* 이미지 반전 방지 — 로고 등 */
+  img, svg, picture, video, canvas {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+
+  /* input/select 배경 강제 */
+  input, select, textarea, button {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    border-color: #e5e7eb !important;
+  }
+
+  /* PaperMod 카드/엔트리 배경 */
+  .entry, .post-entry {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  /* 헤더/네비게이션 */
+  .header .nav {
+    background-color: #ffffff !important;
+  }
+
+  #menu a, .logo a, .logo-text {
+    color: inherit !important;
   }
 }

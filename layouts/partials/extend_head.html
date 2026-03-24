@@ -1,3 +1,7 @@
+{{/* ── 강제 다크모드 방지 ──────────────────────────────────── */}}
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+
 {{/* ── Preconnect (DNS warmup) ─────────────────────────────── */}}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -29,6 +33,20 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsense_publisher_id }}"
      crossorigin="anonymous"></script>
 {{- end -}}
+{{- end -}}
+
+{{/* ── Kakao Share SDK ─────────────────────────────────────────── */}}
+{{- if .Site.Params.kakao_js_key -}}
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js"
+        integrity="sha384-DKYJZ8NLiK8MN4/C5P2ezmFnkrGPo5tnERcKSa6ihAgYCNoIG1FNf/B0VBKkxOQ"
+        crossorigin="anonymous" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof Kakao !== 'undefined' && !Kakao.isInitialized()) {
+    Kakao.init('{{ .Site.Params.kakao_js_key }}');
+  }
+});
+</script>
 {{- end -}}
 
 {{/* ── Schema.org JSON-LD (Article) ──────────────────────────── */}}

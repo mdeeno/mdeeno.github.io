@@ -395,15 +395,23 @@
   color: #93c5fd;
 }
 
-/* ── 모바일: 세로 스택 ── */
-@media (max-width: 640px) {
-  .paginav {
-    grid-template-columns: 1fr;
-    gap: 12px;
+/* ── 모바일 paginav: static/css/custom.css 에서 통합 관리 ── */
+
+/* ==========================================================
+   강제 다크모드 방지 (Samsung Internet, Chrome forced dark)
+   ========================================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only !important;
   }
 
-  .paginav a {
-    padding: 16px;
-    text-align: left !important;
+  html, body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  img, svg, picture, video, canvas {
+    filter: none !important;
+    mix-blend-mode: normal !important;
   }
 }
