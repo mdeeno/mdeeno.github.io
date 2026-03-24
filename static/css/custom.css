@@ -44,7 +44,6 @@
 }
 
 /* ── PaperMod Light Mode Override ──────────────────────── */
-body,
 html[data-theme="light"] {
   --theme:      var(--md-bg);
   --entry:      var(--md-card);
@@ -65,6 +64,19 @@ html[data-theme="dark"] {
   --md-subtle: #64748b;
   --md-blue-lt:#1e3a5f;
   --md-teal-lt:#064e3b;
+
+  /* PaperMod 핵심 변수도 다크 값으로 덮어쓰기 */
+  --theme:      #0f172a;
+  --entry:      #1e293b;
+  --primary:    #f1f5f9;
+  --secondary:  #94a3b8;
+  --tertiary:   #334155;
+  --content:    #cbd5e1;
+  --border:     #334155;
+  --border-color: #334155;
+  --code-block-bg: #1e293b;
+  --code-bg:    #334155;
+  color-scheme: dark;
 }
 
 /* ── Global Typography ─────────────────────────────────── */
