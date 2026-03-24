@@ -1,0 +1,16 @@
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ if $related }}
+<div class="related-posts">
+  <h3 class="related-posts-title">함께 읽으면 좋은 글</h3>
+  <ul class="related-posts-list">
+    {{ range $related }}
+    <li class="related-posts-item">
+      <a href="{{ .RelPermalink }}" class="related-posts-link">
+        <span class="related-posts-item-title">{{ .Title }}</span>
+        <span class="related-posts-item-desc">{{ .Description | truncate 80 }}</span>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

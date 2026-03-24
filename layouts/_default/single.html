@@ -59,6 +59,9 @@
   {{/* ── ADSENSE SLOT: 본문 뒤, 관련 포스트 위 ── */}}
   {{- partial "adsense_slot.html" . }}
 
+  {{/* ── 관련 포스트: 본문 뒤, 푸터 위 ── */}}
+  {{- partial "related_posts.html" . }}
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">

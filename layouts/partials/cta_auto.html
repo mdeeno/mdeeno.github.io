@@ -19,6 +19,18 @@
   {{- $calcTitle = "DSR 대출 한도 계산기로 최대 대출 가능 금액 확인하기" -}}
 {{- end -}}
 
+{{/* ── 카테고리별 CTA 문구 분기 ── */}}
+{{- $ctaText := "내 분담금 무료 분석하기 →" -}}
+{{- if or (in $cats "재건축/재개발") (in $cats "정비 사업") -}}
+  {{- $ctaText = "내 단지 분담금 위험도 무료 진단 →" -}}
+{{- else if in $cats "시장 분석" -}}
+  {{- $ctaText = "시세 변동이 내 분담금에 미치는 영향 확인 →" -}}
+{{- else if in $cats "투자 전략" -}}
+  {{- $ctaText = "내 상황에 맞는 최적 전략 무료 분석 →" -}}
+{{- else if or (in $cats "세금/정책") (in $cats "금융/대출") -}}
+  {{- $ctaText = "내 아파트 세금·정책 영향 시뮬레이션 →" -}}
+{{- end -}}
+
 <div class="blog-cta blog-cta--bottom">
   <p class="blog-cta__title">내 단지는 안전할까?</p>
   <p class="blog-cta__desc">공사비 10% 상승 시 분담금 최대 70% 증가 — 30초면 내 단지 위험도를 확인할 수 있습니다.</p>
@@ -27,7 +39,7 @@
      rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'cta_auto_click', {event_category: 'CTA', event_label: window.location.pathname})"
      class="blog-cta__btn">
-    내 분담금 위험도 확인하기 →
+    {{ $ctaText }}
   </a>
   {{- if $calcURL }}
   <p class="blog-cta__calc-link">
