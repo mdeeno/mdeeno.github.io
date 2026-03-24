@@ -203,6 +203,32 @@
   line-height: 1.5;
 }
 
+/* ── 관련 포스트 위젯 다크모드 ──────────────────────────── */
+[data-theme="dark"] .related-posts {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+[data-theme="dark"] .related-posts-title {
+  color: #93c5fd;
+  border-bottom-color: #334155;
+}
+[data-theme="dark"] .related-posts-link:hover {
+  background: #334155;
+}
+[data-theme="dark"] .related-posts-item {
+  border-bottom-color: #334155;
+}
+[data-theme="dark"] .related-posts-item-title {
+  color: #f1f5f9;
+}
+[data-theme="dark"] .related-posts-link:hover .related-posts-item-title {
+  color: #93c5fd;
+}
+[data-theme="dark"] .related-posts-item-desc {
+  color: #94a3b8;
+}
+
 /* ── 카테고리별 계산기 컨텍스트 링크 ────────────────────── */
 .calc-cta-box {
   margin: 28px 0;
@@ -254,17 +280,17 @@
 }
 
 /* ── CTA 다크모드 오버라이드 ──────────────────────────── */
-.dark .calc-cta-box,
-.dark .mvp-cta,
-.dark .landing-cta-block {
+[data-theme="dark"] .calc-cta-box,
+[data-theme="dark"] .mvp-cta,
+[data-theme="dark"] .landing-cta-block {
   background: #1a2332;
   border-color: #2d3748;
   color: #e2e8f0;
 }
 
-.dark .calc-cta-box a,
-.dark .mvp-cta a,
-.dark .landing-cta-block a {
+[data-theme="dark"] .calc-cta-box a,
+[data-theme="dark"] .mvp-cta a,
+[data-theme="dark"] .landing-cta-block a {
   color: #60a5fa;
 }
 
