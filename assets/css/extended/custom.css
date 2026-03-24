@@ -398,19 +398,21 @@
 /* ── 모바일 paginav: static/css/custom.css 에서 통합 관리 ── */
 
 /* ==========================================================
-   강제 다크모드 방지 (Samsung Internet, Chrome forced dark)
+   다크모드 대응 (Samsung Internet, Chrome forced dark 포함)
+   - PaperMod의 [data-theme="dark"] 스타일은 건드리지 않음
    ========================================================== */
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: light only !important;
+    color-scheme: light dark;
   }
 
-  html, body {
-    background-color: #ffffff !important;
-    color: #111827 !important;
+  /* 로고 반전 — 검은 텍스트를 흰색으로 */
+  .logo a img {
+    filter: brightness(0) invert(1) !important;
   }
 
-  img, svg, picture, video, canvas {
+  /* 일반 이미지는 반전하지 않음 */
+  .post-content img, svg, picture, video, canvas {
     filter: none !important;
     mix-blend-mode: normal !important;
   }

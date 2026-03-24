@@ -1818,49 +1818,245 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
 }
 
 /* ==========================================================
-   강제 다크모드 방지 (Samsung Internet, Chrome forced dark)
+   다크모드 대응 (Samsung Internet, Chrome forced dark 포함)
+   - PaperMod의 [data-theme="dark"] 스타일은 건드리지 않음
+   - @media 쿼리로 OS/브라우저 강제 다크모드에 대응
    ========================================================== */
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: light only !important;
+    color-scheme: light dark;
+    --md-bg:     #0f172a;
+    --md-card:   #1e293b;
+    --md-text:   #f1f5f9;
+    --md-muted:  #94a3b8;
+    --md-border: #334155;
+    --md-blue:   #3b82f6;
   }
 
   html, body {
-    background-color: #ffffff !important;
-    color: #111827 !important;
+    background-color: var(--md-bg) !important;
+    color: var(--md-text) !important;
   }
 
-  /* 주요 컨테이너 명시적 배경 */
+  /* 주요 컨테이너 */
   .header, .nav, .main, .footer, .post-content, .archive-entry {
     background-color: inherit !important;
     color: inherit !important;
   }
 
-  /* 이미지 반전 방지 — 로고 등 */
-  img, svg, picture, video, canvas {
+  /* 로고 — 검은 텍스트 로고를 흰색으로 반전 */
+  .logo a img {
+    filter: brightness(0) invert(1) !important;
+  }
+
+  .logo-text {
+    color: var(--md-muted) !important;
+  }
+
+  /* 이미지 — 로고 외 일반 이미지는 반전하지 않음 */
+  img:not(.logo a img), svg, picture, video, canvas {
     filter: none !important;
     mix-blend-mode: normal !important;
   }
 
-  /* input/select 배경 강제 */
+  /* input/select */
   input, select, textarea, button {
-    background-color: #ffffff !important;
-    color: #111827 !important;
-    border-color: #e5e7eb !important;
+    background-color: var(--md-card) !important;
+    color: var(--md-text) !important;
+    border-color: var(--md-border) !important;
   }
 
-  /* PaperMod 카드/엔트리 배경 */
+  /* PaperMod 카드/엔트리 */
   .entry, .post-entry {
-    background-color: #ffffff !important;
-    border-color: #e2e8f0 !important;
+    background-color: var(--md-card) !important;
+    border-color: var(--md-border) !important;
+  }
+
+  .entry .entry-title,
+  .post-entry .entry-title {
+    color: var(--md-text) !important;
+  }
+
+  .entry .entry-content,
+  .post-entry .entry-content {
+    color: var(--md-muted) !important;
   }
 
   /* 헤더/네비게이션 */
   .header .nav {
-    background-color: #ffffff !important;
+    background-color: var(--md-bg) !important;
   }
 
-  #menu a, .logo a, .logo-text {
-    color: inherit !important;
+  #menu a, .logo a {
+    color: var(--md-text) !important;
+  }
+
+  /* 링크 */
+  a {
+    color: var(--md-blue) !important;
+  }
+
+  /* ── 관련 포스트 위젯 ── */
+  .related-posts {
+    background: var(--md-card) !important;
+    border-color: var(--md-border) !important;
+  }
+
+  .related-posts-title {
+    color: var(--md-blue) !important;
+    border-bottom-color: var(--md-border) !important;
+  }
+
+  .related-posts-item {
+    border-bottom-color: var(--md-border) !important;
+  }
+
+  .related-posts-item-title {
+    color: var(--md-text) !important;
+  }
+
+  .related-posts-link:hover {
+    background: rgba(59, 130, 246, 0.08) !important;
+  }
+
+  .related-posts-link:hover .related-posts-item-title {
+    color: var(--md-blue) !important;
+  }
+
+  .related-posts-item-desc {
+    color: var(--md-muted) !important;
+  }
+
+  /* ── calc-cta-box ── */
+  .calc-cta-box {
+    background: var(--md-card) !important;
+    border-color: var(--md-border) !important;
+  }
+
+  .calc-cta-title {
+    color: #4ade80 !important;
+  }
+
+  .calc-cta-desc {
+    color: var(--md-muted) !important;
+  }
+
+  /* ── mvp-cta ── */
+  .mvp-cta {
+    background: var(--md-card) !important;
+    border-color: var(--md-blue) !important;
+  }
+
+  .mvp-cta__title {
+    color: #93c5fd !important;
+  }
+
+  .mvp-cta__desc {
+    color: var(--md-muted) !important;
+  }
+
+  /* ── landing-cta-block ── */
+  .landing-cta-block {
+    background: var(--md-card) !important;
+    border-color: var(--md-blue) !important;
+  }
+
+  .landing-cta-eyebrow {
+    color: #93c5fd !important;
+  }
+
+  .landing-cta-body {
+    color: var(--md-muted) !important;
+  }
+
+  /* ── paginav (Prev/Next) ── */
+  .paginav a {
+    background: var(--md-card) !important;
+    border-color: var(--md-border) !important;
+  }
+
+  .paginav a:hover {
+    border-color: var(--md-blue) !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15) !important;
+  }
+
+  .paginav .title {
+    color: var(--md-blue) !important;
+  }
+
+  .paginav span:not(.title) {
+    color: var(--md-text) !important;
+  }
+
+  .paginav a:hover span:not(.title) {
+    color: var(--md-blue) !important;
+  }
+
+  /* ── blog-cta calc-link ── */
+  .blog-cta__calc-link a {
+    color: var(--md-muted) !important;
+  }
+
+  .blog-cta__calc-link a:hover {
+    color: var(--md-blue) !important;
+  }
+
+  /* ── 코드 블록 ── */
+  .post-content pre {
+    background: #1e293b !important;
+    border-color: var(--md-border) !important;
+  }
+
+  .post-content code {
+    background: #334155 !important;
+    color: #e2e8f0 !important;
+  }
+
+  /* ── 검색 ── */
+  #searchbox {
+    background: var(--md-card) !important;
+    border-color: var(--md-border) !important;
+    color: var(--md-text) !important;
+  }
+
+  /* ── footer ── */
+  .footer {
+    color: var(--md-muted) !important;
+  }
+
+  .footer a {
+    color: var(--md-blue) !important;
+  }
+
+  /* ── breadcrumbs ── */
+  .breadcrumbs a {
+    color: var(--md-muted) !important;
+  }
+
+  .breadcrumbs a:hover {
+    color: var(--md-blue) !important;
+  }
+
+  /* ── 기타 텍스트 ── */
+  .post-meta, .post-info {
+    color: var(--md-muted) !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--md-text) !important;
+  }
+
+  /* blog-calc 위젯 */
+  .blog-calc {
+    background: var(--md-card) !important;
+    border-color: var(--md-border) !important;
+  }
+
+  .blog-calc__title {
+    color: var(--md-text) !important;
+  }
+
+  .blog-calc__desc {
+    color: var(--md-muted) !important;
   }
 }
