@@ -89,9 +89,9 @@ M-DEENO 분석 엔진으로 지금 내 단지의 분담금 위험도를 직접 �
 
 ## 함께 읽으면 좋은 글
 
-- [2026년 주담대 7% 시대 생존법: 생애최초 주택 구입, 지금이 '지각비' 낼 마지막 기회인가?](/posts/market/2026-01-26-mortgage-rate-forecast-first-home-manual/)
-- [8호선 별내선 개통 임박! 구리/다산 '강남 30분 시대' 수혜 단지 TOP 3 분석](/posts/market/2026-02-01-8호선-별내선-개통-임박-구리다산-강남-30분-시대-수혜-단지-top-3-분석_auto/)
-- [소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석](/posts/market/2026-02-02-real-estate-sto-platform-guide-manual/)
+- [2026년 주담대 7% 시대 생존법: 생애최초 주택 구입, 지금이 '지각비' 낼 마지막 기회인가?](/posts/market/2026-01-26-mortgage-rate-forecast-first-home_manual/)
+- [8호선 별내선 개통 임박! 구리/다산 '강남 30분 시대' 수혜 단지 TOP 3 분석](/posts/market/2026-02-01-8호선-별내선-개통-임박!-구리다산-'강남-30분-시대'-수혜-단지-TOP-3-분석_auto/)
+- [소액으로 강남 빌딩주 되기! 부동산 조각투자(STO) 플랫폼 TOP 3 비교 분석](/posts/market/2026-02-02-real-estate-sto-platform-guide_manual/)
 
 
 <div class="blog-cta-box blog-cta-box--primary">
