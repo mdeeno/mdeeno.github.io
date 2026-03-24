@@ -6,6 +6,20 @@
 
 ## 2026-03
 
+### 2026-03-24 (15)
+**[CTA 카테고리별 차별화 + Related Posts 자동 렌더링]**
+- top_cta.html / cta_auto.html: 5개 카테고리별 CTA 문구 분기 (재건축/시장/전략/세금/기본)
+- related_posts.html 생성: Hugo Related API로 포스트 하단 관련 글 3개 자동 렌더링
+- single.html에 related_posts 파셜 삽입
+- 관련 파일: `layouts/partials/cta_auto.html`, `layouts/partials/top_cta.html`, `layouts/partials/related_posts.html`, `layouts/_default/single.html`
+
+### 2026-03-24 (14)
+**[SEO 강화: Sitemap 복구 + FAQ Schema + Hugo Minify]**
+- sitemap.xml: outputs 설정 추가로 1,429 URL 색인 가능하도록 복구
+- faq_schema.html: 72개 포스트에 FAQPage JSON-LD 자동 삽입
+- hugo.toml: minifyOutput=true 설정으로 CSS/HTML/JS 압축 활성화
+- 관련 파일: `hugo.toml`, `layouts/partials/faq_schema.html`, `layouts/partials/extend_head.html`
+
 ### 2026-03-24 (13)
 **[SEO 일괄 개선: alt태그 + _auto 슬러그 마이그레이션 + 내부링크]**
 - 38개 포스트 차트 alt 태그: generic "M-DEENO 시장 전망 분석 차트" → title 기반 키워드 alt로 변환
