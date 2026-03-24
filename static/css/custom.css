@@ -1185,8 +1185,126 @@ article.post-single .post-content {
   .post-entry { padding: 1rem 1.1rem !important; }
 }
 
-/* Dark mode article adjustments */
+/* ==========================================================
+   DARK MODE — 전체 오버라이드
+   ========================================================== */
+
+/* ── 로고: 검은색 이미지 → 밝게 반전 ── */
+html[data-theme="dark"] .logo a img {
+  filter: brightness(0) invert(1);
+}
+html[data-theme="dark"] .logo-text {
+  color: #94a3b8;
+}
+
+/* ── 네비바 / 헤더 ── */
+html[data-theme="dark"] .logo a {
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] nav#TableOfContents a {
+  color: #cbd5e1;
+}
+
+/* ── 히어로 ── */
+html[data-theme="dark"] .home-hero h1 {
+  color: #f1f5f9;
+}
+html[data-theme="dark"] .hero-accent {
+  color: #60a5fa;
+}
+html[data-theme="dark"] .hero-search {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+/* ── MVP Strip (배경이 네이비 → 다크에서는 카드색) ── */
+html[data-theme="dark"] .mvp-strip {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+/* ── 버튼 ── */
+html[data-theme="dark"] .hbtn-primary {
+  background: #3b82f6;
+}
+html[data-theme="dark"] .hbtn-primary:hover {
+  background: #2563eb;
+}
+
+/* ── 포스트 카드 ── */
+html[data-theme="dark"] .post-card:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+/* ── 섹션 제목 ── */
+html[data-theme="dark"] .sec-title {
+  color: #f1f5f9;
+}
+
+/* ── 통계 박스 ── */
+html[data-theme="dark"] .stat-box {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ── 프리미엄 밴드 (원래 어두운 배경이라 조정 최소) ── */
+html[data-theme="dark"] .premium-band {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid #334155;
+}
+
+/* ── 아티클 제목/메타 ── */
+html[data-theme="dark"] .post-title {
+  color: #f1f5f9 !important;
+}
+
+/* ── 본문 하드코딩 색상 오버라이드 ── */
 html[data-theme="dark"] .post-content { color: #cbd5e1; }
+html[data-theme="dark"] .post-content h4 { color: #d1d5db; }
+html[data-theme="dark"] .post-content strong { color: #f1f5f9; font-weight: 700; }
+
+/* ── 테이블 ── */
+html[data-theme="dark"] .post-content thead tr { background: #1e293b; }
+html[data-theme="dark"] .post-content tbody tr { border-color: #334155; }
+html[data-theme="dark"] .post-content tbody tr:hover { background: rgba(59,130,246,0.08); }
+html[data-theme="dark"] .post-content tbody td { color: #cbd5e1; }
+
+/* ── Paginav ── */
+html[data-theme="dark"] .paginav a {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2) !important;
+}
+html[data-theme="dark"] .paginav span:last-child {
+  color: #f1f5f9;
+}
+
+/* ── 공유 버튼 ── */
+html[data-theme="dark"] .share-buttons a {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+/* ── 포스트 리스트 (section pages) ── */
+html[data-theme="dark"] .post-entry {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+}
+html[data-theme="dark"] .post-entry:hover {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3) !important;
+}
+
+/* ── 아카이브 ── */
+html[data-theme="dark"] .archive-entry:hover {
+  background: rgba(59,130,246,0.1);
+}
+
+/* ── 기존 Dark Mode 아티클 ── */
+html[data-theme="dark"] .post-content h2 {
+  background: rgba(59,130,246,0.1);
+  color: #93c5fd;
+}
 html[data-theme="dark"] .post-content h2 {
   background: rgba(29,111,232,0.1);
   color: #93c5fd;
