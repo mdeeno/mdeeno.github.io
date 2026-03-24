@@ -34,7 +34,6 @@ canonifyURLs = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  naver_verify = "2f237c17ee6a92cf4e3591b76895cfd73bf59bca"
   mainSections = ["posts"]
 
   # Kakao Share SDK (JavaScript 키 — 클라이언트용, 도메인 제한)

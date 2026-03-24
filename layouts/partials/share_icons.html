@@ -5,7 +5,8 @@
 {{- with .Params.cover.image }}{{ $img = . }}{{ end }}
 
 <ul class="share-buttons">
-    <!-- 카카오톡 (SDK 있으면 리치 미리보기, 없으면 웹 폴백) -->
+    <!-- 카카오톡 (SDK 키 설정 시에만 노출) -->
+    {{- if .Site.Params.kakao_js_key }}
     <li>
         <a href="javascript:void(0)" aria-label="share {{ $title | plainify }} on KakaoTalk"
             onclick="shareKakao(this)" class="kakao-share-btn"
@@ -19,6 +20,7 @@
             </svg>
         </a>
     </li>
+    {{- end }}
     <!-- Facebook -->
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on facebook"
