@@ -664,7 +664,7 @@ html[data-theme="dark"] .home-hero {
 }
 
 .post-content tbody tr {
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
   transition: background 0.1s;
 }
 .post-content tbody tr:hover { background: #f8fafc; }
@@ -1060,13 +1060,22 @@ article.post-single .post-content {
    RESPONSIVE — Mobile readability
    ========================================================== */
 
-/* Table: 스크롤 래퍼로 가로 오버플로우 처리 */
+/* Table: 가로 스크롤 + 라운드 코너 보존 */
 .post-content table {
-  display: block !important;
+  display: table !important;
   width: 100% !important;
-  overflow-x: auto !important;
-  -webkit-overflow-scrolling: touch !important;
+  overflow: hidden;
 }
+
+/* 모바일에서 가로 스크롤 지원 — 부모 요소가 overflow 처리 */
+@media (max-width: 768px) {
+  .post-content table {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+
 /* 셀 내부 텍스트는 줄바꿈 허용 */
 .post-content thead th,
 .post-content tbody td {
