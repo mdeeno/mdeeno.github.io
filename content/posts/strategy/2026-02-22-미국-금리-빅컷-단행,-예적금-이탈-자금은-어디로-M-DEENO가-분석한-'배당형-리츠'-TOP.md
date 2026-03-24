@@ -58,6 +58,18 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 
 특히 대출을 활용해 부동산 포트폴리오를 확장하려는 투자자라면, 리츠를 통한 간접 투자와 실물 아파트 매수를 병행하는 '바벨 전략'이 유효합니다. 자산의 일부는 유동성이 높은 리츠에, 일부는 입지가 검증된 실물 자산에 배분하는 방식입니다.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 💡 자주 묻는 질문 (FAQ)
 
 ### Q1. 리츠 투자 시 가장 큰 리스크는 무엇인가요?

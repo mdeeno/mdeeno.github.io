@@ -88,6 +88,18 @@ DSR 규제는 금융권에 따라 적용 기준이 다릅니다. 이 차이를 �
 4. 대출 만기 도래 시 연장(롤오버) 가능 여부 확인
 5. 실제 집행까지 걸리는 기간 확인 (전세금 반환 기한에 맞춰야 함)
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ## 단계별 대응 전략 로드맵
 
 전세금 반환 DSR 초과 상황에서의 대응을 단계별로 정리합니다.

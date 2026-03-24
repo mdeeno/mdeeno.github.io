@@ -50,6 +50,18 @@ description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
 - **장점:** 금리 인하 기대감만으로도 빠른 수익 실현 가능.
 - **단점:** 금리 인하가 지연되거나 예상보다 적을 경우, 가격 조정 위험이 큽니다.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ## 3. 리츠 ETF: 구조적 이익과 배당 매력
 
 리츠(REITs, 부동산 투자회사)는 부동산을 소유하고 임대 수익을 배당하는 구조입니다. 금리 인하기에 리츠 ETF는 두 가지 측면에서 매력이 극대화됩니다.

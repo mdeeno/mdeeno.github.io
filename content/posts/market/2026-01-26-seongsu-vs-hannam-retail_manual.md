@@ -88,6 +88,18 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 - **임대인 장점:** 팝업 위주보다 장기 임대차가 많아 안정적인 현금 흐름 확보 용이
 - **💡 한줄 평:** "뜨내기 손님보다 '진짜 돈 쓰는 손님'을 원한다면 정답은 한남."
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 🥉 [소액투자] 성수 전략정비구역 인근 근생
 
 - **투자 지역:** 성수 1~4지구 배후의 노후 단독주택 및 창고 건물

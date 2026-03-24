@@ -61,6 +61,18 @@ M-DEENO 데이터 랩은 정비 사업의 불확실성을 수치화하기 위해
 
 대장주들의 견고한 시세는 해제 구역이 신축으로 변모했을 때의 미래 가치를 보증하는 강력한 지표가 됩니다.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 결론: 내 자산을 지키는 최선의 시나리오
 
 신길 해제 구역 소유주라면 현재 추진 중인 사업 방식의 '사업 안정성 점수'를 냉정하게 따져봐야 합니다.

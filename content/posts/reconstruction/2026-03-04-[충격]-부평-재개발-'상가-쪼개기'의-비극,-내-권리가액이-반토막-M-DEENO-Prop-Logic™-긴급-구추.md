@@ -63,6 +63,18 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 무분별한 지분 쪼�
 
 셋째, **현금청산 vs 입주권 유지**의 기로에서 M-DEENO 분석 엔진 시뮬레이션을 통해 어떤 선택이 세후 수익률 측면에서 유리한지 냉정하게 따져봐야 합니다.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 💡 자주 묻는 질문 (FAQ)
 
 ### Q1. 상가 쪼개기로 받은 입주권도 일반 아파트 입주권과 권리가 동일한가요?

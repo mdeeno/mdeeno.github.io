@@ -60,6 +60,18 @@ image: '/images/seoul-shift-season2.png'
 - [🏠 재건축/재개발 취득세 계산기](https://tech.mdeeno.com/calculators/calc_tax/)
 - [💰 대출 한도 및 DSR 계산기](https://tech.mdeeno.com/calculators/calc_dsr/)
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 💡 결론: '역세권'의 정의가 바뀌는 시점입니다
 
 서울시는 앞으로 역세권 350m 이내의 노후 저층 주거지와 구축 단지들을 고밀 개발하여 주거 문제를 해결하겠다는 의지가 확고합니다. 투자자 입장에서는 **용도지역 상향 가능성**이 높은 역세권 단지를 선점하는 것이 핵심이며, 실거주자에게는 시세보다 저렴한 **장기전세주택 공급 물량**에 주목할 기회입니다.

@@ -60,6 +60,18 @@ image: '/images/homaesil-line-analysis.png'
 - [💰 내 연봉으로 대출 한도 계산하기](https://tech.mdeeno.com/calculators/calc_dsr/)
 - [🏠 취득세 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_tax/)
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 💡 결론: '공사 현장'이 보일 때가 마지막 기회입니다
 
 많은 분이 "이미 올랐다"고 말하지만, 지하철 호재는 **착공 - 공사 중 - 개통 직전** 총 세 번의 점프 구간이 있습니다. 현재는 착공 이후 공사가 한창인 시기로, 실거주를 겸한 장기 투자자에게는 여전히 매력적인 구간입니다. 특히 금곡동 일대의 대단지들은 탄탄한 전세가율을 바탕으로 리스크를 줄일 수 있다는 장점이 있습니다.

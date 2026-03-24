@@ -58,6 +58,18 @@ STO(Security Token Offering)는 실물 부동산을 기초 자산으로 발행�
 - **장점:** 우리은행, 키움증권 등 대형 금융사와 연계되어 계좌 개설 및 거래 시스템이 매우 직관적이고 안정적입니다.
 - **단점:** 카사나 소유에 비해 상장된 자산의 개수가 아직 상대적으로 적습니다.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 🧮 투자 전 필수 체크리스트
 
 부동산 조각투자는 예금자 보호 대상이 아니며, 건물의 공실률에 따라 배당 수익이 변동될 수 있습니다.

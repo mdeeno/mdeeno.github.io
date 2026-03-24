@@ -77,6 +77,18 @@ M-DEENO 분석 엔진을 활용하면 내 단지의 Safety Score와 분담금 �
 2차 지정 가능성이 높은 단지라면 현재의 시세 하락이 매수 기회가 될 수 있습니다. 하지만 탈락 원인이 구조적(사업성 부족, 주민 갈등 등)이라면 추가 하락 가능성도 있으므로, 반드시 데이터 기반으로 판단해야 합니다.
 
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ## 핵심 정리
 선도지구 탈락이 곧 사업 불가를 뜻하지는 않으며, Safety Score 기반으로 사업 안정성이 높은 단지를 먼저 골라두면 2차 지정 때 오히려 더 유리한 진입 타이밍을 잡을 수 있습니다. 저평가 단지를 놓치지 않으려면 지금 이 순간이 바로 선별 작업을 시작해야 할 시점입니다. M-DEENO 분석 엔진으로 내 관심 단지의 Safety Score를 지금 확인해 보세요.
 

@@ -60,6 +60,18 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 - [💰 소액 투자 자금 대출 한도 계산기](https://tech.mdeeno.com/calculators/calc_dsr/)
 - [⚠️ 권리산정기준일 확인하기 (현금청산 방지)](https://tech.mdeeno.com/calculators/calc_transfer/)
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 💡 결론: '노후도'가 아닌 '추진위의 의지'를 보세요
 
 규제 완화로 인해 많은 구역이 대상지가 되었지만, 결국 사업을 성공시키는 것은 조합원들의 단합된 의지입니다. 2026년 현재 성북구와 은평구는 서울 내에서 비교적 소액으로 접근 가능한 마지막 보루입니다. 발품을 팔아 **추진위 사무실이 활발히 돌아가는 곳**, **동의서 징구 속도가 빠른 곳**을 선점하신다면 5~10년 후 신축 아파트 입주권이라는 열매를 맺을 수 있을 것입니다.

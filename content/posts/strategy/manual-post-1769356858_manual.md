@@ -109,6 +109,18 @@ _(84㎡ 기준 / 2026년 1월 호가 기준)_
 - **Why Here?:** 무려 **2,644세대 매머드급** 단지입니다. 연식(15년 차)은 좀 됐지만 삼성물산의 조경과 관리는 신축 못지않습니다. 무엇보다 **삼성역까지 14분** 컷. 판교보다 강남이 더 가깝습니다.
 - **Investment:** 호가 **9억 초중반**. 평촌 대장주들이 13억을 넘보는 상황에서, GTX라는 가장 강력한 무기를 가진 이곳이 9억 대라는 건 분명한 '기회'입니다.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 🥉 3. 소액투자/재개발: 창동역 (창동 주공 19단지)
 
 "강남에 삼성역이 있다면 강북엔 창동역이 있다"는 말이 현실이 됩니다. 단순 베드타운이 아니라 '서울 아레나' 등 일자리가 생기는 곳입니다.

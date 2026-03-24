@@ -1614,6 +1614,56 @@ html[data-theme="dark"] .blog-cta--top .blog-cta__btn {
   .kakao-channel-cta__btn { width: 100%; text-align: center; margin-top: 4px; }
 }
 
+/* ── 카카오 인라인 CTA (포스트 본문 내) ── */
+.kakao-channel-inline {
+  margin: 28px 0;
+  padding: 16px 20px;
+  background: #FFF8E1;
+  border: 1px solid #FEE500;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.kakao-channel-inline__text {
+  flex: 1;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3C1E1E;
+  min-width: 180px;
+  line-height: 1.5;
+}
+
+.kakao-channel-inline__text strong {
+  color: #1e293b;
+}
+
+.kakao-channel-inline__btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #FEE500;
+  color: #3C1E1E !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  text-decoration: none !important;
+  white-space: nowrap;
+  min-height: 44px;
+  line-height: 28px;
+  transition: background 0.2s;
+}
+
+.kakao-channel-inline__btn:hover {
+  background: #fdd800;
+}
+
+@media (max-width: 480px) {
+  .kakao-channel-inline { flex-direction: column; text-align: center; }
+  .kakao-channel-inline__btn { width: 100%; text-align: center; }
+}
+
 /* ── 홈 카카오 배너 ── */
 .kakao-home-banner {
   margin: 0 0 32px;

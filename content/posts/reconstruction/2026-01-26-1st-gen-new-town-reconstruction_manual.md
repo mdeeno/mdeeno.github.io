@@ -110,6 +110,18 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 - **Risk:** 주변 시세가 낮아 일반 분양가를 높게 받기 힘듭니다. 집값(7억) 대비 분담금(3억) 비율이 높아 체감 고통이 클 수 있습니다.
 - **Verdict:** "총매가 10~11억으로 신축을 얻는 전략. 실거주 만족도는 최상이지만 분담금 리스크 체크 필수."
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 🥉 3. 용적률 여유 단지 (분당 까치/하얀): "대지지분이 깡패다"
 
 화려한 역세권보다 실속을 챙기는 전략입니다. 용적률 150% 이하의 저밀도 단지는 **'내 땅'**을 많이 가지고 있어 일반 분양분을 획기적으로 늘릴 수 있습니다.

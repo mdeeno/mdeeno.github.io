@@ -52,6 +52,18 @@ aliases:
 - **프리미엄 추정:** LG 가전 선호도가 높은 지역에서는 안정적인 시스템 구축을 바탕으로 1,000만 원 ~ 2,500만 원 수준의 프리미엄을 형성.
 - **단점:** 상대적으로 폐쇄적인 생태계 구조로 인해, LG 제품 외 타사 기기 연동에 제약이 있어 확장성 측면에서는 스마트싱스 대비 불리할 수 있음.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ## IV. 투자자가 고려해야 할 핵심 체크리스트
 
 - **실제 연동률 확인:** 단순 '시스템 설치'가 아닌, 조명, 냉난방, 보안, 가전이 얼마나 유기적으로 연동되는지 현장 확인이 필수.

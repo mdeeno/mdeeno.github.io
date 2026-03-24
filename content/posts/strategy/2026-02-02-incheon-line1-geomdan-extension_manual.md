@@ -61,6 +61,18 @@ image: '/images/geomdan-subway-2026.png'
 - [🏠 취득세 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_tax/)
 
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ## 핵심 정리
 인천 1호선 검단 연장 개통으로 101·102·103역 일대 단지들의 실거주 가치와 투자 기대감이 동시에 높아지고 있습니다. 다만 현재 호가에는 이미 상당한 기대감이 선반영되어 있는 만큼, 입지와 사업성을 냉정하게 따진 뒤 의사결정하는 것이 중요합니다. M-DEENO 분석 엔진을 활용하시면 역세권 단지의 재건축·재개발 사업성과 분담금 위험도를 수치로 확인하실 수 있습니다.
 지금 내 단지의 분담금 위험도를 확인해 보세요.

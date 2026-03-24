@@ -33,6 +33,18 @@ image: '/images/2026-gangnam-cutoff.png'
 
 분양가 상한제 단지는 실거주 의무와 대출 제한 규제가 엄격하므로 잔금을 치를 능력이 있는지 확인해야 합니다. 자금 조달 계획이 미비하면 당첨이 취소되거나 계약을 포기해야 하는 리스크가 있습니다.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ## 핵심 정리
 2026년 강남 3구 주요 단지의 예상 청약 커트라인은 70점을 웃돌아 저가점자에게는 현실적으로 당첨 가능성이 낮습니다. 가점이 부족하다면 특별공급 자격이나 인근 비규제 단지를 전략적으로 검토하는 편이 훨씬 실용적입니다.
 M-DEENO 분석 엔진에서 내 청약 가점과 목표 단지의 예상 커트라인을 비교해 최적 전략을 세워 보세요.

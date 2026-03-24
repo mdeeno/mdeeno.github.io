@@ -82,6 +82,18 @@ image: '/images/seoul-gentrification-2026.png'
 
 - **도구 활용**: [DSR 계산기 및 대출 한도 조회](https://tech.mdeeno.com/calculators/calc_dsr/)를 통해 자금 동원 능력을 체크하세요.
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 4. 결론: 2026년 생존 전략
 
 젠트리피케이션은 지역의 성장을 의미하지만, 준비되지 않은 투자자에게는 독이 될 수 있습니다. **데이터가 가리키는 방향은 '자본의 집중'과 '공간의 브랜드화'입니다.** 단순히 유동 인구가 많다고 뛰어들기보다, 임대료 상승을 견딜 수 있는 '콘텐츠'가 해당 상권에 충분한지 분석하십시오.

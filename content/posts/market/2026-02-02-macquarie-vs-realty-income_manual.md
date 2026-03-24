@@ -58,6 +58,18 @@ image: '/images/macquarie-vs-realty-income.png'
 - [💰 배당 소득 포함 내 연봉별 세금 계산하기](https://tech.mdeeno.com/calculators/calc_dsr/)
 - [💸 양도세 및 배당소득 절세 전략 확인하기](https://tech.mdeeno.com/calculators/calc_transfer/)
 
+
+<div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+  <span style="font-size:1.2rem;">💬</span>
+  <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
+    <strong>카카오톡으로 재건축 뉴스 받기</strong> — 매주 핵심 분석을 보내드립니다
+  </p>
+  <a href="https://pf.kakao.com/_xmHdlX" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:8px 18px;background:#FEE500;color:#3C1E1E;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;white-space:nowrap;">
+    채널 추가 →
+  </a>
+</div>
+
 ### 💡 결론: '맥쿼리 6 : 리얼티 4'의 황금 비율을 추천합니다
 
 2026년 시장 상황에서 맥쿼리인프라는 **높은 원화 인컴**을, 리얼티인컴은 **안정적인 달러 인컴과 월 복리 효과**를 제공합니다. 은퇴자라면 국내 ISA 계좌를 통해 맥쿼리인프라를 담아 절세 혜택을 누리고, 연금 계좌에서는 리얼티인컴 비중이 높은 ETF를 편입하여 과세이연 효과를 극대화하는 전략이 유효합니다.
