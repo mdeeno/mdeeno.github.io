@@ -1,0 +1,24 @@
+{{/* ── AdSense 인라인 광고 슬롯 (본문 내 배치용) ──────────────────
+   호출: {{ partial "adsense_slot_inline.html" . }}
+
+   설정 위치: hugo.toml [params]
+     adsense_publisher_id    = "ca-pub-XXXXXXXXXXXXXXXX"
+     adsense_slot_id_inline  = "XXXXXXXXXX"   (미설정 시 adsense_slot_id 폴백)
+     adsense_active_date     = "2026-06-15"
+
+   6/15 이전 빌드 → 빈 출력
+   6/15 이후 빌드 → 인아티클 반응형 광고 렌더링
+   ─────────────────────────────────────────────────────────── */}}
+{{- $adsense_date := time .Site.Params.adsense_active_date -}}
+{{- if and .Site.Params.adsense_publisher_id (ge now.Unix $adsense_date.Unix) -}}
+{{- $slot_id := .Site.Params.adsense_slot_id_inline | default .Site.Params.adsense_slot_id -}}
+<div class="adsense-inline-wrap" style="text-align:center;margin:24px auto;max-width:100%;">
+  <ins class="adsbygoogle"
+       style="display:block;text-align:center"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="{{ .Site.Params.adsense_publisher_id }}"
+       data-ad-slot="{{ $slot_id }}"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+{{- end -}}

@@ -42,6 +42,7 @@ canonifyURLs = true
   # AdSense — 6/15 활성화.
   adsense_publisher_id = "ca-pub-4528164523701174"
   adsense_slot_id      = "7677212790"
+  adsense_slot_id_inline = ""
   adsense_active_date  = "2026-06-15"
 
   [params.analytics.google]

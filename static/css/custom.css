@@ -201,7 +201,7 @@ body, html {
   padding: 4px 14px;
   font-size: 0.82rem;
   font-weight: 500;
-  text-decoration: none !important;
+  text-decoration: none;
   transition: border-color 0.15s, color 0.15s;
 }
 
@@ -244,11 +244,11 @@ body, html {
 }
 .hbtn-primary:hover { background: #0a1d44; }
 .hbtn-outline {
-  border: 1.5px solid var(--md-border) !important;
-  color: var(--md-muted) !important;
+  border: 1.5px solid var(--md-border);
+  color: var(--md-muted);
   background: var(--md-card);
 }
-.hbtn-outline:hover { border-color: var(--md-blue) !important; color: var(--md-blue) !important; }
+.hbtn-outline:hover { border-color: var(--md-blue); color: var(--md-blue); }
 .hbtn-blue {
   background: var(--md-blue);
   color: #fff !important;
@@ -258,7 +258,7 @@ body, html {
 .hbtn-blue:hover { background: #1558cc; }
 .hbtn-lg { font-size: 1.05rem; padding: 15px 40px; }
 /* legacy */
-.hbtn-ghost { border: 1.5px solid var(--md-border) !important; color: var(--md-muted) !important; background: transparent; }
+.hbtn-ghost { border: 1.5px solid var(--md-border); color: var(--md-muted); background: transparent; }
 .hbtn-green { background: var(--md-teal); color: #fff !important; }
 
 /* ── MVP Strip ─────────────────────────────────────────── */
@@ -342,7 +342,7 @@ body, html {
   border: 1px solid var(--md-border);
   border-radius: 16px;
   padding: 1.5rem;
-  text-decoration: none !important;
+  text-decoration: none;
   transition: border-color 0.25s, transform 0.2s ease, box-shadow 0.25s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 0 1px rgba(0,0,0,0.06);
 }
@@ -452,7 +452,7 @@ body, html {
   border-left: 4px solid var(--md-border);
   border-radius: 14px;
   padding: 1.15rem 1.25rem;
-  text-decoration: none !important;
+  text-decoration: none;
   transition: border-color 0.25s, transform 0.2s ease, box-shadow 0.25s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
@@ -525,10 +525,10 @@ body, html {
 }
 
 .premium-note {
-  font-size: 0.82rem !important;
-  color: rgba(255,255,255,0.5) !important;
-  margin-top: 0.75rem !important;
-  margin-bottom: 0 !important;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.75rem;
+  margin-bottom: 0;
 }
 
 /* ==========================================================
@@ -536,11 +536,11 @@ body, html {
    ========================================================== */
 
 .post-title {
-  font-size: clamp(1.4rem, 4vw, 1.95rem) !important;
-  font-weight: 800 !important;
-  line-height: 1.35 !important;
-  letter-spacing: -0.03em !important;
-  color: var(--md-navy) !important;
+  font-size: clamp(1.4rem, 4vw, 1.95rem);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
+  color: var(--md-navy);
 }
 
 .post-meta { font-size: 0.82rem; color: var(--md-muted); }
@@ -661,34 +661,34 @@ body, html {
 
 /* Auto-post classes */
 .lab-card {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
-  border: 1px solid var(--md-border) !important;
-  border-left: 4px solid var(--md-blue) !important;
-  border-radius: 0 14px 14px 0 !important;
-  padding: 1.5rem 1.75rem !important;
-  margin: 1.75rem 0 !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid var(--md-border);
+  border-left: 4px solid var(--md-blue);
+  border-radius: 0 14px 14px 0;
+  padding: 1.5rem 1.75rem;
+  margin: 1.75rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 .lab-formula-box {
-  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%) !important;
-  border: 1px solid var(--md-teal-bd) !important;
-  border-left: 4px solid var(--md-teal) !important;
-  border-radius: 0 14px 14px 0 !important;
-  padding: 1.5rem 1.75rem !important;
-  margin: 1.75rem 0 !important;
-  font-size: 0.95rem !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 1px solid var(--md-teal-bd);
+  border-left: 4px solid var(--md-teal);
+  border-radius: 0 14px 14px 0;
+  padding: 1.5rem 1.75rem;
+  margin: 1.75rem 0;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 .lab-graph-wrapper {
-  background: #f8fafc !important;
-  border: 1px solid var(--md-border) !important;
-  border-radius: 14px !important;
-  padding: 1.75rem !important;
-  margin: 2rem 0 !important;
+  background: #f8fafc;
+  border: 1px solid var(--md-border);
+  border-radius: 14px;
+  padding: 1.75rem;
+  margin: 2rem 0;
   overflow-x: auto;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 /* ==========================================================
@@ -759,7 +759,7 @@ body, html {
   border: 1px solid var(--md-border);
   border-radius: 12px;
   padding: 1.1rem 1.25rem;
-  text-decoration: none !important;
+  text-decoration: none;
   transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
@@ -832,10 +832,10 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 
 /* ── Post Description ────────────────────────────────────── */
 .post-description {
-  font-size: 1.0rem !important;
-  color: var(--md-muted) !important;
-  line-height: 1.75 !important;
-  margin-bottom: 0.5rem !important;
+  font-size: 1.0rem;
+  color: var(--md-muted);
+  line-height: 1.75;
+  margin-bottom: 0.5rem;
 }
 
 /* ── Post Footer wrapper ─────────────────────────────────── */
@@ -847,139 +847,139 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 
 /* ── Tags ────────────────────────────────────────────────── */
 .post-tags {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 6px !important;
-  margin-bottom: 1.5rem !important;
-  padding: 0 !important;
-  list-style: none !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  list-style: none;
 }
 
-.post-tags li { list-style: none !important; }
+.post-tags li { list-style: none; }
 
 .post-tags a {
-  display: inline-block !important;
-  background: var(--md-card) !important;
-  color: var(--md-muted) !important;
-  border: 1px solid var(--md-border) !important;
-  border-radius: 999px !important;
-  padding: 4px 14px !important;
-  font-size: 0.78rem !important;
-  font-weight: 500 !important;
-  text-decoration: none !important;
-  transition: border-color 0.15s, color 0.15s, background 0.15s !important;
+  display: inline-block;
+  background: var(--md-card);
+  color: var(--md-muted);
+  border: 1px solid var(--md-border);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
 
 .post-tags a:hover {
-  border-color: var(--md-blue) !important;
-  color: var(--md-blue) !important;
-  background: var(--md-blue-lt) !important;
+  border-color: var(--md-blue);
+  color: var(--md-blue);
+  background: var(--md-blue-lt);
 }
 
 /* ── Prev / Next Nav ─────────────────────────────────────── */
 /* 컨테이너 배경 제거 (PaperMod 다크 entry 색상 덮어쓰기) */
 .paginav {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 0.75rem !important;
-  margin: 2rem 0 1.5rem !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  overflow: visible !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 2rem 0 1.5rem;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
 }
 
 .paginav a {
-  display: flex !important;
-  flex-direction: column !important;
-  background: #ffffff !important;
-  border: 1.5px solid var(--md-border) !important;
-  border-radius: 12px !important;
-  padding: 1rem 1.25rem !important;
-  text-decoration: none !important;
-  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s !important;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
-  color: inherit !important;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1.5px solid var(--md-border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  color: inherit;
 }
 
 .paginav a:hover {
-  border-color: var(--md-blue) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(13,36,97,0.1) !important;
+  border-color: var(--md-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13,36,97,0.1);
 }
 
-.paginav .prev { align-items: flex-start !important; }
-.paginav .next { align-items: flex-end !important; text-align: right !important; }
+.paginav .prev { align-items: flex-start; }
+.paginav .next { align-items: flex-end; text-align: right; }
 
 .paginav span:first-child {
-  font-size: 0.82rem !important;
-  color: var(--md-blue) !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-  margin-bottom: 6px !important;
+  font-size: 0.82rem;
+  color: var(--md-blue);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .paginav span:last-child {
-  font-size: 0.88rem !important;
-  font-weight: 600 !important;
-  color: #1f2937 !important;
-  line-height: 1.5 !important;
-  display: -webkit-box !important;
-  -webkit-line-clamp: 2 !important;
-  -webkit-box-orient: vertical !important;
-  overflow: hidden !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* ── Share Buttons ───────────────────────────────────────── */
 .share-buttons {
-  display: flex !important;
-  gap: 6px !important;
-  flex-wrap: nowrap !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 1rem 0 0 !important;
-  margin: 0 !important;
-  list-style: none !important;
-  border-top: 1px solid var(--md-border) !important;
+  display: flex;
+  gap: 6px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid var(--md-border);
 }
 
-.share-buttons li { list-style: none !important; }
+.share-buttons li { list-style: none; }
 
 .share-buttons > span {
-  font-size: 0.82rem !important;
-  color: var(--md-muted) !important;
-  font-weight: 500 !important;
-  margin-right: 2px !important;
+  font-size: 0.82rem;
+  color: var(--md-muted);
+  font-weight: 500;
+  margin-right: 2px;
 }
 
 .share-buttons a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 40px !important;
-  height: 40px !important;
-  min-width: 0 !important;
-  border-radius: 8px !important;
-  background: #f8fafc !important;
-  border: 1px solid #e4e7ec !important;
-  color: #6b7280 !important;
-  text-decoration: none !important;
-  transition: all 0.15s !important;
-  flex-shrink: 1 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 0;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e4e7ec;
+  color: #6b7280;
+  text-decoration: none;
+  transition: all 0.15s;
+  flex-shrink: 1;
 }
 
 .share-buttons a:hover {
-  background: var(--md-blue) !important;
-  border-color: var(--md-blue) !important;
-  color: #ffffff !important;
-  transform: translateY(-1px) !important;
+  background: var(--md-blue);
+  border-color: var(--md-blue);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .share-buttons a svg {
-  width: 16px !important;
-  height: 16px !important;
-  fill: currentColor !important;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 /* ==========================================================
@@ -1074,24 +1074,24 @@ article.post-single .post-content {
 @media (max-width: 600px) {
   /* 이전/다음 → 모바일에서도 가로 병렬 유지 */
   .paginav {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 6px !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
   }
   .paginav a {
-    padding: 10px 12px !important;
-    min-height: auto !important;
-    flex-direction: column !important;
-    gap: 4px !important;
+    padding: 10px 12px;
+    min-height: auto;
+    flex-direction: column;
+    gap: 4px;
   }
   .paginav span:first-child {
-    font-size: 0.75rem !important;
+    font-size: 0.75rem;
   }
   .paginav span:last-child {
-    font-size: 0.82rem !important;
-    -webkit-line-clamp: 2 !important;
-    overflow: hidden !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
+    font-size: 0.82rem;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 
   /* H2/H3 font-size → custom-typography.css 768px/375px breakpoints에서 관리 */
@@ -1102,13 +1102,13 @@ article.post-single .post-content {
   .post-content tbody td { padding: 0.5rem 0.65rem !important; }
 
   /* 포스트 제목 */
-  .post-title { font-size: clamp(1.3rem, 5vw, 1.6rem) !important; word-break: keep-all; }
+  .post-title { font-size: clamp(1.3rem, 5vw, 1.6rem); word-break: keep-all; }
 
   /* 포스트 푸터 */
   .post-footer { margin-top: 2rem; }
 
   /* 태그 칩 크기 — 터치 타겟 보장 */
-  .post-tags a { font-size: 0.8rem !important; padding: 5px 14px !important; min-height: 32px; }
+  .post-tags a { font-size: 0.8rem; padding: 5px 14px; min-height: 32px; }
 }
 
 @media (max-width: 480px) {
@@ -1925,18 +1925,18 @@ body[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
     padding: 16px 16px;
   }
   .blog-cta-box__hook {
-    font-size: 0.95rem !important;
+    font-size: 0.95rem;
   }
   .blog-cta-box__desc {
     font-size: 0.85rem;
   }
   /* 모든 CTA 버튼: 모바일에서 full-width + 터치 타겟 48px */
   .blog-cta-box__btn {
-    display: block !important;
-    width: 100% !important;
+    display: block;
+    width: 100%;
     text-align: center;
-    padding: 14px 20px !important;
-    font-size: 0.95rem !important;
+    padding: 14px 20px;
+    font-size: 0.95rem;
     min-height: 48px;
     box-sizing: border-box;
   }

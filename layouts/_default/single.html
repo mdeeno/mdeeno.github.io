@@ -44,6 +44,9 @@
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
 
+    {{/* ── 인라인 광고: 본문과 CTA 사이 ── */}}
+    {{- partial "adsense_slot_inline.html" . }}
+
     {{/* ── 마무리 CTA: 본문 끝 후 (계산기 링크 통합) ── */}}
     {{- partial "cta_auto.html" . }}
 
