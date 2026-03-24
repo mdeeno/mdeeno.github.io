@@ -226,7 +226,7 @@
   color: #93c5fd;
 }
 [data-theme="dark"] .related-posts-item-desc {
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 
 /* ── 카테고리별 계산기 컨텍스트 링크 ────────────────────── */
@@ -294,7 +294,7 @@
   color: #60a5fa;
 }
 
-[data-theme="dark"] .calc-cta-desc { color: #94a3b8; }
+[data-theme="dark"] .calc-cta-desc { color: #cbd5e1; }
 [data-theme="dark"] .calc-cta-title { color: #4ade80; }
 
 @media (max-width: 480px) {
@@ -331,7 +331,7 @@
 }
 
 [data-theme="dark"] .blog-cta__calc-link a {
-  color: #9ca3af;
+  color: #cbd5e1;
 }
 
 [data-theme="dark"] .blog-cta__calc-link a:hover {

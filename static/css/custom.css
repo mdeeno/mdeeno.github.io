@@ -64,6 +64,8 @@ html[data-theme="dark"] {
   --md-subtle: #64748b;
   --md-blue-lt:#1e3a5f;
   --md-teal-lt:#064e3b;
+  --md-navy:   #93c5fd;
+  --md-blue-bd:#334155;
 
   /* PaperMod 핵심 변수도 다크 값으로 덮어쓰기 */
   --theme:      #0f172a;
@@ -1187,9 +1189,9 @@ article.post-single .post-content {
 html[data-theme="dark"] .post-content { color: #cbd5e1; }
 html[data-theme="dark"] .post-content h2 {
   background: rgba(29,111,232,0.1);
-  color: #60a5fa;
+  color: #93c5fd;
 }
-html[data-theme="dark"] .post-content h3 { color: #60a5fa; }
+html[data-theme="dark"] .post-content h3 { color: #93c5fd; }
 html[data-theme="dark"] .post-content blockquote {
   background: rgba(29,111,232,0.08);
   color: #cbd5e1;
@@ -1203,18 +1205,18 @@ html[data-theme="dark"] .post-content thead tr { background: #1e293b; }
 html[data-theme="dark"] .post-content thead th { color: #93c5fd; border-color: #334155; }
 html[data-theme="dark"] .post-content tbody tr { border-color: #1e293b; }
 html[data-theme="dark"] .post-content tbody tr:hover { background: #1e293b; }
-html[data-theme="dark"] .post-content tbody td { color: #94a3b8; }
+html[data-theme="dark"] .post-content tbody td { color: #cbd5e1; }
 html[data-theme="dark"] .post-content strong { color: #f1f5f9; }
 html[data-theme="dark"] .lab-card { background: #1e293b !important; border-color: #334155 !important; }
 html[data-theme="dark"] .lab-formula-box { background: #064e3b !important; border-color: #065f46 !important; }
 html[data-theme="dark"] .lab-graph-wrapper { background: #1e293b !important; border-color: #334155 !important; }
 html[data-theme="dark"] .post-title { color: #f1f5f9 !important; }
-html[data-theme="dark"] .post-description { color: #94a3b8 !important; }
+html[data-theme="dark"] .post-description { color: #cbd5e1 !important; }
 html[data-theme="dark"] .post-footer { border-color: #334155; }
 html[data-theme="dark"] .post-tags a {
   background: #1e293b !important;
   border-color: #334155 !important;
-  color: #94a3b8 !important;
+  color: #cbd5e1 !important;
 }
 html[data-theme="dark"] .post-tags a:hover {
   border-color: var(--md-blue) !important;
@@ -1238,7 +1240,7 @@ html[data-theme="dark"] .share-buttons {
 html[data-theme="dark"] .share-buttons a {
   background: #1e293b !important;
   border-color: #334155 !important;
-  color: #64748b !important;
+  color: #cbd5e1 !important;
 }
 html[data-theme="dark"] .share-buttons a:hover {
   background: var(--md-blue) !important;
@@ -1250,10 +1252,10 @@ html[data-theme="dark"] .toc {
   border-color: #334155;
 }
 html[data-theme="dark"] .toc details summary { color: #93c5fd; }
-html[data-theme="dark"] .toc a { color: #64748b; }
+html[data-theme="dark"] .toc a { color: #cbd5e1; }
 html[data-theme="dark"] .toc a:hover { color: #93c5fd; }
-html[data-theme="dark"] .breadcrumbs { color: #475569 !important; }
-html[data-theme="dark"] .breadcrumbs a { color: #64748b !important; }
+html[data-theme="dark"] .breadcrumbs { color: #cbd5e1 !important; }
+html[data-theme="dark"] .breadcrumbs a { color: #cbd5e1 !important; }
 html[data-theme="dark"] .breadcrumbs a:hover { color: #93c5fd !important; }
 
 /* ==========================================================
@@ -1384,7 +1386,7 @@ html[data-theme="dark"] .blog-cta--bottom .blog-cta__title {
   color: #93c5fd;
 }
 html[data-theme="dark"] .blog-cta--bottom .blog-cta__desc {
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 html[data-theme="dark"] .blog-cta--bottom .blog-cta__btn,
 html[data-theme="dark"] .blog-cta--top .blog-cta__btn {
@@ -1462,7 +1464,7 @@ html[data-theme="dark"] .blog-cta--top .blog-cta__btn {
 }
 
 [data-theme="dark"] .kakao-channel-cta__text span {
-  color: #9ca3af;
+  color: #d1d5db;
 }
 
 @media (max-width: 480px) {
@@ -1525,7 +1527,7 @@ html[data-theme="dark"] .blog-cta--top .blog-cta__btn {
 }
 
 [data-theme="dark"] .kakao-home-banner__text strong { color: #e2e8f0; }
-[data-theme="dark"] .kakao-home-banner__text span { color: #9ca3af; }
+[data-theme="dark"] .kakao-home-banner__text span { color: #d1d5db; }
 
 @media (max-width: 480px) {
   .kakao-home-banner { padding: 16px; }
@@ -1573,7 +1575,7 @@ html[data-theme="dark"] .post-content h3[id^="q"] {
 }
 html[data-theme="dark"] .post-content h3[id^="q"] + p {
   border-left-color: #334155;
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 
 /* ── 면책 조항 + 저작권 ──────────────────────── */
@@ -1598,10 +1600,10 @@ html[data-theme="dark"] .post-disclaimer {
   border-top-color: #374151;
 }
 html[data-theme="dark"] .post-disclaimer .disclaimer-text {
-  color: #9ca3af;
+  color: #cbd5e1;
 }
 html[data-theme="dark"] .post-disclaimer .copyright-text {
-  color: #6b7280;
+  color: #94a3b8;
 }
 
 /* ==========================================================
@@ -1715,7 +1717,7 @@ html[data-theme="dark"] .blog-cpa-box .blog-cpa__title {
   color: #e5e7eb;
 }
 html[data-theme="dark"] .blog-cpa-box .blog-cpa__desc {
-  color: #9ca3af;
+  color: #d1d5db;
 }
 html[data-theme="dark"] .blog-cpa__link--debt { color: #f87171; border-color: #f87171; }
 html[data-theme="dark"] .blog-cpa__link--loan { color: #60a5fa; border-color: #60a5fa; }
@@ -1812,7 +1814,7 @@ html[data-theme="dark"] .mdeeno-cpa--default {
   background: linear-gradient(135deg, #1e293b, #0f172a);
   border-color: #3b82f6;
 }
-html[data-theme="dark"] .mdeeno-cpa__desc { color: #94a3b8; }
+html[data-theme="dark"] .mdeeno-cpa__desc { color: #cbd5e1; }
 html[data-theme="dark"] .mdeeno-cpa--loan .mdeeno-cpa__hook { color: #4ade80; }
 html[data-theme="dark"] .mdeeno-cpa--report .mdeeno-cpa__hook { color: #a78bfa; }
 html[data-theme="dark"] .mdeeno-cpa--default .mdeeno-cpa__hook { color: #93c5fd; }
@@ -1897,14 +1899,14 @@ html[data-theme="dark"] .ad-cpa--moving {
   border-color: #16a34a;
 }
 html[data-theme="dark"] .ad-cpa--moving .ad-cpa__hook { color: #4ade80; }
-html[data-theme="dark"] .ad-cpa--moving .ad-cpa__desc { color: #94a3b8; }
+html[data-theme="dark"] .ad-cpa--moving .ad-cpa__desc { color: #cbd5e1; }
 
 html[data-theme="dark"] .ad-cpa--finance {
   background: linear-gradient(135deg, #451a03, #0f172a);
   border-color: #f59e0b;
 }
 html[data-theme="dark"] .ad-cpa--finance .ad-cpa__hook { color: #fbbf24; }
-html[data-theme="dark"] .ad-cpa--finance .ad-cpa__desc { color: #94a3b8; }
+html[data-theme="dark"] .ad-cpa--finance .ad-cpa__desc { color: #cbd5e1; }
 
 /* ── CPA Shortcode 반응형 ─── */
 @media (max-width: 600px) {
@@ -2007,7 +2009,7 @@ html[data-theme="dark"] .blog-cta-box__hook {
   color: #93c5fd;
 }
 html[data-theme="dark"] .blog-cta-box__desc {
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 html[data-theme="dark"] .blog-cta-box__btn {
   background: #3b82f6;
