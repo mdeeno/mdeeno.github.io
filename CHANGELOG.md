@@ -6,6 +6,16 @@
 
 ## 2026-03
 
+### 2026-03-25 (16)
+**[카카오 채널 CTA 포스트 본문 삽입 + 다크모드 제거]**
+- 668개 포스트에 카카오 채널 인라인 CTA 삽입 (5번째 H2 앞 배치)
+- 카카오 옐로우(#FEE500) 기반 인라인 스타일 + CSS 클래스 추가
+- 다크모드 시스템 차단 (hugo.toml disableThemeToggle, color-scheme: light)
+- 표 테두리 강화(#e2e8f0), 행 호버(#eff6ff), 모바일 반응형 개선
+- 포스트 내 링크 호버 효과 추가 (.post-content a:not([class]))
+- CTA 버튼 색상 보호 (.post-content a:not([class]) 셀렉터)
+- 관련 파일: `static/css/custom.css`, `hugo.toml`, `layouts/partials/extend_head.html`, `content/posts/**`
+
 ### 2026-03-24 (15)
 **[CTA 카테고리별 차별화 + Related Posts 자동 렌더링]**
 - top_cta.html / cta_auto.html: 5개 카테고리별 CTA 문구 분기 (재건축/시장/전략/세금/기본)
