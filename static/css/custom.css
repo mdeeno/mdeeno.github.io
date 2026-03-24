@@ -1705,6 +1705,10 @@ body[data-theme="dark"] .blog-cpa-box .blog-cpa__title {
 body[data-theme="dark"] .blog-cpa-box .blog-cpa__desc {
   color: #9ca3af;
 }
+body[data-theme="dark"] .blog-cpa__link--debt { color: #f87171; border-color: #f87171; }
+body[data-theme="dark"] .blog-cpa__link--loan { color: #60a5fa; border-color: #60a5fa; }
+body[data-theme="dark"] .blog-cpa__link--move { color: #fb923c; border-color: #fb923c; }
+body[data-theme="dark"] .blog-cpa__link--internet { color: #4ade80; border-color: #4ade80; }
 
 /* ── CPA Ad Boxes 반응형 ─── */
 @media (max-width: 600px) {
@@ -1783,6 +1787,24 @@ body[data-theme="dark"] .blog-cpa-box .blog-cpa__desc {
 .mdeeno-cpa--report .mdeeno-cpa__btn  { background: #7c3aed; }
 .mdeeno-cpa--default .mdeeno-cpa__btn { background: #2563eb; }
 
+/* ── M-DEENO CPA Dark Mode ─── */
+body[data-theme="dark"] .mdeeno-cpa--loan {
+  background: linear-gradient(135deg, #064e3b, #052e16);
+  border-color: #16a34a;
+}
+body[data-theme="dark"] .mdeeno-cpa--report {
+  background: linear-gradient(135deg, #2e1065, #1e1b4b);
+  border-color: #7c3aed;
+}
+body[data-theme="dark"] .mdeeno-cpa--default {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-color: #3b82f6;
+}
+body[data-theme="dark"] .mdeeno-cpa__desc { color: #94a3b8; }
+body[data-theme="dark"] .mdeeno-cpa--loan .mdeeno-cpa__hook { color: #4ade80; }
+body[data-theme="dark"] .mdeeno-cpa--report .mdeeno-cpa__hook { color: #a78bfa; }
+body[data-theme="dark"] .mdeeno-cpa--default .mdeeno-cpa__hook { color: #93c5fd; }
+
 /* ── Ad CPA Shortcode Boxes ─── */
 .ad-cpa {
   margin: 36px 0;
@@ -1856,6 +1878,21 @@ body[data-theme="dark"] .blog-cpa-box .blog-cpa__desc {
 .ad-cpa--finance .ad-cpa__hook    { color: #5d4037; }
 .ad-cpa--finance .ad-cpa__desc    { color: #6d4c41; }
 .ad-cpa--finance .ad-cpa__btn     { background: #f9a825; color: #212529; }
+
+/* ── Ad CPA Moving/Finance Dark Mode ─── */
+body[data-theme="dark"] .ad-cpa--moving {
+  background: linear-gradient(135deg, #064e3b, #0f172a);
+  border-color: #16a34a;
+}
+body[data-theme="dark"] .ad-cpa--moving .ad-cpa__hook { color: #4ade80; }
+body[data-theme="dark"] .ad-cpa--moving .ad-cpa__desc { color: #94a3b8; }
+
+body[data-theme="dark"] .ad-cpa--finance {
+  background: linear-gradient(135deg, #451a03, #0f172a);
+  border-color: #f59e0b;
+}
+body[data-theme="dark"] .ad-cpa--finance .ad-cpa__hook { color: #fbbf24; }
+body[data-theme="dark"] .ad-cpa--finance .ad-cpa__desc { color: #94a3b8; }
 
 /* ── CPA Shortcode 반응형 ─── */
 @media (max-width: 600px) {
