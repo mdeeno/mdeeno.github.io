@@ -572,14 +572,15 @@ html[data-theme="dark"] .home-hero {
 .post-content p { margin-bottom: 1.4rem; }
 
 /* 본문 내 링크 — 호버 시 밑줄 + 색상 변화 */
-.post-content a {
+/* CTA 버튼/배지 클래스는 제외 (색상 충돌 방지) */
+.post-content a:not([class]) {
   color: #1e40af;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-color: rgba(30, 64, 175, 0.3);
   transition: color 0.15s, text-decoration-color 0.15s;
 }
-.post-content a:hover {
+.post-content a:not([class]):hover {
   color: #1d6fe8;
   text-decoration-color: #1d6fe8;
 }
