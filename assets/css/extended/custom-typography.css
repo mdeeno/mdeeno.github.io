@@ -27,12 +27,6 @@
   line-height: 1.3;
   word-break: keep-all;
 }
-
-[data-theme="dark"] .post-content h2 {
-  color: #93c5fd;
-  border-bottom-color: #374151;
-}
-
 .post-content h2:first-of-type {
   margin-top: 1.5em;
 }
@@ -47,11 +41,6 @@
   line-height: 1.35;
   word-break: keep-all;
 }
-
-[data-theme="dark"] .post-content h3 {
-  color: #93c5fd;
-}
-
 /* === H4 — 서브 항목 === */
 .post-content h4 {
   font-size: 18px;
@@ -62,11 +51,6 @@
   line-height: 1.4;
   word-break: keep-all;
 }
-
-[data-theme="dark"] .post-content h4 {
-  color: #d1d5db;
-}
-
 /* === 리스트 === */
 .post-content ul,
 .post-content ol {
@@ -84,11 +68,6 @@
   font-weight: 700;
   color: #111827;
 }
-
-[data-theme="dark"] .post-content strong {
-  color: #f3f4f6;
-}
-
 /* === 인용 블록 === */
 .post-content blockquote {
   border-left: 4px solid #2563eb;
@@ -99,13 +78,6 @@
   font-size: 16px;
   color: #475569;
 }
-
-[data-theme="dark"] .post-content blockquote {
-  background: rgba(37, 99, 235, 0.08);
-  color: #94a3b8;
-  border-left-color: #3b82f6;
-}
-
 /* === 표 === */
 .post-content table {
   width: 100%;
@@ -121,21 +93,10 @@
   text-align: left;
   border-bottom: 2px solid #cbd5e1;
 }
-
-[data-theme="dark"] .post-content table th {
-  background: #1e293b;
-  border-bottom-color: #475569;
-}
-
 .post-content table td {
   padding: 8px 12px;
   border-bottom: 1px solid #e2e8f0;
 }
-
-[data-theme="dark"] .post-content table td {
-  border-bottom-color: #374151;
-}
-
 /* === 포스트 제목 === */
 .post-title {
   word-break: keep-all;
@@ -278,25 +239,6 @@
 .post-content blockquote + ul,
 .post-content blockquote + ol {
   margin-top: -0.5em;
-}
-
-/* === FAQ/차트 다크모드 === */
-[data-theme="dark"] .post-content details {
-  background: #1e293b;
-  border-color: #334155;
-}
-
-[data-theme="dark"] .post-content details summary {
-  color: #93c5fd;
-}
-
-[data-theme="dark"] .post-content details p {
-  color: #cbd5e1;
-}
-
-[data-theme="dark"] .lab-graph-wrapper {
-  background: #1e293b;
-  border-color: #334155;
 }
 
 /* === 모바일 인라인 CTA 버튼 강제 풀폭 (768px 이하) === */
