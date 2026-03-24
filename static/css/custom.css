@@ -571,6 +571,19 @@ html[data-theme="dark"] .home-hero {
 
 .post-content p { margin-bottom: 1.4rem; }
 
+/* 본문 내 링크 — 호버 시 밑줄 + 색상 변화 */
+.post-content a {
+  color: #1e40af;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(30, 64, 175, 0.3);
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.post-content a:hover {
+  color: #1d6fe8;
+  text-decoration-color: #1d6fe8;
+}
+
 .post-content h2 {
   /* font-size → custom-typography.css */
   font-weight: 800;
@@ -667,7 +680,7 @@ html[data-theme="dark"] .home-hero {
   border-bottom: 1px solid #e2e8f0;
   transition: background 0.1s;
 }
-.post-content tbody tr:hover { background: #f8fafc; }
+.post-content tbody tr:hover { background: #eff6ff; }
 .post-content tbody tr:last-child { border-bottom: none; }
 
 .post-content tbody td {
