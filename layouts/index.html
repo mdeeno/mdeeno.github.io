@@ -99,11 +99,11 @@
     fetch('https://mdeeno.goatcounter.com/counter/%2F.json')
       .then(function(r){return r.json();})
       .then(function(d){var el=document.getElementById('gc-total-visitors');if(el&&d.count)el.innerText=Number(d.count).toLocaleString();})
-      .catch(function(){});
+      .catch(function(){ var el=document.getElementById('gc-total-visitors');if(el)el.innerText='집계 중'; });
     fetch('https://mdeeno.goatcounter.com/counter/'+encodeURIComponent(location.pathname)+'.json')
       .then(function(r){return r.json();})
       .then(function(d){var el=document.getElementById('gc-today-visitors');if(el&&d.count)el.innerText=Number(d.count).toLocaleString();})
-      .catch(function(){});
+      .catch(function(){ var el=document.getElementById('gc-today-visitors');if(el)el.innerText='집계 중'; });
   })();
   </script>
 

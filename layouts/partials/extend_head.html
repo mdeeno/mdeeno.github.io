@@ -49,6 +49,22 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 {{- end -}}
 
+{{/* ── Schema.org JSON-LD (Organization — sameAs) ─────────────── */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "M-DEENO",
+  "url": "https://mdeeno.com",
+  "logo": "https://tech.mdeeno.com/images/logo.png",
+  "sameAs": [
+    "https://pf.kakao.com/_xmHdlX",
+    "https://tech.mdeeno.com",
+    "https://mdeeno.com"
+  ]
+}
+</script>
+
 {{/* ── Schema.org JSON-LD (Article) ──────────────────────────── */}}
 {{ if .IsPage }}
 <script type="application/ld+json">

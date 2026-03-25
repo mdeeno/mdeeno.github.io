@@ -58,6 +58,16 @@ canonifyURLs = true
     Title = "M-DEENO | 재건축·재개발 데이터 분석"
     Content = "재건축 분담금·수익률을 데이터로 분석합니다."
 
+  [[params.socialIcons]]
+    name = "kakaotalk"
+    url  = "https://pf.kakao.com/_xmHdlX"
+  [[params.socialIcons]]
+    name = "blog"
+    url  = "https://tech.mdeeno.com"
+  [[params.socialIcons]]
+    name = "website"
+    url  = "https://mdeeno.com"
+
   [params.cover]
     hidden = false
     hiddenInList = false
