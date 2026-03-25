@@ -1509,7 +1509,7 @@ article.post-single .post-content {
   padding: 16px 20px;
   background: #f8f9fa;
   border-radius: 8px;
-  border-left: 3px solid #94a3b8;
+  border-left: 3px solid #cbd5e1;
   text-align: left;
 }
 .post-disclaimer .disclaimer-text {
@@ -1520,7 +1520,7 @@ article.post-single .post-content {
 }
 .post-disclaimer .copyright-text {
   font-size: 0.8125rem;
-  color: #9ca3af;
+  color: #6b7280;
   margin: 0;
   text-align: center;
 }

@@ -1,6 +1,6 @@
 ---
 title: '스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치는 프리미엄 가치 분석 (SmartThings vs ThinQ)'
-date: 2026-01-26 23:54:18
+date: 2026-01-26T23:54:18+09:00
 draft: false
 categories: ['시장 분석']
 tags: ['스마트홈 아파트 프리미엄', '부동산투자', '재테크']
