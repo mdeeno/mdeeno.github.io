@@ -20,9 +20,9 @@
 {{- end -}}
 
 {{/* ── 카테고리별 CTA 문구 분기 ── */}}
-{{- $ctaText := "내 분담금 무료 분석하기 →" -}}
+{{- $ctaText := "내 분담금 추정하기 →" -}}
 {{- if or (in $cats "재건축/재개발") (in $cats "정비 사업") -}}
-  {{- $ctaText = "내 단지 분담금 위험도 무료 진단 →" -}}
+  {{- $ctaText = "내 분담금 추정하기 →" -}}
 {{- else if in $cats "시장 분석" -}}
   {{- $ctaText = "시세 변동이 내 분담금에 미치는 영향 확인 →" -}}
 {{- else if in $cats "투자 전략" -}}
@@ -32,8 +32,8 @@
 {{- end -}}
 
 <div class="blog-cta blog-cta--bottom">
-  <p class="blog-cta__title">내 단지는 안전할까?</p>
-  <p class="blog-cta__desc">공사비 10% 상승 시 분담금 최대 70% 증가 — 30초면 내 단지 위험도를 확인할 수 있습니다.</p>
+  <p class="blog-cta__title">내 분담금은 얼마일까?</p>
+  <p class="blog-cta__desc">단지명과 평형만 입력하면 예상 분담금을 자동으로 추정합니다. 30초면 완료.</p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=article&utm_campaign=auto_cta&utm_content={{ $slug }}"
      target="_blank"
      rel="noopener noreferrer"

@@ -2,14 +2,14 @@
 {{- $cats := .Params.categories -}}
 
 {{/* ── 카테고리별 상단 CTA 문구 분기 ── */}}
-{{- $topCtaStrong := "내 단지 분담금 위험도" -}}
-{{- $topCtaSuffix := "를 30초 만에 확인해 보세요." -}}
-{{- $topCtaLink   := "무료 진단 시작 →" -}}
+{{- $topCtaStrong := "내 분담금 자동 추정" -}}
+{{- $topCtaSuffix := ", 30초면 바로 계산됩니다." -}}
+{{- $topCtaLink   := "무료 추정 시작 →" -}}
 
 {{- if or (in $cats "재건축/재개발") (in $cats "정비 사업") -}}
-  {{- $topCtaStrong = "내 단지 분담금 위험도" -}}
-  {{- $topCtaSuffix = "를 30초 만에 확인해 보세요." -}}
-  {{- $topCtaLink   = "무료 진단 시작 →" -}}
+  {{- $topCtaStrong = "내 분담금 자동 추정" -}}
+  {{- $topCtaSuffix = ", 30초면 바로 계산됩니다." -}}
+  {{- $topCtaLink   = "무료 추정 시작 →" -}}
 {{- else if in $cats "시장 분석" -}}
   {{- $topCtaStrong = "시세 변동이 내 분담금에 미치는 영향" -}}
   {{- $topCtaSuffix = "을 확인해 보세요." -}}
