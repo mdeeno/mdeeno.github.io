@@ -1644,7 +1644,7 @@ article.post-single .post-content {
 
 /* ── 공정위 공시 ─── */
 .blog-disclosure {
-  font-size: 10px;
+  font-size: 0.8125rem;
   color: #ccc;
   margin-bottom: 10px;
   text-align: right;

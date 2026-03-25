@@ -10,14 +10,14 @@
 
     <div class="hero-search">
       <input type="text" id="hs-input" placeholder="단지명·키워드 검색 (예: 분담금, 은마)">
-      <button onclick="var q=document.getElementById('hs-input').value; if(q) location.href='/search/?q='+encodeURIComponent(q);">검색</button>
+      <button onclick="var q=document.getElementById('hs-input').value; if(q){typeof gtag!=='undefined'&&gtag('event','search',{event_category:'Engagement',search_term:q});location.href='/search/?q='+encodeURIComponent(q);}">검색</button>
     </div>
     <script>
       (function(){
         var el=document.getElementById('hs-input');
         if(window.innerWidth<=480) el.placeholder='단지명·키워드 검색';
         el.addEventListener('keydown',function(e){
-          if(e.key==='Enter'){var q=this.value;if(q)location.href='/search/?q='+encodeURIComponent(q);}
+          if(e.key==='Enter'){var q=this.value;if(q){typeof gtag!=='undefined'&&gtag('event','search',{event_category:'Engagement',search_term:q});location.href='/search/?q='+encodeURIComponent(q);}}
         });
       })();
     </script>

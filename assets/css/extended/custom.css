@@ -310,5 +310,8 @@
   color: #1e40af;
 }
 
+/* ── Footer / top-link 최소 폰트 오버라이드 (13px) ── */
+.footer, .top-link { font-size: 0.8125rem; }
+
 /* ── 모바일 paginav: static/css/custom.css 에서 통합 관리 ── */
 
