@@ -49,7 +49,7 @@
   color: #fff;
 }
 .lab-small-text {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   line-height: 1.5;
   color: #fff;
 }
@@ -115,7 +115,7 @@
 .lab-result-focus::after {
   /* content: '↓ 점수는 아래에서 확인됩니다'; */
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.8125rem;
   opacity: 0.4;
   margin-top: 8px;
 }
@@ -216,7 +216,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: #ccc;
   transition: all 0.3s;
   text-decoration: none;
@@ -240,7 +240,7 @@
   justify-content: space-between;
 }
 .lab-step-label {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: #999;
   width: 60px;
   text-align: center;
@@ -373,7 +373,7 @@
 }
 
 .email-note {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: #777;
   margin-top: 10px;
   line-height: 1.4;
@@ -478,7 +478,7 @@
 .topic-count {
   background: #eee;
   color: #333;
-  font-size: 0.7rem;
+  font-size: 0.8125rem;
   padding: 2px 7px;
   border-radius: 10px;
 }

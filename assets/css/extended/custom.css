@@ -285,7 +285,7 @@
 
 /* "이전 글" / "다음 글" 라벨 — PaperMod가 &laquo; / &raquo; 와 함께 출력 */
 .paginav .title {
-  font-size: 0.78rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;

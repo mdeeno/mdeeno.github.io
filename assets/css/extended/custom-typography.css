@@ -141,6 +141,13 @@
     font-size: 14px;
     display: block;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .post-content table th,
+  .post-content table td {
+    padding: 6px 8px;
+    white-space: nowrap;
   }
 }
 
@@ -213,7 +220,7 @@
 .post-content .calc-cta-box a {
   display: block;
   padding: 14px 24px;
-  min-height: 44px;
+  min-height: 48px;
   background: #1e40af;
   color: #fff !important;
   border-radius: 8px;
