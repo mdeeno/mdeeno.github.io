@@ -9,7 +9,7 @@
   {{- $calcURL   = "/calculators/calc_hold/" }}
   {{- $calcTitle = "🏠 보유세 계산기" }}
   {{- $calcDesc  = "재건축 전후 재산세·종부세 변화를 미리 계산해보세요." }}
-{{- else if or (in $cats "세금/정책") }}
+{{- else if in $cats "세금/정책" }}
   {{- $calcURL   = "/calculators/calc_transfer/" }}
   {{- $calcTitle = "💸 양도소득세 계산기" }}
   {{- $calcDesc  = "2026년 기준 양도세를 정확하게 시뮬레이션하세요." }}

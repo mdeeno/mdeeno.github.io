@@ -1,3 +1,4 @@
+{{- $slug := .File.BaseFileName -}}
 {{- $cats := .Params.categories -}}
 
 {{/* ── 카테고리별 상단 CTA 문구 분기 ── */}}
@@ -27,6 +28,9 @@
   <p class="blog-cta__text">
     <span class="blog-cta__icon">&#x1F449;</span>
     <strong>{{ $topCtaStrong }}</strong>{{ $topCtaSuffix }}
-    <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=top_cta" target="_blank" rel="noopener noreferrer" class="blog-cta__link">{{ $topCtaLink }}</a>
+    <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=top_cta&utm_campaign=top_cta&utm_content={{ $slug }}"
+       target="_blank" rel="noopener noreferrer"
+       onclick="typeof gtag !== 'undefined' && gtag('event', 'top_cta_click', {event_category: 'CTA', event_label: window.location.pathname})"
+       class="blog-cta__link">{{ $topCtaLink }}</a>
   </p>
 </div>
