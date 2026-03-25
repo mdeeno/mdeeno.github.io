@@ -1,7 +1,7 @@
 ---
 title: "재개발 보상금, 이것 모르면 수억 원 손해"
 date: 2026-03-08 04:32:45
-draft: false
+draft: true
 categories: ["정비 사업"]
 tags: ["재개발 보상금", "감정평가액 계산", "부동산투자", "데이터분석", "부동산SaaS"]
 image: "/images/chart-1772943515.png"

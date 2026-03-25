@@ -1,7 +1,7 @@
 ---
 title: "신용대출 5천만 원이 주담대 3억을 지운다"
 date: 2026-02-19 11:34:22
-draft: false
+draft: true
 categories:
 - 자산 전략
 tags:

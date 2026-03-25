@@ -1,7 +1,7 @@
 ---
 title: '2026 상속 주택 취득세 완벽 가이드: 다주택자 중과세 피하는 법과 M-DEENO 분석 엔진 분석'
 date: 2026-02-16 19:28:13
-draft: false
+draft: true
 categories:
 - 자산 전략
 tags:

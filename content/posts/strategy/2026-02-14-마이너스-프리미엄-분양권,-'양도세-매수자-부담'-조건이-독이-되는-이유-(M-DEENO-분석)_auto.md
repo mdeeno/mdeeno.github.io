@@ -1,7 +1,7 @@
 ---
 title: "마이너스 프리미엄 분양권, 양도세 매수자 부담 조건이 독이 되는 이유"
 date: 2026-02-14 20:42:58
-draft: false
+draft: true
 categories:
 - 자산 전략
 tags:

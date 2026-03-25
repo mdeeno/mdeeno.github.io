@@ -1,7 +1,7 @@
 ---
 title: "재개발 투자, 언제 들어가야 돈이 될까"
 date: 2026-03-08 05:02:10
-draft: false
+draft: true
 categories: ["정비 사업"]
 tags: ["재개발 단계", "재개발 절차", "부동산투자", "재건축리스크", "데이터분석"]
 image: "/images/chart-1772943151.png"

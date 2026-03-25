@@ -1,7 +1,7 @@
 ---
 title: "3%대 금리 진입, 고정 vs 변동 ‘유불리’의 임계점은"
 date: 2026-02-17 12:15:42
-draft: false
+draft: true
 categories:
 - 자산 전략
 tags:

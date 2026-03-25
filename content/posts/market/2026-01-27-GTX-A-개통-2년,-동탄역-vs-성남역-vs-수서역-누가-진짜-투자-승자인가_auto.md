@@ -1,7 +1,7 @@
 ---
 title: 'GTX-A 개통 2년, 동탄역 vs 성남역 vs 수서역: 누가 진짜 투자 승자인가?'
 date: 2026-01-27 22:53:34
-draft: false
+draft: true
 categories: ['시장 분석']
 tags: ['GTX-A 시세 상승률', '부동산투자', '재테크']
 image: "/images/og/og-11917514.png"

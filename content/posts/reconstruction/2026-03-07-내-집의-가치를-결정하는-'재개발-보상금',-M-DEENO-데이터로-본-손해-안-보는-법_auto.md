@@ -1,7 +1,7 @@
 ---
 title: "내 집의 가치를 결정하는 재개발 보상금 손해 안 보는 법"
 date: 2026-03-07 16:45:09
-draft: false
+draft: true
 categories: ["재건축/재개발"]
 tags: ["재개발 보상금", "감정평가액", "부동산투자", "분담금예측", "프롭테크"]
 image: "/images/chart-1772857261.png"
