@@ -2,6 +2,7 @@ baseURL = 'https://tech.mdeeno.com/'
 languageCode = 'ko-kr'
 title = 'M-DEENO | BLOG'
 theme = 'PaperMod'
+copyright = "© 2026 M-DEENO. All rights reserved."
 
 enableRobotsTXT = true
 canonifyURLs = true

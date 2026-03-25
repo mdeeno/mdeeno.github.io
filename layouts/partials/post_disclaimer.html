@@ -1,10 +1,17 @@
+{{- $showDisclaimer := true -}}
+{{- if isset .Params "disclaimer" -}}
+  {{- if eq .Params.disclaimer false -}}
+    {{- $showDisclaimer = false -}}
+  {{- end -}}
+{{- end -}}
+{{- if $showDisclaimer -}}
 <div class="post-disclaimer">
-  <p class="disclaimer-title"><strong>면책 조항 (Disclaimer)</strong></p>
-  <ul class="disclaimer-list">
-    <li>본 콘텐츠는 정보 제공 목적이며, <strong>투자 자문이 아닙니다.</strong></li>
-    <li>M-DEENO의 분석 및 계산 결과는 공개 데이터와 추정치에 기반하며, 실제 결과와 다를 수 있습니다.</li>
-    <li>투자 판단의 최종 책임은 본인에게 있으며, 중요한 의사결정 전 <strong>세무사·변호사·감정평가사 등 전문가 상담을 권장합니다.</strong></li>
-    <li>본 콘텐츠에 인용된 법령 및 수치는 작성 시점 기준이며, 이후 변경될 수 있습니다.</li>
-  </ul>
+  <p class="disclaimer-text">
+    본 콘텐츠는 정보 제공 목적으로 작성되었으며, 특정 투자나 거래를 권유하지 않습니다.
+    부동산 투자·재건축·세금 관련 의사결정은 반드시 전문가(공인중개사, 세무사, 변호사)와
+    상담 후 진행하시기 바랍니다. M-DEENO는 본 콘텐츠의 정확성을 보증하지 않으며,
+    이를 근거로 한 투자 손실에 대해 책임지지 않습니다.
+  </p>
   <p class="copyright-text">&copy; {{ now.Year }} M-DEENO. 무단 복제 및 재배포를 금합니다.</p>
 </div>
+{{- end -}}

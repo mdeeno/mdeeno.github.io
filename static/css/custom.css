@@ -1505,27 +1505,18 @@ article.post-single .post-content {
 
 /* ── 면책 조항 + 저작권 ──────────────────────── */
 .post-disclaimer {
-  margin-top: 48px;
-  padding: 20px 24px;
-  border-top: 1px solid #e2e8f0;
-  background: #f9fafb;
-  border-radius: 0 0 12px 12px;
+  margin-top: 2rem;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #94a3b8;
   text-align: left;
 }
-.post-disclaimer .disclaimer-title {
-  font-size: 0.875rem;
-  color: #475569;
-  margin: 0 0 10px;
-}
-.post-disclaimer .disclaimer-list {
-  padding-left: 1.2em;
-  margin: 0 0 12px;
-}
-.post-disclaimer .disclaimer-list li {
+.post-disclaimer .disclaimer-text {
   font-size: 0.8125rem;
-  color: #6b7280;
+  color: #64748b;
   line-height: 1.7;
-  margin-bottom: 4px;
+  margin: 0 0 12px;
 }
 .post-disclaimer .copyright-text {
   font-size: 0.8125rem;
