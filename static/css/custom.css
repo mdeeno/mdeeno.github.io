@@ -1117,7 +1117,7 @@ article.post-single .post-content {
   .post-footer { margin-top: 2rem; }
 
   /* 태그 칩 크기 — 터치 타겟 보장 */
-  .post-tags a { font-size: 0.8125rem; padding: 5px 14px; min-height: 32px; }
+  .post-tags a { font-size: 0.8125rem; padding: 8px 14px; min-height: 48px; display: inline-flex; align-items: center; }
 }
 
 @media (max-width: 480px) {
@@ -1506,20 +1506,32 @@ article.post-single .post-content {
 /* ── 면책 조항 + 저작권 ──────────────────────── */
 .post-disclaimer {
   margin-top: 48px;
-  padding-top: 20px;
+  padding: 20px 24px;
   border-top: 1px solid #e2e8f0;
-  text-align: center;
+  background: #f9fafb;
+  border-radius: 0 0 12px 12px;
+  text-align: left;
 }
-.post-disclaimer .disclaimer-text {
-  font-size: 0.82rem;
+.post-disclaimer .disclaimer-title {
+  font-size: 0.875rem;
+  color: #475569;
+  margin: 0 0 10px;
+}
+.post-disclaimer .disclaimer-list {
+  padding-left: 1.2em;
+  margin: 0 0 12px;
+}
+.post-disclaimer .disclaimer-list li {
+  font-size: 0.8125rem;
   color: #6b7280;
-  margin: 0 0 6px;
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 4px;
 }
 .post-disclaimer .copyright-text {
   font-size: 0.8125rem;
   color: #9ca3af;
   margin: 0;
+  text-align: center;
 }
 /* ==========================================================
    Blog Post — Calculator Button
