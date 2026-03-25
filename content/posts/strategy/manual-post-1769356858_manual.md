@@ -89,7 +89,7 @@ _(84㎡ 기준 / 2026년 1월 호가 기준)_
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -99,7 +99,7 @@ _(84㎡ 기준 / 2026년 1월 호가 기준)_
 
 경기 남부 교통 혁명의 주인공입니다. 과거 화물터미널 이미지를 벗고 3기 신도시와 함께 천지개벽 중입니다.
 
-- **Why Here?:** 의왕역 도보권의 유일한 **'신축 + 대단지(1,068세대)'**입니다. 덕성초를 품은 '초품아'에 왕송호수 공원까지, 실거주 만족도가 깡패입니다.
+- **Why Here?:** 의왕역 도보권의 대표적인 **'신축 + 대단지(1,068세대)'**입니다. 덕성초를 품은 '초품아'에 왕송호수 공원까지, 실거주 만족도가 깡패입니다.
 - **Investment:** 현재 **8억 중후반대**입니다. 인근 인덕원 퍼스비엘과 비교하면 여전히 가격 메리트가 확실합니다. 전세가율이 60% 선이라 갭 3억 중반이면 진입 가능합니다.
 
 ### 🥈 2. 가성비: 금정역 (산본 래미안 하이어스)
@@ -132,7 +132,7 @@ _(84㎡ 기준 / 2026년 1월 호가 기준)_
 >
 > 2026년 최신 DSR 규제를 반영한 대출 한도, 10초 만에 계산해보세요.
 >
-> 👉 **[📉 DSR 및 주택담보대출 계산기 돌려보기](https://tech.mdeeno.com/calculators/calc_dsr/)**
+> 👉 **[📉 DSR 및 주택담보대출 계산기 돌려보기](https://tech.mdeeno.com/calculators/calc_dsr/?utm_source=blog&utm_medium=post_cta)**
 
 ## 3. 결론: 기회는 준비된 자의 몫입니다
 
@@ -179,7 +179,7 @@ M-DEENO 분석 엔진으로 관심 단지의 재건축 분담금 위험도를 �
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

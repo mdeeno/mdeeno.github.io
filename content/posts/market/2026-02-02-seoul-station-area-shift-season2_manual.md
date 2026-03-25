@@ -27,7 +27,7 @@ image: '/images/seoul-shift-season2.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -57,8 +57,8 @@ image: '/images/seoul-shift-season2.png'
 
 용적률 상향은 호재지만, 기부채납 비율과 사업 속도를 반드시 따져봐야 합니다.
 
-- [🏠 재건축/재개발 취득세 계산기](https://tech.mdeeno.com/calculators/calc_tax/)
-- [💰 대출 한도 및 DSR 계산기](https://tech.mdeeno.com/calculators/calc_dsr/)
+- [🏠 재건축/재개발 취득세 계산기](https://tech.mdeeno.com/calculators/calc_tax/?utm_source=blog&utm_medium=post_cta)
+- [💰 대출 한도 및 DSR 계산기](https://tech.mdeeno.com/calculators/calc_dsr/?utm_source=blog&utm_medium=post_cta)
 
 
 <div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
@@ -109,7 +109,7 @@ image: '/images/seoul-shift-season2.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

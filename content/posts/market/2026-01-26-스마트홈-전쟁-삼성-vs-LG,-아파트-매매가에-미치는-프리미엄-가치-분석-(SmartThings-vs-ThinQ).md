@@ -32,7 +32,7 @@ aliases:
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -69,7 +69,7 @@ aliases:
 - **실제 연동률 확인:** 단순 '시스템 설치'가 아닌, 조명, 냉난방, 보안, 가전이 얼마나 유기적으로 연동되는지 현장 확인이 필수.
 - **유지보수 용이성:** 시스템 업데이트 및 오류 발생 시 건설사 또는 제조사의 A/S 정책이 명확한지 확인해야 장기 보유 리스크를 줄일 수 있음.
 - **미래 기술 대비:** 스마트홈 시스템의 가치는 빠르게 하락할 수 있으므로, 향후 5년 뒤에도 경쟁력을 유지할 수 있는 '개방형' 플랫폼(삼성 SmartThings가 장기 투자에 유리할 가능성 높음)을 선호하는 추세.
-- **대출 계획:** 투자 시 필요한 대출 한도는 [- **세금 계획:** 투자 수익 실현 시 [💸 양도소득세 계산기](https://tech.mdeeno.com/calculators/calc_transfer/)를 활용하여 매각 비용을 사전에 정확히 산출해야 합니다.
+- **대출 계획:** 투자 시 필요한 대출 한도는 [- **세금 계획:** 투자 수익 실현 시 [💸 양도소득세 계산기](https://tech.mdeeno.com/calculators/calc_transfer/?utm_source=blog&utm_medium=post_cta)를 활용하여 매각 비용을 사전에 정확히 산출해야 합니다.
 
 ### 🛑 스마트홈 아파트 프리미엄 투자, 아직도 고민만 하시나요?
 
@@ -113,7 +113,7 @@ aliases:
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

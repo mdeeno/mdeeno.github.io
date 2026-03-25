@@ -31,7 +31,7 @@ image: '/images/macquarie-vs-realty-income.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -55,8 +55,8 @@ image: '/images/macquarie-vs-realty-income.png'
 
 배당 소득이 일정 금액(2,000만 원)을 넘으면 금융소득종합과세 대상이 됩니다. 미리 계산해 보세요.
 
-- [💰 배당 소득 포함 내 연봉별 세금 계산하기](https://tech.mdeeno.com/calculators/calc_dsr/)
-- [💸 양도세 및 배당소득 절세 전략 확인하기](https://tech.mdeeno.com/calculators/calc_transfer/)
+- [💰 배당 소득 포함 내 연봉별 세금 계산하기](https://tech.mdeeno.com/calculators/calc_dsr/?utm_source=blog&utm_medium=post_cta)
+- [💸 양도세 및 배당소득 절세 전략 확인하기](https://tech.mdeeno.com/calculators/calc_transfer/?utm_source=blog&utm_medium=post_cta)
 
 
 <div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
@@ -109,7 +109,7 @@ ISA(개인종합자산관리계좌)나 연금저축 계좌를 활용하면 배�
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

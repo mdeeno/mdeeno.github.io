@@ -33,7 +33,7 @@ description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -122,7 +122,7 @@ description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
 
 ### 💰 대출 이자 계산기 활용 팁
 
-금리 인하가 실제로 나의 투자 여력에 미치는 영향을 확인하고 싶다면, [💰 대출 이자 계산기](https://tech.mdeeno.com/calculators/calc_interest/)를 활용하여 대출 금리 0.5%p 하락이 월 상환액에 미치는 변화를 시뮬레이션 해보시기 바랍니다. 리츠의 FFO 개선 효과를 간접적으로 이해하는 데 도움이 됩니다.
+금리 인하가 실제로 나의 투자 여력에 미치는 영향을 확인하고 싶다면, [💰 대출 이자 계산기](https://tech.mdeeno.com/calculators/calc_interest/?utm_source=blog&utm_medium=post_cta)를 활용하여 대출 금리 0.5%p 하락이 월 상환액에 미치는 변화를 시뮬레이션 해보시기 바랍니다. 리츠의 FFO 개선 효과를 간접적으로 이해하는 데 도움이 됩니다.
 
 ## 함께 읽으면 좋은 글
 
@@ -137,7 +137,7 @@ description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

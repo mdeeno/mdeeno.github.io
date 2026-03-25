@@ -27,7 +27,7 @@ image: '/images/geomdan-subway-2026.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -57,8 +57,8 @@ image: '/images/geomdan-subway-2026.png'
 
 대출 규제와 세금을 고려하지 않은 투자는 위험합니다. 계약 전 아래 계산기를 통해 정확한 자금 계획을 세워보세요.
 
-- [💰 내 연봉으로 대출 한도 계산하기](https://tech.mdeeno.com/calculators/calc_dsr/)
-- [🏠 취득세 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_tax/)
+- [💰 내 연봉으로 대출 한도 계산하기](https://tech.mdeeno.com/calculators/calc_dsr/?utm_source=blog&utm_medium=post_cta)
+- [🏠 취득세 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_tax/?utm_source=blog&utm_medium=post_cta)
 
 
 
@@ -104,7 +104,7 @@ image: '/images/geomdan-subway-2026.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

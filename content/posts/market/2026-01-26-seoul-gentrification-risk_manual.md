@@ -29,7 +29,7 @@ image: '/images/seoul-gentrification-2026.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -80,7 +80,7 @@ image: '/images/seoul-gentrification-2026.png'
 
 - **수익률 계산**: 최소 연 3.5% 이상의 임대 수익률이 확보되지 않는다면 매입 보류 권장.
 
-- **도구 활용**: [DSR 계산기 및 대출 한도 조회](https://tech.mdeeno.com/calculators/calc_dsr/)를 통해 자금 동원 능력을 체크하세요.
+- **도구 활용**: [DSR 계산기 및 대출 한도 조회](https://tech.mdeeno.com/calculators/calc_dsr/?utm_source=blog&utm_medium=post_cta)를 통해 자금 동원 능력을 체크하세요.
 
 
 <div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
@@ -152,7 +152,7 @@ Would you like me to generate a specific cash flow simulation for one of these a
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

@@ -37,7 +37,7 @@ description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -81,7 +81,7 @@ M-DEENO 데이터 랩은 정비 사업의 불확실성을 수치화하기 위해
 
 지금 매수나 매도를 고민하고 계신가요? 세금 리스크까지 고려한 정밀한 자산 설계가 필요한 시점입니다.
 
-[💸 양도소득세 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_transfer/)
+[💸 양도소득세 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_transfer/?utm_source=blog&utm_medium=post_cta)
 
 ### 💡 자주 묻는 질문 (FAQ)
 
@@ -113,7 +113,7 @@ A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

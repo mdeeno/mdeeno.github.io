@@ -81,7 +81,7 @@ image: '/images/2026-mortgage-timing.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -91,7 +91,7 @@ image: '/images/2026-mortgage-timing.png'
 
 자신의 소득과 부채 상황에 맞는 정확한 DSR 계산이 내 집 마련의 시작입니다.
 
-- [DSR 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_dsr/)
+- [DSR 계산기 바로가기](https://tech.mdeeno.com/calculators/calc_dsr/?utm_source=blog&utm_medium=post_cta)
 
 ### 4. 결론: 2026년 '지각비'를 내지 않는 법
 
@@ -147,7 +147,7 @@ image: '/images/2026-mortgage-timing.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

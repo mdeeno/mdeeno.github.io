@@ -26,7 +26,7 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -56,9 +56,9 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
 초기 재개발은 하이 리스크-하이 리턴입니다. '현금청산' 리스크를 반드시 피해야 합니다.
 
-- [🏠 취득세 (주택 수별 차등) 계산기](https://tech.mdeeno.com/calculators/calc_tax/)
-- [💰 소액 투자 자금 대출 한도 계산기](https://tech.mdeeno.com/calculators/calc_dsr/)
-- [⚠️ 권리산정기준일 확인하기 (현금청산 방지)](https://tech.mdeeno.com/calculators/calc_transfer/)
+- [🏠 취득세 (주택 수별 차등) 계산기](https://tech.mdeeno.com/calculators/calc_tax/?utm_source=blog&utm_medium=post_cta)
+- [💰 소액 투자 자금 대출 한도 계산기](https://tech.mdeeno.com/calculators/calc_dsr/?utm_source=blog&utm_medium=post_cta)
+- [⚠️ 권리산정기준일 확인하기 (현금청산 방지)](https://tech.mdeeno.com/calculators/calc_transfer/?utm_source=blog&utm_medium=post_cta)
 
 
 <div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
@@ -113,7 +113,7 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
