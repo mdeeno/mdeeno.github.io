@@ -1214,7 +1214,7 @@ article.post-single .post-content {
 
 .blog-cta--top .blog-cta__text {
   font-size: 0.95rem;
-  color: #78350f;
+  color: #451a03;
   margin: 0;
   line-height: 1.7;
 }
@@ -1224,7 +1224,7 @@ article.post-single .post-content {
 }
 
 .blog-cta--top .blog-cta__text strong {
-  color: #92400e;
+  color: #78350f;
   font-weight: 700;
 }
 
@@ -1308,7 +1308,7 @@ article.post-single .post-content {
    카카오톡 채널 CTA
    ========================================================== */
 .kakao-channel-cta {
-  margin: 16px 0 0;
+  margin: 32px 0 0;
   padding: 16px 20px;
   background: #fef9c3;
   border: 1.5px solid #facc15;
