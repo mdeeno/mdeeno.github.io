@@ -100,7 +100,7 @@ canonifyURLs = true
 
 [[menu.main]]
   identifier = "archives"
-  name = "전체 리포트"
+  name = "전체 글 보기"
   url = "/archives/"
   weight = 20
 

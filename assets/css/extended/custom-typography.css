@@ -138,16 +138,19 @@
   }
 
   .post-content table {
-    font-size: 14px;
+    font-size: 15px;
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
-  .post-content table th,
-  .post-content table td {
+  .post-content table th {
     padding: 6px 8px;
     white-space: nowrap;
+  }
+
+  .post-content table td {
+    padding: 6px 8px;
   }
 }
 

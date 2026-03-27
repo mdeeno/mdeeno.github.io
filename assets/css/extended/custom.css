@@ -168,8 +168,8 @@
 .calc-cta-box {
   margin: 28px 0;
   padding: 20px 24px;
-  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
-  border: 1.5px solid #bbf7d0;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1.5px solid #93c5fd;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
@@ -185,7 +185,7 @@
 .calc-cta-title {
   font-size: 0.92rem;
   font-weight: 700;
-  color: #15803d;
+  color: #1e40af;
   margin-bottom: 4px;
 }
 
@@ -199,7 +199,7 @@
   display: inline-block;
   padding: 14px 24px;
   min-height: 48px;
-  background: #16a34a;
+  background: #1e40af;
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
@@ -211,7 +211,7 @@
 }
 
 .calc-cta-btn:hover {
-  background: #15803d;
+  background: #1e3a8a;
 }
 
 @media (max-width: 480px) {
