@@ -7,6 +7,10 @@
 ## 2026-03
 
 ### 2026-03-27
+**[접근성] 20인 페르소나 테스트 Round 2 — 색상 대비 개선**
+- caption/설명 텍스트 #6b7684 → #4e5968 (WCAG AA 대비비 6.8:1)
+- 관련: custom-typography.css, custom.css
+
 **[접근성/UX] 10인 페르소나 타겟 테스트 P0+P1 수정**
 - 메뉴 "전체 리포트" → "전체 글 보기" (이투자 혼동 해소)
 - CTA 버튼 green → brand blue (#1e40af) 통일 (calc-cta-btn, calc-cta-box)
