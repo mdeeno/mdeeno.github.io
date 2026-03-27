@@ -7,6 +7,12 @@
 ## 2026-03
 
 ### 2026-03-27
+**[접근성/UX] 10인 페르소나 타겟 테스트 P0+P1 수정**
+- 메뉴 "전체 리포트" → "전체 글 보기" (이투자 혼동 해소)
+- CTA 버튼 green → brand blue (#1e40af) 통일 (calc-cta-btn, calc-cta-box)
+- 모바일 테이블 폰트 14px → 15px (65세+ 가독성)
+- 테이블 td white-space: nowrap 제거 (72세 가로 스크롤 장벽 해소)
+
 **[설정/전환율] 카카오 공유 SDK 키 설정 + 홈페이지 CTA UTM 파라미터 추가**
 - `hugo.toml`에 `kakao_js_key` 파라미터 추가 (카카오 공유 SDK JavaScript 키)
 - 블로그 홈페이지 CTA 3곳에 `utm_campaign`, `utm_content` 파라미터 추가 (hero / mvp-strip / premium-band)
