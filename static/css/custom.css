@@ -12,7 +12,7 @@
 .logo-text {
   font-size: 0.8125rem;
   font-weight: 700;
-  color: #6b7684;
+  color: #4e5968;
   letter-spacing: 0.08em;
 }
 
@@ -39,8 +39,8 @@
   --md-card:     #ffffff;
   --md-border:   #e4e7ec;
   --md-text:     #111827;
-  --md-muted:    #6b7280;
-  --md-subtle:   #9ca3af;
+  --md-muted:    #4b5563;
+  --md-subtle:   #6b7280;
 }
 
 /* ── PaperMod Light Mode Override ──────────────────────── */
@@ -963,7 +963,7 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
   border-radius: 8px;
   background: #f8fafc;
   border: 1px solid #e4e7ec;
-  color: #6b7280;
+  color: #4b5563;
   text-decoration: none;
   transition: all 0.15s;
   flex-shrink: 1;
@@ -1520,7 +1520,7 @@ article.post-single .post-content {
 }
 .post-disclaimer .copyright-text {
   font-size: 0.8125rem;
-  color: #6b7280;
+  color: #4b5563;
   margin: 0;
   text-align: center;
 }
@@ -1581,7 +1581,7 @@ article.post-single .post-content {
 .blog-cpa-box .blog-cpa__desc {
   margin-bottom: 15px;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #4b5563;
 }
 .blog-cpa__link {
   display: inline-block;
@@ -1636,7 +1636,7 @@ article.post-single .post-content {
 /* ── 공정위 공시 ─── */
 .blog-disclosure {
   font-size: 0.8125rem;
-  color: #ccc;
+  color: #6b7280;
   margin-bottom: 10px;
   text-align: right;
 }

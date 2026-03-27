@@ -1,0 +1,126 @@
+{{- define "main" }}
+<div class="not-found-wrap">
+  <div class="not-found-code">404</div>
+  <h1 class="not-found-title">페이지를 찾을 수 없습니다</h1>
+  <p class="not-found-desc">
+    요청하신 페이지가 삭제되었거나, 주소가 변경되었을 수 있습니다.<br>
+    아래 버튼으로 원하는 페이지로 이동해 주세요.
+  </p>
+  <div class="not-found-btns">
+    <a href="/" class="not-found-btn not-found-btn--home">홈으로 돌아가기</a>
+    <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=404&utm_campaign=recovery&utm_content=404_page"
+       target="_blank" rel="noopener noreferrer"
+       onclick="typeof gtag !== 'undefined' && gtag('event', '404_cta_click', {event_category: 'CTA', event_label: '404_page'})"
+       class="not-found-btn not-found-btn--calc">내 분담금 추정하기 →</a>
+  </div>
+  <div class="not-found-links">
+    <a href="/archives/">전체 글 보기</a>
+    <span class="not-found-sep">·</span>
+    <a href="/calculators/">무료 계산기</a>
+    <span class="not-found-sep">·</span>
+    <a href="/posts/reconstruction/">재건축 분석</a>
+  </div>
+</div>
+
+<style>
+.not-found-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.not-found-code {
+  font-size: clamp(80px, 15vw, 140px);
+  font-weight: 900;
+  color: #1e40af;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  opacity: 0.15;
+}
+.not-found-title {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 0.75rem;
+  word-break: keep-all;
+}
+.not-found-desc {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.7;
+  margin: 0 0 2rem;
+  max-width: 480px;
+  word-break: keep-all;
+}
+.not-found-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.not-found-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  min-height: 48px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+.not-found-btn--home {
+  background: #f1f5f9;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+}
+.not-found-btn--home:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+.not-found-btn--calc {
+  background: #1e40af;
+  color: #fff;
+  border: 1px solid #1e40af;
+}
+.not-found-btn--calc:hover {
+  background: #1e3a8a;
+  border-color: #1e3a8a;
+}
+.not-found-links {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+.not-found-links a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 600;
+}
+.not-found-links a:hover {
+  text-decoration: underline;
+}
+.not-found-sep {
+  margin: 0 8px;
+  color: #d1d5db;
+}
+@media (max-width: 480px) {
+  .not-found-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  .not-found-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .not-found-wrap {
+    padding: 2rem 1rem;
+  }
+}
+</style>
+{{- end }}
