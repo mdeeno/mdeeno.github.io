@@ -7,6 +7,13 @@
 ## 2026-03
 
 ### 2026-03-27
+**[UX/접근성] 404 페이지 생성 + 색상 대비 잔여분 수정**
+- 커스텀 404.html 생성 (홈으로 돌아가기 + 계산기 CTA + 보조 링크, 모바일 반응형)
+- static/css/custom.css: logo #6b7684→#4e5968, --md-muted→#4b5563, --md-subtle→#6b7280, disclosure #ccc→#6b7280
+- lab-style.css: 다크 배경 #777/#666/#888→#9ca3af (WCAG AA 대비)
+- post_views.html: 인라인 #888→#4b5563, 폰트 13px 보장
+- CTA 링크 전체 점검: mdeeno.com/member UTM 파라미터 일관성 확인 완료
+
 **[접근성] 20인 페르소나 테스트 Round 2 — 색상 대비 개선**
 - caption/설명 텍스트 #6b7684 → #4e5968 (WCAG AA 대비비 6.8:1)
 - 관련: custom-typography.css, custom.css
