@@ -6,6 +6,13 @@
 
 ## 2026-03
 
+### 2026-03-27
+**[설정/전환율] 카카오 공유 SDK 키 설정 + 홈페이지 CTA UTM 파라미터 추가**
+- `hugo.toml`에 `kakao_js_key` 파라미터 추가 (카카오 공유 SDK JavaScript 키)
+- 블로그 홈페이지 CTA 3곳에 `utm_campaign`, `utm_content` 파라미터 추가 (hero / mvp-strip / premium-band)
+- 퍼널 유입 경로별 전환 추적 정밀화
+- 관련 파일: `hugo.toml`, `layouts/index.html`
+
 ### 2026-03-25 (16)
 **[카카오 채널 CTA 포스트 본문 삽입 + 다크모드 제거]**
 - 668개 포스트에 카카오 채널 인라인 CTA 삽입 (5번째 H2 앞 배치)
