@@ -9,7 +9,7 @@
     <p class="hero-sub">내 단지 분담금, 30초면 자동 추정<br>의결권 행사 전에, 내 아파트 숫자부터 확인하세요</p>
 
     <div class="hero-search">
-      <input type="text" id="hs-input" placeholder="단지명·키워드 검색 (예: 분담금, 은마)">
+      <input type="text" id="hs-input" placeholder="단지명·키워드 검색 (예: 분담금, 은마)" aria-label="검색어 입력">
       <button onclick="var q=document.getElementById('hs-input').value; if(q){typeof gtag!=='undefined'&&gtag('event','search',{event_category:'Engagement',search_term:q});location.href='/search/?q='+encodeURIComponent(q);}">검색</button>
     </div>
     <script>

@@ -504,7 +504,7 @@ body, html {
 }
 
 .premium-band p {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.85);
   font-size: 0.9rem;
   line-height: 1.75;
   margin: 0 0 1.75rem;
@@ -512,7 +512,7 @@ body, html {
 
 .premium-note {
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.75);
   margin-top: 0.75rem;
   margin-bottom: 0;
 }

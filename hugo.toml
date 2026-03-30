@@ -5,7 +5,7 @@ theme = 'PaperMod'
 copyright = "© 2026 M-DEENO. All rights reserved."
 
 enableRobotsTXT = true
-canonifyURLs = true
+canonifyURLs = false
 
 [related]
   includeNewer = true
@@ -62,9 +62,6 @@ canonifyURLs = true
     name = "kakaotalk"
     url  = "https://pf.kakao.com/_xmHdlX"
   [[params.socialIcons]]
-    name = "blog"
-    url  = "https://tech.mdeeno.com"
-  [[params.socialIcons]]
     name = "website"
     url  = "https://mdeeno.com"
 
@@ -113,7 +110,7 @@ canonifyURLs = true
 [[menu.main]]
   identifier = "mvp"
   name = "📋 무료 분석 신청"
-  url = "https://mdeeno.com/member"
+  url = "https://mdeeno.com/member?utm_source=blog&utm_medium=nav_cta&utm_campaign=blog_nav"
   weight = 40
 
 [markup]

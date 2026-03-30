@@ -247,71 +247,8 @@
   color: #1e40af;
 }
 
-/* ── Prev/Next 포스트 네비게이션 ──────────────────────────── */
-.paginav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 32px 0 16px;
-  padding: 0;
-  border: none;
-}
-
-.paginav a {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 20px;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  background: #fff;
-  text-decoration: none;
-  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
-}
-
-.paginav a:hover {
-  border-color: #1e40af;
-  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.1);
-  transform: translateY(-2px);
-}
-
-.paginav a:first-child {
-  text-align: left;
-}
-
-.paginav a:last-child {
-  text-align: right;
-}
-
-/* "이전 글" / "다음 글" 라벨 — PaperMod가 &laquo; / &raquo; 와 함께 출력 */
-.paginav .title {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #1e40af;
-  margin: 0;
-}
-
-/* 포스트 제목 */
-.paginav span:not(.title) {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: #1e293b;
-  line-height: 1.45;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.paginav a:hover span:not(.title) {
-  color: #1e40af;
-}
+/* ── Prev/Next paginav: static/css/custom.css 에서 통합 관리 ── */
 
 /* ── Footer / top-link 최소 폰트 오버라이드 (13px) ── */
 .footer, .top-link { font-size: 0.8125rem; }
-
-/* ── 모바일 paginav: static/css/custom.css 에서 통합 관리 ── */
 
