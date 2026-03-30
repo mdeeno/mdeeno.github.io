@@ -7,6 +7,10 @@
 ## 2026-03
 
 ### 2026-03-30
+**[GA4] 스크롤 깊이 추적 추가**
+- `extend_footer.html`에 scroll_depth 이벤트 (25/50/75/100%)
+- requestAnimationFrame + passive listener로 성능 최적화
+
 **[본문 순화] 자극적 표현 625건 일괄 수정**
 - 대상: 315개 포스트 본문 텍스트 (title/description/aliases 미변경)
 - 세금 폭탄→세금 부담, 폭등→급등, 폭락→급락, 폭발적→급격한
