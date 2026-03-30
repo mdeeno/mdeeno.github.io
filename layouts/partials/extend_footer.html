@@ -7,3 +7,39 @@
   <span class="footer-legal__sep">·</span>
   <a href="mailto:mdeeno.official@gmail.com">문의하기</a>
 </div>
+
+{{/* 스크롤 깊이 추적 — 25/50/75/100% 도달 시 GA4 이벤트 */}}
+<script>
+(function(){
+  var fired = {};
+  var thresholds = [25, 50, 75, 100];
+  function getScrollPercent() {
+    var h = document.documentElement;
+    var b = document.body;
+    var st = h.scrollTop || b.scrollTop;
+    var sh = (h.scrollHeight || b.scrollHeight) - h.clientHeight;
+    return sh > 0 ? Math.round((st / sh) * 100) : 0;
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function() {
+      var pct = getScrollPercent();
+      for (var i = 0; i < thresholds.length; i++) {
+        var t = thresholds[i];
+        if (pct >= t && !fired[t]) {
+          fired[t] = true;
+          if (window.gtag) {
+            window.gtag('event', 'scroll_depth', {
+              percent: t,
+              page_path: window.location.pathname
+            });
+          }
+        }
+      }
+      ticking = false;
+    });
+  }, { passive: true });
+})();
+</script>
