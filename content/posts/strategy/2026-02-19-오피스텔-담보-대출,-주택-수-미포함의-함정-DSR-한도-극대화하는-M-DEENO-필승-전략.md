@@ -134,7 +134,7 @@ aliases:
 - [과천 재건축 P 10억의 함정](/posts/reconstruction/2026-02-23-과천-재건축-'P-10억'의-함정-M-DEENO가-분석한-탈출해야-할-사업성-최악-단지-감별/)
 
 <div class="blog-cta-box blog-cta-box--primary">
-  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__hook">⚠️ 공사비가 오르면, 내 분담금은 예상보다 훨씬 커질 수 있습니다</p>
   <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.

@@ -89,7 +89,7 @@ description: "미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로?
 
 
 <div class="blog-cta-box blog-cta-box--primary">
-  <p class="blog-cta-box__hook">⚠️ 공사비 10% 오르면, 내 분담금은 최대 7배 뜁니다</p>
+  <p class="blog-cta-box__hook">⚠️ 공사비가 오르면, 내 분담금은 예상보다 훨씬 커질 수 있습니다</p>
   <p class="blog-cta-box__desc">
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
