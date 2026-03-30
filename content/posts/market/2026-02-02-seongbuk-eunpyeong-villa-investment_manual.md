@@ -1,13 +1,12 @@
 ---
-title: '재개발 노후도 60% 완화! 성북구·은평구 빌라 투자 유망지 및 실전 전략'
+title: "재개발 노후도 60% 완화! 성북구·은평구 빌라 투자 유망지 및 실전 전략"
 date: 2026-02-01T00:00:00+09:00
 draft: false
 categories: ["시장 분석"]
-tags: ['재개발', '노후도완화', '성북구빌라', '은평구재개발', '소액투자']
-description: '서울시 재개발 구역 지정 요건이 노후도 60%로 완화되면서 성북구와 은평구의 빌라 밀집 지역이 기회의 땅으로 부상했습니다. 초기 재개발 후보지 TOP 3를 공개합니다.'
-image: '/images/seongbuk-eunpyeong-redevelopment.png'
+tags: ["재개발", "노후도완화", "성북구빌라", "은평구재개발", "소액투자"]
+description: "서울시 재개발 구역 지정 요건이 노후도 60%로 완화되면서 성북구와 은평구의 빌라 밀집 지역이 기회의 땅으로 부상했습니다. 초기 재개발 후보지 TOP 3를 공개합니다."
+image: "/images/seongbuk-eunpyeong-redevelopment.png"
 ---
-
 
 ## 🏗️ "낡은 빌라촌이 신축 아파트 단지로, 문턱이 낮아졌습니다"
 
@@ -26,7 +25,7 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -93,7 +92,7 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
 
 사업 지연 리스크가 가장 큽니다. 재개발 구역 지정부터 이주·착공까지 최소 7~10년 이상 소요되며, 조합 내 갈등이나 사업성 문제로 사업이 무산될 수도 있습니다. 장기 보유 각오와 충분한 자금 여력이 필수입니다.
 
-> **>
+> **
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.
 
 
@@ -113,7 +112,7 @@ image: '/images/seongbuk-eunpyeong-redevelopment.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

@@ -1,18 +1,11 @@
 ---
-title: '[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막?긴급 구출 매뉴얼'
+title: "[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막?긴급 구출 매뉴얼"
 date: 2026-03-04T10:19:22+09:00
 draft: false
-categories:
-- 정비 사업
-tags:
-- 부평 재개발 상가 쪼개기
-- 권리가액 산정
-- 부평 아파트 시세
-- 재개발 추가분담금
-- 입주권 리스크
+categories: ["재건축/재개발"]
+tags: ["부평 재개발 상가 쪼개기", "권리가액 산정", "부평 아파트 시세", "재개발 추가분담금", "입주권 리스크"]
 image: "/images/og/og-8fd5d4d1.png"
-description: '[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO 분석 엔진 긴급 구출 매뉴얼 -
-  M-DEENO 데이터 분석'
+description: "'[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO 분석 엔진 긴급 구출 매뉴얼 - M-DEENO 데이터 분석"
 ---
 
 <div class='lab-card'>부평 재개발 구역에서 성행하던 '상가 쪼개기'가 권리가액 급감이라는 부메랑으로 돌아오고 있습니다. M-DEENO 데이터 랩은 이번 사태의 본질을 분석하고, 소유주들이 실질적으로 대응할 수 있는 M-DEENO 분석 엔진 기반의 자산 방어 전략을 제시합니다.</div>
@@ -38,7 +31,7 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 무분별한 지분 쪼�
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -105,7 +98,7 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 무분별한 지분 쪼�
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

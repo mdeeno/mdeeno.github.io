@@ -1,11 +1,11 @@
 ---
-title: '강남 3구 로또 청약, 3인 가족은 포기? 2026년 예상 커트라인 및 필승 전략'
+title: "강남 3구 로또 청약, 3인 가족은 포기? 2026년 예상 커트라인 및 필승 전략"
 date: 2026-01-25T00:00:00+09:00
 draft: false
 categories: ["투자 전략"]
-tags: ['강남청약', '청약가점', '로또청약', '분양가상한제', '2026부동산']
-description: '2026년 강남 3구 분양 물량 확대에도 불구하고 예상 커트라인은 70점을 상회할 전망입니다. 주요 단지별 예상 점수와 저가점자 대안을 분석합니다.'
-image: '/images/2026-gangnam-cutoff.png'
+tags: ["강남청약", "청약가점", "로또청약", "분양가상한제", "2026부동산"]
+description: "2026년 강남 3구 분양 물량 확대에도 불구하고 예상 커트라인은 70점을 상회할 전망입니다. 주요 단지별 예상 점수와 저가점자 대안을 분석합니다."
+image: "/images/2026-gangnam-cutoff.png"
 ---
 
 2026년 강남 3구 청약 커트라인이 70점을 돌파할 것으로 예상되면서, 3인 가족 기준 최대 가점인 69점으로는 사실상 당첨이 불가능한 구조가 됐습니다. '우리 가족은 강남 청약을 영원히 포기해야 하나'라는 좌절감, 혼자 느끼시는 게 아닙니다. 이 글에서는 2026년 주요 단지별 예상 커트라인을 실수치로 분석하고, 가점이 낮은 분들이 선택할 수 있는 현실적인 대안 전략을 구체적으로 짚어드립니다.
@@ -19,7 +19,7 @@ image: '/images/2026-gangnam-cutoff.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -62,7 +62,7 @@ M-DEENO 분석 엔진에서 내 청약 가점과 목표 단지의 예상 커트�
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

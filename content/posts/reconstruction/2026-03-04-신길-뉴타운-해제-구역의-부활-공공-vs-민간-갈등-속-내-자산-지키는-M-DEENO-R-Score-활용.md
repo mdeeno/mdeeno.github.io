@@ -1,18 +1,11 @@
 ---
-title: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는'
+title: "신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는"
 date: 2026-03-04T10:22:43+09:00
 draft: false
-categories:
-- 정비 사업
-tags:
-- 신길뉴타운
-- 공공재개발
-- 민간재개발
-- 신길2구역
-- 신길15구역
+categories: ["재건축/재개발"]
+tags: ["신길뉴타운", "공공재개발", "민간재개발", "신길2구역", "신길15구역"]
 image: "/images/og/og-a5322352.png"
-description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법 - M-DEENO
-  데이터 분석'
+description: "'신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법 - M-DEENO 데이터 분석"
 ---
 
 <div class='lab-card'>과거 뉴타운에서 해제되며 침체기를 겪었던 신길동 일대가 다시 요동치고 있습니다. 공공재개발의 속도전과 민간재개발의 브랜드 가치 사이에서 소유주들의 셈법은 복잡해집니다. M-DEENO의 분석을 통해 리스크를 줄이고 자산 가치를 극대화하는 전략을 확인하세요.</div>
@@ -37,7 +30,7 @@ description: '신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -113,7 +106,7 @@ A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

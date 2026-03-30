@@ -2,18 +2,11 @@
 title: "선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 'Safety Score' 기반 저평가 단지 선별법"
 date: 2026-02-11T22:49:41+09:00
 draft: false
-categories:
-- 재건축/재개발
-tags:
-- 1기 신도시 선도지구
-- 재건축 사업성
-- 분당 재건축
-- 일산 재건축
-- 평촌 재건축 시세
+categories: ["세금/정책"]
+tags: ["1기 신도시 선도지구", "재건축 사업성", "분당 재건축", "일산 재건축", "평촌 재건축 시세"]
 image: "/images/og/og-04fe10a5.png"
-description: '선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 ''Safety Score'' 기반 저평가 단지 선별법'
+description: "선도지구 탈락은 끝이 아니다: 2차 지정을 노리는 ''Safety Score'' 기반 저평가 단지 선별법"
 ---
-
 
 1기 신도시 선도지구 지정 결과가 발표될 때마다, 탈락한 단지의 조합원들은 좌절합니다. "우리 단지는 끝난 건가?" 하는 불안감이 퍼집니다. 하지만 선도지구 지정은 1차로 끝나는 것이 아닙니다. 2차, 3차 지정이 예정되어 있으며, 1차 탈락 단지 중에서도 충분한 사업성을 가진 곳들이 있습니다.
 
@@ -50,7 +43,7 @@ M-DEENO 분석 엔진의 Safety Score는 재건축 단지의 사업성과 리스
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -105,7 +98,7 @@ M-DEENO 분석 엔진을 활용하면 내 단지의 Safety Score와 분담금 �
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

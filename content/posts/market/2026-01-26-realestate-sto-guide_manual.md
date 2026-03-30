@@ -2,10 +2,10 @@
 title: "2026 부동산 조각투자 STO 완벽 가이드: '천원 건물주'의 수익률 반전은 사실일까?"
 date: 2026-01-25T00:00:00+09:00
 draft: false
-categories: ['시장 분석']
-tags: ['부동산STO', '조각투자', '카사', '소유', '펀블', '재테크', '건물주']
-description: '2026년 법제화와 함께 폭발하는 STO 시장! 카사, 소유, 펀블 중 당신의 자산을 불려줄 최적의 플랫폼은 어디일까요?'
-image: '/images/2026-01-26-realestate-sto-analysis.png'
+categories: ["시장 분석"]
+tags: ["부동산STO", "조각투자", "카사", "소유", "펀블", "재테크", "건물주"]
+description: "2026년 법제화와 함께 폭발하는 STO 시장! 카사, 소유, 펀블 중 당신의 자산을 불려줄 최적의 플랫폼은 어디일까요?"
+image: "/images/2026-01-26-realestate-sto-analysis.png"
 ---
 
 "강남 빌딩의 주인이 되는 데 필요한 돈, 단돈 5,000원입니다."
@@ -79,7 +79,7 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -156,7 +156,7 @@ image: '/images/2026-01-26-realestate-sto-analysis.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

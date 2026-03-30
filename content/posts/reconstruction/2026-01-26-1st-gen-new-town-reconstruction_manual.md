@@ -3,17 +3,9 @@ title: "분당·일산 선도지구: '억' 소리 나는 분담금, 그래도 �
 date: 2026-01-25T00:00:00+09:00
 draft: false
 categories: ["재건축/재개발"]
-tags:
-  [
-    '분당재건축',
-    '일산재건축',
-    '선도지구',
-    '분담금',
-    '노후계획도시특별법',
-    '부동산투자',
-  ]
-description: '용적률 360%의 환상 뒤에 숨겨진 공사비 폭등의 현실. 분당 시범단지와 일산 강촌마을의 실제 예상 분담금과 미래 수익성을 데이터로 완벽하게 해부했습니다.'
-image: '/images/1st-gen-simulation.png'
+tags: ["분당재건축", "일산재건축", "선도지구", "분담금", "노후계획도시특별법", "부동산투자"]
+description: "용적률 360%의 환상 뒤에 숨겨진 공사비 폭등의 현실. 분당 시범단지와 일산 강촌마을의 실제 예상 분담금과 미래 수익성을 데이터로 완벽하게 해부했습니다."
+image: "/images/1st-gen-simulation.png"
 ---
 
 "용적률 500% 준다더라", "통합 재건축하면 분담금 없다더라."
@@ -89,7 +81,7 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -141,7 +133,7 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

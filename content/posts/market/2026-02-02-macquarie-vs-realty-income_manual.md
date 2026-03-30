@@ -1,11 +1,11 @@
 ---
-title: '은퇴자 배당주 대결! 맥쿼리인프라 vs 리얼티인컴(O) 수익률 및 안정성 완벽 비교'
+title: "은퇴자 배당주 대결! 맥쿼리인프라 vs 리얼티인컴(O) 수익률 및 안정성 완벽 비교"
 date: 2026-02-01T00:00:00+09:00
 draft: false
 categories: ["시장 분석"]
-tags: ['맥쿼리인프라', '리얼티인컴', '은퇴설계', '배당주투자', '월배당']
-description: '한국과 미국을 대표하는 배당주 1등, 맥쿼리인프라와 리얼티인컴을 정밀 비교합니다. 2026년 최신 배당 수익률과 은퇴자를 위한 최적의 포트폴리오 전략을 공개합니다.'
-image: '/images/macquarie-vs-realty-income.png'
+tags: ["맥쿼리인프라", "리얼티인컴", "은퇴설계", "배당주투자", "월배당"]
+description: "한국과 미국을 대표하는 배당주 1등, 맥쿼리인프라와 리얼티인컴을 정밀 비교합니다. 2026년 최신 배당 수익률과 은퇴자를 위한 최적의 포트폴리오 전략을 공개합니다."
+image: "/images/macquarie-vs-realty-income.png"
 ---
 
 배당 수익으로 노후를 설계하려다 잘못된 종목 선택 하나로 연간 수백만 원 손실을 입는 은퇴자가 매년 늘고 있으며, 환율 변동까지 겹치면 손실 폭은 순식간에 두 배로 불어납니다. 맥쿼리인프라와 리얼티인컴 중 어디에 자금을 넣어야 할지 결정을 내리지 못하고 계신 분들, 그 신중함이 오히려 옳은 태도입니다. 이 글에서는 2026년 최신 배당 수익률·세금 구조·환율 리스크까지 항목별로 정밀 비교해, 은퇴 포트폴리오에 실제로 적합한 선택지를 냉정하게 짚어드립니다.
@@ -31,7 +31,7 @@ image: '/images/macquarie-vs-realty-income.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -109,7 +109,7 @@ ISA(개인종합자산관리계좌)나 연금저축 계좌를 활용하면 배�
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

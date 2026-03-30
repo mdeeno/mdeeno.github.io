@@ -2,16 +2,10 @@
 title: "전세금 반환 대출 DSR 한도 초과"
 date: 2026-02-25T09:50:15+09:00
 draft: false
-categories:
-- 자산 전략
-tags:
-- 전세보증금 반환 대출 DSR 안보는곳
-- 부동산투자
-- 프롭테크
-- 데이터분석
-- 재테크
+categories: ["투자 전략"]
+tags: ["전세보증금 반환 대출 DSR 안보는곳", "부동산투자", "프롭테크", "데이터분석", "재테크"]
 image: "/images/og/og-d5df0e31.png"
-description: 전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P·2금융권 우회 실전 전략 - M-DEENO 데이터 분석
+description: "전세금 반환 대출 DSR 한도 초과? M-DEENO가 분석한 P2P·2금융권 우회 실전 전략 - M-DEENO 데이터 분석"
 aliases:
   - "/posts/strategy/전세금-반환-대출-DSR-한도-초과-M-DEENO가-분석한-P2P·2금융권-우회-실전-전략/"
 ---
@@ -34,7 +28,7 @@ DSR(총부채원리금상환비율)은 연간 소득 대비 전체 대출의 원
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -145,7 +139,7 @@ DSR 한도 초과로 전세금 반환 대출이 막혔을 때, 가장 먼저 전
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

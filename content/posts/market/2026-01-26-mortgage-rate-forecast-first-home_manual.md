@@ -2,10 +2,10 @@
 title: "2026년 주담대 7% 시대 생존법: 생애최초 주택 구입, 지금이 '지각비' 낼 마지막 기회인가?"
 date: 2026-01-25T00:00:00+09:00
 draft: false
-categories: ['시장 분석']
-tags: ['주택담보대출', '금리전망', '생애최초', '내집마련', '2026부동산']
-description: '주담대 상단 7% 진입과 서울 공급 부족이 맞물린 2026년, 무주택자를 위한 최적의 매수 타이밍과 자금 전략을 공개합니다.'
-image: '/images/2026-mortgage-timing.png'
+categories: ["시장 분석"]
+tags: ["주택담보대출", "금리전망", "생애최초", "내집마련", "2026부동산"]
+description: "주담대 상단 7% 진입과 서울 공급 부족이 맞물린 2026년, 무주택자를 위한 최적의 매수 타이밍과 자금 전략을 공개합니다."
+image: "/images/2026-mortgage-timing.png"
 ---
 
 지금 집을 사면 '영끌'의 늪에 빠지는 걸까요?
@@ -81,7 +81,7 @@ image: '/images/2026-mortgage-timing.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -147,7 +147,7 @@ image: '/images/2026-mortgage-timing.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

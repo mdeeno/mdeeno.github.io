@@ -1,11 +1,11 @@
 ---
-title: '인천 1호선 연장 개통! 검단신도시 101·102·103역 대장주 TOP 3와 현재 호가 분석'
+title: "인천 1호선 연장 개통! 검단신도시 101·102·103역 대장주 TOP 3와 현재 호가 분석"
 date: 2026-02-01T00:00:00+09:00
 draft: false
-categories: ["시장 분석"]
-tags: ['검단신도시', '인천1호선연장', '검단역세권', '부동산전망']
+categories: ["투자 전략"]
+tags: ["검단신도시", "인천1호선연장", "검단역세권", "부동산전망"]
 description: "인천 1호선 검단 연장선 개통으로 검단의 지도가 바뀌었습니다. 101역 금호어울림, 102역 제일풍경채, 103역 우미린 등 역세권 대장주들의 2026년 현재 호가와 투자 가치를 'M-DEENO'이 정밀 분석합니다."
-image: '/images/geomdan-subway-2026.png'
+image: "/images/geomdan-subway-2026.png"
 ---
 
 인천 1호선 검단 연장선 개통 이후 101·102·103역 인근 아파트 호가가 불과 3개월 만에 최대 15% 급등하며 실수요자들의 예산 계획이 통째로 무너졌습니다. '지금 들어가도 되는 건지, 이미 늦은 건 아닌지' — 이 판단 앞에서 망설이고 계신 분들이 적지 않으실 겁니다. 이 글에서는 101역 금호어울림, 102역 제일풍경채, 103역 우미린의 2026년 현재 호가와 입지 조건을 실거래 데이터 기반으로 냉정하게 분석합니다.
@@ -27,7 +27,7 @@ image: '/images/geomdan-subway-2026.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -104,7 +104,7 @@ image: '/images/geomdan-subway-2026.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

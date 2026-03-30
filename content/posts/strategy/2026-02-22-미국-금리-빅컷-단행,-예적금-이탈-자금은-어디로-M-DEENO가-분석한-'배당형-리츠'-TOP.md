@@ -2,17 +2,10 @@
 title: "미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로"
 date: 2026-02-22T21:44:38+09:00
 draft: false
-categories:
-- 자산 전략
-tags:
-- 금리 인하 리츠 전망
-- 배당형 리츠 추천
-- 부동산 자금 흐름
-- 미국 빅컷 수혜주
-- 부동산투자
+categories: ["투자 전략"]
+tags: ["금리 인하 리츠 전망", "배당형 리츠 추천", "부동산 자금 흐름", "미국 빅컷 수혜주", "부동산투자"]
 image: "/images/og/og-4515d9cf.png"
-description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? M-DEENO가 분석한 배당형 리츠 TOP 3 전략 - M-DEENO 데이터
-  분석
+description: "미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? M-DEENO가 분석한 배당형 리츠 TOP 3 전략 - M-DEENO 데이터 분석"
 ---
 
 <div class="lab-card">
@@ -38,7 +31,7 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -101,7 +94,7 @@ description: 미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로? 
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

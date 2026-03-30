@@ -1,11 +1,11 @@
 ---
-title: '스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치는 프리미엄 가치 분석 (SmartThings vs ThinQ)'
+title: "스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치는 프리미엄 가치 분석 (SmartThings vs ThinQ)"
 date: 2026-01-26T23:54:18+09:00
 draft: false
-categories: ['시장 분석']
-tags: ['스마트홈 아파트 프리미엄', '부동산투자', '재테크']
+categories: ["시장 분석"]
+tags: ["스마트홈 아파트 프리미엄", "부동산투자", "재테크"]
 image: "/images/og/og-7cf82ac0.png"
-description: '스마트홈 전쟁: 삼성 vs LG, 아파트 매매가에 미치는 프리미엄 가치 분석 (SmartThings vs ThinQ)'
+description: "단순한 편의 기능을 넘어, 스마트홈 시스템은 이제 아파트의 '숨겨진 프리미엄'으로 작용하고 있습니다. 특히 국내 양대 가전 거인인 삼성 스마트싱스(SmartThings)와 LG 씽큐(ThinQ)의 연동성이 아파트 매매가에 미치는 실질적인 가치를 분석합니다."
 aliases:
   - "/posts/market/스마트홈-전쟁-삼성-vs-LG,-아파트-매매가에-미치는-프리미엄-가치-분석-(SmartThings-vs-ThinQ)_auto/"
 ---
@@ -32,7 +32,7 @@ aliases:
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -91,7 +91,7 @@ aliases:
 
 기술 발전 속도가 빠르기 때문에 5~10년 후 시스템이 구식이 될 수 있습니다. 이 경우 월패드 교체나 시스템 업그레이드 비용이 발생하며, 개방형 플랫폼(SmartThings 등)이 업그레이드 비용을 절감하는 데 유리합니다.
 
-> **>
+> **
 > 개별 단지의 사업성 판단이나 투자 결정의 최종 근거로 사용하기에는 추가 검토가 필요합니다.
 
 
@@ -113,7 +113,7 @@ aliases:
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

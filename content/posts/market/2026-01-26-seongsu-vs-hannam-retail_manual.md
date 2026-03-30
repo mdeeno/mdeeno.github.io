@@ -1,11 +1,11 @@
 ---
-title: '성수동 vs 한남동, 팝업스토어 임대료 전쟁: 2026년 승자는?'
+title: "성수동 vs 한남동, 팝업스토어 임대료 전쟁: 2026년 승자는?"
 date: 2026-01-25T00:00:00+09:00
 draft: false
-categories: ['시장 분석']
-tags: ['성수동', '한남동', '팝업스토어', '리테일트렌드', '상업용부동산']
-description: '하루 대관료 1,500만 원 시대, 성수와 한남의 데이터 격차를 분석합니다.'
-image: '/images/2026-seongsu-hannam-rent-chart.png'
+categories: ["시장 분석"]
+tags: ["성수동", "한남동", "팝업스토어", "리테일트렌드", "상업용부동산"]
+description: "하루 대관료 1,500만 원 시대, 성수와 한남의 데이터 격차를 분석합니다."
+image: "/images/2026-seongsu-hannam-rent-chart.png"
 ---
 
 "하루 빌리는 데 1,500만 원이라고요?"
@@ -66,7 +66,7 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -121,7 +121,7 @@ image: '/images/2026-seongsu-hannam-rent-chart.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

@@ -1,19 +1,12 @@
 ---
-title: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)'
+title: "금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)"
 slug: "금리-인하기,-채권-ETF-vs-리츠-ETF-당신의-자산은-어디에-베팅해야-하는가-(TIGER-부동산인ᄑ"
 date: 2026-02-02T20:37:31+09:00
 draft: false
-categories:
-- 시장 분석
-tags:
-- 금리 인하기 투자 전략
-- 채권 ETF
-- 리츠 ETF
-- TIGER 부동산인프라고배당
-- 부동산투자
+categories: ["시장 분석"]
+tags: ["금리 인하기 투자 전략", "채권 ETF", "리츠 ETF", "TIGER 부동산인프라고배당", "부동산투자"]
 image: "/images/og/og-ce8dfd8d.png"
-description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중
-  분석)'
+description: "'금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)"
 ---
 
 # 금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가?
@@ -34,7 +27,7 @@ description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -138,7 +131,7 @@ description: '금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

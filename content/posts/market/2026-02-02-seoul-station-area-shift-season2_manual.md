@@ -1,11 +1,11 @@
 ---
-title: '서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가'
+title: "서울 역세권 장기전세 시즌2 시작! 용적률 500% 상향 수혜 단지 TOP 3와 현재 호가"
 date: 2026-02-01T00:00:00+09:00
 draft: false
-categories: ['세금/정책']
-tags: ['역세권장기전세', '서울시프트', '용적률500', '부동산투자', '재건축']
-description: '서울시가 역세권 장기전세주택(시프트) 운영기준을 개정하며 고밀 개발의 문을 열었습니다. 준주거지역 용적률 상향 수혜를 입을 핵심 후보 단지들의 현재 시세를 분석합니다.'
-image: '/images/seoul-shift-season2.png'
+categories: ["시장 분석"]
+tags: ["역세권장기전세", "서울시프트", "용적률500", "부동산투자", "재건축"]
+description: "서울시가 역세권 장기전세주택(시프트) 운영기준을 개정하며 고밀 개발의 문을 열었습니다. 준주거지역 용적률 상향 수혜를 입을 핵심 후보 단지들의 현재 시세를 분석합니다."
+image: "/images/seoul-shift-season2.png"
 ---
 
 서울시가 역세권 용적률을 최대 500%까지 허용하는 장기전세주택 시즌2를 공식화하면서, 수혜 단지의 호가가 한 달 새 5,000만 원 이상 뛰어오른 사례가 속출하고 있습니다. '이 단지가 해당되는지', '지금 들어가면 늦은 건지' — 이런 고민을 하루에도 수십 명씩 커뮤니티에서 털어놓고 있습니다. 이 글에서는 준주거지역 용적률 상향 수혜를 직접 받을 핵심 후보 단지 TOP 3와 현재 호가를 실거래 기준으로 짚어드립니다.
@@ -27,7 +27,7 @@ image: '/images/seoul-shift-season2.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -109,7 +109,7 @@ image: '/images/seoul-shift-season2.png'
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

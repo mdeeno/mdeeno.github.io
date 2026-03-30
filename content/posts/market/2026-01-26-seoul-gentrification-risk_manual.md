@@ -1,11 +1,11 @@
 ---
-title: '2026 서울 젠트리피케이션 위험 지도: 다음 성수동은 어디인가?'
+title: "2026 서울 젠트리피케이션 위험 지도: 다음 성수동은 어디인가?"
 date: 2026-01-25T00:00:00+09:00
 draft: false
-categories: ['시장 분석']
-tags: ['젠트리피케이션', '서울상권분석', '부동산투자']
-description: 'AI 데이터로 분석한 2026년 서울 젠트리피케이션 고위험 지역 TOP 5와 투자 전략. 성수동을 넘어설 다음 격전지를 공개합니다.'
-image: '/images/seoul-gentrification-2026.png'
+categories: ["시장 분석"]
+tags: ["젠트리피케이션", "서울상권분석", "부동산투자"]
+description: "AI 데이터로 분석한 2026년 서울 젠트리피케이션 고위험 지역 TOP 5와 투자 전략. 성수동을 넘어설 다음 격전지를 공개합니다."
+image: "/images/seoul-gentrification-2026.png"
 ---
 
 ### 2026년, 당신의 단골 가게가 사라질 준비를 하고 있습니까?
@@ -29,7 +29,7 @@ image: '/images/seoul-gentrification-2026.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -152,7 +152,7 @@ Would you like me to generate a specific cash flow simulation for one of these a
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

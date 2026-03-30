@@ -3,9 +3,9 @@ title: "신분당선 호매실 연장 착공! 수원 금곡·호매실동 '저�
 date: 2026-02-01T00:00:00+09:00
 draft: false
 categories: ["시장 분석"]
-tags: ['신분당선', '호매실연장', '수원부동산', '저평가아파트']
-description: '신분당선 광교~호매실 연장선이 2024년 10월 본격 착공하며 서수원 일대가 들썩이고 있습니다. 강남 40분 시대를 열어줄 호매실역 인근 저평가 단지 3곳을 선정했습니다.'
-image: '/images/homaesil-line-analysis.png'
+tags: ["신분당선", "호매실연장", "수원부동산", "저평가아파트"]
+description: "신분당선 광교~호매실 연장선이 2024년 10월 본격 착공하며 서수원 일대가 들썩이고 있습니다. 강남 40분 시대를 열어줄 호매실역 인근 저평가 단지 3곳을 선정했습니다."
+image: "/images/homaesil-line-analysis.png"
 ---
 
 신분당선 광교~호매실 연장선이 2024년 10월 착공을 확정하면서, 역세권 인근 단지 호가가 6개월 만에 5천만 원 이상 오른 곳도 나타나고 있습니다. '이미 늦은 건 아닐까' 싶으면서도 서수원 저평가 단지에 눈이 가는 분들, 이런 고민을 가진 분이 한둘이 아닐 겁니다. 이 글에서는 강남까지 40분대 접근이 가능해지는 호매실역 인근에서 아직 가격이 충분히 반영되지 않은 저평가 단지 TOP 3를 입지·시세·개발 호재 기준으로 정밀하게 분석해 드립니다.
@@ -27,7 +27,7 @@ image: '/images/homaesil-line-analysis.png'
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -112,7 +112,7 @@ M-DEENO 분석 엔진으로 지금 내 단지의 분담금 위험도를 직접 �
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>

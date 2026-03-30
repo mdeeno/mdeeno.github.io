@@ -2,16 +2,10 @@
 title: "오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는"
 date: 2026-02-19T11:37:32+09:00
 draft: false
-categories:
-- 자산 전략
-tags:
-- 오피스텔 담보 대출 금리 비교
-- 부동산투자
-- 데이터분석
-- 부동산SaaS
-- 재테크
+categories: ["투자 전략"]
+tags: ["오피스텔 담보 대출 금리 비교", "부동산투자", "데이터분석", "부동산SaaS", "재테크"]
 image: "/images/og/og-815f8e72.png"
-description: 오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는 M-DEENO 필승 전략 - M-DEENO 데이터 분석
+description: "오피스텔 담보 대출, 주택 수 미포함의 함정? DSR 한도 극대화하는 M-DEENO 필승 전략 - M-DEENO 데이터 분석"
 aliases:
   - "/posts/strategy/오피스텔-담보-대출,-주택-수-미포함의-함정-DSR-한도-극대화하는-M-DEENO-필승-전략/"
 ---
@@ -39,7 +33,7 @@ aliases:
 
 <div class="blog-cta-box blog-cta-box--secondary">
   <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     무료 분석하기 →
   </a>
@@ -145,7 +139,7 @@ aliases:
     내 단지는 얼마나 위험한지, 30초면 무료로 확인할 수 있습니다.<br>
     회원가입도 필요 없습니다.
   </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post?utm_source=blog&utm_medium=post_cta" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
     내 분담금 무료 분석하기 →
   </a>
