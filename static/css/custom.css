@@ -1550,6 +1550,9 @@ article.post-single .post-content {
   text-decoration: none !important;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+.blog-calc__btn strong {
+  color: #fff !important;
+}
 .blog-calc__btn:hover {
   background-color: #1e3a8a;
   color: #fff !important;
