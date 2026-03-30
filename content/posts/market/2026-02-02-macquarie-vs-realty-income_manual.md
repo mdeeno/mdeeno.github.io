@@ -29,14 +29,6 @@ image: "/images/macquarie-vs-realty-income.png"
 | **세금 혜택** | ISA 계좌 활용 시 극대화 | 연금저축/IRP 내 국내상장 ETF로 절세 |
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🚀 은퇴자를 위한 1등 배당주 정밀 분석
 
 #### 🥇 [수익률 대장] 맥쿼리인프라 (Macquarie Korea Infrastructure Fund)

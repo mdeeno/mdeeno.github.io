@@ -79,14 +79,6 @@ image: "/images/2026-mortgage-timing.png"
 - **주의사항**: 전매 제한 및 거주 의무 기간을 반드시 확인하고, 장기적인 자산 형성 관점에서 접근할 것.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 3. 나의 대출 한도 및 월 상환액 계산하기
 
 자신의 소득과 부채 상황에 맞는 정확한 DSR 계산이 내 집 마련의 시작입니다.

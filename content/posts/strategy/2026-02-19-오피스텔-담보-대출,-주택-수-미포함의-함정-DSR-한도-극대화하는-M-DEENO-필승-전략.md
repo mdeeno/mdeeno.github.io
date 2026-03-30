@@ -31,14 +31,6 @@ aliases:
 | 전세보증금 반환 대출 | 해당 없음 | O | O |
 | 자동차 할부 | 해당 없음 | O | 해당 없음 |
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ## 2. 오피스텔 보유 시 vs 미보유 시 대출한도 시뮬레이션
 
 구체적인 숫자로 확인해보겠습니다. 연소득 7,000만 원인 58세 조합원이 재건축 분담금 1억 5천만 원을 대출받아야 하는 상황을 가정합니다. DSR 한도는 40%입니다.

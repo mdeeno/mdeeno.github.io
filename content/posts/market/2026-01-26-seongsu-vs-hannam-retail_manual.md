@@ -64,14 +64,6 @@ image: "/images/2026-seongsu-hannam-rent-chart.png"
 <br>
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🥇 [대장주] 성수동: 글로벌 랜드마크 '팝업의 성지'
 
 - **상권 위상:** 단순 지역 상권을 넘어 아시아 시장의 '테스트베드' 브랜드화

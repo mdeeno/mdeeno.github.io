@@ -23,14 +23,6 @@ STO(Security Token Offering)는 실물 부동산을 기초 자산으로 발행�
 - **매각 차익 기대:** 건물을 최종 매각할 때 발생하는 시세 차익을 지분대로 분배.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🚀 국내 주요 부동산 STO 플랫폼 TOP 3 비교
 
 | 플랫폼 | 주요 타겟 및 특징 | 수수료 (매매 시) | 실제 상장 건물 예시 (현재 시세 반영) |

@@ -30,14 +30,6 @@ aliases:
 - 스마트홈 시스템 도입 비용은 통상적으로 분양가에 포함되지만, 그 이상의 프리미엄을 형성하여 투자 회수율(ROI)을 높이는 핵심 요소로 작용.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ## II. 삼성 스마트싱스 (SmartThings)의 투자 매력도
 
 - **개방형 생태계:** 삼성 가전 외에도 Matter 표준을 기반으로 수많은 타사 IoT 기기와의 연동이 용이하여, 입주민의 라이프스타일에 맞춘 확장성이 극대화됨.

@@ -25,14 +25,6 @@ image: "/images/geomdan-subway-2026.png"
 - **거래 활성화:** 개통 이후 역세권 신축 단지를 중심으로 실거래가가 전고점을 위협하고 있습니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🚀 신설 역세권별 핵심 대장주 TOP 3 분석
 
 #### 🥇 101역(아라역) 대장 : 금호어울림 센트럴

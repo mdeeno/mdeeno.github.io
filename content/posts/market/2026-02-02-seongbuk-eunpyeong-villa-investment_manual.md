@@ -23,14 +23,6 @@ image: "/images/seongbuk-eunpyeong-redevelopment.png"
 - **성북·은평의 특징:** 서울 내 대표적인 저층 주거지 밀집 지역으로, 이번 규제 완화의 최대 수혜지로 꼽힙니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🚀 성북구 & 은평구 초기 재개발 유망 후보지 분석
 
 #### 🥇 [성북구] 장위동 초기 구역 (장위 11·13구역 등 재추진지)

@@ -28,14 +28,6 @@ description: "'신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등
 그렇다면 지금 시점에서 어떤 방식이 내 자산에 더 유리할까요? 단순히 '빨리 된다'는 말만 믿고 동의서를 써주기엔 리스크가 너무 큽니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### M-DEENO 분석 엔진 기반 R-Score 활용법
 
 M-DEENO 데이터 랩은 정비 사업의 불확실성을 수치화하기 위해 **R-Score(Risk-Reward Score)** 모델을 개발했습니다.

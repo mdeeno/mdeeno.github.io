@@ -79,14 +79,6 @@ _(84㎡ 기준 / 시뮬레이션 추정치)_
 <br>
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🥇 1. 분당 시범단지 (삼성·한신): "왕관의 무게를 견뎌라"
 
 분당의 심장입니다. 학군(서현초·고), 상권(AK플라자), 교통(수인분당, GTX성남) 모든 것이 완벽한 **육각형 입지**입니다.

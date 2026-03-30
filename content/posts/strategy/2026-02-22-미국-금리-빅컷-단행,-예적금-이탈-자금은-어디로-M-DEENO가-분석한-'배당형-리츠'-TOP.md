@@ -29,14 +29,6 @@ description: "미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로?
 - **SK리츠**: SK서린빌딩, SK에너지 주유소 등 우량 임차인을 확보하여 배당의 **연속성**이 매우 높습니다. 분기 배당을 실시하므로 현금 흐름을 중시하는 투자자에게 적합합니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 리츠 자산과 연결된 실거래 시장의 움직임
 
 리츠가 보유한 자산 인근의 주거용 부동산 시장도 금리 인하의 직접적인 영향을 받고 있습니다. M-DEENO 데이터 랩이 분석한 주요 단지의 시세 흐름은 다음과 같습니다.

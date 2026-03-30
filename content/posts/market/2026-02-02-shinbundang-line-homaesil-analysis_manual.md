@@ -25,14 +25,6 @@ image: "/images/homaesil-line-analysis.png"
 - **저평가 국면:** 인근 영통구나 광교 대비 약 50~60% 수준의 시세를 유지하고 있어, 교통 호재 실현 시 가장 큰 상승폭이 기대되는 지역입니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🚀 신분당선 호매실역(예정) 인근 저평가 단지 TOP 3
 
 #### 🥇 [입지우수] 수원모아미래도센트럴타운 1단지

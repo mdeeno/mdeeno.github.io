@@ -17,14 +17,6 @@ image: "/images/2026-gangnam-cutoff.png"
 서초구나 강남구 인기 단지는 커트라인(합격선)이 70점대로 예상되어 당첨이 어려울 수 있습니다. 상대적으로 가점 장벽이 낮은 송파구의 소형 평수나 비선호 타입을 공략하는 것이 현실적입니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### Q2. 2026년 강남 3구 청약 가점은 어느 정도로 예상되나요?
 
 서초구는 최고 79점, 강남구는 74점, 송파구는 69점 내외로 높게 형성될 전망입니다. 시세 차익을 노린 고가점자들이 몰리면서 가점 인플레이션(점수가 계속 오르는 현상)이 지속될 것으로 보입니다.

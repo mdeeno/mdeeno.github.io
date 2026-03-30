@@ -41,14 +41,6 @@ M-DEENO 분석 엔진의 Safety Score는 재건축 단지의 사업성과 리스
 이 세 가지 요소를 종합적으로 분석하면, 1차 탈락 단지 중에서도 **2차 지정 확률이 높고 현재 시세가 저평가된 단지**를 걸러낼 수 있습니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ## 결론: 탈락이 곧 기회가 되는 단지는 따로 있다
 
 선도지구 1차 탈락은 끝이 아닙니다. 오히려 시장의 과잉 반응으로 저평가된 우량 단지를 선별할 수 있는 기회입니다. 다만 모든 탈락 단지가 2차에서 선정되는 것은 아니므로, 용적률 갭, 대지 지분 가치, 주민 동의율 추이를 데이터로 확인하는 것이 핵심입니다.

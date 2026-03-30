@@ -77,14 +77,6 @@ image: "/images/2026-01-26-realestate-sto-analysis.png"
 <br>
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🥇 [대장주] 카사 (Kasa): "압도적 안정성과 엑시트 데이터"
 
 카사는 대한민국 부동산 조각투자의 문을 연 상징적인 플랫폼입니다.

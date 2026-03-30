@@ -25,14 +25,6 @@ image: "/images/seoul-shift-season2.png"
 - **공급 방식:** 민간 사업자가 용적률 혜택을 받는 대신, 늘어난 용적률의 50%를 서울시가 매입하여 '장기전세주택'으로 공급합니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🚀 용적률 상향 및 고밀 개발 수혜 후보 단지 TOP 3
 
 #### 🥇 [영등포구] 신길 우성 1차 (신풍역 역세권)

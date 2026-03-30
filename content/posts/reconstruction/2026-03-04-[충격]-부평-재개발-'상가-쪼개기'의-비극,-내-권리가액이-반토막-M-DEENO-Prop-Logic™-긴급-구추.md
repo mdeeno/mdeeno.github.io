@@ -29,14 +29,6 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 무분별한 지분 쪼�
 위 단지들의 시세와 비교했을 때, 권리가액이 낮게 책정된 상가 소유주들은 과도한 추가 분담금 발생으로 인해 실제 수익성이 마이너스로 돌아설 위험이 큽니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### M-DEENO 분석 엔진 자산 가치 평가 공식
 
 권리가액이 왜 반토막 났는지 이해하려면 정비사업의 핵심 공식을 반드시 숙지해야 합니다.

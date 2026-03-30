@@ -78,14 +78,6 @@ _(84㎡ 기준 / 2026년 1월 호가 기준)_
 <br>
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ### 🥇 1. 대장주: 의왕역 (의왕장안지구 파크푸르지오)
 
 경기 남부 교통 혁명의 주인공입니다. 과거 화물터미널 이미지를 벗고 3기 신도시와 함께 천지개벽 중입니다.

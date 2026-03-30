@@ -24,14 +24,6 @@ description: "'금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
 - **부동산 (Real Estate/REITs):** 이자 비용 감소는 부동산 운영 주체(REITs)의 순영업소득(NOI)을 개선시키고, 자산 매입 시의 금융 비용 부담을 줄여 투자 활성화를 유도합니다.
 
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ## 2. 채권 ETF: 선행적 이익 실현 전략
 
 채권 ETF는 금리 인하 사이클 초기에 가장 빠르게 반응하는 자산입니다. 시장이 금리 인하를 예상하고 선반영하기 시작하면, 장기 채권 ETF의 가격은 즉각적으로 상승 탄력을 받습니다.

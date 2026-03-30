@@ -26,14 +26,6 @@ DSR(총부채원리금상환비율)은 연간 소득 대비 전체 대출의 원
 
 이미 DSR 40%를 초과한 상태입니다. 전세보증금 2억 원을 반환하기 위한 추가 대출은 1금융권에서 원천적으로 불가능합니다.
 
-<div class="blog-cta-box blog-cta-box--secondary">
-  <p class="blog-cta-box__hook">📊 내 아파트 분담금, 지금 바로 확인해보세요</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
-     class="blog-cta-box__btn">
-    무료 분석하기 →
-  </a>
-</div>
-
 ## 금융권별 DSR 적용 기준 비교
 
 DSR 규제는 금융권에 따라 적용 기준이 다릅니다. 이 차이를 이해하는 것이 우회 전략의 출발점입니다.
