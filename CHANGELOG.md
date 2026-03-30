@@ -6,6 +6,16 @@
 
 ## 2026-03
 
+### 2026-03-30
+**[콘텐츠] 포스트 769개 일괄 정리**
+- _auto 중복 파일 215개 삭제 (비_auto 파일 유지, 554개 잔존)
+- description == title이던 357개 포스트 description을 본문 기반 재생성 (120~160자)
+- frontmatter 더블쿼트 통일 + categories 디렉토리 매핑 (reconstruction→재건축/재개발, market→시장 분석 등)
+- 깨진 blockquote(> **>) 58개, 미닫힌 bracket 35개, 줄바꿈된 frontmatter 37개 수정
+- mdeeno.com/member CTA 링크 UTM 일괄 추가 (utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post)
+- 면책조항: Hugo partial(post_disclaimer.html)이 single.html에서 자동 삽입 확인 → 본문 추가 불필요
+- 관련: content/posts/**, scripts/bulk_cleanup.py
+
 ### 2026-03-27
 **[UX/접근성] 404 페이지 생성 + 색상 대비 잔여분 수정**
 - 커스텀 404.html 생성 (홈으로 돌아가기 + 계산기 CTA + 보조 링크, 모바일 반응형)
