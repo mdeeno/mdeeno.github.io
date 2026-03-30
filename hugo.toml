@@ -20,7 +20,7 @@ canonifyURLs = false
 
 # Google Analytics 4 — GA4 측정 ID를 아래에 입력하세요 (예: G-XXXXXXXXXX)
 [services.googleAnalytics]
-  ID = "G-77C1K4JKYP"
+  ID = "G-M9K66C8K2Y"
 
 [params]
   images = ["og-image.png"]
