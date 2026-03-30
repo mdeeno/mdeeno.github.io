@@ -1,0 +1,14 @@
+User-agent: *
+{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+Disallow:
+{{- else }}
+Disallow: /
+{{- end }}
+
+# RSS/XML 피드 크롤링 차단 (크롤 예산 보호)
+Disallow: /tags/*/index.xml
+Disallow: /categories/*/index.xml
+Disallow: /posts/*/index.xml
+Disallow: /index.xml
+
+Sitemap: {{ "sitemap.xml" | absURL }}
