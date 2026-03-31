@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-04
+
+### 2026-04-01
+**[접근성] 삼성인터넷 강제 다크모드 방어**
+- `extend_head.html`: color-scheme meta "light" → "only light"
+- `custom.css`: `@media (prefers-color-scheme: dark)` 블록 추가 — PaperMod 변수 강제 라이트 오버라이드
+- 배경: 삼성인터넷 브라우저가 `color-scheme: light`를 무시하고 다크모드 적용하는 현상 방어
+
+**[접근성] WCAG AA 색상 대비 + 터치타겟 일괄 수정**
+- custom.css: gc-views, share-buttons, hero-tag, mvp-strip, hbtn, disclaimer, blog-cpa, post-tags, ad-cpa 색상·터치타겟 수정
+- lab-style.css: lab-step-dot 44px, b2b-tag/topic-item 44px, clamp 최소 0.8125rem
+- post_meta.html: GoatCounter 인라인 스타일 제거 (CSS로 이관)
+- 200명 페르소나 테스트 ALL PASS
+
+---
+
 ## 2026-03
 
 ### 2026-03-30
