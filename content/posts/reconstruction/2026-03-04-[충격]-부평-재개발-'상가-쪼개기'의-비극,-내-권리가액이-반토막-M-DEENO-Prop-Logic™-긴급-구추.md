@@ -6,7 +6,8 @@ categories: ["재건축/재개발"]
 tags: ["부평 재개발 상가 쪼개기", "권리가액 산정", "부평 아파트 시세", "재개발 추가분담금", "입주권 리스크"]
 image: "/images/og/og-8fd5d4d1.png"
 description: "'[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막? M-DEENO 분석 엔진 긴급 구출 매뉴얼 - M-DEENO 데이터 분석"
----
+---<!-- inline-links-inserted -->
+
 
 <div class='lab-card'>부평 재개발 구역에서 성행하던 '상가 쪼개기'가 권리가액 급감이라는 부메랑으로 돌아오고 있습니다. M-DEENO은 이번 사태의 본질을 분석하고, 소유주들이 실질적으로 대응할 수 있는 M-DEENO 분석 엔진 기반의 자산 방어 전략을 제시합니다.</div>
 
@@ -46,7 +47,7 @@ M-DEENO 분석 엔진 알고리즘 분석에 따르면, 무분별한 지분 쪼�
 
 둘째, **추가 분담금 금융 전략**을 선제적으로 수립해야 합니다. 권리가액이 낮아진 만큼 대출 실행 가능 금액도 줄어들 수 있으므로 자금 조달 계획을 재점검하십시오.
 
-셋째, **현금청산 vs 입주권 유지**의 기로에서 M-DEENO 분석 엔진 시뮬레이션을 통해 어떤 선택이 세후 수익률 측면에서 유리한지 냉정하게 따져봐야 합니다.
+셋째, **[현금청산](/posts/reconstruction/2026-03-17-재건축-아파트-들고-있다가-현금청산-당하면-수억-날릴까/) vs 입주권 유지**의 기로에서 M-DEENO 분석 엔진 시뮬레이션을 통해 어떤 선택이 세후 수익률 측면에서 유리한지 냉정하게 따져봐야 합니다.
 
 
 <div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
