@@ -62,7 +62,7 @@
 /* ------- [수식 및 점수판] ------- */
 .lab-formula-box {
   background: var(--entry);
-  font-size: clamp(0.8rem, 4vw, 1.8rem) !important;
+  font-size: clamp(0.8125rem, 4vw, 1.8rem) !important;
   color: #eee;
   padding: 15px;
   border-radius: 12px;
@@ -73,7 +73,7 @@
 }
 /* 수학 공식 - 가변크기 적용 */
 .lab-formula-text {
-  font-size: clamp(0.8rem, 4vw, 1.8rem) !important;
+  font-size: clamp(0.8125rem, 4vw, 1.8rem) !important;
 
   background-color: #ffffffda;
   padding: 2px;
@@ -94,7 +94,7 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 .MJX-TEX {
-  font-size: clamp(0.8rem, 4vw, 1.8rem) !important;
+  font-size: clamp(0.8125rem, 4vw, 1.8rem) !important;
 }
 
 /* ------- [카드 및 입력창] ------- */
@@ -198,7 +198,7 @@
 .lab-stepper::before {
   content: '';
   position: absolute;
-  top: 15px;
+  top: 22px;
   left: 0;
   right: 0;
   height: 2px;
@@ -209,8 +209,8 @@
   position: relative;
   z-index: 2;
   background: #fff;
-  width: 30px;
-  height: 30px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 2px solid #eee;
   display: flex;
@@ -417,6 +417,9 @@
   font-size: 0.85rem;
   font-weight: 600;
   border: 1px solid rgba(52, 152, 219, 0.3);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* 버튼 위치 잡기 */
@@ -466,8 +469,9 @@
   border: 1px solid var(--border);
   text-decoration: none !important;
   font-size: 0.9rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  min-height: 44px;
   gap: 6px;
   transition: 0.2s;
 }

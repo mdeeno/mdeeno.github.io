@@ -184,7 +184,7 @@ body, html {
   color: var(--md-muted);
   border: 1px solid var(--md-border);
   border-radius: 999px;
-  padding: 4px 14px;
+  padding: 10px 14px;
   font-size: 0.82rem;
   font-weight: 500;
   text-decoration: none;
@@ -217,6 +217,7 @@ body, html {
   cursor: pointer;
   white-space: nowrap;
   border: none;
+  min-height: 44px;
 }
 .hbtn:hover {
   transform: translateY(-2px);
@@ -275,7 +276,7 @@ body, html {
   background: var(--md-blue);
   color: #fff !important;
   text-decoration: none !important;
-  padding: 7px 20px;
+  padding: 12px 20px;
   border-radius: 7px;
   font-size: 0.85rem;
   font-weight: 700;
@@ -811,7 +812,7 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
    GOATCOUNTER
    ========================================================== */
 
-#gc-views { font-size: 0.82em; color: var(--md-subtle); }
+#gc-views { font-size: 0.8125rem; color: #4b5563; }
 
 /* ==========================================================
    POST FOOTER — Tags / Prev-Next / Share
@@ -858,7 +859,9 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 .post-tags li { list-style: none; }
 
 .post-tags a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   background: var(--md-card);
   color: var(--md-muted);
   border: 1px solid var(--md-border);
@@ -957,8 +960,8 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   min-width: 0;
   border-radius: 8px;
   background: #f8fafc;
@@ -1514,7 +1517,7 @@ article.post-single .post-content {
 }
 .post-disclaimer .disclaimer-text {
   font-size: 0.8125rem;
-  color: #64748b;
+  color: #4b5563;
   line-height: 1.7;
   margin: 0 0 12px;
 }
@@ -1594,6 +1597,7 @@ article.post-single .post-content {
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s;
+  min-height: 44px;
 }
 .blog-cpa__link--debt {
   border: 1px solid #d32f2f;
@@ -1708,7 +1712,7 @@ article.post-single .post-content {
 .ad-cpa__sponsor {
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #adb5bd;
+  color: #6b7280;
   margin: 0 0 4px;
   letter-spacing: 0.05em;
 }
