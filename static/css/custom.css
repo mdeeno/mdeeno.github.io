@@ -614,6 +614,7 @@ body, html {
 
 .post-content code {
   background: #f3f4f6;
+  background-image: linear-gradient(#f3f4f6, #f3f4f6);
   border-radius: 4px;
   padding: 1px 6px;
   font-size: 0.88em;
@@ -634,6 +635,7 @@ body, html {
 
 .post-content thead tr {
   background: #f1f5f9;
+  background-image: linear-gradient(#f1f5f9, #f1f5f9);
 }
 
 .post-content thead th {
@@ -684,6 +686,7 @@ body, html {
 
 .lab-graph-wrapper {
   background: #f8fafc;
+  background-image: linear-gradient(#f8fafc, #f8fafc);
   border: 1px solid var(--md-border);
   border-radius: 14px;
   padding: 1.75rem;
@@ -896,6 +899,7 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
   display: flex;
   flex-direction: column;
   background: #ffffff;
+  background-image: linear-gradient(#ffffff, #ffffff);
   border: 1.5px solid var(--md-border);
   border-radius: 12px;
   padding: 1rem 1.25rem;
@@ -965,6 +969,7 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
   min-width: 0;
   border-radius: 8px;
   background: #f8fafc;
+  background-image: linear-gradient(#f8fafc, #f8fafc);
   border: 1px solid #e4e7ec;
   color: #4b5563;
   text-decoration: none;
@@ -1271,6 +1276,7 @@ article.post-single .post-content {
   padding: 14px 32px;
   min-height: 48px;
   background: #1e40af;
+  background-image: linear-gradient(#1e40af, #1e40af);
   color: #fff !important;
   font-weight: 700;
   font-size: 1rem;
@@ -1282,6 +1288,7 @@ article.post-single .post-content {
 
 .blog-cta__btn:hover {
   background: #1e3a8a;
+  background-image: linear-gradient(#1e3a8a, #1e3a8a);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(30, 64, 175, 0.25);
 }
@@ -1314,6 +1321,7 @@ article.post-single .post-content {
   margin: 32px 0 0;
   padding: 16px 20px;
   background: #fef9c3;
+  background-image: linear-gradient(#fef9c3, #fef9c3);
   border: 1.5px solid #facc15;
   border-radius: 12px;
 }
@@ -1351,6 +1359,7 @@ article.post-single .post-content {
   padding: 10px 20px;
   min-height: 44px;
   background: #fee500;
+  background-image: linear-gradient(#fee500, #fee500);
   color: #191919 !important;
   font-weight: 700;
   font-size: 0.9rem;
@@ -1364,6 +1373,7 @@ article.post-single .post-content {
 
 .kakao-channel-cta__btn:hover {
   background: #fdd800;
+  background-image: linear-gradient(#fdd800, #fdd800);
 }
 
 @media (max-width: 480px) {
@@ -1377,6 +1387,7 @@ article.post-single .post-content {
   margin: 28px 0;
   padding: 16px 20px;
   background: #FFF8E1;
+  background-image: linear-gradient(#FFF8E1, #FFF8E1);
   border: 1px solid #FEE500;
   border-radius: 10px;
   display: flex;
@@ -1402,6 +1413,7 @@ article.post-single .post-content {
   display: inline-block;
   padding: 8px 18px;
   background: #FEE500;
+  background-image: linear-gradient(#FEE500, #FEE500);
   color: #3C1E1E !important;
   font-weight: 700;
   font-size: 0.85rem;
@@ -1415,6 +1427,7 @@ article.post-single .post-content {
 
 .kakao-channel-inline__btn:hover {
   background: #fdd800;
+  background-image: linear-gradient(#fdd800, #fdd800);
 }
 
 @media (max-width: 480px) {
@@ -1427,6 +1440,7 @@ article.post-single .post-content {
   margin: 0 0 32px;
   padding: 20px 24px;
   background: #fef9c3;
+  background-image: linear-gradient(#fef9c3, #fef9c3);
   border: 1.5px solid #facc15;
   border-radius: 14px;
 }
@@ -1457,6 +1471,7 @@ article.post-single .post-content {
   padding: 12px 24px;
   min-height: 48px;
   background: #fee500;
+  background-image: linear-gradient(#fee500, #fee500);
   color: #191919 !important;
   font-weight: 700;
   font-size: 0.95rem;
@@ -1488,6 +1503,7 @@ article.post-single .post-content {
 /* FAQ Q 카드 스타일 */
 .post-content h3[id^="q"] {
   background: #f8fafc;
+  background-image: linear-gradient(#f8fafc, #f8fafc);
   border: 1px solid #e2e8f0;
   border-left: 4px solid #1e40af;
   border-radius: 0 10px 10px 0;
@@ -1511,6 +1527,7 @@ article.post-single .post-content {
   margin-top: 2rem;
   padding: 16px 20px;
   background: #f8f9fa;
+  background-image: linear-gradient(#f8f9fa, #f8f9fa);
   border-radius: 8px;
   border-left: 3px solid #cbd5e1;
   text-align: left;
@@ -1534,6 +1551,7 @@ article.post-single .post-content {
   margin: 30px 0;
   text-align: center;
   background-color: #f8f9fa;
+  background-image: linear-gradient(#f8f9fa, #f8f9fa);
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #e9ecef;
@@ -1546,6 +1564,7 @@ article.post-single .post-content {
 .blog-calc__btn {
   display: inline-block;
   background-color: #1e40af;
+  background-image: linear-gradient(#1e40af, #1e40af);
   color: #fff !important;
   padding: 15px 30px;
   border-radius: 50px;
@@ -1558,6 +1577,7 @@ article.post-single .post-content {
 }
 .blog-calc__btn:hover {
   background-color: #1e3a8a;
+  background-image: linear-gradient(#1e3a8a, #1e3a8a);
   color: #fff !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
@@ -1570,6 +1590,7 @@ article.post-single .post-content {
   margin: 40px 0;
   padding: 25px;
   background-color: #fff;
+  background-image: linear-gradient(#fff, #fff);
   border: 1px solid #eee;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.03);
@@ -1816,6 +1837,7 @@ article.post-single .post-content {
   margin: 32px 0;
   padding: 20px 24px;
   background: #f0f7ff;
+  background-image: linear-gradient(#f0f7ff, #f0f7ff);
   border: 1px solid #bfdbfe;
   border-radius: 10px;
 }
@@ -1839,6 +1861,7 @@ article.post-single .post-content {
 }
 .blog-cta-box__btn {
   background: #1e40af;
+  background-image: linear-gradient(#1e40af, #1e40af);
   color: #fff !important;
   font-weight: 700;
   border-radius: 8px;
@@ -1952,6 +1975,7 @@ article.post-single .post-content {
   /* ── 1) 루트 요소 배경/색상 고정 ── */
   html, body {
     background-color: #f5f7fa !important;
+    background-image: linear-gradient(#f5f7fa, #f5f7fa);
     color: #191f28 !important;
   }
 
@@ -2002,26 +2026,32 @@ article.post-single .post-content {
   /* ── 5) 특정 배경이 필요한 요소 — 명시적 색상 복원 ── */
   .main, .post-content {
     background-color: #f5f7fa !important;
+    background-image: linear-gradient(#f5f7fa, #f5f7fa);
     color: #191f28 !important;
   }
   .post-entry, .entry-content {
     background-color: #ffffff !important;
+    background-image: linear-gradient(#ffffff, #ffffff);
     color: #374151 !important;
   }
   .footer {
     background-color: #f8f8f8 !important;
+    background-image: linear-gradient(#f8f8f8, #f8f8f8);
     color: #4b5563 !important;
   }
   .mvp-strip {
     background-color: #0f1c3e !important;
+    background-image: linear-gradient(#0f1c3e, #0f1c3e);
     color: #ffffff !important;
   }
   .mvp-strip a, .hbtn-primary {
     background-color: #1a6bff !important;
+    background-image: linear-gradient(#1a6bff, #1a6bff);
     color: #ffffff !important;
   }
   .hbtn-blue {
     background-color: #1a6bff !important;
+    background-image: linear-gradient(#1a6bff, #1a6bff);
     color: #ffffff !important;
   }
   .hbtn-outline {
@@ -2033,6 +2063,7 @@ article.post-single .post-content {
   }
   .highlight, .highlight pre {
     background-color: #f1f5f9 !important;
+    background-image: linear-gradient(#f1f5f9, #f1f5f9);
     color: #374151 !important;
   }
 
