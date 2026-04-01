@@ -9,6 +9,11 @@
   gap: 6px;
 }
 
+/* 삼성인터넷 다크모드 방어: 로고에 흰색 후광 — 흰 배경에서는 안 보이고 어두운 배경에서 대비 제공 */
+.logo a img {
+  filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff) drop-shadow(0 0 6px #fff) !important;
+}
+
 .logo-text {
   font-size: 0.8125rem;
   font-weight: 700;
