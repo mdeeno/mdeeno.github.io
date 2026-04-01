@@ -1,6 +1,6 @@
 baseURL = 'https://tech.mdeeno.com/'
 languageCode = 'ko-kr'
-title = 'M-DEENO | BLOG'
+title = 'M-DEENO(엠디노) | BLOG'
 theme = 'PaperMod'
 copyright = "© 2026 M-DEENO. All rights reserved."
 
@@ -24,7 +24,7 @@ canonifyURLs = false
 
 [params]
   images = ["og-image.png"]
-  description = "재건축 분담금, 비례율, 용적률, 이주비 — M-DEENO가 데이터로 분석하는 정비사업 리스크 가이드"
+  description = "엠디노 — 재건축 분담금, 비례율, 용적률, 이주비를 데이터로 분석하는 정비사업 리스크 가이드"
   author = "M-DEENO Corp."
   env = "production"
   defaultTheme = "light"
@@ -58,8 +58,8 @@ canonifyURLs = false
     iconHeight = 24
 
   [params.homeInfoParams]
-    Title = "M-DEENO | 재건축·재개발 데이터 분석"
-    Content = "재건축 분담금·수익률을 데이터로 분석합니다."
+    Title = "M-DEENO(엠디노) | 재건축·재개발 데이터 분석"
+    Content = "엠디노 — 재건축 분담금·수익률을 데이터로 분석합니다."
 
   [[params.socialIcons]]
     name = "kakaotalk"
