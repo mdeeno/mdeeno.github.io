@@ -1931,7 +1931,10 @@ article.post-single .post-content {
   margin: 0 6px;
 }
 
-/* ── 삼성 인터넷 등 브라우저 강제 다크모드 방어 ── */
+/* ── 삼성 인터넷 등 브라우저 강제 다크모드 방어 ──
+   Samsung Internet 절전모드는 html/body뿐 아니라 개별 요소에도
+   background-color/color를 강제 주입한다.
+   모든 주요 요소에 inherit !important를 걸어 :root 값을 따르게 한다. ── */
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: only light !important;
@@ -1945,13 +1948,98 @@ article.post-single .post-content {
     --code-block-bg: #f1f5f9;
     --code-bg: #f1f5f9;
   }
-  html, body, .main, .post-content {
+
+  /* ── 1) 루트 요소 배경/색상 고정 ── */
+  html, body {
+    background-color: #f5f7fa !important;
+    color: #191f28 !important;
+  }
+
+  /* ── 2) 시맨틱 + 범용 HTML 요소 — inherit로 :root 강제 계승 ── */
+  header, nav, main, footer, section, article, aside,
+  div, p, span, h1, h2, h3, h4, h5, h6,
+  a, li, ul, ol, td, th, tr, table,
+  blockquote, pre, code, figcaption, figure, details, summary,
+  input, select, textarea, button,
+  label, fieldset, legend {
+    background-color: inherit !important;
+    color: inherit !important;
+    border-color: inherit !important;
+  }
+
+  /* ── 3) PaperMod 테마 클래스 ── */
+  .main, .post-content, .post-header, .post-title,
+  .post-entry, .entry-content, .entry-header,
+  .archive-entry, .archive-month,
+  .footer, .nav, .menu,
+  .post-meta, .post-tags, .post-tags a,
+  .pagination, .page-header,
+  .toc, .toc a,
+  .breadcrumbs, .breadcrumbs a,
+  .post-nav-links, .post-nav-links a,
+  .search-input, .search-results,
+  .highlight, .highlight pre, .highlight code,
+  .terms-tags a {
+    background-color: inherit !important;
+    color: inherit !important;
+    border-color: inherit !important;
+  }
+
+  /* ── 4) M-DEENO 커스텀 요소 ── */
+  .hero-section, .mvp-strip, .mvp-strip span, .mvp-strip strong,
+  .blog-cpa, .ad-cpa, .cta-link,
+  .share-buttons, .share-buttons li, .share-buttons span,
+  .disclaimer,
+  .lab-container, .lab-card,
+  .hbtn, .hbtn-primary, .hbtn-outline, .hbtn-blue, .hbtn-ghost, .hbtn-green,
+  .faq-item, .faq-question, .faq-answer,
+  .toc-wrapper, .risk-badge {
+    background-color: inherit !important;
+    color: inherit !important;
+    border-color: inherit !important;
+  }
+
+  /* ── 5) 특정 배경이 필요한 요소 — 명시적 색상 복원 ── */
+  .main, .post-content {
     background-color: #f5f7fa !important;
     color: #191f28 !important;
   }
   .post-entry, .entry-content {
     background-color: #ffffff !important;
     color: #374151 !important;
+  }
+  .footer {
+    background-color: #f8f8f8 !important;
+    color: #4b5563 !important;
+  }
+  .mvp-strip {
+    background-color: #0f1c3e !important;
+    color: #ffffff !important;
+  }
+  .mvp-strip a, .hbtn-primary {
+    background-color: #1a6bff !important;
+    color: #ffffff !important;
+  }
+  .hbtn-blue {
+    background-color: #1a6bff !important;
+    color: #ffffff !important;
+  }
+  .hbtn-outline {
+    background-color: transparent !important;
+    color: #191f28 !important;
+  }
+  .hbtn-ghost {
+    background-color: transparent !important;
+  }
+  .highlight, .highlight pre {
+    background-color: #f1f5f9 !important;
+    color: #374151 !important;
+  }
+
+  /* ── 6) 이미지/미디어 반전 방지 ── */
+  img, svg, video, canvas, picture, iframe {
+    filter: none !important;
+    mix-blend-mode: normal !important;
   }
 }
 

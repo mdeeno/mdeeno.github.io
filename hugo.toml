@@ -46,6 +46,9 @@ canonifyURLs = false
   adsense_slot_id_inline = ""
   adsense_active_date  = "2026-06-15"
 
+  [params.assets]
+    theme_color = "#f5f7fa"   # 라이트 배경 — 삼성 인터넷 다크모드 힌트 방지
+
   [params.analytics.google]
     SiteVerificationTag = "egpUo4dD8e73c7-Sgf7SNHoeFg6kOsPtJf6JoYGE6pw"
 
