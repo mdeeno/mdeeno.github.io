@@ -7,10 +7,18 @@
 ## 2026-04
 
 ### 2026-04-01
-**[접근성] 삼성인터넷 강제 다크모드 방어**
-- `extend_head.html`: color-scheme meta "light" → "only light"
-- `custom.css`: `@media (prefers-color-scheme: dark)` 블록 추가 — PaperMod 변수 강제 라이트 오버라이드
-- 배경: 삼성인터넷 브라우저가 `color-scheme: light`를 무시하고 다크모드 적용하는 현상 방어
+**[접근성] 삼성인터넷 강제 다크모드 — 수용 결정**
+- 3가지 접근 시도 후 실기기 전부 실패 → OS 기능으로 **수용**
+  - ① `color-scheme` 제거 + 캐너리 감지 스크립트 추가 (`extend_head.html`)
+  - ② `baseof.html`에 캐너리 div 추가
+  - ③ `custom.css`에 로고 drop-shadow 추가
+- 근본 원인: 삼성 절전모드는 GPU/렌더링 레벨 색상 교체 → CSS/JS 감지·방지 불가
+- 캐너리 스크립트·div는 잔존 (무해, 향후 SVG 전환 시 재활용 가능)
+
+**[SEO] "엠디노" 한글 브랜드 SEO 메타태그 추가**
+- `hugo.toml`: title, description, homeInfoParams에 `M-DEENO(엠디노)` 병기
+- `extend_head.html`: schema.org Organization에 `alternateName: "엠디노"` 추가
+- Google 재색인 1~2주 소요
 
 **[접근성] WCAG AA 색상 대비 + 터치타겟 일괄 수정**
 - custom.css: gc-views, share-buttons, hero-tag, mvp-strip, hbtn, disclaimer, blog-cpa, post-tags, ad-cpa 색상·터치타겟 수정
