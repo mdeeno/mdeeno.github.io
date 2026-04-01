@@ -1,6 +1,39 @@
 {{/* ── 라이트 모드 전용 ── */}}
 <meta name="supported-color-schemes" content="light only">
 
+{{/* ── 삼성인터넷 절전모드 다크모드 감지 (캐너리 방식) ── */}}
+<script>
+(function(){
+  // 캐너리: background-image 보호 없는 요소 → 삼성이 어둡게 바꾸면 감지
+  function checkDark(){
+    var c=document.getElementById('dark-canary');
+    if(!c)return false;
+    var bg=getComputedStyle(c).backgroundColor;
+    var m=bg.match(/\d+/g);
+    if(m){var r=+m[0],g=+m[1],b=+m[2];return r<100&&g<100&&b<100;}
+    return false;
+  }
+  function applyDark(){
+    var logo=document.getElementById('site-logo');
+    if(logo&&logo.dataset.dark){logo.src=logo.dataset.dark;}
+    document.documentElement.classList.add('samsung-dark');
+  }
+  function detect(){
+    // 1. 표준 미디어쿼리
+    if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches){applyDark();return;}
+    // 2. 캐너리 체크
+    if(checkDark()){applyDark();}
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',function(){
+      setTimeout(detect,300);setTimeout(detect,1000);setTimeout(detect,3000);
+    });
+  }else{
+    setTimeout(detect,300);setTimeout(detect,1000);setTimeout(detect,3000);
+  }
+})();
+</script>
+
 {{/* ── Preconnect (DNS warmup) ─────────────────────────────── */}}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
