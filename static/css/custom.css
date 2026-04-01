@@ -1960,7 +1960,6 @@ article.post-single .post-content {
    모든 주요 요소에 inherit !important를 걸어 :root 값을 따르게 한다. ── */
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: only light !important;
     --theme: #f5f7fa;
     --entry: #ffffff;
     --primary: #191f28;
