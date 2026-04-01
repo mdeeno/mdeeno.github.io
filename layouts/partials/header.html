@@ -19,11 +19,17 @@
                             {{- $img = $img.Resize "x30" }}
                         {{- end }}
                     {{- end }}
-                    <img src="{{ $img.Permalink }}" alt="{{ $label_text }}" aria-label="logo"
-                        height="{{- site.Params.label.iconHeight | default "30" -}}">
+                    <picture>
+                        <source srcset="/logo-white.png" media="(prefers-color-scheme: dark)">
+                        <img src="{{ $img.Permalink }}" alt="{{ $label_text }}" aria-label="logo"
+                            height="{{- site.Params.label.iconHeight | default "30" -}}">
+                    </picture>
                 {{- else }}
-                <img src="{{- site.Params.label.icon | absURL -}}" alt="{{ $label_text }}" aria-label="logo"
-                    height="{{- site.Params.label.iconHeight | default "30" -}}">
+                <picture>
+                    <source srcset="/logo-white.png" media="(prefers-color-scheme: dark)">
+                    <img src="{{- site.Params.label.icon | absURL -}}" alt="{{ $label_text }}" aria-label="logo"
+                        height="{{- site.Params.label.iconHeight | default "30" -}}">
+                </picture>
                 {{- end -}}
                 <span class="logo-text">{{- $label_text -}}</span>
                 {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
