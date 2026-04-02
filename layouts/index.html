@@ -87,7 +87,7 @@
     </div>
     <div class="stat-box">
       <div class="stat-n" id="gc-today-visitors">-</div>
-      <div class="stat-l">홈 조회수</div>
+      <div class="stat-l">오늘 방문자</div>
     </div>
     <div class="stat-box stat-box-highlight">
       <div class="stat-n">10<span>종</span></div>
@@ -96,14 +96,20 @@
   </div>
   <script>
   (function(){
-    fetch('https://mdeeno.goatcounter.com/counter/TOTAL.json')
+    fetch('https://prop-logic-engine-v2.onrender.com/v1/visitors')
       .then(function(r){return r.json();})
-      .then(function(d){var el=document.getElementById('gc-total-visitors');if(el&&d.count)el.innerText=Number(d.count).toLocaleString();})
-      .catch(function(){ var el=document.getElementById('gc-total-visitors');if(el)el.innerText='집계 중'; });
-    fetch('https://mdeeno.goatcounter.com/counter/%2F.json')
-      .then(function(r){return r.json();})
-      .then(function(d){var el=document.getElementById('gc-today-visitors');if(el&&d.count)el.innerText=Number(d.count).toLocaleString();})
-      .catch(function(){ var el=document.getElementById('gc-today-visitors');if(el)el.innerText='집계 중'; });
+      .then(function(d){
+        var totalEl=document.getElementById('gc-total-visitors');
+        var todayEl=document.getElementById('gc-today-visitors');
+        if(totalEl&&d.total!=null)totalEl.innerText=Number(d.total).toLocaleString();
+        if(todayEl&&d.today!=null)todayEl.innerText=Number(d.today).toLocaleString();
+      })
+      .catch(function(){
+        var totalEl=document.getElementById('gc-total-visitors');
+        var todayEl=document.getElementById('gc-today-visitors');
+        if(totalEl)totalEl.innerText='집계 중';
+        if(todayEl)todayEl.innerText='집계 중';
+      });
   })();
   </script>
 
