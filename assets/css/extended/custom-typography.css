@@ -154,6 +154,11 @@
   }
 }
 
+/* === H6 최소 폰트 (PaperMod post-single.css 12px → 13px) === */
+.post-content h6 {
+  font-size: 0.8125rem;
+}
+
 /* === FAQ 스타일 === */
 .post-content .faq-section h3,
 .post-content h3:has(+ ul),

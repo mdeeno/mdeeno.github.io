@@ -1,25 +1,30 @@
 {{/*
   FAQ Schema (FAQPage JSON-LD)
-  Detects ### Q patterns in page content and generates structured data.
+  Detects Q patterns in page content and generates structured data.
   Patterns matched:
-    ### Q1. Question text
-    ### Q2. Question text
+    ### Q1. Question text           (h3 heading)
+    ### **Q1. Question text**       (h3 heading with bold)
+    **Q1. Question text**           (bold paragraph, no heading)
     etc.
-  The answer is the paragraph(s) immediately following the question heading.
+  The answer is the paragraph(s) immediately following the question line.
 */}}
 {{- if .IsPage -}}
 {{- $content := .RawContent -}}
-{{- $hasFAQ := findRE `(?m)^###\s+Q\d+\.\s+.+` $content -}}
-{{- if $hasFAQ -}}
-{{- $questions := findRE `(?m)^###\s+Q\d+\.\s+.+` $content -}}
-{{- $parts := split $content "\n### Q" -}}
+{{- /* Pattern 1: ### Q or ### **Q heading style */ -}}
+{{- $hasH3FAQ := findRE `(?m)^###\s+\*{0,2}Q\d+\.\s+.+` $content -}}
+{{- /* Pattern 2: **Q bold paragraph style (no heading) */ -}}
+{{- $hasBoldFAQ := findRE `(?m)^\*\*Q\d+\.\s+.+\*\*\s*$` $content -}}
 {{- $faqItems := slice -}}
+{{- /* ── Handle Pattern 1: ### Q heading style ── */ -}}
+{{- if $hasH3FAQ -}}
+{{- $parts := split $content "\n### Q" -}}
 {{- range $i, $part := $parts -}}
   {{- if gt $i 0 -}}
     {{- $lines := split $part "\n" -}}
     {{- $qLine := index $lines 0 -}}
     {{- /* Remove the "N. " prefix to get clean question text */ -}}
-    {{- $qText := replaceRE `^\d+\.\s+` "" $qLine -}}
+    {{- $qText := replaceRE `^\*{0,2}\d+\.\s+` "" $qLine -}}
+    {{- $qText = replaceRE `\*{1,2}\s*$` "" $qText -}}
     {{- /* Collect answer lines: skip empty lines after heading, take until next heading or end */ -}}
     {{- $answer := "" -}}
     {{- $started := false -}}
@@ -53,6 +58,60 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
+{{- end -}}
+{{- /* ── Handle Pattern 2: **Q bold paragraph style ── */ -}}
+{{- if $hasBoldFAQ -}}
+{{- $parts := split $content "\n**Q" -}}
+{{- range $i, $part := $parts -}}
+  {{- if gt $i 0 -}}
+    {{- $lines := split $part "\n" -}}
+    {{- $qLine := index $lines 0 -}}
+    {{- /* Remove "N. " prefix and trailing ** */ -}}
+    {{- $qText := replaceRE `^\d+\.\s+` "" $qLine -}}
+    {{- $qText = replaceRE `\*{1,2}\s*$` "" $qText -}}
+    {{- /* Collect answer lines */ -}}
+    {{- $answer := "" -}}
+    {{- $started := false -}}
+    {{- range $j, $line := $lines -}}
+      {{- if gt $j 0 -}}
+        {{- $trimmed := strings.TrimSpace $line -}}
+        {{- if and (not $started) (ne $trimmed "") -}}
+          {{- $started = true -}}
+        {{- end -}}
+        {{- if $started -}}
+          {{- if not (hasPrefix $trimmed "#") -}}
+            {{- $isBoldQ := findRE `^\*\*Q\d+\.` $trimmed -}}
+            {{- if $isBoldQ -}}
+              {{- break -}}
+            {{- end -}}
+            {{- if ne $trimmed "" -}}
+              {{- $cleanLine := replaceRE `^-\s+` "" $trimmed -}}
+              {{- if eq $answer "" -}}
+                {{- $answer = $cleanLine -}}
+              {{- else -}}
+                {{- $answer = printf "%s %s" $answer $cleanLine -}}
+              {{- end -}}
+            {{- end -}}
+          {{- else -}}
+            {{- break -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- /* Deduplicate: skip if this Q was already captured by Pattern 1 */ -}}
+    {{- $isDupe := false -}}
+    {{- range $faqItems -}}
+      {{- if eq .question $qText -}}
+        {{- $isDupe = true -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if and (ne $qText "") (ne $answer "") (not $isDupe) -}}
+      {{- $item := dict "question" $qText "answer" $answer -}}
+      {{- $faqItems = append $item $faqItems -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- end -}}
 {{- if $faqItems -}}
 <script type="application/ld+json">
 {
@@ -73,6 +132,5 @@
   ]
 }
 </script>
-{{- end -}}
 {{- end -}}
 {{- end -}}

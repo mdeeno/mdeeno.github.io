@@ -1242,6 +1242,10 @@ article.post-single .post-content {
 }
 
 .blog-cta--top .blog-cta__link {
+  display: inline-block;
+  min-height: 44px;
+  padding: 10px 20px;
+  line-height: 24px;
   color: #1e40af;
   font-weight: 700;
   text-decoration: none;
@@ -1872,6 +1876,7 @@ article.post-single .post-content {
   border-radius: 8px;
   text-decoration: none;
   transition: opacity 0.2s;
+  min-height: 48px;
 }
 .blog-cta-box__btn:hover {
   opacity: 0.9;
@@ -1935,6 +1940,11 @@ article.post-single .post-content {
     min-height: 48px;
     box-sizing: border-box;
   }
+}
+
+/* ── Footer 최소 폰트 오버라이드 (PaperMod footer.css 12px → 13px) ─── */
+.footer {
+  font-size: 0.8125rem !important;
 }
 
 /* ==========================================================
