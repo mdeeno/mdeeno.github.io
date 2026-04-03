@@ -1942,8 +1942,21 @@ article.post-single .post-content {
   }
 }
 
-/* ── Footer 최소 폰트 오버라이드 (PaperMod footer.css 12px → 13px) ─── */
-.footer {
+/* ── PaperMod 최소 폰트 오버라이드 (12px/small → 13px) ─── */
+.footer,
+.top-link {
+  font-size: 0.8125rem !important;
+}
+
+.post-content h6 {
+  font-size: 0.8125rem !important;
+}
+
+.post-content code {
+  font-size: 0.85em !important;
+}
+
+.paginav .title {
   font-size: 0.8125rem !important;
 }
 
