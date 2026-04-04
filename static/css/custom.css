@@ -815,6 +815,8 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 .archive-entry { border-radius: 8px; transition: background 0.15s; }
 .archive-entry:hover { background: var(--md-blue-lt); }
 .archive-entry a { font-size: 0.9rem; word-break: keep-all; color: var(--md-text); }
+.archive-entry-title { color: var(--md-text) !important; }
+.archive-meta { color: var(--md-muted) !important; }
 
 /* ==========================================================
    GOATCOUNTER
@@ -2087,6 +2089,13 @@ article.post-single .post-content {
   }
   .hbtn-ghost {
     background-color: transparent !important;
+  }
+  .archive-entry, .archive-entry-title {
+    background-color: transparent !important;
+    color: #191f28 !important;
+  }
+  .archive-meta {
+    color: #4b5563 !important;
   }
   .highlight, .highlight pre {
     background-color: #f1f5f9 !important;
