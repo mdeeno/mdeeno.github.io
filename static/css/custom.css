@@ -1984,6 +1984,22 @@ article.post-single .post-content {
   margin: 0 6px;
 }
 
+/* ==========================================================
+   DESKTOP OPTIMIZATION (1024px+)
+   ========================================================== */
+@media (min-width: 1024px) {
+  .posts-grid { grid-template-columns: repeat(3, 1fr); }
+  .terms-grid { grid-template-columns: repeat(3, 1fr); }
+  .sec-title { font-size: 1.2rem; }
+  .stat-box { padding: 1.5rem 1.25rem; }
+  .post-card { padding: 1.75rem; }
+  .hero-sub { max-width: 640px; }
+  .archive-entry a { font-size: 0.95rem; }
+  .blog-cta__btn { padding: 16px 48px; font-size: 1.05rem; }
+  .blog-cta--bottom { padding: 32px 40px; }
+  .mvp-strip a { padding: 14px 28px; font-size: 0.95rem; }
+}
+
 /* ── 삼성 인터넷 등 브라우저 강제 다크모드 방어 ──
    Samsung Internet 절전모드는 html/body뿐 아니라 개별 요소에도
    background-color/color를 강제 주입한다.
@@ -2100,6 +2116,56 @@ article.post-single .post-content {
   .highlight, .highlight pre {
     background-color: #f1f5f9 !important;
     background-image: linear-gradient(#f1f5f9, #f1f5f9);
+    color: #374151 !important;
+  }
+
+  /* ── CTA/카카오/프리미엄밴드 다크모드 방어 ── */
+  .blog-cta--top {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%) !important;
+    background-image: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%) !important;
+    color: #451a03 !important;
+  }
+  .blog-cta--bottom {
+    background: linear-gradient(135deg, #eef2ff 0%, #dbeafe 100%) !important;
+    background-image: linear-gradient(135deg, #eef2ff 0%, #dbeafe 100%) !important;
+    color: #1e3a5f !important;
+  }
+  .blog-cta__btn, .blog-calc__btn, .blog-cta-box__btn {
+    background-color: #1e40af !important;
+    background-image: linear-gradient(#1e40af, #1e40af) !important;
+    color: #fff !important;
+  }
+  .kakao-channel-cta, .kakao-channel-inline, .kakao-home-banner {
+    background-color: #fef9c3 !important;
+    background-image: linear-gradient(#fef9c3, #fef9c3) !important;
+    color: #191919 !important;
+  }
+  .kakao-channel-cta__btn, .kakao-channel-inline__btn, .kakao-home-banner__btn {
+    background-color: #fee500 !important;
+    background-image: linear-gradient(#fee500, #fee500) !important;
+    color: #191919 !important;
+  }
+  .premium-band {
+    background: linear-gradient(135deg, #0d2461 0%, #162d5a 100%) !important;
+    background-image: linear-gradient(135deg, #0d2461, #162d5a) !important;
+    color: #fff !important;
+  }
+  .premium-band h2, .premium-band p {
+    color: #fff !important;
+  }
+  .paginav a {
+    background-color: #ffffff !important;
+    background-image: linear-gradient(#ffffff, #ffffff) !important;
+    color: #1f2937 !important;
+  }
+  .share-buttons a {
+    background-color: #f8fafc !important;
+    background-image: linear-gradient(#f8fafc, #f8fafc) !important;
+    color: #4b5563 !important;
+  }
+  .post-disclaimer {
+    background-color: #f8f9fa !important;
+    background-image: linear-gradient(#f8f9fa, #f8f9fa) !important;
     color: #374151 !important;
   }
 
