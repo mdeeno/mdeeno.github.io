@@ -1,3 +1,24 @@
+/* 아카이브 연도별 접힘 */
+.archive-year details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.archive-year details summary::-webkit-details-marker {
+  display: none;
+}
+
+.archive-year details summary h2::before {
+  content: "▶ ";
+  font-size: 0.8em;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.archive-year details[open] summary h2::before {
+  content: "▼ ";
+}
+
 /* 모바일 화면 (폭 768px 이하) — 포스트 타이포그래피는 custom-typography.css에서 관리 */
 @media screen and (max-width: 768px) {
     /* 계산기 제목 축소 */
@@ -133,11 +154,13 @@
 }
 
 .related-posts-link {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 4px;
   text-decoration: none;
-  padding: 4px 8px;
+  padding: 12px 8px;
+  min-height: 44px;
+  align-items: flex-start;
   border-radius: 8px;
   transition: background 0.15s;
 }
