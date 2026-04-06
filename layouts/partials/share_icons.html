@@ -50,23 +50,27 @@ function shareKakao(el) {
   var desc = el.getAttribute('data-desc');
   var img = el.getAttribute('data-img');
 
-  if (typeof Kakao !== 'undefined' && Kakao.isInitialized()) {
-    var linkObj = {
-      objectType: 'feed',
-      content: {
-        title: title,
-        description: desc,
-        imageUrl: img || '',
-        link: { webUrl: url, mobileWebUrl: url }
-      },
-      buttons: [{
-        title: '자세히 보기',
-        link: { webUrl: url, mobileWebUrl: url }
-      }]
-    };
-    Kakao.Share.sendDefault(linkObj);
+  function doShare() {
+    if (typeof Kakao !== 'undefined' && Kakao.isInitialized()) {
+      Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: title,
+          description: desc,
+          imageUrl: img || '',
+          link: { webUrl: url, mobileWebUrl: url }
+        },
+        buttons: [{ title: '자세히 보기', link: { webUrl: url, mobileWebUrl: url } }]
+      });
+    } else {
+      window.open('https://story.kakao.com/share?url=' + encodeURIComponent(url), '_blank');
+    }
+  }
+
+  if (typeof window.__loadKakao === 'function') {
+    window.__loadKakao(doShare);
   } else {
-    window.open('https://story.kakao.com/share?url=' + encodeURIComponent(url), '_blank');
+    doShare();
   }
 }
 </script>

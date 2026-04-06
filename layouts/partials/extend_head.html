@@ -1,10 +1,32 @@
 {{/* ── 라이트 모드 전용 ── */}}
 <meta name="supported-color-schemes" content="light only">
 
+{{/* ── Preconnect (DNS warmup) ─────────────────────────────── */}}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://gc.zgo.at">
+<link rel="dns-prefetch" href="https://mdeeno.goatcounter.com">
+
+{{/* ── Pretendard — 비블로킹 로드 + font-display: swap ───── */}}
+{{/* media="print" → onload → media="all" 트릭으로 렌더 블로킹 제거 */}}
+<link rel="preload" as="style"
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+</noscript>
+{{/* font-display: swap 강제 — FOIT 방지, CLS 최소화 */}}
+<style>@font-face{font-family:'Pretendard Variable';font-display:swap;}</style>
+
+{{/* ── Custom CSS — preload로 렌더 블로킹 최소화 ─────────── */}}
+<link rel="preload" href="/css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/custom.css"></noscript>
+
 {{/* ── 삼성인터넷 절전모드 다크모드 감지 (캐너리 방식) ── */}}
+{{/* defer 패턴: requestIdleCallback → LCP 블로킹 제거 */}}
 <script>
 (function(){
-  // 캐너리: background-image 보호 없는 요소 → 삼성이 어둡게 바꾸면 감지
   function checkDark(){
     var c=document.getElementById('dark-canary');
     if(!c)return false;
@@ -19,39 +41,19 @@
     document.documentElement.classList.add('samsung-dark');
   }
   function detect(){
-    // 캐너리 체크만 사용 — 삼성인터넷이 실제로 배경을 어둡게 바꾼 경우만 감지
-    // prefers-color-scheme:dark는 사용 안 함 (블로그는 라이트 모드 전용이라 배경이 흰색인데
-    // OS 다크모드 감지 시 흰색 로고로 교체하면 흰 배경 위에 흰 로고 → 로고 사라짐)
     if(checkDark()){applyDark();}
   }
+  function scheduleDetect(){
+    var ric=window.requestIdleCallback||function(cb){setTimeout(cb,200);};
+    ric(function(){detect();setTimeout(detect,1000);setTimeout(detect,3000);});
+  }
   if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',function(){
-      setTimeout(detect,300);setTimeout(detect,1000);setTimeout(detect,3000);
-    });
+    document.addEventListener('DOMContentLoaded',scheduleDetect);
   }else{
-    setTimeout(detect,300);setTimeout(detect,1000);setTimeout(detect,3000);
+    scheduleDetect();
   }
 })();
 </script>
-
-{{/* ── Preconnect (DNS warmup) ─────────────────────────────── */}}
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="dns-prefetch" href="https://www.googletagmanager.com">
-<link rel="dns-prefetch" href="https://gc.zgo.at">
-<link rel="dns-prefetch" href="https://mdeeno.goatcounter.com">
-
-{{/* ── Pretendard — 비블로킹 로드 ───────────────────────── */}}
-{{/* media="print" → onload → media="all" 트릭으로 렌더 블로킹 제거 */}}
-<link rel="preload" as="style"
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
-  onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-</noscript>
-
-{{/* ── Custom CSS ──────────────────────────────────────────── */}}
-<link rel="stylesheet" href="/css/custom.css">
 
 {{/* ── GoatCounter — async ─────────────────────────────────── */}}
 <script data-goatcounter="https://mdeeno.goatcounter.com/count"
@@ -67,17 +69,27 @@
 {{- end -}}
 {{- end -}}
 
-{{/* ── Kakao Share SDK ─────────────────────────────────────────── */}}
+{{/* ── Kakao Share SDK — lazy load (첫 인터랙션 시 로드) ──── */}}
+{{/* 약 100KB JS → 페이지 로드 시 불필요, 공유 버튼 클릭 시만 필요 */}}
 {{- if .Site.Params.kakao_js_key -}}
-<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js"
-        integrity="sha384-DKYJZ8NLiK8MN4/C5P2ezmFnkrGPo5tnERcKSa6ihAgYCNoIG1FNf/B0VBKkxOQ"
-        crossorigin="anonymous" defer></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  if (typeof Kakao !== 'undefined' && !Kakao.isInitialized()) {
-    Kakao.init('{{ .Site.Params.kakao_js_key }}');
-  }
-});
+(function(){
+  var kakaoLoaded=false;
+  var KAKAO_KEY='{{ .Site.Params.kakao_js_key }}';
+  window.__loadKakao=function(cb){
+    if(kakaoLoaded){if(cb)cb();return;}
+    kakaoLoaded=true;
+    var s=document.createElement('script');
+    s.src='https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js';
+    s.integrity='sha384-DKYJZ8NLiK8MN4/C5P2ezmFnkrGPo5tnERcKSa6ihAgYCNoIG1FNf/B0VBKkxOQ';
+    s.crossOrigin='anonymous';
+    s.onload=function(){
+      if(typeof Kakao!=='undefined'&&!Kakao.isInitialized()){Kakao.init(KAKAO_KEY);}
+      if(cb)cb();
+    };
+    document.head.appendChild(s);
+  };
+})();
 </script>
 {{- end -}}
 

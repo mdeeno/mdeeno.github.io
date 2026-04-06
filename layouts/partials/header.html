@@ -21,11 +21,11 @@
                     {{- end }}
                     <img id="site-logo" src="{{ $img.Permalink }}" data-light="{{ $img.Permalink }}" data-dark="/logo-white.png"
                         alt="{{ $label_text }}" aria-label="logo"
-                        height="{{- site.Params.label.iconHeight | default "30" -}}">
+                        width="{{ $img.Width }}" height="{{- site.Params.label.iconHeight | default "30" -}}">
                 {{- else }}
                 <img id="site-logo" src="{{- site.Params.label.icon | absURL -}}" data-light="{{- site.Params.label.icon | absURL -}}" data-dark="/logo-white.png"
                     alt="{{ $label_text }}" aria-label="logo"
-                    height="{{- site.Params.label.iconHeight | default "30" -}}">
+                    width="auto" height="{{- site.Params.label.iconHeight | default "30" -}}">
                 {{- end -}}
                 <span class="logo-text">{{- $label_text -}}</span>
                 {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}

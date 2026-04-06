@@ -1,1 +1,1 @@
-<img src="{{ .Destination | safeURL }}" alt="{{ with .Text }}{{ . }}{{ else }}M-DEENO 분석 이미지{{ end }}" {{ with .Title }}title="{{ . }}"{{ end }} loading="lazy" style="max-width:100%;height:auto;">
+<img src="{{ .Destination | safeURL }}" alt="{{ with .Text }}{{ . }}{{ else }}M-DEENO 분석 이미지{{ end }}" {{ with .Title }}title="{{ . }}"{{ end }} loading="lazy" decoding="async" width="800" height="450" style="max-width:100%;height:auto;aspect-ratio:16/9;">
