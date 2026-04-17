@@ -46,6 +46,13 @@ canonifyURLs = false
   adsense_slot_id_inline = ""
   adsense_active_date  = "2026-06-15"
 
+  # [2026-04-17] 블로그 포스트 직접 수정 (GitHub 웹 에디터 연동)
+  # 각 포스트 메타에 "✏️ 수정" 링크 표시 → 클릭 시 GitHub 에디터 열림 → 수정·저장 → 자동 배포
+  [params.editPost]
+    URL = "https://github.com/mdeeno/mdeeno.github.io/edit/main/content"
+    Text = "✏️ 이 글 수정하기"
+    appendFilePath = true
+
   [params.assets]
     theme_color = "#f5f7fa"   # 라이트 배경 — 삼성 인터넷 다크모드 힌트 방지
 
