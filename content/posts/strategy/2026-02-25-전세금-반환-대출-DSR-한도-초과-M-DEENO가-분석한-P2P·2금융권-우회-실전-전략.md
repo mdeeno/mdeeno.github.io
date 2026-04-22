@@ -10,7 +10,6 @@ aliases:
   - "/posts/strategy/전세금-반환-대출-DSR-한도-초과-M-DEENO가-분석한-P2P·2금융권-우회-실전-전략/"
 ---<!-- inline-links-inserted -->
 
-
 임차인 전세금을 돌려줘야 하는데 [DSR 한도](/posts/strategy/2026-02-19-오피스텔-담보-대출-주택-수-미포함의-함정-dsr-한도-극대화하는-m-deeno-필승-전략/)를 초과해 은행 대출이 막혔다면, 자칫 수천만 원의 지연이자와 법적 분쟁에 동시에 휘말릴 수 있습니다. 이런 상황이 남의 일처럼 느껴지지 않는 집주인분들이 최근 부쩍 늘고 있습니다. 이 글에서는 DSR 한도 초과 상황에서 실제로 활용 가능한 P2P·2금융권 [우회 전략](/posts/market/2026-01-26-스트레스-dsr-3단계-적용-대출-1억-증발-막는-우회-전략-3가지/)을 M-DEENO 데이터 분석을 바탕으로 단계별로 안내해 드립니다.
 
 ## DSR 규제가 전세금 반환을 막는 구조
@@ -75,7 +74,6 @@ DSR 규제는 금융권에 따라 적용 기준이 다릅니다. 이 차이를 �
 4. 대출 만기 도래 시 연장(롤오버) 가능 여부 확인
 5. 실제 집행까지 걸리는 기간 확인 (전세금 반환 기한에 맞춰야 함)
 
-
 <div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
   <span style="font-size:1.2rem;">💬</span>
   <p style="flex:1;margin:0;font-size:0.9rem;color:#3C1E1E;min-width:180px;">
@@ -124,7 +122,6 @@ DSR 한도 초과로 전세금 반환 대출이 막혔을 때, 가장 먼저 전
 - [재건축 분담금, 공사비 상승에 따른 추가 지불액 1억의 진실](/posts/reconstruction/2026-03-16-재건축-분담금-공사비-상승에-따른-추가-지불액-1억의-진실/)
 - [전세가율 88% 재건축 단지, 분담금 1억 더 내야 할 수도 있다](/posts/market/2026-03-22-전세가율-88%-재건축-단지,-분담금-1억-더-내야-할-수도-있다/)
 - [입주 쏟아지는 인천·부천, 재개발 분담금 안전한 단지 따로 있다](/posts/market/2026-03-22-입주-쏟아지는-인천·부천,-재개발-분담금-안전한-단지-따로-있다/)
-
 
 <div class="blog-cta-box blog-cta-box--primary">
   <p class="blog-cta-box__hook">⚠️ 공사비가 오르면, 내 분담금은 예상보다 훨씬 커질 수 있습니다</p>

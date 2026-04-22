@@ -10,7 +10,6 @@ aliases:
   - "/posts/strategy/오피스텔-담보-대출,-주택-수-미포함의-함정-DSR-한도-극대화하는-M-DEENO-필승-전략/"
 ---<!-- inline-links-inserted -->
 
-
 오피스텔 담보 대출이 주택 수에 포함되지 않는다고 안심했다가, DSR 규제에 걸려 정작 재건축 분담금 대출을 한 푼도 받지 못한 사례가 최근 들어 눈에 띄게 늘고 있습니다. '주택 수 예외'라는 혜택이 오히려 독이 될 수 있다는 것, 이미 뼈저리게 경험하신 분들이 적지 않습니다. 이 글에서는 오피스텔 담보 대출의 숨겨진 DSR 함정을 정확히 짚고, M-DEENO 전략으로 대출 한도를 최대한 끌어올리는 방법을 단계별로 공개합니다.
 
 ## 1. '주택 수 미포함'과 'DSR 미포함'은 전혀 다른 이야기입니다
@@ -47,7 +46,6 @@ aliases:
 | **잔여 DSR 여력** | **1,400만 원/년** |
 | **추가 대출 가능 한도** (30년, 연 4.5%) | **약 2억 3천만 원** |
 | 분담금 대출 1.5억 | **가능** |
-
 
 <div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
   <span style="font-size:1.2rem;">💬</span>

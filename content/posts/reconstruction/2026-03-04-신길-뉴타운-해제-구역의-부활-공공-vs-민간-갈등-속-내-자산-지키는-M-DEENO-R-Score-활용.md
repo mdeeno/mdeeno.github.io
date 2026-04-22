@@ -8,7 +8,6 @@ image: "/images/og/og-a5322352.png"
 description: "'신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등 속 내 자산 지키는 M-DEENO R-Score 활용법 - M-DEENO 데이터 분석"
 ---<!-- inline-links-inserted -->
 
-
 <div class='lab-card'>과거 뉴타운에서 해제되며 침체기를 겪었던 신길동 일대가 다시 요동치고 있습니다. 공공재개발의 속도전과 민간재개발의 브랜드 가치 사이에서 소유주들의 셈법은 복잡해집니다. M-DEENO의 분석을 통해 리스크를 줄이고 자산 가치를 극대화하는 전략을 확인하세요.</div>
 
 ## 신길 뉴타운 해제 구역, 왜 지금 다시 주목받는가?
@@ -28,7 +27,6 @@ description: "'신길 뉴타운 해제 구역의 부활: 공공 vs 민간 갈등
 
 그렇다면 지금 시점에서 어떤 방식이 내 자산에 더 [유리할까](/posts/strategy/2026-02-16-수억-원-아끼는-증여의-기술-부담부-증여가-무조건-유리할까-m-deeno-데이터-랩-정밀-ᄇ/)요? 단순히 '빨리 된다'는 말만 믿고 동의서를 써주기엔 리스크가 너무 큽니다.
 
-
 ## 분석 엔진 기반 R-Score 활용법
 
 M-DEENO은 정비 사업의 불확실성을 수치화하기 위해 **R-Score(Risk-Reward Score)** 모델을 개발했습니다.
@@ -46,7 +44,6 @@ M-DEENO은 정비 사업의 불확실성을 수치화하기 위해 **R-Score(Ris
 - **신길 2구역 (도심복합사업 추진)**: 후보지 지정 이후 빌라 매물은 대지 지분에 따라 **5~7억대**로 형성되어 있으나, 권리산정일 이후 매수 시 청산 위험이 있으므로 주의가 필요합니다. ([국토교통부 실거래가 공개시스템](https://rt.molit.go.kr/) 확인 권장)
 
 대장주들의 견고한 시세는 해제 구역이 신축으로 변모했을 때의 미래 가치를 보증하는 강력한 지표가 됩니다.
-
 
 <div style="margin:28px 0;padding:16px 20px;background:#FFF8E1;border:1px solid #FEE500;border-radius:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
   <span style="font-size:1.2rem;">💬</span>
@@ -91,7 +88,6 @@ A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 
 - [신용대출 5천만 원이 주담대 3억을 지운다](/posts/strategy/2026-02-19-신용대출-5천만-원이-주담대-3억을-지운다-M-DEENO의-DSR-한도-축소-시뮬레이션/)
 - [해운대 우동 vs 중동, 부의 축이 이동할까](/posts/market/2026-02-19-해운대-우동-vs-중동,-부의-축이-이동할까-M-DEENO가-분석한-오시리아-시너지의-실체/)
 - [북가좌동 재건축 공사비 검증 거부 사태! 내 자산 1억 증발 막는 조합원 필승 대응법](/posts/reconstruction/2026-03-04-북가좌동-재건축-공사비-검증-거부-사태!-내-자산-1억-증발-막는-조합원-필승-/)
-
 
 <div class="blog-cta-box blog-cta-box--primary">
   <p class="blog-cta-box__hook">⚠️ 공사비가 오르면, 내 분담금은 예상보다 훨씬 커질 수 있습니다</p>
