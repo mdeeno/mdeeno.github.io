@@ -6,8 +6,8 @@ import os
 import re
 from pathlib import Path
 
-POSTS_DIR = Path("/Users/suhun/Desktop/document/mdeeno.github.io/content/posts/")
-REPORT_PATH = Path("/Users/suhun/Desktop/document/mdeeno.github.io/truncated_posts_report.txt")
+POSTS_DIR = Path("/Users/suhun/Projects/mdeeno/mdeeno.github.io/content/posts/")
+REPORT_PATH = Path("/Users/suhun/Projects/mdeeno/mdeeno.github.io/truncated_posts_report.txt")
 SHORT_THRESHOLD = 500  # 본문 500자 미만 = 비정상
 
 

@@ -14,7 +14,7 @@ import re
 import glob
 import yaml
 
-POSTS_DIR = "/Users/suhun/Desktop/document/mdeeno.github.io/content/posts"
+POSTS_DIR = "/Users/suhun/Projects/mdeeno/mdeeno.github.io/content/posts"
 
 # 카운터
 stats = {

@@ -16,7 +16,7 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise EnvironmentError("GEMINI_API_KEY가 .env에 설정되어 있지 않습니다.")
-BASE_DIR = "/Users/suhun/Desktop/document/mdeeno.github.io/content/posts/reconstruction"
+BASE_DIR = "/Users/suhun/Projects/mdeeno/mdeeno.github.io/content/posts/reconstruction"
 
 TARGET_FILES = [
     "2026-03-06-재건축-분담금-폭탄,-내-아파트는-안전할까-M-DEENO가-분석한-수익성-임계점_auto.md",

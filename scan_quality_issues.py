@@ -14,8 +14,8 @@ import glob
 from collections import defaultdict
 from pathlib import Path
 
-POSTS_DIR = "/Users/suhun/Desktop/document/mdeeno.github.io/content/posts"
-REPORT_PATH = "/Users/suhun/Desktop/document/mdeeno.github.io/quality_issues_report.txt"
+POSTS_DIR = "/Users/suhun/Projects/mdeeno/mdeeno.github.io/content/posts"
+REPORT_PATH = "/Users/suhun/Projects/mdeeno/mdeeno.github.io/quality_issues_report.txt"
 
 # 모든 md 파일 수집
 all_md_files = glob.glob(os.path.join(POSTS_DIR, "**", "*.md"), recursive=True)

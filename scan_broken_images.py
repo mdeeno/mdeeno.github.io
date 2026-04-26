@@ -15,7 +15,7 @@ import urllib.error
 from pathlib import Path
 from datetime import datetime
 
-BLOG_ROOT = Path("/Users/suhun/Desktop/document/mdeeno.github.io")
+BLOG_ROOT = Path("/Users/suhun/Projects/mdeeno/mdeeno.github.io")
 POSTS_DIR = BLOG_ROOT / "content" / "posts"
 STATIC_DIR = BLOG_ROOT / "static"
 ASSETS_DIR = BLOG_ROOT / "assets"
