@@ -1,0 +1,25 @@
+{
+  "name": "M-DEENO 재건축 리스크 분석",
+  "short_name": "M-DEENO",
+  "description": "재건축 분담금, 비례율, 용적률을 데이터로 분석하는 정비사업 리스크 가이드",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "lang": "ko",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

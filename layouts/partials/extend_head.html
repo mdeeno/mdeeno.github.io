@@ -1,6 +1,22 @@
 {{/* ── 라이트 모드 전용 ── */}}
 <meta name="supported-color-schemes" content="light only">
 
+{{/* ── PWA: manifest + theme-color ────────────────────────── */}}
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1e40af">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="M-DEENO">
+
+{{/* ── Service Worker 등록 ─────────────────────────────────── */}}
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').catch(function() {});
+  });
+}
+</script>
+
 {{/* ── Preconnect (DNS warmup) ─────────────────────────────── */}}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
