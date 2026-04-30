@@ -8,6 +8,18 @@
   <a href="mailto:mdeeno.official@gmail.com">문의하기</a>
 </div>
 
+{{/* ── PWA 설치 배너 (Android Chrome: beforeinstallprompt) ── */}}
+<div id="pwa-install-banner">
+  <div class="pwa-text">
+    <strong>M-DEENO 블로그</strong>를 앱처럼 사용하세요
+  </div>
+  <button class="pwa-btn" onclick="installPWA()">설치</button>
+  <button class="pwa-dismiss" onclick="dismissPWA()" aria-label="닫기">&times;</button>
+</div>
+<script>
+try{if(sessionStorage.getItem('pwa-dismissed')){var _b=document.getElementById('pwa-install-banner');if(_b)_b.style.display='none';}}catch(e){}
+</script>
+
 {{/* 스크롤 깊이 추적 — 25/50/75/100% 도달 시 GA4 이벤트 */}}
 <script>
 (function(){
