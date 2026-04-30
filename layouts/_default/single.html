@@ -62,6 +62,9 @@
   {{/* ── 관련 포스트: 본문 뒤, 푸터 위 ── */}}
   {{- partial "related_posts.html" . }}
 
+  {{/* ── 이메일 구독 폼: 관련 포스트 아래, 푸터 위 ── */}}
+  {{- partial "subscribe-form.html" . }}
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
