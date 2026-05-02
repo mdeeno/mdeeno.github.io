@@ -42,6 +42,9 @@
   </div>
   {{- end }}
 
+  {{/* ── 이메일 구독 폼 ── */}}
+  {{- partial "subscribe-form.html" . }}
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
