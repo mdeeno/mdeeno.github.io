@@ -97,7 +97,7 @@ A3. 현재 보유하신 매물의 권리가액과 예상 분담금을 합산한 
   </p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
-    내 분담금 무료 분석하기 →
+    내 분담금 무료 진단하기 →
   </a>
 </div>
 

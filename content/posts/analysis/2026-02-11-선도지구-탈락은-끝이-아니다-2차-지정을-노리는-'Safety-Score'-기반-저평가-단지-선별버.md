@@ -88,7 +88,7 @@ description: "1기 신도시 선도지구 지정 결과가 발표될 때마다, 
   </p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
-    내 분담금 무료 분석하기 →
+    내 분담금 무료 진단하기 →
   </a>
 </div>
 

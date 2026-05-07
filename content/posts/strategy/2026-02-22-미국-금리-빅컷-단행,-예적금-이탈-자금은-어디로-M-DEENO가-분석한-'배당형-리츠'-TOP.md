@@ -85,7 +85,7 @@ description: "미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로?
   </p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
-    내 분담금 무료 분석하기 →
+    내 분담금 무료 진단하기 →
   </a>
 </div>
 

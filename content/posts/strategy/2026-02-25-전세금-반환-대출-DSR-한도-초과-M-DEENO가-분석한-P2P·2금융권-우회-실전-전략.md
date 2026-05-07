@@ -131,7 +131,7 @@ DSR 한도 초과로 전세금 반환 대출이 막혔을 때, 가장 먼저 전
   </p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
-    내 분담금 무료 분석하기 →
+    내 분담금 무료 진단하기 →
   </a>
 </div>
 

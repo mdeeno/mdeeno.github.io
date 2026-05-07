@@ -122,7 +122,7 @@ description: "'금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 �
   </p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=post_cta&utm_campaign=auto_post" target="_blank" rel="noopener noreferrer"
      class="blog-cta-box__btn">
-    내 분담금 무료 분석하기 →
+    내 분담금 무료 진단하기 →
   </a>
 </div>
 
