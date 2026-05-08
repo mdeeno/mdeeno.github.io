@@ -96,19 +96,24 @@
   </div>
   <script>
   (function(){
+    var totalEl=document.getElementById('gc-total-visitors');
+    var todayEl=document.getElementById('gc-today-visitors');
+    try{var c=JSON.parse(localStorage.getItem('mdeeno_visitors')||'{}');
+      if(c.total&&totalEl)totalEl.innerText=c.total;
+      if(c.today&&todayEl)todayEl.innerText=c.today;
+    }catch(e){}
     fetch('https://prop-logic-engine-v2.onrender.com/v1/visitors')
       .then(function(r){return r.json();})
       .then(function(d){
-        var totalEl=document.getElementById('gc-total-visitors');
-        var todayEl=document.getElementById('gc-today-visitors');
-        if(totalEl&&d.total!=null)totalEl.innerText=Number(d.total).toLocaleString();
-        if(todayEl&&d.today!=null)todayEl.innerText=Number(d.today).toLocaleString();
+        var t=d.total!=null?Number(d.total).toLocaleString():null;
+        var td=d.today!=null?Number(d.today).toLocaleString():null;
+        if(totalEl&&t)totalEl.innerText=t;
+        if(todayEl&&td)todayEl.innerText=td;
+        try{localStorage.setItem('mdeeno_visitors',JSON.stringify({total:t,today:td}));}catch(e){}
       })
       .catch(function(){
-        var totalEl=document.getElementById('gc-total-visitors');
-        var todayEl=document.getElementById('gc-today-visitors');
-        if(totalEl)totalEl.innerText='집계 중';
-        if(todayEl)todayEl.innerText='집계 중';
+        if(totalEl&&totalEl.innerText==='-')totalEl.innerText='집계 중';
+        if(todayEl&&todayEl.innerText==='-')todayEl.innerText='집계 중';
       });
   })();
   </script>

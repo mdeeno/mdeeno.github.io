@@ -35,6 +35,8 @@ canonifyURLs = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
   mainSections = ["posts"]
 
   # Kakao Share SDK (JavaScript 키 — 클라이언트용, 도메인 제한)

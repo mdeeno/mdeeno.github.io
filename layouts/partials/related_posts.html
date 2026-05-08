@@ -6,8 +6,13 @@
     {{ range $related }}
     <li class="related-posts-item">
       <a href="{{ .RelPermalink }}" class="related-posts-link">
-        <span class="related-posts-item-title">{{ .Title }}</span>
-        <span class="related-posts-item-desc">{{ .Description | truncate 80 }}</span>
+        {{ with .Params.image }}
+        <img src="{{ . }}" alt="" class="related-posts-thumb" loading="lazy" width="120" height="80">
+        {{ end }}
+        <div class="related-posts-text">
+          <span class="related-posts-item-title">{{ .Title }}</span>
+          <span class="related-posts-item-desc">{{ .Description | truncate 80 }}</span>
+        </div>
       </a>
     </li>
     {{ end }}

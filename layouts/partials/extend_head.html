@@ -184,3 +184,34 @@ function dismissPWA() {
 
 {{/* ── Schema.org JSON-LD (FAQPage) ────────────────────────── */}}
 {{- partial "faq_schema.html" . -}}
+
+{{/* ── Schema.org JSON-LD (BreadcrumbList) ────────────────── */}}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "{{ site.BaseURL }}"
+    }
+    {{- with .CurrentSection }}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{- end }}
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title | plainify }}"
+    }
+  ]
+}
+</script>
+{{ end }}
