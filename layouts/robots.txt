@@ -5,10 +5,9 @@ Disallow:
 Disallow: /
 {{- end }}
 
-# RSS/XML 피드 크롤링 차단 (크롤 예산 보호)
+# RSS/XML 피드 크롤링 차단 (크롤 예산 보호 — 홈 RSS는 구독자 유입용으로 허용)
 Disallow: /tags/*/index.xml
 Disallow: /categories/*/index.xml
 Disallow: /posts/*/index.xml
-Disallow: /index.xml
 
 Sitemap: {{ "sitemap.xml" | absURL }}

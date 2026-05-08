@@ -119,7 +119,7 @@ canonifyURLs = false
 
 [[menu.main]]
   identifier = "mvp"
-  name = "📋 무료 분석 신청"
+  name = "📋 무료 진단 신청"
   url = "https://mdeeno.com/member?utm_source=blog&utm_medium=nav_cta&utm_campaign=blog_nav"
   weight = 40
 

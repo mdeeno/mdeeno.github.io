@@ -3,11 +3,10 @@
    PaperMod 테마 오버라이드
    ============================================ */
 
-/* ── CWV: CLS 방지 — 이미지 aspect-ratio 기본값 ── */
+/* ── CWV: CLS 방지 — 이미지 크기 안정화 ── */
 .post-content img {
   max-width: 100%;
   height: auto;
-  aspect-ratio: attr(width) / attr(height);
 }
 /* 커버 이미지 CLS 방지 */
 .entry-cover img {
