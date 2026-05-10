@@ -44,6 +44,9 @@
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
 
+    {{/* ── 중간 CTA: 3번째 H2 앞에 자동 삽입 ── */}}
+    {{- partial "mid_cta.html" . }}
+
     {{/* ── 인라인 광고: 본문과 CTA 사이 ── */}}
     {{- partial "adsense_slot_inline.html" . }}
 
