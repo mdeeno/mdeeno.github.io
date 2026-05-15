@@ -1,0 +1,29 @@
+{{- $slug := .File.BaseFileName -}}
+<div class="floating-cta" id="floating-cta" style="display:none;" role="complementary" aria-label="리스크 진단 안내">
+  <span class="floating-cta__text">내 단지 위험등급 확인</span>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=floating_bar&utm_content={{ $slug }}"
+     target="_blank" rel="noopener noreferrer"
+     onclick="typeof gtag !== 'undefined' && gtag('event', 'floating_cta_click', {event_category: 'CTA', event_label: window.location.pathname})"
+     class="floating-cta__btn">30초 무료 진단</a>
+  <button class="floating-cta__close" aria-label="닫기"
+          onclick="(function(el){el.closest('.floating-cta').style.display='none';try{localStorage.setItem('floating_cta_dismissed','1')}catch(e){}typeof gtag!=='undefined'&&gtag('event','floating_cta_dismiss',{event_category:'CTA',event_label:window.location.pathname})})(this)">&times;</button>
+</div>
+<script>
+(function(){
+  var bar = document.getElementById('floating-cta');
+  if (!bar) return;
+  try { if (localStorage.getItem('floating_cta_dismissed') === '1') return; } catch(e) {}
+  var shown = false;
+  function checkScroll() {
+    if (shown) return;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (docHeight > 0 && (scrollTop / docHeight) >= 0.4) {
+      bar.style.display = 'flex';
+      shown = true;
+      window.removeEventListener('scroll', checkScroll);
+    }
+  }
+  window.addEventListener('scroll', checkScroll, {passive: true});
+})();
+</script>

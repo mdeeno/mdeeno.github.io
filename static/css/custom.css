@@ -1259,6 +1259,10 @@ article.post-single .post-content {
   background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
   border-left: 4px solid #d97706;
   border-radius: 0 12px 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
 }
 
 .blog-cta--top .blog-cta__text {
@@ -1266,6 +1270,8 @@ article.post-single .post-content {
   color: #451a03;
   margin: 0;
   line-height: 1.7;
+  flex: 1;
+  min-width: 180px;
 }
 
 .blog-cta--top .blog-cta__icon {
@@ -1277,59 +1283,168 @@ article.post-single .post-content {
   font-weight: 700;
 }
 
-.blog-cta--top .blog-cta__link {
-  display: inline-block;
+.blog-cta__btn--top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 44px;
-  padding: 10px 20px;
-  line-height: 24px;
-  color: #1e40af;
+  padding: 10px 24px;
+  background: #1e40af;
+  background-image: linear-gradient(#1e40af, #1e40af);
+  color: #fff !important;
   font-weight: 700;
-  text-decoration: none;
-  margin-left: 4px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-sizing: border-box;
 }
 
-.blog-cta--top .blog-cta__link:hover {
-  text-decoration: underline;
+.blog-cta__btn--top:hover {
+  background: #1e3a8a;
+  background-image: linear-gradient(#1e3a8a, #1e3a8a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.25);
 }
 
-/* ── 중간 CTA (3번째 H2 앞) ─── */
+/* ── 중간 CTA (3번째 H2 앞) — 카드형 ─── */
 .blog-cta--mid {
   margin: 28px 0;
-  padding: 16px 22px;
-  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-  border-left: 4px solid #059669;
-  border-radius: 0 12px 12px 0;
+  padding: 24px;
+  background: #ffffff;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
 }
 
-.blog-cta--mid .blog-cta__text {
+.blog-cta--mid__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.blog-cta--mid__social-icon {
+  font-size: 1.1rem;
+}
+
+.blog-cta--mid__social-text {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.blog-cta--mid__question {
+  font-size: 1.05rem;
+  color: #111827;
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+.blog-cta--mid__question strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+.blog-cta__btn--mid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 28px;
+  background: #1e40af;
+  background-image: linear-gradient(#1e40af, #1e40af);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.blog-cta__btn--mid:hover {
+  background: #1e3a8a;
+  background-image: linear-gradient(#1e3a8a, #1e3a8a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.25);
+}
+
+/* ── 플로팅 CTA 바 ─── */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 60px;
+  padding: 0 20px;
+  background: #0f172a;
+  background-image: linear-gradient(#0f172a, #0f172a);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.floating-cta__text {
+  color: #ffffff;
   font-size: 0.95rem;
-  color: #064e3b;
-  margin: 0;
-  line-height: 1.7;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
-.blog-cta--mid .blog-cta__icon {
-  margin-right: 4px;
-}
-
-.blog-cta--mid .blog-cta__text strong {
-  color: #065f46;
+.floating-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 20px;
+  background: #1e40af;
+  background-image: linear-gradient(#1e40af, #1e40af);
+  color: #fff !important;
   font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none !important;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s;
+  box-sizing: border-box;
 }
 
-.blog-cta--mid .blog-cta__link {
-  display: inline-block;
-  min-height: 44px;
-  padding: 10px 20px;
-  line-height: 24px;
-  color: #059669;
-  font-weight: 700;
-  text-decoration: none;
-  margin-left: 4px;
+.floating-cta__btn:hover {
+  background: #1e3a8a;
+  background-image: linear-gradient(#1e3a8a, #1e3a8a);
 }
 
-.blog-cta--mid .blog-cta__link:hover {
-  text-decoration: underline;
+.floating-cta__close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  min-width: 32px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.floating-cta__close:hover {
+  color: #ffffff;
 }
 
 /* ── 하단 CTA (본문 끝) ─── */
@@ -1396,6 +1511,41 @@ article.post-single .post-content {
   .blog-cta--top {
     padding: 14px 18px;
     margin: 16px 0 24px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .blog-cta__btn--top {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    min-height: 48px;
+    font-size: 0.95rem;
+  }
+  .blog-cta--mid {
+    padding: 20px 16px;
+  }
+  .blog-cta__btn--mid {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+    min-height: 48px;
+  }
+  .floating-cta {
+    gap: 10px;
+    padding: 0 14px;
+  }
+  .floating-cta__text {
+    font-size: 0.82rem;
+    display: none;
+  }
+  .floating-cta__btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 16px;
+    min-height: 44px;
+    font-size: 0.95rem;
   }
 }
 
@@ -2073,7 +2223,7 @@ article.post-single .post-content {
   .post-card { padding: 1.75rem; }
   .hero-sub { max-width: 640px; }
   .archive-entry a { font-size: 0.95rem; }
-  .blog-cta__btn { padding: 16px 48px; font-size: 1.05rem; }
+  .blog-cta__btn, .blog-cta__btn--top, .blog-cta__btn--mid { padding: 16px 48px; font-size: 1.05rem; }
   .blog-cta--bottom { padding: 32px 40px; }
   .mvp-strip a { padding: 14px 28px; font-size: 0.95rem; }
 }
@@ -2203,15 +2353,26 @@ article.post-single .post-content {
     background-image: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%) !important;
     color: #451a03 !important;
   }
+  .blog-cta--mid {
+    background-color: #ffffff !important;
+    background-image: linear-gradient(#ffffff, #ffffff) !important;
+    color: #111827 !important;
+  }
   .blog-cta--bottom {
     background: linear-gradient(135deg, #eef2ff 0%, #dbeafe 100%) !important;
     background-image: linear-gradient(135deg, #eef2ff 0%, #dbeafe 100%) !important;
     color: #1e3a5f !important;
   }
-  .blog-cta__btn, .blog-calc__btn, .blog-cta-box__btn {
+  .blog-cta__btn, .blog-cta__btn--top, .blog-cta__btn--mid,
+  .blog-calc__btn, .blog-cta-box__btn, .floating-cta__btn {
     background-color: #1e40af !important;
     background-image: linear-gradient(#1e40af, #1e40af) !important;
     color: #fff !important;
+  }
+  .floating-cta {
+    background-color: #0f172a !important;
+    background-image: linear-gradient(#0f172a, #0f172a) !important;
+    color: #ffffff !important;
   }
   .kakao-channel-cta, .kakao-channel-inline, .kakao-home-banner {
     background-color: #fef9c3 !important;

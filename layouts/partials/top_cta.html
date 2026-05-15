@@ -4,33 +4,28 @@
 {{/* ── 카테고리별 상단 CTA 문구 분기 ── */}}
 {{- $topCtaStrong := "내 단지 리스크 무료 진단" -}}
 {{- $topCtaSuffix := ", 30초면 바로 확인됩니다." -}}
-{{- $topCtaLink   := "무료 진단 시작 →" -}}
 
 {{- if or (in $cats "재건축/재개발") (in $cats "정비 사업") -}}
   {{- $topCtaStrong = "내 단지 리스크 무료 진단" -}}
   {{- $topCtaSuffix = ", 30초면 바로 확인됩니다." -}}
-  {{- $topCtaLink   = "무료 진단 시작 →" -}}
 {{- else if in $cats "시장 분석" -}}
   {{- $topCtaStrong = "시세 변동이 내 단지 리스크에 미치는 영향" -}}
   {{- $topCtaSuffix = "을 확인해 보세요." -}}
-  {{- $topCtaLink   = "무료 시뮬레이션 →" -}}
 {{- else if in $cats "투자 전략" -}}
   {{- $topCtaStrong = "내 상황에 맞는 최적 전략" -}}
   {{- $topCtaSuffix = "을 무료로 진단해 보세요." -}}
-  {{- $topCtaLink   = "무료 진단 시작 →" -}}
 {{- else if or (in $cats "세금/정책") (in $cats "금융/대출") -}}
   {{- $topCtaStrong = "세금·정책 변화가 내 아파트에 미치는 영향" -}}
   {{- $topCtaSuffix = "을 시뮬레이션해 보세요." -}}
-  {{- $topCtaLink   = "무료 시뮬레이션 →" -}}
 {{- end -}}
 
 <div class="blog-cta blog-cta--top">
   <p class="blog-cta__text">
     <span class="blog-cta__icon">&#x1F449;</span>
     <strong>{{ $topCtaStrong }}</strong>{{ $topCtaSuffix }}
-    <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=top_banner&utm_content={{ $slug }}"
-       target="_blank" rel="noopener noreferrer"
-       onclick="typeof gtag !== 'undefined' && gtag('event', 'top_cta_click', {event_category: 'CTA', event_label: window.location.pathname})"
-       class="blog-cta__link">{{ $topCtaLink }}</a>
   </p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=top_banner&utm_content={{ $slug }}"
+     target="_blank" rel="noopener noreferrer"
+     onclick="typeof gtag !== 'undefined' && gtag('event', 'top_cta_click', {event_category: 'CTA', event_label: window.location.pathname})"
+     class="blog-cta__btn blog-cta__btn--top">30초 무료 진단 &rarr;</a>
 </div>

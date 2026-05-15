@@ -3,32 +3,30 @@
 
 {{/* ── 카테고리별 중간 CTA 문구 분기 ── */}}
 {{- $midCtaText := "내 단지도 같은 상황일까?" -}}
-{{- $midCtaLink := "30초 무료 리스크 진단 →" -}}
 
 {{- if or (in $cats "재건축/재개발") (in $cats "정비 사업") -}}
   {{- $midCtaText = "내 단지도 같은 리스크가 있을까?" -}}
-  {{- $midCtaLink = "30초 무료 리스크 진단 →" -}}
 {{- else if in $cats "시장 분석" -}}
   {{- $midCtaText = "시세 변동이 내 단지에 미치는 영향은?" -}}
-  {{- $midCtaLink = "무료 시뮬레이션으로 확인 →" -}}
 {{- else if in $cats "투자 전략" -}}
   {{- $midCtaText = "이 전략이 내 상황에도 맞을까?" -}}
-  {{- $midCtaLink = "무료 리스크 진단으로 확인 →" -}}
 {{- else if or (in $cats "세금/정책") (in $cats "금융/대출") -}}
   {{- $midCtaText = "이 변화가 내 분담금 리스크에 미치는 영향은?" -}}
-  {{- $midCtaLink = "무료 시뮬레이션 →" -}}
 {{- end -}}
 
 <template id="mid-cta-template">
   <div class="blog-cta blog-cta--mid" role="complementary" aria-label="리스크 진단 안내">
-    <p class="blog-cta__text">
-      <span class="blog-cta__icon">&#x1F4CA;</span>
+    <div class="blog-cta--mid__social">
+      <span class="blog-cta--mid__social-icon">&#x1F4CA;</span>
+      <span class="blog-cta--mid__social-text">108명이 진단했습니다</span>
+    </div>
+    <p class="blog-cta--mid__question">
       <strong>{{ $midCtaText }}</strong>
-      <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=mid_content&utm_content={{ $slug }}"
-         target="_blank" rel="noopener noreferrer"
-         onclick="typeof gtag !== 'undefined' && gtag('event', 'mid_cta_click', {event_category: 'CTA', event_label: window.location.pathname})"
-         class="blog-cta__link">{{ $midCtaLink }}</a>
     </p>
+    <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=mid_content&utm_content={{ $slug }}"
+       target="_blank" rel="noopener noreferrer"
+       onclick="typeof gtag !== 'undefined' && gtag('event', 'mid_cta_click', {event_category: 'CTA', event_label: window.location.pathname})"
+       class="blog-cta__btn blog-cta__btn--mid">내 단지 위험등급 확인 &rarr;</a>
   </div>
 </template>
 <script>
