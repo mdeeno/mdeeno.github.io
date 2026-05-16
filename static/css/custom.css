@@ -1044,8 +1044,8 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 
 .toc ul { margin: 0.5rem 0 0 0; padding-left: 1rem; }
 .toc ul ul { padding-left: 1rem; margin-top: 0; }
-.toc li { margin: 0.25rem 0; list-style: none; }
-.toc a { color: var(--md-muted); text-decoration: none; line-height: 1.5; }
+.toc li { margin: 0.4rem 0; list-style: none; line-height: 1.7; }
+.toc a { color: var(--md-muted); text-decoration: none; font-size: 0.95rem; line-height: 1.7; }
 .toc a:hover { color: var(--md-blue); }
 
 /* ==========================================================
@@ -1386,7 +1386,7 @@ article.post-single .post-content {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  height: 60px;
+  height: 48px;
   padding: 0 20px;
   background: #0f172a;
   background-image: linear-gradient(#0f172a, #0f172a);
@@ -1426,7 +1426,7 @@ article.post-single .post-content {
 
 .floating-cta__close {
   position: absolute;
-  top: 8px;
+  top: 2px;
   right: 12px;
   background: none;
   border: none;
@@ -1434,8 +1434,8 @@ article.post-single .post-content {
   font-size: 1.25rem;
   cursor: pointer;
   padding: 4px 8px;
-  min-width: 32px;
-  min-height: 32px;
+  min-width: 44px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1445,6 +1445,11 @@ article.post-single .post-content {
 
 .floating-cta__close:hover {
   color: #ffffff;
+}
+
+/* 플로팅 CTA 가림 방지 — 본문 하단 여백 */
+.post-single {
+  padding-bottom: 56px;
 }
 
 /* ── 하단 CTA (본문 끝) ─── */

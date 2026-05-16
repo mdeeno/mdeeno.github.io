@@ -19,13 +19,25 @@
   {{- $topCtaSuffix = "을 시뮬레이션해 보세요." -}}
 {{- end -}}
 
-<div class="blog-cta blog-cta--top">
-  <p class="blog-cta__text">
-    <span class="blog-cta__icon">&#x1F449;</span>
-    <strong>{{ $topCtaStrong }}</strong>{{ $topCtaSuffix }}
-  </p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=top_banner&utm_content={{ $slug }}"
-     target="_blank" rel="noopener noreferrer"
-     onclick="typeof gtag !== 'undefined' && gtag('event', 'top_cta_click', {event_category: 'CTA', event_label: window.location.pathname})"
-     class="blog-cta__btn blog-cta__btn--top">30초 무료 진단 &rarr;</a>
-</div>
+<template id="top-cta-template">
+  <div class="blog-cta blog-cta--top">
+    <p class="blog-cta__text">
+      <span class="blog-cta__icon">&#x1F449;</span>
+      <strong>{{ $topCtaStrong }}</strong>{{ $topCtaSuffix }}
+    </p>
+    <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=top_banner&utm_content={{ $slug }}"
+       target="_blank" rel="noopener noreferrer"
+       onclick="typeof gtag !== 'undefined' && gtag('event', 'top_cta_click', {event_category: 'CTA', event_label: window.location.pathname})"
+       class="blog-cta__btn blog-cta__btn--top">30초 무료 진단 &rarr;</a>
+  </div>
+</template>
+<script>
+(function(){
+  var t = document.getElementById('top-cta-template');
+  if (!t) return;
+  var h2s = document.querySelectorAll('.post-content h2');
+  if (h2s.length >= 1) {
+    h2s[0].insertAdjacentElement('beforebegin', t.content.firstElementChild.cloneNode(true));
+  }
+})();
+</script>
