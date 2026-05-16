@@ -42,11 +42,11 @@ canonifyURLs = false
   # Kakao Share SDK (JavaScript 키 — 클라이언트용, 도메인 제한)
   kakao_js_key = "d411fd7e238ababcfa850f5791bfaba9"
 
-  # AdSense — 6/15 활성화.
+  # AdSense — 활성화 (2026-05-16, 실업급여 수급 종료 결정)
   adsense_publisher_id = "ca-pub-4528164523701174"
   adsense_slot_id      = "7677212790"
   adsense_slot_id_inline = ""
-  adsense_active_date  = "2026-06-15"
+  adsense_active_date  = "2026-05-16"
 
   # [2026-04-17] 블로그 포스트 직접 수정 (GitHub 웹 에디터 연동)
   # 각 포스트 메타에 "✏️ 수정" 링크 표시 → 클릭 시 GitHub 에디터 열림 → 수정·저장 → 자동 배포
