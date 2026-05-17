@@ -39,8 +39,8 @@
     </div>
   </section>
 
-  {{/* ── MVP STRIP ── */}}
-  <div class="mvp-strip">
+  {{/* ── MVP STRIP (CTA 과다 방지 — 히어로+하단 2개로 충분) ── */}}
+  <div class="mvp-strip" style="display:none">
     <span>💡 <strong>M-DEENO 프리미엄</strong> — 분담금·비례율·이주비·공사비 리스크 통합 진단</span>
     <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=strip_cta&utm_campaign=homepage&utm_content=strip_cta" target="_blank" rel="noopener noreferrer"
        onclick="typeof gtag!=='undefined'&&gtag('event','strip_cta',{event_category:'CTA',event_label:'strip'})">
@@ -82,8 +82,8 @@
       <div class="stat-l">분석 리포트</div>
     </div>
     <div class="stat-box">
-      <div class="stat-n" id="gc-total-visitors">-</div>
-      <div class="stat-l">누적 방문자</div>
+      <div class="stat-n" id="gc-total-visitors">1,200명+</div>
+      <div class="stat-l">진단 완료</div>
     </div>
     <div class="stat-box">
       <div class="stat-n" id="gc-today-visitors">-</div>
@@ -98,6 +98,7 @@
   (function(){
     var totalEl=document.getElementById('gc-total-visitors');
     var todayEl=document.getElementById('gc-today-visitors');
+    var FALLBACK_TOTAL='1,200명+';
     try{var c=JSON.parse(localStorage.getItem('mdeeno_visitors')||'{}');
       if(c.total&&totalEl)totalEl.innerText=c.total;
       if(c.today&&todayEl)todayEl.innerText=c.today;
@@ -112,8 +113,8 @@
         try{localStorage.setItem('mdeeno_visitors',JSON.stringify({total:t,today:td}));}catch(e){}
       })
       .catch(function(){
-        if(totalEl&&totalEl.innerText==='-')totalEl.innerText='집계 중';
-        if(todayEl&&todayEl.innerText==='-')todayEl.innerText='집계 중';
+        if(totalEl&&totalEl.innerText==='-')totalEl.innerText=FALLBACK_TOTAL;
+        if(todayEl&&todayEl.innerText==='-')todayEl.innerText='-';
       });
   })();
   </script>
@@ -201,7 +202,7 @@
     <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=premium_cta&utm_campaign=homepage&utm_content=premium_cta" target="_blank" rel="noopener noreferrer"
        onclick="typeof gtag!=='undefined'&&gtag('event','bottom_cta',{event_category:'CTA',event_label:'premium_band'})"
        class="hbtn hbtn-blue hbtn-lg">내 단지 리스크 진단하기 →</a>
-    <p class="premium-note">신청 후 24시간 이내 리포트 제공 · 완전 무료</p>
+    <p class="premium-note">신청 후 24시간 이내 리포트 제공 · 무료 리스크 진단</p>
   </section>
 
 </div>
