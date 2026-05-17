@@ -1045,7 +1045,7 @@ nav#TableOfContents a:hover { color: var(--md-blue); }
 .toc ul { margin: 0.5rem 0 0 0; padding-left: 1rem; }
 .toc ul ul { padding-left: 1rem; margin-top: 0; }
 .toc li { margin: 0.4rem 0; list-style: none; line-height: 1.7; }
-.toc a { color: var(--md-muted); text-decoration: none; font-size: 0.95rem; line-height: 1.7; }
+.toc a { color: var(--md-muted); text-decoration: none; font-size: 0.95rem; line-height: 1.7; padding: 6px 0; }
 .toc a:hover { color: var(--md-blue); }
 
 /* ==========================================================
@@ -1109,6 +1109,9 @@ article.post-single .post-content {
   article.post-single .post-content { max-width: 100%; }
   .post-header { max-width: 100%; }
   .post-single { max-width: 100%; }
+
+  /* 모바일 본문 좌우 여백 최소 20px 보장 (PaperMod --gap: 14px 보완) */
+  .main { padding-left: 20px; padding-right: 20px; }
 }
 
 @media (max-width: 600px) {
