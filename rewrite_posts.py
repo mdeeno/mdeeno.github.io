@@ -54,8 +54,8 @@ REWRITE RULES:
 3. Content ratio: data/numbers 30%, strategy/interpretation 40%, action guidance 30%
 4. Include TWO CTAs with this HTML block after the intro and before the conclusion:
 <div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
-  <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 분석</p>
-  <a href="https://mdeeno.com/member" target="_blank" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 계산해보세요 →</a>
+  <p style="font-size:1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 단지 추가분담금 리스크 무료 진단</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=rewrite_inline" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">내 단지 추가분담금 리스크를 무료로 진단해보세요 →</a>
 </div>
 5. NO phrases: "이 글에서는", "지금부터 설명드리겠습니다", "마지막으로 정리해보겠습니다", "함께 살펴보겠습니다", "이번 포스팅에서는"
 6. Start the first sentence by directly addressing the reader's pain point with a specific number

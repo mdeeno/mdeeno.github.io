@@ -7,7 +7,7 @@
     <li class="related-posts-item">
       <a href="{{ .RelPermalink }}" class="related-posts-link">
         {{ with .Params.image }}
-        <img src="{{ . }}" alt="" class="related-posts-thumb" loading="lazy" width="120" height="80">
+        <img src="{{ . }}" alt="{{ $.Title }}" class="related-posts-thumb" loading="lazy" width="120" height="80">
         {{ end }}
         <div class="related-posts-text">
           <span class="related-posts-item-title">{{ .Title }}</span>
