@@ -5,7 +5,7 @@ draft: false
 categories: ["시장 분석"]
 tags: ["금리 인하기 투자 전략", "채권 ETF", "리츠 ETF", "TIGER 부동산인프라고배당", "부동산투자"]
 image: "/images/og/og-ce8dfd8d.png"
-description: "'금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가? (TIGER 부동산인프라고배당 집중 분석)"
+description: "최근 글로벌 중앙은행들의 통화 정책 기조가 ‘긴축 종료’를 넘어 ‘금리 인하’ 시점으로 빠르게 전환될 것이라는 기대감이 커지고 있습니다. 이러한 환경 변화는 투자 전략의 대대적인 수정을 요구합니다"
 ---<!-- inline-links-inserted -->
 
 ## 금리 인하기, 채권 ETF vs 리츠 ETF: 당신의 자산은 어디에 베팅해야 하는가?
