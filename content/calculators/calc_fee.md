@@ -136,3 +136,14 @@ function calcFee() {
   document.getElementById('feeResult').style.display = 'block';
 }
 </script>
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">중개보수 외에 취득세·양도세도 궁금하신가요?</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 리스크 진단으로 재건축 비용을 종합 분석해 보세요.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=calc_cta&utm_campaign=calc_fee" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    재건축 리스크 무료 진단 →
+  </a>
+</div>
+
+<p style="font-size:12px;color:#888;margin-top:16px;">※ 본 계산기는 참고용이며, 실제 중개보수는 시/도 조례 및 중개사와의 협의에 따라 달라질 수 있습니다.</p>

@@ -137,3 +137,14 @@ function calcSalary() {
   document.getElementById('salResult').style.display = 'block';
 }
 </script>
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">실수령액으로 분담금 대출이 가능할까요?</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 리스크 진단으로 DSR 한도와 분담금 부담을 통합 분석해 보세요.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=calc_cta&utm_campaign=calc_salary" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    재건축 리스크 무료 진단 →
+  </a>
+</div>
+
+<p style="font-size:12px;color:#888;margin-top:16px;">※ 본 계산기는 간이 추정치이며, 정확한 세금 계산은 국세청 홈택스 또는 세무사 상담을 통해 확인하시기 바랍니다.</p>

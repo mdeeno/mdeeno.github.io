@@ -1,11 +1,16 @@
 baseURL = 'https://tech.mdeeno.com/'
 languageCode = 'ko-kr'
+defaultContentLanguage = 'ko'
 title = 'M-DEENO(엠디노) | BLOG'
 theme = 'PaperMod'
 copyright = "© 2026 M-DEENO. All rights reserved."
 
 enableRobotsTXT = true
 canonifyURLs = false
+
+[languages.ko]
+  languageName = "한국어"
+  weight = 1
 
 [related]
   includeNewer = true

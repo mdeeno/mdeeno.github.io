@@ -145,3 +145,14 @@ function calcSub() {
   }
 }
 </script>
+
+<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
+  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">청약 가점이 낮아도 재건축 투자가 가능할까요?</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 리스크 진단으로 재건축 조합원 입장에서의 리스크를 확인해 보세요.</p>
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=calc_cta&utm_campaign=calc_subscription" target="_blank" rel="noopener noreferrer"
+     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
+    재건축 리스크 무료 진단 →
+  </a>
+</div>
+
+<p style="font-size:12px;color:#888;margin-top:16px;">※ 본 계산기는 참고용이며, 실제 가점은 청약홈(applyhome.co.kr)에서 정확한 산정 기준을 확인하시기 바랍니다.</p>
