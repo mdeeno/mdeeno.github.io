@@ -3,6 +3,8 @@
 {{- with site.Config.Services.GoogleAnalytics.ID }}
 <script>
 (function(){
+  // 봇 감지 — 자동화 도구 트래픽 제외 (이탈률 왜곡 방지)
+  if (navigator.webdriver || /bot|crawler|spider|headless/i.test(navigator.userAgent)) return;
   var GA_ID = '{{ . }}';
   var loaded = false;
   function loadGA() {
@@ -16,7 +18,9 @@
     function gtag(){ dataLayer.push(arguments); }
     window.gtag = gtag;
     gtag('js', new Date());
-    gtag('config', GA_ID);
+    gtag('config', GA_ID, {
+      'allow_google_signals': true
+    });
   }
   // 첫 인터랙션 시 로드
   ['mousedown','keydown','touchstart','scroll','pointerdown'].forEach(function(e){
