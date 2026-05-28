@@ -1,4 +1,5 @@
 ---
+robotsNoIndex: true
 title: "미국 금리 빅컷 단행, 예적금 이탈 자금은 어디로"
 date: 2026-02-22T21:44:38+09:00
 draft: false

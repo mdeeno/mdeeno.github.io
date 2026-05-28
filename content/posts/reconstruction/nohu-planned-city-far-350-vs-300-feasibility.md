@@ -1,4 +1,5 @@
 ---
+robotsNoIndex: true
 title: "노후계획도시 용적률 350% vs 300% — 1기 신도시별 사업성이 갈리는 이유"
 date: 2026-05-14T20:00:00+09:00
 draft: false
