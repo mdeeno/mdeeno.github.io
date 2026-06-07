@@ -65,8 +65,8 @@ M-DEENO는 재건축·재개발 조합원을 위한 **데이터 기반 리스크
 M-DEENO 분석 엔진이 내 단지의 분담금·수익성·리스크를 정밀 시뮬레이션합니다.
 
 <div style="margin:24px 0;padding:20px 28px;background:#f0f7ff;border:2px solid #2563eb;border-radius:12px;text-align:center;">
-  <p style="font-weight:700;color:#1e40af;margin:0 0 8px;">M-DEENO 프리미엄 리포트 — 2026년 6월 출시 예정</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 12px;">지금 베타 신청하면 정식 출시 전 분석 리포트를 먼저 받아보실 수 있습니다.</p>
+  <p style="font-weight:700;color:#1e40af;margin:0 0 8px;">M-DEENO 정식 오픈 — 분담금 리스크 진단 + 전자책</p>
+  <p style="font-size:0.9rem;color:#374151;margin:0 0 12px;">단지명만 입력하면 30초 만에 R1~R4 위험 등급을 확인할 수 있습니다. 론칭 특가 진행 중.</p>
   <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
      style="display:block;width:100%;padding:14px 28px;background:#2563eb;color:#fff;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;min-height:48px;">
     리포트 무료 신청 →
