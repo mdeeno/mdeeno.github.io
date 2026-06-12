@@ -179,7 +179,7 @@ for (const complex of complexes) {
   // description: SEO 최적화 (숫자 포함으로 클릭 유인)
   const extraDesc =
     complex.confirmedExtra !== null
-      ? `추정 분담금 ${formatExtra(complex.confirmedExtra)}, `
+      ? `추정 분담금 약 ${formatExtra(complex.confirmedExtra)} 수준, `
       : '';
   const description = `${complex.name}(${complex.district}) 재건축 분담금 리스크를 시나리오별로 분석합니다. ${extraDesc}비례율 ${complex.proportionRate}%, 리스크 등급 ${complex.riskGrade}. 공사비 변동 시 분담금 변화를 확인하세요.`;
 
@@ -344,6 +344,8 @@ ${complex.kaptBcompany ? `| 시공사 | ${complex.kaptBcompany} |` : ''}
 
 ## 공사비 변동 시 분담금 시나리오
 
+> 아래 수치는 공개 데이터 기반 시뮬레이션 추정값이며, 실제와 다를 수 있습니다. 투자 판단의 근거로 사용할 수 없습니다.
+
 공사비가 상승하면 총사업비가 증가하고, 이는 비례율 하락과 분담금 증가로 이어집니다.
 아래는 ${complex.name}의 공사비 변동 시나리오별 추정 분담금입니다.
 
@@ -375,8 +377,8 @@ ${checkpointsList}
 
 <p class="complex-disclaimer">
 <strong>면책 조항</strong>: 본 분석은 국토교통부 실거래가, 건축물대장, 조합 공개 자료 등을 기반으로 M-DEENO 시뮬레이션 엔진이 산출한 추정값입니다.
-실제 분담금은 감정평가, 관리처분계획, 총회 의결 결과에 따라 달라지며, 본 자료를 투자 판단의 근거로 사용해서는 안 됩니다.
-정확한 분담금은 해당 조합에 직접 확인하시기 바랍니다.
+실제 분담금은 감정평가, 관리처분계획, 총회 의결 결과에 따라 달라지며, 본 자료를 투자 판단이나 부동산 거래의 근거로 사용할 수 없습니다.
+본 페이지는 정보 제공 목적이며, 정확한 분담금은 해당 조합에 직접 확인하시기 바랍니다.
 </p>
 `;
 
