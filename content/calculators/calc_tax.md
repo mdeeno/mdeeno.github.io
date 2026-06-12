@@ -146,7 +146,7 @@ function calcTax() {
 <div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">취득세 외에도 분담금·이주비 부담이 걱정되시나요?</p>
   <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 정밀 리포트는 재건축 전 과정의 비용을 통합 시뮬레이션합니다.</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=calculator_cta&utm_campaign=inline_link" target="_blank" rel="noopener noreferrer"
      style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
     재건축 비용 통합 분석 →
   </a>

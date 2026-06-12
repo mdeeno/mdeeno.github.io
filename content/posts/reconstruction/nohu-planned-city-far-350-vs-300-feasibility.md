@@ -16,7 +16,7 @@ image: "/og-image.png"
 <div class="blog-cta-box blog-cta-box--primary">
   <p class="blog-cta-box__hook">⚠️ 용적률이 올라도 분담금은 줄지 않을 수 있습니다</p>
   <p class="blog-cta-box__desc">
-    내 단지의 용적률·비례율 조합이 리스크인지 기회인지, 30초면 확인됩니다.<br>회원가입 없이 바로 진단.
+    내 단지의 용적률·비례율 조합이 리스크인지 기회인지, 30초면 확인됩니다.<br>무료 회원가입 후 바로 진단.
   </p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=nohu_far" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"
@@ -162,7 +162,7 @@ image: "/og-image.png"
 <div class="blog-cta-box blog-cta-box--primary">
   <p class="blog-cta-box__hook">📊 용적률 상향이 내 분담금에 미치는 영향, 데이터로 확인하세요</p>
   <p class="blog-cta-box__desc">
-    내 단지 용적률·비례율 시나리오를 30초 만에 무료로 진단합니다.<br>회원가입 없이 바로 분석 · 100명 이상의 조합원이 이미 확인했습니다.
+    내 단지 용적률·비례율 시나리오를 30초 만에 무료로 진단합니다.<br>무료 회원가입 후 바로 분석 · 100명 이상의 조합원이 이미 확인했습니다.
   </p>
   <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=blog_cta&utm_campaign=nohu_far" target="_blank" rel="noopener noreferrer"
      onclick="typeof gtag !== 'undefined' && gtag('event', 'blog_to_mvp_click', {page: window.location.pathname})"

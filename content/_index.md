@@ -9,7 +9,7 @@ M-DEENO는 재건축·재개발 조합원을 위한 **데이터 기반 리스크
 <div style="margin:24px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-size:1.1rem;font-weight:700;color:#1e40af;margin:0 0 8px;">📊 내 아파트 재건축 리스크, 지금 바로 무료 진단</p>
   <p style="font-size:0.9rem;color:#374151;margin:0 0 16px;">M-DEENO 분석 엔진이 공사비·비례율·분담금을 시뮬레이션합니다.</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=calculator_cta&utm_campaign=inline_link" target="_blank" rel="noopener noreferrer"
      style="display:block;width:100%;padding:14px 28px;background:#2563eb;color:#fff;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;min-height:48px;">
     무료 진단 시작 →
   </a>
@@ -67,7 +67,7 @@ M-DEENO 분석 엔진이 내 단지의 분담금·수익성·리스크를 정밀
 <div style="margin:24px 0;padding:20px 28px;background:#f0f7ff;border:2px solid #2563eb;border-radius:12px;text-align:center;">
   <p style="font-weight:700;color:#1e40af;margin:0 0 8px;">M-DEENO 정식 오픈 — 분담금 리스크 진단 + 전자책</p>
   <p style="font-size:0.9rem;color:#374151;margin:0 0 12px;">단지명만 입력하면 30초 만에 R1~R4 위험 등급을 확인할 수 있습니다. 론칭 특가 진행 중.</p>
-  <a href="https://mdeeno.com/member" target="_blank" rel="noopener noreferrer"
+  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=calculator_cta&utm_campaign=inline_link" target="_blank" rel="noopener noreferrer"
      style="display:block;width:100%;padding:14px 28px;background:#2563eb;color:#fff;font-weight:700;font-size:1rem;border-radius:8px;text-decoration:none;text-align:center;box-sizing:border-box;min-height:48px;">
     리포트 무료 신청 →
   </a>
