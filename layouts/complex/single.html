@@ -1,0 +1,137 @@
+{{- define "main" }}
+
+<article class="post-single complex-page">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Params.complexData.name }} 분담금 리스크 분석
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+
+    {{/* ── 리스크 배지 ── */}}
+    {{ $grade := .Params.complexData.riskGrade }}
+    {{ $label := .Params.complexData.riskLabel }}
+    <div class="complex-risk-badge complex-risk-{{ $grade }}">
+      <span class="complex-risk-grade">{{ $grade }}</span>
+      <span class="complex-risk-label">{{ $label }}</span>
+    </div>
+  </header>
+
+  <div class="post-content">
+
+    {{/* ── 핵심 지표 카드 ── */}}
+    <div class="complex-metrics">
+      <div class="complex-metric-card">
+        <span class="complex-metric-label">비례율</span>
+        <span class="complex-metric-value">{{ .Params.complexData.proportionRate }}%</span>
+      </div>
+      <div class="complex-metric-card">
+        <span class="complex-metric-label">사업 단계</span>
+        <span class="complex-metric-value complex-metric-small">{{ .Params.complexData.stage }}</span>
+      </div>
+      <div class="complex-metric-card">
+        <span class="complex-metric-label">추정 공사비</span>
+        <span class="complex-metric-value complex-metric-small">{{ .Params.complexData.expectedCost }}만/평</span>
+      </div>
+      {{ with .Params.complexData.confirmedExtra }}
+      <div class="complex-metric-card complex-metric-highlight">
+        <span class="complex-metric-label">추정 분담금</span>
+        <span class="complex-metric-value">
+          {{ if lt . 0.0 }}환급 {{ printf "%.1f" (math.Abs .) }}억{{ else }}{{ printf "%.1f" . }}억{{ end }}
+        </span>
+      </div>
+      {{ end }}
+    </div>
+
+    {{/* ── 본문 렌더링 ── */}}
+    {{ .Content }}
+
+  </div>
+
+  {{/* ── 관련 단지 (같은 구) ── */}}
+  {{ $currentSlug := .Params.complexData.name }}
+  {{ $currentDistrict := .Params.complexData.district }}
+  {{ $related := slice }}
+  {{ range where .Site.RegularPages "Section" "complex" }}
+    {{ if and (ne .Params.complexData.name $currentSlug) (eq .Params.complexData.district $currentDistrict) }}
+      {{ $related = $related | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{ if gt (len $related) 0 }}
+  <div class="complex-related">
+    <h3>{{ $currentDistrict }} 다른 단지 분석</h3>
+    <ul>
+      {{ range first 5 $related }}
+      <li>
+        <a href="{{ .Permalink }}">
+          {{ .Params.complexData.name }}
+          <span class="complex-related-badge complex-risk-{{ .Params.complexData.riskGrade }}">{{ .Params.complexData.riskGrade }}</span>
+          <span class="complex-related-ratio">비례율 {{ .Params.complexData.proportionRate }}%</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
+  {{/* ── 구독 폼 ── */}}
+  {{- partial "subscribe-form.html" . }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+</article>
+
+{{/* ── Schema.org 구조화 데이터 ── */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Params.complexData.name }} 분담금 리스크 분석",
+  "description": {{ .Description | jsonify }},
+  "author": {
+    "@type": "Organization",
+    "name": "M-DEENO",
+    "url": "https://mdeeno.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "M-DEENO",
+    "url": "https://mdeeno.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tech.mdeeno.com/images/logo.png"
+    }
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "about": {
+    "@type": "Place",
+    "name": "{{ .Params.complexData.name }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": {{ .Params.complexData.district | jsonify }},
+      "addressRegion": {{ (.Params.complexData.city | default "") | jsonify }}
+    }
+  }
+}
+</script>
+
+{{- end }}{{/* end main */}}

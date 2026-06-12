@@ -81,6 +81,11 @@ function dismissPWA() {
 <link rel="preload" href="/css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/css/custom.css"></noscript>
 
+{{/* ── Complex Page CSS (단지별 분석 페이지 전용) ──────────── */}}
+{{- if eq .Section "complex" }}
+<link rel="stylesheet" href="/css/complex.css">
+{{- end }}
+
 {{/* ── 삼성인터넷 절전모드 다크모드 감지 (캐너리 방식) ── */}}
 {{/* defer 패턴: requestIdleCallback → LCP 블로킹 제거 */}}
 <script>
