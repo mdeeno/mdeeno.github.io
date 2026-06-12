@@ -107,6 +107,12 @@ canonifyURLs = false
 
 # 상단 메뉴
 [[menu.main]]
+  identifier = "complex"
+  name = "단지별 분석"
+  url = "/complex/"
+  weight = 5
+
+[[menu.main]]
   identifier = "reconstruction"
   name = "재건축"
   url = "/posts/reconstruction/"
