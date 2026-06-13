@@ -23,6 +23,10 @@
 
 {{- /* Main template starts here */ -}}
 # {{ site.Title }}
+{{- with site.Params.description }}
+
+> {{ . }}
+{{- end }}
 
 {{- /* Pages not in any section */ -}}
 {{- $orphans := where site.RegularPages "Section" "" -}}

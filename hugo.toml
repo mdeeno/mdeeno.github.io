@@ -91,8 +91,15 @@ canonifyURLs = false
   [params.verification]
     naver = "2f237c17ee6a92cf4e3591b76895cfd73bf59bca"
 
+# GEO(생성형 검색 최적화): AI 크롤러용 llms.txt 출력 — 사이트 콘텐츠 맵을 평문으로 제공
+[outputFormats.LLMS]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  rel = "alternate"
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "LLMS"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
