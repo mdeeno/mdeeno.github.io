@@ -1,5 +1,5 @@
 {{- define "main" -}}
-{{- $posts := where .Site.RegularPages "Section" "in" (slice "posts") -}}
+{{- $posts := where (where .Site.RegularPages "Section" "in" (slice "posts")) "Params.robotsNoIndex" "!=" true -}}
 <div class="home-wrap">
 
   {{/* ── HERO ── */}}
