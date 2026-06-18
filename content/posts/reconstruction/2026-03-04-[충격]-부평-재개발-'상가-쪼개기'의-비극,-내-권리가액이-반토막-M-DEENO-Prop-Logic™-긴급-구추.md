@@ -1,5 +1,5 @@
 ---
-robotsNoIndex: false
+robotsNoIndex: true
 title: "[충격] 부평 재개발 상가 쪼개기의 비극, 내 권리가액이 반토막?긴급 구출 매뉴얼"
 date: 2026-03-04T10:19:22+09:00
 draft: false
