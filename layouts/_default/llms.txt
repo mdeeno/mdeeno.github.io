@@ -1,0 +1,45 @@
+{{- /* Keep GEO discovery aligned with indexability: omit pages intentionally marked noindex. */ -}}
+{{- define "llms_print_section" -}}
+{{- $section := .section -}}
+{{- $depth := .depth -}}
+{{- $pages := where $section.RegularPages "Params.robotsNoIndex" "ne" true -}}
+{{- $pages = where $pages "Params.searchHidden" "ne" true -}}
+{{- if or (gt (len $pages) 0) (gt (len $section.Sections) 0) -}}
+{{- $hashes := strings.Repeat (add $depth 1) "#" }}
+
+{{ printf "%s %s" $hashes $section.Title }}
+
+{{- range $p := $pages }}
+  {{- if and (ne $p.Layout `archives`) (ne $p.Layout `search`) }}
+- [{{ $p.Title }}]({{ $p.Permalink }})
+  {{- end -}}
+{{- end -}}
+
+{{- range $s := $section.Sections -}}
+{{- template "llms_print_section" (dict "section" $s "depth" (add $depth 1)) -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+
+# {{ site.Title }}
+{{- with site.Params.description }}
+
+> {{ . }}
+{{- end }}
+
+{{- $orphans := where site.RegularPages "Section" "" -}}
+{{- $orphans = where $orphans "Params.robotsNoIndex" "ne" true -}}
+{{- $orphans = where $orphans "Params.searchHidden" "ne" true -}}
+{{ if gt (len $orphans) 0 }}
+
+{{- range $p := $orphans -}}
+  {{ if and (ne $p.Layout `archives`) (ne $p.Layout `search`) (not $p.IsHome) }}
+- [{{ $p.Title }}]({{ $p.Permalink }})
+  {{- end -}}
+{{- end -}}
+
+{{- end -}}
+
+{{- range site.Sections -}}
+{{- template "llms_print_section" (dict "section" . "depth" 1) -}}
+{{- end }}

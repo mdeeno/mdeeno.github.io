@@ -49,19 +49,19 @@
           {{- $started = true -}}
         {{- end -}}
         {{- if $started -}}
-          {{- /* Stop at next heading or FAQ section marker */ -}}
-          {{- if not (hasPrefix $trimmed "#") -}}
-            {{- if and (not (hasPrefix $trimmed "> **")) (ne $trimmed "") -}}
+          {{- /* Stop after the answer paragraph or before non-answer blocks. */ -}}
+          {{- if eq $trimmed "" -}}
+            {{- break -}}
+          {{- else if or (hasPrefix $trimmed "#") (hasPrefix $trimmed "<") (hasPrefix $trimmed "---") -}}
+            {{- break -}}
+          {{- else -}}
+            {{- if not (hasPrefix $trimmed "> **") -}}
               {{- if eq $answer "" -}}
                 {{- $answer = $trimmed -}}
               {{- else -}}
                 {{- $answer = printf "%s %s" $answer $trimmed -}}
               {{- end -}}
-            {{- else if hasPrefix $trimmed "#" -}}
-              {{- break -}}
             {{- end -}}
-          {{- else -}}
-            {{- break -}}
           {{- end -}}
         {{- end -}}
       {{- end -}}
@@ -93,21 +93,21 @@
           {{- $started = true -}}
         {{- end -}}
         {{- if $started -}}
-          {{- if not (hasPrefix $trimmed "#") -}}
+          {{- if eq $trimmed "" -}}
+            {{- break -}}
+          {{- else if or (hasPrefix $trimmed "#") (hasPrefix $trimmed "<") (hasPrefix $trimmed "---") -}}
+            {{- break -}}
+          {{- else -}}
             {{- $isBoldQ := findRE `^\*\*Q\d+\.` $trimmed -}}
             {{- if $isBoldQ -}}
               {{- break -}}
             {{- end -}}
-            {{- if ne $trimmed "" -}}
-              {{- $cleanLine := replaceRE `^-\s+` "" $trimmed -}}
-              {{- if eq $answer "" -}}
-                {{- $answer = $cleanLine -}}
-              {{- else -}}
-                {{- $answer = printf "%s %s" $answer $cleanLine -}}
-              {{- end -}}
+            {{- $cleanLine := replaceRE `^-\s+` "" $trimmed -}}
+            {{- if eq $answer "" -}}
+              {{- $answer = $cleanLine -}}
+            {{- else -}}
+              {{- $answer = printf "%s %s" $answer $cleanLine -}}
             {{- end -}}
-          {{- else -}}
-            {{- break -}}
           {{- end -}}
         {{- end -}}
       {{- end -}}
