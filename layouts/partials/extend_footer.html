@@ -20,6 +20,73 @@
 try{if(sessionStorage.getItem('pwa-dismissed')){var _b=document.getElementById('pwa-install-banner');if(_b)_b.style.display='none';}}catch(e){}
 </script>
 
+{{/* ── 블로그 → 리스크 진단 전환 공통 계측 ── */}}
+<script>
+(function(){
+  var path = window.location.pathname;
+  var contentType = path === '/' ? 'home'
+    : path.indexOf('/complex/') === 0 ? 'complex'
+    : path.indexOf('/calculators/') === 0 ? 'calculator'
+    : path.indexOf('/posts/') === 0 ? 'article'
+    : 'other';
+  var topicText = (document.title + ' ' + decodeURIComponent(path)).toLowerCase();
+  var cluster = contentType === 'complex' ? 'contribution'
+    : /(이주비|dsr|ltv|대출)/.test(topicText) ? 'relocation_loan'
+    : topicText.indexOf('공사비') !== -1 ? 'construction_cost'
+    : topicText.indexOf('비례율') !== -1 ? 'ratio'
+    : topicText.indexOf('분담금') !== -1 ? 'contribution'
+    : 'other';
+  var common = {
+    page_path: path,
+    content_type: contentType,
+    cluster: cluster,
+    destination: '/member'
+  };
+
+  if (window.gtag) {
+    window.gtag('set', common);
+  }
+
+  function getCtaPosition(link) {
+    if (link.closest('.home-hero')) return 'hero';
+    if (link.closest('.floating-cta')) return 'floating';
+    if (link.closest('.blog-cta--top, .launch-banner')) return 'top';
+    if (link.closest('.blog-cta--mid')) return 'mid';
+    if (link.closest('.blog-cta--bottom, .premium-band')) return 'bottom';
+    if (link.closest('.blog-cta-box, .complex-cta-box')) return 'inline';
+    return 'other';
+  }
+
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link) return;
+
+    var url;
+    try {
+      url = new URL(link.href, window.location.href);
+    } catch (e) {
+      return;
+    }
+
+    if (url.hostname !== 'mdeeno.com' || !url.pathname.startsWith('/member')) return;
+
+    var params = Object.assign({}, common, {
+      cta_position: getCtaPosition(link)
+    });
+
+    if (!window.gtag) return;
+
+    // 기존 본문 CTA가 동일 이벤트를 보내는 경우 공통 매개변수만 먼저 설정해
+    // 중복 이벤트 없이 기존 호출을 보강한다.
+    var inlineHandler = link.getAttribute('onclick') || '';
+    window.gtag('set', params);
+    if (inlineHandler.indexOf('blog_to_mvp_click') !== -1) return;
+
+    window.gtag('event', 'blog_to_mvp_click', params);
+  }, true);
+})();
+</script>
+
 {{/* 스크롤 깊이 추적 — 25/50/75/100% 도달 시 GA4 이벤트 */}}
 <script>
 (function(){

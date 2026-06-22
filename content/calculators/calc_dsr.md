@@ -1,18 +1,18 @@
 ---
-title: '📉 DSR & 내 집 마련 대출 한도 계산기'
+title: '📉 DSR 계산기 — 연소득 대비 원리금 상환액'
 date: 2026-01-01
-summary: '내 연봉으로 얼마까지 대출이 나올까? DSR 40% 규제 완벽 분석'
+lastmod: 2026-06-22
+summary: '연소득과 기존·신규 대출의 연간 원리금으로 예상 DSR을 계산합니다'
 ---
 
-## 재건축 이주비 대출, 내가 받을 수 있을까?
+## 이주비 이후 신규 대출 여력을 확인하세요
 
-재건축 조합원이 가장 먼저 확인해야 할 것이 **이주비 대출 가능 여부**입니다.
-DSR 한도가 꽉 차면 이주비 대출이 막히고, 이주가 불가능해져 분담금 전략 전체가 무너집니다.
+금융위원회 최신 정책 문답상 중도금·이주비 대출은 DSR 직접 적용 대상에서 제외됩니다. 다만 이주비 실행 후 다른 DSR 적용 대출을 신규로 받을 때 기존 이주비의 원리금이 반영될 수 있습니다.
 
-아래 계산기로 현재 소득 기준 대출 한도를 먼저 확인하세요.
+아래 계산기는 일반 대출의 예상 DSR을 확인하는 도구입니다. 이주비 승인액을 계산하거나 금융기관의 승인을 예측하는 도구가 아닙니다.
 
-- 관련 분석: [재건축 이주비 대출, 억 단위 이자 부담 피하는 방법](/posts/reconstruction/)
-- 관련 분석: [재건축 분담금 폭탄, 내 아파트는 안전할까?](/posts/reconstruction/)
+- 관련 분석: [재건축 이주비 대출 한도 — DSR·LTV 확인 순서](/posts/reconstruction/2026-03-17-이주비-대출-0원-재건축-조합원이-입주-전-반드시-체크할-3가지/)
+- 공식 기준: [금융위원회 가계대출 관리 강화 FAQ](https://www.fsc.go.kr/po020201/85518)
 
 ---
 
@@ -20,13 +20,15 @@ DSR 한도가 꽉 차면 이주비 대출이 막히고, 이주가 불가능해�
 
 **DSR(총부채원리금상환비율)**은 쉽게 말해 **"네가 버는 돈 중에서 빚 갚는 데 얼마를 쓰니?"**라는 비율입니다.
 
-- **DSR 40%의 의미:** 연봉이 5,000만 원이라면, 1년에 갚는 원금+이자가 2,000만 원을 넘으면 안 된다는 뜻입니다.
-- **왜 중요한가요?:** 은행은 이 DSR 비율을 칼같이 지킵니다. 아무리 집값이 비싸도 내 DSR 한도가 꽉 차면 10원도 빌릴 수 없습니다.
+- **DSR 40%의 의미:** 연소득이 5,000만 원이고 DSR 기준을 40%로 적용한다면 연간 원리금 상환액 한도는 2,000만 원이라는 뜻입니다.
+- **주의할 점:** 실제 산정 만기, 스트레스 금리, 포함 부채와 적용 비율은 대출 종류·업권·신청 시점에 따라 다릅니다.
 
-## 💡 대출 한도를 늘리는 꿀팁
+## 신청 전에 확인할 항목
 
-1.  **마이너스 통장 정리:** 쓰지 않는 마통이라도 한도만큼 빚으로 잡힙니다. 당장 없애세요.
-2.  **만기를 길게:** 대출 기간을 30년보다 40년, 50년으로 늘리면 1년에 갚는 돈이 줄어들어 DSR이 낮아집니다.
+1. 기존 대출의 DSR 산정상 연간 원리금
+2. 신규 대출에 적용되는 스트레스 금리와 산정 만기
+3. 은행권·비은행권의 적용 기준
+4. 이주비·중도금 등 예외 대출이 이후 신규 심사에 반영되는 방식
 
 ---
 
@@ -143,12 +145,14 @@ function calcDSR() {
   const rate = Number(document.getElementById('dsrRate').value) / 100;
   const year = Number(document.getElementById('dsrYear').value);
 
-  if(!income || !newLoan) { alert('연소득과 대출금액을 입력해주세요.'); return; }
+  if(!income || !newLoan || !year || rate < 0) { alert('연소득, 대출금액, 금리와 기간을 확인해주세요.'); return; }
 
   // 원리금 균등 상환 기준 연 상환액 계산
   const monthlyRate = rate / 12;
   const totalMonths = year * 12;
-  const monthlyPayment = (newLoan * monthlyRate * Math.pow(1+monthlyRate, totalMonths)) / (Math.pow(1+monthlyRate, totalMonths) - 1);
+  const monthlyPayment = monthlyRate === 0
+    ? newLoan / totalMonths
+    : (newLoan * monthlyRate * Math.pow(1+monthlyRate, totalMonths)) / (Math.pow(1+monthlyRate, totalMonths) - 1);
   const yearlyPayment = monthlyPayment * 12;
 
   const totalYearlyRepayment = existing + yearlyPayment;
@@ -159,13 +163,13 @@ function calcDSR() {
   document.getElementById('dsrResult').style.display = 'block';
 
   if(dsr <= 40) {
-    comment.innerHTML = "✅ <strong>안전합니다!</strong> 은행 대출 승인 가능성이 높습니다.";
+    comment.innerHTML = "현재 입력값 기준 40% 이하입니다. 실제 승인 여부는 금융기관 심사와 스트레스 DSR 적용 결과를 확인하세요.";
     comment.style.color = "green";
   } else if(dsr <= 50) {
-    comment.innerHTML = "⚠️ <strong>주의 단계입니다.</strong> 2금융권 이용이나 한도 감액이 필요할 수 있습니다.";
+    comment.innerHTML = "현재 입력값 기준 40%를 초과합니다. 적용 업권과 대출 종류의 실제 기준을 확인하세요.";
     comment.style.color = "#f59f00";
   } else {
-    comment.innerHTML = "🚨 <strong>위험합니다!</strong> 대출이 거절될 확률이 매우 높습니다. 대출 기간을 늘리거나 금액을 줄이세요.";
+    comment.innerHTML = "현재 입력값 기준 50%를 초과합니다. 신규 대출 전 금융기관의 정식 한도 조회가 필요합니다.";
     comment.style.color = "red";
   }
 }
