@@ -66,6 +66,11 @@ canonifyURLs = false
   [params.analytics.google]
     SiteVerificationTag = "egpUo4dD8e73c7-Sgf7SNHoeFg6kOsPtJf6JoYGE6pw"
 
+  # 네이버 웹마스터도구 인증 — 기존 코드가 [params.verification]에 mis-key돼 렌더 안 되던 것 교정.
+  # PaperMod head는 params.analytics.naver.SiteVerificationTag 경로를 읽는다.
+  [params.analytics.naver]
+    SiteVerificationTag = "2f237c17ee6a92cf4e3591b76895cfd73bf59bca"
+
   [params.label]
     text = "BLOG"
     icon = "images/logo.png"

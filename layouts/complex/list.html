@@ -1,0 +1,54 @@
+{{ define "main" }}
+<article class="complex-hub">
+  <header class="page-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Content }}<div class="post-content hub-intro">{{ . }}</div>{{ end }}
+  </header>
+
+  {{/* 지역(구/시)별 그룹핑 — 크롤러가 199개 단지 페이지를 발견할 유일한 내부링크 허브 */}}
+  {{ $byDistrict := .Pages.GroupByParam "complexData.district" }}
+  {{ if $byDistrict }}
+  <nav class="hub-groups" aria-label="지역별 단지 목록">
+    {{ range $byDistrict }}
+    <section class="hub-district">
+      <h2 class="hub-district-name">{{ .Key | default "기타" }}</h2>
+      <ul class="hub-list">
+        {{ range (.Pages.ByTitle) }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            <span class="hub-name">{{ with .Params.complexData.name }}{{ . }}{{ else }}{{ .Title }}{{ end }}</span>
+            {{ with .Params.complexData.stage }}<span class="hub-stage">{{ . }}</span>{{ end }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </nav>
+  {{ else }}
+  {{/* 그룹핑 필드 누락 시 평면 폴백 — 어떤 경우에도 링크 경로는 보장 */}}
+  <ul class="hub-list hub-flat">
+    {{ range .Pages.ByTitle }}
+    <li><a href="{{ .RelPermalink }}">{{ with .Params.complexData.name }}{{ . }}{{ else }}{{ .Title }}{{ end }}</a></li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  <div class="hub-cta">
+    <a href="/member?utm_source=blog&utm_medium=hub_cta&utm_campaign=complex_hub" class="hbtn hbtn-primary">내 단지 리스크 무료 진단 →</a>
+  </div>
+</article>
+
+<style>
+.complex-hub{max-width:820px;margin:0 auto}
+.hub-intro{margin:12px 0 28px;color:var(--secondary,#4e5968);line-height:1.7}
+.hub-district{margin:0 0 22px}
+.hub-district-name{font-size:1.05rem;margin:0 0 10px;padding-bottom:6px;border-bottom:2px solid var(--border,#e6edf3);color:var(--primary,#1e40af)}
+.hub-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px}
+.hub-list a{display:flex;align-items:baseline;gap:8px;padding:9px 12px;border:1px solid var(--border,#e6edf3);border-radius:8px;text-decoration:none;min-height:44px}
+.hub-list a:hover{border-color:var(--primary,#1e40af);background:#fbfdfe}
+.hub-name{font-weight:700;font-size:.9rem;color:#1d2a3a}
+.hub-stage{font-size:.78rem;color:#687386}
+.hub-cta{text-align:center;margin:36px 0 8px}
+</style>
+{{ end }}
