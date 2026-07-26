@@ -1,6 +1,7 @@
 {{- define "main" }}
 
-{{ partial "launch_banner.html" . }}
+{{/* launch_banner: 2026-06-14 오픈 배너 — 6주 경과로 "NEW·정식 오픈"이 거짓 신선도가 되어
+     2026-07-26 노출 중단. partial은 재사용 대비 보존한다(재오픈·신제품 시 이 줄만 복구). */}}
 
 <article class="post-single">
   <header class="post-header">
@@ -58,8 +59,10 @@
     {{/* ── 면책 조항 + 저작권 ── */}}
     {{- partial "post_disclaimer.html" . }}
 
-    {{/* ── 플로팅 CTA 바: 스크롤 40% 이상에서 표시 ── */}}
-    {{- partial "floating_cta.html" . }}
+    {{/* floating_cta: 화면 고정 바 — 모바일에서 본문을 가리고, 본문 대비 광고 표면이
+         과다해지는(자사 5 + 애드센스 2) 원인이라 2026-07-26 노출 중단.
+         blog-context.md의 "CTA 최소 2개" 규칙은 top/mid/auto로 충족된다.
+         partial은 보존 — 되돌리려면 이 줄만 복구. */}}
 
   </div>
   {{- end }}
