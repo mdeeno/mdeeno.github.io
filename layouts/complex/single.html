@@ -6,11 +6,10 @@
     <h1 class="post-title">
       {{ .Params.complexData.name }} 분담금 리스크 분석
     </h1>
-    {{- if .Description }}
+    {{- $safeDescription := printf "%s의 사업 단계와 주요 변수에 따른 재건축·재개발 분담금 리스크를 시나리오 범위로 살펴봅니다." .Params.complexData.name }}
     <div class="post-description">
-      {{ .Description }}
+      {{ $safeDescription }}
     </div>
-    {{- end }}
 
     {{/* ── 리스크 배지 ── */}}
     {{ $grade := .Params.complexData.riskGrade }}
@@ -26,7 +25,7 @@
     {{/* ── 핵심 지표 카드 ── */}}
     <div class="complex-metrics">
       <div class="complex-metric-card">
-        <span class="complex-metric-label">비례율</span>
+        <span class="complex-metric-label">시나리오 비례율</span>
         <span class="complex-metric-value">{{ .Params.complexData.proportionRate }}%</span>
       </div>
       <div class="complex-metric-card">
@@ -34,17 +33,9 @@
         <span class="complex-metric-value complex-metric-small">{{ .Params.complexData.stage }}</span>
       </div>
       <div class="complex-metric-card">
-        <span class="complex-metric-label">추정 공사비</span>
+        <span class="complex-metric-label">시나리오 공사비</span>
         <span class="complex-metric-value complex-metric-small">{{ .Params.complexData.expectedCost }}만/평</span>
       </div>
-      {{ with .Params.complexData.confirmedExtra }}
-      <div class="complex-metric-card complex-metric-highlight">
-        <span class="complex-metric-label">추정 분담금</span>
-        <span class="complex-metric-value">
-          {{ if lt . 0.0 }}환급 {{ printf "%.1f" (math.Abs .) }}억{{ else }}{{ printf "%.1f" . }}억{{ end }}
-        </span>
-      </div>
-      {{ end }}
     </div>
 
     {{/* ── 본문 렌더링 ── */}}
@@ -101,7 +92,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "{{ .Params.complexData.name }} 분담금 리스크 분석",
-  "description": {{ .Description | jsonify }},
+  "description": {{ $safeDescription | jsonify }},
   "author": {
     "@type": "Organization",
     "name": "M-DEENO",

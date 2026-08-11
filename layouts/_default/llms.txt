@@ -4,6 +4,9 @@
 {{- $depth := .depth -}}
 {{- $pages := where $section.RegularPages "Params.robotsNoIndex" "ne" true -}}
 {{- $pages = where $pages "Params.searchHidden" "ne" true -}}
+{{- $nonComplexPages := where $pages "Section" "ne" "complex" -}}
+{{- $approvedComplexPages := where $pages "Params.indexApproved" "eq" true -}}
+{{- $pages = union $nonComplexPages $approvedComplexPages -}}
 {{- if or (gt (len $pages) 0) (gt (len $section.Sections) 0) -}}
 {{- $hashes := strings.Repeat (add $depth 1) "#" }}
 
