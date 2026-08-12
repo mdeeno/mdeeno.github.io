@@ -40,8 +40,10 @@
   {{- if .Content }}
   <div class="post-content">
 
-    {{/* ── 상단 CTA 배너: 본문 시작 전 ── */}}
+    {{/* 공식 원천 글은 본문 내 추적 CTA가 있으므로 상단 CTA를 중복 노출하지 않는다. */}}
+    {{- if not (.Param "sourceBacked") }}
     {{- partial "top_cta.html" . }}
+    {{- end }}
 
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
@@ -53,8 +55,10 @@
     {{/* ── 인라인 광고: 본문과 CTA 사이 ── */}}
     {{- partial "adsense_slot_inline.html" . }}
 
-    {{/* ── 마무리 CTA: 본문 끝 후 (계산기 링크 통합) ── */}}
+    {{/* 공식 원천 글은 글별 UTM CTA를 유지하고 공통 하단 CTA를 중복 노출하지 않는다. */}}
+    {{- if not (.Param "sourceBacked") }}
     {{- partial "cta_auto.html" . }}
+    {{- end }}
 
     {{/* ── 면책 조항 + 저작권 ── */}}
     {{- partial "post_disclaimer.html" . }}
