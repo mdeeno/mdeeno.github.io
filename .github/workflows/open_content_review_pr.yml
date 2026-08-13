@@ -1,0 +1,39 @@
+name: Open Content Review PR
+
+on:
+  push:
+    branches:
+      - 'content-review-*'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  open-draft-pr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Open draft review PR when missing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_BRANCH: ${{ github.ref_name }}
+        run: |
+          existing=$(gh pr list \
+            --repo "$GITHUB_REPOSITORY" \
+            --state open \
+            --head "$HEAD_BRANCH" \
+            --json number \
+            --jq 'length')
+          if [ "$existing" -gt 0 ]; then
+            echo "이미 열린 검토 PR이 있어 건너뜁니다."
+            exit 0
+          fi
+
+          gh pr create \
+            --repo "$GITHUB_REPOSITORY" \
+            --base main \
+            --head "$HEAD_BRANCH" \
+            --draft \
+            --title "[content-review] 공식 원천 기반 주간 초안" \
+            --body "자동 발행이 아닙니다. 사실·시점·메시징·법무·CTA를 검토한 뒤 승인 여부를 결정하세요. 초안은 draft/noindex 상태입니다."
