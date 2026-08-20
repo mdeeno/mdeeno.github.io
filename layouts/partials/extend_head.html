@@ -1,8 +1,3 @@
-{{/* ── 태그/카테고리 목록 페이지 noindex (thin content 방지, 크롤 버짓 보호) ── */}}
-{{- if .Data.Singular }}
-<meta name="robots" content="noindex, follow">
-{{- end }}
-
 {{/* ── LCP 이미지 preload (포스트 페이지만) ── */}}
 {{- if .IsPage }}
   {{- with .Params.image }}
@@ -61,10 +56,6 @@ function dismissPWA() {
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
 <link rel="dns-prefetch" href="https://mdeeno.goatcounter.com">
-{{/* ── 폰트 woff2 preload — FOUT 제거, LCP 개선 ── */}}
-<link rel="preload" as="font" type="font/woff2" crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.subset.woff2">
-
 {{/* ── Pretendard — 비블로킹 로드 + font-display: swap ───── */}}
 {{/* media="print" → onload → media="all" 트릭으로 렌더 블로킹 제거 */}}
 <link rel="preload" as="style"
@@ -174,19 +165,33 @@ function dismissPWA() {
 </script>
 
 {{/* ── Schema.org JSON-LD (Article) ──────────────────────────── */}}
-{{ if .IsPage }}
+{{- $isIndexablePost := and (eq .Kind "page") (eq .Section "posts") (ne .Params.robotsNoIndex true) (not .Draft) -}}
+{{- if $isIndexablePost -}}
+{{- $articleImage := "og-image.png" | absURL -}}
+{{- with .Params.images }}{{ $articleImage = index . 0 | absURL }}{{ end -}}
+{{- with .Params.image }}{{ $articleImage = . | absURL }}{{ end -}}
+{{- $articleDescription := .Description | default .Summary | plainify | truncate 160 -}}
+{{- $articleLastmod := .Lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+{{- with .File -}}
+  {{- $articlePath := .Path -}}
+  {{- with site.Data.git_lastmod -}}
+    {{- with index . $articlePath -}}
+      {{- $articleLastmod = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "{{ .Title }}",
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "headline": {{ .Title | jsonify | safeJS }},
+  "datePublished": {{ (.Date.Format "2006-01-02T15:04:05Z07:00") | jsonify | safeJS }},
+  "dateModified": {{ $articleLastmod | jsonify | safeJS }},
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
+    "@id": {{ .Permalink | jsonify | safeJS }}
   },
-  "image": "{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ with .Params.images }}{{ index . 0 | absURL }}{{ else }}{{ "og-image.png" | absURL }}{{ end }}{{ end }}",
+  "image": {{ $articleImage | jsonify | safeJS }},
   "author": {
     "@type": "Organization",
     "name": "M-DEENO",
@@ -201,13 +206,15 @@ function dismissPWA() {
       "url": "https://tech.mdeeno.com/logo.png"
     }
   },
-  "description": "{{ .Description | default .Summary | plainify | truncate 160 }}"
+  "description": {{ $articleDescription | jsonify | safeJS }}
 }
 </script>
-{{ end }}
+{{- end }}
 
 {{/* ── Schema.org JSON-LD (FAQPage) ────────────────────────── */}}
+{{- if $isIndexablePost -}}
 {{- partial "faq_schema.html" . -}}
+{{- end -}}
 
 {{/* ── Schema.org JSON-LD (BreadcrumbList) ────────────────── */}}
 {{ if .IsPage }}
@@ -219,22 +226,22 @@ function dismissPWA() {
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "홈",
-      "item": "{{ site.BaseURL }}"
+      "name": {{ "홈" | jsonify | safeJS }},
+      "item": {{ site.BaseURL | jsonify | safeJS }}
     }
     {{- with .CurrentSection }}
     ,{
       "@type": "ListItem",
       "position": 2,
-      "name": "{{ .Title }}",
-      "item": "{{ .Permalink }}"
+      "name": {{ .Title | plainify | jsonify | safeJS }},
+      "item": {{ .Permalink | jsonify | safeJS }}
     }
     {{- end }}
     ,{
       "@type": "ListItem",
       "position": 3,
-      "name": "{{ .Title | plainify }}",
-      "item": "{{ .Permalink }}"
+      "name": {{ .Title | plainify | jsonify | safeJS }},
+      "item": {{ .Permalink | jsonify | safeJS }}
     }
   ]
 }

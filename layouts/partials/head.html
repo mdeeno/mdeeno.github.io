@@ -2,8 +2,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{- $unapprovedComplex := and (eq .Section "complex") (ne .Params.indexApproved true) }}
+{{- $taxonomyNoIndex := or (eq .Kind "taxonomy") (eq .Kind "term") }}
 {{- if eq .Kind "404" }}
 <meta name="robots" content="noindex, nofollow">
+{{- else if $taxonomyNoIndex }}
+<meta name="robots" content="noindex, follow">
 {{- else if and (or hugo.IsProduction (eq site.Params.env "production")) (ne .Params.robotsNoIndex true) (not $unapprovedComplex) }}
 <meta name="robots" content="index, follow">
 {{- else }}

@@ -1,7 +1,7 @@
 // M-DEENO Blog Service Worker
-// Cache-first for static assets, Network-first for HTML pages
+// Network-first for HTML/CSS/JS, Cache-first for versioned media assets
 
-const CACHE_VERSION = 'mdeeno-v1';
+const CACHE_VERSION = 'mdeeno-v2';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const PAGES_CACHE = CACHE_VERSION + '-pages';
 
@@ -63,7 +63,22 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Static assets (CSS, JS, images): Cache-first, fallback to network
+  // CSS/JS는 네트워크 우선으로 갱신해 설치형 PWA에 UI 수정이 오래 남지 않게 한다.
+  if (request.destination === 'style' || request.destination === 'script') {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (!response || response.status !== 200) return response;
+          const clone = response.clone();
+          caches.open(STATIC_CACHE).then((cache) => cache.put(request, clone));
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // 이미지·기타 정적 자산: Cache-first, fallback to network
   event.respondWith(
     caches.match(request)
       .then((cached) => {

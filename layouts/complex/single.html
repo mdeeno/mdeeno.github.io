@@ -86,43 +86,4 @@
   </footer>
 </article>
 
-{{/* ── Schema.org 구조화 데이터 ── */}}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ .Params.complexData.name }} 분담금 리스크 분석",
-  "description": {{ $safeDescription | jsonify }},
-  "author": {
-    "@type": "Organization",
-    "name": "M-DEENO",
-    "url": "https://mdeeno.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "M-DEENO",
-    "url": "https://mdeeno.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://tech.mdeeno.com/images/logo.png"
-    }
-  },
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
-  },
-  "about": {
-    "@type": "Place",
-    "name": "{{ .Params.complexData.name }}",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": {{ .Params.complexData.district | jsonify }},
-      "addressRegion": {{ (.Params.complexData.city | default "") | jsonify }}
-    }
-  }
-}
-</script>
-
 {{- end }}{{/* end main */}}

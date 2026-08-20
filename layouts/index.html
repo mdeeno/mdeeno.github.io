@@ -82,7 +82,7 @@
       <div class="stat-l">분석 리포트</div>
     </div>
     <div class="stat-box">
-      <div class="stat-n" id="gc-total-visitors">1,200명+</div>
+      <div class="stat-n" id="gc-total-visitors">-</div>
       <div class="stat-l">누적 방문</div>
     </div>
     <div class="stat-box">
@@ -98,7 +98,6 @@
   (function(){
     var totalEl=document.getElementById('gc-total-visitors');
     var todayEl=document.getElementById('gc-today-visitors');
-    var FALLBACK_TOTAL='1,200명+';
     try{var c=JSON.parse(localStorage.getItem('mdeeno_visitors')||'{}');
       if(c.total&&totalEl)totalEl.innerText=c.total;
       if(c.today&&todayEl)todayEl.innerText=c.today;
@@ -113,8 +112,8 @@
         try{localStorage.setItem('mdeeno_visitors',JSON.stringify({total:t,today:td}));}catch(e){}
       })
       .catch(function(){
-        if(totalEl&&totalEl.innerText==='-')totalEl.innerText=FALLBACK_TOTAL;
-        if(todayEl&&todayEl.innerText==='-')todayEl.innerText='-';
+        if(totalEl)totalEl.innerText='-';
+        if(todayEl)todayEl.innerText='-';
       });
   })();
   </script>

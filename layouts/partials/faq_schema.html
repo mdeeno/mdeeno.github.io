@@ -137,10 +137,10 @@
     {{- if gt $i 0 }},{{ end }}
     {
       "@type": "Question",
-      "name": {{ $item.question | jsonify }},
+      "name": {{ $item.question | jsonify | safeJS }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ $item.answer | jsonify }}
+        "text": {{ $item.answer | jsonify | safeJS }}
       }
     }
     {{- end }}
