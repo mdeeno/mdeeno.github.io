@@ -8,8 +8,9 @@
     <!-- 카카오톡 (SDK 키 설정 시에만 노출) -->
     {{- if .Site.Params.kakao_js_key }}
     <li>
-        <a href="javascript:void(0)" aria-label="share {{ $title | plainify }} on KakaoTalk"
-            onclick="shareKakao(this)" class="kakao-share-btn"
+        <a href="https://story.kakao.com/share?url={{ $pageurl | urlquery }}" aria-label="share {{ $title | plainify }} on KakaoTalk"
+            target="_blank" rel="noopener noreferrer"
+            onclick="shareKakao(this); return false" class="kakao-share-btn"
             data-url="{{ $pageurl }}"
             data-title="{{ $title | plainify }}"
             data-desc="{{ $desc | plainify }}"

@@ -24,8 +24,8 @@ public/
 resources/
 node_modules/
 .hugo_build.lock
+data/git_lastmod.json
 
 # [Claude] 로컬 전용 파일
 CLAUDE.md
 CHANGELOG.md
-

@@ -32,9 +32,21 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Verify publication quality and cadence
+        env:
+          BASE_REF: ${{ github.event.before }}
+        run: |
+          python3 scripts/check_blog_release.py \
+            --blog-dir . \
+            --base-ref "$BASE_REF"
+
+      - name: Export verified Git modification dates
+        run: python3 scripts/export_git_lastmod.py --blog-dir .
+
       - name: Build with Hugo
         run: |
           hugo \
+            --ignoreCache \
             --minify \
             --baseURL "https://tech.mdeeno.com/"
 
@@ -52,4 +64,3 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-

@@ -25,6 +25,7 @@
 @media (max-width: 760px) {
   .logo a img {
     height: 20px !important;
+    width: auto !important;
   }
 }
 
@@ -2422,4 +2423,3 @@ article.post-single .post-content {
     mix-blend-mode: normal !important;
   }
 }
-
