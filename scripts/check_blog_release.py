@@ -57,6 +57,12 @@ GENERAL_FORBIDDEN_PHRASES = (
     "무료 분석",
 )
 ALLOWED_SOURCE_HOST_PATTERN = r"(?:www\.)?(?:law\.go\.kr|molit\.go\.kr|reb\.or\.kr)"
+STATUTORY_BURDEN_TERM_RE = re.compile(
+    r"(?:재건축|개발|학교용지|광역교통시설|기반시설)부담금"
+)
+LEGAL_BURDEN_QUOTE_RE = re.compile(
+    r"법령상\s*[\"'“‘]개략적(?:인)?\s+부담금(?:\s+내역)?[\"'”’]"
+)
 
 
 def extract_frontmatter(text: str) -> str | None:
@@ -105,6 +111,12 @@ def has_disclaimer(body: str) -> bool:
     return any(marker in body for marker in ESTIMATE_MARKERS) and any(
         marker in body for marker in VERIFY_MARKERS
     )
+
+
+def has_ambiguous_burden_term(text: str) -> bool:
+    remaining = STATUTORY_BURDEN_TERM_RE.sub("", text)
+    remaining = LEGAL_BURDEN_QUOTE_RE.sub("", remaining)
+    return "부담금" in remaining
 
 
 def check_post(path: Path) -> tuple[list[str], list[str]]:
@@ -176,6 +188,12 @@ def check_post(path: Path) -> tuple[list[str], list[str]]:
     for pattern in SOURCE_BACKED_FORBIDDEN_PATTERNS:
         if re.search(pattern, f"{frontmatter_scalar(frontmatter, 'title')}\n{body}", re.IGNORECASE):
             errors.append(f"공식 원천 글 금지 표현: {pattern}")
+    terminology_text = "\n".join(
+        frontmatter_scalar(frontmatter, key)
+        for key in ("title", "description", "tags", "primaryKeyword")
+    ) + f"\n{body}"
+    if has_ambiguous_burden_term(terminology_text):
+        errors.append("용어 혼동: 일반 조합원 비용은 '분담금', 법정 부과금만 '부담금'")
     return errors, warnings
 
 
