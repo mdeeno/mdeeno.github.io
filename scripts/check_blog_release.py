@@ -56,12 +56,17 @@ GENERAL_FORBIDDEN_PHRASES = (
     "무료로 분석해",
     "무료 분석",
 )
-ALLOWED_SOURCE_HOST_PATTERN = r"(?:www\.)?(?:law\.go\.kr|molit\.go\.kr|reb\.or\.kr)"
+ALLOWED_SOURCE_HOST_PATTERN = r"(?:www\.)?(?:law\.go\.kr|molit\.go\.kr|reb\.or\.kr|seoul\.go\.kr)"
 STATUTORY_BURDEN_TERM_RE = re.compile(
     r"(?:재건축|개발|학교용지|광역교통시설|기반시설)부담금"
 )
 LEGAL_BURDEN_QUOTE_RE = re.compile(
     r"법령상\s*[\"'“‘]개략적(?:인)?\s+부담금(?:\s+내역)?[\"'”’]"
+)
+# 과거 글은 법정 부담금을 문맥상 줄여 쓰기도 하므로 명백한 혼용만 차단한다.
+# 새 공식 원천 글에는 아래의 엄격한 has_ambiguous_burden_term 검사를 유지한다.
+MISLABELED_COST_RE = re.compile(
+    r"(?:추가|실질|실|특별|초기|조합원(?:당|의)?)\s*부담금|부담금\s*폭탄"
 )
 
 
@@ -117,6 +122,30 @@ def has_ambiguous_burden_term(text: str) -> bool:
     remaining = STATUTORY_BURDEN_TERM_RE.sub("", text)
     remaining = LEGAL_BURDEN_QUOTE_RE.sub("", remaining)
     return "부담금" in remaining
+
+
+def check_public_terminology(blog_dir: Path) -> list[str]:
+    """noindex도 독자가 열 수 있다. 과거 글·단지 소개까지 배포마다 검사한다."""
+    failures: list[str] = []
+    checked = 0
+    for path in sorted(blog_dir.joinpath("content").rglob("*.md")):
+        text = path.read_text(encoding="utf-8")
+        frontmatter = extract_frontmatter(text)
+        if frontmatter is None or re.search(r"^\s*draft:\s*true\s*$", frontmatter, re.MULTILINE):
+            continue
+        checked += 1
+        # 링크 주소·HTML 속성·주석은 보존하고 독자가 보는 문구만 검사한다.
+        visible = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
+        visible = re.sub(r"\]\([^)]+\)", "]", visible)
+        visible = re.sub(r"<[^>]+>", "", visible)
+        visible = re.sub(r"[*_`]", "", visible)
+        visible = STATUTORY_BURDEN_TERM_RE.sub("", visible)
+        visible = LEGAL_BURDEN_QUOTE_RE.sub("", visible)
+        matches = sorted(set(MISLABELED_COST_RE.findall(visible)))
+        if matches:
+            failures.append(f"{path.relative_to(blog_dir)}: 용어 혼용 — {', '.join(matches)}")
+    print(f"[blog-release] 전체 공개 문서 용어 검사 {checked}개, 실패 {len(failures)}개")
+    return failures
 
 
 def check_post(path: Path) -> tuple[list[str], list[str]]:
@@ -385,6 +414,7 @@ def main() -> int:
     try:
         base_ref = resolve_base_ref(blog_dir, args.base_ref)
         failures = check_indexable_baseline(blog_dir)
+        failures.extend(check_public_terminology(blog_dir))
         failures.extend(check_subscribe_form_metrics(blog_dir))
         if base_ref is not None:
             failures.extend(check_new_publication(blog_dir, newly_public_posts(blog_dir, base_ref)))
