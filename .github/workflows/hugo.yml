@@ -50,6 +50,9 @@ jobs:
             --minify \
             --baseURL "https://tech.mdeeno.com/"
 
+      - name: Replace legacy pages with migration links
+        run: python3 scripts/build_blog_bridge.py --public-dir public --apply
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
