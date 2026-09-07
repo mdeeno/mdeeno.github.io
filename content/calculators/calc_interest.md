@@ -125,13 +125,11 @@ div[id$="Result"], .result-area {
   </div>
 </div>
 
-<div style="margin:32px 0;padding:20px 28px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px solid #2563eb;border-radius:12px;text-align:center;">
-  <p style="font-size:1.05rem;font-weight:700;color:#1e40af;margin:0 0 8px;">이자 계산 결과가 예상보다 많나요?</p>
-  <p style="font-size:0.9rem;color:#374151;margin:0 0 14px;">M-DEENO 정밀 리포트는 이주비 이자·공사비 상승·분담금을 통합 시뮬레이션합니다.</p>
-  <a href="https://mdeeno.com/member?utm_source=blog&utm_medium=calculator_cta&utm_campaign=inline_link" target="_blank" rel="noopener noreferrer"
-     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;">
-    재건축 리스크 정밀 분석 →
-  </a>
+<div class="blog-cta-box blog-cta-box--secondary">
+  <p><strong>이자액을 계산했다면 공사비와 일정도 함께 확인해 보세요</strong></p>
+  <p>이번 위클리에서 공식 발표와 확인할 서류를 살펴보세요.</p>
+  <a href="/posts/market/2026-09-07-정비사업-위클리-2026-37주/" class="blog-cta-box__btn" data-weekly-link>이번 정비사업 위클리 읽기 →</a>
+  <p><a href="https://mdeeno.com/member?utm_source=blog&amp;utm_medium=calculator_cta&amp;utm_campaign=weekly_202609&amp;utm_content=calc_interest" target="_blank" rel="noopener noreferrer" class="blog-cta-box__btn">내 단지 리스크 무료로 점검하기 →</a></p>
 </div>
 
 <script>

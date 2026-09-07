@@ -18,6 +18,10 @@ from pathlib import Path
 MIN_INDEXABLE_POSTS = 20
 MIN_BODY_CHARS = 2_000
 PUBLICATION_COOLDOWN_DAYS = 7
+# 2026-09-07 사용자의 첫 위클리 즉시 공개 지시: 이 날짜의 첫 1건만 허용한다.
+WEEKLY_LAUNCH_DATE = dt.date(2026, 9, 7)
+WEEKLY_LAUNCH_BRIEF_ID = "weekly-2026-w37"
+KST = dt.timezone(dt.timedelta(hours=9))
 ZERO_SHA = "0" * 40
 REQUIRED_FRONTMATTER = ("title", "date", "description", "tags")
 DISCLAIMER_MARKERS = (
@@ -390,15 +394,35 @@ def check_new_publication(blog_dir: Path, candidates: list[Path]) -> list[str]:
     if candidate_date is None:
         failures.append(f"{candidate.name}: 유효한 공개 date가 없습니다")
     else:
+        authorized_launch = (
+            candidate_date == WEEKLY_LAUNCH_DATE
+            and dt.datetime.now(KST).date() == WEEKLY_LAUNCH_DATE
+            and frontmatter_scalar(frontmatter, "contentBriefId") == WEEKLY_LAUNCH_BRIEF_ID
+            and frontmatter_scalar(frontmatter, "weeklyBriefing").lower() == "true"
+        )
+        if authorized_launch:
+            for path in blog_dir.joinpath("content", "posts").rglob("*.md"):
+                if path.resolve() == candidate.resolve():
+                    continue
+                previous_text = path.read_text(encoding="utf-8")
+                previous = extract_frontmatter(previous_text)
+                if previous is not None and is_public_post(previous_text) and (
+                    frontmatter_scalar(previous, "weeklyBriefing").lower() == "true"
+                    or frontmatter_scalar(previous, "contentBriefId").startswith("weekly-")
+                ):
+                    authorized_launch = False
+                    break
         cadence_error = publication_cooldown_error(
             blog_dir,
             candidate_date,
             exclude_path=candidate,
         )
-        if cadence_error:
+        if cadence_error and not authorized_launch:
             failures.append(cadence_error)
+        elif cadence_error and not failures:
+            print("[blog-release] 사용자 지시로 2026-09-07 첫 위클리 1건 공개 허용")
     if not failures:
-        print(f"[blog-release] 새 공개 글 1개 품질·7일 cadence 통과: {candidate.name}")
+        print(f"[blog-release] 새 공개 글 1개 발행 정책 통과: {candidate.name}")
     return failures
 
 

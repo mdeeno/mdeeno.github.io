@@ -1,8 +1,10 @@
+import datetime as dt
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
-from check_blog_release import check_post, check_public_terminology
+from check_blog_release import check_new_publication, check_post, check_public_terminology
 
 
 class TerminologyGateTest(unittest.TestCase):
@@ -50,6 +52,49 @@ class TerminologyGateTest(unittest.TestCase):
                 encoding="utf-8",
             )
             self.assertEqual(check_post(post), ([], []))
+
+
+class WeeklyLaunchGateTest(unittest.TestCase):
+    def test_launch_exception_is_single_use_and_does_not_shorten_next_cooldown(self):
+        with tempfile.TemporaryDirectory() as tmp, patch("check_blog_release.dt.datetime") as clock:
+            blog = Path(tmp)
+            posts = blog / "content" / "posts"
+            posts.mkdir(parents=True)
+            clock.now.return_value.date.return_value = dt.date(2026, 9, 7)
+
+            def write_post(name, date, brief="evergreen", weekly=False, status="approved"):
+                path = posts / name
+                path.write_text(
+                    f"---\ndate: {date}\nsourceBacked: true\nreviewStatus: {status}\n"
+                    f"draft: false\nrobotsNoIndex: false\ncontentBriefId: {brief}\n"
+                    f"weeklyBriefing: {str(weekly).lower()}\n---\n본문\n",
+                    encoding="utf-8",
+                )
+                return path
+
+            write_post("previous.md", "2026-09-04")
+            launch = write_post("launch.md", "2026-09-07", "weekly-2026-w37", True)
+            self.assertEqual(check_new_publication(blog, [launch]), [])
+            for date, brief, weekly, status in (
+                ("2026-09-07", "other", True, "approved"),
+                ("2026-09-07", "weekly-2026-w37", False, "approved"),
+                ("2026-09-08", "weekly-2026-w37", True, "approved"),
+                ("2026-09-07", "weekly-2026-w37", True, "pending"),
+            ):
+                with self.subTest(date=date, brief=brief, weekly=weekly, status=status):
+                    write_post("launch.md", date, brief, weekly, status)
+                    self.assertTrue(check_new_publication(blog, [launch]))
+            write_post("launch.md", "2026-09-07", "weekly-2026-w37", True)
+            clock.now.return_value.date.return_value = dt.date(2026, 9, 8)
+            self.assertTrue(check_new_publication(blog, [launch]))
+            clock.now.return_value.date.return_value = dt.date(2026, 9, 7)
+            second = write_post("second.md", "2026-09-07", "weekly-2026-w37", True)
+            self.assertTrue(check_new_publication(blog, [launch, second]))
+            self.assertTrue(check_new_publication(blog, [second]))
+            write_post("second.md", "2026-09-13", "weekly-2026-w38", True)
+            self.assertTrue(check_new_publication(blog, [second]))
+            write_post("second.md", "2026-09-14", "weekly-2026-w38", True)
+            self.assertEqual(check_new_publication(blog, [second]), [])
 
 
 if __name__ == "__main__":

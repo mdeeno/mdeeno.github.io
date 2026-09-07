@@ -68,6 +68,14 @@ try{if(sessionStorage.getItem('pwa-dismissed')){var _b=document.getElementById('
       return;
     }
 
+    if (url.origin === window.location.origin && link.hasAttribute('data-weekly-link')) {
+      if (window.gtag) window.gtag('event', 'blog_weekly_click', Object.assign({}, common, {
+        destination: url.pathname,
+        cta_position: getCtaPosition(link)
+      }));
+      return;
+    }
+
     if (url.hostname !== 'mdeeno.com' || !url.pathname.startsWith('/member')) return;
 
     var params = Object.assign({}, common, {
