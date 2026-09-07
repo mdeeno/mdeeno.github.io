@@ -270,13 +270,14 @@ def changed_post_paths(blog_dir: Path, base_ref: str) -> list[Path]:
         blog_dir,
         "diff",
         "--name-only",
+        "-z",
         "--diff-filter=ACMR",
         base_ref,
         "HEAD",
         "--",
         "content/posts",
     )
-    return [Path(line) for line in output.splitlines() if line.endswith(".md")]
+    return [Path(name) for name in output.split("\0") if name.endswith(".md")]
 
 
 def newly_public_posts(blog_dir: Path, base_ref: str) -> list[Path]:

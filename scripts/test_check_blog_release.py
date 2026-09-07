@@ -1,10 +1,11 @@
 import datetime as dt
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from check_blog_release import check_new_publication, check_post, check_public_terminology
+from check_blog_release import check_new_publication, check_post, check_public_terminology, newly_public_posts
 
 
 class TerminologyGateTest(unittest.TestCase):
@@ -55,6 +56,31 @@ class TerminologyGateTest(unittest.TestCase):
 
 
 class WeeklyLaunchGateTest(unittest.TestCase):
+    def test_new_korean_post_is_detected_from_real_git_diff(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            blog = Path(tmp)
+
+            def git(*args):
+                subprocess.run(
+                    ["git", "-C", tmp, "-c", "user.name=Release test",
+                     "-c", "user.email=release@example.invalid", "-c", "commit.gpgsign=false", *args],
+                    check=True, capture_output=True, text=True,
+                )
+
+            git("init")
+            git("config", "core.quotePath", "true")
+            git("commit", "--allow-empty", "-m", "baseline")
+            post = blog / "content" / "posts" / "정비사업 위클리.md"
+            post.parent.mkdir(parents=True)
+            post.write_text("---\ndraft: false\nrobotsNoIndex: false\n---\n본문\n", encoding="utf-8")
+            git("add", "content")
+            git("commit", "-m", "새 위클리")
+            self.assertEqual(newly_public_posts(blog, "HEAD^"), [post])
+            post.write_text(post.read_text(encoding="utf-8") + "수정\n", encoding="utf-8")
+            git("add", "content")
+            git("commit", "-m", "기존 위클리 수정")
+            self.assertEqual(newly_public_posts(blog, "HEAD^"), [])
+
     def test_launch_exception_is_single_use_and_does_not_shorten_next_cooldown(self):
         with tempfile.TemporaryDirectory() as tmp, patch("check_blog_release.dt.datetime") as clock:
             blog = Path(tmp)
